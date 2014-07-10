@@ -1,0 +1,11 @@
+{application, publicsuffix,
+ [
+  {description, "PublicSuffix.org parsing for erlang"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.

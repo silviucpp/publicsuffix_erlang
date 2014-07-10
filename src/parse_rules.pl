@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-open my $fh, "<", "publicsuffix.dat";
+open my $fh, "<", "effective_tld_names.dat";
 
 my $tree = {};
 
@@ -59,7 +59,7 @@ parts("$_", []) ->
     undefined;
 parts("$_", Parts) ->
    [First | Rest] = Parts,
-   $_(First, Rest);	
+   $_(First, Rest);
 EOF
 	} else {
 	    $res .= <<EOF;

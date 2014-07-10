@@ -3,6 +3,9 @@ publicsuffix_erlang
 
 This repository contains Perl script and ready to use Erlang module.
 
+Run update.sh to update the list.
+
+Please use it no more than once per day.
 
 
 Information
