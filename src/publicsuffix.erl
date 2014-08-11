@@ -21,160 +21,523 @@ domain(Domain) ->
 		    Subdomain ++ "." ++ Suffix
 	end.
 
-parts("nr", []) ->
+parts("cuisinella", _Any) ->
+    "cuisinella";
+parts("tf", _Any) ->
+    "tf";
+parts("mw", []) ->
     undefined;
-parts("nr", Parts) ->
+parts("mw", Parts) ->
    [First | Rest] = Parts,
-   nr(First, Rest);
-parts("mk", []) ->
+   mw(First, Rest);
+parts("frl", _Any) ->
+    "frl";
+parts("il", []) ->
     undefined;
-parts("mk", Parts) ->
+parts("il", Parts) ->
    [First | Rest] = Parts,
-   mk(First, Rest);
-parts("exchange", _Any) ->
-    "exchange";
-parts("enterprises", _Any) ->
-    "enterprises";
-parts("quebec", _Any) ->
-    "quebec";
-parts("yt", _Any) ->
-    "yt";
-parts("vlaanderen", _Any) ->
-    "vlaanderen";
-parts("bi", []) ->
+   il(First, Rest);
+parts("africa", _Any) ->
+    "africa";
+parts("investments", _Any) ->
+    "investments";
+parts("band", _Any) ->
+    "band";
+parts("cymru", _Any) ->
+    "cymru";
+parts("blackfriday", _Any) ->
+    "blackfriday";
+parts("sd", []) ->
     undefined;
-parts("bi", Parts) ->
+parts("sd", Parts) ->
    [First | Rest] = Parts,
-   bi(First, Rest);
-parts("house", _Any) ->
-    "house";
-parts("pa", []) ->
+   sd(First, Rest);
+parts("futbol", _Any) ->
+    "futbol";
+parts("gbiz", _Any) ->
+    "gbiz";
+parts("vet", _Any) ->
+    "vet";
+parts("technology", _Any) ->
+    "technology";
+parts("ws", []) ->
     undefined;
-parts("pa", Parts) ->
+parts("ws", Parts) ->
    [First | Rest] = Parts,
-   pa(First, Rest);
-parts("graphics", _Any) ->
-    "graphics";
-parts("it", []) ->
-    undefined;
-parts("it", Parts) ->
-   [First | Rest] = Parts,
-   it(First, Rest);
-parts("fan", _Any) ->
-    "fan";
-parts("voto", _Any) ->
-    "voto";
-parts("buzz", _Any) ->
-    "buzz";
-parts("sharp", _Any) ->
-    "sharp";
-parts("versicherung", _Any) ->
-    "versicherung";
+   ws(First, Rest);
+parts("wed", _Any) ->
+    "wed";
 parts("solutions", _Any) ->
     "solutions";
-parts("gt", []) ->
+parts("holdings", _Any) ->
+    "holdings";
+parts("rs", []) ->
     undefined;
-parts("gt", Parts) ->
+parts("rs", Parts) ->
    [First | Rest] = Parts,
-   gt(First, Rest);
-parts("email", _Any) ->
-    "email";
-parts("autos", _Any) ->
-    "autos";
-parts("ru", []) ->
+   rs(First, Rest);
+parts("pr", []) ->
     undefined;
-parts("ru", Parts) ->
+parts("pr", Parts) ->
    [First | Rest] = Parts,
-   ru(First, Rest);
-parts("cl", []) ->
+   pr(First, Rest);
+parts("plumbing", _Any) ->
+    "plumbing";
+parts("tips", _Any) ->
+    "tips";
+parts("ai", []) ->
     undefined;
-parts("cl", Parts) ->
+parts("ai", Parts) ->
    [First | Rest] = Parts,
-   cl(First, Rest);
-parts("wiki", _Any) ->
-    "wiki";
-parts("praxi", _Any) ->
-    "praxi";
+   ai(First, Rest);
+parts("blue", _Any) ->
+    "blue";
+parts("camp", _Any) ->
+    "camp";
+parts("spiegel", _Any) ->
+    "spiegel";
 parts("gd", _Any) ->
     "gd";
-parts("infiniti", _Any) ->
-    "infiniti";
-parts("tk", _Any) ->
-    "tk";
+parts("otsuka", _Any) ->
+    "otsuka";
+parts("pro", []) ->
+    undefined;
+parts("pro", Parts) ->
+   [First | Rest] = Parts,
+   pro(First, Rest);
+parts("de", []) ->
+    undefined;
+parts("de", Parts) ->
+   [First | Rest] = Parts,
+   de(First, Rest);
+parts("madrid", _Any) ->
+    "madrid";
+parts("solar", _Any) ->
+    "solar";
+parts("ec", []) ->
+    undefined;
+parts("ec", Parts) ->
+   [First | Rest] = Parts,
+   ec(First, Rest);
+parts("horse", _Any) ->
+    "horse";
+parts("jp", []) ->
+    undefined;
+parts("jp", Parts) ->
+   [First | Rest] = Parts,
+   jp(First, Rest);
+parts("lu", _Any) ->
+    "lu";
+parts("limo", _Any) ->
+    "limo";
+parts("nhk", _Any) ->
+    "nhk";
+parts("pharmacy", _Any) ->
+    "pharmacy";
+parts("farm", _Any) ->
+    "farm";
+parts("kr", []) ->
+    undefined;
+parts("kr", Parts) ->
+   [First | Rest] = Parts,
+   kr(First, Rest);
+parts("vi", []) ->
+    undefined;
+parts("vi", Parts) ->
+   [First | Rest] = Parts,
+   vi(First, Rest);
+parts("loans", _Any) ->
+    "loans";
+parts("kp", []) ->
+    undefined;
+parts("kp", Parts) ->
+   [First | Rest] = Parts,
+   kp(First, Rest);
+parts("youtube", _Any) ->
+    "youtube";
+parts("toshiba", _Any) ->
+    "toshiba";
+parts("host", _Any) ->
+    "host";
+parts("bid", _Any) ->
+    "bid";
+parts("nl", []) ->
+    undefined;
+parts("nl", Parts) ->
+   [First | Rest] = Parts,
+   nl(First, Rest);
+parts("cr", []) ->
+    undefined;
+parts("cr", Parts) ->
+   [First | Rest] = Parts,
+   cr(First, Rest);
+parts("to", []) ->
+    undefined;
+parts("to", Parts) ->
+   [First | Rest] = Parts,
+   to(First, Rest);
+parts("photos", _Any) ->
+    "photos";
+parts("ht", []) ->
+    undefined;
+parts("ht", Parts) ->
+   [First | Rest] = Parts,
+   ht(First, Rest);
+parts("la", []) ->
+    undefined;
+parts("la", Parts) ->
+   [First | Rest] = Parts,
+   la(First, Rest);
+parts("management", _Any) ->
+    "management";
+parts("estate", _Any) ->
+    "estate";
+parts("eat", _Any) ->
+    "eat";
+parts("gal", _Any) ->
+    "gal";
+parts("dance", _Any) ->
+    "dance";
+parts("rehab", _Any) ->
+    "rehab";
+parts("maison", _Any) ->
+    "maison";
+parts("eg", []) ->
+    undefined;
+parts("eg", Parts) ->
+   [First | Rest] = Parts,
+   eg(First, Rest);
+parts("sa", []) ->
+    undefined;
+parts("sa", Parts) ->
+   [First | Rest] = Parts,
+   sa(First, Rest);
+parts("fly", _Any) ->
+    "fly";
+parts("press", _Any) ->
+    "press";
+parts("new", _Any) ->
+    "new";
+parts("gh", []) ->
+    undefined;
+parts("gh", Parts) ->
+   [First | Rest] = Parts,
+   gh(First, Rest);
+parts("mn", []) ->
+    undefined;
+parts("mn", Parts) ->
+   [First | Rest] = Parts,
+   mn(First, Rest);
+parts("institute", _Any) ->
+    "institute";
+parts("gm", _Any) ->
+    "gm";
+parts("sk", []) ->
+    undefined;
+parts("sk", Parts) ->
+   [First | Rest] = Parts,
+   sk(First, Rest);
+parts("discount", _Any) ->
+    "discount";
+parts("tatar", _Any) ->
+    "tatar";
+parts("tel", _Any) ->
+    "tel";
+parts("io", []) ->
+    undefined;
+parts("io", Parts) ->
+   [First | Rest] = Parts,
+   io(First, Rest);
+parts("shiksha", _Any) ->
+    "shiksha";
+parts("motorcycles", _Any) ->
+    "motorcycles";
+parts("gratis", _Any) ->
+    "gratis";
+parts("life", _Any) ->
+    "life";
+parts("meet", _Any) ->
+    "meet";
+parts("property", _Any) ->
+    "property";
+parts("je", []) ->
+    undefined;
+parts("je", Parts) ->
+   [First | Rest] = Parts,
+   je(First, Rest);
+parts("eurovision", _Any) ->
+    "eurovision";
+parts("axa", _Any) ->
+    "axa";
+parts("mil", _Any) ->
+    "mil";
+parts("sx", []) ->
+    undefined;
+parts("sx", Parts) ->
+   [First | Rest] = Parts,
+   sx(First, Rest);
+parts("dnp", _Any) ->
+    "dnp";
+parts("chrome", _Any) ->
+    "chrome";
+parts("global", _Any) ->
+    "global";
+parts("gripe", _Any) ->
+    "gripe";
+parts("gop", _Any) ->
+    "gop";
+parts("claims", _Any) ->
+    "claims";
+parts("supplies", _Any) ->
+    "supplies";
+parts("sn", []) ->
+    undefined;
+parts("sn", Parts) ->
+   [First | Rest] = Parts,
+   sn(First, Rest);
+parts("systems", _Any) ->
+    "systems";
+parts("university", _Any) ->
+    "university";
+parts("ac", []) ->
+    undefined;
+parts("ac", Parts) ->
+   [First | Rest] = Parts,
+   ac(First, Rest);
+parts("bible", _Any) ->
+    "bible";
+parts("mg", []) ->
+    undefined;
+parts("mg", Parts) ->
+   [First | Rest] = Parts,
+   mg(First, Rest);
+parts("cool", _Any) ->
+    "cool";
+parts("joburg", _Any) ->
+    "joburg";
+parts("rich", _Any) ->
+    "rich";
+parts("cx", []) ->
+    undefined;
+parts("cx", Parts) ->
+   [First | Rest] = Parts,
+   cx(First, Rest);
+parts("mortgage", _Any) ->
+    "mortgage";
+parts("gifts", _Any) ->
+    "gifts";
+parts("vacations", _Any) ->
+    "vacations";
+parts("florist", _Any) ->
+    "florist";
+parts("com", []) ->
+    undefined;
+parts("com", Parts) ->
+   [First | Rest] = Parts,
+   com(First, Rest);
+parts("everbank", _Any) ->
+    "everbank";
+parts("mobi", _Any) ->
+    "mobi";
+parts("kitchen", _Any) ->
+    "kitchen";
+parts("auction", _Any) ->
+    "auction";
+parts("help", _Any) ->
+    "help";
+parts("forsale", _Any) ->
+    "forsale";
+parts("town", _Any) ->
+    "town";
+parts("praxi", _Any) ->
+    "praxi";
+parts("church", _Any) ->
+    "church";
+parts("creditcard", _Any) ->
+    "creditcard";
+parts("healthcare", _Any) ->
+    "healthcare";
+parts("wedding", _Any) ->
+    "wedding";
+parts("expert", _Any) ->
+    "expert";
+parts("partners", _Any) ->
+    "partners";
+parts("post", _Any) ->
+    "post";
+parts("mo", []) ->
+    undefined;
+parts("mo", Parts) ->
+   [First | Rest] = Parts,
+   mo(First, Rest);
 parts("cu", []) ->
     undefined;
 parts("cu", Parts) ->
    [First | Rest] = Parts,
    cu(First, Rest);
-parts("gov", _Any) ->
-    "gov";
-parts("kaufen", _Any) ->
-    "kaufen";
-parts("financial", _Any) ->
-    "financial";
-parts("university", _Any) ->
-    "university";
+parts("ci", []) ->
+    undefined;
+parts("ci", Parts) ->
+   [First | Rest] = Parts,
+   ci(First, Rest);
+parts("desi", _Any) ->
+    "desi";
+parts("xyz", _Any) ->
+    "xyz";
+parts("feedback", _Any) ->
+    "feedback";
+parts("fish", _Any) ->
+    "fish";
+parts("education", _Any) ->
+    "education";
+parts("voyage", _Any) ->
+    "voyage";
+parts("attorney", _Any) ->
+    "attorney";
+parts("ifm", _Any) ->
+    "ifm";
+parts("re", []) ->
+    undefined;
+parts("re", Parts) ->
+   [First | Rest] = Parts,
+   re(First, Rest);
+parts("moe", _Any) ->
+    "moe";
+parts("glass", _Any) ->
+    "glass";
+parts("gi", []) ->
+    undefined;
+parts("gi", Parts) ->
+   [First | Rest] = Parts,
+   gi(First, Rest);
 parts("ie", []) ->
     undefined;
 parts("ie", Parts) ->
    [First | Rest] = Parts,
    ie(First, Rest);
-parts("berlin", _Any) ->
-    "berlin";
-parts("careers", _Any) ->
-    "careers";
-parts("realtor", _Any) ->
-    "realtor";
-parts("pf", []) ->
+parts("scot", _Any) ->
+    "scot";
+parts("tattoo", _Any) ->
+    "tattoo";
+parts("name", []) ->
     undefined;
-parts("pf", Parts) ->
+parts("name", Parts) ->
    [First | Rest] = Parts,
-   pf(First, Rest);
-parts("im", []) ->
+   name(First, Rest);
+parts("here", _Any) ->
+    "here";
+parts("krd", _Any) ->
+    "krd";
+parts("ninja", _Any) ->
+    "ninja";
+parts("no", []) ->
     undefined;
-parts("im", Parts) ->
+parts("no", Parts) ->
    [First | Rest] = Parts,
-   im(First, Rest);
-parts("uy", []) ->
+   no(First, Rest);
+parts("agency", _Any) ->
+    "agency";
+parts("red", _Any) ->
+    "red";
+parts("hermes", _Any) ->
+    "hermes";
+parts("schmidt", _Any) ->
+    "schmidt";
+parts("scholarships", _Any) ->
+    "scholarships";
+parts("equipment", _Any) ->
+    "equipment";
+parts("st", []) ->
     undefined;
-parts("uy", Parts) ->
+parts("st", Parts) ->
    [First | Rest] = Parts,
-   uy(First, Rest);
-parts("systems", _Any) ->
-    "systems";
-parts("international", _Any) ->
-    "international";
-parts("tz", []) ->
+   st(First, Rest);
+parts("ing", _Any) ->
+    "ing";
+parts("codes", _Any) ->
+    "codes";
+parts("sg", []) ->
     undefined;
-parts("tz", Parts) ->
+parts("sg", Parts) ->
    [First | Rest] = Parts,
-   tz(First, Rest);
-parts("ggee", _Any) ->
-    "ggee";
-parts("gmx", _Any) ->
-    "gmx";
-parts("coop", _Any) ->
-    "coop";
-parts("wed", _Any) ->
-    "wed";
-parts("hn", []) ->
+   sg(First, Rest);
+parts("actor", _Any) ->
+    "actor";
+parts("mk", []) ->
     undefined;
-parts("hn", Parts) ->
+parts("mk", Parts) ->
    [First | Rest] = Parts,
-   hn(First, Rest);
-parts("bar", _Any) ->
-    "bar";
-parts("lb", []) ->
+   mk(First, Rest);
+parts("tg", _Any) ->
+    "tg";
+parts("so", []) ->
     undefined;
-parts("lb", Parts) ->
+parts("so", Parts) ->
    [First | Rest] = Parts,
-   lb(First, Rest);
-parts("doosan", _Any) ->
-    "doosan";
-parts("cat", _Any) ->
-    "cat";
+   so(First, Rest);
+parts("enterprises", _Any) ->
+    "enterprises";
+parts("clothing", _Any) ->
+    "clothing";
+parts("college", _Any) ->
+    "college";
+parts("wtf", _Any) ->
+    "wtf";
+parts("accountants", _Any) ->
+    "accountants";
+parts("juegos", _Any) ->
+    "juegos";
+parts("saarland", _Any) ->
+    "saarland";
+parts("repair", _Any) ->
+    "repair";
+parts("cologne", _Any) ->
+    "cologne";
+parts("int", []) ->
+    undefined;
+parts("int", Parts) ->
+   [First | Rest] = Parts,
+   int(First, Rest);
+parts("gn", []) ->
+    undefined;
+parts("gn", Parts) ->
+   [First | Rest] = Parts,
+   gn(First, Rest);
+parts("pub", _Any) ->
+    "pub";
+parts("lighting", _Any) ->
+    "lighting";
+parts("aw", []) ->
+    undefined;
+parts("aw", Parts) ->
+   [First | Rest] = Parts,
+   aw(First, Rest);
 parts("tirol", _Any) ->
     "tirol";
+parts("house", _Any) ->
+    "house";
+parts("immobilien", _Any) ->
+    "immobilien";
+parts("nrw", _Any) ->
+    "nrw";
+parts("schule", _Any) ->
+    "schule";
+parts("bv", _Any) ->
+    "bv";
+parts("ag", []) ->
+    undefined;
+parts("ag", Parts) ->
+   [First | Rest] = Parts,
+   ag(First, Rest);
+parts("seat", _Any) ->
+    "seat";
+parts("furniture", _Any) ->
+    "furniture";
+parts("tj", []) ->
+    undefined;
+parts("tj", Parts) ->
+   [First | Rest] = Parts,
+   tj(First, Rest);
 parts("market", _Any) ->
     "market";
 parts("bw", []) ->
@@ -182,11247 +545,1477 @@ parts("bw", []) ->
 parts("bw", Parts) ->
    [First | Rest] = Parts,
    bw(First, Rest);
-parts("cleaning", _Any) ->
-    "cleaning";
-parts("pm", _Any) ->
-    "pm";
-parts("moda", _Any) ->
-    "moda";
-parts("bh", []) ->
-    undefined;
-parts("bh", Parts) ->
-   [First | Rest] = Parts,
-   bh(First, Rest);
-parts("degree", _Any) ->
-    "degree";
-parts("construction", _Any) ->
-    "construction";
-parts("lt", []) ->
-    undefined;
-parts("lt", Parts) ->
-   [First | Rest] = Parts,
-   lt(First, Rest);
-parts("voyage", _Any) ->
-    "voyage";
-parts("city", _Any) ->
-    "city";
-parts("mu", []) ->
-    undefined;
-parts("mu", Parts) ->
-   [First | Rest] = Parts,
-   mu(First, Rest);
-parts("blue", _Any) ->
-    "blue";
-parts("ch", []) ->
-    undefined;
-parts("ch", Parts) ->
-   [First | Rest] = Parts,
-   ch(First, Rest);
-parts("build", _Any) ->
-    "build";
-parts("photography", _Any) ->
-    "photography";
-parts("okinawa", _Any) ->
-    "okinawa";
-parts("hk", []) ->
-    undefined;
-parts("hk", Parts) ->
-   [First | Rest] = Parts,
-   hk(First, Rest);
-parts("foo", _Any) ->
-    "foo";
-parts("watch", _Any) ->
-    "watch";
-parts("club", _Any) ->
-    "club";
-parts("axa", _Any) ->
-    "axa";
-parts("td", []) ->
-    undefined;
-parts("td", Parts) ->
-   [First | Rest] = Parts,
-   td(First, Rest);
-parts("zip", _Any) ->
-    "zip";
-parts("scholarships", _Any) ->
-    "scholarships";
-parts("moscow", _Any) ->
-    "moscow";
-parts("guitars", _Any) ->
-    "guitars";
-parts("mo", []) ->
-    undefined;
-parts("mo", Parts) ->
-   [First | Rest] = Parts,
-   mo(First, Rest);
-parts("yandex", _Any) ->
-    "yandex";
-parts("datsun", _Any) ->
-    "datsun";
-parts("emerck", _Any) ->
-    "emerck";
-parts("mx", []) ->
-    undefined;
-parts("mx", Parts) ->
-   [First | Rest] = Parts,
-   mx(First, Rest);
-parts("domains", _Any) ->
-    "domains";
-parts("bayern", _Any) ->
-    "bayern";
-parts("travel", _Any) ->
-    "travel";
-parts("ne", _Any) ->
-    "ne";
-parts("clothing", _Any) ->
-    "clothing";
-parts("camera", _Any) ->
-    "camera";
-parts("ventures", _Any) ->
-    "ventures";
-parts("motorcycles", _Any) ->
-    "motorcycles";
-parts("si", _Any) ->
-    "si";
-parts("catering", _Any) ->
-    "catering";
-parts("re", []) ->
-    undefined;
-parts("re", Parts) ->
-   [First | Rest] = Parts,
-   re(First, Rest);
-parts("fail", _Any) ->
-    "fail";
-parts("spiegel", _Any) ->
-    "spiegel";
-parts("wf", _Any) ->
-    "wf";
-parts("ps", []) ->
-    undefined;
-parts("ps", Parts) ->
-   [First | Rest] = Parts,
-   ps(First, Rest);
-parts("vacations", _Any) ->
-    "vacations";
-parts("sv", []) ->
-    undefined;
-parts("sv", Parts) ->
-   [First | Rest] = Parts,
-   sv(First, Rest);
-parts("to", []) ->
-    undefined;
-parts("to", Parts) ->
-   [First | Rest] = Parts,
-   to(First, Rest);
-parts("ltda", _Any) ->
-    "ltda";
-parts("nu", []) ->
-    undefined;
-parts("nu", Parts) ->
-   [First | Rest] = Parts,
-   nu(First, Rest);
-parts("dk", []) ->
-    undefined;
-parts("dk", Parts) ->
-   [First | Rest] = Parts,
-   dk(First, Rest);
-parts("cool", _Any) ->
-    "cool";
-parts("ca", []) ->
-    undefined;
-parts("ca", Parts) ->
-   [First | Rest] = Parts,
-   ca(First, Rest);
-parts("br", []) ->
-    undefined;
-parts("br", Parts) ->
-   [First | Rest] = Parts,
-   br(First, Rest);
-parts("vn", []) ->
-    undefined;
-parts("vn", Parts) ->
-   [First | Rest] = Parts,
-   vn(First, Rest);
-parts("bzh", _Any) ->
-    "bzh";
-parts("bj", []) ->
-    undefined;
-parts("bj", Parts) ->
-   [First | Rest] = Parts,
-   bj(First, Rest);
-parts("rocks", _Any) ->
-    "rocks";
-parts("press", _Any) ->
-    "press";
-parts("properties", _Any) ->
-    "properties";
-parts("bnpparibas", _Any) ->
-    "bnpparibas";
-parts("gy", []) ->
-    undefined;
-parts("gy", Parts) ->
-   [First | Rest] = Parts,
-   gy(First, Rest);
-parts("ls", []) ->
-    undefined;
-parts("ls", Parts) ->
-   [First | Rest] = Parts,
-   ls(First, Rest);
-parts("eurovision", _Any) ->
-    "eurovision";
-parts("lease", _Any) ->
-    "lease";
-parts("ec", []) ->
-    undefined;
-parts("ec", Parts) ->
-   [First | Rest] = Parts,
-   ec(First, Rest);
-parts("gives", _Any) ->
-    "gives";
-parts("ci", []) ->
-    undefined;
-parts("ci", Parts) ->
-   [First | Rest] = Parts,
-   ci(First, Rest);
-parts("vegas", _Any) ->
-    "vegas";
-parts("cc", []) ->
-    undefined;
-parts("cc", Parts) ->
-   [First | Rest] = Parts,
-   cc(First, Rest);
-parts("beer", _Any) ->
-    "beer";
-parts("pub", _Any) ->
-    "pub";
-parts("asia", _Any) ->
-    "asia";
-parts("mormon", _Any) ->
-    "mormon";
-parts("post", _Any) ->
-    "post";
-parts("expert", _Any) ->
-    "expert";
-parts("af", []) ->
-    undefined;
-parts("af", Parts) ->
-   [First | Rest] = Parts,
-   af(First, Rest);
-parts("nz", []) ->
-    undefined;
-parts("nz", Parts) ->
-   [First | Rest] = Parts,
-   nz(First, Rest);
-parts("kz", []) ->
-    undefined;
-parts("kz", Parts) ->
-   [First | Rest] = Parts,
-   kz(First, Rest);
-parts("tel", _Any) ->
-    "tel";
-parts("dz", []) ->
-    undefined;
-parts("dz", Parts) ->
-   [First | Rest] = Parts,
-   dz(First, Rest);
-parts("py", []) ->
-    undefined;
-parts("py", Parts) ->
-   [First | Rest] = Parts,
-   py(First, Rest);
-parts("guide", _Any) ->
-    "guide";
-parts("kr", []) ->
-    undefined;
-parts("kr", Parts) ->
-   [First | Rest] = Parts,
-   kr(First, Rest);
-parts("tm", []) ->
-    undefined;
-parts("tm", Parts) ->
-   [First | Rest] = Parts,
-   tm(First, Rest);
-parts("bond", _Any) ->
-    "bond";
-parts("nissan", _Any) ->
-    "nissan";
-parts("mango", _Any) ->
-    "mango";
-parts("equipment", _Any) ->
-    "equipment";
-parts("vi", []) ->
-    undefined;
-parts("vi", Parts) ->
-   [First | Rest] = Parts,
-   vi(First, Rest);
-parts("fm", _Any) ->
-    "fm";
-parts("gift", _Any) ->
-    "gift";
-parts("creditcard", _Any) ->
-    "creditcard";
-parts("mv", []) ->
-    undefined;
-parts("mv", Parts) ->
-   [First | Rest] = Parts,
-   mv(First, Rest);
-parts("dental", _Any) ->
-    "dental";
-parts("black", _Any) ->
-    "black";
-parts("cr", []) ->
-    undefined;
-parts("cr", Parts) ->
-   [First | Rest] = Parts,
-   cr(First, Rest);
-parts("nl", []) ->
-    undefined;
-parts("nl", Parts) ->
-   [First | Rest] = Parts,
-   nl(First, Rest);
-parts("cd", []) ->
-    undefined;
-parts("cd", Parts) ->
-   [First | Rest] = Parts,
-   cd(First, Rest);
-parts("ro", []) ->
-    undefined;
-parts("ro", Parts) ->
-   [First | Rest] = Parts,
-   ro(First, Rest);
-parts("am", _Any) ->
-    "am";
-parts("ngo", _Any) ->
-    "ngo";
-parts("london", _Any) ->
-    "london";
-parts("reviews", _Any) ->
-    "reviews";
-parts("biz", []) ->
-    undefined;
-parts("biz", Parts) ->
-   [First | Rest] = Parts,
-   biz(First, Rest);
-parts("career", _Any) ->
-    "career";
-parts("jo", []) ->
-    undefined;
-parts("jo", Parts) ->
-   [First | Rest] = Parts,
-   jo(First, Rest);
-parts("here", _Any) ->
-    "here";
-parts("gent", _Any) ->
-    "gent";
-parts("vote", _Any) ->
-    "vote";
-parts("com", []) ->
-    undefined;
-parts("com", Parts) ->
-   [First | Rest] = Parts,
-   com(First, Rest);
-parts("qpon", _Any) ->
-    "qpon";
-parts("blackfriday", _Any) ->
-    "blackfriday";
-parts("bargains", _Any) ->
-    "bargains";
-parts("flights", _Any) ->
-    "flights";
-parts("bg", []) ->
-    undefined;
-parts("bg", Parts) ->
-   [First | Rest] = Parts,
-   bg(First, Rest);
-parts("sa", []) ->
-    undefined;
-parts("sa", Parts) ->
-   [First | Rest] = Parts,
-   sa(First, Rest);
-parts("sh", []) ->
-    undefined;
-parts("sh", Parts) ->
-   [First | Rest] = Parts,
-   sh(First, Rest);
-parts("zone", _Any) ->
-    "zone";
-parts("je", []) ->
-    undefined;
-parts("je", Parts) ->
-   [First | Rest] = Parts,
-   je(First, Rest);
-parts("gm", _Any) ->
-    "gm";
-parts("click", _Any) ->
-    "click";
-parts("ceo", _Any) ->
-    "ceo";
-parts("jetzt", _Any) ->
-    "jetzt";
-parts("ninja", _Any) ->
-    "ninja";
-parts("ryukyu", _Any) ->
-    "ryukyu";
-parts("management", _Any) ->
-    "management";
-parts("exposed", _Any) ->
-    "exposed";
-parts("vu", []) ->
-    undefined;
-parts("vu", Parts) ->
-   [First | Rest] = Parts,
-   vu(First, Rest);
-parts("top", _Any) ->
-    "top";
-parts("info", []) ->
-    undefined;
-parts("info", Parts) ->
-   [First | Rest] = Parts,
-   info(First, Rest);
-parts("mh", _Any) ->
-    "mh";
-parts("lv", []) ->
-    undefined;
-parts("lv", Parts) ->
-   [First | Rest] = Parts,
-   lv(First, Rest);
-parts("scb", _Any) ->
-    "scb";
-parts("tokyo", _Any) ->
-    "tokyo";
-parts("wien", _Any) ->
-    "wien";
-parts("maison", _Any) ->
-    "maison";
-parts("forsale", _Any) ->
-    "forsale";
-parts("li", _Any) ->
-    "li";
-parts("associates", _Any) ->
-    "associates";
-parts("ao", []) ->
-    undefined;
-parts("ao", Parts) ->
-   [First | Rest] = Parts,
-   ao(First, Rest);
-parts("so", []) ->
-    undefined;
-parts("so", Parts) ->
-   [First | Rest] = Parts,
-   so(First, Rest);
-parts("budapest", _Any) ->
-    "budapest";
-parts("mov", _Any) ->
-    "mov";
-parts("pro", []) ->
-    undefined;
-parts("pro", Parts) ->
-   [First | Rest] = Parts,
-   pro(First, Rest);
-parts("ac", []) ->
-    undefined;
-parts("ac", Parts) ->
-   [First | Rest] = Parts,
-   ac(First, Rest);
-parts("holiday", _Any) ->
-    "holiday";
-parts("pr", []) ->
-    undefined;
-parts("pr", Parts) ->
-   [First | Rest] = Parts,
-   pr(First, Rest);
-parts("ky", []) ->
-    undefined;
-parts("ky", Parts) ->
-   [First | Rest] = Parts,
-   ky(First, Rest);
-parts("sap", _Any) ->
-    "sap";
-parts("ing", _Any) ->
-    "ing";
-parts("ge", []) ->
-    undefined;
-parts("ge", Parts) ->
-   [First | Rest] = Parts,
-   ge(First, Rest);
-parts("cheap", _Any) ->
-    "cheap";
-parts("pe", []) ->
-    undefined;
-parts("pe", Parts) ->
-   [First | Rest] = Parts,
-   pe(First, Rest);
-parts("cruises", _Any) ->
-    "cruises";
-parts("nc", []) ->
-    undefined;
-parts("nc", Parts) ->
-   [First | Rest] = Parts,
-   nc(First, Rest);
-parts("hosting", _Any) ->
-    "hosting";
-parts("ua", []) ->
-    undefined;
-parts("ua", Parts) ->
-   [First | Rest] = Parts,
-   ua(First, Rest);
-parts("loans", _Any) ->
-    "loans";
-parts("caravan", _Any) ->
-    "caravan";
-parts("dad", _Any) ->
-    "dad";
-parts("qa", []) ->
-    undefined;
-parts("qa", Parts) ->
-   [First | Rest] = Parts,
-   qa(First, Rest);
-parts("rest", _Any) ->
-    "rest";
-parts("guru", _Any) ->
-    "guru";
-parts("uk", []) ->
-    undefined;
-parts("uk", Parts) ->
-   [First | Rest] = Parts,
-   uk(First, Rest);
-parts("cancerresearch", _Any) ->
-    "cancerresearch";
-parts("ax", _Any) ->
-    "ax";
-parts("clinic", _Any) ->
-    "clinic";
-parts("boo", _Any) ->
-    "boo";
-parts("africa", _Any) ->
-    "africa";
-parts("actor", _Any) ->
-    "actor";
-parts("software", _Any) ->
-    "software";
-parts("sj", _Any) ->
-    "sj";
-parts("meme", _Any) ->
-    "meme";
-parts("dabur", _Any) ->
-    "dabur";
-parts("tatar", _Any) ->
-    "tatar";
-parts("day", _Any) ->
-    "day";
-parts("auction", _Any) ->
-    "auction";
-parts("ws", []) ->
-    undefined;
-parts("ws", Parts) ->
-   [First | Rest] = Parts,
-   ws(First, Rest);
-parts("gw", _Any) ->
-    "gw";
-parts("uz", []) ->
-    undefined;
-parts("uz", Parts) ->
-   [First | Rest] = Parts,
-   uz(First, Rest);
-parts("republican", _Any) ->
-    "republican";
-parts("paris", _Any) ->
-    "paris";
-parts("fr", []) ->
-    undefined;
-parts("fr", Parts) ->
-   [First | Rest] = Parts,
-   fr(First, Rest);
-parts("desi", _Any) ->
-    "desi";
-parts("aw", []) ->
-    undefined;
-parts("aw", Parts) ->
-   [First | Rest] = Parts,
-   aw(First, Rest);
-parts("jp", []) ->
-    undefined;
-parts("jp", Parts) ->
-   [First | Rest] = Parts,
-   jp(First, Rest);
-parts("ve", []) ->
-    undefined;
-parts("ve", Parts) ->
-   [First | Rest] = Parts,
-   ve(First, Rest);
-parts("community", _Any) ->
-    "community";
-parts("cards", _Any) ->
-    "cards";
-parts("il", []) ->
-    undefined;
-parts("il", Parts) ->
-   [First | Rest] = Parts,
-   il(First, Rest);
-parts("institute", _Any) ->
-    "institute";
-parts("gr", []) ->
-    undefined;
-parts("gr", Parts) ->
-   [First | Rest] = Parts,
-   gr(First, Rest);
-parts("st", []) ->
-    undefined;
-parts("st", Parts) ->
-   [First | Rest] = Parts,
-   st(First, Rest);
-parts("partners", _Any) ->
-    "partners";
-parts("gl", _Any) ->
-    "gl";
-parts("ar", []) ->
-    undefined;
-parts("ar", Parts) ->
-   [First | Rest] = Parts,
-   ar(First, Rest);
-parts("pt", []) ->
-    undefined;
-parts("pt", Parts) ->
-   [First | Rest] = Parts,
-   pt(First, Rest);
-parts("na", []) ->
-    undefined;
-parts("na", Parts) ->
-   [First | Rest] = Parts,
-   na(First, Rest);
-parts("audio", _Any) ->
-    "audio";
-parts("arpa", []) ->
-    undefined;
-parts("arpa", Parts) ->
-   [First | Rest] = Parts,
-   arpa(First, Rest);
-parts("th", []) ->
-    undefined;
-parts("th", Parts) ->
-   [First | Rest] = Parts,
-   th(First, Rest);
-parts("social", _Any) ->
-    "social";
-parts("cymru", _Any) ->
-    "cymru";
-parts("nagoya", _Any) ->
-    "nagoya";
-parts("esq", _Any) ->
-    "esq";
-parts("joburg", _Any) ->
-    "joburg";
-parts("lu", _Any) ->
-    "lu";
-parts("lighting", _Any) ->
-    "lighting";
-parts("mt", []) ->
-    undefined;
-parts("mt", Parts) ->
-   [First | Rest] = Parts,
-   mt(First, Rest);
-parts("horse", _Any) ->
-    "horse";
+parts("edu", _Any) ->
+    "edu";
 parts("company", _Any) ->
     "company";
-parts("museum", []) ->
-    undefined;
-parts("museum", Parts) ->
-   [First | Rest] = Parts,
-   museum(First, Rest);
-parts("by", []) ->
-    undefined;
-parts("by", Parts) ->
-   [First | Rest] = Parts,
-   by(First, Rest);
-parts("hiv", _Any) ->
-    "hiv";
-parts("computer", _Any) ->
-    "computer";
-parts("red", _Any) ->
-    "red";
-parts("shriram", _Any) ->
-    "shriram";
-parts("furniture", _Any) ->
-    "furniture";
-parts("wales", _Any) ->
-    "wales";
-parts("sx", []) ->
-    undefined;
-parts("sx", Parts) ->
-   [First | Rest] = Parts,
-   sx(First, Rest);
-parts("best", _Any) ->
-    "best";
+parts("marketing", _Any) ->
+    "marketing";
 parts("boutique", _Any) ->
     "boutique";
-parts("green", _Any) ->
-    "green";
-parts("photos", _Any) ->
-    "photos";
-parts("au", []) ->
-    undefined;
-parts("au", Parts) ->
-   [First | Rest] = Parts,
-   au(First, Rest);
-parts("link", _Any) ->
-    "link";
-parts("cern", _Any) ->
-    "cern";
-parts("college", _Any) ->
-    "college";
-parts("pl", []) ->
-    undefined;
-parts("pl", Parts) ->
-   [First | Rest] = Parts,
-   pl(First, Rest);
-parts("as", []) ->
-    undefined;
-parts("as", Parts) ->
-   [First | Rest] = Parts,
-   as(First, Rest);
-parts("ph", []) ->
-    undefined;
-parts("ph", Parts) ->
-   [First | Rest] = Parts,
-   ph(First, Rest);
-parts("saarland", _Any) ->
-    "saarland";
-parts("gi", []) ->
-    undefined;
-parts("gi", Parts) ->
-   [First | Rest] = Parts,
-   gi(First, Rest);
-parts("pk", []) ->
-    undefined;
-parts("pk", Parts) ->
-   [First | Rest] = Parts,
-   pk(First, Rest);
-parts("camp", _Any) ->
-    "camp";
 parts("bs", []) ->
     undefined;
 parts("bs", Parts) ->
    [First | Rest] = Parts,
    bs(First, Rest);
-parts("sg", []) ->
-    undefined;
-parts("sg", Parts) ->
-   [First | Rest] = Parts,
-   sg(First, Rest);
-parts("yoga", _Any) ->
-    "yoga";
-parts("life", _Any) ->
-    "life";
-parts("ir", []) ->
-    undefined;
-parts("ir", Parts) ->
-   [First | Rest] = Parts,
-   ir(First, Rest);
-parts("williamhill", _Any) ->
-    "williamhill";
-parts("is", []) ->
-    undefined;
-parts("is", Parts) ->
-   [First | Rest] = Parts,
-   is(First, Rest);
-parts("lds", _Any) ->
-    "lds";
-parts("ong", _Any) ->
-    "ong";
-parts("marketing", _Any) ->
-    "marketing";
-parts("condos", _Any) ->
-    "condos";
-parts("firmdale", _Any) ->
-    "firmdale";
-parts("ovh", _Any) ->
-    "ovh";
-parts("kitchen", _Any) ->
-    "kitchen";
-parts("onl", _Any) ->
-    "onl";
-parts("education", _Any) ->
-    "education";
-parts("int", []) ->
-    undefined;
-parts("int", Parts) ->
-   [First | Rest] = Parts,
-   int(First, Rest);
-parts("lr", []) ->
-    undefined;
-parts("lr", Parts) ->
-   [First | Rest] = Parts,
-   lr(First, Rest);
-parts("vision", _Any) ->
-    "vision";
-parts("ae", []) ->
-    undefined;
-parts("ae", Parts) ->
-   [First | Rest] = Parts,
-   ae(First, Rest);
-parts("florist", _Any) ->
-    "florist";
-parts("tg", _Any) ->
-    "tg";
-parts("gmail", _Any) ->
-    "gmail";
-parts("eat", _Any) ->
-    "eat";
-parts("kn", []) ->
-    undefined;
-parts("kn", Parts) ->
-   [First | Rest] = Parts,
-   kn(First, Rest);
-parts("schmidt", _Any) ->
-    "schmidt";
-parts("capital", _Any) ->
-    "capital";
-parts("immobilien", _Any) ->
-    "immobilien";
-parts("kim", _Any) ->
-    "kim";
-parts("parts", _Any) ->
-    "parts";
-parts("bid", _Any) ->
-    "bid";
-parts("moe", _Any) ->
-    "moe";
-parts("dating", _Any) ->
-    "dating";
-parts("reisen", _Any) ->
-    "reisen";
-parts("tl", []) ->
-    undefined;
-parts("tl", Parts) ->
-   [First | Rest] = Parts,
-   tl(First, Rest);
-parts("wtf", _Any) ->
-    "wtf";
-parts("claims", _Any) ->
-    "claims";
-parts("ruhr", _Any) ->
-    "ruhr";
-parts("tf", _Any) ->
-    "tf";
-parts("xyz", _Any) ->
-    "xyz";
-parts("yokohama", _Any) ->
-    "yokohama";
-parts("gal", _Any) ->
-    "gal";
-parts("photo", _Any) ->
-    "photo";
-parts("voting", _Any) ->
-    "voting";
-parts("finance", _Any) ->
-    "finance";
-parts("se", []) ->
-    undefined;
-parts("se", Parts) ->
-   [First | Rest] = Parts,
-   se(First, Rest);
-parts("training", _Any) ->
-    "training";
-parts("gs", _Any) ->
-    "gs";
-parts("accountants", _Any) ->
-    "accountants";
-parts("fly", _Any) ->
-    "fly";
-parts("hm", _Any) ->
-    "hm";
-parts("productions", _Any) ->
-    "productions";
-parts("gh", []) ->
-    undefined;
-parts("gh", Parts) ->
-   [First | Rest] = Parts,
-   gh(First, Rest);
-parts("gallery", _Any) ->
-    "gallery";
-parts("km", []) ->
-    undefined;
-parts("km", Parts) ->
-   [First | Rest] = Parts,
-   km(First, Rest);
-parts("om", []) ->
-    undefined;
-parts("om", Parts) ->
-   [First | Rest] = Parts,
-   om(First, Rest);
-parts("eus", _Any) ->
-    "eus";
-parts("rentals", _Any) ->
-    "rentals";
-parts("directory", _Any) ->
-    "directory";
-parts("in", []) ->
-    undefined;
-parts("in", Parts) ->
-   [First | Rest] = Parts,
-   in(First, Rest);
-parts("mg", []) ->
-    undefined;
-parts("mg", Parts) ->
-   [First | Rest] = Parts,
-   mg(First, Rest);
-parts("nhk", _Any) ->
-    "nhk";
-parts("lc", []) ->
-    undefined;
-parts("lc", Parts) ->
-   [First | Rest] = Parts,
-   lc(First, Rest);
-parts("consulting", _Any) ->
-    "consulting";
-parts("insure", _Any) ->
-    "insure";
-parts("tattoo", _Any) ->
-    "tattoo";
-parts("events", _Any) ->
-    "events";
-parts("airforce", _Any) ->
-    "airforce";
-parts("toys", _Any) ->
-    "toys";
-parts("ly", []) ->
-    undefined;
-parts("ly", Parts) ->
-   [First | Rest] = Parts,
-   ly(First, Rest);
-parts("cash", _Any) ->
-    "cash";
-parts("gq", _Any) ->
-    "gq";
-parts("abogado", _Any) ->
-    "abogado";
-parts("report", _Any) ->
-    "report";
-parts("cz", []) ->
-    undefined;
-parts("cz", Parts) ->
-   [First | Rest] = Parts,
-   cz(First, Rest);
-parts("an", []) ->
-    undefined;
-parts("an", Parts) ->
-   [First | Rest] = Parts,
-   an(First, Rest);
-parts("sk", []) ->
-    undefined;
-parts("sk", Parts) ->
-   [First | Rest] = Parts,
-   sk(First, Rest);
-parts("miami", _Any) ->
-    "miami";
-parts("fi", []) ->
-    undefined;
-parts("fi", Parts) ->
-   [First | Rest] = Parts,
-   fi(First, Rest);
-parts("homes", _Any) ->
-    "homes";
-parts("frogans", _Any) ->
-    "frogans";
-parts("limo", _Any) ->
-    "limo";
-parts("ag", []) ->
-    undefined;
-parts("ag", Parts) ->
-   [First | Rest] = Parts,
-   ag(First, Rest);
-parts("pn", []) ->
-    undefined;
-parts("pn", Parts) ->
-   [First | Rest] = Parts,
-   pn(First, Rest);
-parts("mini", _Any) ->
-    "mini";
-parts("durban", _Any) ->
-    "durban";
-parts("space", _Any) ->
-    "space";
-parts("mortgage", _Any) ->
-    "mortgage";
-parts("direct", _Any) ->
-    "direct";
-parts("bm", []) ->
-    undefined;
-parts("bm", Parts) ->
-   [First | Rest] = Parts,
-   bm(First, Rest);
-parts("rw", []) ->
-    undefined;
-parts("rw", Parts) ->
-   [First | Rest] = Parts,
-   rw(First, Rest);
-parts("nf", []) ->
-    undefined;
-parts("nf", Parts) ->
-   [First | Rest] = Parts,
-   nf(First, Rest);
-parts("haus", _Any) ->
-    "haus";
-parts("media", _Any) ->
-    "media";
-parts("foundation", _Any) ->
-    "foundation";
-parts("builders", _Any) ->
-    "builders";
-parts("de", []) ->
-    undefined;
-parts("de", Parts) ->
-   [First | Rest] = Parts,
-   de(First, Rest);
-parts("rich", _Any) ->
-    "rich";
-parts("mr", []) ->
-    undefined;
-parts("mr", Parts) ->
-   [First | Rest] = Parts,
-   mr(First, Rest);
-parts("navy", _Any) ->
-    "navy";
-parts("physio", _Any) ->
-    "physio";
-parts("archi", _Any) ->
-    "archi";
-parts("bf", []) ->
-    undefined;
-parts("bf", Parts) ->
-   [First | Rest] = Parts,
-   bf(First, Rest);
-parts("gg", []) ->
-    undefined;
-parts("gg", Parts) ->
-   [First | Rest] = Parts,
-   gg(First, Rest);
-parts("ht", []) ->
-    undefined;
-parts("ht", Parts) ->
-   [First | Rest] = Parts,
-   ht(First, Rest);
-parts("menu", _Any) ->
-    "menu";
-parts("fo", _Any) ->
-    "fo";
-parts("industries", _Any) ->
-    "industries";
-parts("erni", _Any) ->
-    "erni";
-parts("jobs", _Any) ->
-    "jobs";
-parts("work", _Any) ->
-    "work";
-parts("aero", []) ->
-    undefined;
-parts("aero", Parts) ->
-   [First | Rest] = Parts,
-   aero(First, Rest);
-parts("agency", _Any) ->
-    "agency";
-parts("tips", _Any) ->
-    "tips";
-parts("bz", []) ->
-    undefined;
-parts("bz", Parts) ->
-   [First | Rest] = Parts,
-   bz(First, Rest);
-parts("cab", _Any) ->
-    "cab";
-parts("attorney", _Any) ->
-    "attorney";
-parts("tw", []) ->
-    undefined;
-parts("tw", Parts) ->
-   [First | Rest] = Parts,
-   tw(First, Rest);
-parts("shoes", _Any) ->
-    "shoes";
-parts("sc", []) ->
-    undefined;
-parts("sc", Parts) ->
-   [First | Rest] = Parts,
-   sc(First, Rest);
-parts("neustar", _Any) ->
-    "neustar";
-parts("pics", _Any) ->
-    "pics";
-parts("name", []) ->
-    undefined;
-parts("name", Parts) ->
-   [First | Rest] = Parts,
-   name(First, Rest);
-parts("nra", _Any) ->
-    "nra";
-parts("id", []) ->
-    undefined;
-parts("id", Parts) ->
-   [First | Rest] = Parts,
-   id(First, Rest);
-parts("trade", _Any) ->
-    "trade";
-parts("christmas", _Any) ->
-    "christmas";
-parts("reise", _Any) ->
-    "reise";
-parts("md", _Any) ->
-    "md";
-parts("sd", []) ->
-    undefined;
-parts("sd", Parts) ->
-   [First | Rest] = Parts,
-   sd(First, Rest);
-parts("works", _Any) ->
-    "works";
-parts("tt", []) ->
-    undefined;
-parts("tt", Parts) ->
-   [First | Rest] = Parts,
-   tt(First, Rest);
-parts("wtc", _Any) ->
-    "wtc";
-parts("mc", []) ->
-    undefined;
-parts("mc", Parts) ->
-   [First | Rest] = Parts,
-   mc(First, Rest);
-parts("mn", []) ->
-    undefined;
-parts("mn", Parts) ->
-   [First | Rest] = Parts,
-   mn(First, Rest);
-parts("sy", []) ->
-    undefined;
-parts("sy", Parts) ->
-   [First | Rest] = Parts,
-   sy(First, Rest);
-parts("organic", _Any) ->
-    "organic";
-parts("tn", []) ->
-    undefined;
-parts("tn", Parts) ->
-   [First | Rest] = Parts,
-   tn(First, Rest);
-parts("aq", _Any) ->
-    "aq";
-parts("global", _Any) ->
-    "global";
-parts("wme", _Any) ->
-    "wme";
-parts("discount", _Any) ->
-    "discount";
-parts("mil", _Any) ->
-    "mil";
-parts("coffee", _Any) ->
-    "coffee";
-parts("scot", _Any) ->
-    "scot";
-parts("ug", []) ->
-    undefined;
-parts("ug", Parts) ->
-   [First | Rest] = Parts,
-   ug(First, Rest);
-parts("holdings", _Any) ->
-    "holdings";
-parts("lacaixa", _Any) ->
-    "lacaixa";
-parts("nrw", _Any) ->
-    "nrw";
-parts("kred", _Any) ->
-    "kred";
-parts("schule", _Any) ->
-    "schule";
-parts("new", _Any) ->
-    "new";
-parts("ga", _Any) ->
-    "ga";
-parts("suzuki", _Any) ->
-    "suzuki";
-parts("nyc", _Any) ->
-    "nyc";
-parts("tc", _Any) ->
-    "tc";
-parts("how", _Any) ->
-    "how";
-parts("samsung", _Any) ->
-    "samsung";
-parts("vg", _Any) ->
-    "vg";
-parts("shiksha", _Any) ->
-    "shiksha";
-parts("sn", []) ->
-    undefined;
-parts("sn", Parts) ->
-   [First | Rest] = Parts,
-   sn(First, Rest);
-parts("fishing", _Any) ->
-    "fishing";
-parts("plumbing", _Any) ->
-    "plumbing";
-parts("tv", []) ->
-    undefined;
-parts("tv", Parts) ->
-   [First | Rest] = Parts,
-   tv(First, Rest);
-parts("center", _Any) ->
-    "center";
-parts("surgery", _Any) ->
-    "surgery";
-parts("tools", _Any) ->
-    "tools";
-parts("cf", []) ->
-    undefined;
-parts("cf", Parts) ->
-   [First | Rest] = Parts,
-   cf(First, Rest);
-parts("eu", _Any) ->
-    "eu";
-parts("rehab", _Any) ->
-    "rehab";
-parts("limited", _Any) ->
-    "limited";
-parts("kiwi", _Any) ->
-    "kiwi";
-parts("uno", _Any) ->
-    "uno";
-parts("sm", _Any) ->
-    "sm";
-parts("rodeo", _Any) ->
-    "rodeo";
-parts("toshiba", _Any) ->
-    "toshiba";
-parts("digital", _Any) ->
-    "digital";
-parts("dentist", _Any) ->
-    "dentist";
-parts("deals", _Any) ->
-    "deals";
-parts("tax", _Any) ->
-    "tax";
-parts("pink", _Any) ->
-    "pink";
-parts("vc", []) ->
-    undefined;
-parts("vc", Parts) ->
-   [First | Rest] = Parts,
-   vc(First, Rest);
-parts("mq", _Any) ->
-    "mq";
-parts("luxe", _Any) ->
-    "luxe";
-parts("ba", []) ->
-    undefined;
-parts("ba", Parts) ->
-   [First | Rest] = Parts,
-   ba(First, Rest);
-parts("brussels", _Any) ->
-    "brussels";
-parts("today", _Any) ->
-    "today";
-parts("hamburg", _Any) ->
-    "hamburg";
-parts("do", []) ->
-    undefined;
-parts("do", Parts) ->
-   [First | Rest] = Parts,
-   do(First, Rest);
-parts("net", []) ->
-    undefined;
-parts("net", Parts) ->
-   [First | Rest] = Parts,
-   net(First, Rest);
-parts("meet", _Any) ->
-    "meet";
-parts("globo", _Any) ->
-    "globo";
-parts("ai", []) ->
-    undefined;
-parts("ai", Parts) ->
-   [First | Rest] = Parts,
-   ai(First, Rest);
-parts("army", _Any) ->
-    "army";
-parts("crs", _Any) ->
-    "crs";
-parts("ad", []) ->
-    undefined;
-parts("ad", Parts) ->
-   [First | Rest] = Parts,
-   ad(First, Rest);
-parts("uol", _Any) ->
-    "uol";
-parts("hu", []) ->
-    undefined;
-parts("hu", Parts) ->
-   [First | Rest] = Parts,
-   hu(First, Rest);
-parts("soy", _Any) ->
-    "soy";
-parts("iq", []) ->
-    undefined;
-parts("iq", Parts) ->
-   [First | Rest] = Parts,
-   iq(First, Rest);
-parts("supply", _Any) ->
-    "supply";
-parts("church", _Any) ->
-    "church";
-parts("investments", _Any) ->
-    "investments";
-parts("wedding", _Any) ->
-    "wedding";
-parts("pictures", _Any) ->
-    "pictures";
-parts("cn", []) ->
-    undefined;
-parts("cn", Parts) ->
-   [First | Rest] = Parts,
-   cn(First, Rest);
-parts("glass", _Any) ->
-    "glass";
-parts("everbank", _Any) ->
-    "everbank";
-parts("cm", []) ->
-    undefined;
-parts("cm", Parts) ->
-   [First | Rest] = Parts,
-   cm(First, Rest);
-parts("ki", []) ->
-    undefined;
-parts("ki", Parts) ->
-   [First | Rest] = Parts,
-   ki(First, Rest);
-parts("technology", _Any) ->
-    "technology";
-parts("frl", _Any) ->
-    "frl";
-parts("capetown", _Any) ->
-    "capetown";
-parts("casa", _Any) ->
-    "casa";
-parts("melbourne", _Any) ->
-    "melbourne";
-parts("villas", _Any) ->
-    "villas";
-parts("contractors", _Any) ->
-    "contractors";
-parts("recipes", _Any) ->
-    "recipes";
-parts("dm", []) ->
-    undefined;
-parts("dm", Parts) ->
-   [First | Rest] = Parts,
-   dm(First, Rest);
-parts("viajes", _Any) ->
-    "viajes";
-parts("lgbt", _Any) ->
-    "lgbt";
-parts("tj", []) ->
-    undefined;
-parts("tj", Parts) ->
-   [First | Rest] = Parts,
-   tj(First, Rest);
-parts("tienda", _Any) ->
-    "tienda";
-parts("singles", _Any) ->
-    "singles";
-parts("gratis", _Any) ->
-    "gratis";
-parts("la", []) ->
-    undefined;
-parts("la", Parts) ->
-   [First | Rest] = Parts,
-   la(First, Rest);
-parts("fund", _Any) ->
-    "fund";
-parts("cv", []) ->
-    undefined;
-parts("cv", Parts) ->
-   [First | Rest] = Parts,
-   cv(First, Rest);
-parts("io", []) ->
-    undefined;
-parts("io", Parts) ->
-   [First | Rest] = Parts,
-   io(First, Rest);
-parts("madrid", _Any) ->
-    "madrid";
-parts("cx", []) ->
-    undefined;
-parts("cx", Parts) ->
-   [First | Rest] = Parts,
-   cx(First, Rest);
-parts("org", []) ->
-    undefined;
-parts("org", Parts) ->
-   [First | Rest] = Parts,
-   org(First, Rest);
-parts("property", _Any) ->
-    "property";
-parts("me", []) ->
-    undefined;
-parts("me", Parts) ->
-   [First | Rest] = Parts,
-   me(First, Rest);
-parts("codes", _Any) ->
-    "codes";
-parts("cuisinella", _Any) ->
-    "cuisinella";
-parts("tr", []) ->
-    undefined;
-parts("tr", Parts) ->
-   [First | Rest] = Parts,
-   tr(First, Rest);
-parts("gn", []) ->
-    undefined;
-parts("gn", Parts) ->
-   [First | Rest] = Parts,
-   gn(First, Rest);
-parts("engineering", _Any) ->
-    "engineering";
-parts("town", _Any) ->
-    "town";
-parts("hr", []) ->
-    undefined;
-parts("hr", Parts) ->
-   [First | Rest] = Parts,
-   hr(First, Rest);
-parts("juegos", _Any) ->
-    "juegos";
-parts("seat", _Any) ->
-    "seat";
-parts("sr", _Any) ->
-    "sr";
-parts("credit", _Any) ->
-    "credit";
-parts("pw", []) ->
-    undefined;
-parts("pw", Parts) ->
-   [First | Rest] = Parts,
-   pw(First, Rest);
-parts("at", []) ->
-    undefined;
-parts("at", Parts) ->
-   [First | Rest] = Parts,
-   at(First, Rest);
-parts("rio", _Any) ->
-    "rio";
-parts("rs", []) ->
-    undefined;
-parts("rs", Parts) ->
-   [First | Rest] = Parts,
-   rs(First, Rest);
-parts("sohu", _Any) ->
-    "sohu";
-parts("al", []) ->
-    undefined;
-parts("al", Parts) ->
-   [First | Rest] = Parts,
-   al(First, Rest);
-parts("ma", []) ->
-    undefined;
-parts("ma", Parts) ->
-   [First | Rest] = Parts,
-   ma(First, Rest);
-parts("futbol", _Any) ->
-    "futbol";
-parts("solar", _Any) ->
-    "solar";
-parts("mp", _Any) ->
-    "mp";
-parts("country", _Any) ->
-    "country";
-parts("ms", []) ->
-    undefined;
-parts("ms", Parts) ->
-   [First | Rest] = Parts,
-   ms(First, Rest);
-parts("gb", _Any) ->
-    "gb";
-parts("channel", _Any) ->
-    "channel";
-parts("cw", []) ->
-    undefined;
-parts("cw", Parts) ->
-   [First | Rest] = Parts,
-   cw(First, Rest);
-parts("repair", _Any) ->
-    "repair";
-parts("ml", []) ->
-    undefined;
-parts("ml", Parts) ->
-   [First | Rest] = Parts,
-   ml(First, Rest);
-parts("co", []) ->
-    undefined;
-parts("co", Parts) ->
-   [First | Rest] = Parts,
-   co(First, Rest);
-parts("monash", _Any) ->
-    "monash";
-parts("lawyer", _Any) ->
-    "lawyer";
-parts("ink", _Any) ->
-    "ink";
-parts("cooking", _Any) ->
-    "cooking";
-parts("edu", _Any) ->
-    "edu";
-parts("xxx", _Any) ->
-    "xxx";
-parts("yachts", _Any) ->
-    "yachts";
-parts("us", []) ->
-    undefined;
-parts("us", Parts) ->
-   [First | Rest] = Parts,
-   us(First, Rest);
-parts("bb", []) ->
-    undefined;
-parts("bb", Parts) ->
-   [First | Rest] = Parts,
-   bb(First, Rest);
-parts("business", _Any) ->
-    "business";
-parts("bt", []) ->
-    undefined;
-parts("bt", Parts) ->
-   [First | Rest] = Parts,
-   bt(First, Rest);
-parts("hiphop", _Any) ->
-    "hiphop";
-parts("su", _Any) ->
-    "su";
-parts("lotto", _Any) ->
-    "lotto";
-parts("active", _Any) ->
-    "active";
-parts("ng", []) ->
-    undefined;
-parts("ng", Parts) ->
-   [First | Rest] = Parts,
-   ng(First, Rest);
-parts("va", _Any) ->
-    "va";
-parts("dnp", _Any) ->
-    "dnp";
-parts("sexy", _Any) ->
-    "sexy";
-parts("democrat", _Any) ->
-    "democrat";
-parts("diamonds", _Any) ->
-    "diamonds";
-parts("rsvp", _Any) ->
-    "rsvp";
-parts("mobi", _Any) ->
-    "mobi";
 parts("lk", []) ->
     undefined;
 parts("lk", Parts) ->
    [First | Rest] = Parts,
    lk(First, Rest);
-parts("no", []) ->
+parts("bi", []) ->
     undefined;
-parts("no", Parts) ->
+parts("bi", Parts) ->
    [First | Rest] = Parts,
-   no(First, Rest);
-parts("sl", []) ->
+   bi(First, Rest);
+parts("mv", []) ->
     undefined;
-parts("sl", Parts) ->
+parts("mv", Parts) ->
    [First | Rest] = Parts,
-   sl(First, Rest);
-parts("gripe", _Any) ->
-    "gripe";
-parts("vet", _Any) ->
-    "vet";
-parts("land", _Any) ->
-    "land";
-parts("bio", _Any) ->
-    "bio";
-parts("tp", _Any) ->
-    "tp";
-parts("my", []) ->
-    undefined;
-parts("my", Parts) ->
-   [First | Rest] = Parts,
-   my(First, Rest);
-parts("services", _Any) ->
-    "services";
-parts("supplies", _Any) ->
-    "supplies";
-parts("gp", []) ->
-    undefined;
-parts("gp", Parts) ->
-   [First | Rest] = Parts,
-   gp(First, Rest);
-parts("wang", _Any) ->
-    "wang";
-parts("youtube", _Any) ->
-    "youtube";
-parts("kp", []) ->
-    undefined;
-parts("kp", Parts) ->
-   [First | Rest] = Parts,
-   kp(First, Rest);
-parts("az", []) ->
-    undefined;
-parts("az", Parts) ->
-   [First | Rest] = Parts,
-   az(First, Rest);
-parts("mw", []) ->
-    undefined;
-parts("mw", Parts) ->
-   [First | Rest] = Parts,
-   mw(First, Rest);
-parts("feedback", _Any) ->
-    "feedback";
+   mv(First, Rest);
 parts("support", _Any) ->
     "support";
-parts("sb", []) ->
+parts("quebec", _Any) ->
+    "quebec";
+parts("capital", _Any) ->
+    "capital";
+parts("directory", _Any) ->
+    "directory";
+parts("td", []) ->
     undefined;
-parts("sb", Parts) ->
+parts("td", Parts) ->
    [First | Rest] = Parts,
-   sb(First, Rest);
-parts("place", _Any) ->
-    "place";
-parts("estate", _Any) ->
-    "estate";
-parts("bauhaus", _Any) ->
-    "bauhaus";
-parts("network", _Any) ->
-    "network";
-parts("es", []) ->
+   td(First, Rest);
+parts("frogans", _Any) ->
+    "frogans";
+parts("cl", []) ->
     undefined;
-parts("es", Parts) ->
+parts("cl", Parts) ->
    [First | Rest] = Parts,
-   es(First, Rest);
-parts("webcam", _Any) ->
-    "webcam";
-parts("kg", []) ->
+   cl(First, Rest);
+parts("reise", _Any) ->
+    "reise";
+parts("cab", _Any) ->
+    "cab";
+parts("ruhr", _Any) ->
+    "ruhr";
+parts("sh", []) ->
     undefined;
-parts("kg", Parts) ->
+parts("sh", Parts) ->
    [First | Rest] = Parts,
-   kg(First, Rest);
-parts("bo", []) ->
+   sh(First, Rest);
+parts("wf", _Any) ->
+    "wf";
+parts("wales", _Any) ->
+    "wales";
+parts("limited", _Any) ->
+    "limited";
+parts("gov", _Any) ->
+    "gov";
+parts("nyc", _Any) ->
+    "nyc";
+parts("iwc", _Any) ->
+    "iwc";
+parts("club", _Any) ->
+    "club";
+parts("bloomberg", _Any) ->
+    "bloomberg";
+parts("mr", []) ->
     undefined;
-parts("bo", Parts) ->
+parts("mr", Parts) ->
    [First | Rest] = Parts,
-   bo(First, Rest);
-parts("academy", _Any) ->
-    "academy";
-parts("dance", _Any) ->
-    "dance";
-parts("otsuka", _Any) ->
-    "otsuka";
-parts("krd", _Any) ->
-    "krd";
-parts("farm", _Any) ->
-    "farm";
+   mr(First, Rest);
+parts("lb", []) ->
+    undefined;
+parts("lb", Parts) ->
+   [First | Rest] = Parts,
+   lb(First, Rest);
+parts("pics", _Any) ->
+    "pics";
 parts("ee", []) ->
     undefined;
 parts("ee", Parts) ->
    [First | Rest] = Parts,
    ee(First, Rest);
-parts("ren", _Any) ->
-    "ren";
+parts("airforce", _Any) ->
+    "airforce";
+parts("reviews", _Any) ->
+    "reviews";
+parts("ls", []) ->
+    undefined;
+parts("ls", Parts) ->
+   [First | Rest] = Parts,
+   ls(First, Rest);
+parts("cartier", _Any) ->
+    "cartier";
+parts("tw", []) ->
+    undefined;
+parts("tw", Parts) ->
+   [First | Rest] = Parts,
+   tw(First, Rest);
+parts("durban", _Any) ->
+    "durban";
+parts("republican", _Any) ->
+    "republican";
+parts("ve", []) ->
+    undefined;
+parts("ve", Parts) ->
+   [First | Rest] = Parts,
+   ve(First, Rest);
+parts("gw", _Any) ->
+    "gw";
+parts("yandex", _Any) ->
+    "yandex";
+parts("crs", _Any) ->
+    "crs";
 parts("dj", _Any) ->
     "dj";
-parts("bv", _Any) ->
-    "bv";
-parts("ifm", _Any) ->
-    "ifm";
-parts("eg", []) ->
+parts("ky", []) ->
     undefined;
-parts("eg", Parts) ->
+parts("ky", Parts) ->
    [First | Rest] = Parts,
-   eg(First, Rest);
-parts("whoswho", _Any) ->
-    "whoswho";
-parts("gop", _Any) ->
-    "gop";
-parts("sz", []) ->
+   ky(First, Rest);
+parts("vg", _Any) ->
+    "vg";
+parts("vegas", _Any) ->
+    "vegas";
+parts("ua", []) ->
     undefined;
-parts("sz", Parts) ->
+parts("ua", Parts) ->
    [First | Rest] = Parts,
-   sz(First, Rest);
-parts("vodka", _Any) ->
-    "vodka";
-parts("cologne", _Any) ->
-    "cologne";
-parts("sca", _Any) ->
-    "sca";
-parts("host", _Any) ->
-    "host";
-parts("website", _Any) ->
-    "website";
-parts("bike", _Any) ->
-    "bike";
+   ua(First, Rest);
+parts("gmx", _Any) ->
+    "gmx";
+parts("camera", _Any) ->
+    "camera";
+parts("bb", []) ->
+    undefined;
+parts("bb", Parts) ->
+   [First | Rest] = Parts,
+   bb(First, Rest);
+parts("cz", []) ->
+    undefined;
+parts("cz", Parts) ->
+   [First | Rest] = Parts,
+   cz(First, Rest);
+parts("email", _Any) ->
+    "email";
+parts("emerck", _Any) ->
+    "emerck";
+parts("ong", _Any) ->
+    "ong";
+parts("py", []) ->
+    undefined;
+parts("py", Parts) ->
+   [First | Rest] = Parts,
+   py(First, Rest);
+parts("au", []) ->
+    undefined;
+parts("au", Parts) ->
+   [First | Rest] = Parts,
+   au(First, Rest);
+parts("today", _Any) ->
+    "today";
+parts("ng", []) ->
+    undefined;
+parts("ng", Parts) ->
+   [First | Rest] = Parts,
+   ng(First, Rest);
+parts("lgbt", _Any) ->
+    "lgbt";
+parts("ge", []) ->
+    undefined;
+parts("ge", Parts) ->
+   [First | Rest] = Parts,
+   ge(First, Rest);
+parts("fan", _Any) ->
+    "fan";
+parts("exchange", _Any) ->
+    "exchange";
+parts("gb", _Any) ->
+    "gb";
+parts("software", _Any) ->
+    "software";
+parts("fi", []) ->
+    undefined;
+parts("fi", Parts) ->
+   [First | Rest] = Parts,
+   fi(First, Rest);
+parts("paris", _Any) ->
+    "paris";
+parts("dk", []) ->
+    undefined;
+parts("dk", Parts) ->
+   [First | Rest] = Parts,
+   dk(First, Rest);
+parts("singles", _Any) ->
+    "singles";
+parts("gent", _Any) ->
+    "gent";
+parts("villas", _Any) ->
+    "villas";
+parts("km", []) ->
+    undefined;
+parts("km", Parts) ->
+   [First | Rest] = Parts,
+   km(First, Rest);
+parts("my", []) ->
+    undefined;
+parts("my", Parts) ->
+   [First | Rest] = Parts,
+   my(First, Rest);
+parts("poker", _Any) ->
+    "poker";
+parts("international", _Any) ->
+    "international";
+parts("gr", []) ->
+    undefined;
+parts("gr", Parts) ->
+   [First | Rest] = Parts,
+   gr(First, Rest);
+parts("lc", []) ->
+    undefined;
+parts("lc", Parts) ->
+   [First | Rest] = Parts,
+   lc(First, Rest);
+parts("pm", _Any) ->
+    "pm";
+parts("hosting", _Any) ->
+    "hosting";
+parts("capetown", _Any) ->
+    "capetown";
+parts("uy", []) ->
+    undefined;
+parts("uy", Parts) ->
+   [First | Rest] = Parts,
+   uy(First, Rest);
+parts("tax", _Any) ->
+    "tax";
+parts("mh", _Any) ->
+    "mh";
+parts("ax", _Any) ->
+    "ax";
+parts("ml", []) ->
+    undefined;
+parts("ml", Parts) ->
+   [First | Rest] = Parts,
+   ml(First, Rest);
+parts("by", []) ->
+    undefined;
+parts("by", Parts) ->
+   [First | Rest] = Parts,
+   by(First, Rest);
+parts("meme", _Any) ->
+    "meme";
+parts("jetzt", _Any) ->
+    "jetzt";
+parts("ryukyu", _Any) ->
+    "ryukyu";
+parts("vu", []) ->
+    undefined;
+parts("vu", Parts) ->
+   [First | Rest] = Parts,
+   vu(First, Rest);
+parts("gl", _Any) ->
+    "gl";
+parts("rest", _Any) ->
+    "rest";
+parts("coop", _Any) ->
+    "coop";
+parts("ms", []) ->
+    undefined;
+parts("ms", Parts) ->
+   [First | Rest] = Parts,
+   ms(First, Rest);
+parts("gift", _Any) ->
+    "gift";
+parts("ne", _Any) ->
+    "ne";
+parts("eu", _Any) ->
+    "eu";
+parts("cd", []) ->
+    undefined;
+parts("cd", Parts) ->
+   [First | Rest] = Parts,
+   cd(First, Rest);
+parts("archi", _Any) ->
+    "archi";
+parts("reisen", _Any) ->
+    "reisen";
+parts("industries", _Any) ->
+    "industries";
+parts("voto", _Any) ->
+    "voto";
+parts("space", _Any) ->
+    "space";
+parts("th", []) ->
+    undefined;
+parts("th", Parts) ->
+   [First | Rest] = Parts,
+   th(First, Rest);
+parts("best", _Any) ->
+    "best";
+parts("kiwi", _Any) ->
+    "kiwi";
+parts("realtor", _Any) ->
+    "realtor";
+parts("ba", []) ->
+    undefined;
+parts("ba", Parts) ->
+   [First | Rest] = Parts,
+   ba(First, Rest);
+parts("sew", _Any) ->
+    "sew";
+parts("vlaanderen", _Any) ->
+    "vlaanderen";
+parts("taipei", _Any) ->
+    "taipei";
+parts("casa", _Any) ->
+    "casa";
+parts("luxe", _Any) ->
+    "luxe";
+parts("uol", _Any) ->
+    "uol";
+parts("af", []) ->
+    undefined;
+parts("af", Parts) ->
+   [First | Rest] = Parts,
+   af(First, Rest);
+parts("parts", _Any) ->
+    "parts";
+parts("world", _Any) ->
+    "world";
+parts("wme", _Any) ->
+    "wme";
+parts("onl", _Any) ->
+    "onl";
+parts("mx", []) ->
+    undefined;
+parts("mx", Parts) ->
+   [First | Rest] = Parts,
+   mx(First, Rest);
+parts("sap", _Any) ->
+    "sap";
+parts("montblanc", _Any) ->
+    "montblanc";
+parts("zone", _Any) ->
+    "zone";
+parts("pe", []) ->
+    undefined;
+parts("pe", Parts) ->
+   [First | Rest] = Parts,
+   pe(First, Rest);
 parts("be", []) ->
     undefined;
 parts("be", Parts) ->
    [First | Rest] = Parts,
    be(First, Rest);
-parts("gf", _Any) ->
-    "gf";
+parts("ch", []) ->
+    undefined;
+parts("ch", Parts) ->
+   [First | Rest] = Parts,
+   ch(First, Rest);
+parts("pk", []) ->
+    undefined;
+parts("pk", Parts) ->
+   [First | Rest] = Parts,
+   pk(First, Rest);
+parts("cba", _Any) ->
+    "cba";
+parts("ca", []) ->
+    undefined;
+parts("ca", Parts) ->
+   [First | Rest] = Parts,
+   ca(First, Rest);
+parts("gt", []) ->
+    undefined;
+parts("gt", Parts) ->
+   [First | Rest] = Parts,
+   gt(First, Rest);
+parts("scb", _Any) ->
+    "scb";
+parts("media", _Any) ->
+    "media";
+parts("flights", _Any) ->
+    "flights";
+parts("lease", _Any) ->
+    "lease";
+parts("productions", _Any) ->
+    "productions";
+parts("bf", []) ->
+    undefined;
+parts("bf", Parts) ->
+   [First | Rest] = Parts,
+   bf(First, Rest);
+parts("autos", _Any) ->
+    "autos";
+parts("mt", []) ->
+    undefined;
+parts("mt", Parts) ->
+   [First | Rest] = Parts,
+   mt(First, Rest);
+parts("aq", _Any) ->
+    "aq";
+parts("an", []) ->
+    undefined;
+parts("an", Parts) ->
+   [First | Rest] = Parts,
+   an(First, Rest);
+parts("bt", []) ->
+    undefined;
+parts("bt", Parts) ->
+   [First | Rest] = Parts,
+   bt(First, Rest);
+parts("financial", _Any) ->
+    "financial";
+parts("cooking", _Any) ->
+    "cooking";
 parts("cg", _Any) ->
     "cg";
-parts("fish", _Any) ->
-    "fish";
-parts("fitness", _Any) ->
-    "fitness";
+parts("cheap", _Any) ->
+    "cheap";
+parts("asia", _Any) ->
+    "asia";
+parts("ren", _Any) ->
+    "ren";
+parts("jobs", _Any) ->
+    "jobs";
+parts("bnl", _Any) ->
+    "bnl";
+parts("cm", []) ->
+    undefined;
+parts("cm", Parts) ->
+   [First | Rest] = Parts,
+   cm(First, Rest);
+parts("vodka", _Any) ->
+    "vodka";
+parts("gle", _Any) ->
+    "gle";
+parts("pohl", _Any) ->
+    "pohl";
+parts("al", []) ->
+    undefined;
+parts("al", Parts) ->
+   [First | Rest] = Parts,
+   al(First, Rest);
+parts("oracle", _Any) ->
+    "oracle";
+parts("sz", []) ->
+    undefined;
+parts("sz", Parts) ->
+   [First | Rest] = Parts,
+   sz(First, Rest);
+parts("br", []) ->
+    undefined;
+parts("br", Parts) ->
+   [First | Rest] = Parts,
+   br(First, Rest);
+parts("hamburg", _Any) ->
+    "hamburg";
+parts("dz", []) ->
+    undefined;
+parts("dz", Parts) ->
+   [First | Rest] = Parts,
+   dz(First, Rest);
+parts("tokyo", _Any) ->
+    "tokyo";
+parts("aquarelle", _Any) ->
+    "aquarelle";
+parts("bz", []) ->
+    undefined;
+parts("bz", Parts) ->
+   [First | Rest] = Parts,
+   bz(First, Rest);
+parts("kg", []) ->
+    undefined;
+parts("kg", Parts) ->
+   [First | Rest] = Parts,
+   kg(First, Rest);
+parts("hk", []) ->
+    undefined;
+parts("hk", Parts) ->
+   [First | Rest] = Parts,
+   hk(First, Rest);
+parts("zip", _Any) ->
+    "zip";
+parts("exposed", _Any) ->
+    "exposed";
+parts("hiv", _Any) ->
+    "hiv";
+parts("center", _Any) ->
+    "center";
+parts("ma", []) ->
+    undefined;
+parts("ma", Parts) ->
+   [First | Rest] = Parts,
+   ma(First, Rest);
+parts("sy", []) ->
+    undefined;
+parts("sy", Parts) ->
+   [First | Rest] = Parts,
+   sy(First, Rest);
+parts("budapest", _Any) ->
+    "budapest";
+parts("gives", _Any) ->
+    "gives";
+parts("abogado", _Any) ->
+    "abogado";
+parts("link", _Any) ->
+    "link";
+parts("cv", []) ->
+    undefined;
+parts("cv", Parts) ->
+   [First | Rest] = Parts,
+   cv(First, Rest);
+parts("supply", _Any) ->
+    "supply";
+parts("mormon", _Any) ->
+    "mormon";
+parts("sexy", _Any) ->
+    "sexy";
+parts("sc", []) ->
+    undefined;
+parts("sc", Parts) ->
+   [First | Rest] = Parts,
+   sc(First, Rest);
+parts("buzz", _Any) ->
+    "buzz";
+parts("tl", []) ->
+    undefined;
+parts("tl", Parts) ->
+   [First | Rest] = Parts,
+   tl(First, Rest);
+parts("ceo", _Any) ->
+    "ceo";
+parts("as", []) ->
+    undefined;
+parts("as", Parts) ->
+   [First | Rest] = Parts,
+   as(First, Rest);
+parts("yoga", _Any) ->
+    "yoga";
+parts("doosan", _Any) ->
+    "doosan";
+parts("cf", []) ->
+    undefined;
+parts("cf", Parts) ->
+   [First | Rest] = Parts,
+   cf(First, Rest);
+parts("careers", _Any) ->
+    "careers";
+parts("nc", []) ->
+    undefined;
+parts("nc", Parts) ->
+   [First | Rest] = Parts,
+   nc(First, Rest);
+parts("land", _Any) ->
+    "land";
+parts("tm", []) ->
+    undefined;
+parts("tm", Parts) ->
+   [First | Rest] = Parts,
+   tm(First, Rest);
+parts("tr", []) ->
+    undefined;
+parts("tr", Parts) ->
+   [First | Rest] = Parts,
+   tr(First, Rest);
+parts("guide", _Any) ->
+    "guide";
+parts("pa", []) ->
+    undefined;
+parts("pa", Parts) ->
+   [First | Rest] = Parts,
+   pa(First, Rest);
+parts("moscow", _Any) ->
+    "moscow";
+parts("build", _Any) ->
+    "build";
+parts("dm", []) ->
+    undefined;
+parts("dm", Parts) ->
+   [First | Rest] = Parts,
+   dm(First, Rest);
+parts("ae", []) ->
+    undefined;
+parts("ae", Parts) ->
+   [First | Rest] = Parts,
+   ae(First, Rest);
+parts("consulting", _Any) ->
+    "consulting";
+parts("nissan", _Any) ->
+    "nissan";
+parts("wien", _Any) ->
+    "wien";
+parts("bar", _Any) ->
+    "bar";
+parts("wtc", _Any) ->
+    "wtc";
+parts("bcn", _Any) ->
+    "bcn";
+parts("business", _Any) ->
+    "business";
+parts("cat", _Any) ->
+    "cat";
+parts("how", _Any) ->
+    "how";
+parts("bzh", _Any) ->
+    "bzh";
+parts("bh", []) ->
+    undefined;
+parts("bh", Parts) ->
+   [First | Rest] = Parts,
+   bh(First, Rest);
+parts("travel", _Any) ->
+    "travel";
+parts("cash", _Any) ->
+    "cash";
+parts("viajes", _Any) ->
+    "viajes";
+parts("foundation", _Any) ->
+    "foundation";
+parts("nz", []) ->
+    undefined;
+parts("nz", Parts) ->
+   [First | Rest] = Parts,
+   nz(First, Rest);
+parts("surgery", _Any) ->
+    "surgery";
+parts("condos", _Any) ->
+    "condos";
+parts("sv", []) ->
+    undefined;
+parts("sv", Parts) ->
+   [First | Rest] = Parts,
+   sv(First, Rest);
+parts("engineering", _Any) ->
+    "engineering";
+parts("digital", _Any) ->
+    "digital";
+parts("ngo", _Any) ->
+    "ngo";
+parts("cw", []) ->
+    undefined;
+parts("cw", Parts) ->
+   [First | Rest] = Parts,
+   cw(First, Rest);
+parts("hn", []) ->
+    undefined;
+parts("hn", Parts) ->
+   [First | Rest] = Parts,
+   hn(First, Rest);
+parts("webcam", _Any) ->
+    "webcam";
+parts("shriram", _Any) ->
+    "shriram";
+parts("diamonds", _Any) ->
+    "diamonds";
+parts("fund", _Any) ->
+    "fund";
+parts("hm", _Any) ->
+    "hm";
+parts("rentals", _Any) ->
+    "rentals";
+parts("amsterdam", _Any) ->
+    "amsterdam";
+parts("beer", _Any) ->
+    "beer";
+parts("boo", _Any) ->
+    "boo";
+parts("museum", []) ->
+    undefined;
+parts("museum", Parts) ->
+   [First | Rest] = Parts,
+   museum(First, Rest);
+parts("pt", []) ->
+    undefined;
+parts("pt", Parts) ->
+   [First | Rest] = Parts,
+   pt(First, Rest);
+parts("google", _Any) ->
+    "google";
+parts("homes", _Any) ->
+    "homes";
+parts("vn", []) ->
+    undefined;
+parts("vn", Parts) ->
+   [First | Rest] = Parts,
+   vn(First, Rest);
+parts("credit", _Any) ->
+    "credit";
+parts("place", _Any) ->
+    "place";
+parts("yokohama", _Any) ->
+    "yokohama";
+parts("do", []) ->
+    undefined;
+parts("do", Parts) ->
+   [First | Rest] = Parts,
+   do(First, Rest);
+parts("rio", _Any) ->
+    "rio";
+parts("na", []) ->
+    undefined;
+parts("na", Parts) ->
+   [First | Rest] = Parts,
+   na(First, Rest);
+parts("org", []) ->
+    undefined;
+parts("org", Parts) ->
+   [First | Rest] = Parts,
+   org(First, Rest);
+parts("christmas", _Any) ->
+    "christmas";
+parts("insure", _Any) ->
+    "insure";
+parts("abbott", _Any) ->
+    "abbott";
+parts("ventures", _Any) ->
+    "ventures";
+parts("okinawa", _Any) ->
+    "okinawa";
+parts("nu", []) ->
+    undefined;
+parts("nu", Parts) ->
+   [First | Rest] = Parts,
+   nu(First, Rest);
+parts("commbank", _Any) ->
+    "commbank";
+parts("gs", _Any) ->
+    "gs";
+parts("melbourne", _Any) ->
+    "melbourne";
+parts("uno", _Any) ->
+    "uno";
+parts("tt", []) ->
+    undefined;
+parts("tt", Parts) ->
+   [First | Rest] = Parts,
+   tt(First, Rest);
 parts("luxury", _Any) ->
     "luxury";
+parts("az", []) ->
+    undefined;
+parts("az", Parts) ->
+   [First | Rest] = Parts,
+   az(First, Rest);
+parts("ltda", _Any) ->
+    "ltda";
+parts("sm", _Any) ->
+    "sm";
+parts("erni", _Any) ->
+    "erni";
+parts("rsvp", _Any) ->
+    "rsvp";
+parts("arpa", []) ->
+    undefined;
+parts("arpa", Parts) ->
+   [First | Rest] = Parts,
+   arpa(First, Rest);
+parts("builders", _Any) ->
+    "builders";
 parts("prod", _Any) ->
     "prod";
+parts("bauhaus", _Any) ->
+    "bauhaus";
+parts("se", []) ->
+    undefined;
+parts("se", Parts) ->
+   [First | Rest] = Parts,
+   se(First, Rest);
+parts("ink", _Any) ->
+    "ink";
+parts("ggee", _Any) ->
+    "ggee";
+parts("rw", []) ->
+    undefined;
+parts("rw", Parts) ->
+   [First | Rest] = Parts,
+   rw(First, Rest);
+parts("fishing", _Any) ->
+    "fishing";
+parts("wang", _Any) ->
+    "wang";
+parts("kaufen", _Any) ->
+    "kaufen";
+parts("samsung", _Any) ->
+    "samsung";
+parts("ly", []) ->
+    undefined;
+parts("ly", Parts) ->
+   [First | Rest] = Parts,
+   ly(First, Rest);
+parts("vote", _Any) ->
+    "vote";
+parts("in", []) ->
+    undefined;
+parts("in", Parts) ->
+   [First | Rest] = Parts,
+   in(First, Rest);
+parts("immo", _Any) ->
+    "immo";
+parts("lv", []) ->
+    undefined;
+parts("lv", Parts) ->
+   [First | Rest] = Parts,
+   lv(First, Rest);
+parts("es", []) ->
+    undefined;
+parts("es", Parts) ->
+   [First | Rest] = Parts,
+   es(First, Rest);
+parts("cruises", _Any) ->
+    "cruises";
+parts("flsmidth", _Any) ->
+    "flsmidth";
+parts("ir", []) ->
+    undefined;
+parts("ir", Parts) ->
+   [First | Rest] = Parts,
+   ir(First, Rest);
+parts("mov", _Any) ->
+    "mov";
+parts("mu", []) ->
+    undefined;
+parts("mu", Parts) ->
+   [First | Rest] = Parts,
+   mu(First, Rest);
+parts("infiniti", _Any) ->
+    "infiniti";
+parts("fail", _Any) ->
+    "fail";
+parts("cn", []) ->
+    undefined;
+parts("cn", Parts) ->
+   [First | Rest] = Parts,
+   cn(First, Rest);
+parts("academy", _Any) ->
+    "academy";
+parts("lt", []) ->
+    undefined;
+parts("lt", Parts) ->
+   [First | Rest] = Parts,
+   lt(First, Rest);
+parts("gp", []) ->
+    undefined;
+parts("gp", Parts) ->
+   [First | Rest] = Parts,
+   gp(First, Rest);
+parts("gq", _Any) ->
+    "gq";
+parts("mc", []) ->
+    undefined;
+parts("mc", Parts) ->
+   [First | Rest] = Parts,
+   mc(First, Rest);
+parts("netbank", _Any) ->
+    "netbank";
+parts("qpon", _Any) ->
+    "qpon";
+parts("ug", []) ->
+    undefined;
+parts("ug", Parts) ->
+   [First | Rest] = Parts,
+   ug(First, Rest);
+parts("rip", _Any) ->
+    "rip";
+parts("events", _Any) ->
+    "events";
+parts("barcelona", _Any) ->
+    "barcelona";
+parts("ovh", _Any) ->
+    "ovh";
+parts("is", []) ->
+    undefined;
+parts("is", Parts) ->
+   [First | Rest] = Parts,
+   is(First, Rest);
+parts("kn", []) ->
+    undefined;
+parts("kn", Parts) ->
+   [First | Rest] = Parts,
+   kn(First, Rest);
+parts("im", []) ->
+    undefined;
+parts("im", Parts) ->
+   [First | Rest] = Parts,
+   im(First, Rest);
+parts("nexus", _Any) ->
+    "nexus";
+parts("social", _Any) ->
+    "social";
+parts("tp", _Any) ->
+    "tp";
+parts("bike", _Any) ->
+    "bike";
+parts("soy", _Any) ->
+    "soy";
+parts("berlin", _Any) ->
+    "berlin";
+parts("ad", []) ->
+    undefined;
+parts("ad", Parts) ->
+   [First | Rest] = Parts,
+   ad(First, Rest);
+parts("latrobe", _Any) ->
+    "latrobe";
+parts("ro", []) ->
+    undefined;
+parts("ro", Parts) ->
+   [First | Rest] = Parts,
+   ro(First, Rest);
+parts("guru", _Any) ->
+    "guru";
+parts("gf", _Any) ->
+    "gf";
+parts("trade", _Any) ->
+    "trade";
+parts("pn", []) ->
+    undefined;
+parts("pn", Parts) ->
+   [First | Rest] = Parts,
+   pn(First, Rest);
+parts("prof", _Any) ->
+    "prof";
+parts("lacaixa", _Any) ->
+    "lacaixa";
+parts("cc", []) ->
+    undefined;
+parts("cc", Parts) ->
+   [First | Rest] = Parts,
+   cc(First, Rest);
+parts("army", _Any) ->
+    "army";
+parts("deals", _Any) ->
+    "deals";
+parts("associates", _Any) ->
+    "associates";
+parts("sl", []) ->
+    undefined;
+parts("sl", Parts) ->
+   [First | Rest] = Parts,
+   sl(First, Rest);
+parts("bo", []) ->
+    undefined;
+parts("bo", Parts) ->
+   [First | Rest] = Parts,
+   bo(First, Rest);
+parts("qa", []) ->
+    undefined;
+parts("qa", Parts) ->
+   [First | Rest] = Parts,
+   qa(First, Rest);
+parts("yt", _Any) ->
+    "yt";
+parts("fitness", _Any) ->
+    "fitness";
+parts("voting", _Any) ->
+    "voting";
+parts("toys", _Any) ->
+    "toys";
+parts("xxx", _Any) ->
+    "xxx";
+parts("training", _Any) ->
+    "training";
+parts("gy", []) ->
+    undefined;
+parts("gy", Parts) ->
+   [First | Rest] = Parts,
+   gy(First, Rest);
+parts("datsun", _Any) ->
+    "datsun";
+parts("tui", _Any) ->
+    "tui";
+parts("gmail", _Any) ->
+    "gmail";
+parts("finance", _Any) ->
+    "finance";
+parts("work", _Any) ->
+    "work";
+parts("sky", _Any) ->
+    "sky";
+parts("kred", _Any) ->
+    "kred";
+parts("domains", _Any) ->
+    "domains";
+parts("black", _Any) ->
+    "black";
+parts("pictet", _Any) ->
+    "pictet";
+parts("dentist", _Any) ->
+    "dentist";
+parts("yachts", _Any) ->
+    "yachts";
+parts("report", _Any) ->
+    "report";
+parts("bg", []) ->
+    undefined;
+parts("bg", Parts) ->
+   [First | Rest] = Parts,
+   bg(First, Rest);
+parts("website", _Any) ->
+    "website";
+parts("lds", _Any) ->
+    "lds";
+parts("works", _Any) ->
+    "works";
+parts("va", _Any) ->
+    "va";
+parts("hiphop", _Any) ->
+    "hiphop";
+parts("lawyer", _Any) ->
+    "lawyer";
+parts("vision", _Any) ->
+    "vision";
+parts("services", _Any) ->
+    "services";
+parts("coffee", _Any) ->
+    "coffee";
+parts("network", _Any) ->
+    "network";
+parts("photography", _Any) ->
+    "photography";
+parts("pl", []) ->
+    undefined;
+parts("pl", Parts) ->
+   [First | Rest] = Parts,
+   pl(First, Rest);
+parts("tc", _Any) ->
+    "tc";
+parts("restaurant", _Any) ->
+    "restaurant";
+parts("organic", _Any) ->
+    "organic";
+parts("net", []) ->
+    undefined;
+parts("net", Parts) ->
+   [First | Rest] = Parts,
+   net(First, Rest);
+parts("fr", []) ->
+    undefined;
+parts("fr", Parts) ->
+   [First | Rest] = Parts,
+   fr(First, Rest);
+parts("pictures", _Any) ->
+    "pictures";
+parts("pink", _Any) ->
+    "pink";
+parts("ao", []) ->
+    undefined;
+parts("ao", Parts) ->
+   [First | Rest] = Parts,
+   ao(First, Rest);
+parts("tv", []) ->
+    undefined;
+parts("tv", Parts) ->
+   [First | Rest] = Parts,
+   tv(First, Rest);
+parts("mini", _Any) ->
+    "mini";
+parts("ar", []) ->
+    undefined;
+parts("ar", Parts) ->
+   [First | Rest] = Parts,
+   ar(First, Rest);
+parts("iinet", _Any) ->
+    "iinet";
+parts("md", _Any) ->
+    "md";
+parts("properties", _Any) ->
+    "properties";
+parts("graphics", _Any) ->
+    "graphics";
+parts("pf", []) ->
+    undefined;
+parts("pf", Parts) ->
+   [First | Rest] = Parts,
+   pf(First, Rest);
+parts("hu", []) ->
+    undefined;
+parts("hu", Parts) ->
+   [First | Rest] = Parts,
+   hu(First, Rest);
+parts("uk", []) ->
+    undefined;
+parts("uk", Parts) ->
+   [First | Rest] = Parts,
+   uk(First, Rest);
+parts("gallery", _Any) ->
+    "gallery";
+parts("dating", _Any) ->
+    "dating";
+parts("tz", []) ->
+    undefined;
+parts("tz", Parts) ->
+   [First | Rest] = Parts,
+   tz(First, Rest);
+parts("esq", _Any) ->
+    "esq";
+parts("construction", _Any) ->
+    "construction";
+parts("menu", _Any) ->
+    "menu";
+parts("co", []) ->
+    undefined;
+parts("co", Parts) ->
+   [First | Rest] = Parts,
+   co(First, Rest);
+parts("hr", []) ->
+    undefined;
+parts("hr", Parts) ->
+   [First | Rest] = Parts,
+   hr(First, Rest);
+parts("it", []) ->
+    undefined;
+parts("it", Parts) ->
+   [First | Rest] = Parts,
+   it(First, Rest);
+parts("me", []) ->
+    undefined;
+parts("me", Parts) ->
+   [First | Rest] = Parts,
+   me(First, Rest);
+parts("java", _Any) ->
+    "java";
+parts("gg", []) ->
+    undefined;
+parts("gg", Parts) ->
+   [First | Rest] = Parts,
+   gg(First, Rest);
+parts("kz", []) ->
+    undefined;
+parts("kz", Parts) ->
+   [First | Rest] = Parts,
+   kz(First, Rest);
+parts("watch", _Any) ->
+    "watch";
+parts("neustar", _Any) ->
+    "neustar";
+parts("sj", _Any) ->
+    "sj";
+parts("vc", []) ->
+    undefined;
+parts("vc", Parts) ->
+   [First | Rest] = Parts,
+   vc(First, Rest);
+parts("mp", _Any) ->
+    "mp";
+parts("fm", _Any) ->
+    "fm";
+parts("at", []) ->
+    undefined;
+parts("at", Parts) ->
+   [First | Rest] = Parts,
+   at(First, Rest);
+parts("bio", _Any) ->
+    "bio";
+parts("tk", _Any) ->
+    "tk";
+parts("firmdale", _Any) ->
+    "firmdale";
+parts("navy", _Any) ->
+    "navy";
+parts("suzuki", _Any) ->
+    "suzuki";
+parts("rodeo", _Any) ->
+    "rodeo";
+parts("caravan", _Any) ->
+    "caravan";
+parts("dad", _Any) ->
+    "dad";
+parts("sb", []) ->
+    undefined;
+parts("sb", Parts) ->
+   [First | Rest] = Parts,
+   sb(First, Rest);
+parts("day", _Any) ->
+    "day";
+parts("brussels", _Any) ->
+    "brussels";
+parts("ph", []) ->
+    undefined;
+parts("ph", Parts) ->
+   [First | Rest] = Parts,
+   ph(First, Rest);
+parts("eus", _Any) ->
+    "eus";
+parts("degree", _Any) ->
+    "degree";
+parts("ru", []) ->
+    undefined;
+parts("ru", Parts) ->
+   [First | Rest] = Parts,
+   ru(First, Rest);
+parts("id", []) ->
+    undefined;
+parts("id", Parts) ->
+   [First | Rest] = Parts,
+   id(First, Rest);
+parts("cancerresearch", _Any) ->
+    "cancerresearch";
+parts("green", _Any) ->
+    "green";
+parts("miami", _Any) ->
+    "miami";
+parts("bm", []) ->
+    undefined;
+parts("bm", Parts) ->
+   [First | Rest] = Parts,
+   bm(First, Rest);
+parts("london", _Any) ->
+    "london";
+parts("democrat", _Any) ->
+    "democrat";
+parts("info", []) ->
+    undefined;
+parts("info", Parts) ->
+   [First | Rest] = Parts,
+   info(First, Rest);
+parts("allfinanz", _Any) ->
+    "allfinanz";
+parts("sarl", _Any) ->
+    "sarl";
+parts("aero", []) ->
+    undefined;
+parts("aero", Parts) ->
+   [First | Rest] = Parts,
+   aero(First, Rest);
+parts("cern", _Any) ->
+    "cern";
+parts("mango", _Any) ->
+    "mango";
+parts("dabur", _Any) ->
+    "dabur";
+parts("guitars", _Any) ->
+    "guitars";
+parts("rocks", _Any) ->
+    "rocks";
+parts("whoswho", _Any) ->
+    "whoswho";
+parts("top", _Any) ->
+    "top";
+parts("mq", _Any) ->
+    "mq";
+parts("williamhill", _Any) ->
+    "williamhill";
+parts("fo", _Any) ->
+    "fo";
+parts("recipes", _Any) ->
+    "recipes";
+parts("country", _Any) ->
+    "country";
+parts("uz", []) ->
+    undefined;
+parts("uz", Parts) ->
+   [First | Rest] = Parts,
+   uz(First, Rest);
+parts("computer", _Any) ->
+    "computer";
+parts("physio", _Any) ->
+    "physio";
+parts("tools", _Any) ->
+    "tools";
+parts("wiki", _Any) ->
+    "wiki";
+parts("sohu", _Any) ->
+    "sohu";
+parts("ki", []) ->
+    undefined;
+parts("ki", Parts) ->
+   [First | Rest] = Parts,
+   ki(First, Rest);
+parts("click", _Any) ->
+    "click";
+parts("community", _Any) ->
+    "community";
+parts("cleaning", _Any) ->
+    "cleaning";
+parts("nf", []) ->
+    undefined;
+parts("nf", Parts) ->
+   [First | Rest] = Parts,
+   nf(First, Rest);
+parts("audio", _Any) ->
+    "audio";
+parts("dental", _Any) ->
+    "dental";
+parts("diet", _Any) ->
+    "diet";
+parts("sca", _Any) ->
+    "sca";
+parts("moda", _Any) ->
+    "moda";
+parts("city", _Any) ->
+    "city";
+parts("sr", _Any) ->
+    "sr";
+parts("dvag", _Any) ->
+    "dvag";
+parts("direct", _Any) ->
+    "direct";
+parts("bargains", _Any) ->
+    "bargains";
+parts("ga", _Any) ->
+    "ga";
+parts("foo", _Any) ->
+    "foo";
+parts("haus", _Any) ->
+    "haus";
+parts("clinic", _Any) ->
+    "clinic";
+parts("li", _Any) ->
+    "li";
+parts("om", []) ->
+    undefined;
+parts("om", Parts) ->
+   [First | Rest] = Parts,
+   om(First, Rest);
+parts("nra", _Any) ->
+    "nra";
+parts("tienda", _Any) ->
+    "tienda";
+parts("nagoya", _Any) ->
+    "nagoya";
+parts("career", _Any) ->
+    "career";
+parts("globo", _Any) ->
+    "globo";
+parts("am", _Any) ->
+    "am";
+parts("lr", []) ->
+    undefined;
+parts("lr", Parts) ->
+   [First | Rest] = Parts,
+   lr(First, Rest);
+parts("catering", _Any) ->
+    "catering";
+parts("shoes", _Any) ->
+    "shoes";
+parts("pw", []) ->
+    undefined;
+parts("pw", Parts) ->
+   [First | Rest] = Parts,
+   pw(First, Rest);
+parts("sharp", _Any) ->
+    "sharp";
+parts("su", _Any) ->
+    "su";
+parts("ps", []) ->
+    undefined;
+parts("ps", Parts) ->
+   [First | Rest] = Parts,
+   ps(First, Rest);
+parts("lotto", _Any) ->
+    "lotto";
+parts("pizza", _Any) ->
+    "pizza";
+parts("cards", _Any) ->
+    "cards";
+parts("versicherung", _Any) ->
+    "versicherung";
+parts("contractors", _Any) ->
+    "contractors";
+parts("bayern", _Any) ->
+    "bayern";
+parts("bj", []) ->
+    undefined;
+parts("bj", Parts) ->
+   [First | Rest] = Parts,
+   bj(First, Rest);
+parts("alsace", _Any) ->
+    "alsace";
+parts("us", []) ->
+    undefined;
+parts("us", Parts) ->
+   [First | Rest] = Parts,
+   us(First, Rest);
+parts("monash", _Any) ->
+    "monash";
+parts("bnpparibas", _Any) ->
+    "bnpparibas";
+parts("holiday", _Any) ->
+    "holiday";
+parts("biz", []) ->
+    undefined;
+parts("biz", Parts) ->
+   [First | Rest] = Parts,
+   biz(First, Rest);
+parts("kim", _Any) ->
+    "kim";
+parts("bond", _Any) ->
+    "bond";
+parts("fashion", _Any) ->
+    "fashion";
+parts("si", _Any) ->
+    "si";
+parts("photo", _Any) ->
+    "photo";
+parts("channel", _Any) ->
+    "channel";
+parts("nr", []) ->
+    undefined;
+parts("nr", Parts) ->
+   [First | Rest] = Parts,
+   nr(First, Rest);
+parts("tn", []) ->
+    undefined;
+parts("tn", Parts) ->
+   [First | Rest] = Parts,
+   tn(First, Rest);
+parts("jo", []) ->
+    undefined;
+parts("jo", Parts) ->
+   [First | Rest] = Parts,
+   jo(First, Rest);
+parts("active", _Any) ->
+    "active";
+parts("iq", []) ->
+    undefined;
+parts("iq", Parts) ->
+   [First | Rest] = Parts,
+   iq(First, Rest);
+parts("garden", _Any) ->
+    "garden";
 parts(First, _) ->
 	First.
 
 %% regular rules
-nr("biz", _Any) ->
-    "biz.nr";
+mw("ac", _Any) ->
+    "ac.mw";
 
-nr("com", _Any) ->
-    "com.nr";
+mw("org", _Any) ->
+    "org.mw";
 
-nr("gov", _Any) ->
-    "gov.nr";
+mw("com", _Any) ->
+    "com.mw";
 
-nr("info", _Any) ->
-    "info.nr";
+mw("gov", _Any) ->
+    "gov.mw";
 
-nr("net", _Any) ->
-    "net.nr";
+mw("biz", _Any) ->
+    "biz.mw";
 
-nr("org", _Any) ->
-    "org.nr";
+mw("net", _Any) ->
+    "net.mw";
 
-nr("edu", _Any) ->
-    "edu.nr";
+mw("museum", _Any) ->
+    "museum.mw";
 
+mw("edu", _Any) ->
+    "edu.mw";
 
-nr(_, _) ->
-    "nr".
+mw("co", _Any) ->
+    "co.mw";
 
-%% regular rules
-mk("com", _Any) ->
-    "com.mk";
+mw("int", _Any) ->
+    "int.mw";
 
-mk("gov", _Any) ->
-    "gov.mk";
+mw("coop", _Any) ->
+    "coop.mw";
 
-mk("name", _Any) ->
-    "name.mk";
 
-mk("inf", _Any) ->
-    "inf.mk";
-
-mk("org", _Any) ->
-    "org.mk";
-
-mk("edu", _Any) ->
-    "edu.mk";
-
-mk("net", _Any) ->
-    "net.mk";
-
-
-mk(_, _) ->
-    "mk".
-
-%% regular rules
-bi("org", _Any) ->
-    "org.bi";
-
-bi("co", _Any) ->
-    "co.bi";
-
-bi("edu", _Any) ->
-    "edu.bi";
-
-bi("com", _Any) ->
-    "com.bi";
-
-bi("or", _Any) ->
-    "or.bi";
-
-
-bi(_, _) ->
-    "bi".
-
-%% regular rules
-pa("org", _Any) ->
-    "org.pa";
-
-pa("sld", _Any) ->
-    "sld.pa";
-
-pa("abo", _Any) ->
-    "abo.pa";
-
-pa("com", _Any) ->
-    "com.pa";
-
-pa("med", _Any) ->
-    "med.pa";
-
-pa("edu", _Any) ->
-    "edu.pa";
-
-pa("gob", _Any) ->
-    "gob.pa";
-
-pa("ac", _Any) ->
-    "ac.pa";
-
-pa("net", _Any) ->
-    "net.pa";
-
-pa("nom", _Any) ->
-    "nom.pa";
-
-pa("ing", _Any) ->
-    "ing.pa";
-
-
-pa(_, _) ->
-    "pa".
-
-%% regular rules
-it("monza", _Any) ->
-    "monza.it";
-
-it("carraramassa", _Any) ->
-    "carraramassa.it";
-
-it("or", _Any) ->
-    "or.it";
-
-it("trentinoaadige", _Any) ->
-    "trentinoaadige.it";
-
-it("reggioemilia", _Any) ->
-    "reggioemilia.it";
-
-it("taa", _Any) ->
-    "taa.it";
-
-it("liguria", _Any) ->
-    "liguria.it";
-
-it("imperia", _Any) ->
-    "imperia.it";
-
-it("trentinostirol", _Any) ->
-    "trentinostirol.it";
-
-it("basilicata", _Any) ->
-    "basilicata.it";
-
-it("mn", _Any) ->
-    "mn.it";
-
-it("mc", _Any) ->
-    "mc.it";
-
-it("pc", _Any) ->
-    "pc.it";
-
-it("ci", _Any) ->
-    "ci.it";
-
-it("lazio", _Any) ->
-    "lazio.it";
-
-it("nu", _Any) ->
-    "nu.it";
-
-it("sardegna", _Any) ->
-    "sardegna.it";
-
-it("sv", _Any) ->
-    "sv.it";
-
-it("to", _Any) ->
-    "to.it";
-
-it("aoste", _Any) ->
-    "aoste.it";
-
-it("crotone", _Any) ->
-    "crotone.it";
-
-it("livorno", _Any) ->
-    "livorno.it";
-
-it("br", _Any) ->
-    "br.it";
-
-it("ca", _Any) ->
-    "ca.it";
-
-it("piacenza", _Any) ->
-    "piacenza.it";
-
-it("vt", _Any) ->
-    "vt.it";
-
-it("belluno", _Any) ->
-    "belluno.it";
-
-it("iglesiascarbonia", _Any) ->
-    "iglesiascarbonia.it";
-
-it("bz", _Any) ->
-    "bz.it";
-
-it("bozen", _Any) ->
-    "bozen.it";
-
-it("mol", _Any) ->
-    "mol.it";
-
-it("re", _Any) ->
-    "re.it";
-
-it("olbiatempio", _Any) ->
-    "olbiatempio.it";
-
-it("si", _Any) ->
-    "si.it";
-
-it("pd", _Any) ->
-    "pd.it";
-
-it("lodi", _Any) ->
-    "lodi.it";
-
-it("gorizia", _Any) ->
-    "gorizia.it";
-
-it("treviso", _Any) ->
-    "treviso.it";
-
-it("nuoro", _Any) ->
-    "nuoro.it";
-
-it("lig", _Any) ->
-    "lig.it";
-
-it("rome", _Any) ->
-    "rome.it";
-
-it("vao", _Any) ->
-    "vao.it";
-
-it("mo", _Any) ->
-    "mo.it";
-
-it("brindisi", _Any) ->
-    "brindisi.it";
-
-it("pz", _Any) ->
-    "pz.it";
-
-it("te", _Any) ->
-    "te.it";
-
-it("trentinoaltoadige", _Any) ->
-    "trentinoaltoadige.it";
-
-it("ri", _Any) ->
-    "ri.it";
-
-it("ro", _Any) ->
-    "ro.it";
-
-it("bolzano", _Any) ->
-    "bolzano.it";
-
-it("urbinopesaro", _Any) ->
-    "urbinopesaro.it";
-
-it("cr", _Any) ->
-    "cr.it";
-
-it("lombardy", _Any) ->
-    "lombardy.it";
-
-it("pistoia", _Any) ->
-    "pistoia.it";
-
-it("vicenza", _Any) ->
-    "vicenza.it";
-
-it("pavia", _Any) ->
-    "pavia.it";
-
-it("firenze", _Any) ->
-    "firenze.it";
-
-it("kr", _Any) ->
-    "kr.it";
-
-it("veneto", _Any) ->
-    "veneto.it";
-
-it("fm", _Any) ->
-    "fm.it";
-
-it("tv", _Any) ->
-    "tv.it";
-
-it("vi", _Any) ->
-    "vi.it";
-
-it("pescara", _Any) ->
-    "pescara.it";
-
-it("salerno", _Any) ->
-    "salerno.it";
-
-it("rn", _Any) ->
-    "rn.it";
-
-it("valdaosta", _Any) ->
-    "valdaosta.it";
-
-it("cal", _Any) ->
-    "cal.it";
-
-it("potenza", _Any) ->
-    "potenza.it";
-
-it("en", _Any) ->
-    "en.it";
-
-it("tos", _Any) ->
-    "tos.it";
-
-it("dellogliastra", _Any) ->
-    "dellogliastra.it";
-
-it("og", _Any) ->
-    "og.it";
-
-it("aq", _Any) ->
-    "aq.it";
-
-it("vr", _Any) ->
-    "vr.it";
-
-it("lombardia", _Any) ->
-    "lombardia.it";
-
-it("tn", _Any) ->
-    "tn.it";
-
-it("varese", _Any) ->
-    "varese.it";
-
-it("ravenna", _Any) ->
-    "ravenna.it";
-
-it("bas", _Any) ->
-    "bas.it";
-
-it("valleeaoste", _Any) ->
-    "valleeaoste.it";
-
-it("foggia", _Any) ->
-    "foggia.it";
-
-it("cam", _Any) ->
-    "cam.it";
-
-it("agrigento", _Any) ->
-    "agrigento.it";
-
-it("suedtirol", _Any) ->
-    "suedtirol.it";
-
-it("prato", _Any) ->
-    "prato.it";
-
-it("cl", _Any) ->
-    "cl.it";
-
-it("ra", _Any) ->
-    "ra.it";
-
-it("matera", _Any) ->
-    "matera.it";
-
-it("gov", _Any) ->
-    "gov.it";
-
-it("altoadige", _Any) ->
-    "altoadige.it";
-
-it("abr", _Any) ->
-    "abr.it";
-
-it("cremona", _Any) ->
-    "cremona.it";
-
-it("campidanomedio", _Any) ->
-    "campidanomedio.it";
-
-it("verbania", _Any) ->
-    "verbania.it";
-
-it("valledaosta", _Any) ->
-    "valledaosta.it";
-
-it("cosenza", _Any) ->
-    "cosenza.it";
-
-it("mb", _Any) ->
-    "mb.it";
-
-it("catania", _Any) ->
-    "catania.it";
-
-it("barlettatraniandria", _Any) ->
-    "barlettatraniandria.it";
-
-it("mi", _Any) ->
-    "mi.it";
-
-it("lucania", _Any) ->
-    "lucania.it";
-
-it("pmn", _Any) ->
-    "pmn.it";
-
-it("po", _Any) ->
-    "po.it";
-
-it("umb", _Any) ->
-    "umb.it";
-
-it("pa", _Any) ->
-    "pa.it";
-
-it("fe", _Any) ->
-    "fe.it";
-
-it("carboniaiglesias", _Any) ->
-    "carboniaiglesias.it";
-
-it("bi", _Any) ->
-    "bi.it";
-
-it("savona", _Any) ->
-    "savona.it";
-
-it("vda", _Any) ->
-    "vda.it";
-
-it("siena", _Any) ->
-    "siena.it";
-
-it("padua", _Any) ->
-    "padua.it";
-
-it("trieste", _Any) ->
-    "trieste.it";
-
-it("mar", _Any) ->
-    "mar.it";
-
-it("rieti", _Any) ->
-    "rieti.it";
-
-it("ta", _Any) ->
-    "ta.it";
-
-it("cagliari", _Any) ->
-    "cagliari.it";
-
-it("sondrio", _Any) ->
-    "sondrio.it";
-
-it("vibovalentia", _Any) ->
-    "vibovalentia.it";
-
-it("alessandria", _Any) ->
-    "alessandria.it";
-
-it("viterbo", _Any) ->
-    "viterbo.it";
-
-it("padova", _Any) ->
-    "padova.it";
-
-it("sar", _Any) ->
-    "sar.it";
-
-it("fermo", _Any) ->
-    "fermo.it";
-
-it("ap", _Any) ->
-    "ap.it";
-
-it("ch", _Any) ->
-    "ch.it";
-
-it("emiliaromagna", _Any) ->
-    "emiliaromagna.it";
-
-it("piemonte", _Any) ->
-    "piemonte.it";
-
-it("lt", _Any) ->
-    "lt.it";
-
-it("bn", _Any) ->
-    "bn.it";
-
-it("sicilia", _Any) ->
-    "sicilia.it";
-
-it("pisa", _Any) ->
-    "pisa.it";
-
-it("siracusa", _Any) ->
-    "siracusa.it";
-
-it("ag", _Any) ->
-    "ag.it";
-
-it("trento", _Any) ->
-    "trento.it";
-
-it("fi", _Any) ->
-    "fi.it";
-
-it("taranto", _Any) ->
-    "taranto.it";
-
-it("brescia", _Any) ->
-    "brescia.it";
-
-it("cesenaforli", _Any) ->
-    "cesenaforli.it";
-
-it("laquila", _Any) ->
-    "laquila.it";
-
-it("pn", _Any) ->
-    "pn.it";
-
-it("rovigo", _Any) ->
-    "rovigo.it";
-
-it("sicily", _Any) ->
-    "sicily.it";
-
-it("catanzaro", _Any) ->
-    "catanzaro.it";
-
-it("tranibarlettaandria", _Any) ->
-    "tranibarlettaandria.it";
-
-it("pu", _Any) ->
-    "pu.it";
-
-it("laz", _Any) ->
-    "laz.it";
-
-it("fvg", _Any) ->
-    "fvg.it";
-
-it("an", _Any) ->
-    "an.it";
-
-it("valleaosta", _Any) ->
-    "valleaosta.it";
-
-it("frosinone", _Any) ->
-    "frosinone.it";
-
-it("sassari", _Any) ->
-    "sassari.it";
-
-it("cz", _Any) ->
-    "cz.it";
-
-it("pg", _Any) ->
-    "pg.it";
-
-it("terni", _Any) ->
-    "terni.it";
-
-it("ragusa", _Any) ->
-    "ragusa.it";
-
-it("im", _Any) ->
-    "im.it";
-
-it("milan", _Any) ->
-    "milan.it";
-
-it("massacarrara", _Any) ->
-    "massacarrara.it";
-
-it("lc", _Any) ->
-    "lc.it";
-
-it("milano", _Any) ->
-    "milano.it";
-
-it("lu", _Any) ->
-    "lu.it";
-
-it("no", _Any) ->
-    "no.it";
-
-it("trentinosuedtirol", _Any) ->
-    "trentinosuedtirol.it";
-
-it("tp", _Any) ->
-    "tp.it";
-
-it("mt", _Any) ->
-    "mt.it";
-
-it("sic", _Any) ->
-    "sic.it";
-
-it("va", _Any) ->
-    "va.it";
-
-it("arezzo", _Any) ->
-    "arezzo.it";
-
-it("lo", _Any) ->
-    "lo.it";
-
-it("aquila", _Any) ->
-    "aquila.it";
-
-it("modena", _Any) ->
-    "modena.it";
-
-it("macerata", _Any) ->
-    "macerata.it";
-
-it("na", _Any) ->
-    "na.it";
-
-it("pug", _Any) ->
-    "pug.it";
-
-it("pesarourbino", _Any) ->
-    "pesarourbino.it";
-
-it("turin", _Any) ->
-    "turin.it";
-
-it("novara", _Any) ->
-    "novara.it";
-
-it("bologna", _Any) ->
-    "bologna.it";
-
-it("pordenone", _Any) ->
-    "pordenone.it";
-
-it("marche", _Any) ->
-    "marche.it";
-
-it("campania", _Any) ->
-    "campania.it";
-
-it("udine", _Any) ->
-    "udine.it";
-
-it("gr", _Any) ->
-    "gr.it";
-
-it("tempioolbia", _Any) ->
-    "tempioolbia.it";
-
-it("co", _Any) ->
-    "co.it";
-
-it("ve", _Any) ->
-    "ve.it";
-
-it("bt", _Any) ->
-    "bt.it";
-
-it("pt", _Any) ->
-    "pt.it";
-
-it("ar", _Any) ->
-    "ar.it";
-
-it("edu", _Any) ->
-    "edu.it";
-
-it("fg", _Any) ->
-    "fg.it";
-
-it("genoa", _Any) ->
-    "genoa.it";
-
-it("fc", _Any) ->
-    "fc.it";
-
-it("vs", _Any) ->
-    "vs.it";
-
-it("monzaebrianza", _Any) ->
-    "monzaebrianza.it";
-
-it("calabria", _Any) ->
-    "calabria.it";
-
-it("biella", _Any) ->
-    "biella.it";
-
-it("napoli", _Any) ->
-    "napoli.it";
-
-it("balsan", _Any) ->
-    "balsan.it";
-
-it("fr", _Any) ->
-    "fr.it";
-
-it("ms", _Any) ->
-    "ms.it";
-
-it("pv", _Any) ->
-    "pv.it";
-
-it("ferrara", _Any) ->
-    "ferrara.it";
-
-it("ts", _Any) ->
-    "ts.it";
-
-it("abruzzo", _Any) ->
-    "abruzzo.it";
-
-it("ss", _Any) ->
-    "ss.it";
-
-it("pi", _Any) ->
-    "pi.it";
-
-it("reggiocalabria", _Any) ->
-    "reggiocalabria.it";
-
-it("andriatranibarletta", _Any) ->
-    "andriatranibarletta.it";
-
-it("is", _Any) ->
-    "is.it";
-
-it("ct", _Any) ->
-    "ct.it";
-
-it("grosseto", _Any) ->
-    "grosseto.it";
-
-it("lecce", _Any) ->
-    "lecce.it";
-
-it("oristano", _Any) ->
-    "oristano.it";
-
-it("blogspot", _Any) ->
-    "blogspot.it";
-
-it("rc", _Any) ->
-    "rc.it";
-
-it("venezia", _Any) ->
-    "venezia.it";
-
-it("mantova", _Any) ->
-    "mantova.it";
-
-it("monzaedellabrianza", _Any) ->
-    "monzaedellabrianza.it";
-
-it("bo", _Any) ->
-    "bo.it";
-
-it("lucca", _Any) ->
-    "lucca.it";
-
-it("go", _Any) ->
-    "go.it";
-
-it("friulivegiulia", _Any) ->
-    "friulivegiulia.it";
-
-it("como", _Any) ->
-    "como.it";
-
-it("bs", _Any) ->
-    "bs.it";
-
-it("ud", _Any) ->
-    "ud.it";
-
-it("ancona", _Any) ->
-    "ancona.it";
-
-it("cs", _Any) ->
-    "cs.it";
-
-it("teramo", _Any) ->
-    "teramo.it";
-
-it("laspezia", _Any) ->
-    "laspezia.it";
-
-it("chieti", _Any) ->
-    "chieti.it";
-
-it("rimini", _Any) ->
-    "rimini.it";
-
-it("aosta", _Any) ->
-    "aosta.it";
-
-it("palermo", _Any) ->
-    "palermo.it";
-
-it("roma", _Any) ->
-    "roma.it";
-
-it("lecco", _Any) ->
-    "lecco.it";
-
-it("friuliveneziagiulia", _Any) ->
-    "friuliveneziagiulia.it";
-
-it("vercelli", _Any) ->
-    "vercelli.it";
-
-it("torino", _Any) ->
-    "torino.it";
-
-it("so", _Any) ->
-    "so.it";
-
-it("ao", _Any) ->
-    "ao.it";
-
-it("li", _Any) ->
-    "li.it";
-
-it("cn", _Any) ->
-    "cn.it";
-
-it("messina", _Any) ->
-    "messina.it";
-
-it("ot", _Any) ->
-    "ot.it";
-
-it("trapani", _Any) ->
-    "trapani.it";
-
-it("mediocampidano", _Any) ->
-    "mediocampidano.it";
-
-it("molise", _Any) ->
-    "molise.it";
-
-it("vv", _Any) ->
-    "vv.it";
-
-it("sa", _Any) ->
-    "sa.it";
-
-it("caltanissetta", _Any) ->
-    "caltanissetta.it";
-
-it("sp", _Any) ->
-    "sp.it";
-
-it("piedmont", _Any) ->
-    "piedmont.it";
-
-it("ascolipiceno", _Any) ->
-    "ascolipiceno.it";
-
-it("ce", _Any) ->
-    "ce.it";
-
-it("bg", _Any) ->
-    "bg.it";
-
-it("isernia", _Any) ->
-    "isernia.it";
-
-it("andriabarlettatrani", _Any) ->
-    "andriabarlettatrani.it";
-
-it("campobasso", _Any) ->
-    "campobasso.it";
-
-it("monzabrianza", _Any) ->
-    "monzabrianza.it";
-
-it("vb", _Any) ->
-    "vb.it";
-
-it("ba", _Any) ->
-    "ba.it";
-
-it("toscana", _Any) ->
-    "toscana.it";
-
-it("traniandriabarletta", _Any) ->
-    "traniandriabarletta.it";
-
-it("trentinosudtirol", _Any) ->
-    "trentinosudtirol.it";
-
-it("naples", _Any) ->
-    "naples.it";
-
-it("cuneo", _Any) ->
-    "cuneo.it";
-
-it("caserta", _Any) ->
-    "caserta.it";
-
-it("vc", _Any) ->
-    "vc.it";
-
-it("tuscany", _Any) ->
-    "tuscany.it";
-
-it("at", _Any) ->
-    "at.it";
-
-it("latina", _Any) ->
-    "latina.it";
-
-it("sr", _Any) ->
-    "sr.it";
-
-it("al", _Any) ->
-    "al.it";
-
-it("parma", _Any) ->
-    "parma.it";
-
-it("umbria", _Any) ->
-    "umbria.it";
-
-it("lom", _Any) ->
-    "lom.it";
-
-it("trentino", _Any) ->
-    "trentino.it";
-
-it("friulivgiulia", _Any) ->
-    "friulivgiulia.it";
-
-it("sardinia", _Any) ->
-    "sardinia.it";
-
-it("bergamo", _Any) ->
-    "bergamo.it";
-
-it("bl", _Any) ->
-    "bl.it";
-
-it("avellino", _Any) ->
-    "avellino.it";
-
-it("emr", _Any) ->
-    "emr.it";
-
-it("le", _Any) ->
-    "le.it";
-
-it("me", _Any) ->
-    "me.it";
-
-it("rm", _Any) ->
-    "rm.it";
-
-it("bari", _Any) ->
-    "bari.it";
-
-it("cb", _Any) ->
-    "cb.it";
-
-it("av", _Any) ->
-    "av.it";
-
-it("forlicesena", _Any) ->
-    "forlicesena.it";
-
-it("enna", _Any) ->
-    "enna.it";
-
-it("tr", _Any) ->
-    "tr.it";
-
-it("rg", _Any) ->
-    "rg.it";
-
-it("perugia", _Any) ->
-    "perugia.it";
-
-it("pe", _Any) ->
-    "pe.it";
-
-it("venice", _Any) ->
-    "venice.it";
-
-it("benevento", _Any) ->
-    "benevento.it";
-
-it("ge", _Any) ->
-    "ge.it";
-
-it("puglia", _Any) ->
-    "puglia.it";
-
-it("verona", _Any) ->
-    "verona.it";
-
-it("ogliastra", _Any) ->
-    "ogliastra.it";
-
-it("aostavalley", _Any) ->
-    "aostavalley.it";
-
-it("genova", _Any) ->
-    "genova.it";
-
-it("asti", _Any) ->
-    "asti.it";
-
-it("ven", _Any) ->
-    "ven.it";
-
-it("florence", _Any) ->
-    "florence.it";
-
-it("pr", _Any) ->
-    "pr.it";
-
-
-it(_, _) ->
-    "it".
-
-%% regular rules
-gt("ind", _Any) ->
-    "ind.gt";
-
-gt("com", _Any) ->
-    "com.gt";
-
-gt("gob", _Any) ->
-    "gob.gt";
-
-gt("org", _Any) ->
-    "org.gt";
-
-gt("edu", _Any) ->
-    "edu.gt";
-
-gt("net", _Any) ->
-    "net.gt";
-
-gt("mil", _Any) ->
-    "mil.gt";
-
-
-gt(_, _) ->
-    "gt".
-
-%% regular rules
-ru("bryansk", _Any) ->
-    "bryansk.ru";
-
-ru("magadan", _Any) ->
-    "magadan.ru";
-
-ru("magnitka", _Any) ->
-    "magnitka.ru";
-
-ru("kamchatka", _Any) ->
-    "kamchatka.ru";
-
-ru("ac", _Any) ->
-    "ac.ru";
-
-ru("penza", _Any) ->
-    "penza.ru";
-
-ru("mil", _Any) ->
-    "mil.ru";
-
-ru("komi", _Any) ->
-    "komi.ru";
-
-ru("tsk", _Any) ->
-    "tsk.ru";
-
-ru("novosibirsk", _Any) ->
-    "novosibirsk.ru";
-
-ru("grozny", _Any) ->
-    "grozny.ru";
-
-ru("nakhodka", _Any) ->
-    "nakhodka.ru";
-
-ru("ryazan", _Any) ->
-    "ryazan.ru";
-
-ru("dagestan", _Any) ->
-    "dagestan.ru";
-
-ru("vladimir", _Any) ->
-    "vladimir.ru";
-
-ru("chelyabinsk", _Any) ->
-    "chelyabinsk.ru";
-
-ru("koenig", _Any) ->
-    "koenig.ru";
-
-ru("tula", _Any) ->
-    "tula.ru";
-
-ru("tomsk", _Any) ->
-    "tomsk.ru";
-
-ru("khabarovsk", _Any) ->
-    "khabarovsk.ru";
-
-ru("mordovia", _Any) ->
-    "mordovia.ru";
-
-ru("marine", _Any) ->
-    "marine.ru";
-
-ru("adygeya", _Any) ->
-    "adygeya.ru";
-
-ru("chel", _Any) ->
-    "chel.ru";
-
-ru("yakutia", _Any) ->
-    "yakutia.ru";
-
-ru("zgrad", _Any) ->
-    "zgrad.ru";
-
-ru("voronezh", _Any) ->
-    "voronezh.ru";
-
-ru("yaroslavl", _Any) ->
-    "yaroslavl.ru";
-
-ru("buryatia", _Any) ->
-    "buryatia.ru";
-
-ru("vladikavkaz", _Any) ->
-    "vladikavkaz.ru";
-
-ru("oskol", _Any) ->
-    "oskol.ru";
-
-ru("spb", _Any) ->
-    "spb.ru";
-
-ru("nsk", _Any) ->
-    "nsk.ru";
-
-ru("surgut", _Any) ->
-    "surgut.ru";
-
-ru("udm", _Any) ->
-    "udm.ru";
-
-ru("simbirsk", _Any) ->
-    "simbirsk.ru";
-
-ru("volgograd", _Any) ->
-    "volgograd.ru";
-
-ru("nnov", _Any) ->
-    "nnov.ru";
-
-ru("tyumen", _Any) ->
-    "tyumen.ru";
-
-ru("org", _Any) ->
-    "org.ru";
-
-ru("vologda", _Any) ->
-    "vologda.ru";
-
-ru("kostroma", _Any) ->
-    "kostroma.ru";
-
-ru("yamal", _Any) ->
-    "yamal.ru";
-
-ru("kemerovo", _Any) ->
-    "kemerovo.ru";
-
-ru("bir", _Any) ->
-    "bir.ru";
-
-ru("ptz", _Any) ->
-    "ptz.ru";
-
-ru("rnd", _Any) ->
-    "rnd.ru";
-
-ru("jar", _Any) ->
-    "jar.ru";
-
-ru("irkutsk", _Any) ->
-    "irkutsk.ru";
-
-ru("sakhalin", _Any) ->
-    "sakhalin.ru";
-
-ru("norilsk", _Any) ->
-    "norilsk.ru";
-
-ru("mytis", _Any) ->
-    "mytis.ru";
-
-ru("rubtsovsk", _Any) ->
-    "rubtsovsk.ru";
-
-ru("tsaritsyn", _Any) ->
-    "tsaritsyn.ru";
-
-ru("nov", _Any) ->
-    "nov.ru";
-
-ru("cbg", _Any) ->
-    "cbg.ru";
-
-ru("kirov", _Any) ->
-    "kirov.ru";
-
-ru("cmw", _Any) ->
-    "cmw.ru";
-
-ru("astrakhan", _Any) ->
-    "astrakhan.ru";
-
-ru("pyatigorsk", _Any) ->
-    "pyatigorsk.ru";
-
-ru("jamal", _Any) ->
-    "jamal.ru";
-
-ru("vdonsk", _Any) ->
-    "vdonsk.ru";
-
-ru("nalchik", _Any) ->
-    "nalchik.ru";
-
-ru("tambov", _Any) ->
-    "tambov.ru";
-
-ru("karelia", _Any) ->
-    "karelia.ru";
-
-ru("ivanovo", _Any) ->
-    "ivanovo.ru";
-
-ru("krasnoyarsk", _Any) ->
-    "krasnoyarsk.ru";
-
-ru("vladivostok", _Any) ->
-    "vladivostok.ru";
-
-ru("vrn", _Any) ->
-    "vrn.ru";
-
-ru("baikal", _Any) ->
-    "baikal.ru";
-
-ru("chita", _Any) ->
-    "chita.ru";
-
-ru("tuva", _Any) ->
-    "tuva.ru";
-
-ru("nkz", _Any) ->
-    "nkz.ru";
-
-ru("khv", _Any) ->
-    "khv.ru";
-
-ru("mari", _Any) ->
-    "mari.ru";
-
-ru("int", _Any) ->
-    "int.ru";
-
-ru("kursk", _Any) ->
-    "kursk.ru";
-
-ru("altai", _Any) ->
-    "altai.ru";
-
-ru("kchr", _Any) ->
-    "kchr.ru";
-
-ru("kustanai", _Any) ->
-    "kustanai.ru";
-
-ru("khakassia", _Any) ->
-    "khakassia.ru";
-
-ru("dudinka", _Any) ->
-    "dudinka.ru";
-
-ru("edu", _Any) ->
-    "edu.ru";
-
-ru("net", _Any) ->
-    "net.ru";
-
-ru("palana", _Any) ->
-    "palana.ru";
-
-ru("kurgan", _Any) ->
-    "kurgan.ru";
-
-ru("yekaterinburg", _Any) ->
-    "yekaterinburg.ru";
-
-ru("kuzbass", _Any) ->
-    "kuzbass.ru";
-
-ru("com", _Any) ->
-    "com.ru";
-
-ru("test", _Any) ->
-    "test.ru";
-
-ru("oryol", _Any) ->
-    "oryol.ru";
-
-ru("stv", _Any) ->
-    "stv.ru";
-
-ru("lipetsk", _Any) ->
-    "lipetsk.ru";
-
-ru("kms", _Any) ->
-    "kms.ru";
-
-ru("tver", _Any) ->
-    "tver.ru";
-
-ru("izhevsk", _Any) ->
-    "izhevsk.ru";
-
-ru("chuvashia", _Any) ->
-    "chuvashia.ru";
-
-ru("omsk", _Any) ->
-    "omsk.ru";
-
-ru("samara", _Any) ->
-    "samara.ru";
-
-ru("kaluga", _Any) ->
-    "kaluga.ru";
-
-ru("snz", _Any) ->
-    "snz.ru";
-
-ru("kalmykia", _Any) ->
-    "kalmykia.ru";
-
-ru("arkhangelsk", _Any) ->
-    "arkhangelsk.ru";
-
-ru("syzran", _Any) ->
-    "syzran.ru";
-
-ru("tom", _Any) ->
-    "tom.ru";
-
-ru("vyatka", _Any) ->
-    "vyatka.ru";
-
-ru("kazan", _Any) ->
-    "kazan.ru";
-
-ru("msk", _Any) ->
-    "msk.ru";
-
-ru("mosreg", _Any) ->
-    "mosreg.ru";
-
-ru("amursk", _Any) ->
-    "amursk.ru";
-
-ru("udmurtia", _Any) ->
-    "udmurtia.ru";
-
-ru("gov", _Any) ->
-    "gov.ru";
-
-ru("murmansk", _Any) ->
-    "murmansk.ru";
-
-ru("orenburg", _Any) ->
-    "orenburg.ru";
-
-ru("bashkiria", _Any) ->
-    "bashkiria.ru";
-
-ru("saratov", _Any) ->
-    "saratov.ru";
-
-ru("fareast", _Any) ->
-    "fareast.ru";
-
-ru("belgorod", _Any) ->
-    "belgorod.ru";
-
-ru("pp", _Any) ->
-    "pp.ru";
-
-ru("tatarstan", _Any) ->
-    "tatarstan.ru";
-
-ru("amur", _Any) ->
-    "amur.ru";
-
-ru("stavropol", _Any) ->
-    "stavropol.ru";
-
-ru("smolensk", _Any) ->
-    "smolensk.ru";
-
-ru("perm", _Any) ->
-    "perm.ru";
-
-ru("chukotka", _Any) ->
-    "chukotka.ru";
-
-ru("kuban", _Any) ->
-    "kuban.ru";
-
-
-ru(_, _) ->
-    "ru".
-
-%% regular rules
-cl("mil", _Any) ->
-    "mil.cl";
-
-cl("co", _Any) ->
-    "co.cl";
-
-cl("gob", _Any) ->
-    "gob.cl";
-
-cl("gov", _Any) ->
-    "gov.cl";
-
-
-cl(_, _) ->
-    "cl".
-
-%% regular rules
-cu("edu", _Any) ->
-    "edu.cu";
-
-cu("org", _Any) ->
-    "org.cu";
-
-cu("net", _Any) ->
-    "net.cu";
-
-cu("com", _Any) ->
-    "com.cu";
-
-cu("gov", _Any) ->
-    "gov.cu";
-
-cu("inf", _Any) ->
-    "inf.cu";
-
-
-cu(_, _) ->
-    "cu".
-
-%% regular rules
-ie("gov", _Any) ->
-    "gov.ie";
-
-ie("blogspot", _Any) ->
-    "blogspot.ie";
-
-
-ie(_, _) ->
-    "ie".
-
-%% regular rules
-pf("com", _Any) ->
-    "com.pf";
-
-pf("org", _Any) ->
-    "org.pf";
-
-pf("edu", _Any) ->
-    "edu.pf";
-
-
-pf(_, _) ->
-    "pf".
-
-%% regular rules
-im("net", _Any) ->
-    "net.im";
-
-im("org", _Any) ->
-    "org.im";
-
-im("ac", _Any) ->
-    "ac.im";
-
-im("co", []) ->
-    "co.im";
-im("co", Parts) ->
-    [First | Rest] = Parts,
-    co_im(First, Rest);
-
-im("tv", _Any) ->
-    "tv.im";
-
-im("tt", _Any) ->
-    "tt.im";
-
-im("com", _Any) ->
-    "com.im";
-
-
-im(_, _) ->
-    "im".
-
-%% regular rules
-co_im("plc", _Any) ->
-    "plc.co.im";
-
-co_im("ltd", _Any) ->
-    "ltd.co.im";
-
-
-co_im(_, _) ->
-    "co.im".
-
-%% regular rules
-uy("gub", _Any) ->
-    "gub.uy";
-
-uy("mil", _Any) ->
-    "mil.uy";
-
-uy("net", _Any) ->
-    "net.uy";
-
-uy("edu", _Any) ->
-    "edu.uy";
-
-uy("org", _Any) ->
-    "org.uy";
-
-uy("com", _Any) ->
-    "com.uy";
-
-
-uy(_, _) ->
-    "uy".
-
-%% regular rules
-tz("mobi", _Any) ->
-    "mobi.tz";
-
-tz("tv", _Any) ->
-    "tv.tz";
-
-tz("ac", _Any) ->
-    "ac.tz";
-
-tz("mil", _Any) ->
-    "mil.tz";
-
-tz("info", _Any) ->
-    "info.tz";
-
-tz("sc", _Any) ->
-    "sc.tz";
-
-tz("me", _Any) ->
-    "me.tz";
-
-tz("hotel", _Any) ->
-    "hotel.tz";
-
-tz("or", _Any) ->
-    "or.tz";
-
-tz("co", _Any) ->
-    "co.tz";
-
-tz("ne", _Any) ->
-    "ne.tz";
-
-tz("go", _Any) ->
-    "go.tz";
-
-
-tz(_, _) ->
-    "tz".
-
-%% regular rules
-hn("mil", _Any) ->
-    "mil.hn";
-
-hn("net", _Any) ->
-    "net.hn";
-
-hn("gob", _Any) ->
-    "gob.hn";
-
-hn("org", _Any) ->
-    "org.hn";
-
-hn("edu", _Any) ->
-    "edu.hn";
-
-hn("com", _Any) ->
-    "com.hn";
-
-
-hn(_, _) ->
-    "hn".
-
-%% regular rules
-lb("gov", _Any) ->
-    "gov.lb";
-
-lb("com", _Any) ->
-    "com.lb";
-
-lb("net", _Any) ->
-    "net.lb";
-
-lb("edu", _Any) ->
-    "edu.lb";
-
-lb("org", _Any) ->
-    "org.lb";
-
-
-lb(_, _) ->
-    "lb".
-
-%% regular rules
-bw("co", _Any) ->
-    "co.bw";
-
-bw("org", _Any) ->
-    "org.bw";
-
-
-bw(_, _) ->
-    "bw".
-
-%% regular rules
-bh("com", _Any) ->
-    "com.bh";
-
-bh("gov", _Any) ->
-    "gov.bh";
-
-bh("edu", _Any) ->
-    "edu.bh";
-
-bh("org", _Any) ->
-    "org.bh";
-
-bh("net", _Any) ->
-    "net.bh";
-
-
-bh(_, _) ->
-    "bh".
-
-%% regular rules
-lt("gov", _Any) ->
-    "gov.lt";
-
-
-lt(_, _) ->
-    "lt".
-
-%% regular rules
-mu("net", _Any) ->
-    "net.mu";
-
-mu("co", _Any) ->
-    "co.mu";
-
-mu("org", _Any) ->
-    "org.mu";
-
-mu("ac", _Any) ->
-    "ac.mu";
-
-mu("or", _Any) ->
-    "or.mu";
-
-mu("gov", _Any) ->
-    "gov.mu";
-
-mu("com", _Any) ->
-    "com.mu";
-
-
-mu(_, _) ->
-    "mu".
-
-%% regular rules
-ch("blogspot", _Any) ->
-    "blogspot.ch";
-
-
-ch(_, _) ->
-    "ch".
-
-%% regular rules
-hk("org", _Any) ->
-    "org.hk";
-
-hk("edu", _Any) ->
-    "edu.hk";
-
-hk("net", _Any) ->
-    "net.hk";
-
-hk("idv", _Any) ->
-    "idv.hk";
-
-hk("gov", _Any) ->
-    "gov.hk";
-
-hk("com", _Any) ->
-    "com.hk";
-
-hk("blogspot", _Any) ->
-    "blogspot.hk";
-
-
-hk(_, _) ->
-    "hk".
-
-%% regular rules
-td("blogspot", _Any) ->
-    "blogspot.td";
-
-
-td(_, _) ->
-    "td".
-
-%% regular rules
-mo("com", _Any) ->
-    "com.mo";
-
-mo("gov", _Any) ->
-    "gov.mo";
-
-mo("edu", _Any) ->
-    "edu.mo";
-
-mo("org", _Any) ->
-    "org.mo";
-
-mo("net", _Any) ->
-    "net.mo";
-
-
-mo(_, _) ->
-    "mo".
-
-%% regular rules
-mx("net", _Any) ->
-    "net.mx";
-
-mx("edu", _Any) ->
-    "edu.mx";
-
-mx("org", _Any) ->
-    "org.mx";
-
-mx("gob", _Any) ->
-    "gob.mx";
-
-mx("blogspot", _Any) ->
-    "blogspot.mx";
-
-mx("com", _Any) ->
-    "com.mx";
-
-
-mx(_, _) ->
-    "mx".
-
-%% regular rules
-re("asso", _Any) ->
-    "asso.re";
-
-re("nom", _Any) ->
-    "nom.re";
-
-re("com", _Any) ->
-    "com.re";
-
-re("blogspot", _Any) ->
-    "blogspot.re";
-
-
-re(_, _) ->
-    "re".
-
-%% regular rules
-ps("com", _Any) ->
-    "com.ps";
-
-ps("gov", _Any) ->
-    "gov.ps";
-
-ps("net", _Any) ->
-    "net.ps";
-
-ps("org", _Any) ->
-    "org.ps";
-
-ps("sec", _Any) ->
-    "sec.ps";
-
-ps("edu", _Any) ->
-    "edu.ps";
-
-ps("plo", _Any) ->
-    "plo.ps";
-
-
-ps(_, _) ->
-    "ps".
-
-%% regular rules
-sv("com", _Any) ->
-    "com.sv";
-
-sv("red", _Any) ->
-    "red.sv";
-
-sv("edu", _Any) ->
-    "edu.sv";
-
-sv("org", _Any) ->
-    "org.sv";
-
-sv("gob", _Any) ->
-    "gob.sv";
-
-
-sv(_, _) ->
-    "sv".
-
-%% regular rules
-to("net", _Any) ->
-    "net.to";
-
-to("mil", _Any) ->
-    "mil.to";
-
-to("org", _Any) ->
-    "org.to";
-
-to("edu", _Any) ->
-    "edu.to";
-
-to("com", _Any) ->
-    "com.to";
-
-to("gov", _Any) ->
-    "gov.to";
-
-
-to(_, _) ->
-    "to".
-
-%% regular rules
-nu("shacknet", _Any) ->
-    "shacknet.nu";
-
-nu("merseine", _Any) ->
-    "merseine.nu";
-
-nu("mine", _Any) ->
-    "mine.nu";
-
-
-nu(_, _) ->
-    "nu".
-
-%% regular rules
-dk("blogspot", _Any) ->
-    "blogspot.dk";
-
-
-dk(_, _) ->
-    "dk".
-
-%% regular rules
-ca("nt", _Any) ->
-    "nt.ca";
-
-ca("yk", _Any) ->
-    "yk.ca";
-
-ca("bc", _Any) ->
-    "bc.ca";
-
-ca("nu", _Any) ->
-    "nu.ca";
-
-ca("mb", _Any) ->
-    "mb.ca";
-
-ca("gc", _Any) ->
-    "gc.ca";
-
-ca("ns", _Any) ->
-    "ns.ca";
-
-ca("blogspot", _Any) ->
-    "blogspot.ca";
-
-ca("ab", _Any) ->
-    "ab.ca";
-
-ca("pe", _Any) ->
-    "pe.ca";
-
-ca("qc", _Any) ->
-    "qc.ca";
-
-ca("nf", _Any) ->
-    "nf.ca";
-
-ca("co", _Any) ->
-    "co.ca";
-
-ca("on", _Any) ->
-    "on.ca";
-
-ca("nl", _Any) ->
-    "nl.ca";
-
-ca("nb", _Any) ->
-    "nb.ca";
-
-ca("sk", _Any) ->
-    "sk.ca";
-
-
-ca(_, _) ->
-    "ca".
-
-%% regular rules
-br("com", []) ->
-    "com.br";
-br("com", Parts) ->
-    [First | Rest] = Parts,
-    com_br(First, Rest);
-
-br("blog", _Any) ->
-    "blog.br";
-
-br("mus", _Any) ->
-    "mus.br";
-
-br("taxi", _Any) ->
-    "taxi.br";
-
-br("adm", _Any) ->
-    "adm.br";
-
-br("odo", _Any) ->
-    "odo.br";
-
-br("edu", _Any) ->
-    "edu.br";
-
-br("adv", _Any) ->
-    "adv.br";
-
-br("net", _Any) ->
-    "net.br";
-
-br("ppg", _Any) ->
-    "ppg.br";
-
-br("flog", _Any) ->
-    "flog.br";
-
-br("srv", _Any) ->
-    "srv.br";
-
-br("mp", _Any) ->
-    "mp.br";
-
-br("am", _Any) ->
-    "am.br";
-
-br("etc", _Any) ->
-    "etc.br";
-
-br("eng", _Any) ->
-    "eng.br";
-
-br("fot", _Any) ->
-    "fot.br";
-
-br("vlog", _Any) ->
-    "vlog.br";
-
-br("zlg", _Any) ->
-    "zlg.br";
-
-br("fst", _Any) ->
-    "fst.br";
-
-br("med", _Any) ->
-    "med.br";
-
-br("wiki", _Any) ->
-    "wiki.br";
-
-br("cnt", _Any) ->
-    "cnt.br";
-
-br("radio", _Any) ->
-    "radio.br";
-
-br("ggf", _Any) ->
-    "ggf.br";
-
-br("ind", _Any) ->
-    "ind.br";
-
-br("inf", _Any) ->
-    "inf.br";
-
-br("far", _Any) ->
-    "far.br";
-
-br("gov", _Any) ->
-    "gov.br";
-
-br("bio", _Any) ->
-    "bio.br";
-
-br("vet", _Any) ->
-    "vet.br";
-
-br("tur", _Any) ->
-    "tur.br";
-
-br("qsl", _Any) ->
-    "qsl.br";
-
-br("eti", _Any) ->
-    "eti.br";
-
-br("ato", _Any) ->
-    "ato.br";
-
-br("jus", _Any) ->
-    "jus.br";
-
-br("emp", _Any) ->
-    "emp.br";
-
-br("arq", _Any) ->
-    "arq.br";
-
-br("teo", _Any) ->
-    "teo.br";
-
-br("ntr", _Any) ->
-    "ntr.br";
-
-br("coop", _Any) ->
-    "coop.br";
-
-br("fnd", _Any) ->
-    "fnd.br";
-
-br("bmd", _Any) ->
-    "bmd.br";
-
-br("b", _Any) ->
-    "b.br";
-
-br("jor", _Any) ->
-    "jor.br";
-
-br("psi", _Any) ->
-    "psi.br";
-
-br("imb", _Any) ->
-    "imb.br";
-
-br("ecn", _Any) ->
-    "ecn.br";
-
-br("eco", _Any) ->
-    "eco.br";
-
-br("pro", _Any) ->
-    "pro.br";
-
-br("mil", _Any) ->
-    "mil.br";
-
-br("tmp", _Any) ->
-    "tmp.br";
-
-br("lel", _Any) ->
-    "lel.br";
-
-br("trd", _Any) ->
-    "trd.br";
-
-br("esp", _Any) ->
-    "esp.br";
-
-br("cng", _Any) ->
-    "cng.br";
-
-br("mat", _Any) ->
-    "mat.br";
-
-br("psc", _Any) ->
-    "psc.br";
-
-br("leg", _Any) ->
-    "leg.br";
-
-br("agr", _Any) ->
-    "agr.br";
-
-br("slg", _Any) ->
-    "slg.br";
-
-br("org", _Any) ->
-    "org.br";
-
-br("rec", _Any) ->
-    "rec.br";
-
-br("not", _Any) ->
-    "not.br";
-
-br("cim", _Any) ->
-    "cim.br";
-
-br("tv", _Any) ->
-    "tv.br";
-
-br("fm", _Any) ->
-    "fm.br";
-
-br("nom", _Any) ->
-    "nom.br";
-
-br("art", _Any) ->
-    "art.br";
-
-
-br(_, _) ->
-    "br".
-
-%% regular rules
-com_br("blogspot", _Any) ->
-    "blogspot.com.br";
-
-
-com_br(_, _) ->
-    "com.br".
-
-%% regular rules
-vn("net", _Any) ->
-    "net.vn";
-
-vn("pro", _Any) ->
-    "pro.vn";
-
-vn("ac", _Any) ->
-    "ac.vn";
-
-vn("edu", _Any) ->
-    "edu.vn";
-
-vn("health", _Any) ->
-    "health.vn";
-
-vn("name", _Any) ->
-    "name.vn";
-
-vn("biz", _Any) ->
-    "biz.vn";
-
-vn("gov", _Any) ->
-    "gov.vn";
-
-vn("int", _Any) ->
-    "int.vn";
-
-vn("org", _Any) ->
-    "org.vn";
-
-vn("info", _Any) ->
-    "info.vn";
-
-vn("com", _Any) ->
-    "com.vn";
-
-
-vn(_, _) ->
-    "vn".
-
-%% regular rules
-bj("blogspot", _Any) ->
-    "blogspot.bj";
-
-bj("gouv", _Any) ->
-    "gouv.bj";
-
-bj("asso", _Any) ->
-    "asso.bj";
-
-bj("barreau", _Any) ->
-    "barreau.bj";
-
-
-bj(_, _) ->
-    "bj".
-
-%% regular rules
-gy("com", _Any) ->
-    "com.gy";
-
-gy("co", _Any) ->
-    "co.gy";
-
-gy("net", _Any) ->
-    "net.gy";
-
-
-gy(_, _) ->
-    "gy".
-
-%% regular rules
-ls("org", _Any) ->
-    "org.ls";
-
-ls("co", _Any) ->
-    "co.ls";
-
-
-ls(_, _) ->
-    "ls".
-
-%% regular rules
-ec("org", _Any) ->
-    "org.ec";
-
-ec("info", _Any) ->
-    "info.ec";
-
-ec("med", _Any) ->
-    "med.ec";
-
-ec("com", _Any) ->
-    "com.ec";
-
-ec("mil", _Any) ->
-    "mil.ec";
-
-ec("pro", _Any) ->
-    "pro.ec";
-
-ec("net", _Any) ->
-    "net.ec";
-
-ec("edu", _Any) ->
-    "edu.ec";
-
-ec("gob", _Any) ->
-    "gob.ec";
-
-ec("fin", _Any) ->
-    "fin.ec";
-
-ec("gov", _Any) ->
-    "gov.ec";
-
-
-ec(_, _) ->
-    "ec".
-
-%% regular rules
-ci("presse", _Any) ->
-    "presse.ci";
-
-ci("ac", _Any) ->
-    "ac.ci";
-
-ci("edu", _Any) ->
-    "edu.ci";
-
-ci("net", _Any) ->
-    "net.ci";
-
-ci("ed", _Any) ->
-    "ed.ci";
-
-ci("gouv", _Any) ->
-    "gouv.ci";
-
-ci("com", _Any) ->
-    "com.ci";
-
-ci("or", _Any) ->
-    "or.ci";
-
-ci("org", _Any) ->
-    "org.ci";
-
-ci("co", _Any) ->
-    "co.ci";
-
-ci("int", _Any) ->
-    "int.ci";
-
-ci("asso", _Any) ->
-    "asso.ci";
-
-ci("go", _Any) ->
-    "go.ci";
-
-ci("md", _Any) ->
-    "md.ci";
-
-
-ci(_, _) ->
-    "ci".
-
-%% regular rules
-cc("scrapping", _Any) ->
-    "scrapping.cc";
-
-cc("ftpaccess", _Any) ->
-    "ftpaccess.cc";
-
-cc("myphotos", _Any) ->
-    "myphotos.cc";
-
-
-cc(_, _) ->
-    "cc".
-
-%% regular rules
-af("net", _Any) ->
-    "net.af";
-
-af("edu", _Any) ->
-    "edu.af";
-
-af("org", _Any) ->
-    "org.af";
-
-af("com", _Any) ->
-    "com.af";
-
-af("gov", _Any) ->
-    "gov.af";
-
-
-af(_, _) ->
-    "af".
-
-%% regular rules
-nz("kiwi", _Any) ->
-    "kiwi.nz";
-
-nz("parliament", _Any) ->
-    "parliament.nz";
-
-nz("gen", _Any) ->
-    "gen.nz";
-
-nz("school", _Any) ->
-    "school.nz";
-
-nz("org", _Any) ->
-    "org.nz";
-
-nz("co", []) ->
-    "co.nz";
-nz("co", Parts) ->
-    [First | Rest] = Parts,
-    co_nz(First, Rest);
-
-nz("cri", _Any) ->
-    "cri.nz";
-
-nz("iwi", _Any) ->
-    "iwi.nz";
-
-nz("maori", _Any) ->
-    "maori.nz";
-
-nz("govt", _Any) ->
-    "govt.nz";
-
-nz("geek", _Any) ->
-    "geek.nz";
-
-nz("health", _Any) ->
-    "health.nz";
-
-nz("ac", _Any) ->
-    "ac.nz";
-
-nz("mil", _Any) ->
-    "mil.nz";
-
-nz("net", _Any) ->
-    "net.nz";
-
-
-nz(_, _) ->
-    "nz".
-
-%% regular rules
-co_nz("blogspot", _Any) ->
-    "blogspot.co.nz";
-
-
-co_nz(_, _) ->
-    "co.nz".
-
-%% regular rules
-kz("gov", _Any) ->
-    "gov.kz";
-
-kz("com", _Any) ->
-    "com.kz";
-
-kz("org", _Any) ->
-    "org.kz";
-
-kz("edu", _Any) ->
-    "edu.kz";
-
-kz("mil", _Any) ->
-    "mil.kz";
-
-kz("net", _Any) ->
-    "net.kz";
-
-
-kz(_, _) ->
-    "kz".
-
-%% regular rules
-dz("gov", _Any) ->
-    "gov.dz";
-
-dz("art", _Any) ->
-    "art.dz";
-
-dz("edu", _Any) ->
-    "edu.dz";
-
-dz("net", _Any) ->
-    "net.dz";
-
-dz("com", _Any) ->
-    "com.dz";
-
-dz("pol", _Any) ->
-    "pol.dz";
-
-dz("asso", _Any) ->
-    "asso.dz";
-
-dz("org", _Any) ->
-    "org.dz";
-
-
-dz(_, _) ->
-    "dz".
-
-%% regular rules
-py("gov", _Any) ->
-    "gov.py";
-
-py("com", _Any) ->
-    "com.py";
-
-py("coop", _Any) ->
-    "coop.py";
-
-py("edu", _Any) ->
-    "edu.py";
-
-py("org", _Any) ->
-    "org.py";
-
-py("mil", _Any) ->
-    "mil.py";
-
-py("net", _Any) ->
-    "net.py";
-
-
-py(_, _) ->
-    "py".
-
-%% regular rules
-kr("jeonnam", _Any) ->
-    "jeonnam.kr";
-
-kr("ulsan", _Any) ->
-    "ulsan.kr";
-
-kr("jeju", _Any) ->
-    "jeju.kr";
-
-kr("chungnam", _Any) ->
-    "chungnam.kr";
-
-kr("gangwon", _Any) ->
-    "gangwon.kr";
-
-kr("re", _Any) ->
-    "re.kr";
-
-kr("kg", _Any) ->
-    "kg.kr";
-
-kr("or", _Any) ->
-    "or.kr";
-
-kr("es", _Any) ->
-    "es.kr";
-
-kr("pe", _Any) ->
-    "pe.kr";
-
-kr("chungbuk", _Any) ->
-    "chungbuk.kr";
-
-kr("go", _Any) ->
-    "go.kr";
-
-kr("hs", _Any) ->
-    "hs.kr";
-
-kr("ne", _Any) ->
-    "ne.kr";
-
-kr("gyeonggi", _Any) ->
-    "gyeonggi.kr";
-
-kr("co", _Any) ->
-    "co.kr";
-
-kr("daejeon", _Any) ->
-    "daejeon.kr";
-
-kr("blogspot", _Any) ->
-    "blogspot.kr";
-
-kr("incheon", _Any) ->
-    "incheon.kr";
-
-kr("gwangju", _Any) ->
-    "gwangju.kr";
-
-kr("ms", _Any) ->
-    "ms.kr";
-
-kr("ac", _Any) ->
-    "ac.kr";
-
-kr("mil", _Any) ->
-    "mil.kr";
-
-kr("gyeongnam", _Any) ->
-    "gyeongnam.kr";
-
-kr("jeonbuk", _Any) ->
-    "jeonbuk.kr";
-
-kr("busan", _Any) ->
-    "busan.kr";
-
-kr("seoul", _Any) ->
-    "seoul.kr";
-
-kr("daegu", _Any) ->
-    "daegu.kr";
-
-kr("sc", _Any) ->
-    "sc.kr";
-
-kr("gyeongbuk", _Any) ->
-    "gyeongbuk.kr";
-
-
-kr(_, _) ->
-    "kr".
-
-%% regular rules
-tm("com", _Any) ->
-    "com.tm";
-
-tm("co", _Any) ->
-    "co.tm";
-
-tm("org", _Any) ->
-    "org.tm";
-
-tm("gov", _Any) ->
-    "gov.tm";
-
-tm("nom", _Any) ->
-    "nom.tm";
-
-tm("net", _Any) ->
-    "net.tm";
-
-tm("mil", _Any) ->
-    "mil.tm";
-
-tm("edu", _Any) ->
-    "edu.tm";
-
-
-tm(_, _) ->
-    "tm".
-
-%% regular rules
-vi("net", _Any) ->
-    "net.vi";
-
-vi("co", _Any) ->
-    "co.vi";
-
-vi("org", _Any) ->
-    "org.vi";
-
-vi("com", _Any) ->
-    "com.vi";
-
-
-vi(_, _) ->
-    "vi".
-
-%% regular rules
-mv("info", _Any) ->
-    "info.mv";
-
-mv("com", _Any) ->
-    "com.mv";
-
-mv("org", _Any) ->
-    "org.mv";
-
-mv("museum", _Any) ->
-    "museum.mv";
-
-mv("int", _Any) ->
-    "int.mv";
-
-mv("name", _Any) ->
-    "name.mv";
-
-mv("coop", _Any) ->
-    "coop.mv";
-
-mv("gov", _Any) ->
-    "gov.mv";
-
-mv("biz", _Any) ->
-    "biz.mv";
-
-mv("edu", _Any) ->
-    "edu.mv";
-
-mv("pro", _Any) ->
-    "pro.mv";
-
-mv("net", _Any) ->
-    "net.mv";
-
-mv("aero", _Any) ->
-    "aero.mv";
-
-mv("mil", _Any) ->
-    "mil.mv";
-
-
-mv(_, _) ->
-    "mv".
-
-%% regular rules
-cr("or", _Any) ->
-    "or.cr";
-
-cr("go", _Any) ->
-    "go.cr";
-
-cr("ed", _Any) ->
-    "ed.cr";
-
-cr("fi", _Any) ->
-    "fi.cr";
-
-cr("ac", _Any) ->
-    "ac.cr";
-
-cr("co", _Any) ->
-    "co.cr";
-
-cr("sa", _Any) ->
-    "sa.cr";
-
-
-cr(_, _) ->
-    "cr".
-
-%% regular rules
-nl("co", _Any) ->
-    "co.nl";
-
-nl("bv", _Any) ->
-    "bv.nl";
-
-nl("blogspot", _Any) ->
-    "blogspot.nl";
-
-
-nl(_, _) ->
-    "nl".
-
-%% regular rules
-cd("gov", _Any) ->
-    "gov.cd";
-
-
-cd(_, _) ->
-    "cd".
-
-%% regular rules
-ro("com", _Any) ->
-    "com.ro";
-
-ro("www", _Any) ->
-    "www.ro";
-
-ro("firm", _Any) ->
-    "firm.ro";
-
-ro("info", _Any) ->
-    "info.ro";
-
-ro("tm", _Any) ->
-    "tm.ro";
-
-ro("nt", _Any) ->
-    "nt.ro";
-
-ro("store", _Any) ->
-    "store.ro";
-
-ro("arts", _Any) ->
-    "arts.ro";
-
-ro("org", _Any) ->
-    "org.ro";
-
-ro("rec", _Any) ->
-    "rec.ro";
-
-ro("nom", _Any) ->
-    "nom.ro";
-
-ro("blogspot", _Any) ->
-    "blogspot.ro";
-
-
-ro(_, _) ->
-    "ro".
-
-%% regular rules
-biz("webhop", _Any) ->
-    "webhop.biz";
-
-biz("dyndns", _Any) ->
-    "dyndns.biz";
-
-biz("selfip", _Any) ->
-    "selfip.biz";
-
-
-biz(_, _) ->
-    "biz".
-
-%% regular rules
-jo("mil", _Any) ->
-    "mil.jo";
-
-jo("net", _Any) ->
-    "net.jo";
-
-jo("edu", _Any) ->
-    "edu.jo";
-
-jo("sch", _Any) ->
-    "sch.jo";
-
-jo("gov", _Any) ->
-    "gov.jo";
-
-jo("name", _Any) ->
-    "name.jo";
-
-jo("org", _Any) ->
-    "org.jo";
-
-jo("com", _Any) ->
-    "com.jo";
-
-
-jo(_, _) ->
-    "jo".
-
-%% regular rules
-com("codespot", _Any) ->
-    "codespot.com";
-
-com("herokussl", _Any) ->
-    "herokussl.com";
-
-com("selfip", _Any) ->
-    "selfip.com";
-
-com("dreamhosters", _Any) ->
-    "dreamhosters.com";
-
-com("servebbs", _Any) ->
-    "servebbs.com";
-
-com("gb", _Any) ->
-    "gb.com";
-
-com("cloudcontrolapp", _Any) ->
-    "cloudcontrolapp.com";
-
-com("dynalias", _Any) ->
-    "dynalias.com";
-
-com("dnsalias", _Any) ->
-    "dnsalias.com";
-
-com("mex", _Any) ->
-    "mex.com";
-
-com("blogdns", _Any) ->
-    "blogdns.com";
-
-com("gr", _Any) ->
-    "gr.com";
-
-com("githubusercontent", _Any) ->
-    "githubusercontent.com";
-
-com("iamallama", _Any) ->
-    "iamallama.com";
-
-com("betainabox", _Any) ->
-    "betainabox.com";
-
-com("co", _Any) ->
-    "co.com";
-
-com("likescandy", _Any) ->
-    "likescandy.com";
-
-com("jpn", _Any) ->
-    "jpn.com";
-
-com("uy", _Any) ->
-    "uy.com";
-
-com("rhcloud", _Any) ->
-    "rhcloud.com";
-
-com("doesntexist", _Any) ->
-    "doesntexist.com";
-
-com("ar", _Any) ->
-    "ar.com";
-
-com("gotdns", _Any) ->
-    "gotdns.com";
-
-com("cechire", _Any) ->
-    "cechire.com";
-
-com("withgoogle", _Any) ->
-    "withgoogle.com";
-
-com("elasticbeanstalk", _Any) ->
-    "elasticbeanstalk.com";
-
-com("getmyip", _Any) ->
-    "getmyip.com";
-
-com("firebaseapp", _Any) ->
-    "firebaseapp.com";
-
-com("us", _Any) ->
-    "us.com";
-
-com("sa", _Any) ->
-    "sa.com";
-
-com("herokuapp", _Any) ->
-    "herokuapp.com";
-
-com("kr", _Any) ->
-    "kr.com";
-
-com("operaunite", _Any) ->
-    "operaunite.com";
-
-com("blogspot", _Any) ->
-    "blogspot.com";
-
-com("googlecode", _Any) ->
-    "googlecode.com";
-
-com("hu", _Any) ->
-    "hu.com";
-
-com("uk", _Any) ->
-    "uk.com";
-
-com("br", _Any) ->
-    "br.com";
-
-com("no", _Any) ->
-    "no.com";
-
-com("za", _Any) ->
-    "za.com";
-
-com("googleapis", _Any) ->
-    "googleapis.com";
-
-com("africa", _Any) ->
-    "africa.com";
-
-com("outsystemscloud", _Any) ->
-    "outsystemscloud.com";
-
-com("nfshost", _Any) ->
-    "nfshost.com";
-
-com("se", _Any) ->
-    "se.com";
-
-com("appspot", _Any) ->
-    "appspot.com";
-
-com("homeunix", _Any) ->
-    "homeunix.com";
-
-com("ru", _Any) ->
-    "ru.com";
-
-com("eu", _Any) ->
-    "eu.com";
-
-com("qc", _Any) ->
-    "qc.com";
-
-com("writesthisblog", _Any) ->
-    "writesthisblog.com";
-
-com("homelinux", _Any) ->
-    "homelinux.com";
-
-com("ro", _Any) ->
-    "ro.com";
-
-com("cloudcontrolled", _Any) ->
-    "cloudcontrolled.com";
-
-com("dontexist", _Any) ->
-    "dontexist.com";
-
-com("dnsdojo", _Any) ->
-    "dnsdojo.com";
-
-com("amazonaws", []) ->
-    "amazonaws.com";
-com("amazonaws", Parts) ->
-    [First | Rest] = Parts,
-    amazonaws_com(First, Rest);
-
-com("issmarterthanyou", _Any) ->
-    "issmarterthanyou.com";
-
-com("doomdns", _Any) ->
-    "doomdns.com";
-
-com("cn", _Any) ->
-    "cn.com";
-
-com("de", _Any) ->
-    "de.com";
-
-
-com(_, _) ->
-    "com".
-
-%% regular rules
-amazonaws_com("elb", _Any) ->
-    "elb.amazonaws.com";
-
-amazonaws_com("compute", _Any) ->
-    "compute.amazonaws.com";
-
-
-amazonaws_com(_, _) ->
-    "amazonaws.com".
-
-%% regular rules
-bg("s", _Any) ->
-    "s.bg";
-
-bg("u", _Any) ->
-    "u.bg";
-
-bg("o", _Any) ->
-    "o.bg";
-
-bg("l", _Any) ->
-    "l.bg";
-
-bg("v", _Any) ->
-    "v.bg";
-
-bg("w", _Any) ->
-    "w.bg";
-
-bg("z", _Any) ->
-    "z.bg";
-
-bg("f", _Any) ->
-    "f.bg";
-
-bg("d", _Any) ->
-    "d.bg";
-
-bg("t", _Any) ->
-    "t.bg";
-
-bg("p", _Any) ->
-    "p.bg";
-
-bg("g", _Any) ->
-    "g.bg";
-
-bg("b", _Any) ->
-    "b.bg";
-
-bg("q", _Any) ->
-    "q.bg";
-
-bg("m", _Any) ->
-    "m.bg";
-
-bg("y", _Any) ->
-    "y.bg";
-
-bg("i", _Any) ->
-    "i.bg";
-
-bg("e", _Any) ->
-    "e.bg";
-
-bg("r", _Any) ->
-    "r.bg";
-
-bg("j", _Any) ->
-    "j.bg";
-
-bg("h", _Any) ->
-    "h.bg";
-
-bg("n", _Any) ->
-    "n.bg";
-
-bg("a", _Any) ->
-    "a.bg";
-
-bg("c", _Any) ->
-    "c.bg";
-
-bg("k", _Any) ->
-    "k.bg";
-
-bg("x", _Any) ->
-    "x.bg";
-
-
-bg(_, _) ->
-    "bg".
-
-%% regular rules
-sa("pub", _Any) ->
-    "pub.sa";
-
-sa("org", _Any) ->
-    "org.sa";
-
-sa("com", _Any) ->
-    "com.sa";
-
-sa("med", _Any) ->
-    "med.sa";
-
-sa("net", _Any) ->
-    "net.sa";
-
-sa("sch", _Any) ->
-    "sch.sa";
-
-sa("edu", _Any) ->
-    "edu.sa";
-
-sa("gov", _Any) ->
-    "gov.sa";
-
-
-sa(_, _) ->
-    "sa".
-
-%% regular rules
-sh("com", _Any) ->
-    "com.sh";
-
-sh("gov", _Any) ->
-    "gov.sh";
-
-sh("mil", _Any) ->
-    "mil.sh";
-
-sh("net", _Any) ->
-    "net.sh";
-
-sh("org", _Any) ->
-    "org.sh";
-
-
-sh(_, _) ->
-    "sh".
-
-%% regular rules
-je("co", _Any) ->
-    "co.je";
-
-je("org", _Any) ->
-    "org.je";
-
-je("net", _Any) ->
-    "net.je";
-
-
-je(_, _) ->
-    "je".
-
-%% regular rules
-vu("edu", _Any) ->
-    "edu.vu";
-
-vu("org", _Any) ->
-    "org.vu";
-
-vu("net", _Any) ->
-    "net.vu";
-
-vu("com", _Any) ->
-    "com.vu";
-
-
-vu(_, _) ->
-    "vu".
-
-%% regular rules
-info("webhop", _Any) ->
-    "webhop.info";
-
-info("selfip", _Any) ->
-    "selfip.info";
-
-info("knowsitall", _Any) ->
-    "knowsitall.info";
-
-info("dyndns", _Any) ->
-    "dyndns.info";
-
-
-info(_, _) ->
-    "info".
-
-%% regular rules
-lv("id", _Any) ->
-    "id.lv";
-
-lv("gov", _Any) ->
-    "gov.lv";
-
-lv("conf", _Any) ->
-    "conf.lv";
-
-lv("mil", _Any) ->
-    "mil.lv";
-
-lv("net", _Any) ->
-    "net.lv";
-
-lv("edu", _Any) ->
-    "edu.lv";
-
-lv("asn", _Any) ->
-    "asn.lv";
-
-lv("com", _Any) ->
-    "com.lv";
-
-lv("org", _Any) ->
-    "org.lv";
-
-
-lv(_, _) ->
-    "lv".
-
-%% regular rules
-ao("og", _Any) ->
-    "og.ao";
-
-ao("co", _Any) ->
-    "co.ao";
-
-ao("it", _Any) ->
-    "it.ao";
-
-ao("ed", _Any) ->
-    "ed.ao";
-
-ao("pb", _Any) ->
-    "pb.ao";
-
-ao("gv", _Any) ->
-    "gv.ao";
-
-
-ao(_, _) ->
-    "ao".
-
-%% regular rules
-so("com", _Any) ->
-    "com.so";
-
-so("net", _Any) ->
-    "net.so";
-
-so("org", _Any) ->
-    "org.so";
-
-
-so(_, _) ->
-    "so".
-
-%% regular rules
-pro("law", _Any) ->
-    "law.pro";
-
-pro("aca", _Any) ->
-    "aca.pro";
-
-pro("cpa", _Any) ->
-    "cpa.pro";
-
-pro("eng", _Any) ->
-    "eng.pro";
-
-pro("med", _Any) ->
-    "med.pro";
-
-pro("jur", _Any) ->
-    "jur.pro";
-
-pro("bar", _Any) ->
-    "bar.pro";
-
-
-pro(_, _) ->
-    "pro".
-
-%% regular rules
-ac("net", _Any) ->
-    "net.ac";
-
-ac("mil", _Any) ->
-    "mil.ac";
-
-ac("edu", _Any) ->
-    "edu.ac";
-
-ac("org", _Any) ->
-    "org.ac";
-
-ac("gov", _Any) ->
-    "gov.ac";
-
-ac("com", _Any) ->
-    "com.ac";
-
-
-ac(_, _) ->
-    "ac".
-
-%% regular rules
-pr("com", _Any) ->
-    "com.pr";
-
-pr("est", _Any) ->
-    "est.pr";
-
-pr("info", _Any) ->
-    "info.pr";
-
-pr("isla", _Any) ->
-    "isla.pr";
-
-pr("org", _Any) ->
-    "org.pr";
-
-pr("biz", _Any) ->
-    "biz.pr";
-
-pr("gov", _Any) ->
-    "gov.pr";
-
-pr("prof", _Any) ->
-    "prof.pr";
-
-pr("name", _Any) ->
-    "name.pr";
-
-pr("pro", _Any) ->
-    "pro.pr";
-
-pr("net", _Any) ->
-    "net.pr";
-
-pr("edu", _Any) ->
-    "edu.pr";
-
-pr("ac", _Any) ->
-    "ac.pr";
-
-
-pr(_, _) ->
-    "pr".
-
-%% regular rules
-ky("net", _Any) ->
-    "net.ky";
-
-ky("org", _Any) ->
-    "org.ky";
-
-ky("edu", _Any) ->
-    "edu.ky";
-
-ky("com", _Any) ->
-    "com.ky";
-
-ky("gov", _Any) ->
-    "gov.ky";
-
-
-ky(_, _) ->
-    "ky".
-
-%% regular rules
-ge("org", _Any) ->
-    "org.ge";
-
-ge("edu", _Any) ->
-    "edu.ge";
-
-ge("net", _Any) ->
-    "net.ge";
-
-ge("mil", _Any) ->
-    "mil.ge";
-
-ge("gov", _Any) ->
-    "gov.ge";
-
-ge("pvt", _Any) ->
-    "pvt.ge";
-
-ge("com", _Any) ->
-    "com.ge";
-
-
-ge(_, _) ->
-    "ge".
-
-%% regular rules
-pe("mil", _Any) ->
-    "mil.pe";
-
-pe("net", _Any) ->
-    "net.pe";
-
-pe("org", _Any) ->
-    "org.pe";
-
-pe("gob", _Any) ->
-    "gob.pe";
-
-pe("edu", _Any) ->
-    "edu.pe";
-
-pe("com", _Any) ->
-    "com.pe";
-
-pe("nom", _Any) ->
-    "nom.pe";
-
-
-pe(_, _) ->
-    "pe".
-
-%% regular rules
-nc("asso", _Any) ->
-    "asso.nc";
-
-
-nc(_, _) ->
-    "nc".
-
-%% regular rules
-ua("co", _Any) ->
-    "co.ua";
-
-ua("dn", _Any) ->
-    "dn.ua";
-
-ua("rv", _Any) ->
-    "rv.ua";
-
-ua("com", _Any) ->
-    "com.ua";
-
-ua("edu", _Any) ->
-    "edu.ua";
-
-ua("net", _Any) ->
-    "net.ua";
-
-ua("mykolaiv", _Any) ->
-    "mykolaiv.ua";
-
-ua("kherson", _Any) ->
-    "kherson.ua";
-
-ua("zp", _Any) ->
-    "zp.ua";
-
-ua("khmelnitskiy", _Any) ->
-    "khmelnitskiy.ua";
-
-ua("dnepropetrovsk", _Any) ->
-    "dnepropetrovsk.ua";
-
-ua("zaporizhzhia", _Any) ->
-    "zaporizhzhia.ua";
-
-ua("mk", _Any) ->
-    "mk.ua";
-
-ua("uz", _Any) ->
-    "uz.ua";
-
-ua("te", _Any) ->
-    "te.ua";
-
-ua("rivne", _Any) ->
-    "rivne.ua";
-
-ua("cherkasy", _Any) ->
-    "cherkasy.ua";
-
-ua("krym", _Any) ->
-    "krym.ua";
-
-ua("kirovograd", _Any) ->
-    "kirovograd.ua";
-
-ua("nikolaev", _Any) ->
-    "nikolaev.ua";
-
-ua("ternopil", _Any) ->
-    "ternopil.ua";
-
-ua("kiev", _Any) ->
-    "kiev.ua";
-
-ua("pp", _Any) ->
-    "pp.ua";
-
-ua("lv", _Any) ->
-    "lv.ua";
-
-ua("km", _Any) ->
-    "km.ua";
-
-ua("cn", _Any) ->
-    "cn.ua";
-
-ua("lugansk", _Any) ->
-    "lugansk.ua";
-
-ua("lg", _Any) ->
-    "lg.ua";
-
-ua("sevastopol", _Any) ->
-    "sevastopol.ua";
-
-ua("kh", _Any) ->
-    "kh.ua";
-
-ua("poltava", _Any) ->
-    "poltava.ua";
-
-ua("gov", _Any) ->
-    "gov.ua";
-
-ua("chernigov", _Any) ->
-    "chernigov.ua";
-
-ua("ks", _Any) ->
-    "ks.ua";
-
-ua("kharkov", _Any) ->
-    "kharkov.ua";
-
-ua("zhytomyr", _Any) ->
-    "zhytomyr.ua";
-
-ua("vinnica", _Any) ->
-    "vinnica.ua";
-
-ua("zaporizhzhe", _Any) ->
-    "zaporizhzhe.ua";
-
-ua("kharkiv", _Any) ->
-    "kharkiv.ua";
-
-ua("rovno", _Any) ->
-    "rovno.ua";
-
-ua("vn", _Any) ->
-    "vn.ua";
-
-ua("lutsk", _Any) ->
-    "lutsk.ua";
-
-ua("dnipropetrovsk", _Any) ->
-    "dnipropetrovsk.ua";
-
-ua("pl", _Any) ->
-    "pl.ua";
-
-ua("zhitomir", _Any) ->
-    "zhitomir.ua";
-
-ua("lviv", _Any) ->
-    "lviv.ua";
-
-ua("cv", _Any) ->
-    "cv.ua";
-
-ua("vinnytsia", _Any) ->
-    "vinnytsia.ua";
-
-ua("zt", _Any) ->
-    "zt.ua";
-
-ua("if", _Any) ->
-    "if.ua";
-
-ua("crimea", _Any) ->
-    "crimea.ua";
-
-ua("chernovtsy", _Any) ->
-    "chernovtsy.ua";
-
-ua("odessa", _Any) ->
-    "odessa.ua";
-
-ua("in", _Any) ->
-    "in.ua";
-
-ua("ck", _Any) ->
-    "ck.ua";
-
-ua("sumy", _Any) ->
-    "sumy.ua";
-
-ua("sb", _Any) ->
-    "sb.ua";
-
-ua("dp", _Any) ->
-    "dp.ua";
-
-ua("kv", _Any) ->
-    "kv.ua";
-
-ua("dominic", _Any) ->
-    "dominic.ua";
-
-ua("yalta", _Any) ->
-    "yalta.ua";
-
-ua("kyiv", _Any) ->
-    "kyiv.ua";
-
-ua("chernihiv", _Any) ->
-    "chernihiv.ua";
-
-ua("uzhgorod", _Any) ->
-    "uzhgorod.ua";
-
-ua("sm", _Any) ->
-    "sm.ua";
-
-ua("cr", _Any) ->
-    "cr.ua";
-
-ua("lt", _Any) ->
-    "lt.ua";
-
-ua("odesa", _Any) ->
-    "odesa.ua";
-
-ua("chernivtsi", _Any) ->
-    "chernivtsi.ua";
-
-ua("org", _Any) ->
-    "org.ua";
-
-ua("kr", _Any) ->
-    "kr.ua";
-
-ua("od", _Any) ->
-    "od.ua";
-
-ua("volyn", _Any) ->
-    "volyn.ua";
-
-ua("donetsk", _Any) ->
-    "donetsk.ua";
-
-ua("khmelnytskyi", _Any) ->
-    "khmelnytskyi.ua";
-
-ua("sebastopol", _Any) ->
-    "sebastopol.ua";
-
-ua("cherkassy", _Any) ->
-    "cherkassy.ua";
-
-
-ua(_, _) ->
-    "ua".
-
-%% regular rules
-qa("name", _Any) ->
-    "name.qa";
-
-qa("gov", _Any) ->
-    "gov.qa";
-
-qa("edu", _Any) ->
-    "edu.qa";
-
-qa("sch", _Any) ->
-    "sch.qa";
-
-qa("net", _Any) ->
-    "net.qa";
-
-qa("mil", _Any) ->
-    "mil.qa";
-
-qa("com", _Any) ->
-    "com.qa";
-
-qa("org", _Any) ->
-    "org.qa";
-
-
-qa(_, _) ->
-    "qa".
-
-%% regular rules
-uk("me", _Any) ->
-    "me.uk";
-
-uk("plc", _Any) ->
-    "plc.uk";
-
-uk("org", _Any) ->
-    "org.uk";
-
-uk("police", _Any) ->
-    "police.uk";
-
-uk("co", []) ->
-    "co.uk";
-uk("co", Parts) ->
-    [First | Rest] = Parts,
-    co_uk(First, Rest);
-
-uk("ltd", _Any) ->
-    "ltd.uk";
-
-uk("gov", _Any) ->
-    "gov.uk";
-
-uk("net", _Any) ->
-    "net.uk";
-
-uk("nhs", _Any) ->
-    "nhs.uk";
-
-uk("ac", _Any) ->
-    "ac.uk";
-
-
-uk(_, _) ->
-    "uk".
-
-%% regular rules
-co_uk("blogspot", _Any) ->
-    "blogspot.co.uk";
-
-
-co_uk(_, _) ->
-    "co.uk".
-
-%% regular rules
-ws("org", _Any) ->
-    "org.ws";
-
-ws("edu", _Any) ->
-    "edu.ws";
-
-ws("net", _Any) ->
-    "net.ws";
-
-ws("gov", _Any) ->
-    "gov.ws";
-
-ws("com", _Any) ->
-    "com.ws";
-
-ws("mypets", _Any) ->
-    "mypets.ws";
-
-ws("dyndns", _Any) ->
-    "dyndns.ws";
-
-
-ws(_, _) ->
-    "ws".
-
-%% regular rules
-uz("com", _Any) ->
-    "com.uz";
-
-uz("net", _Any) ->
-    "net.uz";
-
-uz("co", _Any) ->
-    "co.uz";
-
-uz("org", _Any) ->
-    "org.uz";
-
-
-uz(_, _) ->
-    "uz".
-
-%% regular rules
-fr("blogspot", _Any) ->
-    "blogspot.fr";
-
-fr("presse", _Any) ->
-    "presse.fr";
-
-fr("nom", _Any) ->
-    "nom.fr";
-
-fr("veterinaire", _Any) ->
-    "veterinaire.fr";
-
-fr("prd", _Any) ->
-    "prd.fr";
-
-fr("port", _Any) ->
-    "port.fr";
-
-fr("medecin", _Any) ->
-    "medecin.fr";
-
-fr("notaires", _Any) ->
-    "notaires.fr";
-
-fr("cci", _Any) ->
-    "cci.fr";
-
-fr("asso", _Any) ->
-    "asso.fr";
-
-fr("tm", _Any) ->
-    "tm.fr";
-
-fr("chambagri", _Any) ->
-    "chambagri.fr";
-
-fr("greta", _Any) ->
-    "greta.fr";
-
-fr("pharmacien", _Any) ->
-    "pharmacien.fr";
-
-fr("com", _Any) ->
-    "com.fr";
-
-fr("gouv", _Any) ->
-    "gouv.fr";
-
-fr("avoues", _Any) ->
-    "avoues.fr";
-
-fr("assedic", _Any) ->
-    "assedic.fr";
-
-fr("aeroport", _Any) ->
-    "aeroport.fr";
-
-fr("avocat", _Any) ->
-    "avocat.fr";
-
-
-fr(_, _) ->
-    "fr".
-
-%% regular rules
-aw("com", _Any) ->
-    "com.aw";
-
-
-aw(_, _) ->
-    "aw".
-
-%% regular rules
-jp("saitama", []) ->
-    "saitama.jp";
-jp("saitama", Parts) ->
-    [First | Rest] = Parts,
-    saitama_jp(First, Rest);
-
-jp("fukui", []) ->
-    "fukui.jp";
-jp("fukui", Parts) ->
-    [First | Rest] = Parts,
-    fukui_jp(First, Rest);
-
-jp("oita", []) ->
-    "oita.jp";
-jp("oita", Parts) ->
-    [First | Rest] = Parts,
-    oita_jp(First, Rest);
-
-jp("okayama", []) ->
-    "okayama.jp";
-jp("okayama", Parts) ->
-    [First | Rest] = Parts,
-    okayama_jp(First, Rest);
-
-jp("chiba", []) ->
-    "chiba.jp";
-jp("chiba", Parts) ->
-    [First | Rest] = Parts,
-    chiba_jp(First, Rest);
-
-jp("kagawa", []) ->
-    "kagawa.jp";
-jp("kagawa", Parts) ->
-    [First | Rest] = Parts,
-    kagawa_jp(First, Rest);
-
-jp("ibaraki", []) ->
-    "ibaraki.jp";
-jp("ibaraki", Parts) ->
-    [First | Rest] = Parts,
-    ibaraki_jp(First, Rest);
-
-jp("ehime", []) ->
-    "ehime.jp";
-jp("ehime", Parts) ->
-    [First | Rest] = Parts,
-    ehime_jp(First, Rest);
-
-jp("ishikawa", []) ->
-    "ishikawa.jp";
-jp("ishikawa", Parts) ->
-    [First | Rest] = Parts,
-    ishikawa_jp(First, Rest);
-
-jp("gr", _Any) ->
-    "gr.jp";
-
-jp("shimane", []) ->
-    "shimane.jp";
-jp("shimane", Parts) ->
-    [First | Rest] = Parts,
-    shimane_jp(First, Rest);
-
-jp("akita", []) ->
-    "akita.jp";
-jp("akita", Parts) ->
-    [First | Rest] = Parts,
-    akita_jp(First, Rest);
-
-jp("go", _Any) ->
-    "go.jp";
-
-jp("nagano", []) ->
-    "nagano.jp";
-jp("nagano", Parts) ->
-    [First | Rest] = Parts,
-    nagano_jp(First, Rest);
-
-jp("co", _Any) ->
-    "co.jp";
-
-jp("ne", _Any) ->
-    "ne.jp";
-
-jp("fukushima", []) ->
-    "fukushima.jp";
-jp("fukushima", Parts) ->
-    [First | Rest] = Parts,
-    fukushima_jp(First, Rest);
-
-jp("tottori", []) ->
-    "tottori.jp";
-jp("tottori", Parts) ->
-    [First | Rest] = Parts,
-    tottori_jp(First, Rest);
-
-jp("gunma", []) ->
-    "gunma.jp";
-jp("gunma", Parts) ->
-    [First | Rest] = Parts,
-    gunma_jp(First, Rest);
-
-jp("hokkaido", []) ->
-    "hokkaido.jp";
-jp("hokkaido", Parts) ->
-    [First | Rest] = Parts,
-    hokkaido_jp(First, Rest);
-
-jp("ed", _Any) ->
-    "ed.jp";
-
-jp("mie", []) ->
-    "mie.jp";
-jp("mie", Parts) ->
-    [First | Rest] = Parts,
-    mie_jp(First, Rest);
-
-jp("ac", _Any) ->
-    "ac.jp";
-
-jp("kumamoto", []) ->
-    "kumamoto.jp";
-jp("kumamoto", Parts) ->
-    [First | Rest] = Parts,
-    kumamoto_jp(First, Rest);
-
-jp("shiga", []) ->
-    "shiga.jp";
-jp("shiga", Parts) ->
-    [First | Rest] = Parts,
-    shiga_jp(First, Rest);
-
-jp("yamanashi", []) ->
-    "yamanashi.jp";
-jp("yamanashi", Parts) ->
-    [First | Rest] = Parts,
-    yamanashi_jp(First, Rest);
-
-jp("kanagawa", []) ->
-    "kanagawa.jp";
-jp("kanagawa", Parts) ->
-    [First | Rest] = Parts,
-    kanagawa_jp(First, Rest);
-
-jp("gifu", []) ->
-    "gifu.jp";
-jp("gifu", Parts) ->
-    [First | Rest] = Parts,
-    gifu_jp(First, Rest);
-
-jp("okinawa", []) ->
-    "okinawa.jp";
-jp("okinawa", Parts) ->
-    [First | Rest] = Parts,
-    okinawa_jp(First, Rest);
-
-jp("nara", []) ->
-    "nara.jp";
-jp("nara", Parts) ->
-    [First | Rest] = Parts,
-    nara_jp(First, Rest);
-
-jp("osaka", []) ->
-    "osaka.jp";
-jp("osaka", Parts) ->
-    [First | Rest] = Parts,
-    osaka_jp(First, Rest);
-
-jp("lg", _Any) ->
-    "lg.jp";
-
-jp("kyoto", []) ->
-    "kyoto.jp";
-jp("kyoto", Parts) ->
-    [First | Rest] = Parts,
-    kyoto_jp(First, Rest);
-
-jp("tokyo", []) ->
-    "tokyo.jp";
-jp("tokyo", Parts) ->
-    [First | Rest] = Parts,
-    tokyo_jp(First, Rest);
-
-jp("hiroshima", []) ->
-    "hiroshima.jp";
-jp("hiroshima", Parts) ->
-    [First | Rest] = Parts,
-    hiroshima_jp(First, Rest);
-
-jp("kochi", []) ->
-    "kochi.jp";
-jp("kochi", Parts) ->
-    [First | Rest] = Parts,
-    kochi_jp(First, Rest);
-
-jp("fukuoka", []) ->
-    "fukuoka.jp";
-jp("fukuoka", Parts) ->
-    [First | Rest] = Parts,
-    fukuoka_jp(First, Rest);
-
-jp("iwate", []) ->
-    "iwate.jp";
-jp("iwate", Parts) ->
-    [First | Rest] = Parts,
-    iwate_jp(First, Rest);
-
-jp("miyazaki", []) ->
-    "miyazaki.jp";
-jp("miyazaki", Parts) ->
-    [First | Rest] = Parts,
-    miyazaki_jp(First, Rest);
-
-jp("toyama", []) ->
-    "toyama.jp";
-jp("toyama", Parts) ->
-    [First | Rest] = Parts,
-    toyama_jp(First, Rest);
-
-jp("hyogo", []) ->
-    "hyogo.jp";
-jp("hyogo", Parts) ->
-    [First | Rest] = Parts,
-    hyogo_jp(First, Rest);
-
-jp("or", _Any) ->
-    "or.jp";
-
-jp("niigata", []) ->
-    "niigata.jp";
-jp("niigata", Parts) ->
-    [First | Rest] = Parts,
-    niigata_jp(First, Rest);
-
-jp("wakayama", []) ->
-    "wakayama.jp";
-jp("wakayama", Parts) ->
-    [First | Rest] = Parts,
-    wakayama_jp(First, Rest);
-
-jp("kagoshima", []) ->
-    "kagoshima.jp";
-jp("kagoshima", Parts) ->
-    [First | Rest] = Parts,
-    kagoshima_jp(First, Rest);
-
-jp("yamagata", []) ->
-    "yamagata.jp";
-jp("yamagata", Parts) ->
-    [First | Rest] = Parts,
-    yamagata_jp(First, Rest);
-
-jp("miyagi", []) ->
-    "miyagi.jp";
-jp("miyagi", Parts) ->
-    [First | Rest] = Parts,
-    miyagi_jp(First, Rest);
-
-jp("blogspot", _Any) ->
-    "blogspot.jp";
-
-jp("aomori", []) ->
-    "aomori.jp";
-jp("aomori", Parts) ->
-    [First | Rest] = Parts,
-    aomori_jp(First, Rest);
-
-jp("tochigi", []) ->
-    "tochigi.jp";
-jp("tochigi", Parts) ->
-    [First | Rest] = Parts,
-    tochigi_jp(First, Rest);
-
-jp("saga", []) ->
-    "saga.jp";
-jp("saga", Parts) ->
-    [First | Rest] = Parts,
-    saga_jp(First, Rest);
-
-jp("tokushima", []) ->
-    "tokushima.jp";
-jp("tokushima", Parts) ->
-    [First | Rest] = Parts,
-    tokushima_jp(First, Rest);
-
-jp("nagasaki", []) ->
-    "nagasaki.jp";
-jp("nagasaki", Parts) ->
-    [First | Rest] = Parts,
-    nagasaki_jp(First, Rest);
-
-jp("ad", _Any) ->
-    "ad.jp";
-
-jp("yamaguchi", []) ->
-    "yamaguchi.jp";
-jp("yamaguchi", Parts) ->
-    [First | Rest] = Parts,
-    yamaguchi_jp(First, Rest);
-
-jp("aichi", []) ->
-    "aichi.jp";
-jp("aichi", Parts) ->
-    [First | Rest] = Parts,
-    aichi_jp(First, Rest);
-
-jp("shizuoka", []) ->
-    "shizuoka.jp";
-jp("shizuoka", Parts) ->
-    [First | Rest] = Parts,
-    shizuoka_jp(First, Rest);
-
-
-jp(_, _) ->
-    "jp".
-
-%% regular rules
-saitama_jp("kazo", _Any) ->
-    "kazo.saitama.jp";
-
-saitama_jp("tsurugashima", _Any) ->
-    "tsurugashima.saitama.jp";
-
-saitama_jp("ryokami", _Any) ->
-    "ryokami.saitama.jp";
-
-saitama_jp("urawa", _Any) ->
-    "urawa.saitama.jp";
-
-saitama_jp("kumagaya", _Any) ->
-    "kumagaya.saitama.jp";
-
-saitama_jp("fujimi", _Any) ->
-    "fujimi.saitama.jp";
-
-saitama_jp("yashio", _Any) ->
-    "yashio.saitama.jp";
-
-saitama_jp("warabi", _Any) ->
-    "warabi.saitama.jp";
-
-saitama_jp("ogawa", _Any) ->
-    "ogawa.saitama.jp";
-
-saitama_jp("otaki", _Any) ->
-    "otaki.saitama.jp";
-
-saitama_jp("tokorozawa", _Any) ->
-    "tokorozawa.saitama.jp";
-
-saitama_jp("fukaya", _Any) ->
-    "fukaya.saitama.jp";
-
-saitama_jp("yokoze", _Any) ->
-    "yokoze.saitama.jp";
-
-saitama_jp("koshigaya", _Any) ->
-    "koshigaya.saitama.jp";
-
-saitama_jp("yono", _Any) ->
-    "yono.saitama.jp";
-
-saitama_jp("sayama", _Any) ->
-    "sayama.saitama.jp";
-
-saitama_jp("matsubushi", _Any) ->
-    "matsubushi.saitama.jp";
-
-saitama_jp("soka", _Any) ->
-    "soka.saitama.jp";
-
-saitama_jp("kawajima", _Any) ->
-    "kawajima.saitama.jp";
-
-saitama_jp("satte", _Any) ->
-    "satte.saitama.jp";
-
-saitama_jp("kounosu", _Any) ->
-    "kounosu.saitama.jp";
-
-saitama_jp("kitamoto", _Any) ->
-    "kitamoto.saitama.jp";
-
-saitama_jp("hanno", _Any) ->
-    "hanno.saitama.jp";
-
-saitama_jp("niiza", _Any) ->
-    "niiza.saitama.jp";
-
-saitama_jp("kawagoe", _Any) ->
-    "kawagoe.saitama.jp";
-
-saitama_jp("nagatoro", _Any) ->
-    "nagatoro.saitama.jp";
-
-saitama_jp("chichibu", _Any) ->
-    "chichibu.saitama.jp";
-
-saitama_jp("hatogaya", _Any) ->
-    "hatogaya.saitama.jp";
-
-saitama_jp("toda", _Any) ->
-    "toda.saitama.jp";
-
-saitama_jp("ranzan", _Any) ->
-    "ranzan.saitama.jp";
-
-saitama_jp("asaka", _Any) ->
-    "asaka.saitama.jp";
-
-saitama_jp("higashimatsuyama", _Any) ->
-    "higashimatsuyama.saitama.jp";
-
-saitama_jp("hanyu", _Any) ->
-    "hanyu.saitama.jp";
-
-saitama_jp("miyoshi", _Any) ->
-    "miyoshi.saitama.jp";
-
-saitama_jp("kawaguchi", _Any) ->
-    "kawaguchi.saitama.jp";
-
-saitama_jp("hatoyama", _Any) ->
-    "hatoyama.saitama.jp";
-
-saitama_jp("ina", _Any) ->
-    "ina.saitama.jp";
-
-saitama_jp("arakawa", _Any) ->
-    "arakawa.saitama.jp";
-
-saitama_jp("omiya", _Any) ->
-    "omiya.saitama.jp";
-
-saitama_jp("kamikawa", _Any) ->
-    "kamikawa.saitama.jp";
-
-saitama_jp("misato", _Any) ->
-    "misato.saitama.jp";
-
-saitama_jp("yoshida", _Any) ->
-    "yoshida.saitama.jp";
-
-saitama_jp("ogano", _Any) ->
-    "ogano.saitama.jp";
-
-saitama_jp("kamisato", _Any) ->
-    "kamisato.saitama.jp";
-
-saitama_jp("moroyama", _Any) ->
-    "moroyama.saitama.jp";
-
-saitama_jp("sugito", _Any) ->
-    "sugito.saitama.jp";
-
-saitama_jp("minano", _Any) ->
-    "minano.saitama.jp";
-
-saitama_jp("hasuda", _Any) ->
-    "hasuda.saitama.jp";
-
-saitama_jp("iwatsuki", _Any) ->
-    "iwatsuki.saitama.jp";
-
-saitama_jp("iruma", _Any) ->
-    "iruma.saitama.jp";
-
-saitama_jp("hidaka", _Any) ->
-    "hidaka.saitama.jp";
-
-saitama_jp("saitama", _Any) ->
-    "saitama.saitama.jp";
-
-saitama_jp("miyashiro", _Any) ->
-    "miyashiro.saitama.jp";
-
-saitama_jp("kamiizumi", _Any) ->
-    "kamiizumi.saitama.jp";
-
-saitama_jp("yorii", _Any) ->
-    "yorii.saitama.jp";
-
-saitama_jp("kasukabe", _Any) ->
-    "kasukabe.saitama.jp";
-
-saitama_jp("sakado", _Any) ->
-    "sakado.saitama.jp";
-
-saitama_jp("tokigawa", _Any) ->
-    "tokigawa.saitama.jp";
-
-saitama_jp("yoshimi", _Any) ->
-    "yoshimi.saitama.jp";
-
-saitama_jp("honjo", _Any) ->
-    "honjo.saitama.jp";
-
-saitama_jp("shiki", _Any) ->
-    "shiki.saitama.jp";
-
-saitama_jp("okegawa", _Any) ->
-    "okegawa.saitama.jp";
-
-saitama_jp("ogose", _Any) ->
-    "ogose.saitama.jp";
-
-saitama_jp("kuki", _Any) ->
-    "kuki.saitama.jp";
-
-saitama_jp("fujimino", _Any) ->
-    "fujimino.saitama.jp";
-
-saitama_jp("shiraoka", _Any) ->
-    "shiraoka.saitama.jp";
-
-saitama_jp("namegawa", _Any) ->
-    "namegawa.saitama.jp";
-
-saitama_jp("higashichichibu", _Any) ->
-    "higashichichibu.saitama.jp";
-
-saitama_jp("yoshikawa", _Any) ->
-    "yoshikawa.saitama.jp";
-
-
-saitama_jp(_, _) ->
-    "saitama.jp".
-
-%% regular rules
-fukui_jp("mihama", _Any) ->
-    "mihama.fukui.jp";
-
-fukui_jp("ikeda", _Any) ->
-    "ikeda.fukui.jp";
-
-fukui_jp("sakai", _Any) ->
-    "sakai.fukui.jp";
-
-fukui_jp("echizen", _Any) ->
-    "echizen.fukui.jp";
-
-fukui_jp("obama", _Any) ->
-    "obama.fukui.jp";
-
-fukui_jp("tsuruga", _Any) ->
-    "tsuruga.fukui.jp";
-
-fukui_jp("ono", _Any) ->
-    "ono.fukui.jp";
-
-fukui_jp("minamiechizen", _Any) ->
-    "minamiechizen.fukui.jp";
-
-fukui_jp("sabae", _Any) ->
-    "sabae.fukui.jp";
-
-fukui_jp("takahama", _Any) ->
-    "takahama.fukui.jp";
-
-fukui_jp("ohi", _Any) ->
-    "ohi.fukui.jp";
-
-fukui_jp("eiheiji", _Any) ->
-    "eiheiji.fukui.jp";
-
-fukui_jp("wakasa", _Any) ->
-    "wakasa.fukui.jp";
-
-fukui_jp("fukui", _Any) ->
-    "fukui.fukui.jp";
-
-fukui_jp("katsuyama", _Any) ->
-    "katsuyama.fukui.jp";
-
-
-fukui_jp(_, _) ->
-    "fukui.jp".
-
-%% regular rules
-oita_jp("taketa", _Any) ->
-    "taketa.oita.jp";
-
-oita_jp("hiji", _Any) ->
-    "hiji.oita.jp";
-
-oita_jp("oita", _Any) ->
-    "oita.oita.jp";
-
-oita_jp("kuju", _Any) ->
-    "kuju.oita.jp";
-
-oita_jp("usa", _Any) ->
-    "usa.oita.jp";
-
-oita_jp("tsukumi", _Any) ->
-    "tsukumi.oita.jp";
-
-oita_jp("kunisaki", _Any) ->
-    "kunisaki.oita.jp";
-
-oita_jp("hasama", _Any) ->
-    "hasama.oita.jp";
-
-oita_jp("usuki", _Any) ->
-    "usuki.oita.jp";
-
-oita_jp("kokonoe", _Any) ->
-    "kokonoe.oita.jp";
-
-oita_jp("himeshima", _Any) ->
-    "himeshima.oita.jp";
-
-oita_jp("kamitsue", _Any) ->
-    "kamitsue.oita.jp";
-
-oita_jp("bungotakada", _Any) ->
-    "bungotakada.oita.jp";
-
-oita_jp("bungoono", _Any) ->
-    "bungoono.oita.jp";
-
-oita_jp("yufu", _Any) ->
-    "yufu.oita.jp";
-
-oita_jp("beppu", _Any) ->
-    "beppu.oita.jp";
-
-oita_jp("saiki", _Any) ->
-    "saiki.oita.jp";
-
-oita_jp("kusu", _Any) ->
-    "kusu.oita.jp";
-
-oita_jp("hita", _Any) ->
-    "hita.oita.jp";
-
-
-oita_jp(_, _) ->
-    "oita.jp".
-
-%% regular rules
-okayama_jp("kagamino", _Any) ->
-    "kagamino.okayama.jp";
-
-okayama_jp("soja", _Any) ->
-    "soja.okayama.jp";
-
-okayama_jp("tsuyama", _Any) ->
-    "tsuyama.okayama.jp";
-
-okayama_jp("niimi", _Any) ->
-    "niimi.okayama.jp";
-
-okayama_jp("kasaoka", _Any) ->
-    "kasaoka.okayama.jp";
-
-okayama_jp("tamano", _Any) ->
-    "tamano.okayama.jp";
-
-okayama_jp("setouchi", _Any) ->
-    "setouchi.okayama.jp";
-
-okayama_jp("satosho", _Any) ->
-    "satosho.okayama.jp";
-
-okayama_jp("maniwa", _Any) ->
-    "maniwa.okayama.jp";
-
-okayama_jp("shoo", _Any) ->
-    "shoo.okayama.jp";
-
-okayama_jp("nishiawakura", _Any) ->
-    "nishiawakura.okayama.jp";
-
-okayama_jp("yakage", _Any) ->
-    "yakage.okayama.jp";
-
-okayama_jp("kumenan", _Any) ->
-    "kumenan.okayama.jp";
-
-okayama_jp("wake", _Any) ->
-    "wake.okayama.jp";
-
-okayama_jp("shinjo", _Any) ->
-    "shinjo.okayama.jp";
-
-okayama_jp("hayashima", _Any) ->
-    "hayashima.okayama.jp";
-
-okayama_jp("asakuchi", _Any) ->
-    "asakuchi.okayama.jp";
-
-okayama_jp("ibara", _Any) ->
-    "ibara.okayama.jp";
-
-okayama_jp("kibichuo", _Any) ->
-    "kibichuo.okayama.jp";
-
-okayama_jp("misaki", _Any) ->
-    "misaki.okayama.jp";
-
-okayama_jp("nagi", _Any) ->
-    "nagi.okayama.jp";
-
-okayama_jp("akaiwa", _Any) ->
-    "akaiwa.okayama.jp";
-
-okayama_jp("takahashi", _Any) ->
-    "takahashi.okayama.jp";
-
-okayama_jp("bizen", _Any) ->
-    "bizen.okayama.jp";
-
-okayama_jp("okayama", _Any) ->
-    "okayama.okayama.jp";
-
-okayama_jp("kurashiki", _Any) ->
-    "kurashiki.okayama.jp";
-
-
-okayama_jp(_, _) ->
-    "okayama.jp".
-
-%% regular rules
-chiba_jp("kisarazu", _Any) ->
-    "kisarazu.chiba.jp";
-
-chiba_jp("kamagaya", _Any) ->
-    "kamagaya.chiba.jp";
-
-chiba_jp("katori", _Any) ->
-    "katori.chiba.jp";
-
-chiba_jp("minamiboso", _Any) ->
-    "minamiboso.chiba.jp";
-
-chiba_jp("chonan", _Any) ->
-    "chonan.chiba.jp";
-
-chiba_jp("futtsu", _Any) ->
-    "futtsu.chiba.jp";
-
-chiba_jp("shirako", _Any) ->
-    "shirako.chiba.jp";
-
-chiba_jp("tako", _Any) ->
-    "tako.chiba.jp";
-
-chiba_jp("sodegaura", _Any) ->
-    "sodegaura.chiba.jp";
-
-chiba_jp("otaki", _Any) ->
-    "otaki.chiba.jp";
-
-chiba_jp("ichihara", _Any) ->
-    "ichihara.chiba.jp";
-
-chiba_jp("midori", _Any) ->
-    "midori.chiba.jp";
-
-chiba_jp("kujukuri", _Any) ->
-    "kujukuri.chiba.jp";
-
-chiba_jp("kimitsu", _Any) ->
-    "kimitsu.chiba.jp";
-
-chiba_jp("oamishirasato", _Any) ->
-    "oamishirasato.chiba.jp";
-
-chiba_jp("hanamigawa", _Any) ->
-    "hanamigawa.chiba.jp";
-
-chiba_jp("inzai", _Any) ->
-    "inzai.chiba.jp";
-
-chiba_jp("omigawa", _Any) ->
-    "omigawa.chiba.jp";
-
-chiba_jp("sakae", _Any) ->
-    "sakae.chiba.jp";
-
-chiba_jp("matsudo", _Any) ->
-    "matsudo.chiba.jp";
-
-chiba_jp("shiroi", _Any) ->
-    "shiroi.chiba.jp";
-
-chiba_jp("shimofusa", _Any) ->
-    "shimofusa.chiba.jp";
-
-chiba_jp("chosei", _Any) ->
-    "chosei.chiba.jp";
-
-chiba_jp("onjuku", _Any) ->
-    "onjuku.chiba.jp";
-
-chiba_jp("yachimata", _Any) ->
-    "yachimata.chiba.jp";
-
-chiba_jp("sosa", _Any) ->
-    "sosa.chiba.jp";
-
-chiba_jp("shisui", _Any) ->
-    "shisui.chiba.jp";
-
-chiba_jp("yotsukaido", _Any) ->
-    "yotsukaido.chiba.jp";
-
-chiba_jp("yachiyo", _Any) ->
-    "yachiyo.chiba.jp";
-
-chiba_jp("ichinomiya", _Any) ->
-    "ichinomiya.chiba.jp";
-
-chiba_jp("ichikawa", _Any) ->
-    "ichikawa.chiba.jp";
-
-chiba_jp("kozaki", _Any) ->
-    "kozaki.chiba.jp";
-
-chiba_jp("narita", _Any) ->
-    "narita.chiba.jp";
-
-chiba_jp("isumi", _Any) ->
-    "isumi.chiba.jp";
-
-chiba_jp("tateyama", _Any) ->
-    "tateyama.chiba.jp";
-
-chiba_jp("yokoshibahikari", _Any) ->
-    "yokoshibahikari.chiba.jp";
-
-chiba_jp("abiko", _Any) ->
-    "abiko.chiba.jp";
-
-chiba_jp("tohnosho", _Any) ->
-    "tohnosho.chiba.jp";
-
-chiba_jp("chuo", _Any) ->
-    "chuo.chiba.jp";
-
-chiba_jp("sakura", _Any) ->
-    "sakura.chiba.jp";
-
-chiba_jp("nagara", _Any) ->
-    "nagara.chiba.jp";
-
-chiba_jp("kyonan", _Any) ->
-    "kyonan.chiba.jp";
-
-chiba_jp("tomisato", _Any) ->
-    "tomisato.chiba.jp";
-
-chiba_jp("narashino", _Any) ->
-    "narashino.chiba.jp";
-
-chiba_jp("kashiwa", _Any) ->
-    "kashiwa.chiba.jp";
-
-chiba_jp("mihama", _Any) ->
-    "mihama.chiba.jp";
-
-chiba_jp("noda", _Any) ->
-    "noda.chiba.jp";
-
-chiba_jp("mobara", _Any) ->
-    "mobara.chiba.jp";
-
-chiba_jp("kamogawa", _Any) ->
-    "kamogawa.chiba.jp";
-
-chiba_jp("urayasu", _Any) ->
-    "urayasu.chiba.jp";
-
-chiba_jp("asahi", _Any) ->
-    "asahi.chiba.jp";
-
-chiba_jp("funabashi", _Any) ->
-    "funabashi.chiba.jp";
-
-chiba_jp("choshi", _Any) ->
-    "choshi.chiba.jp";
-
-chiba_jp("mutsuzawa", _Any) ->
-    "mutsuzawa.chiba.jp";
-
-chiba_jp("yokaichiba", _Any) ->
-    "yokaichiba.chiba.jp";
-
-chiba_jp("togane", _Any) ->
-    "togane.chiba.jp";
-
-chiba_jp("katsuura", _Any) ->
-    "katsuura.chiba.jp";
-
-chiba_jp("nagareyama", _Any) ->
-    "nagareyama.chiba.jp";
-
-
-chiba_jp(_, _) ->
-    "chiba.jp".
-
-%% regular rules
-kagawa_jp("naoshima", _Any) ->
-    "naoshima.kagawa.jp";
-
-kagawa_jp("manno", _Any) ->
-    "manno.kagawa.jp";
-
-kagawa_jp("higashikagawa", _Any) ->
-    "higashikagawa.kagawa.jp";
-
-kagawa_jp("sanuki", _Any) ->
-    "sanuki.kagawa.jp";
-
-kagawa_jp("marugame", _Any) ->
-    "marugame.kagawa.jp";
-
-kagawa_jp("tadotsu", _Any) ->
-    "tadotsu.kagawa.jp";
-
-kagawa_jp("ayagawa", _Any) ->
-    "ayagawa.kagawa.jp";
-
-kagawa_jp("zentsuji", _Any) ->
-    "zentsuji.kagawa.jp";
-
-kagawa_jp("mitoyo", _Any) ->
-    "mitoyo.kagawa.jp";
-
-kagawa_jp("kotohira", _Any) ->
-    "kotohira.kagawa.jp";
-
-kagawa_jp("utazu", _Any) ->
-    "utazu.kagawa.jp";
-
-kagawa_jp("tonosho", _Any) ->
-    "tonosho.kagawa.jp";
-
-kagawa_jp("takamatsu", _Any) ->
-    "takamatsu.kagawa.jp";
-
-kagawa_jp("kanonji", _Any) ->
-    "kanonji.kagawa.jp";
-
-kagawa_jp("uchinomi", _Any) ->
-    "uchinomi.kagawa.jp";
-
-
-kagawa_jp(_, _) ->
-    "kagawa.jp".
-
-%% regular rules
-ibaraki_jp("sowa", _Any) ->
-    "sowa.ibaraki.jp";
-
-ibaraki_jp("tone", _Any) ->
-    "tone.ibaraki.jp";
-
-ibaraki_jp("uchihara", _Any) ->
-    "uchihara.ibaraki.jp";
-
-ibaraki_jp("joso", _Any) ->
-    "joso.ibaraki.jp";
-
-ibaraki_jp("toride", _Any) ->
-    "toride.ibaraki.jp";
-
-ibaraki_jp("yuki", _Any) ->
-    "yuki.ibaraki.jp";
-
-ibaraki_jp("asahi", _Any) ->
-    "asahi.ibaraki.jp";
-
-ibaraki_jp("yawara", _Any) ->
-    "yawara.ibaraki.jp";
-
-ibaraki_jp("ibaraki", _Any) ->
-    "ibaraki.ibaraki.jp";
-
-ibaraki_jp("moriya", _Any) ->
-    "moriya.ibaraki.jp";
-
-ibaraki_jp("bando", _Any) ->
-    "bando.ibaraki.jp";
-
-ibaraki_jp("omitama", _Any) ->
-    "omitama.ibaraki.jp";
-
-ibaraki_jp("hitachiota", _Any) ->
-    "hitachiota.ibaraki.jp";
-
-ibaraki_jp("tsukuba", _Any) ->
-    "tsukuba.ibaraki.jp";
-
-ibaraki_jp("namegata", _Any) ->
-    "namegata.ibaraki.jp";
-
-ibaraki_jp("tsuchiura", _Any) ->
-    "tsuchiura.ibaraki.jp";
-
-ibaraki_jp("sakai", _Any) ->
-    "sakai.ibaraki.jp";
-
-ibaraki_jp("koga", _Any) ->
-    "koga.ibaraki.jp";
-
-ibaraki_jp("mito", _Any) ->
-    "mito.ibaraki.jp";
-
-ibaraki_jp("shimotsuma", _Any) ->
-    "shimotsuma.ibaraki.jp";
-
-ibaraki_jp("oarai", _Any) ->
-    "oarai.ibaraki.jp";
-
-ibaraki_jp("sakuragawa", _Any) ->
-    "sakuragawa.ibaraki.jp";
-
-ibaraki_jp("kasama", _Any) ->
-    "kasama.ibaraki.jp";
-
-ibaraki_jp("takahagi", _Any) ->
-    "takahagi.ibaraki.jp";
-
-ibaraki_jp("fujishiro", _Any) ->
-    "fujishiro.ibaraki.jp";
-
-ibaraki_jp("hitachinaka", _Any) ->
-    "hitachinaka.ibaraki.jp";
-
-ibaraki_jp("kamisu", _Any) ->
-    "kamisu.ibaraki.jp";
-
-ibaraki_jp("ina", _Any) ->
-    "ina.ibaraki.jp";
-
-ibaraki_jp("tamatsukuri", _Any) ->
-    "tamatsukuri.ibaraki.jp";
-
-ibaraki_jp("yamagata", _Any) ->
-    "yamagata.ibaraki.jp";
-
-ibaraki_jp("ushiku", _Any) ->
-    "ushiku.ibaraki.jp";
-
-ibaraki_jp("suifu", _Any) ->
-    "suifu.ibaraki.jp";
-
-ibaraki_jp("hitachi", _Any) ->
-    "hitachi.ibaraki.jp";
-
-ibaraki_jp("kasumigaura", _Any) ->
-    "kasumigaura.ibaraki.jp";
-
-ibaraki_jp("daigo", _Any) ->
-    "daigo.ibaraki.jp";
-
-ibaraki_jp("ami", _Any) ->
-    "ami.ibaraki.jp";
-
-ibaraki_jp("yachiyo", _Any) ->
-    "yachiyo.ibaraki.jp";
-
-ibaraki_jp("hitachiomiya", _Any) ->
-    "hitachiomiya.ibaraki.jp";
-
-ibaraki_jp("tokai", _Any) ->
-    "tokai.ibaraki.jp";
-
-ibaraki_jp("tomobe", _Any) ->
-    "tomobe.ibaraki.jp";
-
-ibaraki_jp("shimodate", _Any) ->
-    "shimodate.ibaraki.jp";
-
-ibaraki_jp("itako", _Any) ->
-    "itako.ibaraki.jp";
-
-ibaraki_jp("shirosato", _Any) ->
-    "shirosato.ibaraki.jp";
-
-ibaraki_jp("naka", _Any) ->
-    "naka.ibaraki.jp";
-
-ibaraki_jp("ryugasaki", _Any) ->
-    "ryugasaki.ibaraki.jp";
-
-ibaraki_jp("chikusei", _Any) ->
-    "chikusei.ibaraki.jp";
-
-ibaraki_jp("kashima", _Any) ->
-    "kashima.ibaraki.jp";
-
-ibaraki_jp("inashiki", _Any) ->
-    "inashiki.ibaraki.jp";
-
-ibaraki_jp("miho", _Any) ->
-    "miho.ibaraki.jp";
-
-ibaraki_jp("iwama", _Any) ->
-    "iwama.ibaraki.jp";
-
-ibaraki_jp("ogawa", _Any) ->
-    "ogawa.ibaraki.jp";
-
-
-ibaraki_jp(_, _) ->
-    "ibaraki.jp".
-
-%% regular rules
-ehime_jp("seiyo", _Any) ->
-    "seiyo.ehime.jp";
-
-ehime_jp("kihoku", _Any) ->
-    "kihoku.ehime.jp";
-
-ehime_jp("namikata", _Any) ->
-    "namikata.ehime.jp";
-
-ehime_jp("ikata", _Any) ->
-    "ikata.ehime.jp";
-
-ehime_jp("shikokuchuo", _Any) ->
-    "shikokuchuo.ehime.jp";
-
-ehime_jp("honai", _Any) ->
-    "honai.ehime.jp";
-
-ehime_jp("matsuno", _Any) ->
-    "matsuno.ehime.jp";
-
-ehime_jp("ainan", _Any) ->
-    "ainan.ehime.jp";
-
-ehime_jp("masaki", _Any) ->
-    "masaki.ehime.jp";
-
-ehime_jp("toon", _Any) ->
-    "toon.ehime.jp";
-
-ehime_jp("tobe", _Any) ->
-    "tobe.ehime.jp";
-
-ehime_jp("kamijima", _Any) ->
-    "kamijima.ehime.jp";
-
-ehime_jp("iyo", _Any) ->
-    "iyo.ehime.jp";
-
-ehime_jp("uchiko", _Any) ->
-    "uchiko.ehime.jp";
-
-ehime_jp("yawatahama", _Any) ->
-    "yawatahama.ehime.jp";
-
-ehime_jp("kumakogen", _Any) ->
-    "kumakogen.ehime.jp";
-
-ehime_jp("niihama", _Any) ->
-    "niihama.ehime.jp";
-
-ehime_jp("imabari", _Any) ->
-    "imabari.ehime.jp";
-
-ehime_jp("saijo", _Any) ->
-    "saijo.ehime.jp";
-
-ehime_jp("matsuyama", _Any) ->
-    "matsuyama.ehime.jp";
-
-ehime_jp("uwajima", _Any) ->
-    "uwajima.ehime.jp";
-
-ehime_jp("ozu", _Any) ->
-    "ozu.ehime.jp";
-
-
-ehime_jp(_, _) ->
-    "ehime.jp".
-
-%% regular rules
-ishikawa_jp("kawakita", _Any) ->
-    "kawakita.ishikawa.jp";
-
-ishikawa_jp("shika", _Any) ->
-    "shika.ishikawa.jp";
-
-ishikawa_jp("wajima", _Any) ->
-    "wajima.ishikawa.jp";
-
-ishikawa_jp("hakui", _Any) ->
-    "hakui.ishikawa.jp";
-
-ishikawa_jp("nonoichi", _Any) ->
-    "nonoichi.ishikawa.jp";
-
-ishikawa_jp("nakanoto", _Any) ->
-    "nakanoto.ishikawa.jp";
-
-ishikawa_jp("uchinada", _Any) ->
-    "uchinada.ishikawa.jp";
-
-ishikawa_jp("hakusan", _Any) ->
-    "hakusan.ishikawa.jp";
-
-ishikawa_jp("noto", _Any) ->
-    "noto.ishikawa.jp";
-
-ishikawa_jp("kanazawa", _Any) ->
-    "kanazawa.ishikawa.jp";
-
-ishikawa_jp("kahoku", _Any) ->
-    "kahoku.ishikawa.jp";
-
-ishikawa_jp("nanao", _Any) ->
-    "nanao.ishikawa.jp";
-
-ishikawa_jp("tsubata", _Any) ->
-    "tsubata.ishikawa.jp";
-
-ishikawa_jp("komatsu", _Any) ->
-    "komatsu.ishikawa.jp";
-
-ishikawa_jp("tsurugi", _Any) ->
-    "tsurugi.ishikawa.jp";
-
-ishikawa_jp("kaga", _Any) ->
-    "kaga.ishikawa.jp";
-
-ishikawa_jp("nomi", _Any) ->
-    "nomi.ishikawa.jp";
-
-ishikawa_jp("suzu", _Any) ->
-    "suzu.ishikawa.jp";
-
-ishikawa_jp("anamizu", _Any) ->
-    "anamizu.ishikawa.jp";
-
-
-ishikawa_jp(_, _) ->
-    "ishikawa.jp".
-
-%% regular rules
-shimane_jp("tamayu", _Any) ->
-    "tamayu.shimane.jp";
-
-shimane_jp("akagi", _Any) ->
-    "akagi.shimane.jp";
-
-shimane_jp("izumo", _Any) ->
-    "izumo.shimane.jp";
-
-shimane_jp("okinoshima", _Any) ->
-    "okinoshima.shimane.jp";
-
-shimane_jp("matsue", _Any) ->
-    "matsue.shimane.jp";
-
-shimane_jp("hamada", _Any) ->
-    "hamada.shimane.jp";
-
-shimane_jp("ohda", _Any) ->
-    "ohda.shimane.jp";
-
-shimane_jp("okuizumo", _Any) ->
-    "okuizumo.shimane.jp";
-
-shimane_jp("unnan", _Any) ->
-    "unnan.shimane.jp";
-
-shimane_jp("ama", _Any) ->
-    "ama.shimane.jp";
-
-shimane_jp("hikimi", _Any) ->
-    "hikimi.shimane.jp";
-
-shimane_jp("misato", _Any) ->
-    "misato.shimane.jp";
-
-shimane_jp("masuda", _Any) ->
-    "masuda.shimane.jp";
-
-shimane_jp("kakinoki", _Any) ->
-    "kakinoki.shimane.jp";
-
-shimane_jp("hikawa", _Any) ->
-    "hikawa.shimane.jp";
-
-shimane_jp("tsuwano", _Any) ->
-    "tsuwano.shimane.jp";
-
-shimane_jp("nishinoshima", _Any) ->
-    "nishinoshima.shimane.jp";
-
-shimane_jp("yatsuka", _Any) ->
-    "yatsuka.shimane.jp";
-
-shimane_jp("shimane", _Any) ->
-    "shimane.shimane.jp";
-
-shimane_jp("higashiizumo", _Any) ->
-    "higashiizumo.shimane.jp";
-
-shimane_jp("gotsu", _Any) ->
-    "gotsu.shimane.jp";
-
-shimane_jp("yasugi", _Any) ->
-    "yasugi.shimane.jp";
-
-shimane_jp("yakumo", _Any) ->
-    "yakumo.shimane.jp";
-
-
-shimane_jp(_, _) ->
-    "shimane.jp".
-
-%% regular rules
-akita_jp("nikaho", _Any) ->
-    "nikaho.akita.jp";
-
-akita_jp("yurihonjo", _Any) ->
-    "yurihonjo.akita.jp";
-
-akita_jp("gojome", _Any) ->
-    "gojome.akita.jp";
-
-akita_jp("hachirogata", _Any) ->
-    "hachirogata.akita.jp";
-
-akita_jp("yokote", _Any) ->
-    "yokote.akita.jp";
-
-akita_jp("happou", _Any) ->
-    "happou.akita.jp";
-
-akita_jp("kosaka", _Any) ->
-    "kosaka.akita.jp";
-
-akita_jp("kazuno", _Any) ->
-    "kazuno.akita.jp";
-
-akita_jp("kyowa", _Any) ->
-    "kyowa.akita.jp";
-
-akita_jp("akita", _Any) ->
-    "akita.akita.jp";
-
-akita_jp("kitaakita", _Any) ->
-    "kitaakita.akita.jp";
-
-akita_jp("noshiro", _Any) ->
-    "noshiro.akita.jp";
-
-akita_jp("odate", _Any) ->
-    "odate.akita.jp";
-
-akita_jp("ikawa", _Any) ->
-    "ikawa.akita.jp";
-
-akita_jp("honjo", _Any) ->
-    "honjo.akita.jp";
-
-akita_jp("oga", _Any) ->
-    "oga.akita.jp";
-
-akita_jp("misato", _Any) ->
-    "misato.akita.jp";
-
-akita_jp("kamioka", _Any) ->
-    "kamioka.akita.jp";
-
-akita_jp("semboku", _Any) ->
-    "semboku.akita.jp";
-
-akita_jp("higashinaruse", _Any) ->
-    "higashinaruse.akita.jp";
-
-akita_jp("ogata", _Any) ->
-    "ogata.akita.jp";
-
-akita_jp("daisen", _Any) ->
-    "daisen.akita.jp";
-
-akita_jp("mitane", _Any) ->
-    "mitane.akita.jp";
-
-akita_jp("kamikoani", _Any) ->
-    "kamikoani.akita.jp";
-
-akita_jp("moriyoshi", _Any) ->
-    "moriyoshi.akita.jp";
-
-akita_jp("fujisato", _Any) ->
-    "fujisato.akita.jp";
-
-akita_jp("katagami", _Any) ->
-    "katagami.akita.jp";
-
-akita_jp("honjyo", _Any) ->
-    "honjyo.akita.jp";
-
-
-akita_jp(_, _) ->
-    "akita.jp".
-
-%% regular rules
-nagano_jp("ikusaka", _Any) ->
-    "ikusaka.nagano.jp";
-
-nagano_jp("sakaki", _Any) ->
-    "sakaki.nagano.jp";
-
-nagano_jp("ogawa", _Any) ->
-    "ogawa.nagano.jp";
-
-nagano_jp("iida", _Any) ->
-    "iida.nagano.jp";
-
-nagano_jp("takamori", _Any) ->
-    "takamori.nagano.jp";
-
-nagano_jp("otaki", _Any) ->
-    "otaki.nagano.jp";
-
-nagano_jp("obuse", _Any) ->
-    "obuse.nagano.jp";
-
-nagano_jp("yasaka", _Any) ->
-    "yasaka.nagano.jp";
-
-nagano_jp("fujimi", _Any) ->
-    "fujimi.nagano.jp";
-
-nagano_jp("okaya", _Any) ->
-    "okaya.nagano.jp";
-
-nagano_jp("omachi", _Any) ->
-    "omachi.nagano.jp";
-
-nagano_jp("ikeda", _Any) ->
-    "ikeda.nagano.jp";
-
-nagano_jp("nagiso", _Any) ->
-    "nagiso.nagano.jp";
-
-nagano_jp("agematsu", _Any) ->
-    "agematsu.nagano.jp";
-
-nagano_jp("mochizuki", _Any) ->
-    "mochizuki.nagano.jp";
-
-nagano_jp("tomi", _Any) ->
-    "tomi.nagano.jp";
-
-nagano_jp("anan", _Any) ->
-    "anan.nagano.jp";
-
-nagano_jp("suwa", _Any) ->
-    "suwa.nagano.jp";
-
-nagano_jp("sakae", _Any) ->
-    "sakae.nagano.jp";
-
-nagano_jp("otari", _Any) ->
-    "otari.nagano.jp";
-
-nagano_jp("hara", _Any) ->
-    "hara.nagano.jp";
-
-nagano_jp("hiraya", _Any) ->
-    "hiraya.nagano.jp";
-
-nagano_jp("omi", _Any) ->
-    "omi.nagano.jp";
-
-nagano_jp("kitaaiki", _Any) ->
-    "kitaaiki.nagano.jp";
-
-nagano_jp("minowa", _Any) ->
-    "minowa.nagano.jp";
-
-nagano_jp("nakagawa", _Any) ->
-    "nakagawa.nagano.jp";
-
-nagano_jp("kiso", _Any) ->
-    "kiso.nagano.jp";
-
-nagano_jp("suzaka", _Any) ->
-    "suzaka.nagano.jp";
-
-nagano_jp("takagi", _Any) ->
-    "takagi.nagano.jp";
-
-nagano_jp("azumino", _Any) ->
-    "azumino.nagano.jp";
-
-nagano_jp("ookuwa", _Any) ->
-    "ookuwa.nagano.jp";
-
-nagano_jp("chikuhoku", _Any) ->
-    "chikuhoku.nagano.jp";
-
-nagano_jp("togura", _Any) ->
-    "togura.nagano.jp";
-
-nagano_jp("saku", _Any) ->
-    "saku.nagano.jp";
-
-nagano_jp("nagano", _Any) ->
-    "nagano.nagano.jp";
-
-nagano_jp("iizuna", _Any) ->
-    "iizuna.nagano.jp";
-
-nagano_jp("nagawa", _Any) ->
-    "nagawa.nagano.jp";
-
-nagano_jp("minamiaiki", _Any) ->
-    "minamiaiki.nagano.jp";
-
-nagano_jp("ooshika", _Any) ->
-    "ooshika.nagano.jp";
-
-nagano_jp("kisofukushima", _Any) ->
-    "kisofukushima.nagano.jp";
-
-nagano_jp("hakuba", _Any) ->
-    "hakuba.nagano.jp";
-
-nagano_jp("yamanouchi", _Any) ->
-    "yamanouchi.nagano.jp";
-
-nagano_jp("shinanomachi", _Any) ->
-    "shinanomachi.nagano.jp";
-
-nagano_jp("takayama", _Any) ->
-    "takayama.nagano.jp";
-
-nagano_jp("komoro", _Any) ->
-    "komoro.nagano.jp";
-
-nagano_jp("yasuoka", _Any) ->
-    "yasuoka.nagano.jp";
-
-nagano_jp("nakano", _Any) ->
-    "nakano.nagano.jp";
-
-nagano_jp("kawakami", _Any) ->
-    "kawakami.nagano.jp";
-
-nagano_jp("shimosuwa", _Any) ->
-    "shimosuwa.nagano.jp";
-
-nagano_jp("minamimaki", _Any) ->
-    "minamimaki.nagano.jp";
-
-nagano_jp("chikuma", _Any) ->
-    "chikuma.nagano.jp";
-
-nagano_jp("ina", _Any) ->
-    "ina.nagano.jp";
-
-nagano_jp("wada", _Any) ->
-    "wada.nagano.jp";
-
-nagano_jp("iiyama", _Any) ->
-    "iiyama.nagano.jp";
-
-nagano_jp("achi", _Any) ->
-    "achi.nagano.jp";
-
-nagano_jp("sakuho", _Any) ->
-    "sakuho.nagano.jp";
-
-nagano_jp("yamagata", _Any) ->
-    "yamagata.nagano.jp";
-
-nagano_jp("karuizawa", _Any) ->
-    "karuizawa.nagano.jp";
-
-nagano_jp("shiojiri", _Any) ->
-    "shiojiri.nagano.jp";
-
-nagano_jp("miyota", _Any) ->
-    "miyota.nagano.jp";
-
-nagano_jp("iijima", _Any) ->
-    "iijima.nagano.jp";
-
-nagano_jp("minamiminowa", _Any) ->
-    "minamiminowa.nagano.jp";
-
-nagano_jp("matsukawa", _Any) ->
-    "matsukawa.nagano.jp";
-
-nagano_jp("togakushi", _Any) ->
-    "togakushi.nagano.jp";
-
-nagano_jp("miyada", _Any) ->
-    "miyada.nagano.jp";
-
-nagano_jp("tateshina", _Any) ->
-    "tateshina.nagano.jp";
-
-nagano_jp("miasa", _Any) ->
-    "miasa.nagano.jp";
-
-nagano_jp("matsumoto", _Any) ->
-    "matsumoto.nagano.jp";
-
-nagano_jp("ueda", _Any) ->
-    "ueda.nagano.jp";
-
-nagano_jp("chino", _Any) ->
-    "chino.nagano.jp";
-
-nagano_jp("nozawaonsen", _Any) ->
-    "nozawaonsen.nagano.jp";
-
-nagano_jp("aoki", _Any) ->
-    "aoki.nagano.jp";
-
-nagano_jp("komagane", _Any) ->
-    "komagane.nagano.jp";
-
-nagano_jp("tatsuno", _Any) ->
-    "tatsuno.nagano.jp";
-
-nagano_jp("asahi", _Any) ->
-    "asahi.nagano.jp";
-
-
-nagano_jp(_, _) ->
-    "nagano.jp".
-
-%% regular rules
-fukushima_jp("date", _Any) ->
-    "date.fukushima.jp";
-
-fukushima_jp("iitate", _Any) ->
-    "iitate.fukushima.jp";
-
-fukushima_jp("yamato", _Any) ->
-    "yamato.fukushima.jp";
-
-fukushima_jp("ono", _Any) ->
-    "ono.fukushima.jp";
-
-fukushima_jp("higashi", _Any) ->
-    "higashi.fukushima.jp";
-
-fukushima_jp("yugawa", _Any) ->
-    "yugawa.fukushima.jp";
-
-fukushima_jp("nishigo", _Any) ->
-    "nishigo.fukushima.jp";
-
-fukushima_jp("hirata", _Any) ->
-    "hirata.fukushima.jp";
-
-fukushima_jp("aizuwakamatsu", _Any) ->
-    "aizuwakamatsu.fukushima.jp";
-
-fukushima_jp("miharu", _Any) ->
-    "miharu.fukushima.jp";
-
-fukushima_jp("koriyama", _Any) ->
-    "koriyama.fukushima.jp";
-
-fukushima_jp("asakawa", _Any) ->
-    "asakawa.fukushima.jp";
-
-fukushima_jp("otama", _Any) ->
-    "otama.fukushima.jp";
-
-fukushima_jp("nango", _Any) ->
-    "nango.fukushima.jp";
-
-fukushima_jp("tenei", _Any) ->
-    "tenei.fukushima.jp";
-
-fukushima_jp("soma", _Any) ->
-    "soma.fukushima.jp";
-
-fukushima_jp("mishima", _Any) ->
-    "mishima.fukushima.jp";
-
-fukushima_jp("futaba", _Any) ->
-    "futaba.fukushima.jp";
-
-fukushima_jp("hanawa", _Any) ->
-    "hanawa.fukushima.jp";
-
-fukushima_jp("shimogo", _Any) ->
-    "shimogo.fukushima.jp";
-
-fukushima_jp("samegawa", _Any) ->
-    "samegawa.fukushima.jp";
-
-fukushima_jp("kitashiobara", _Any) ->
-    "kitashiobara.fukushima.jp";
-
-fukushima_jp("koori", _Any) ->
-    "koori.fukushima.jp";
-
-fukushima_jp("inawashiro", _Any) ->
-    "inawashiro.fukushima.jp";
-
-fukushima_jp("namie", _Any) ->
-    "namie.fukushima.jp";
-
-fukushima_jp("kaneyama", _Any) ->
-    "kaneyama.fukushima.jp";
-
-fukushima_jp("yamatsuri", _Any) ->
-    "yamatsuri.fukushima.jp";
-
-fukushima_jp("tanagura", _Any) ->
-    "tanagura.fukushima.jp";
-
-fukushima_jp("yanaizu", _Any) ->
-    "yanaizu.fukushima.jp";
-
-fukushima_jp("taishin", _Any) ->
-    "taishin.fukushima.jp";
-
-fukushima_jp("kawamata", _Any) ->
-    "kawamata.fukushima.jp";
-
-fukushima_jp("izumizaki", _Any) ->
-    "izumizaki.fukushima.jp";
-
-fukushima_jp("okuma", _Any) ->
-    "okuma.fukushima.jp";
-
-fukushima_jp("iwaki", _Any) ->
-    "iwaki.fukushima.jp";
-
-fukushima_jp("tamakawa", _Any) ->
-    "tamakawa.fukushima.jp";
-
-fukushima_jp("aizumisato", _Any) ->
-    "aizumisato.fukushima.jp";
-
-fukushima_jp("hirono", _Any) ->
-    "hirono.fukushima.jp";
-
-fukushima_jp("nishiaizu", _Any) ->
-    "nishiaizu.fukushima.jp";
-
-fukushima_jp("kagamiishi", _Any) ->
-    "kagamiishi.fukushima.jp";
-
-fukushima_jp("furudono", _Any) ->
-    "furudono.fukushima.jp";
-
-fukushima_jp("ishikawa", _Any) ->
-    "ishikawa.fukushima.jp";
-
-fukushima_jp("showa", _Any) ->
-    "showa.fukushima.jp";
-
-fukushima_jp("kunimi", _Any) ->
-    "kunimi.fukushima.jp";
-
-fukushima_jp("omotego", _Any) ->
-    "omotego.fukushima.jp";
-
-fukushima_jp("shirakawa", _Any) ->
-    "shirakawa.fukushima.jp";
-
-fukushima_jp("aizubange", _Any) ->
-    "aizubange.fukushima.jp";
-
-fukushima_jp("kitakata", _Any) ->
-    "kitakata.fukushima.jp";
-
-fukushima_jp("bandai", _Any) ->
-    "bandai.fukushima.jp";
-
-fukushima_jp("yabuki", _Any) ->
-    "yabuki.fukushima.jp";
-
-fukushima_jp("sukagawa", _Any) ->
-    "sukagawa.fukushima.jp";
-
-fukushima_jp("fukushima", _Any) ->
-    "fukushima.fukushima.jp";
-
-
-fukushima_jp(_, _) ->
-    "fukushima.jp".
-
-%% regular rules
-tottori_jp("chizu", _Any) ->
-    "chizu.tottori.jp";
-
-tottori_jp("nanbu", _Any) ->
-    "nanbu.tottori.jp";
-
-tottori_jp("hino", _Any) ->
-    "hino.tottori.jp";
-
-tottori_jp("kawahara", _Any) ->
-    "kawahara.tottori.jp";
-
-tottori_jp("koge", _Any) ->
-    "koge.tottori.jp";
-
-tottori_jp("yonago", _Any) ->
-    "yonago.tottori.jp";
-
-tottori_jp("nichinan", _Any) ->
-    "nichinan.tottori.jp";
-
-tottori_jp("yazu", _Any) ->
-    "yazu.tottori.jp";
-
-tottori_jp("kotoura", _Any) ->
-    "kotoura.tottori.jp";
-
-tottori_jp("wakasa", _Any) ->
-    "wakasa.tottori.jp";
-
-tottori_jp("misasa", _Any) ->
-    "misasa.tottori.jp";
-
-tottori_jp("tottori", _Any) ->
-    "tottori.tottori.jp";
-
-tottori_jp("sakaiminato", _Any) ->
-    "sakaiminato.tottori.jp";
-
-
-tottori_jp(_, _) ->
-    "tottori.jp".
-
-%% regular rules
-gunma_jp("takasaki", _Any) ->
-    "takasaki.gunma.jp";
-
-gunma_jp("chiyoda", _Any) ->
-    "chiyoda.gunma.jp";
-
-gunma_jp("tomioka", _Any) ->
-    "tomioka.gunma.jp";
-
-gunma_jp("annaka", _Any) ->
-    "annaka.gunma.jp";
-
-gunma_jp("kusatsu", _Any) ->
-    "kusatsu.gunma.jp";
-
-gunma_jp("naganohara", _Any) ->
-    "naganohara.gunma.jp";
-
-gunma_jp("shimonita", _Any) ->
-    "shimonita.gunma.jp";
-
-gunma_jp("kiryu", _Any) ->
-    "kiryu.gunma.jp";
-
-gunma_jp("katashina", _Any) ->
-    "katashina.gunma.jp";
-
-gunma_jp("meiwa", _Any) ->
-    "meiwa.gunma.jp";
-
-gunma_jp("showa", _Any) ->
-    "showa.gunma.jp";
-
-gunma_jp("isesaki", _Any) ->
-    "isesaki.gunma.jp";
-
-gunma_jp("itakura", _Any) ->
-    "itakura.gunma.jp";
-
-gunma_jp("shinto", _Any) ->
-    "shinto.gunma.jp";
-
-gunma_jp("shibukawa", _Any) ->
-    "shibukawa.gunma.jp";
-
-gunma_jp("tatebayashi", _Any) ->
-    "tatebayashi.gunma.jp";
-
-gunma_jp("oizumi", _Any) ->
-    "oizumi.gunma.jp";
-
-gunma_jp("ota", _Any) ->
-    "ota.gunma.jp";
-
-gunma_jp("kanra", _Any) ->
-    "kanra.gunma.jp";
-
-gunma_jp("numata", _Any) ->
-    "numata.gunma.jp";
-
-gunma_jp("higashiagatsuma", _Any) ->
-    "higashiagatsuma.gunma.jp";
-
-gunma_jp("takayama", _Any) ->
-    "takayama.gunma.jp";
-
-gunma_jp("fujioka", _Any) ->
-    "fujioka.gunma.jp";
-
-gunma_jp("midori", _Any) ->
-    "midori.gunma.jp";
-
-gunma_jp("ora", _Any) ->
-    "ora.gunma.jp";
-
-gunma_jp("kanna", _Any) ->
-    "kanna.gunma.jp";
-
-gunma_jp("maebashi", _Any) ->
-    "maebashi.gunma.jp";
-
-gunma_jp("tsumagoi", _Any) ->
-    "tsumagoi.gunma.jp";
-
-gunma_jp("nakanojo", _Any) ->
-    "nakanojo.gunma.jp";
-
-gunma_jp("kawaba", _Any) ->
-    "kawaba.gunma.jp";
-
-gunma_jp("tsukiyono", _Any) ->
-    "tsukiyono.gunma.jp";
-
-gunma_jp("tamamura", _Any) ->
-    "tamamura.gunma.jp";
-
-gunma_jp("yoshioka", _Any) ->
-    "yoshioka.gunma.jp";
-
-gunma_jp("minakami", _Any) ->
-    "minakami.gunma.jp";
-
-gunma_jp("ueno", _Any) ->
-    "ueno.gunma.jp";
-
-gunma_jp("nanmoku", _Any) ->
-    "nanmoku.gunma.jp";
-
-
-gunma_jp(_, _) ->
-    "gunma.jp".
-
-%% regular rules
-hokkaido_jp("noboribetsu", _Any) ->
-    "noboribetsu.hokkaido.jp";
-
-hokkaido_jp("matsumae", _Any) ->
-    "matsumae.hokkaido.jp";
-
-hokkaido_jp("toyako", _Any) ->
-    "toyako.hokkaido.jp";
-
-hokkaido_jp("takinoue", _Any) ->
-    "takinoue.hokkaido.jp";
-
-hokkaido_jp("shintoku", _Any) ->
-    "shintoku.hokkaido.jp";
-
-hokkaido_jp("bibai", _Any) ->
-    "bibai.hokkaido.jp";
-
-hokkaido_jp("koshimizu", _Any) ->
-    "koshimizu.hokkaido.jp";
-
-hokkaido_jp("esashi", _Any) ->
-    "esashi.hokkaido.jp";
-
-hokkaido_jp("shibetsu", _Any) ->
-    "shibetsu.hokkaido.jp";
-
-hokkaido_jp("tohma", _Any) ->
-    "tohma.hokkaido.jp";
-
-hokkaido_jp("haboro", _Any) ->
-    "haboro.hokkaido.jp";
-
-hokkaido_jp("mombetsu", _Any) ->
-    "mombetsu.hokkaido.jp";
-
-hokkaido_jp("sarufutsu", _Any) ->
-    "sarufutsu.hokkaido.jp";
-
-hokkaido_jp("shiriuchi", _Any) ->
-    "shiriuchi.hokkaido.jp";
-
-hokkaido_jp("kamisunagawa", _Any) ->
-    "kamisunagawa.hokkaido.jp";
-
-hokkaido_jp("toya", _Any) ->
-    "toya.hokkaido.jp";
-
-hokkaido_jp("nakatombetsu", _Any) ->
-    "nakatombetsu.hokkaido.jp";
-
-hokkaido_jp("taiki", _Any) ->
-    "taiki.hokkaido.jp";
-
-hokkaido_jp("kimobetsu", _Any) ->
-    "kimobetsu.hokkaido.jp";
-
-hokkaido_jp("nayoro", _Any) ->
-    "nayoro.hokkaido.jp";
-
-hokkaido_jp("ebetsu", _Any) ->
-    "ebetsu.hokkaido.jp";
-
-hokkaido_jp("rankoshi", _Any) ->
-    "rankoshi.hokkaido.jp";
-
-hokkaido_jp("niikappu", _Any) ->
-    "niikappu.hokkaido.jp";
-
-hokkaido_jp("kyowa", _Any) ->
-    "kyowa.hokkaido.jp";
-
-hokkaido_jp("oumu", _Any) ->
-    "oumu.hokkaido.jp";
-
-hokkaido_jp("fukagawa", _Any) ->
-    "fukagawa.hokkaido.jp";
-
-hokkaido_jp("kuriyama", _Any) ->
-    "kuriyama.hokkaido.jp";
-
-hokkaido_jp("date", _Any) ->
-    "date.hokkaido.jp";
-
-hokkaido_jp("kitami", _Any) ->
-    "kitami.hokkaido.jp";
-
-hokkaido_jp("rebun", _Any) ->
-    "rebun.hokkaido.jp";
-
-hokkaido_jp("obihiro", _Any) ->
-    "obihiro.hokkaido.jp";
-
-hokkaido_jp("chippubetsu", _Any) ->
-    "chippubetsu.hokkaido.jp";
-
-hokkaido_jp("furano", _Any) ->
-    "furano.hokkaido.jp";
-
-hokkaido_jp("shinshinotsu", _Any) ->
-    "shinshinotsu.hokkaido.jp";
-
-hokkaido_jp("shakotan", _Any) ->
-    "shakotan.hokkaido.jp";
-
-hokkaido_jp("hokuryu", _Any) ->
-    "hokuryu.hokkaido.jp";
-
-hokkaido_jp("nishiokoppe", _Any) ->
-    "nishiokoppe.hokkaido.jp";
-
-hokkaido_jp("kuromatsunai", _Any) ->
-    "kuromatsunai.hokkaido.jp";
-
-hokkaido_jp("urakawa", _Any) ->
-    "urakawa.hokkaido.jp";
-
-hokkaido_jp("higashikagura", _Any) ->
-    "higashikagura.hokkaido.jp";
-
-hokkaido_jp("rishirifuji", _Any) ->
-    "rishirifuji.hokkaido.jp";
-
-hokkaido_jp("rikubetsu", _Any) ->
-    "rikubetsu.hokkaido.jp";
-
-hokkaido_jp("otoineppu", _Any) ->
-    "otoineppu.hokkaido.jp";
-
-hokkaido_jp("sobetsu", _Any) ->
-    "sobetsu.hokkaido.jp";
-
-hokkaido_jp("iwamizawa", _Any) ->
-    "iwamizawa.hokkaido.jp";
-
-hokkaido_jp("ikeda", _Any) ->
-    "ikeda.hokkaido.jp";
-
-hokkaido_jp("shimamaki", _Any) ->
-    "shimamaki.hokkaido.jp";
-
-hokkaido_jp("mashike", _Any) ->
-    "mashike.hokkaido.jp";
-
-hokkaido_jp("takasu", _Any) ->
-    "takasu.hokkaido.jp";
-
-hokkaido_jp("otofuke", _Any) ->
-    "otofuke.hokkaido.jp";
-
-hokkaido_jp("shimokawa", _Any) ->
-    "shimokawa.hokkaido.jp";
-
-hokkaido_jp("hidaka", _Any) ->
-    "hidaka.hokkaido.jp";
-
-hokkaido_jp("esan", _Any) ->
-    "esan.hokkaido.jp";
-
-hokkaido_jp("fukushima", _Any) ->
-    "fukushima.hokkaido.jp";
-
-hokkaido_jp("akkeshi", _Any) ->
-    "akkeshi.hokkaido.jp";
-
-hokkaido_jp("tomakomai", _Any) ->
-    "tomakomai.hokkaido.jp";
-
-hokkaido_jp("embetsu", _Any) ->
-    "embetsu.hokkaido.jp";
-
-hokkaido_jp("atsuma", _Any) ->
-    "atsuma.hokkaido.jp";
-
-hokkaido_jp("biei", _Any) ->
-    "biei.hokkaido.jp";
-
-hokkaido_jp("abashiri", _Any) ->
-    "abashiri.hokkaido.jp";
-
-hokkaido_jp("erimo", _Any) ->
-    "erimo.hokkaido.jp";
-
-hokkaido_jp("higashikawa", _Any) ->
-    "higashikawa.hokkaido.jp";
-
-hokkaido_jp("kayabe", _Any) ->
-    "kayabe.hokkaido.jp";
-
-hokkaido_jp("wassamu", _Any) ->
-    "wassamu.hokkaido.jp";
-
-hokkaido_jp("shiranuka", _Any) ->
-    "shiranuka.hokkaido.jp";
-
-hokkaido_jp("uryu", _Any) ->
-    "uryu.hokkaido.jp";
-
-hokkaido_jp("kushiro", _Any) ->
-    "kushiro.hokkaido.jp";
-
-hokkaido_jp("tobetsu", _Any) ->
-    "tobetsu.hokkaido.jp";
-
-hokkaido_jp("pippu", _Any) ->
-    "pippu.hokkaido.jp";
-
-hokkaido_jp("kunneppu", _Any) ->
-    "kunneppu.hokkaido.jp";
-
-hokkaido_jp("nakagawa", _Any) ->
-    "nakagawa.hokkaido.jp";
-
-hokkaido_jp("hokuto", _Any) ->
-    "hokuto.hokkaido.jp";
-
-hokkaido_jp("kamifurano", _Any) ->
-    "kamifurano.hokkaido.jp";
-
-hokkaido_jp("rishiri", _Any) ->
-    "rishiri.hokkaido.jp";
-
-hokkaido_jp("toyotomi", _Any) ->
-    "toyotomi.hokkaido.jp";
-
-hokkaido_jp("okoppe", _Any) ->
-    "okoppe.hokkaido.jp";
-
-hokkaido_jp("shibecha", _Any) ->
-    "shibecha.hokkaido.jp";
-
-hokkaido_jp("moseushi", _Any) ->
-    "moseushi.hokkaido.jp";
-
-hokkaido_jp("hakodate", _Any) ->
-    "hakodate.hokkaido.jp";
-
-hokkaido_jp("biratori", _Any) ->
-    "biratori.hokkaido.jp";
-
-hokkaido_jp("oketo", _Any) ->
-    "oketo.hokkaido.jp";
-
-hokkaido_jp("otaru", _Any) ->
-    "otaru.hokkaido.jp";
-
-hokkaido_jp("niki", _Any) ->
-    "niki.hokkaido.jp";
-
-hokkaido_jp("saroma", _Any) ->
-    "saroma.hokkaido.jp";
-
-hokkaido_jp("bihoro", _Any) ->
-    "bihoro.hokkaido.jp";
-
-hokkaido_jp("ishikari", _Any) ->
-    "ishikari.hokkaido.jp";
-
-hokkaido_jp("wakkanai", _Any) ->
-    "wakkanai.hokkaido.jp";
-
-hokkaido_jp("aibetsu", _Any) ->
-    "aibetsu.hokkaido.jp";
-
-hokkaido_jp("utashinai", _Any) ->
-    "utashinai.hokkaido.jp";
-
-hokkaido_jp("hiroo", _Any) ->
-    "hiroo.hokkaido.jp";
-
-hokkaido_jp("tsubetsu", _Any) ->
-    "tsubetsu.hokkaido.jp";
-
-hokkaido_jp("mikasa", _Any) ->
-    "mikasa.hokkaido.jp";
-
-hokkaido_jp("kiyosato", _Any) ->
-    "kiyosato.hokkaido.jp";
-
-hokkaido_jp("kembuchi", _Any) ->
-    "kembuchi.hokkaido.jp";
-
-hokkaido_jp("assabu", _Any) ->
-    "assabu.hokkaido.jp";
-
-hokkaido_jp("takikawa", _Any) ->
-    "takikawa.hokkaido.jp";
-
-hokkaido_jp("nemuro", _Any) ->
-    "nemuro.hokkaido.jp";
-
-hokkaido_jp("honbetsu", _Any) ->
-    "honbetsu.hokkaido.jp";
-
-hokkaido_jp("muroran", _Any) ->
-    "muroran.hokkaido.jp";
-
-hokkaido_jp("tomari", _Any) ->
-    "tomari.hokkaido.jp";
-
-hokkaido_jp("mukawa", _Any) ->
-    "mukawa.hokkaido.jp";
-
-hokkaido_jp("abira", _Any) ->
-    "abira.hokkaido.jp";
-
-hokkaido_jp("kutchan", _Any) ->
-    "kutchan.hokkaido.jp";
-
-hokkaido_jp("urausu", _Any) ->
-    "urausu.hokkaido.jp";
-
-hokkaido_jp("shikabe", _Any) ->
-    "shikabe.hokkaido.jp";
-
-hokkaido_jp("eniwa", _Any) ->
-    "eniwa.hokkaido.jp";
-
-hokkaido_jp("shikaoi", _Any) ->
-    "shikaoi.hokkaido.jp";
-
-hokkaido_jp("nanporo", _Any) ->
-    "nanporo.hokkaido.jp";
-
-hokkaido_jp("naie", _Any) ->
-    "naie.hokkaido.jp";
-
-hokkaido_jp("iwanai", _Any) ->
-    "iwanai.hokkaido.jp";
-
-hokkaido_jp("sunagawa", _Any) ->
-    "sunagawa.hokkaido.jp";
-
-hokkaido_jp("obira", _Any) ->
-    "obira.hokkaido.jp";
-
-hokkaido_jp("furubira", _Any) ->
-    "furubira.hokkaido.jp";
-
-hokkaido_jp("kikonai", _Any) ->
-    "kikonai.hokkaido.jp";
-
-hokkaido_jp("ashibetsu", _Any) ->
-    "ashibetsu.hokkaido.jp";
-
-hokkaido_jp("teshikaga", _Any) ->
-    "teshikaga.hokkaido.jp";
-
-hokkaido_jp("bifuka", _Any) ->
-    "bifuka.hokkaido.jp";
-
-hokkaido_jp("toyoura", _Any) ->
-    "toyoura.hokkaido.jp";
-
-hokkaido_jp("hamatonbetsu", _Any) ->
-    "hamatonbetsu.hokkaido.jp";
-
-hokkaido_jp("kamikawa", _Any) ->
-    "kamikawa.hokkaido.jp";
-
-hokkaido_jp("nakasatsunai", _Any) ->
-    "nakasatsunai.hokkaido.jp";
-
-hokkaido_jp("nanae", _Any) ->
-    "nanae.hokkaido.jp";
-
-hokkaido_jp("kamoenai", _Any) ->
-    "kamoenai.hokkaido.jp";
-
-hokkaido_jp("numata", _Any) ->
-    "numata.hokkaido.jp";
-
-hokkaido_jp("horonobe", _Any) ->
-    "horonobe.hokkaido.jp";
-
-hokkaido_jp("shiraoi", _Any) ->
-    "shiraoi.hokkaido.jp";
-
-hokkaido_jp("asahikawa", _Any) ->
-    "asahikawa.hokkaido.jp";
-
-hokkaido_jp("imakane", _Any) ->
-    "imakane.hokkaido.jp";
-
-hokkaido_jp("yakumo", _Any) ->
-    "yakumo.hokkaido.jp";
-
-hokkaido_jp("tsukigata", _Any) ->
-    "tsukigata.hokkaido.jp";
-
-hokkaido_jp("minamifurano", _Any) ->
-    "minamifurano.hokkaido.jp";
-
-hokkaido_jp("shari", _Any) ->
-    "shari.hokkaido.jp";
-
-hokkaido_jp("shimizu", _Any) ->
-    "shimizu.hokkaido.jp";
-
-hokkaido_jp("ozora", _Any) ->
-    "ozora.hokkaido.jp";
-
-hokkaido_jp("kamishihoro", _Any) ->
-    "kamishihoro.hokkaido.jp";
-
-hokkaido_jp("kitahiroshima", _Any) ->
-    "kitahiroshima.hokkaido.jp";
-
-hokkaido_jp("horokanai", _Any) ->
-    "horokanai.hokkaido.jp";
-
-hokkaido_jp("otobe", _Any) ->
-    "otobe.hokkaido.jp";
-
-hokkaido_jp("chitose", _Any) ->
-    "chitose.hokkaido.jp";
-
-hokkaido_jp("ashoro", _Any) ->
-    "ashoro.hokkaido.jp";
-
-hokkaido_jp("akabira", _Any) ->
-    "akabira.hokkaido.jp";
-
-hokkaido_jp("yoichi", _Any) ->
-    "yoichi.hokkaido.jp";
-
-
-hokkaido_jp(_, _) ->
-    "hokkaido.jp".
-
-%% regular rules
-mie_jp("kiho", _Any) ->
-    "kiho.mie.jp";
-
-mie_jp("komono", _Any) ->
-    "komono.mie.jp";
-
-mie_jp("taki", _Any) ->
-    "taki.mie.jp";
-
-mie_jp("tado", _Any) ->
-    "tado.mie.jp";
-
-mie_jp("kawagoe", _Any) ->
-    "kawagoe.mie.jp";
-
-mie_jp("watarai", _Any) ->
-    "watarai.mie.jp";
-
-mie_jp("ise", _Any) ->
-    "ise.mie.jp";
-
-mie_jp("kuwana", _Any) ->
-    "kuwana.mie.jp";
-
-mie_jp("matsusaka", _Any) ->
-    "matsusaka.mie.jp";
-
-mie_jp("suzuka", _Any) ->
-    "suzuka.mie.jp";
-
-mie_jp("miyama", _Any) ->
-    "miyama.mie.jp";
-
-mie_jp("inabe", _Any) ->
-    "inabe.mie.jp";
-
-mie_jp("tamaki", _Any) ->
-    "tamaki.mie.jp";
-
-mie_jp("kiwa", _Any) ->
-    "kiwa.mie.jp";
-
-mie_jp("kumano", _Any) ->
-    "kumano.mie.jp";
-
-mie_jp("udono", _Any) ->
-    "udono.mie.jp";
-
-mie_jp("kisosaki", _Any) ->
-    "kisosaki.mie.jp";
-
-mie_jp("toba", _Any) ->
-    "toba.mie.jp";
-
-mie_jp("mihama", _Any) ->
-    "mihama.mie.jp";
-
-mie_jp("yokkaichi", _Any) ->
-    "yokkaichi.mie.jp";
-
-mie_jp("meiwa", _Any) ->
-    "meiwa.mie.jp";
-
-mie_jp("ureshino", _Any) ->
-    "ureshino.mie.jp";
-
-mie_jp("minamiise", _Any) ->
-    "minamiise.mie.jp";
-
-mie_jp("nabari", _Any) ->
-    "nabari.mie.jp";
-
-mie_jp("tsu", _Any) ->
-    "tsu.mie.jp";
-
-mie_jp("asahi", _Any) ->
-    "asahi.mie.jp";
-
-mie_jp("kameyama", _Any) ->
-    "kameyama.mie.jp";
-
-mie_jp("misugi", _Any) ->
-    "misugi.mie.jp";
-
-mie_jp("taiki", _Any) ->
-    "taiki.mie.jp";
-
-mie_jp("shima", _Any) ->
-    "shima.mie.jp";
-
-
-mie_jp(_, _) ->
-    "mie.jp".
-
-%% regular rules
-kumamoto_jp("kumamoto", _Any) ->
-    "kumamoto.kumamoto.jp";
-
-kumamoto_jp("minamata", _Any) ->
-    "minamata.kumamoto.jp";
-
-kumamoto_jp("mifune", _Any) ->
-    "mifune.kumamoto.jp";
-
-kumamoto_jp("kikuchi", _Any) ->
-    "kikuchi.kumamoto.jp";
-
-kumamoto_jp("mashiki", _Any) ->
-    "mashiki.kumamoto.jp";
-
-kumamoto_jp("kashima", _Any) ->
-    "kashima.kumamoto.jp";
-
-kumamoto_jp("arao", _Any) ->
-    "arao.kumamoto.jp";
-
-kumamoto_jp("sumoto", _Any) ->
-    "sumoto.kumamoto.jp";
-
-kumamoto_jp("yamato", _Any) ->
-    "yamato.kumamoto.jp";
-
-kumamoto_jp("nishihara", _Any) ->
-    "nishihara.kumamoto.jp";
-
-kumamoto_jp("takamori", _Any) ->
-    "takamori.kumamoto.jp";
-
-kumamoto_jp("aso", _Any) ->
-    "aso.kumamoto.jp";
-
-kumamoto_jp("gyokuto", _Any) ->
-    "gyokuto.kumamoto.jp";
-
-kumamoto_jp("yatsushiro", _Any) ->
-    "yatsushiro.kumamoto.jp";
-
-kumamoto_jp("nagasu", _Any) ->
-    "nagasu.kumamoto.jp";
-
-kumamoto_jp("minamioguni", _Any) ->
-    "minamioguni.kumamoto.jp";
-
-kumamoto_jp("hitoyoshi", _Any) ->
-    "hitoyoshi.kumamoto.jp";
-
-kumamoto_jp("choyo", _Any) ->
-    "choyo.kumamoto.jp";
-
-kumamoto_jp("uki", _Any) ->
-    "uki.kumamoto.jp";
-
-kumamoto_jp("ozu", _Any) ->
-    "ozu.kumamoto.jp";
-
-kumamoto_jp("amakusa", _Any) ->
-    "amakusa.kumamoto.jp";
-
-kumamoto_jp("oguni", _Any) ->
-    "oguni.kumamoto.jp";
-
-kumamoto_jp("kamiamakusa", _Any) ->
-    "kamiamakusa.kumamoto.jp";
-
-kumamoto_jp("yamaga", _Any) ->
-    "yamaga.kumamoto.jp";
-
-kumamoto_jp("kosa", _Any) ->
-    "kosa.kumamoto.jp";
-
-kumamoto_jp("uto", _Any) ->
-    "uto.kumamoto.jp";
-
-
-kumamoto_jp(_, _) ->
-    "kumamoto.jp".
-
-%% regular rules
-shiga_jp("higashiomi", _Any) ->
-    "higashiomi.shiga.jp";
-
-shiga_jp("notogawa", _Any) ->
-    "notogawa.shiga.jp";
-
-shiga_jp("nishiazai", _Any) ->
-    "nishiazai.shiga.jp";
-
-shiga_jp("kosei", _Any) ->
-    "kosei.shiga.jp";
-
-shiga_jp("omihachiman", _Any) ->
-    "omihachiman.shiga.jp";
-
-shiga_jp("koka", _Any) ->
-    "koka.shiga.jp";
-
-shiga_jp("aisho", _Any) ->
-    "aisho.shiga.jp";
-
-shiga_jp("kusatsu", _Any) ->
-    "kusatsu.shiga.jp";
-
-shiga_jp("koto", _Any) ->
-    "koto.shiga.jp";
-
-shiga_jp("hikone", _Any) ->
-    "hikone.shiga.jp";
-
-shiga_jp("toyosato", _Any) ->
-    "toyosato.shiga.jp";
-
-shiga_jp("yasu", _Any) ->
-    "yasu.shiga.jp";
-
-shiga_jp("moriyama", _Any) ->
-    "moriyama.shiga.jp";
-
-shiga_jp("otsu", _Any) ->
-    "otsu.shiga.jp";
-
-shiga_jp("nagahama", _Any) ->
-    "nagahama.shiga.jp";
-
-shiga_jp("takashima", _Any) ->
-    "takashima.shiga.jp";
-
-shiga_jp("konan", _Any) ->
-    "konan.shiga.jp";
-
-shiga_jp("ritto", _Any) ->
-    "ritto.shiga.jp";
-
-shiga_jp("ryuoh", _Any) ->
-    "ryuoh.shiga.jp";
-
-shiga_jp("gamo", _Any) ->
-    "gamo.shiga.jp";
-
-shiga_jp("maibara", _Any) ->
-    "maibara.shiga.jp";
-
-shiga_jp("torahime", _Any) ->
-    "torahime.shiga.jp";
-
-shiga_jp("takatsuki", _Any) ->
-    "takatsuki.shiga.jp";
-
-
-shiga_jp(_, _) ->
-    "shiga.jp".
-
-%% regular rules
-yamanashi_jp("chuo", _Any) ->
-    "chuo.yamanashi.jp";
-
-yamanashi_jp("otsuki", _Any) ->
-    "otsuki.yamanashi.jp";
-
-yamanashi_jp("hayakawa", _Any) ->
-    "hayakawa.yamanashi.jp";
-
-yamanashi_jp("yamanashi", _Any) ->
-    "yamanashi.yamanashi.jp";
-
-yamanashi_jp("fujikawa", _Any) ->
-    "fujikawa.yamanashi.jp";
-
-yamanashi_jp("hokuto", _Any) ->
-    "hokuto.yamanashi.jp";
-
-yamanashi_jp("kosuge", _Any) ->
-    "kosuge.yamanashi.jp";
-
-yamanashi_jp("yamanakako", _Any) ->
-    "yamanakako.yamanashi.jp";
-
-yamanashi_jp("kofu", _Any) ->
-    "kofu.yamanashi.jp";
-
-yamanashi_jp("ichikawamisato", _Any) ->
-    "ichikawamisato.yamanashi.jp";
-
-yamanashi_jp("oshino", _Any) ->
-    "oshino.yamanashi.jp";
-
-yamanashi_jp("fuefuki", _Any) ->
-    "fuefuki.yamanashi.jp";
-
-yamanashi_jp("nishikatsura", _Any) ->
-    "nishikatsura.yamanashi.jp";
-
-yamanashi_jp("nirasaki", _Any) ->
-    "nirasaki.yamanashi.jp";
-
-yamanashi_jp("showa", _Any) ->
-    "showa.yamanashi.jp";
-
-yamanashi_jp("tabayama", _Any) ->
-    "tabayama.yamanashi.jp";
-
-yamanashi_jp("nanbu", _Any) ->
-    "nanbu.yamanashi.jp";
-
-yamanashi_jp("tsuru", _Any) ->
-    "tsuru.yamanashi.jp";
-
-yamanashi_jp("doshi", _Any) ->
-    "doshi.yamanashi.jp";
-
-yamanashi_jp("narusawa", _Any) ->
-    "narusawa.yamanashi.jp";
-
-yamanashi_jp("kai", _Any) ->
-    "kai.yamanashi.jp";
-
-yamanashi_jp("nakamichi", _Any) ->
-    "nakamichi.yamanashi.jp";
-
-yamanashi_jp("uenohara", _Any) ->
-    "uenohara.yamanashi.jp";
-
-yamanashi_jp("koshu", _Any) ->
-    "koshu.yamanashi.jp";
-
-yamanashi_jp("fujikawaguchiko", _Any) ->
-    "fujikawaguchiko.yamanashi.jp";
-
-yamanashi_jp("fujiyoshida", _Any) ->
-    "fujiyoshida.yamanashi.jp";
-
-yamanashi_jp("minobu", _Any) ->
-    "minobu.yamanashi.jp";
-
-
-yamanashi_jp(_, _) ->
-    "yamanashi.jp".
-
-%% regular rules
-kanagawa_jp("ninomiya", _Any) ->
-    "ninomiya.kanagawa.jp";
-
-kanagawa_jp("aikawa", _Any) ->
-    "aikawa.kanagawa.jp";
-
-kanagawa_jp("kamakura", _Any) ->
-    "kamakura.kanagawa.jp";
-
-kanagawa_jp("hiratsuka", _Any) ->
-    "hiratsuka.kanagawa.jp";
-
-kanagawa_jp("isehara", _Any) ->
-    "isehara.kanagawa.jp";
-
-kanagawa_jp("chigasaki", _Any) ->
-    "chigasaki.kanagawa.jp";
-
-kanagawa_jp("kaisei", _Any) ->
-    "kaisei.kanagawa.jp";
-
-kanagawa_jp("matsuda", _Any) ->
-    "matsuda.kanagawa.jp";
-
-kanagawa_jp("yugawara", _Any) ->
-    "yugawara.kanagawa.jp";
-
-kanagawa_jp("yamato", _Any) ->
-    "yamato.kanagawa.jp";
-
-kanagawa_jp("odawara", _Any) ->
-    "odawara.kanagawa.jp";
-
-kanagawa_jp("nakai", _Any) ->
-    "nakai.kanagawa.jp";
-
-kanagawa_jp("kiyokawa", _Any) ->
-    "kiyokawa.kanagawa.jp";
-
-kanagawa_jp("samukawa", _Any) ->
-    "samukawa.kanagawa.jp";
-
-kanagawa_jp("minamiashigara", _Any) ->
-    "minamiashigara.kanagawa.jp";
-
-kanagawa_jp("tsukui", _Any) ->
-    "tsukui.kanagawa.jp";
-
-kanagawa_jp("zushi", _Any) ->
-    "zushi.kanagawa.jp";
-
-kanagawa_jp("zama", _Any) ->
-    "zama.kanagawa.jp";
-
-kanagawa_jp("hakone", _Any) ->
-    "hakone.kanagawa.jp";
-
-kanagawa_jp("oi", _Any) ->
-    "oi.kanagawa.jp";
-
-kanagawa_jp("miura", _Any) ->
-    "miura.kanagawa.jp";
-
-kanagawa_jp("yamakita", _Any) ->
-    "yamakita.kanagawa.jp";
-
-kanagawa_jp("fujisawa", _Any) ->
-    "fujisawa.kanagawa.jp";
-
-kanagawa_jp("oiso", _Any) ->
-    "oiso.kanagawa.jp";
-
-kanagawa_jp("yokosuka", _Any) ->
-    "yokosuka.kanagawa.jp";
-
-kanagawa_jp("ayase", _Any) ->
-    "ayase.kanagawa.jp";
-
-kanagawa_jp("atsugi", _Any) ->
-    "atsugi.kanagawa.jp";
-
-kanagawa_jp("sagamihara", _Any) ->
-    "sagamihara.kanagawa.jp";
-
-kanagawa_jp("hadano", _Any) ->
-    "hadano.kanagawa.jp";
-
-kanagawa_jp("ebina", _Any) ->
-    "ebina.kanagawa.jp";
-
-
-kanagawa_jp(_, _) ->
-    "kanagawa.jp".
-
-%% regular rules
-gifu_jp("tomika", _Any) ->
-    "tomika.gifu.jp";
-
-gifu_jp("hida", _Any) ->
-    "hida.gifu.jp";
-
-gifu_jp("anpachi", _Any) ->
-    "anpachi.gifu.jp";
-
-gifu_jp("mitake", _Any) ->
-    "mitake.gifu.jp";
-
-gifu_jp("ikeda", _Any) ->
-    "ikeda.gifu.jp";
-
-gifu_jp("yamagata", _Any) ->
-    "yamagata.gifu.jp";
-
-gifu_jp("sekigahara", _Any) ->
-    "sekigahara.gifu.jp";
-
-gifu_jp("kitagata", _Any) ->
-    "kitagata.gifu.jp";
-
-gifu_jp("kakamigahara", _Any) ->
-    "kakamigahara.gifu.jp";
-
-gifu_jp("kasahara", _Any) ->
-    "kasahara.gifu.jp";
-
-gifu_jp("higashishirakawa", _Any) ->
-    "higashishirakawa.gifu.jp";
-
-gifu_jp("godo", _Any) ->
-    "godo.gifu.jp";
-
-gifu_jp("hichiso", _Any) ->
-    "hichiso.gifu.jp";
-
-gifu_jp("takayama", _Any) ->
-    "takayama.gifu.jp";
-
-gifu_jp("yaotsu", _Any) ->
-    "yaotsu.gifu.jp";
-
-gifu_jp("mizunami", _Any) ->
-    "mizunami.gifu.jp";
-
-gifu_jp("sakahogi", _Any) ->
-    "sakahogi.gifu.jp";
-
-gifu_jp("ginan", _Any) ->
-    "ginan.gifu.jp";
-
-gifu_jp("toki", _Any) ->
-    "toki.gifu.jp";
-
-gifu_jp("tajimi", _Any) ->
-    "tajimi.gifu.jp";
-
-gifu_jp("ogaki", _Any) ->
-    "ogaki.gifu.jp";
-
-gifu_jp("ena", _Any) ->
-    "ena.gifu.jp";
-
-gifu_jp("ibigawa", _Any) ->
-    "ibigawa.gifu.jp";
-
-gifu_jp("shirakawa", _Any) ->
-    "shirakawa.gifu.jp";
-
-gifu_jp("tarui", _Any) ->
-    "tarui.gifu.jp";
-
-gifu_jp("kani", _Any) ->
-    "kani.gifu.jp";
-
-gifu_jp("motosu", _Any) ->
-    "motosu.gifu.jp";
-
-gifu_jp("wanouchi", _Any) ->
-    "wanouchi.gifu.jp";
-
-gifu_jp("kasamatsu", _Any) ->
-    "kasamatsu.gifu.jp";
-
-gifu_jp("minokamo", _Any) ->
-    "minokamo.gifu.jp";
-
-gifu_jp("nakatsugawa", _Any) ->
-    "nakatsugawa.gifu.jp";
-
-gifu_jp("gujo", _Any) ->
-    "gujo.gifu.jp";
-
-gifu_jp("yoro", _Any) ->
-    "yoro.gifu.jp";
-
-gifu_jp("hashima", _Any) ->
-    "hashima.gifu.jp";
-
-gifu_jp("kawaue", _Any) ->
-    "kawaue.gifu.jp";
-
-gifu_jp("gifu", _Any) ->
-    "gifu.gifu.jp";
-
-gifu_jp("mino", _Any) ->
-    "mino.gifu.jp";
-
-gifu_jp("seki", _Any) ->
-    "seki.gifu.jp";
-
-
-gifu_jp(_, _) ->
-    "gifu.jp".
-
-%% regular rules
-okinawa_jp("shimoji", _Any) ->
-    "shimoji.okinawa.jp";
-
-okinawa_jp("yomitan", _Any) ->
-    "yomitan.okinawa.jp";
-
-okinawa_jp("minamidaito", _Any) ->
-    "minamidaito.okinawa.jp";
-
-okinawa_jp("tarama", _Any) ->
-    "tarama.okinawa.jp";
-
-okinawa_jp("kitadaito", _Any) ->
-    "kitadaito.okinawa.jp";
-
-okinawa_jp("higashi", _Any) ->
-    "higashi.okinawa.jp";
-
-okinawa_jp("nago", _Any) ->
-    "nago.okinawa.jp";
-
-okinawa_jp("tokashiki", _Any) ->
-    "tokashiki.okinawa.jp";
-
-okinawa_jp("nakijin", _Any) ->
-    "nakijin.okinawa.jp";
-
-okinawa_jp("ginoza", _Any) ->
-    "ginoza.okinawa.jp";
-
-okinawa_jp("urasoe", _Any) ->
-    "urasoe.okinawa.jp";
-
-okinawa_jp("izena", _Any) ->
-    "izena.okinawa.jp";
-
-okinawa_jp("kadena", _Any) ->
-    "kadena.okinawa.jp";
-
-okinawa_jp("tomigusuku", _Any) ->
-    "tomigusuku.okinawa.jp";
-
-okinawa_jp("yonaguni", _Any) ->
-    "yonaguni.okinawa.jp";
-
-okinawa_jp("itoman", _Any) ->
-    "itoman.okinawa.jp";
-
-okinawa_jp("yaese", _Any) ->
-    "yaese.okinawa.jp";
-
-okinawa_jp("onna", _Any) ->
-    "onna.okinawa.jp";
-
-okinawa_jp("nakagusuku", _Any) ->
-    "nakagusuku.okinawa.jp";
-
-okinawa_jp("kitanakagusuku", _Any) ->
-    "kitanakagusuku.okinawa.jp";
-
-okinawa_jp("okinawa", _Any) ->
-    "okinawa.okinawa.jp";
-
-okinawa_jp("taketomi", _Any) ->
-    "taketomi.okinawa.jp";
-
-okinawa_jp("ginowan", _Any) ->
-    "ginowan.okinawa.jp";
-
-okinawa_jp("yonabaru", _Any) ->
-    "yonabaru.okinawa.jp";
-
-okinawa_jp("kunigami", _Any) ->
-    "kunigami.okinawa.jp";
-
-okinawa_jp("haebaru", _Any) ->
-    "haebaru.okinawa.jp";
-
-okinawa_jp("kin", _Any) ->
-    "kin.okinawa.jp";
-
-okinawa_jp("zamami", _Any) ->
-    "zamami.okinawa.jp";
-
-okinawa_jp("gushikami", _Any) ->
-    "gushikami.okinawa.jp";
-
-okinawa_jp("ogimi", _Any) ->
-    "ogimi.okinawa.jp";
-
-okinawa_jp("motobu", _Any) ->
-    "motobu.okinawa.jp";
-
-okinawa_jp("uruma", _Any) ->
-    "uruma.okinawa.jp";
-
-okinawa_jp("nishihara", _Any) ->
-    "nishihara.okinawa.jp";
-
-okinawa_jp("tonaki", _Any) ->
-    "tonaki.okinawa.jp";
-
-okinawa_jp("naha", _Any) ->
-    "naha.okinawa.jp";
-
-okinawa_jp("ishikawa", _Any) ->
-    "ishikawa.okinawa.jp";
-
-okinawa_jp("hirara", _Any) ->
-    "hirara.okinawa.jp";
-
-okinawa_jp("kumejima", _Any) ->
-    "kumejima.okinawa.jp";
-
-okinawa_jp("ishigaki", _Any) ->
-    "ishigaki.okinawa.jp";
-
-okinawa_jp("aguni", _Any) ->
-    "aguni.okinawa.jp";
-
-okinawa_jp("nanjo", _Any) ->
-    "nanjo.okinawa.jp";
-
-okinawa_jp("iheya", _Any) ->
-    "iheya.okinawa.jp";
-
-
-okinawa_jp(_, _) ->
-    "okinawa.jp".
-
-%% regular rules
-nara_jp("takatori", _Any) ->
-    "takatori.nara.jp";
-
-nara_jp("yamazoe", _Any) ->
-    "yamazoe.nara.jp";
-
-nara_jp("soni", _Any) ->
-    "soni.nara.jp";
-
-nara_jp("oyodo", _Any) ->
-    "oyodo.nara.jp";
-
-nara_jp("kawai", _Any) ->
-    "kawai.nara.jp";
-
-nara_jp("tenri", _Any) ->
-    "tenri.nara.jp";
-
-nara_jp("shinjo", _Any) ->
-    "shinjo.nara.jp";
-
-nara_jp("higashiyoshino", _Any) ->
-    "higashiyoshino.nara.jp";
-
-nara_jp("ikaruga", _Any) ->
-    "ikaruga.nara.jp";
-
-nara_jp("sango", _Any) ->
-    "sango.nara.jp";
-
-nara_jp("nosegawa", _Any) ->
-    "nosegawa.nara.jp";
-
-nara_jp("kurotaki", _Any) ->
-    "kurotaki.nara.jp";
-
-nara_jp("sakurai", _Any) ->
-    "sakurai.nara.jp";
-
-nara_jp("heguri", _Any) ->
-    "heguri.nara.jp";
-
-nara_jp("kashihara", _Any) ->
-    "kashihara.nara.jp";
-
-nara_jp("ikoma", _Any) ->
-    "ikoma.nara.jp";
-
-nara_jp("ando", _Any) ->
-    "ando.nara.jp";
-
-nara_jp("kamikitayama", _Any) ->
-    "kamikitayama.nara.jp";
-
-nara_jp("yamatokoriyama", _Any) ->
-    "yamatokoriyama.nara.jp";
-
-nara_jp("shimoichi", _Any) ->
-    "shimoichi.nara.jp";
-
-nara_jp("ouda", _Any) ->
-    "ouda.nara.jp";
-
-nara_jp("miyake", _Any) ->
-    "miyake.nara.jp";
-
-nara_jp("nara", _Any) ->
-    "nara.nara.jp";
-
-nara_jp("uda", _Any) ->
-    "uda.nara.jp";
-
-nara_jp("kanmaki", _Any) ->
-    "kanmaki.nara.jp";
-
-nara_jp("oji", _Any) ->
-    "oji.nara.jp";
-
-nara_jp("shimokitayama", _Any) ->
-    "shimokitayama.nara.jp";
-
-nara_jp("katsuragi", _Any) ->
-    "katsuragi.nara.jp";
-
-nara_jp("kawakami", _Any) ->
-    "kawakami.nara.jp";
-
-nara_jp("koryo", _Any) ->
-    "koryo.nara.jp";
-
-nara_jp("tawaramoto", _Any) ->
-    "tawaramoto.nara.jp";
-
-nara_jp("tenkawa", _Any) ->
-    "tenkawa.nara.jp";
-
-nara_jp("yoshino", _Any) ->
-    "yoshino.nara.jp";
-
-nara_jp("kawanishi", _Any) ->
-    "kawanishi.nara.jp";
-
-nara_jp("yamatotakada", _Any) ->
-    "yamatotakada.nara.jp";
-
-nara_jp("mitsue", _Any) ->
-    "mitsue.nara.jp";
-
-nara_jp("kashiba", _Any) ->
-    "kashiba.nara.jp";
-
-nara_jp("gose", _Any) ->
-    "gose.nara.jp";
-
-
-nara_jp(_, _) ->
-    "nara.jp".
-
-%% regular rules
-osaka_jp("kawachinagano", _Any) ->
-    "kawachinagano.osaka.jp";
-
-osaka_jp("higashiosaka", _Any) ->
-    "higashiosaka.osaka.jp";
-
-osaka_jp("ikeda", _Any) ->
-    "ikeda.osaka.jp";
-
-osaka_jp("abeno", _Any) ->
-    "abeno.osaka.jp";
-
-osaka_jp("chihayaakasaka", _Any) ->
-    "chihayaakasaka.osaka.jp";
-
-osaka_jp("higashisumiyoshi", _Any) ->
-    "higashisumiyoshi.osaka.jp";
-
-osaka_jp("neyagawa", _Any) ->
-    "neyagawa.osaka.jp";
-
-osaka_jp("misaki", _Any) ->
-    "misaki.osaka.jp";
-
-osaka_jp("kita", _Any) ->
-    "kita.osaka.jp";
-
-osaka_jp("nose", _Any) ->
-    "nose.osaka.jp";
-
-osaka_jp("daito", _Any) ->
-    "daito.osaka.jp";
-
-osaka_jp("izumisano", _Any) ->
-    "izumisano.osaka.jp";
-
-osaka_jp("fujiidera", _Any) ->
-    "fujiidera.osaka.jp";
-
-osaka_jp("tondabayashi", _Any) ->
-    "tondabayashi.osaka.jp";
-
-osaka_jp("habikino", _Any) ->
-    "habikino.osaka.jp";
-
-osaka_jp("yao", _Any) ->
-    "yao.osaka.jp";
-
-osaka_jp("nishi", _Any) ->
-    "nishi.osaka.jp";
-
-osaka_jp("shijonawate", _Any) ->
-    "shijonawate.osaka.jp";
-
-osaka_jp("settsu", _Any) ->
-    "settsu.osaka.jp";
-
-osaka_jp("taishi", _Any) ->
-    "taishi.osaka.jp";
-
-osaka_jp("kaizuka", _Any) ->
-    "kaizuka.osaka.jp";
-
-osaka_jp("suita", _Any) ->
-    "suita.osaka.jp";
-
-osaka_jp("moriguchi", _Any) ->
-    "moriguchi.osaka.jp";
-
-osaka_jp("katano", _Any) ->
-    "katano.osaka.jp";
-
-osaka_jp("higashiyodogawa", _Any) ->
-    "higashiyodogawa.osaka.jp";
-
-osaka_jp("matsubara", _Any) ->
-    "matsubara.osaka.jp";
-
-osaka_jp("toyono", _Any) ->
-    "toyono.osaka.jp";
-
-osaka_jp("kishiwada", _Any) ->
-    "kishiwada.osaka.jp";
-
-osaka_jp("hannan", _Any) ->
-    "hannan.osaka.jp";
-
-osaka_jp("kashiwara", _Any) ->
-    "kashiwara.osaka.jp";
-
-osaka_jp("izumiotsu", _Any) ->
-    "izumiotsu.osaka.jp";
-
-osaka_jp("sennan", _Any) ->
-    "sennan.osaka.jp";
-
-osaka_jp("tajiri", _Any) ->
-    "tajiri.osaka.jp";
-
-osaka_jp("sayama", _Any) ->
-    "sayama.osaka.jp";
-
-osaka_jp("minato", _Any) ->
-    "minato.osaka.jp";
-
-osaka_jp("takatsuki", _Any) ->
-    "takatsuki.osaka.jp";
-
-osaka_jp("tadaoka", _Any) ->
-    "tadaoka.osaka.jp";
-
-osaka_jp("izumi", _Any) ->
-    "izumi.osaka.jp";
-
-osaka_jp("ibaraki", _Any) ->
-    "ibaraki.osaka.jp";
-
-osaka_jp("hirakata", _Any) ->
-    "hirakata.osaka.jp";
-
-osaka_jp("shimamoto", _Any) ->
-    "shimamoto.osaka.jp";
-
-osaka_jp("chuo", _Any) ->
-    "chuo.osaka.jp";
-
-osaka_jp("toyonaka", _Any) ->
-    "toyonaka.osaka.jp";
-
-osaka_jp("minoh", _Any) ->
-    "minoh.osaka.jp";
-
-osaka_jp("sakai", _Any) ->
-    "sakai.osaka.jp";
-
-osaka_jp("takaishi", _Any) ->
-    "takaishi.osaka.jp";
-
-osaka_jp("kadoma", _Any) ->
-    "kadoma.osaka.jp";
-
-osaka_jp("kumatori", _Any) ->
-    "kumatori.osaka.jp";
-
-osaka_jp("kanan", _Any) ->
-    "kanan.osaka.jp";
-
-osaka_jp("osakasayama", _Any) ->
-    "osakasayama.osaka.jp";
-
-
-osaka_jp(_, _) ->
-    "osaka.jp".
-
-%% regular rules
-kyoto_jp("joyo", _Any) ->
-    "joyo.kyoto.jp";
-
-kyoto_jp("kizu", _Any) ->
-    "kizu.kyoto.jp";
-
-kyoto_jp("nagaokakyo", _Any) ->
-    "nagaokakyo.kyoto.jp";
-
-kyoto_jp("ujitawara", _Any) ->
-    "ujitawara.kyoto.jp";
-
-kyoto_jp("minami", _Any) ->
-    "minami.kyoto.jp";
-
-kyoto_jp("oyamazaki", _Any) ->
-    "oyamazaki.kyoto.jp";
-
-kyoto_jp("minamiyamashiro", _Any) ->
-    "minamiyamashiro.kyoto.jp";
-
-kyoto_jp("nantan", _Any) ->
-    "nantan.kyoto.jp";
-
-kyoto_jp("nakagyo", _Any) ->
-    "nakagyo.kyoto.jp";
-
-kyoto_jp("muko", _Any) ->
-    "muko.kyoto.jp";
-
-kyoto_jp("ayabe", _Any) ->
-    "ayabe.kyoto.jp";
-
-kyoto_jp("tanabe", _Any) ->
-    "tanabe.kyoto.jp";
-
-kyoto_jp("seika", _Any) ->
-    "seika.kyoto.jp";
-
-kyoto_jp("sakyo", _Any) ->
-    "sakyo.kyoto.jp";
-
-kyoto_jp("uji", _Any) ->
-    "uji.kyoto.jp";
-
-kyoto_jp("kamo", _Any) ->
-    "kamo.kyoto.jp";
-
-kyoto_jp("kyotango", _Any) ->
-    "kyotango.kyoto.jp";
-
-kyoto_jp("fukuchiyama", _Any) ->
-    "fukuchiyama.kyoto.jp";
-
-kyoto_jp("miyazu", _Any) ->
-    "miyazu.kyoto.jp";
-
-kyoto_jp("kumiyama", _Any) ->
-    "kumiyama.kyoto.jp";
-
-kyoto_jp("yawata", _Any) ->
-    "yawata.kyoto.jp";
-
-kyoto_jp("kameoka", _Any) ->
-    "kameoka.kyoto.jp";
-
-kyoto_jp("kyotanabe", _Any) ->
-    "kyotanabe.kyoto.jp";
-
-kyoto_jp("maizuru", _Any) ->
-    "maizuru.kyoto.jp";
-
-kyoto_jp("kyotamba", _Any) ->
-    "kyotamba.kyoto.jp";
-
-kyoto_jp("higashiyama", _Any) ->
-    "higashiyama.kyoto.jp";
-
-kyoto_jp("kita", _Any) ->
-    "kita.kyoto.jp";
-
-kyoto_jp("wazuka", _Any) ->
-    "wazuka.kyoto.jp";
-
-kyoto_jp("ine", _Any) ->
-    "ine.kyoto.jp";
-
-kyoto_jp("ide", _Any) ->
-    "ide.kyoto.jp";
-
-kyoto_jp("yamashina", _Any) ->
-    "yamashina.kyoto.jp";
-
-
-kyoto_jp(_, _) ->
-    "kyoto.jp".
-
-%% regular rules
-tokyo_jp("machida", _Any) ->
-    "machida.tokyo.jp";
-
-tokyo_jp("tachikawa", _Any) ->
-    "tachikawa.tokyo.jp";
-
-tokyo_jp("suginami", _Any) ->
-    "suginami.tokyo.jp";
-
-tokyo_jp("arakawa", _Any) ->
-    "arakawa.tokyo.jp";
-
-tokyo_jp("katsushika", _Any) ->
-    "katsushika.tokyo.jp";
-
-tokyo_jp("musashino", _Any) ->
-    "musashino.tokyo.jp";
-
-tokyo_jp("nerima", _Any) ->
-    "nerima.tokyo.jp";
-
-tokyo_jp("sumida", _Any) ->
-    "sumida.tokyo.jp";
-
-tokyo_jp("kouzushima", _Any) ->
-    "kouzushima.tokyo.jp";
-
-tokyo_jp("kodaira", _Any) ->
-    "kodaira.tokyo.jp";
-
-tokyo_jp("okutama", _Any) ->
-    "okutama.tokyo.jp";
-
-tokyo_jp("higashiyamato", _Any) ->
-    "higashiyamato.tokyo.jp";
-
-tokyo_jp("inagi", _Any) ->
-    "inagi.tokyo.jp";
-
-tokyo_jp("kiyose", _Any) ->
-    "kiyose.tokyo.jp";
-
-tokyo_jp("fussa", _Any) ->
-    "fussa.tokyo.jp";
-
-tokyo_jp("koganei", _Any) ->
-    "koganei.tokyo.jp";
-
-tokyo_jp("edogawa", _Any) ->
-    "edogawa.tokyo.jp";
-
-tokyo_jp("kita", _Any) ->
-    "kita.tokyo.jp";
-
-tokyo_jp("toshima", _Any) ->
-    "toshima.tokyo.jp";
-
-tokyo_jp("chofu", _Any) ->
-    "chofu.tokyo.jp";
-
-tokyo_jp("mizuho", _Any) ->
-    "mizuho.tokyo.jp";
-
-tokyo_jp("komae", _Any) ->
-    "komae.tokyo.jp";
-
-tokyo_jp("higashikurume", _Any) ->
-    "higashikurume.tokyo.jp";
-
-tokyo_jp("nakano", _Any) ->
-    "nakano.tokyo.jp";
-
-tokyo_jp("ota", _Any) ->
-    "ota.tokyo.jp";
-
-tokyo_jp("shinagawa", _Any) ->
-    "shinagawa.tokyo.jp";
-
-tokyo_jp("koto", _Any) ->
-    "koto.tokyo.jp";
-
-tokyo_jp("shinjuku", _Any) ->
-    "shinjuku.tokyo.jp";
-
-tokyo_jp("setagaya", _Any) ->
-    "setagaya.tokyo.jp";
-
-tokyo_jp("taito", _Any) ->
-    "taito.tokyo.jp";
-
-tokyo_jp("hamura", _Any) ->
-    "hamura.tokyo.jp";
-
-tokyo_jp("ome", _Any) ->
-    "ome.tokyo.jp";
-
-tokyo_jp("kunitachi", _Any) ->
-    "kunitachi.tokyo.jp";
-
-tokyo_jp("hino", _Any) ->
-    "hino.tokyo.jp";
-
-tokyo_jp("bunkyo", _Any) ->
-    "bunkyo.tokyo.jp";
-
-tokyo_jp("ogasawara", _Any) ->
-    "ogasawara.tokyo.jp";
-
-tokyo_jp("fuchu", _Any) ->
-    "fuchu.tokyo.jp";
-
-tokyo_jp("meguro", _Any) ->
-    "meguro.tokyo.jp";
-
-tokyo_jp("hachioji", _Any) ->
-    "hachioji.tokyo.jp";
-
-tokyo_jp("minato", _Any) ->
-    "minato.tokyo.jp";
-
-tokyo_jp("akiruno", _Any) ->
-    "akiruno.tokyo.jp";
-
-tokyo_jp("aogashima", _Any) ->
-    "aogashima.tokyo.jp";
-
-tokyo_jp("akishima", _Any) ->
-    "akishima.tokyo.jp";
-
-tokyo_jp("mitaka", _Any) ->
-    "mitaka.tokyo.jp";
-
-tokyo_jp("higashimurayama", _Any) ->
-    "higashimurayama.tokyo.jp";
-
-tokyo_jp("hachijo", _Any) ->
-    "hachijo.tokyo.jp";
-
-tokyo_jp("chuo", _Any) ->
-    "chuo.tokyo.jp";
-
-tokyo_jp("shibuya", _Any) ->
-    "shibuya.tokyo.jp";
-
-tokyo_jp("adachi", _Any) ->
-    "adachi.tokyo.jp";
-
-tokyo_jp("kokubunji", _Any) ->
-    "kokubunji.tokyo.jp";
-
-tokyo_jp("hinohara", _Any) ->
-    "hinohara.tokyo.jp";
-
-tokyo_jp("chiyoda", _Any) ->
-    "chiyoda.tokyo.jp";
-
-tokyo_jp("hinode", _Any) ->
-    "hinode.tokyo.jp";
-
-tokyo_jp("tama", _Any) ->
-    "tama.tokyo.jp";
-
-tokyo_jp("oshima", _Any) ->
-    "oshima.tokyo.jp";
-
-tokyo_jp("musashimurayama", _Any) ->
-    "musashimurayama.tokyo.jp";
-
-tokyo_jp("itabashi", _Any) ->
-    "itabashi.tokyo.jp";
-
-
-tokyo_jp(_, _) ->
-    "tokyo.jp".
-
-%% regular rules
-hiroshima_jp("higashihiroshima", _Any) ->
-    "higashihiroshima.hiroshima.jp";
-
-hiroshima_jp("naka", _Any) ->
-    "naka.hiroshima.jp";
-
-hiroshima_jp("saka", _Any) ->
-    "saka.hiroshima.jp";
-
-hiroshima_jp("hongo", _Any) ->
-    "hongo.hiroshima.jp";
-
-hiroshima_jp("otake", _Any) ->
-    "otake.hiroshima.jp";
-
-hiroshima_jp("etajima", _Any) ->
-    "etajima.hiroshima.jp";
-
-hiroshima_jp("osakikamijima", _Any) ->
-    "osakikamijima.hiroshima.jp";
-
-hiroshima_jp("sera", _Any) ->
-    "sera.hiroshima.jp";
-
-hiroshima_jp("shinichi", _Any) ->
-    "shinichi.hiroshima.jp";
-
-hiroshima_jp("hatsukaichi", _Any) ->
-    "hatsukaichi.hiroshima.jp";
-
-hiroshima_jp("fukuyama", _Any) ->
-    "fukuyama.hiroshima.jp";
-
-hiroshima_jp("kaita", _Any) ->
-    "kaita.hiroshima.jp";
-
-hiroshima_jp("kui", _Any) ->
-    "kui.hiroshima.jp";
-
-hiroshima_jp("fuchu", _Any) ->
-    "fuchu.hiroshima.jp";
-
-hiroshima_jp("mihara", _Any) ->
-    "mihara.hiroshima.jp";
-
-hiroshima_jp("asaminami", _Any) ->
-    "asaminami.hiroshima.jp";
-
-hiroshima_jp("daiwa", _Any) ->
-    "daiwa.hiroshima.jp";
-
-hiroshima_jp("jinsekikogen", _Any) ->
-    "jinsekikogen.hiroshima.jp";
-
-hiroshima_jp("kumano", _Any) ->
-    "kumano.hiroshima.jp";
-
-hiroshima_jp("onomichi", _Any) ->
-    "onomichi.hiroshima.jp";
-
-hiroshima_jp("seranishi", _Any) ->
-    "seranishi.hiroshima.jp";
-
-hiroshima_jp("takehara", _Any) ->
-    "takehara.hiroshima.jp";
-
-hiroshima_jp("kure", _Any) ->
-    "kure.hiroshima.jp";
-
-hiroshima_jp("miyoshi", _Any) ->
-    "miyoshi.hiroshima.jp";
-
-hiroshima_jp("shobara", _Any) ->
-    "shobara.hiroshima.jp";
-
-
-hiroshima_jp(_, _) ->
-    "hiroshima.jp".
-
-%% regular rules
-kochi_jp("yusuhara", _Any) ->
-    "yusuhara.kochi.jp";
-
-kochi_jp("yasuda", _Any) ->
-    "yasuda.kochi.jp";
-
-kochi_jp("kami", _Any) ->
-    "kami.kochi.jp";
-
-kochi_jp("higashitsuno", _Any) ->
-    "higashitsuno.kochi.jp";
-
-kochi_jp("kitagawa", _Any) ->
-    "kitagawa.kochi.jp";
-
-kochi_jp("tosa", _Any) ->
-    "tosa.kochi.jp";
-
-kochi_jp("sukumo", _Any) ->
-    "sukumo.kochi.jp";
-
-kochi_jp("okawa", _Any) ->
-    "okawa.kochi.jp";
-
-kochi_jp("otoyo", _Any) ->
-    "otoyo.kochi.jp";
-
-kochi_jp("tosashimizu", _Any) ->
-    "tosashimizu.kochi.jp";
-
-kochi_jp("susaki", _Any) ->
-    "susaki.kochi.jp";
-
-kochi_jp("kagami", _Any) ->
-    "kagami.kochi.jp";
-
-kochi_jp("otsuki", _Any) ->
-    "otsuki.kochi.jp";
-
-kochi_jp("niyodogawa", _Any) ->
-    "niyodogawa.kochi.jp";
-
-kochi_jp("ino", _Any) ->
-    "ino.kochi.jp";
-
-kochi_jp("hidaka", _Any) ->
-    "hidaka.kochi.jp";
-
-kochi_jp("aki", _Any) ->
-    "aki.kochi.jp";
-
-kochi_jp("umaji", _Any) ->
-    "umaji.kochi.jp";
-
-kochi_jp("nishitosa", _Any) ->
-    "nishitosa.kochi.jp";
-
-kochi_jp("ochi", _Any) ->
-    "ochi.kochi.jp";
-
-kochi_jp("kochi", _Any) ->
-    "kochi.kochi.jp";
-
-kochi_jp("nahari", _Any) ->
-    "nahari.kochi.jp";
-
-kochi_jp("nakamura", _Any) ->
-    "nakamura.kochi.jp";
-
-kochi_jp("sakawa", _Any) ->
-    "sakawa.kochi.jp";
-
-kochi_jp("tsuno", _Any) ->
-    "tsuno.kochi.jp";
-
-kochi_jp("toyo", _Any) ->
-    "toyo.kochi.jp";
-
-kochi_jp("motoyama", _Any) ->
-    "motoyama.kochi.jp";
-
-kochi_jp("muroto", _Any) ->
-    "muroto.kochi.jp";
-
-kochi_jp("mihara", _Any) ->
-    "mihara.kochi.jp";
-
-kochi_jp("geisei", _Any) ->
-    "geisei.kochi.jp";
-
-kochi_jp("nankoku", _Any) ->
-    "nankoku.kochi.jp";
-
-
-kochi_jp(_, _) ->
-    "kochi.jp".
-
-%% regular rules
-fukuoka_jp("yanagawa", _Any) ->
-    "yanagawa.fukuoka.jp";
-
-fukuoka_jp("onojo", _Any) ->
-    "onojo.fukuoka.jp";
-
-fukuoka_jp("hirokawa", _Any) ->
-    "hirokawa.fukuoka.jp";
-
-fukuoka_jp("dazaifu", _Any) ->
-    "dazaifu.fukuoka.jp";
-
-fukuoka_jp("sue", _Any) ->
-    "sue.fukuoka.jp";
-
-fukuoka_jp("hakata", _Any) ->
-    "hakata.fukuoka.jp";
-
-fukuoka_jp("munakata", _Any) ->
-    "munakata.fukuoka.jp";
-
-fukuoka_jp("umi", _Any) ->
-    "umi.fukuoka.jp";
-
-fukuoka_jp("shinyoshitomi", _Any) ->
-    "shinyoshitomi.fukuoka.jp";
-
-fukuoka_jp("takata", _Any) ->
-    "takata.fukuoka.jp";
-
-fukuoka_jp("usui", _Any) ->
-    "usui.fukuoka.jp";
-
-fukuoka_jp("soeda", _Any) ->
-    "soeda.fukuoka.jp";
-
-fukuoka_jp("oto", _Any) ->
-    "oto.fukuoka.jp";
-
-fukuoka_jp("chikuzen", _Any) ->
-    "chikuzen.fukuoka.jp";
-
-fukuoka_jp("inatsuki", _Any) ->
-    "inatsuki.fukuoka.jp";
-
-fukuoka_jp("ashiya", _Any) ->
-    "ashiya.fukuoka.jp";
-
-fukuoka_jp("kasuya", _Any) ->
-    "kasuya.fukuoka.jp";
-
-fukuoka_jp("nakagawa", _Any) ->
-    "nakagawa.fukuoka.jp";
-
-fukuoka_jp("toyotsu", _Any) ->
-    "toyotsu.fukuoka.jp";
-
-fukuoka_jp("koga", _Any) ->
-    "koga.fukuoka.jp";
-
-fukuoka_jp("okawa", _Any) ->
-    "okawa.fukuoka.jp";
-
-fukuoka_jp("miyama", _Any) ->
-    "miyama.fukuoka.jp";
-
-fukuoka_jp("hisayama", _Any) ->
-    "hisayama.fukuoka.jp";
-
-fukuoka_jp("yamada", _Any) ->
-    "yamada.fukuoka.jp";
-
-fukuoka_jp("kawara", _Any) ->
-    "kawara.fukuoka.jp";
-
-fukuoka_jp("kurate", _Any) ->
-    "kurate.fukuoka.jp";
-
-fukuoka_jp("chuo", _Any) ->
-    "chuo.fukuoka.jp";
-
-fukuoka_jp("oki", _Any) ->
-    "oki.fukuoka.jp";
-
-fukuoka_jp("miyawaka", _Any) ->
-    "miyawaka.fukuoka.jp";
-
-fukuoka_jp("mizumaki", _Any) ->
-    "mizumaki.fukuoka.jp";
-
-fukuoka_jp("keisen", _Any) ->
-    "keisen.fukuoka.jp";
-
-fukuoka_jp("yame", _Any) ->
-    "yame.fukuoka.jp";
-
-fukuoka_jp("shonai", _Any) ->
-    "shonai.fukuoka.jp";
-
-fukuoka_jp("shingu", _Any) ->
-    "shingu.fukuoka.jp";
-
-fukuoka_jp("toho", _Any) ->
-    "toho.fukuoka.jp";
-
-fukuoka_jp("chikushino", _Any) ->
-    "chikushino.fukuoka.jp";
-
-fukuoka_jp("fukuchi", _Any) ->
-    "fukuchi.fukuoka.jp";
-
-fukuoka_jp("chikujo", _Any) ->
-    "chikujo.fukuoka.jp";
-
-fukuoka_jp("kurogi", _Any) ->
-    "kurogi.fukuoka.jp";
-
-fukuoka_jp("saigawa", _Any) ->
-    "saigawa.fukuoka.jp";
-
-fukuoka_jp("buzen", _Any) ->
-    "buzen.fukuoka.jp";
-
-fukuoka_jp("nogata", _Any) ->
-    "nogata.fukuoka.jp";
-
-fukuoka_jp("kurume", _Any) ->
-    "kurume.fukuoka.jp";
-
-fukuoka_jp("nakama", _Any) ->
-    "nakama.fukuoka.jp";
-
-fukuoka_jp("chikugo", _Any) ->
-    "chikugo.fukuoka.jp";
-
-fukuoka_jp("tachiarai", _Any) ->
-    "tachiarai.fukuoka.jp";
-
-fukuoka_jp("ogori", _Any) ->
-    "ogori.fukuoka.jp";
-
-fukuoka_jp("kaho", _Any) ->
-    "kaho.fukuoka.jp";
-
-fukuoka_jp("tagawa", _Any) ->
-    "tagawa.fukuoka.jp";
-
-fukuoka_jp("nishi", _Any) ->
-    "nishi.fukuoka.jp";
-
-fukuoka_jp("sasaguri", _Any) ->
-    "sasaguri.fukuoka.jp";
-
-fukuoka_jp("kasuga", _Any) ->
-    "kasuga.fukuoka.jp";
-
-fukuoka_jp("higashi", _Any) ->
-    "higashi.fukuoka.jp";
-
-fukuoka_jp("yukuhashi", _Any) ->
-    "yukuhashi.fukuoka.jp";
-
-fukuoka_jp("minami", _Any) ->
-    "minami.fukuoka.jp";
-
-fukuoka_jp("omuta", _Any) ->
-    "omuta.fukuoka.jp";
-
-fukuoka_jp("okagaki", _Any) ->
-    "okagaki.fukuoka.jp";
-
-fukuoka_jp("tsuiki", _Any) ->
-    "tsuiki.fukuoka.jp";
-
-fukuoka_jp("onga", _Any) ->
-    "onga.fukuoka.jp";
-
-fukuoka_jp("ukiha", _Any) ->
-    "ukiha.fukuoka.jp";
-
-fukuoka_jp("miyako", _Any) ->
-    "miyako.fukuoka.jp";
-
-fukuoka_jp("chikuho", _Any) ->
-    "chikuho.fukuoka.jp";
-
-fukuoka_jp("iizuka", _Any) ->
-    "iizuka.fukuoka.jp";
-
-
-fukuoka_jp(_, _) ->
-    "fukuoka.jp".
-
-%% regular rules
-iwate_jp("kunohe", _Any) ->
-    "kunohe.iwate.jp";
-
-iwate_jp("shiwa", _Any) ->
-    "shiwa.iwate.jp";
-
-iwate_jp("iwaizumi", _Any) ->
-    "iwaizumi.iwate.jp";
-
-iwate_jp("hiraizumi", _Any) ->
-    "hiraizumi.iwate.jp";
-
-iwate_jp("fujisawa", _Any) ->
-    "fujisawa.iwate.jp";
-
-iwate_jp("iwate", _Any) ->
-    "iwate.iwate.jp";
-
-iwate_jp("sumita", _Any) ->
-    "sumita.iwate.jp";
-
-iwate_jp("karumai", _Any) ->
-    "karumai.iwate.jp";
-
-iwate_jp("kitakami", _Any) ->
-    "kitakami.iwate.jp";
-
-iwate_jp("miyako", _Any) ->
-    "miyako.iwate.jp";
-
-iwate_jp("shizukuishi", _Any) ->
-    "shizukuishi.iwate.jp";
-
-iwate_jp("ninohe", _Any) ->
-    "ninohe.iwate.jp";
-
-iwate_jp("tanohata", _Any) ->
-    "tanohata.iwate.jp";
-
-iwate_jp("rikuzentakata", _Any) ->
-    "rikuzentakata.iwate.jp";
-
-iwate_jp("joboji", _Any) ->
-    "joboji.iwate.jp";
-
-iwate_jp("otsuchi", _Any) ->
-    "otsuchi.iwate.jp";
-
-iwate_jp("kamaishi", _Any) ->
-    "kamaishi.iwate.jp";
-
-iwate_jp("kuzumaki", _Any) ->
-    "kuzumaki.iwate.jp";
-
-iwate_jp("fudai", _Any) ->
-    "fudai.iwate.jp";
-
-iwate_jp("tono", _Any) ->
-    "tono.iwate.jp";
-
-iwate_jp("kawai", _Any) ->
-    "kawai.iwate.jp";
-
-iwate_jp("noda", _Any) ->
-    "noda.iwate.jp";
-
-iwate_jp("morioka", _Any) ->
-    "morioka.iwate.jp";
-
-iwate_jp("hirono", _Any) ->
-    "hirono.iwate.jp";
-
-iwate_jp("oshu", _Any) ->
-    "oshu.iwate.jp";
-
-iwate_jp("kuji", _Any) ->
-    "kuji.iwate.jp";
-
-iwate_jp("hanamaki", _Any) ->
-    "hanamaki.iwate.jp";
-
-iwate_jp("yahaba", _Any) ->
-    "yahaba.iwate.jp";
-
-iwate_jp("ichinoseki", _Any) ->
-    "ichinoseki.iwate.jp";
-
-iwate_jp("kanegasaki", _Any) ->
-    "kanegasaki.iwate.jp";
-
-iwate_jp("ofunato", _Any) ->
-    "ofunato.iwate.jp";
-
-iwate_jp("mizusawa", _Any) ->
-    "mizusawa.iwate.jp";
-
-iwate_jp("yamada", _Any) ->
-    "yamada.iwate.jp";
-
-iwate_jp("ichinohe", _Any) ->
-    "ichinohe.iwate.jp";
-
-
-iwate_jp(_, _) ->
-    "iwate.jp".
-
-%% regular rules
-miyazaki_jp("kitagawa", _Any) ->
-    "kitagawa.miyazaki.jp";
-
-miyazaki_jp("nobeoka", _Any) ->
-    "nobeoka.miyazaki.jp";
-
-miyazaki_jp("shintomi", _Any) ->
-    "shintomi.miyazaki.jp";
-
-miyazaki_jp("aya", _Any) ->
-    "aya.miyazaki.jp";
-
-miyazaki_jp("takanabe", _Any) ->
-    "takanabe.miyazaki.jp";
-
-miyazaki_jp("kijo", _Any) ->
-    "kijo.miyazaki.jp";
-
-miyazaki_jp("nichinan", _Any) ->
-    "nichinan.miyazaki.jp";
-
-miyazaki_jp("shiiba", _Any) ->
-    "shiiba.miyazaki.jp";
-
-miyazaki_jp("kitaura", _Any) ->
-    "kitaura.miyazaki.jp";
-
-miyazaki_jp("kunitomi", _Any) ->
-    "kunitomi.miyazaki.jp";
-
-miyazaki_jp("morotsuka", _Any) ->
-    "morotsuka.miyazaki.jp";
-
-miyazaki_jp("kadogawa", _Any) ->
-    "kadogawa.miyazaki.jp";
-
-miyazaki_jp("takazaki", _Any) ->
-    "takazaki.miyazaki.jp";
-
-miyazaki_jp("nishimera", _Any) ->
-    "nishimera.miyazaki.jp";
-
-miyazaki_jp("kushima", _Any) ->
-    "kushima.miyazaki.jp";
-
-miyazaki_jp("hyuga", _Any) ->
-    "hyuga.miyazaki.jp";
-
-miyazaki_jp("mimata", _Any) ->
-    "mimata.miyazaki.jp";
-
-miyazaki_jp("miyazaki", _Any) ->
-    "miyazaki.miyazaki.jp";
-
-miyazaki_jp("takaharu", _Any) ->
-    "takaharu.miyazaki.jp";
-
-miyazaki_jp("gokase", _Any) ->
-    "gokase.miyazaki.jp";
-
-miyazaki_jp("tsuno", _Any) ->
-    "tsuno.miyazaki.jp";
-
-miyazaki_jp("kitakata", _Any) ->
-    "kitakata.miyazaki.jp";
-
-miyazaki_jp("ebino", _Any) ->
-    "ebino.miyazaki.jp";
-
-miyazaki_jp("miyakonojo", _Any) ->
-    "miyakonojo.miyazaki.jp";
-
-miyazaki_jp("kobayashi", _Any) ->
-    "kobayashi.miyazaki.jp";
-
-miyazaki_jp("saito", _Any) ->
-    "saito.miyazaki.jp";
-
-miyazaki_jp("kawaminami", _Any) ->
-    "kawaminami.miyazaki.jp";
-
-
-miyazaki_jp(_, _) ->
-    "miyazaki.jp".
-
-%% regular rules
-toyama_jp("asahi", _Any) ->
-    "asahi.toyama.jp";
-
-toyama_jp("funahashi", _Any) ->
-    "funahashi.toyama.jp";
-
-toyama_jp("taira", _Any) ->
-    "taira.toyama.jp";
-
-toyama_jp("toga", _Any) ->
-    "toga.toyama.jp";
-
-toyama_jp("oyabe", _Any) ->
-    "oyabe.toyama.jp";
-
-toyama_jp("fukumitsu", _Any) ->
-    "fukumitsu.toyama.jp";
-
-toyama_jp("himi", _Any) ->
-    "himi.toyama.jp";
-
-toyama_jp("fuchu", _Any) ->
-    "fuchu.toyama.jp";
-
-toyama_jp("uozu", _Any) ->
-    "uozu.toyama.jp";
-
-toyama_jp("kamiichi", _Any) ->
-    "kamiichi.toyama.jp";
-
-toyama_jp("takaoka", _Any) ->
-    "takaoka.toyama.jp";
-
-toyama_jp("nanto", _Any) ->
-    "nanto.toyama.jp";
-
-toyama_jp("nyuzen", _Any) ->
-    "nyuzen.toyama.jp";
-
-toyama_jp("toyama", _Any) ->
-    "toyama.toyama.jp";
-
-toyama_jp("namerikawa", _Any) ->
-    "namerikawa.toyama.jp";
-
-toyama_jp("yamada", _Any) ->
-    "yamada.toyama.jp";
-
-toyama_jp("imizu", _Any) ->
-    "imizu.toyama.jp";
-
-toyama_jp("tonami", _Any) ->
-    "tonami.toyama.jp";
-
-toyama_jp("tateyama", _Any) ->
-    "tateyama.toyama.jp";
-
-toyama_jp("kurobe", _Any) ->
-    "kurobe.toyama.jp";
-
-toyama_jp("nakaniikawa", _Any) ->
-    "nakaniikawa.toyama.jp";
-
-toyama_jp("johana", _Any) ->
-    "johana.toyama.jp";
-
-toyama_jp("inami", _Any) ->
-    "inami.toyama.jp";
-
-toyama_jp("unazuki", _Any) ->
-    "unazuki.toyama.jp";
-
-
-toyama_jp(_, _) ->
-    "toyama.jp".
-
-%% regular rules
-hyogo_jp("takarazuka", _Any) ->
-    "takarazuka.hyogo.jp";
-
-hyogo_jp("tatsuno", _Any) ->
-    "tatsuno.hyogo.jp";
-
-hyogo_jp("yabu", _Any) ->
-    "yabu.hyogo.jp";
-
-hyogo_jp("yashiro", _Any) ->
-    "yashiro.hyogo.jp";
-
-hyogo_jp("yokawa", _Any) ->
-    "yokawa.hyogo.jp";
-
-hyogo_jp("awaji", _Any) ->
-    "awaji.hyogo.jp";
-
-hyogo_jp("taka", _Any) ->
-    "taka.hyogo.jp";
-
-hyogo_jp("ashiya", _Any) ->
-    "ashiya.hyogo.jp";
-
-hyogo_jp("himeji", _Any) ->
-    "himeji.hyogo.jp";
-
-hyogo_jp("harima", _Any) ->
-    "harima.hyogo.jp";
-
-hyogo_jp("toyooka", _Any) ->
-    "toyooka.hyogo.jp";
-
-hyogo_jp("fukusaki", _Any) ->
-    "fukusaki.hyogo.jp";
-
-hyogo_jp("yoka", _Any) ->
-    "yoka.hyogo.jp";
-
-hyogo_jp("itami", _Any) ->
-    "itami.hyogo.jp";
-
-hyogo_jp("takino", _Any) ->
-    "takino.hyogo.jp";
-
-hyogo_jp("aogaki", _Any) ->
-    "aogaki.hyogo.jp";
-
-hyogo_jp("sannan", _Any) ->
-    "sannan.hyogo.jp";
-
-hyogo_jp("ichikawa", _Any) ->
-    "ichikawa.hyogo.jp";
-
-hyogo_jp("asago", _Any) ->
-    "asago.hyogo.jp";
-
-hyogo_jp("sasayama", _Any) ->
-    "sasayama.hyogo.jp";
-
-hyogo_jp("shingu", _Any) ->
-    "shingu.hyogo.jp";
-
-hyogo_jp("kakogawa", _Any) ->
-    "kakogawa.hyogo.jp";
-
-hyogo_jp("akashi", _Any) ->
-    "akashi.hyogo.jp";
-
-hyogo_jp("inagawa", _Any) ->
-    "inagawa.hyogo.jp";
-
-hyogo_jp("takasago", _Any) ->
-    "takasago.hyogo.jp";
-
-hyogo_jp("shinonsen", _Any) ->
-    "shinonsen.hyogo.jp";
-
-hyogo_jp("ako", _Any) ->
-    "ako.hyogo.jp";
-
-hyogo_jp("shiso", _Any) ->
-    "shiso.hyogo.jp";
-
-hyogo_jp("nishinomiya", _Any) ->
-    "nishinomiya.hyogo.jp";
-
-hyogo_jp("tamba", _Any) ->
-    "tamba.hyogo.jp";
-
-hyogo_jp("goshiki", _Any) ->
-    "goshiki.hyogo.jp";
-
-hyogo_jp("kamikawa", _Any) ->
-    "kamikawa.hyogo.jp";
-
-hyogo_jp("sanda", _Any) ->
-    "sanda.hyogo.jp";
-
-hyogo_jp("kamigori", _Any) ->
-    "kamigori.hyogo.jp";
-
-hyogo_jp("sumoto", _Any) ->
-    "sumoto.hyogo.jp";
-
-hyogo_jp("nishiwaki", _Any) ->
-    "nishiwaki.hyogo.jp";
-
-hyogo_jp("kasai", _Any) ->
-    "kasai.hyogo.jp";
-
-hyogo_jp("minamiawaji", _Any) ->
-    "minamiawaji.hyogo.jp";
-
-hyogo_jp("kasuga", _Any) ->
-    "kasuga.hyogo.jp";
-
-hyogo_jp("taishi", _Any) ->
-    "taishi.hyogo.jp";
-
-hyogo_jp("ono", _Any) ->
-    "ono.hyogo.jp";
-
-hyogo_jp("aioi", _Any) ->
-    "aioi.hyogo.jp";
-
-hyogo_jp("miki", _Any) ->
-    "miki.hyogo.jp";
-
-hyogo_jp("sayo", _Any) ->
-    "sayo.hyogo.jp";
-
-hyogo_jp("kawanishi", _Any) ->
-    "kawanishi.hyogo.jp";
-
-hyogo_jp("amagasaki", _Any) ->
-    "amagasaki.hyogo.jp";
-
-
-hyogo_jp(_, _) ->
-    "hyogo.jp".
-
-%% regular rules
-niigata_jp("omi", _Any) ->
-    "omi.niigata.jp";
-
-niigata_jp("uonuma", _Any) ->
-    "uonuma.niigata.jp";
-
-niigata_jp("mitsuke", _Any) ->
-    "mitsuke.niigata.jp";
-
-niigata_jp("tochio", _Any) ->
-    "tochio.niigata.jp";
-
-niigata_jp("tokamachi", _Any) ->
-    "tokamachi.niigata.jp";
-
-niigata_jp("seirou", _Any) ->
-    "seirou.niigata.jp";
-
-niigata_jp("kariwa", _Any) ->
-    "kariwa.niigata.jp";
-
-niigata_jp("myoko", _Any) ->
-    "myoko.niigata.jp";
-
-niigata_jp("itoigawa", _Any) ->
-    "itoigawa.niigata.jp";
-
-niigata_jp("gosen", _Any) ->
-    "gosen.niigata.jp";
-
-niigata_jp("tsubame", _Any) ->
-    "tsubame.niigata.jp";
-
-niigata_jp("tainai", _Any) ->
-    "tainai.niigata.jp";
-
-niigata_jp("muika", _Any) ->
-    "muika.niigata.jp";
-
-niigata_jp("kashiwazaki", _Any) ->
-    "kashiwazaki.niigata.jp";
-
-niigata_jp("yoita", _Any) ->
-    "yoita.niigata.jp";
-
-niigata_jp("sanjo", _Any) ->
-    "sanjo.niigata.jp";
-
-niigata_jp("shibata", _Any) ->
-    "shibata.niigata.jp";
-
-niigata_jp("yuzawa", _Any) ->
-    "yuzawa.niigata.jp";
-
-niigata_jp("izumozaki", _Any) ->
-    "izumozaki.niigata.jp";
-
-niigata_jp("nagaoka", _Any) ->
-    "nagaoka.niigata.jp";
-
-niigata_jp("ojiya", _Any) ->
-    "ojiya.niigata.jp";
-
-niigata_jp("murakami", _Any) ->
-    "murakami.niigata.jp";
-
-niigata_jp("joetsu", _Any) ->
-    "joetsu.niigata.jp";
-
-niigata_jp("kamo", _Any) ->
-    "kamo.niigata.jp";
-
-niigata_jp("yahiko", _Any) ->
-    "yahiko.niigata.jp";
-
-niigata_jp("sekikawa", _Any) ->
-    "sekikawa.niigata.jp";
-
-niigata_jp("agano", _Any) ->
-    "agano.niigata.jp";
-
-niigata_jp("seiro", _Any) ->
-    "seiro.niigata.jp";
-
-niigata_jp("sado", _Any) ->
-    "sado.niigata.jp";
-
-niigata_jp("aga", _Any) ->
-    "aga.niigata.jp";
-
-niigata_jp("niigata", _Any) ->
-    "niigata.niigata.jp";
-
-niigata_jp("tagami", _Any) ->
-    "tagami.niigata.jp";
-
-niigata_jp("minamiuonuma", _Any) ->
-    "minamiuonuma.niigata.jp";
-
-niigata_jp("tsunan", _Any) ->
-    "tsunan.niigata.jp";
-
-
-niigata_jp(_, _) ->
-    "niigata.jp".
-
-%% regular rules
-wakayama_jp("kitayama", _Any) ->
-    "kitayama.wakayama.jp";
-
-wakayama_jp("koya", _Any) ->
-    "koya.wakayama.jp";
-
-wakayama_jp("kinokawa", _Any) ->
-    "kinokawa.wakayama.jp";
-
-wakayama_jp("aridagawa", _Any) ->
-    "aridagawa.wakayama.jp";
-
-wakayama_jp("taiji", _Any) ->
-    "taiji.wakayama.jp";
-
-wakayama_jp("yura", _Any) ->
-    "yura.wakayama.jp";
-
-wakayama_jp("wakayama", _Any) ->
-    "wakayama.wakayama.jp";
-
-wakayama_jp("mihama", _Any) ->
-    "mihama.wakayama.jp";
-
-wakayama_jp("shingu", _Any) ->
-    "shingu.wakayama.jp";
-
-wakayama_jp("hidaka", _Any) ->
-    "hidaka.wakayama.jp";
-
-wakayama_jp("kimino", _Any) ->
-    "kimino.wakayama.jp";
-
-wakayama_jp("kamitonda", _Any) ->
-    "kamitonda.wakayama.jp";
-
-wakayama_jp("koza", _Any) ->
-    "koza.wakayama.jp";
-
-wakayama_jp("shirahama", _Any) ->
-    "shirahama.wakayama.jp";
-
-wakayama_jp("hirogawa", _Any) ->
-    "hirogawa.wakayama.jp";
-
-wakayama_jp("nachikatsuura", _Any) ->
-    "nachikatsuura.wakayama.jp";
-
-wakayama_jp("hashimoto", _Any) ->
-    "hashimoto.wakayama.jp";
-
-wakayama_jp("kozagawa", _Any) ->
-    "kozagawa.wakayama.jp";
-
-wakayama_jp("kushimoto", _Any) ->
-    "kushimoto.wakayama.jp";
-
-wakayama_jp("inami", _Any) ->
-    "inami.wakayama.jp";
-
-wakayama_jp("kainan", _Any) ->
-    "kainan.wakayama.jp";
-
-wakayama_jp("yuasa", _Any) ->
-    "yuasa.wakayama.jp";
-
-wakayama_jp("misato", _Any) ->
-    "misato.wakayama.jp";
-
-wakayama_jp("arida", _Any) ->
-    "arida.wakayama.jp";
-
-wakayama_jp("katsuragi", _Any) ->
-    "katsuragi.wakayama.jp";
-
-wakayama_jp("iwade", _Any) ->
-    "iwade.wakayama.jp";
-
-wakayama_jp("kudoyama", _Any) ->
-    "kudoyama.wakayama.jp";
-
-wakayama_jp("tanabe", _Any) ->
-    "tanabe.wakayama.jp";
-
-wakayama_jp("gobo", _Any) ->
-    "gobo.wakayama.jp";
-
-
-wakayama_jp(_, _) ->
-    "wakayama.jp".
-
-%% regular rules
-kagoshima_jp("satsumasendai", _Any) ->
-    "satsumasendai.kagoshima.jp";
-
-kagoshima_jp("izumi", _Any) ->
-    "izumi.kagoshima.jp";
-
-kagoshima_jp("isa", _Any) ->
-    "isa.kagoshima.jp";
-
-kagoshima_jp("kanoya", _Any) ->
-    "kanoya.kagoshima.jp";
-
-kagoshima_jp("akune", _Any) ->
-    "akune.kagoshima.jp";
-
-kagoshima_jp("amami", _Any) ->
-    "amami.kagoshima.jp";
-
-kagoshima_jp("hioki", _Any) ->
-    "hioki.kagoshima.jp";
-
-kagoshima_jp("nishinoomote", _Any) ->
-    "nishinoomote.kagoshima.jp";
-
-kagoshima_jp("tarumizu", _Any) ->
-    "tarumizu.kagoshima.jp";
-
-kagoshima_jp("minamitane", _Any) ->
-    "minamitane.kagoshima.jp";
-
-kagoshima_jp("makurazaki", _Any) ->
-    "makurazaki.kagoshima.jp";
-
-kagoshima_jp("kagoshima", _Any) ->
-    "kagoshima.kagoshima.jp";
-
-kagoshima_jp("nakatane", _Any) ->
-    "nakatane.kagoshima.jp";
-
-kagoshima_jp("matsumoto", _Any) ->
-    "matsumoto.kagoshima.jp";
-
-kagoshima_jp("isen", _Any) ->
-    "isen.kagoshima.jp";
-
-kagoshima_jp("kinko", _Any) ->
-    "kinko.kagoshima.jp";
-
-kagoshima_jp("kawanabe", _Any) ->
-    "kawanabe.kagoshima.jp";
-
-kagoshima_jp("kouyama", _Any) ->
-    "kouyama.kagoshima.jp";
-
-kagoshima_jp("soo", _Any) ->
-    "soo.kagoshima.jp";
-
-kagoshima_jp("yusui", _Any) ->
-    "yusui.kagoshima.jp";
-
-
-kagoshima_jp(_, _) ->
-    "kagoshima.jp".
-
-%% regular rules
-yamagata_jp("funagata", _Any) ->
-    "funagata.yamagata.jp";
-
-yamagata_jp("kawanishi", _Any) ->
-    "kawanishi.yamagata.jp";
-
-yamagata_jp("obanazawa", _Any) ->
-    "obanazawa.yamagata.jp";
-
-yamagata_jp("nakayama", _Any) ->
-    "nakayama.yamagata.jp";
-
-yamagata_jp("kahoku", _Any) ->
-    "kahoku.yamagata.jp";
-
-yamagata_jp("nagai", _Any) ->
-    "nagai.yamagata.jp";
-
-yamagata_jp("takahata", _Any) ->
-    "takahata.yamagata.jp";
-
-yamagata_jp("iide", _Any) ->
-    "iide.yamagata.jp";
-
-yamagata_jp("yamagata", _Any) ->
-    "yamagata.yamagata.jp";
-
-yamagata_jp("mikawa", _Any) ->
-    "mikawa.yamagata.jp";
-
-yamagata_jp("sagae", _Any) ->
-    "sagae.yamagata.jp";
-
-yamagata_jp("shirataka", _Any) ->
-    "shirataka.yamagata.jp";
-
-yamagata_jp("tozawa", _Any) ->
-    "tozawa.yamagata.jp";
-
-yamagata_jp("oe", _Any) ->
-    "oe.yamagata.jp";
-
-yamagata_jp("tendo", _Any) ->
-    "tendo.yamagata.jp";
-
-yamagata_jp("sakegawa", _Any) ->
-    "sakegawa.yamagata.jp";
-
-yamagata_jp("nanyo", _Any) ->
-    "nanyo.yamagata.jp";
-
-yamagata_jp("shonai", _Any) ->
-    "shonai.yamagata.jp";
-
-yamagata_jp("ohkura", _Any) ->
-    "ohkura.yamagata.jp";
-
-yamagata_jp("oishida", _Any) ->
-    "oishida.yamagata.jp";
-
-yamagata_jp("nishikawa", _Any) ->
-    "nishikawa.yamagata.jp";
-
-yamagata_jp("kaneyama", _Any) ->
-    "kaneyama.yamagata.jp";
-
-yamagata_jp("tsuruoka", _Any) ->
-    "tsuruoka.yamagata.jp";
-
-yamagata_jp("sakata", _Any) ->
-    "sakata.yamagata.jp";
-
-yamagata_jp("mamurogawa", _Any) ->
-    "mamurogawa.yamagata.jp";
-
-yamagata_jp("higashine", _Any) ->
-    "higashine.yamagata.jp";
-
-yamagata_jp("shinjo", _Any) ->
-    "shinjo.yamagata.jp";
-
-yamagata_jp("murayama", _Any) ->
-    "murayama.yamagata.jp";
-
-yamagata_jp("yamanobe", _Any) ->
-    "yamanobe.yamagata.jp";
-
-yamagata_jp("asahi", _Any) ->
-    "asahi.yamagata.jp";
-
-yamagata_jp("oguni", _Any) ->
-    "oguni.yamagata.jp";
-
-yamagata_jp("kaminoyama", _Any) ->
-    "kaminoyama.yamagata.jp";
-
-yamagata_jp("yuza", _Any) ->
-    "yuza.yamagata.jp";
-
-yamagata_jp("yonezawa", _Any) ->
-    "yonezawa.yamagata.jp";
-
-
-yamagata_jp(_, _) ->
-    "yamagata.jp".
-
-%% regular rules
-miyagi_jp("ishinomaki", _Any) ->
-    "ishinomaki.miyagi.jp";
-
-miyagi_jp("misato", _Any) ->
-    "misato.miyagi.jp";
-
-miyagi_jp("shibata", _Any) ->
-    "shibata.miyagi.jp";
-
-miyagi_jp("natori", _Any) ->
-    "natori.miyagi.jp";
-
-miyagi_jp("furukawa", _Any) ->
-    "furukawa.miyagi.jp";
-
-miyagi_jp("kakuda", _Any) ->
-    "kakuda.miyagi.jp";
-
-miyagi_jp("matsushima", _Any) ->
-    "matsushima.miyagi.jp";
-
-miyagi_jp("tagajo", _Any) ->
-    "tagajo.miyagi.jp";
-
-miyagi_jp("wakuya", _Any) ->
-    "wakuya.miyagi.jp";
-
-miyagi_jp("onagawa", _Any) ->
-    "onagawa.miyagi.jp";
-
-miyagi_jp("marumori", _Any) ->
-    "marumori.miyagi.jp";
-
-miyagi_jp("tome", _Any) ->
-    "tome.miyagi.jp";
-
-miyagi_jp("zao", _Any) ->
-    "zao.miyagi.jp";
-
-miyagi_jp("ogawara", _Any) ->
-    "ogawara.miyagi.jp";
-
-miyagi_jp("shiroishi", _Any) ->
-    "shiroishi.miyagi.jp";
-
-miyagi_jp("kami", _Any) ->
-    "kami.miyagi.jp";
-
-miyagi_jp("minamisanriku", _Any) ->
-    "minamisanriku.miyagi.jp";
-
-miyagi_jp("kawasaki", _Any) ->
-    "kawasaki.miyagi.jp";
-
-miyagi_jp("watari", _Any) ->
-    "watari.miyagi.jp";
-
-miyagi_jp("tomiya", _Any) ->
-    "tomiya.miyagi.jp";
-
-miyagi_jp("ohira", _Any) ->
-    "ohira.miyagi.jp";
-
-miyagi_jp("osaki", _Any) ->
-    "osaki.miyagi.jp";
-
-miyagi_jp("rifu", _Any) ->
-    "rifu.miyagi.jp";
-
-miyagi_jp("shiogama", _Any) ->
-    "shiogama.miyagi.jp";
-
-miyagi_jp("iwanuma", _Any) ->
-    "iwanuma.miyagi.jp";
-
-miyagi_jp("kesennuma", _Any) ->
-    "kesennuma.miyagi.jp";
-
-miyagi_jp("shichikashuku", _Any) ->
-    "shichikashuku.miyagi.jp";
-
-miyagi_jp("semine", _Any) ->
-    "semine.miyagi.jp";
-
-miyagi_jp("yamamoto", _Any) ->
-    "yamamoto.miyagi.jp";
-
-miyagi_jp("shikama", _Any) ->
-    "shikama.miyagi.jp";
-
-miyagi_jp("higashimatsushima", _Any) ->
-    "higashimatsushima.miyagi.jp";
-
-miyagi_jp("murata", _Any) ->
-    "murata.miyagi.jp";
-
-miyagi_jp("taiwa", _Any) ->
-    "taiwa.miyagi.jp";
-
-
-miyagi_jp(_, _) ->
-    "miyagi.jp".
-
-%% regular rules
-aomori_jp("towada", _Any) ->
-    "towada.aomori.jp";
-
-aomori_jp("hirosaki", _Any) ->
-    "hirosaki.aomori.jp";
-
-aomori_jp("hashikami", _Any) ->
-    "hashikami.aomori.jp";
-
-aomori_jp("hiranai", _Any) ->
-    "hiranai.aomori.jp";
-
-aomori_jp("oirase", _Any) ->
-    "oirase.aomori.jp";
-
-aomori_jp("aomori", _Any) ->
-    "aomori.aomori.jp";
-
-aomori_jp("noheji", _Any) ->
-    "noheji.aomori.jp";
-
-aomori_jp("shingo", _Any) ->
-    "shingo.aomori.jp";
-
-aomori_jp("tsugaru", _Any) ->
-    "tsugaru.aomori.jp";
-
-aomori_jp("itayanagi", _Any) ->
-    "itayanagi.aomori.jp";
-
-aomori_jp("kuroishi", _Any) ->
-    "kuroishi.aomori.jp";
-
-aomori_jp("sannohe", _Any) ->
-    "sannohe.aomori.jp";
-
-aomori_jp("takko", _Any) ->
-    "takko.aomori.jp";
-
-aomori_jp("hachinohe", _Any) ->
-    "hachinohe.aomori.jp";
-
-aomori_jp("rokunohe", _Any) ->
-    "rokunohe.aomori.jp";
-
-aomori_jp("misawa", _Any) ->
-    "misawa.aomori.jp";
-
-aomori_jp("tsuruta", _Any) ->
-    "tsuruta.aomori.jp";
-
-aomori_jp("owani", _Any) ->
-    "owani.aomori.jp";
-
-aomori_jp("gonohe", _Any) ->
-    "gonohe.aomori.jp";
-
-aomori_jp("nakadomari", _Any) ->
-    "nakadomari.aomori.jp";
-
-aomori_jp("shichinohe", _Any) ->
-    "shichinohe.aomori.jp";
-
-aomori_jp("mutsu", _Any) ->
-    "mutsu.aomori.jp";
-
-
-aomori_jp(_, _) ->
-    "aomori.jp".
-
-%% regular rules
-tochigi_jp("iwafune", _Any) ->
-    "iwafune.tochigi.jp";
-
-tochigi_jp("yaita", _Any) ->
-    "yaita.tochigi.jp";
-
-tochigi_jp("bato", _Any) ->
-    "bato.tochigi.jp";
-
-tochigi_jp("motegi", _Any) ->
-    "motegi.tochigi.jp";
-
-tochigi_jp("ichikai", _Any) ->
-    "ichikai.tochigi.jp";
-
-tochigi_jp("sakura", _Any) ->
-    "sakura.tochigi.jp";
-
-tochigi_jp("nasu", _Any) ->
-    "nasu.tochigi.jp";
-
-tochigi_jp("ohira", _Any) ->
-    "ohira.tochigi.jp";
-
-tochigi_jp("nogi", _Any) ->
-    "nogi.tochigi.jp";
-
-tochigi_jp("kaminokawa", _Any) ->
-    "kaminokawa.tochigi.jp";
-
-tochigi_jp("sano", _Any) ->
-    "sano.tochigi.jp";
-
-tochigi_jp("shimotsuke", _Any) ->
-    "shimotsuke.tochigi.jp";
-
-tochigi_jp("ashikaga", _Any) ->
-    "ashikaga.tochigi.jp";
-
-tochigi_jp("karasuyama", _Any) ->
-    "karasuyama.tochigi.jp";
-
-tochigi_jp("tochigi", _Any) ->
-    "tochigi.tochigi.jp";
-
-tochigi_jp("takanezawa", _Any) ->
-    "takanezawa.tochigi.jp";
-
-tochigi_jp("kanuma", _Any) ->
-    "kanuma.tochigi.jp";
-
-tochigi_jp("utsunomiya", _Any) ->
-    "utsunomiya.tochigi.jp";
-
-tochigi_jp("ujiie", _Any) ->
-    "ujiie.tochigi.jp";
-
-tochigi_jp("nishikata", _Any) ->
-    "nishikata.tochigi.jp";
-
-tochigi_jp("ohtawara", _Any) ->
-    "ohtawara.tochigi.jp";
-
-tochigi_jp("nikko", _Any) ->
-    "nikko.tochigi.jp";
-
-tochigi_jp("moka", _Any) ->
-    "moka.tochigi.jp";
-
-tochigi_jp("mashiko", _Any) ->
-    "mashiko.tochigi.jp";
-
-tochigi_jp("oyama", _Any) ->
-    "oyama.tochigi.jp";
-
-tochigi_jp("nasushiobara", _Any) ->
-    "nasushiobara.tochigi.jp";
-
-tochigi_jp("mibu", _Any) ->
-    "mibu.tochigi.jp";
-
-tochigi_jp("shioya", _Any) ->
-    "shioya.tochigi.jp";
-
-tochigi_jp("haga", _Any) ->
-    "haga.tochigi.jp";
-
-tochigi_jp("kuroiso", _Any) ->
-    "kuroiso.tochigi.jp";
-
-tochigi_jp("tsuga", _Any) ->
-    "tsuga.tochigi.jp";
-
-
-tochigi_jp(_, _) ->
-    "tochigi.jp".
-
-%% regular rules
-saga_jp("saga", _Any) ->
-    "saga.saga.jp";
-
-saga_jp("kouhoku", _Any) ->
-    "kouhoku.saga.jp";
-
-saga_jp("ouchi", _Any) ->
-    "ouchi.saga.jp";
-
-saga_jp("kitahata", _Any) ->
-    "kitahata.saga.jp";
-
-saga_jp("tara", _Any) ->
-    "tara.saga.jp";
-
-saga_jp("shiroishi", _Any) ->
-    "shiroishi.saga.jp";
-
-saga_jp("kitagata", _Any) ->
-    "kitagata.saga.jp";
-
-saga_jp("genkai", _Any) ->
-    "genkai.saga.jp";
-
-saga_jp("ogi", _Any) ->
-    "ogi.saga.jp";
-
-saga_jp("kashima", _Any) ->
-    "kashima.saga.jp";
-
-saga_jp("yoshinogari", _Any) ->
-    "yoshinogari.saga.jp";
-
-saga_jp("kiyama", _Any) ->
-    "kiyama.saga.jp";
-
-saga_jp("tosu", _Any) ->
-    "tosu.saga.jp";
-
-saga_jp("taku", _Any) ->
-    "taku.saga.jp";
-
-saga_jp("arita", _Any) ->
-    "arita.saga.jp";
-
-saga_jp("nishiarita", _Any) ->
-    "nishiarita.saga.jp";
-
-saga_jp("karatsu", _Any) ->
-    "karatsu.saga.jp";
-
-saga_jp("kyuragi", _Any) ->
-    "kyuragi.saga.jp";
-
-saga_jp("imari", _Any) ->
-    "imari.saga.jp";
-
-saga_jp("fukudomi", _Any) ->
-    "fukudomi.saga.jp";
-
-saga_jp("omachi", _Any) ->
-    "omachi.saga.jp";
-
-saga_jp("kamimine", _Any) ->
-    "kamimine.saga.jp";
-
-saga_jp("kanzaki", _Any) ->
-    "kanzaki.saga.jp";
-
-saga_jp("ariake", _Any) ->
-    "ariake.saga.jp";
-
-saga_jp("hizen", _Any) ->
-    "hizen.saga.jp";
-
-saga_jp("hamatama", _Any) ->
-    "hamatama.saga.jp";
-
-
-saga_jp(_, _) ->
-    "saga.jp".
-
-%% regular rules
-tokushima_jp("aizumi", _Any) ->
-    "aizumi.tokushima.jp";
-
-tokushima_jp("sanagochi", _Any) ->
-    "sanagochi.tokushima.jp";
-
-tokushima_jp("minami", _Any) ->
-    "minami.tokushima.jp";
-
-tokushima_jp("ichiba", _Any) ->
-    "ichiba.tokushima.jp";
-
-tokushima_jp("mugi", _Any) ->
-    "mugi.tokushima.jp";
-
-tokushima_jp("shishikui", _Any) ->
-    "shishikui.tokushima.jp";
-
-tokushima_jp("nakagawa", _Any) ->
-    "nakagawa.tokushima.jp";
-
-tokushima_jp("kainan", _Any) ->
-    "kainan.tokushima.jp";
-
-tokushima_jp("tokushima", _Any) ->
-    "tokushima.tokushima.jp";
-
-tokushima_jp("mima", _Any) ->
-    "mima.tokushima.jp";
-
-tokushima_jp("komatsushima", _Any) ->
-    "komatsushima.tokushima.jp";
-
-tokushima_jp("naruto", _Any) ->
-    "naruto.tokushima.jp";
-
-tokushima_jp("matsushige", _Any) ->
-    "matsushige.tokushima.jp";
-
-tokushima_jp("itano", _Any) ->
-    "itano.tokushima.jp";
-
-tokushima_jp("miyoshi", _Any) ->
-    "miyoshi.tokushima.jp";
-
-tokushima_jp("anan", _Any) ->
-    "anan.tokushima.jp";
-
-tokushima_jp("wajiki", _Any) ->
-    "wajiki.tokushima.jp";
-
-
-tokushima_jp(_, _) ->
-    "tokushima.jp".
-
-%% regular rules
-nagasaki_jp("seihi", _Any) ->
-    "seihi.nagasaki.jp";
-
-nagasaki_jp("iki", _Any) ->
-    "iki.nagasaki.jp";
-
-nagasaki_jp("shinkamigoto", _Any) ->
-    "shinkamigoto.nagasaki.jp";
-
-nagasaki_jp("hasami", _Any) ->
-    "hasami.nagasaki.jp";
-
-nagasaki_jp("nagasaki", _Any) ->
-    "nagasaki.nagasaki.jp";
-
-nagasaki_jp("goto", _Any) ->
-    "goto.nagasaki.jp";
-
-nagasaki_jp("isahaya", _Any) ->
-    "isahaya.nagasaki.jp";
-
-nagasaki_jp("kuchinotsu", _Any) ->
-    "kuchinotsu.nagasaki.jp";
-
-nagasaki_jp("shimabara", _Any) ->
-    "shimabara.nagasaki.jp";
-
-nagasaki_jp("saikai", _Any) ->
-    "saikai.nagasaki.jp";
-
-nagasaki_jp("matsuura", _Any) ->
-    "matsuura.nagasaki.jp";
-
-nagasaki_jp("unzen", _Any) ->
-    "unzen.nagasaki.jp";
-
-nagasaki_jp("futsu", _Any) ->
-    "futsu.nagasaki.jp";
-
-nagasaki_jp("togitsu", _Any) ->
-    "togitsu.nagasaki.jp";
-
-nagasaki_jp("chijiwa", _Any) ->
-    "chijiwa.nagasaki.jp";
-
-nagasaki_jp("omura", _Any) ->
-    "omura.nagasaki.jp";
-
-nagasaki_jp("kawatana", _Any) ->
-    "kawatana.nagasaki.jp";
-
-nagasaki_jp("oseto", _Any) ->
-    "oseto.nagasaki.jp";
-
-nagasaki_jp("obama", _Any) ->
-    "obama.nagasaki.jp";
-
-nagasaki_jp("sasebo", _Any) ->
-    "sasebo.nagasaki.jp";
-
-nagasaki_jp("tsushima", _Any) ->
-    "tsushima.nagasaki.jp";
-
-nagasaki_jp("hirado", _Any) ->
-    "hirado.nagasaki.jp";
-
-
-nagasaki_jp(_, _) ->
-    "nagasaki.jp".
-
-%% regular rules
-yamaguchi_jp("nagato", _Any) ->
-    "nagato.yamaguchi.jp";
-
-yamaguchi_jp("yuu", _Any) ->
-    "yuu.yamaguchi.jp";
-
-yamaguchi_jp("shimonoseki", _Any) ->
-    "shimonoseki.yamaguchi.jp";
-
-yamaguchi_jp("kudamatsu", _Any) ->
-    "kudamatsu.yamaguchi.jp";
-
-yamaguchi_jp("mitou", _Any) ->
-    "mitou.yamaguchi.jp";
-
-yamaguchi_jp("oshima", _Any) ->
-    "oshima.yamaguchi.jp";
-
-yamaguchi_jp("hofu", _Any) ->
-    "hofu.yamaguchi.jp";
-
-yamaguchi_jp("tabuse", _Any) ->
-    "tabuse.yamaguchi.jp";
-
-yamaguchi_jp("hikari", _Any) ->
-    "hikari.yamaguchi.jp";
-
-yamaguchi_jp("iwakuni", _Any) ->
-    "iwakuni.yamaguchi.jp";
-
-yamaguchi_jp("abu", _Any) ->
-    "abu.yamaguchi.jp";
-
-yamaguchi_jp("shunan", _Any) ->
-    "shunan.yamaguchi.jp";
-
-yamaguchi_jp("toyota", _Any) ->
-    "toyota.yamaguchi.jp";
-
-yamaguchi_jp("tokuyama", _Any) ->
-    "tokuyama.yamaguchi.jp";
-
-yamaguchi_jp("ube", _Any) ->
-    "ube.yamaguchi.jp";
-
-yamaguchi_jp("hagi", _Any) ->
-    "hagi.yamaguchi.jp";
-
-
-yamaguchi_jp(_, _) ->
-    "yamaguchi.jp".
-
-%% regular rules
-aichi_jp("togo", _Any) ->
-    "togo.aichi.jp";
-
-aichi_jp("toyohashi", _Any) ->
-    "toyohashi.aichi.jp";
-
-aichi_jp("mihama", _Any) ->
-    "mihama.aichi.jp";
-
-aichi_jp("yatomi", _Any) ->
-    "yatomi.aichi.jp";
-
-aichi_jp("tsushima", _Any) ->
-    "tsushima.aichi.jp";
-
-aichi_jp("tokoname", _Any) ->
-    "tokoname.aichi.jp";
-
-aichi_jp("isshiki", _Any) ->
-    "isshiki.aichi.jp";
-
-aichi_jp("shinshiro", _Any) ->
-    "shinshiro.aichi.jp";
-
-aichi_jp("handa", _Any) ->
-    "handa.aichi.jp";
-
-aichi_jp("konan", _Any) ->
-    "konan.aichi.jp";
-
-aichi_jp("oharu", _Any) ->
-    "oharu.aichi.jp";
-
-aichi_jp("shikatsu", _Any) ->
-    "shikatsu.aichi.jp";
-
-aichi_jp("hekinan", _Any) ->
-    "hekinan.aichi.jp";
-
-aichi_jp("gamagori", _Any) ->
-    "gamagori.aichi.jp";
-
-aichi_jp("seto", _Any) ->
-    "seto.aichi.jp";
-
-aichi_jp("toei", _Any) ->
-    "toei.aichi.jp";
-
-aichi_jp("asuke", _Any) ->
-    "asuke.aichi.jp";
-
-aichi_jp("kira", _Any) ->
-    "kira.aichi.jp";
-
-aichi_jp("tobishima", _Any) ->
-    "tobishima.aichi.jp";
-
-aichi_jp("nishio", _Any) ->
-    "nishio.aichi.jp";
-
-aichi_jp("kiyosu", _Any) ->
-    "kiyosu.aichi.jp";
-
-aichi_jp("fuso", _Any) ->
-    "fuso.aichi.jp";
-
-aichi_jp("komaki", _Any) ->
-    "komaki.aichi.jp";
-
-aichi_jp("owariasahi", _Any) ->
-    "owariasahi.aichi.jp";
-
-aichi_jp("chita", _Any) ->
-    "chita.aichi.jp";
-
-aichi_jp("miyoshi", _Any) ->
-    "miyoshi.aichi.jp";
-
-aichi_jp("nisshin", _Any) ->
-    "nisshin.aichi.jp";
-
-aichi_jp("takahama", _Any) ->
-    "takahama.aichi.jp";
-
-aichi_jp("anjo", _Any) ->
-    "anjo.aichi.jp";
-
-aichi_jp("tokai", _Any) ->
-    "tokai.aichi.jp";
-
-aichi_jp("ichinomiya", _Any) ->
-    "ichinomiya.aichi.jp";
-
-aichi_jp("kasugai", _Any) ->
-    "kasugai.aichi.jp";
-
-aichi_jp("kariya", _Any) ->
-    "kariya.aichi.jp";
-
-aichi_jp("kota", _Any) ->
-    "kota.aichi.jp";
-
-aichi_jp("kanie", _Any) ->
-    "kanie.aichi.jp";
-
-aichi_jp("ama", _Any) ->
-    "ama.aichi.jp";
-
-aichi_jp("tahara", _Any) ->
-    "tahara.aichi.jp";
-
-aichi_jp("hazu", _Any) ->
-    "hazu.aichi.jp";
-
-aichi_jp("obu", _Any) ->
-    "obu.aichi.jp";
-
-aichi_jp("toyoake", _Any) ->
-    "toyoake.aichi.jp";
-
-aichi_jp("oguchi", _Any) ->
-    "oguchi.aichi.jp";
-
-aichi_jp("toyone", _Any) ->
-    "toyone.aichi.jp";
-
-aichi_jp("shitara", _Any) ->
-    "shitara.aichi.jp";
-
-aichi_jp("inuyama", _Any) ->
-    "inuyama.aichi.jp";
-
-aichi_jp("okazaki", _Any) ->
-    "okazaki.aichi.jp";
-
-aichi_jp("inazawa", _Any) ->
-    "inazawa.aichi.jp";
-
-aichi_jp("toyota", _Any) ->
-    "toyota.aichi.jp";
-
-aichi_jp("chiryu", _Any) ->
-    "chiryu.aichi.jp";
-
-aichi_jp("higashiura", _Any) ->
-    "higashiura.aichi.jp";
-
-aichi_jp("aisai", _Any) ->
-    "aisai.aichi.jp";
-
-aichi_jp("toyokawa", _Any) ->
-    "toyokawa.aichi.jp";
-
-aichi_jp("iwakura", _Any) ->
-    "iwakura.aichi.jp";
-
-
-aichi_jp(_, _) ->
-    "aichi.jp".
-
-%% regular rules
-shizuoka_jp("atami", _Any) ->
-    "atami.shizuoka.jp";
-
-shizuoka_jp("izunokuni", _Any) ->
-    "izunokuni.shizuoka.jp";
-
-shizuoka_jp("fujieda", _Any) ->
-    "fujieda.shizuoka.jp";
-
-shizuoka_jp("kikugawa", _Any) ->
-    "kikugawa.shizuoka.jp";
-
-shizuoka_jp("ito", _Any) ->
-    "ito.shizuoka.jp";
-
-shizuoka_jp("gotemba", _Any) ->
-    "gotemba.shizuoka.jp";
-
-shizuoka_jp("kawazu", _Any) ->
-    "kawazu.shizuoka.jp";
-
-shizuoka_jp("iwata", _Any) ->
-    "iwata.shizuoka.jp";
-
-shizuoka_jp("fukuroi", _Any) ->
-    "fukuroi.shizuoka.jp";
-
-shizuoka_jp("kannami", _Any) ->
-    "kannami.shizuoka.jp";
-
-shizuoka_jp("matsuzaki", _Any) ->
-    "matsuzaki.shizuoka.jp";
-
-shizuoka_jp("shimada", _Any) ->
-    "shimada.shizuoka.jp";
-
-shizuoka_jp("fujinomiya", _Any) ->
-    "fujinomiya.shizuoka.jp";
-
-shizuoka_jp("yaizu", _Any) ->
-    "yaizu.shizuoka.jp";
-
-shizuoka_jp("numazu", _Any) ->
-    "numazu.shizuoka.jp";
-
-shizuoka_jp("arai", _Any) ->
-    "arai.shizuoka.jp";
-
-shizuoka_jp("nishiizu", _Any) ->
-    "nishiizu.shizuoka.jp";
-
-shizuoka_jp("kawanehon", _Any) ->
-    "kawanehon.shizuoka.jp";
-
-shizuoka_jp("yoshida", _Any) ->
-    "yoshida.shizuoka.jp";
-
-shizuoka_jp("fujikawa", _Any) ->
-    "fujikawa.shizuoka.jp";
-
-shizuoka_jp("omaezaki", _Any) ->
-    "omaezaki.shizuoka.jp";
-
-shizuoka_jp("makinohara", _Any) ->
-    "makinohara.shizuoka.jp";
-
-shizuoka_jp("izu", _Any) ->
-    "izu.shizuoka.jp";
-
-shizuoka_jp("shizuoka", _Any) ->
-    "shizuoka.shizuoka.jp";
-
-shizuoka_jp("higashiizu", _Any) ->
-    "higashiizu.shizuoka.jp";
-
-shizuoka_jp("morimachi", _Any) ->
-    "morimachi.shizuoka.jp";
-
-shizuoka_jp("shimizu", _Any) ->
-    "shimizu.shizuoka.jp";
-
-shizuoka_jp("haibara", _Any) ->
-    "haibara.shizuoka.jp";
-
-shizuoka_jp("kosai", _Any) ->
-    "kosai.shizuoka.jp";
-
-shizuoka_jp("hamamatsu", _Any) ->
-    "hamamatsu.shizuoka.jp";
-
-shizuoka_jp("susono", _Any) ->
-    "susono.shizuoka.jp";
-
-shizuoka_jp("shimoda", _Any) ->
-    "shimoda.shizuoka.jp";
-
-shizuoka_jp("fuji", _Any) ->
-    "fuji.shizuoka.jp";
-
-shizuoka_jp("mishima", _Any) ->
-    "mishima.shizuoka.jp";
-
-shizuoka_jp("minamiizu", _Any) ->
-    "minamiizu.shizuoka.jp";
-
-shizuoka_jp("kakegawa", _Any) ->
-    "kakegawa.shizuoka.jp";
-
-
-shizuoka_jp(_, _) ->
-    "shizuoka.jp".
-
-%% regular rules
-ve("mil", _Any) ->
-    "mil.ve";
-
-ve("web", _Any) ->
-    "web.ve";
-
-ve("store", _Any) ->
-    "store.ve";
-
-ve("rec", _Any) ->
-    "rec.ve";
-
-ve("org", _Any) ->
-    "org.ve";
-
-ve("int", _Any) ->
-    "int.ve";
-
-ve("firm", _Any) ->
-    "firm.ve";
-
-ve("gob", _Any) ->
-    "gob.ve";
-
-ve("edu", _Any) ->
-    "edu.ve";
-
-ve("net", _Any) ->
-    "net.ve";
-
-ve("gov", _Any) ->
-    "gov.ve";
-
-ve("tec", _Any) ->
-    "tec.ve";
-
-ve("arts", _Any) ->
-    "arts.ve";
-
-ve("co", _Any) ->
-    "co.ve";
-
-ve("com", _Any) ->
-    "com.ve";
-
-ve("info", _Any) ->
-    "info.ve";
-
-
-ve(_, _) ->
-    "ve".
+mw(_, _) ->
+    "mw".
 
 %% regular rules
 il("co", []) ->
@@ -11444,2985 +2037,6170 @@ co_il(_, _) ->
     "co.il".
 
 %% regular rules
-gr("blogspot", _Any) ->
-    "blogspot.gr";
+sd("com", _Any) ->
+    "com.sd";
 
-gr("com", _Any) ->
-    "com.gr";
+sd("org", _Any) ->
+    "org.sd";
 
-gr("gov", _Any) ->
-    "gov.gr";
+sd("tv", _Any) ->
+    "tv.sd";
 
-gr("net", _Any) ->
-    "net.gr";
+sd("gov", _Any) ->
+    "gov.sd";
 
-gr("edu", _Any) ->
-    "edu.gr";
+sd("med", _Any) ->
+    "med.sd";
 
-gr("org", _Any) ->
-    "org.gr";
+sd("net", _Any) ->
+    "net.sd";
 
+sd("info", _Any) ->
+    "info.sd";
 
-gr(_, _) ->
-    "gr".
-
-%% regular rules
-st("saotome", _Any) ->
-    "saotome.st";
-
-st("gov", _Any) ->
-    "gov.st";
-
-st("net", _Any) ->
-    "net.st";
-
-st("principe", _Any) ->
-    "principe.st";
-
-st("mil", _Any) ->
-    "mil.st";
-
-st("edu", _Any) ->
-    "edu.st";
-
-st("consulado", _Any) ->
-    "consulado.st";
-
-st("com", _Any) ->
-    "com.st";
-
-st("embaixada", _Any) ->
-    "embaixada.st";
-
-st("co", _Any) ->
-    "co.st";
-
-st("org", _Any) ->
-    "org.st";
-
-st("store", _Any) ->
-    "store.st";
+sd("edu", _Any) ->
+    "edu.sd";
 
 
-st(_, _) ->
-    "st".
+sd(_, _) ->
+    "sd".
 
 %% regular rules
-ar("int", _Any) ->
-    "int.ar";
+ws("com", _Any) ->
+    "com.ws";
 
-ar("org", _Any) ->
-    "org.ar";
+ws("edu", _Any) ->
+    "edu.ws";
 
-ar("com", []) ->
-    "com.ar";
-ar("com", Parts) ->
+ws("org", _Any) ->
+    "org.ws";
+
+ws("dyndns", _Any) ->
+    "dyndns.ws";
+
+ws("mypets", _Any) ->
+    "mypets.ws";
+
+ws("gov", _Any) ->
+    "gov.ws";
+
+ws("net", _Any) ->
+    "net.ws";
+
+
+ws(_, _) ->
+    "ws".
+
+%% regular rules
+rs("in", _Any) ->
+    "in.rs";
+
+rs("ac", _Any) ->
+    "ac.rs";
+
+rs("org", _Any) ->
+    "org.rs";
+
+rs("edu", _Any) ->
+    "edu.rs";
+
+rs("co", _Any) ->
+    "co.rs";
+
+rs("gov", _Any) ->
+    "gov.rs";
+
+
+rs(_, _) ->
+    "rs".
+
+%% regular rules
+pr("ac", _Any) ->
+    "ac.pr";
+
+pr("org", _Any) ->
+    "org.pr";
+
+pr("com", _Any) ->
+    "com.pr";
+
+pr("pro", _Any) ->
+    "pro.pr";
+
+pr("gov", _Any) ->
+    "gov.pr";
+
+pr("biz", _Any) ->
+    "biz.pr";
+
+pr("net", _Any) ->
+    "net.pr";
+
+pr("info", _Any) ->
+    "info.pr";
+
+pr("isla", _Any) ->
+    "isla.pr";
+
+pr("prof", _Any) ->
+    "prof.pr";
+
+pr("edu", _Any) ->
+    "edu.pr";
+
+pr("est", _Any) ->
+    "est.pr";
+
+pr("name", _Any) ->
+    "name.pr";
+
+
+pr(_, _) ->
+    "pr".
+
+%% regular rules
+ai("net", _Any) ->
+    "net.ai";
+
+ai("com", _Any) ->
+    "com.ai";
+
+ai("org", _Any) ->
+    "org.ai";
+
+ai("off", _Any) ->
+    "off.ai";
+
+
+ai(_, _) ->
+    "ai".
+
+%% regular rules
+pro("bar", _Any) ->
+    "bar.pro";
+
+pro("law", _Any) ->
+    "law.pro";
+
+pro("jur", _Any) ->
+    "jur.pro";
+
+pro("aca", _Any) ->
+    "aca.pro";
+
+pro("eng", _Any) ->
+    "eng.pro";
+
+pro("med", _Any) ->
+    "med.pro";
+
+pro("cpa", _Any) ->
+    "cpa.pro";
+
+
+pro(_, _) ->
+    "pro".
+
+%% regular rules
+de("lebtimnetz", _Any) ->
+    "lebtimnetz.de";
+
+de("blogspot", _Any) ->
+    "blogspot.de";
+
+de("istmein", _Any) ->
+    "istmein.de";
+
+de("com", _Any) ->
+    "com.de";
+
+de("isteingeek", _Any) ->
+    "isteingeek.de";
+
+de("fuettertdasnetz", _Any) ->
+    "fuettertdasnetz.de";
+
+de("leitungsen", _Any) ->
+    "leitungsen.de";
+
+de("traeumtgerade", _Any) ->
+    "traeumtgerade.de";
+
+
+de(_, _) ->
+    "de".
+
+%% regular rules
+ec("edu", _Any) ->
+    "edu.ec";
+
+ec("fin", _Any) ->
+    "fin.ec";
+
+ec("mil", _Any) ->
+    "mil.ec";
+
+ec("gov", _Any) ->
+    "gov.ec";
+
+ec("pro", _Any) ->
+    "pro.ec";
+
+ec("gob", _Any) ->
+    "gob.ec";
+
+ec("org", _Any) ->
+    "org.ec";
+
+ec("com", _Any) ->
+    "com.ec";
+
+ec("info", _Any) ->
+    "info.ec";
+
+ec("net", _Any) ->
+    "net.ec";
+
+ec("med", _Any) ->
+    "med.ec";
+
+
+ec(_, _) ->
+    "ec".
+
+%% regular rules
+jp("ac", _Any) ->
+    "ac.jp";
+
+jp("fukushima", []) ->
+    "fukushima.jp";
+jp("fukushima", Parts) ->
     [First | Rest] = Parts,
-    com_ar(First, Rest);
-
-ar("tur", _Any) ->
-    "tur.ar";
-
-ar("net", _Any) ->
-    "net.ar";
-
-ar("mil", _Any) ->
-    "mil.ar";
-
-ar("edu", _Any) ->
-    "edu.ar";
-
-ar("gob", _Any) ->
-    "gob.ar";
-
-ar("gov", _Any) ->
-    "gov.ar";
-
-
-ar(_, _) ->
-    "ar".
-
-%% regular rules
-com_ar("blogspot", _Any) ->
-    "blogspot.com.ar";
-
-
-com_ar(_, _) ->
-    "com.ar".
-
-%% regular rules
-pt("com", _Any) ->
-    "com.pt";
-
-pt("org", _Any) ->
-    "org.pt";
-
-pt("int", _Any) ->
-    "int.pt";
-
-pt("nome", _Any) ->
-    "nome.pt";
-
-pt("gov", _Any) ->
-    "gov.pt";
-
-pt("blogspot", _Any) ->
-    "blogspot.pt";
-
-pt("edu", _Any) ->
-    "edu.pt";
-
-pt("publ", _Any) ->
-    "publ.pt";
-
-pt("net", _Any) ->
-    "net.pt";
-
-
-pt(_, _) ->
-    "pt".
-
-%% regular rules
-na("us", _Any) ->
-    "us.na";
-
-na("co", _Any) ->
-    "co.na";
-
-na("info", _Any) ->
-    "info.na";
-
-na("or", _Any) ->
-    "or.na";
-
-na("com", _Any) ->
-    "com.na";
-
-na("pro", _Any) ->
-    "pro.na";
-
-na("ws", _Any) ->
-    "ws.na";
-
-na("ca", _Any) ->
-    "ca.na";
-
-na("tv", _Any) ->
-    "tv.na";
-
-na("name", _Any) ->
-    "name.na";
-
-na("mobi", _Any) ->
-    "mobi.na";
-
-na("mx", _Any) ->
-    "mx.na";
-
-na("cc", _Any) ->
-    "cc.na";
-
-na("org", _Any) ->
-    "org.na";
-
-na("in", _Any) ->
-    "in.na";
-
-na("school", _Any) ->
-    "school.na";
-
-na("dr", _Any) ->
-    "dr.na";
-
-
-na(_, _) ->
-    "na".
-
-%% regular rules
-arpa("uri", _Any) ->
-    "uri.arpa";
-
-arpa("urn", _Any) ->
-    "urn.arpa";
-
-arpa("iris", _Any) ->
-    "iris.arpa";
-
-
-arpa(_, _) ->
-    "arpa".
-
-%% regular rules
-th("mi", _Any) ->
-    "mi.th";
-
-th("or", _Any) ->
-    "or.th";
-
-th("net", _Any) ->
-    "net.th";
-
-th("co", _Any) ->
-    "co.th";
-
-th("ac", _Any) ->
-    "ac.th";
-
-th("go", _Any) ->
-    "go.th";
-
-th("in", _Any) ->
-    "in.th";
-
-
-th(_, _) ->
-    "th".
-
-%% regular rules
-mt("com", _Any) ->
-    "com.mt";
-
-mt("edu", _Any) ->
-    "edu.mt";
-
-mt("org", _Any) ->
-    "org.mt";
-
-mt("net", _Any) ->
-    "net.mt";
-
-
-mt(_, _) ->
-    "mt".
-
-%% regular rules
-museum("williamsburg", _Any) ->
-    "williamsburg.museum";
-
-museum("air", _Any) ->
-    "air.museum";
-
-museum("topology", _Any) ->
-    "topology.museum";
-
-museum("zoology", _Any) ->
-    "zoology.museum";
-
-museum("stateofdelaware", _Any) ->
-    "stateofdelaware.museum";
-
-museum("sciencesnaturelles", _Any) ->
-    "sciencesnaturelles.museum";
-
-museum("americana", _Any) ->
-    "americana.museum";
-
-museum("labour", _Any) ->
-    "labour.museum";
-
-museum("surrey", _Any) ->
-    "surrey.museum";
-
-museum("assassination", _Any) ->
-    "assassination.museum";
-
-museum("archaeological", _Any) ->
-    "archaeological.museum";
-
-museum("uscountryestate", _Any) ->
-    "uscountryestate.museum";
-
-museum("creation", _Any) ->
-    "creation.museum";
-
-museum("capebreton", _Any) ->
-    "capebreton.museum";
-
-museum("miners", _Any) ->
-    "miners.museum";
-
-museum("usantiques", _Any) ->
-    "usantiques.museum";
-
-museum("flanders", _Any) ->
-    "flanders.museum";
-
-museum("brussel", _Any) ->
-    "brussel.museum";
-
-museum("kunst", _Any) ->
-    "kunst.museum";
-
-museum("alaska", _Any) ->
-    "alaska.museum";
-
-museum("cinema", _Any) ->
-    "cinema.museum";
-
-museum("eastcoast", _Any) ->
-    "eastcoast.museum";
-
-museum("can", _Any) ->
-    "can.museum";
-
-museum("academy", _Any) ->
-    "academy.museum";
-
-museum("handson", _Any) ->
-    "handson.museum";
-
-museum("niepce", _Any) ->
-    "niepce.museum";
-
-museum("minnesota", _Any) ->
-    "minnesota.museum";
-
-museum("fortworth", _Any) ->
-    "fortworth.museum";
-
-museum("southcarolina", _Any) ->
-    "southcarolina.museum";
-
-museum("farm", _Any) ->
-    "farm.museum";
-
-museum("ski", _Any) ->
-    "ski.museum";
-
-museum("living", _Any) ->
-    "living.museum";
-
-museum("american", _Any) ->
-    "american.museum";
-
-museum("settlers", _Any) ->
-    "settlers.museum";
-
-museum("bale", _Any) ->
-    "bale.museum";
-
-museum("torino", _Any) ->
-    "torino.museum";
-
-museum("ulm", _Any) ->
-    "ulm.museum";
-
-museum("roma", _Any) ->
-    "roma.museum";
-
-museum("antiques", _Any) ->
-    "antiques.museum";
-
-museum("scienceandhistory", _Any) ->
-    "scienceandhistory.museum";
-
-museum("science", _Any) ->
-    "science.museum";
-
-museum("estate", _Any) ->
-    "estate.museum";
-
-museum("nature", _Any) ->
-    "nature.museum";
-
-museum("maryland", _Any) ->
-    "maryland.museum";
-
-museum("rochester", _Any) ->
-    "rochester.museum";
-
-museum("building", _Any) ->
-    "building.museum";
-
-museum("film", _Any) ->
-    "film.museum";
-
-museum("historicalsociety", _Any) ->
-    "historicalsociety.museum";
-
-museum("civilization", _Any) ->
-    "civilization.museum";
-
-museum("sherbrooke", _Any) ->
-    "sherbrooke.museum";
-
-museum("museumvereniging", _Any) ->
-    "museumvereniging.museum";
-
-museum("donostia", _Any) ->
-    "donostia.museum";
-
-museum("jewishart", _Any) ->
-    "jewishart.museum";
-
-museum("savannahga", _Any) ->
-    "savannahga.museum";
-
-museum("linz", _Any) ->
-    "linz.museum";
-
-museum("astronomy", _Any) ->
-    "astronomy.museum";
-
-museum("artgallery", _Any) ->
-    "artgallery.museum";
-
-museum("environment", _Any) ->
-    "environment.museum";
-
-museum("newjersey", _Any) ->
-    "newjersey.museum";
-
-museum("muncie", _Any) ->
-    "muncie.museum";
-
-museum("philately", _Any) ->
-    "philately.museum";
-
-museum("newmexico", _Any) ->
-    "newmexico.museum";
-
-museum("childrensgarden", _Any) ->
-    "childrensgarden.museum";
-
-museum("usdecorativearts", _Any) ->
-    "usdecorativearts.museum";
-
-museum("eisenbahn", _Any) ->
-    "eisenbahn.museum";
-
-museum("cody", _Any) ->
-    "cody.museum";
-
-museum("clinton", _Any) ->
-    "clinton.museum";
-
-museum("lajolla", _Any) ->
-    "lajolla.museum";
-
-museum("nuernberg", _Any) ->
-    "nuernberg.museum";
-
-museum("coldwar", _Any) ->
-    "coldwar.museum";
-
-museum("helsinki", _Any) ->
-    "helsinki.museum";
-
-museum("elburg", _Any) ->
-    "elburg.museum";
-
-museum("dolls", _Any) ->
-    "dolls.museum";
-
-museum("historisch", _Any) ->
-    "historisch.museum";
-
-museum("mansion", _Any) ->
-    "mansion.museum";
-
-museum("copenhagen", _Any) ->
-    "copenhagen.museum";
-
-museum("coastaldefence", _Any) ->
-    "coastaldefence.museum";
-
-museum("stjohn", _Any) ->
-    "stjohn.museum";
-
-museum("burghof", _Any) ->
-    "burghof.museum";
-
-museum("plants", _Any) ->
-    "plants.museum";
-
-museum("hembygdsforbund", _Any) ->
-    "hembygdsforbund.museum";
-
-museum("chicago", _Any) ->
-    "chicago.museum";
-
-museum("sydney", _Any) ->
-    "sydney.museum";
-
-museum("workshop", _Any) ->
-    "workshop.museum";
-
-museum("village", _Any) ->
-    "village.museum";
-
-museum("war", _Any) ->
-    "war.museum";
-
-museum("clock", _Any) ->
-    "clock.museum";
-
-museum("stuttgart", _Any) ->
-    "stuttgart.museum";
-
-museum("town", _Any) ->
-    "town.museum";
-
-museum("newyork", _Any) ->
-    "newyork.museum";
-
-museum("pilots", _Any) ->
-    "pilots.museum";
-
-museum("schweiz", _Any) ->
-    "schweiz.museum";
-
-museum("chesapeakebay", _Any) ->
-    "chesapeakebay.museum";
-
-museum("madrid", _Any) ->
-    "madrid.museum";
-
-museum("nationalfirearms", _Any) ->
-    "nationalfirearms.museum";
-
-museum("exhibition", _Any) ->
-    "exhibition.museum";
-
-museum("cadaques", _Any) ->
-    "cadaques.museum";
-
-museum("television", _Any) ->
-    "television.museum";
-
-museum("shell", _Any) ->
-    "shell.museum";
-
-museum("watchandclock", _Any) ->
-    "watchandclock.museum";
-
-museum("portland", _Any) ->
-    "portland.museum";
-
-museum("exeter", _Any) ->
-    "exeter.museum";
-
-museum("health", _Any) ->
-    "health.museum";
-
-museum("bushey", _Any) ->
-    "bushey.museum";
-
-museum("glass", _Any) ->
-    "glass.museum";
-
-museum("bus", _Any) ->
-    "bus.museum";
-
-museum("montreal", _Any) ->
-    "montreal.museum";
-
-museum("technology", _Any) ->
-    "technology.museum";
-
-museum("natuurwetenschappen", _Any) ->
-    "natuurwetenschappen.museum";
-
-museum("histoire", _Any) ->
-    "histoire.museum";
-
-museum("touch", _Any) ->
-    "touch.museum";
-
-museum("computerhistory", _Any) ->
-    "computerhistory.museum";
-
-museum("indian", _Any) ->
-    "indian.museum";
-
-museum("england", _Any) ->
-    "england.museum";
-
-museum("frankfurt", _Any) ->
-    "frankfurt.museum";
-
-museum("baths", _Any) ->
-    "baths.museum";
-
-museum("cartoonart", _Any) ->
-    "cartoonart.museum";
-
-museum("interactive", _Any) ->
-    "interactive.museum";
-
-museum("washingtondc", _Any) ->
-    "washingtondc.museum";
-
-museum("anthropology", _Any) ->
-    "anthropology.museum";
-
-museum("trustee", _Any) ->
-    "trustee.museum";
-
-museum("artcenter", _Any) ->
-    "artcenter.museum";
-
-museum("localhistory", _Any) ->
-    "localhistory.museum";
-
-museum("lans", _Any) ->
-    "lans.museum";
-
-museum("brussels", _Any) ->
-    "brussels.museum";
-
-museum("aviation", _Any) ->
-    "aviation.museum";
-
-museum("hamburg", _Any) ->
-    "hamburg.museum";
-
-museum("halloffame", _Any) ->
-    "halloffame.museum";
-
-museum("muenster", _Any) ->
-    "muenster.museum";
-
-museum("mad", _Any) ->
-    "mad.museum";
-
-museum("coal", _Any) ->
-    "coal.museum";
-
-museum("harvestcelebration", _Any) ->
-    "harvestcelebration.museum";
-
-museum("annefrank", _Any) ->
-    "annefrank.museum";
-
-museum("essex", _Any) ->
-    "essex.museum";
-
-museum("birthplace", _Any) ->
-    "birthplace.museum";
-
-museum("historisches", _Any) ->
-    "historisches.museum";
-
-museum("rockart", _Any) ->
-    "rockart.museum";
-
-museum("maritime", _Any) ->
-    "maritime.museum";
-
-museum("anthro", _Any) ->
-    "anthro.museum";
-
-museum("guernsey", _Any) ->
-    "guernsey.museum";
-
-museum("paleo", _Any) ->
-    "paleo.museum";
-
-museum("barcelona", _Any) ->
-    "barcelona.museum";
-
-museum("bruxelles", _Any) ->
-    "bruxelles.museum";
-
-museum("livinghistory", _Any) ->
-    "livinghistory.museum";
-
-museum("research", _Any) ->
-    "research.museum";
-
-museum("field", _Any) ->
-    "field.museum";
-
-museum("detroit", _Any) ->
-    "detroit.museum";
-
-museum("cultural", _Any) ->
-    "cultural.museum";
-
-museum("textile", _Any) ->
-    "textile.museum";
-
-museum("juedisches", _Any) ->
-    "juedisches.museum";
-
-museum("botanicgarden", _Any) ->
-    "botanicgarden.museum";
-
-museum("schlesisches", _Any) ->
-    "schlesisches.museum";
-
-museum("center", _Any) ->
-    "center.museum";
-
-museum("ethnology", _Any) ->
-    "ethnology.museum";
-
-museum("satx", _Any) ->
-    "satx.museum";
-
-museum("mansions", _Any) ->
-    "mansions.museum";
-
-museum("kunstunddesign", _Any) ->
-    "kunstunddesign.museum";
-
-museum("money", _Any) ->
-    "money.museum";
-
-museum("nyc", _Any) ->
-    "nyc.museum";
-
-museum("baltimore", _Any) ->
-    "baltimore.museum";
-
-museum("panama", _Any) ->
-    "panama.museum";
-
-museum("grandrapids", _Any) ->
-    "grandrapids.museum";
-
-museum("heimatunduhren", _Any) ->
-    "heimatunduhren.museum";
-
-museum("asmatart", _Any) ->
-    "asmatart.museum";
-
-museum("bergbau", _Any) ->
-    "bergbau.museum";
-
-museum("crafts", _Any) ->
-    "crafts.museum";
-
-museum("project", _Any) ->
-    "project.museum";
-
-museum("virginia", _Any) ->
-    "virginia.museum";
-
-museum("plantation", _Any) ->
-    "plantation.museum";
-
-museum("axis", _Any) ->
-    "axis.museum";
-
-museum("nrw", _Any) ->
-    "nrw.museum";
-
-museum("juif", _Any) ->
-    "juif.museum";
-
-museum("stpetersburg", _Any) ->
-    "stpetersburg.museum";
-
-museum("portlligat", _Any) ->
-    "portlligat.museum";
-
-museum("heritage", _Any) ->
-    "heritage.museum";
-
-museum("figueres", _Any) ->
-    "figueres.museum";
-
-museum("freiburg", _Any) ->
-    "freiburg.museum";
-
-museum("nebraska", _Any) ->
-    "nebraska.museum";
-
-museum("history", _Any) ->
-    "history.museum";
-
-museum("oregontrail", _Any) ->
-    "oregontrail.museum";
-
-museum("riodejaneiro", _Any) ->
-    "riodejaneiro.museum";
-
-museum("openair", _Any) ->
-    "openair.museum";
-
-museum("time", _Any) ->
-    "time.museum";
-
-museum("georgia", _Any) ->
-    "georgia.museum";
-
-museum("assisi", _Any) ->
-    "assisi.museum";
-
-museum("lewismiller", _Any) ->
-    "lewismiller.museum";
-
-museum("franziskaner", _Any) ->
-    "franziskaner.museum";
-
-museum("geelvinck", _Any) ->
-    "geelvinck.museum";
-
-museum("santafe", _Any) ->
-    "santafe.museum";
-
-museum("steam", _Any) ->
-    "steam.museum";
-
-museum("agriculture", _Any) ->
-    "agriculture.museum";
-
-museum("uslivinghistory", _Any) ->
-    "uslivinghistory.museum";
-
-museum("communication", _Any) ->
-    "communication.museum";
-
-museum("cambridge", _Any) ->
-    "cambridge.museum";
-
-museum("graz", _Any) ->
-    "graz.museum";
-
-museum("gorge", _Any) ->
-    "gorge.museum";
-
-museum("scienceandindustry", _Any) ->
-    "scienceandindustry.museum";
-
-museum("nativeamerican", _Any) ->
-    "nativeamerican.museum";
-
-museum("contemporary", _Any) ->
-    "contemporary.museum";
-
-museum("amsterdam", _Any) ->
-    "amsterdam.museum";
-
-museum("judygarland", _Any) ->
-    "judygarland.museum";
-
-museum("castres", _Any) ->
-    "castres.museum";
-
-museum("sciencecenter", _Any) ->
-    "sciencecenter.museum";
-
-museum("culture", _Any) ->
-    "culture.museum";
-
-museum("eastafrica", _Any) ->
-    "eastafrica.museum";
-
-museum("kunstsammlung", _Any) ->
-    "kunstsammlung.museum";
-
-museum("mining", _Any) ->
-    "mining.museum";
-
-museum("society", _Any) ->
-    "society.museum";
-
-museum("station", _Any) ->
-    "station.museum";
-
-museum("naumburg", _Any) ->
-    "naumburg.museum";
-
-museum("moma", _Any) ->
-    "moma.museum";
-
-museum("wildlife", _Any) ->
-    "wildlife.museum";
-
-museum("marylhurst", _Any) ->
-    "marylhurst.museum";
-
-museum("boston", _Any) ->
-    "boston.museum";
-
-museum("ontario", _Any) ->
-    "ontario.museum";
-
-museum("palmsprings", _Any) ->
-    "palmsprings.museum";
-
-museum("epilepsy", _Any) ->
-    "epilepsy.museum";
-
-museum("bristol", _Any) ->
-    "bristol.museum";
-
-museum("jerusalem", _Any) ->
-    "jerusalem.museum";
-
-museum("colonialwilliamsburg", _Any) ->
-    "colonialwilliamsburg.museum";
-
-museum("county", _Any) ->
-    "county.museum";
-
-museum("tcm", _Any) ->
-    "tcm.museum";
-
-museum("illustration", _Any) ->
-    "illustration.museum";
-
-museum("texas", _Any) ->
-    "texas.museum";
-
-museum("media", _Any) ->
-    "media.museum";
-
-museum("judaica", _Any) ->
-    "judaica.museum";
-
-museum("foundation", _Any) ->
-    "foundation.museum";
-
-museum("baghdad", _Any) ->
-    "baghdad.museum";
-
-museum("naturalsciences", _Any) ->
-    "naturalsciences.museum";
-
-museum("nyny", _Any) ->
-    "nyny.museum";
-
-museum("iron", _Any) ->
-    "iron.museum";
-
-museum("space", _Any) ->
-    "space.museum";
-
-museum("mesaverde", _Any) ->
-    "mesaverde.museum";
-
-museum("timekeeping", _Any) ->
-    "timekeeping.museum";
-
-museum("iraq", _Any) ->
-    "iraq.museum";
-
-museum("dallas", _Any) ->
-    "dallas.museum";
-
-museum("seaport", _Any) ->
-    "seaport.museum";
-
-museum("glas", _Any) ->
-    "glas.museum";
-
-museum("circus", _Any) ->
-    "circus.museum";
-
-museum("children", _Any) ->
-    "children.museum";
-
-museum("carrier", _Any) ->
-    "carrier.museum";
-
-museum("denmark", _Any) ->
-    "denmark.museum";
-
-museum("austin", _Any) ->
-    "austin.museum";
-
-museum("botanicalgarden", _Any) ->
-    "botanicalgarden.museum";
-
-museum("motorcycle", _Any) ->
-    "motorcycle.museum";
-
-museum("environmentalconservation", _Any) ->
-    "environmentalconservation.museum";
-
-museum("farmers", _Any) ->
-    "farmers.museum";
-
-museum("norfolk", _Any) ->
-    "norfolk.museum";
-
-museum("kids", _Any) ->
-    "kids.museum";
-
-museum("artdeco", _Any) ->
-    "artdeco.museum";
-
-museum("gallery", _Any) ->
-    "gallery.museum";
-
-museum("naturhistorisches", _Any) ->
-    "naturhistorisches.museum";
-
-museum("contemporaryart", _Any) ->
-    "contemporaryart.museum";
-
-museum("americanart", _Any) ->
-    "americanart.museum";
-
-museum("monmouth", _Any) ->
-    "monmouth.museum";
-
-museum("historical", _Any) ->
-    "historical.museum";
-
-museum("schokoladen", _Any) ->
-    "schokoladen.museum";
-
-museum("westfalen", _Any) ->
-    "westfalen.museum";
-
-museum("and", _Any) ->
-    "and.museum";
-
-museum("elvendrell", _Any) ->
-    "elvendrell.museum";
-
-museum("basel", _Any) ->
-    "basel.museum";
-
-museum("museet", _Any) ->
-    "museet.museum";
-
-museum("brandywinevalley", _Any) ->
-    "brandywinevalley.museum";
-
-museum("theater", _Any) ->
-    "theater.museum";
-
-museum("louvre", _Any) ->
-    "louvre.museum";
-
-museum("finearts", _Any) ->
-    "finearts.museum";
-
-museum("lancashire", _Any) ->
-    "lancashire.museum";
-
-museum("alabama", _Any) ->
-    "alabama.museum";
-
-museum("newhampshire", _Any) ->
-    "newhampshire.museum";
-
-museum("viking", _Any) ->
-    "viking.museum";
-
-museum("automotive", _Any) ->
-    "automotive.museum";
-
-museum("usarts", _Any) ->
-    "usarts.museum";
-
-museum("beauxarts", _Any) ->
-    "beauxarts.museum";
-
-museum("pharmacy", _Any) ->
-    "pharmacy.museum";
-
-museum("undersea", _Any) ->
-    "undersea.museum";
-
-museum("railroad", _Any) ->
-    "railroad.museum";
-
-museum("steiermark", _Any) ->
-    "steiermark.museum";
-
-museum("spy", _Any) ->
-    "spy.museum";
-
-museum("wallonie", _Any) ->
-    "wallonie.museum";
-
-museum("broadcast", _Any) ->
-    "broadcast.museum";
-
-museum("salzburg", _Any) ->
-    "salzburg.museum";
-
-museum("yosemite", _Any) ->
-    "yosemite.museum";
-
-museum("nuremberg", _Any) ->
-    "nuremberg.museum";
-
-museum("education", _Any) ->
-    "education.museum";
-
-museum("civilwar", _Any) ->
-    "civilwar.museum";
-
-museum("maritimo", _Any) ->
-    "maritimo.museum";
-
-museum("giessen", _Any) ->
-    "giessen.museum";
-
-museum("civilisation", _Any) ->
-    "civilisation.museum";
-
-museum("communications", _Any) ->
-    "communications.museum";
-
-museum("missile", _Any) ->
-    "missile.museum";
-
-museum("sciencecenters", _Any) ->
-    "sciencecenters.museum";
-
-museum("palace", _Any) ->
-    "palace.museum";
-
-museum("architecture", _Any) ->
-    "architecture.museum";
-
-museum("saintlouis", _Any) ->
-    "saintlouis.museum";
-
-museum("australia", _Any) ->
-    "australia.museum";
-
-museum("dinosaur", _Any) ->
-    "dinosaur.museum";
-
-museum("horology", _Any) ->
-    "horology.museum";
-
-museum("tree", _Any) ->
-    "tree.museum";
-
-museum("square", _Any) ->
-    "square.museum";
-
-museum("silk", _Any) ->
-    "silk.museum";
-
-museum("ushuaia", _Any) ->
-    "ushuaia.museum";
-
-museum("larsson", _Any) ->
-    "larsson.museum";
-
-museum("karikatur", _Any) ->
-    "karikatur.museum";
-
-museum("cranbrook", _Any) ->
-    "cranbrook.museum";
-
-museum("uhren", _Any) ->
-    "uhren.museum";
-
-museum("ddr", _Any) ->
-    "ddr.museum";
-
-museum("corporation", _Any) ->
-    "corporation.museum";
-
-museum("badajoz", _Any) ->
-    "badajoz.museum";
-
-museum("oregon", _Any) ->
-    "oregon.museum";
-
-museum("tank", _Any) ->
-    "tank.museum";
-
-museum("modern", _Any) ->
-    "modern.museum";
-
-museum("indianapolis", _Any) ->
-    "indianapolis.museum";
-
-museum("computer", _Any) ->
-    "computer.museum";
-
-museum("sweden", _Any) ->
-    "sweden.museum";
-
-museum("wales", _Any) ->
-    "wales.museum";
-
-museum("furniture", _Any) ->
-    "furniture.museum";
-
-museum("zoological", _Any) ->
-    "zoological.museum";
-
-museum("presidio", _Any) ->
-    "presidio.museum";
-
-museum("atlanta", _Any) ->
-    "atlanta.museum";
-
-museum("memorial", _Any) ->
-    "memorial.museum";
-
-museum("newspaper", _Any) ->
-    "newspaper.museum";
-
-museum("medical", _Any) ->
-    "medical.museum";
-
-museum("utah", _Any) ->
-    "utah.museum";
-
-museum("baseball", _Any) ->
-    "baseball.museum";
-
-museum("north", _Any) ->
-    "north.museum";
-
-museum("cymru", _Any) ->
-    "cymru.museum";
-
-museum("convent", _Any) ->
-    "convent.museum";
-
-museum("airguard", _Any) ->
-    "airguard.museum";
-
-museum("youth", _Any) ->
-    "youth.museum";
-
-museum("pasadena", _Any) ->
-    "pasadena.museum";
-
-museum("southwest", _Any) ->
-    "southwest.museum";
-
-museum("arboretum", _Any) ->
-    "arboretum.museum";
-
-museum("arteducation", _Any) ->
-    "arteducation.museum";
-
-museum("philadelphiaarea", _Any) ->
-    "philadelphiaarea.museum";
-
-museum("virtuel", _Any) ->
-    "virtuel.museum";
-
-museum("soundandvision", _Any) ->
-    "soundandvision.museum";
-
-museum("santabarbara", _Any) ->
-    "santabarbara.museum";
-
-museum("fineart", _Any) ->
-    "fineart.museum";
-
-museum("arts", _Any) ->
-    "arts.museum";
-
-museum("community", _Any) ->
-    "community.museum";
-
-museum("pubol", _Any) ->
-    "pubol.museum";
-
-museum("gateway", _Any) ->
-    "gateway.museum";
-
-museum("portal", _Any) ->
-    "portal.museum";
-
-museum("paderborn", _Any) ->
-    "paderborn.museum";
-
-museum("suisse", _Any) ->
-    "suisse.museum";
-
-museum("paris", _Any) ->
-    "paris.museum";
-
-museum("loyalist", _Any) ->
-    "loyalist.museum";
-
-museum("starnberg", _Any) ->
-    "starnberg.museum";
-
-museum("music", _Any) ->
-    "music.museum";
-
-museum("saskatchewan", _Any) ->
-    "saskatchewan.museum";
-
-museum("missoula", _Any) ->
-    "missoula.museum";
-
-museum("phoenix", _Any) ->
-    "phoenix.museum";
-
-museum("jamison", _Any) ->
-    "jamison.museum";
-
-museum("neues", _Any) ->
-    "neues.museum";
-
-museum("artsandcrafts", _Any) ->
-    "artsandcrafts.museum";
-
-museum("salem", _Any) ->
-    "salem.museum";
-
-museum("santacruz", _Any) ->
-    "santacruz.museum";
-
-museum("britishcolumbia", _Any) ->
-    "britishcolumbia.museum";
-
-museum("celtic", _Any) ->
-    "celtic.museum";
-
-museum("michigan", _Any) ->
-    "michigan.museum";
-
-museum("mallorca", _Any) ->
-    "mallorca.museum";
-
-museum("muenchen", _Any) ->
-    "muenchen.museum";
-
-museum("otago", _Any) ->
-    "otago.museum";
-
-museum("valley", _Any) ->
-    "valley.museum";
-
-museum("cheltenham", _Any) ->
-    "cheltenham.museum";
-
-museum("sanfrancisco", _Any) ->
-    "sanfrancisco.museum";
-
-museum("columbia", _Any) ->
-    "columbia.museum";
-
-museum("stockholm", _Any) ->
-    "stockholm.museum";
-
-museum("trolley", _Any) ->
-    "trolley.museum";
-
-museum("military", _Any) ->
-    "military.museum";
-
-museum("database", _Any) ->
-    "database.museum";
-
-museum("casadelamoneda", _Any) ->
-    "casadelamoneda.museum";
-
-museum("dali", _Any) ->
-    "dali.museum";
-
-museum("columbus", _Any) ->
-    "columbus.museum";
-
-museum("historichouses", _Any) ->
-    "historichouses.museum";
-
-museum("bauern", _Any) ->
-    "bauern.museum";
-
-museum("svizzera", _Any) ->
-    "svizzera.museum";
-
-museum("marburg", _Any) ->
-    "marburg.museum";
-
-museum("coloradoplateau", _Any) ->
-    "coloradoplateau.museum";
-
-museum("windmill", _Any) ->
-    "windmill.museum";
-
-museum("omaha", _Any) ->
-    "omaha.museum";
-
-museum("jewelry", _Any) ->
-    "jewelry.museum";
-
-museum("midatlantic", _Any) ->
-    "midatlantic.museum";
-
-museum("chiropractic", _Any) ->
-    "chiropractic.museum";
-
-museum("chocolate", _Any) ->
-    "chocolate.museum";
-
-museum("usa", _Any) ->
-    "usa.museum";
-
-museum("russia", _Any) ->
-    "russia.museum";
-
-museum("farmequipment", _Any) ->
-    "farmequipment.museum";
-
-museum("lincoln", _Any) ->
-    "lincoln.museum";
-
-museum("york", _Any) ->
-    "york.museum";
-
-museum("oceanographique", _Any) ->
-    "oceanographique.museum";
-
-museum("cyber", _Any) ->
-    "cyber.museum";
-
-museum("bahn", _Any) ->
-    "bahn.museum";
-
-museum("ambulance", _Any) ->
-    "ambulance.museum";
-
-museum("surgeonshall", _Any) ->
-    "surgeonshall.museum";
-
-museum("pacific", _Any) ->
-    "pacific.museum";
-
-museum("frog", _Any) ->
-    "frog.museum";
-
-museum("entomology", _Any) ->
-    "entomology.museum";
-
-museum("manchester", _Any) ->
-    "manchester.museum";
-
-museum("sciences", _Any) ->
-    "sciences.museum";
-
-museum("lucerne", _Any) ->
-    "lucerne.museum";
-
-museum("trust", _Any) ->
-    "trust.museum";
-
-museum("amber", _Any) ->
-    "amber.museum";
-
-museum("cincinnati", _Any) ->
-    "cincinnati.museum";
-
-museum("farmstead", _Any) ->
-    "farmstead.museum";
-
-museum("jfk", _Any) ->
-    "jfk.museum";
-
-museum("naturalhistorymuseum", _Any) ->
-    "naturalhistorymuseum.museum";
-
-museum("schoenbrunn", _Any) ->
-    "schoenbrunn.museum";
-
-museum("resistance", _Any) ->
-    "resistance.museum";
-
-museum("meeres", _Any) ->
-    "meeres.museum";
-
-museum("archaeology", _Any) ->
-    "archaeology.museum";
-
-museum("embroidery", _Any) ->
-    "embroidery.museum";
-
-museum("whaling", _Any) ->
-    "whaling.museum";
-
-museum("florida", _Any) ->
-    "florida.museum";
-
-museum("gemological", _Any) ->
-    "gemological.museum";
-
-museum("london", _Any) ->
-    "london.museum";
-
-museum("family", _Any) ->
-    "family.museum";
-
-museum("beeldengeluid", _Any) ->
-    "beeldengeluid.museum";
-
-museum("delmenhorst", _Any) ->
-    "delmenhorst.museum";
-
-museum("brasil", _Any) ->
-    "brasil.museum";
-
-museum("western", _Any) ->
-    "western.museum";
-
-museum("school", _Any) ->
-    "school.museum";
-
-museum("association", _Any) ->
-    "association.museum";
-
-museum("newport", _Any) ->
-    "newport.museum";
-
-museum("museumcenter", _Any) ->
-    "museumcenter.museum";
-
-museum("birdart", _Any) ->
-    "birdart.museum";
-
-museum("indiana", _Any) ->
-    "indiana.museum";
-
-museum("collection", _Any) ->
-    "collection.museum";
-
-museum("stalbans", _Any) ->
-    "stalbans.museum";
-
-museum("journalism", _Any) ->
-    "journalism.museum";
-
-museum("sibenik", _Any) ->
-    "sibenik.museum";
-
-museum("art", _Any) ->
-    "art.museum";
-
-museum("manx", _Any) ->
-    "manx.museum";
-
-museum("jewish", _Any) ->
-    "jewish.museum";
-
-museum("botany", _Any) ->
-    "botany.museum";
-
-museum("isleofman", _Any) ->
-    "isleofman.museum";
-
-museum("sandiego", _Any) ->
-    "sandiego.museum";
-
-museum("freemasonry", _Any) ->
-    "freemasonry.museum";
-
-museum("koebenhavn", _Any) ->
-    "koebenhavn.museum";
-
-museum("finland", _Any) ->
-    "finland.museum";
-
-museum("berkeley", _Any) ->
-    "berkeley.museum";
-
-museum("hawaii", _Any) ->
-    "hawaii.museum";
-
-museum("ushistory", _Any) ->
-    "ushistory.museum";
-
-museum("durham", _Any) ->
-    "durham.museum";
-
-museum("bern", _Any) ->
-    "bern.museum";
-
-museum("bible", _Any) ->
-    "bible.museum";
-
-museum("versailles", _Any) ->
-    "versailles.museum";
-
-museum("chattanooga", _Any) ->
-    "chattanooga.museum";
-
-museum("california", _Any) ->
-    "california.museum";
-
-museum("artanddesign", _Any) ->
-    "artanddesign.museum";
-
-museum("fortmissoula", _Any) ->
-    "fortmissoula.museum";
-
-museum("british", _Any) ->
-    "british.museum";
-
-museum("historyofscience", _Any) ->
-    "historyofscience.museum";
-
-museum("delaware", _Any) ->
-    "delaware.museum";
-
-museum("mill", _Any) ->
-    "mill.museum";
-
-museum("countryestate", _Any) ->
-    "countryestate.museum";
-
-museum("castle", _Any) ->
-    "castle.museum";
-
-museum("medizinhistorisches", _Any) ->
-    "medizinhistorisches.museum";
-
-museum("fribourg", _Any) ->
-    "fribourg.museum";
-
-museum("press", _Any) ->
-    "press.museum";
-
-museum("planetarium", _Any) ->
-    "planetarium.museum";
-
-museum("fundacio", _Any) ->
-    "fundacio.museum";
-
-museum("childrens", _Any) ->
-    "childrens.museum";
-
-museum("oxford", _Any) ->
-    "oxford.museum";
-
-museum("francaise", _Any) ->
-    "francaise.museum";
-
-museum("vantaa", _Any) ->
-    "vantaa.museum";
-
-museum("corvette", _Any) ->
-    "corvette.museum";
-
-museum("garden", _Any) ->
-    "garden.museum";
-
-museum("aquarium", _Any) ->
-    "aquarium.museum";
-
-museum("moscow", _Any) ->
-    "moscow.museum";
-
-museum("encyclopedic", _Any) ->
-    "encyclopedic.museum";
-
-museum("monticello", _Any) ->
-    "monticello.museum";
-
-museum("americanantiques", _Any) ->
-    "americanantiques.museum";
-
-museum("botanical", _Any) ->
-    "botanical.museum";
-
-museum("preservation", _Any) ->
-    "preservation.museum";
-
-museum("uvic", _Any) ->
-    "uvic.museum";
-
-museum("stadt", _Any) ->
-    "stadt.museum";
-
-museum("naturalhistory", _Any) ->
-    "naturalhistory.museum";
-
-museum("egyptian", _Any) ->
-    "egyptian.museum";
-
-museum("nationalheritage", _Any) ->
-    "nationalheritage.museum";
-
-museum("humanities", _Any) ->
-    "humanities.museum";
-
-museum("photography", _Any) ->
-    "photography.museum";
-
-museum("luxembourg", _Any) ->
-    "luxembourg.museum";
-
-museum("mulhouse", _Any) ->
-    "mulhouse.museum";
-
-museum("labor", _Any) ->
-    "labor.museum";
-
-museum("imageandsound", _Any) ->
-    "imageandsound.museum";
-
-museum("indianmarket", _Any) ->
-    "indianmarket.museum";
-
-museum("naval", _Any) ->
-    "naval.museum";
-
-museum("scotland", _Any) ->
-    "scotland.museum";
-
-museum("culturalcenter", _Any) ->
-    "culturalcenter.museum";
-
-museum("usgarden", _Any) ->
-    "usgarden.museum";
-
-museum("costume", _Any) ->
-    "costume.museum";
-
-museum("oceanographic", _Any) ->
-    "oceanographic.museum";
-
-museum("bilbao", _Any) ->
-    "bilbao.museum";
-
-museum("pittsburgh", _Any) ->
-    "pittsburgh.museum";
-
-museum("transport", _Any) ->
-    "transport.museum";
-
-museum("depot", _Any) ->
-    "depot.museum";
-
-museum("luzern", _Any) ->
-    "luzern.museum";
-
-museum("telekommunikation", _Any) ->
-    "telekommunikation.museum";
-
-museum("volkenkunde", _Any) ->
-    "volkenkunde.museum";
-
-museum("skole", _Any) ->
-    "skole.museum";
-
-museum("bill", _Any) ->
-    "bill.museum";
-
-museum("public", _Any) ->
-    "public.museum";
-
-museum("geology", _Any) ->
-    "geology.museum";
-
-museum("filatelia", _Any) ->
-    "filatelia.museum";
-
-museum("bellevue", _Any) ->
-    "bellevue.museum";
-
-museum("university", _Any) ->
-    "university.museum";
-
-museum("koeln", _Any) ->
-    "koeln.museum";
-
-museum("berlin", _Any) ->
-    "berlin.museum";
-
-museum("canada", _Any) ->
-    "canada.museum";
-
-museum("railway", _Any) ->
-    "railway.museum";
-
-museum("philadelphia", _Any) ->
-    "philadelphia.museum";
-
-museum("force", _Any) ->
-    "force.museum";
-
-museum("yorkshire", _Any) ->
-    "yorkshire.museum";
-
-museum("losangeles", _Any) ->
-    "losangeles.museum";
-
-museum("intelligence", _Any) ->
-    "intelligence.museum";
-
-museum("national", _Any) ->
-    "national.museum";
-
-museum("sologne", _Any) ->
-    "sologne.museum";
-
-museum("sciencehistory", _Any) ->
-    "sciencehistory.museum";
-
-museum("settlement", _Any) ->
-    "settlement.museum";
-
-museum("virtual", _Any) ->
-    "virtual.museum";
-
-museum("karate", _Any) ->
-    "karate.museum";
-
-museum("decorativearts", _Any) ->
-    "decorativearts.museum";
-
-museum("landes", _Any) ->
-    "landes.museum";
-
-museum("discovery", _Any) ->
-    "discovery.museum";
-
-museum("educational", _Any) ->
-    "educational.museum";
-
-museum("state", _Any) ->
-    "state.museum";
-
-museum("bonn", _Any) ->
-    "bonn.museum";
-
-museum("online", _Any) ->
-    "online.museum";
-
-museum("brunel", _Any) ->
-    "brunel.museum";
-
-museum("christiansburg", _Any) ->
-    "christiansburg.museum";
-
-museum("house", _Any) ->
-    "house.museum";
-
-museum("vlaanderen", _Any) ->
-    "vlaanderen.museum";
-
-museum("usculture", _Any) ->
-    "usculture.museum";
-
-museum("plaza", _Any) ->
-    "plaza.museum";
-
-museum("jefferson", _Any) ->
-    "jefferson.museum";
-
-museum("quebec", _Any) ->
-    "quebec.museum";
-
-museum("salvadordali", _Any) ->
-    "salvadordali.museum";
-
-museum("hellas", _Any) ->
-    "hellas.museum";
-
-museum("design", _Any) ->
-    "design.museum";
-
-
-museum(_, _) ->
-    "museum".
-
-%% regular rules
-by("com", _Any) ->
-    "com.by";
-
-by("gov", _Any) ->
-    "gov.by";
-
-by("of", _Any) ->
-    "of.by";
-
-by("mil", _Any) ->
-    "mil.by";
-
-
-by(_, _) ->
-    "by".
-
-%% regular rules
-sx("gov", _Any) ->
-    "gov.sx";
-
-
-sx(_, _) ->
-    "sx".
-
-%% regular rules
-au("com", []) ->
-    "com.au";
-au("com", Parts) ->
+    fukushima_jp(First, Rest);
+
+jp("fukuoka", []) ->
+    "fukuoka.jp";
+jp("fukuoka", Parts) ->
     [First | Rest] = Parts,
-    com_au(First, Rest);
+    fukuoka_jp(First, Rest);
 
-au("asn", _Any) ->
-    "asn.au";
-
-au("oz", _Any) ->
-    "oz.au";
-
-au("info", _Any) ->
-    "info.au";
-
-au("gov", []) ->
-    "gov.au";
-au("gov", Parts) ->
+jp("saga", []) ->
+    "saga.jp";
+jp("saga", Parts) ->
     [First | Rest] = Parts,
-    gov_au(First, Rest);
+    saga_jp(First, Rest);
 
-au("wa", _Any) ->
-    "wa.au";
+jp("ed", _Any) ->
+    "ed.jp";
 
-au("edu", []) ->
-    "edu.au";
-au("edu", Parts) ->
+jp("gifu", []) ->
+    "gifu.jp";
+jp("gifu", Parts) ->
     [First | Rest] = Parts,
-    edu_au(First, Rest);
+    gifu_jp(First, Rest);
 
-au("net", _Any) ->
-    "net.au";
-
-au("nsw", _Any) ->
-    "nsw.au";
-
-au("nt", _Any) ->
-    "nt.au";
-
-au("org", _Any) ->
-    "org.au";
-
-au("sa", _Any) ->
-    "sa.au";
-
-au("vic", _Any) ->
-    "vic.au";
-
-au("id", _Any) ->
-    "id.au";
-
-au("qld", _Any) ->
-    "qld.au";
-
-au("tas", _Any) ->
-    "tas.au";
-
-au("conf", _Any) ->
-    "conf.au";
-
-au("act", _Any) ->
-    "act.au";
-
-
-au(_, _) ->
-    "au".
-
-%% regular rules
-com_au("blogspot", _Any) ->
-    "blogspot.com.au";
-
-
-com_au(_, _) ->
-    "com.au".
-
-%% regular rules
-gov_au("qld", _Any) ->
-    "qld.gov.au";
-
-gov_au("tas", _Any) ->
-    "tas.gov.au";
-
-gov_au("sa", _Any) ->
-    "sa.gov.au";
-
-gov_au("vic", _Any) ->
-    "vic.gov.au";
-
-gov_au("wa", _Any) ->
-    "wa.gov.au";
-
-
-gov_au(_, _) ->
-    "gov.au".
-
-%% regular rules
-edu_au("nsw", _Any) ->
-    "nsw.edu.au";
-
-edu_au("nt", _Any) ->
-    "nt.edu.au";
-
-edu_au("vic", _Any) ->
-    "vic.edu.au";
-
-edu_au("sa", _Any) ->
-    "sa.edu.au";
-
-edu_au("tas", _Any) ->
-    "tas.edu.au";
-
-edu_au("qld", _Any) ->
-    "qld.edu.au";
-
-edu_au("wa", _Any) ->
-    "wa.edu.au";
-
-edu_au("act", _Any) ->
-    "act.edu.au";
-
-
-edu_au(_, _) ->
-    "edu.au".
-
-%% regular rules
-pl("targi", _Any) ->
-    "targi.pl";
-
-pl("prochowice", _Any) ->
-    "prochowice.pl";
-
-pl("polkowice", _Any) ->
-    "polkowice.pl";
-
-pl("lowicz", _Any) ->
-    "lowicz.pl";
-
-pl("lapy", _Any) ->
-    "lapy.pl";
-
-pl("olawa", _Any) ->
-    "olawa.pl";
-
-pl("gliwice", _Any) ->
-    "gliwice.pl";
-
-pl("bielawa", _Any) ->
-    "bielawa.pl";
-
-pl("info", _Any) ->
-    "info.pl";
-
-pl("jaworzno", _Any) ->
-    "jaworzno.pl";
-
-pl("stargard", _Any) ->
-    "stargard.pl";
-
-pl("boleslawiec", _Any) ->
-    "boleslawiec.pl";
-
-pl("gov", []) ->
-    "gov.pl";
-pl("gov", Parts) ->
+jp("nagano", []) ->
+    "nagano.jp";
+jp("nagano", Parts) ->
     [First | Rest] = Parts,
-    gov_pl(First, Rest);
-
-pl("szkola", _Any) ->
-    "szkola.pl";
-
-pl("ngo", _Any) ->
-    "ngo.pl";
-
-pl("shop", _Any) ->
-    "shop.pl";
-
-pl("ostrowwlkp", _Any) ->
-    "ostrowwlkp.pl";
-
-pl("wodzislaw", _Any) ->
-    "wodzislaw.pl";
-
-pl("olsztyn", _Any) ->
-    "olsztyn.pl";
-
-pl("elblag", _Any) ->
-    "elblag.pl";
-
-pl("lukow", _Any) ->
-    "lukow.pl";
-
-pl("biz", _Any) ->
-    "biz.pl";
-
-pl("dlugoleka", _Any) ->
-    "dlugoleka.pl";
-
-pl("mail", _Any) ->
-    "mail.pl";
-
-pl("konskowola", _Any) ->
-    "konskowola.pl";
-
-pl("miasta", _Any) ->
-    "miasta.pl";
-
-pl("swinoujscie", _Any) ->
-    "swinoujscie.pl";
-
-pl("zgorzelec", _Any) ->
-    "zgorzelec.pl";
-
-pl("com", _Any) ->
-    "com.pl";
-
-pl("legnica", _Any) ->
-    "legnica.pl";
-
-pl("waw", _Any) ->
-    "waw.pl";
-
-pl("zgora", _Any) ->
-    "zgora.pl";
-
-pl("cieszyn", _Any) ->
-    "cieszyn.pl";
-
-pl("slask", _Any) ->
-    "slask.pl";
-
-pl("nowaruda", _Any) ->
-    "nowaruda.pl";
-
-pl("net", _Any) ->
-    "net.pl";
-
-pl("pruszkow", _Any) ->
-    "pruszkow.pl";
-
-pl("podhale", _Any) ->
-    "podhale.pl";
-
-pl("sex", _Any) ->
-    "sex.pl";
-
-pl("swidnica", _Any) ->
-    "swidnica.pl";
-
-pl("katowice", _Any) ->
-    "katowice.pl";
-
-pl("org", _Any) ->
-    "org.pl";
-
-pl("malopolska", _Any) ->
-    "malopolska.pl";
-
-pl("rybnik", _Any) ->
-    "rybnik.pl";
-
-pl("nom", _Any) ->
-    "nom.pl";
-
-pl("pulawy", _Any) ->
-    "pulawy.pl";
-
-pl("gorlice", _Any) ->
-    "gorlice.pl";
-
-pl("naklo", _Any) ->
-    "naklo.pl";
-
-pl("lebork", _Any) ->
-    "lebork.pl";
-
-pl("media", _Any) ->
-    "media.pl";
-
-pl("przeworsk", _Any) ->
-    "przeworsk.pl";
-
-pl("mazowsze", _Any) ->
-    "mazowsze.pl";
-
-pl("aid", _Any) ->
-    "aid.pl";
-
-pl("lomza", _Any) ->
-    "lomza.pl";
-
-pl("wroc", _Any) ->
-    "wroc.pl";
-
-pl("turek", _Any) ->
-    "turek.pl";
-
-pl("beskidy", _Any) ->
-    "beskidy.pl";
-
-pl("sejny", _Any) ->
-    "sejny.pl";
-
-pl("realestate", _Any) ->
-    "realestate.pl";
-
-pl("zakopane", _Any) ->
-    "zakopane.pl";
-
-pl("zarow", _Any) ->
-    "zarow.pl";
-
-pl("mazury", _Any) ->
-    "mazury.pl";
-
-pl("opole", _Any) ->
-    "opole.pl";
-
-pl("warszawa", _Any) ->
-    "warszawa.pl";
-
-pl("zachpomor", _Any) ->
-    "zachpomor.pl";
-
-pl("pomorze", _Any) ->
-    "pomorze.pl";
-
-pl("wegrow", _Any) ->
-    "wegrow.pl";
-
-pl("slupsk", _Any) ->
-    "slupsk.pl";
-
-pl("sosnowiec", _Any) ->
-    "sosnowiec.pl";
-
-pl("mbone", _Any) ->
-    "mbone.pl";
-
-pl("pila", _Any) ->
-    "pila.pl";
-
-pl("olecko", _Any) ->
-    "olecko.pl";
-
-pl("konin", _Any) ->
-    "konin.pl";
-
-pl("lubin", _Any) ->
-    "lubin.pl";
-
-pl("sopot", _Any) ->
-    "sopot.pl";
-
-pl("poznan", _Any) ->
-    "poznan.pl";
-
-pl("gmina", _Any) ->
-    "gmina.pl";
-
-pl("augustow", _Any) ->
-    "augustow.pl";
-
-pl("bytom", _Any) ->
-    "bytom.pl";
-
-pl("gdynia", _Any) ->
-    "gdynia.pl";
-
-pl("pisz", _Any) ->
-    "pisz.pl";
-
-pl("med", _Any) ->
-    "med.pl";
-
-pl("bialowieza", _Any) ->
-    "bialowieza.pl";
-
-pl("szczytno", _Any) ->
-    "szczytno.pl";
-
-pl("wroclaw", _Any) ->
-    "wroclaw.pl";
-
-pl("krakow", _Any) ->
-    "krakow.pl";
-
-pl("swiebodzin", _Any) ->
-    "swiebodzin.pl";
-
-pl("klodzko", _Any) ->
-    "klodzko.pl";
-
-pl("ketrzyn", _Any) ->
-    "ketrzyn.pl";
-
-pl("ilawa", _Any) ->
-    "ilawa.pl";
-
-pl("pc", _Any) ->
-    "pc.pl";
-
-pl("szczecin", _Any) ->
-    "szczecin.pl";
-
-pl("powiat", _Any) ->
-    "powiat.pl";
-
-pl("wolomin", _Any) ->
-    "wolomin.pl";
-
-pl("rel", _Any) ->
-    "rel.pl";
-
-pl("kolobrzeg", _Any) ->
-    "kolobrzeg.pl";
-
-pl("bydgoszcz", _Any) ->
-    "bydgoszcz.pl";
-
-pl("wloclawek", _Any) ->
-    "wloclawek.pl";
-
-pl("priv", _Any) ->
-    "priv.pl";
-
-pl("jgora", _Any) ->
-    "jgora.pl";
-
-pl("pomorskie", _Any) ->
-    "pomorskie.pl";
-
-pl("mielno", _Any) ->
-    "mielno.pl";
-
-pl("kutno", _Any) ->
-    "kutno.pl";
-
-pl("bieszczady", _Any) ->
-    "bieszczady.pl";
-
-pl("agro", _Any) ->
-    "agro.pl";
-
-pl("co", _Any) ->
-    "co.pl";
-
-pl("travel", _Any) ->
-    "travel.pl";
-
-pl("starachowice", _Any) ->
-    "starachowice.pl";
-
-pl("gsm", _Any) ->
-    "gsm.pl";
-
-pl("kepno", _Any) ->
-    "kepno.pl";
-
-pl("kaszuby", _Any) ->
-    "kaszuby.pl";
-
-pl("podlasie", _Any) ->
-    "podlasie.pl";
-
-pl("edu", _Any) ->
-    "edu.pl";
-
-pl("siedlce", _Any) ->
-    "siedlce.pl";
-
-pl("skoczow", _Any) ->
-    "skoczow.pl";
-
-pl("atm", _Any) ->
-    "atm.pl";
-
-pl("radom", _Any) ->
-    "radom.pl";
-
-pl("bedzin", _Any) ->
-    "bedzin.pl";
-
-pl("walbrzych", _Any) ->
-    "walbrzych.pl";
-
-pl("rzeszow", _Any) ->
-    "rzeszow.pl";
-
-pl("glogow", _Any) ->
-    "glogow.pl";
-
-pl("tm", _Any) ->
-    "tm.pl";
-
-pl("bialystok", _Any) ->
-    "bialystok.pl";
-
-pl("sos", _Any) ->
-    "sos.pl";
-
-pl("sklep", _Any) ->
-    "sklep.pl";
-
-pl("usenet", _Any) ->
-    "usenet.pl";
-
-pl("warmia", _Any) ->
-    "warmia.pl";
-
-pl("mielec", _Any) ->
-    "mielec.pl";
-
-pl("czest", _Any) ->
-    "czest.pl";
-
-pl("ustka", _Any) ->
-    "ustka.pl";
-
-pl("gda", _Any) ->
-    "gda.pl";
-
-pl("art", _Any) ->
-    "art.pl";
-
-pl("gniezno", _Any) ->
-    "gniezno.pl";
-
-pl("ostrowiec", _Any) ->
-    "ostrowiec.pl";
-
-pl("turystyka", _Any) ->
-    "turystyka.pl";
-
-pl("zagan", _Any) ->
-    "zagan.pl";
-
-pl("irc", _Any) ->
-    "irc.pl";
-
-pl("auto", _Any) ->
-    "auto.pl";
-
-pl("limanowa", _Any) ->
-    "limanowa.pl";
-
-pl("nieruchomosci", _Any) ->
-    "nieruchomosci.pl";
-
-pl("suwalki", _Any) ->
-    "suwalki.pl";
-
-pl("tarnobrzeg", _Any) ->
-    "tarnobrzeg.pl";
-
-pl("tourism", _Any) ->
-    "tourism.pl";
-
-pl("gdansk", _Any) ->
-    "gdansk.pl";
-
-pl("sanok", _Any) ->
-    "sanok.pl";
-
-pl("grajewo", _Any) ->
-    "grajewo.pl";
-
-pl("ostroleka", _Any) ->
-    "ostroleka.pl";
-
-pl("olkusz", _Any) ->
-    "olkusz.pl";
-
-pl("kartuzy", _Any) ->
-    "kartuzy.pl";
-
-pl("tychy", _Any) ->
-    "tychy.pl";
-
-pl("mil", _Any) ->
-    "mil.pl";
-
-pl("czeladz", _Any) ->
-    "czeladz.pl";
-
-pl("kobierzyce", _Any) ->
-    "kobierzyce.pl";
-
-pl("nysa", _Any) ->
-    "nysa.pl";
-
-pl("wlocl", _Any) ->
-    "wlocl.pl";
-
-pl("elk", _Any) ->
-    "elk.pl";
-
-pl("malbork", _Any) ->
-    "malbork.pl";
-
-pl("lezajsk", _Any) ->
-    "lezajsk.pl";
-
-pl("wielun", _Any) ->
-    "wielun.pl";
-
-pl("kalisz", _Any) ->
-    "kalisz.pl";
-
-pl("mragowo", _Any) ->
-    "mragowo.pl";
-
-pl("tgory", _Any) ->
-    "tgory.pl";
-
-pl("karpacz", _Any) ->
-    "karpacz.pl";
-
-pl("ostroda", _Any) ->
-    "ostroda.pl";
-
-pl("opoczno", _Any) ->
-    "opoczno.pl";
-
-
-pl(_, _) ->
-    "pl".
+    nagano_jp(First, Rest);
+
+jp("ne", _Any) ->
+    "ne.jp";
+
+jp("kumamoto", []) ->
+    "kumamoto.jp";
+jp("kumamoto", Parts) ->
+    [First | Rest] = Parts,
+    kumamoto_jp(First, Rest);
+
+jp("aichi", []) ->
+    "aichi.jp";
+jp("aichi", Parts) ->
+    [First | Rest] = Parts,
+    aichi_jp(First, Rest);
+
+jp("akita", []) ->
+    "akita.jp";
+jp("akita", Parts) ->
+    [First | Rest] = Parts,
+    akita_jp(First, Rest);
+
+jp("kagoshima", []) ->
+    "kagoshima.jp";
+jp("kagoshima", Parts) ->
+    [First | Rest] = Parts,
+    kagoshima_jp(First, Rest);
+
+jp("osaka", []) ->
+    "osaka.jp";
+jp("osaka", Parts) ->
+    [First | Rest] = Parts,
+    osaka_jp(First, Rest);
+
+jp("hokkaido", []) ->
+    "hokkaido.jp";
+jp("hokkaido", Parts) ->
+    [First | Rest] = Parts,
+    hokkaido_jp(First, Rest);
+
+jp("nara", []) ->
+    "nara.jp";
+jp("nara", Parts) ->
+    [First | Rest] = Parts,
+    nara_jp(First, Rest);
+
+jp("tokushima", []) ->
+    "tokushima.jp";
+jp("tokushima", Parts) ->
+    [First | Rest] = Parts,
+    tokushima_jp(First, Rest);
+
+jp("nagasaki", []) ->
+    "nagasaki.jp";
+jp("nagasaki", Parts) ->
+    [First | Rest] = Parts,
+    nagasaki_jp(First, Rest);
+
+jp("ibaraki", []) ->
+    "ibaraki.jp";
+jp("ibaraki", Parts) ->
+    [First | Rest] = Parts,
+    ibaraki_jp(First, Rest);
+
+jp("mie", []) ->
+    "mie.jp";
+jp("mie", Parts) ->
+    [First | Rest] = Parts,
+    mie_jp(First, Rest);
+
+jp("wakayama", []) ->
+    "wakayama.jp";
+jp("wakayama", Parts) ->
+    [First | Rest] = Parts,
+    wakayama_jp(First, Rest);
+
+jp("kanagawa", []) ->
+    "kanagawa.jp";
+jp("kanagawa", Parts) ->
+    [First | Rest] = Parts,
+    kanagawa_jp(First, Rest);
+
+jp("chiba", []) ->
+    "chiba.jp";
+jp("chiba", Parts) ->
+    [First | Rest] = Parts,
+    chiba_jp(First, Rest);
+
+jp("niigata", []) ->
+    "niigata.jp";
+jp("niigata", Parts) ->
+    [First | Rest] = Parts,
+    niigata_jp(First, Rest);
+
+jp("kochi", []) ->
+    "kochi.jp";
+jp("kochi", Parts) ->
+    [First | Rest] = Parts,
+    kochi_jp(First, Rest);
+
+jp("ad", _Any) ->
+    "ad.jp";
+
+jp("okayama", []) ->
+    "okayama.jp";
+jp("okayama", Parts) ->
+    [First | Rest] = Parts,
+    okayama_jp(First, Rest);
+
+jp("kyoto", []) ->
+    "kyoto.jp";
+jp("kyoto", Parts) ->
+    [First | Rest] = Parts,
+    kyoto_jp(First, Rest);
+
+jp("lg", _Any) ->
+    "lg.jp";
+
+jp("iwate", []) ->
+    "iwate.jp";
+jp("iwate", Parts) ->
+    [First | Rest] = Parts,
+    iwate_jp(First, Rest);
+
+jp("yamaguchi", []) ->
+    "yamaguchi.jp";
+jp("yamaguchi", Parts) ->
+    [First | Rest] = Parts,
+    yamaguchi_jp(First, Rest);
+
+jp("or", _Any) ->
+    "or.jp";
+
+jp("oita", []) ->
+    "oita.jp";
+jp("oita", Parts) ->
+    [First | Rest] = Parts,
+    oita_jp(First, Rest);
+
+jp("ishikawa", []) ->
+    "ishikawa.jp";
+jp("ishikawa", Parts) ->
+    [First | Rest] = Parts,
+    ishikawa_jp(First, Rest);
+
+jp("hiroshima", []) ->
+    "hiroshima.jp";
+jp("hiroshima", Parts) ->
+    [First | Rest] = Parts,
+    hiroshima_jp(First, Rest);
+
+jp("shimane", []) ->
+    "shimane.jp";
+jp("shimane", Parts) ->
+    [First | Rest] = Parts,
+    shimane_jp(First, Rest);
+
+jp("yamagata", []) ->
+    "yamagata.jp";
+jp("yamagata", Parts) ->
+    [First | Rest] = Parts,
+    yamagata_jp(First, Rest);
+
+jp("tokyo", []) ->
+    "tokyo.jp";
+jp("tokyo", Parts) ->
+    [First | Rest] = Parts,
+    tokyo_jp(First, Rest);
+
+jp("gr", _Any) ->
+    "gr.jp";
+
+jp("shiga", []) ->
+    "shiga.jp";
+jp("shiga", Parts) ->
+    [First | Rest] = Parts,
+    shiga_jp(First, Rest);
+
+jp("miyazaki", []) ->
+    "miyazaki.jp";
+jp("miyazaki", Parts) ->
+    [First | Rest] = Parts,
+    miyazaki_jp(First, Rest);
+
+jp("yamanashi", []) ->
+    "yamanashi.jp";
+jp("yamanashi", Parts) ->
+    [First | Rest] = Parts,
+    yamanashi_jp(First, Rest);
+
+jp("gunma", []) ->
+    "gunma.jp";
+jp("gunma", Parts) ->
+    [First | Rest] = Parts,
+    gunma_jp(First, Rest);
+
+jp("tochigi", []) ->
+    "tochigi.jp";
+jp("tochigi", Parts) ->
+    [First | Rest] = Parts,
+    tochigi_jp(First, Rest);
+
+jp("shizuoka", []) ->
+    "shizuoka.jp";
+jp("shizuoka", Parts) ->
+    [First | Rest] = Parts,
+    shizuoka_jp(First, Rest);
+
+jp("aomori", []) ->
+    "aomori.jp";
+jp("aomori", Parts) ->
+    [First | Rest] = Parts,
+    aomori_jp(First, Rest);
+
+jp("saitama", []) ->
+    "saitama.jp";
+jp("saitama", Parts) ->
+    [First | Rest] = Parts,
+    saitama_jp(First, Rest);
+
+jp("fukui", []) ->
+    "fukui.jp";
+jp("fukui", Parts) ->
+    [First | Rest] = Parts,
+    fukui_jp(First, Rest);
+
+jp("okinawa", []) ->
+    "okinawa.jp";
+jp("okinawa", Parts) ->
+    [First | Rest] = Parts,
+    okinawa_jp(First, Rest);
+
+jp("toyama", []) ->
+    "toyama.jp";
+jp("toyama", Parts) ->
+    [First | Rest] = Parts,
+    toyama_jp(First, Rest);
+
+jp("hyogo", []) ->
+    "hyogo.jp";
+jp("hyogo", Parts) ->
+    [First | Rest] = Parts,
+    hyogo_jp(First, Rest);
+
+jp("miyagi", []) ->
+    "miyagi.jp";
+jp("miyagi", Parts) ->
+    [First | Rest] = Parts,
+    miyagi_jp(First, Rest);
+
+jp("kagawa", []) ->
+    "kagawa.jp";
+jp("kagawa", Parts) ->
+    [First | Rest] = Parts,
+    kagawa_jp(First, Rest);
+
+jp("tottori", []) ->
+    "tottori.jp";
+jp("tottori", Parts) ->
+    [First | Rest] = Parts,
+    tottori_jp(First, Rest);
+
+jp("co", _Any) ->
+    "co.jp";
+
+jp("ehime", []) ->
+    "ehime.jp";
+jp("ehime", Parts) ->
+    [First | Rest] = Parts,
+    ehime_jp(First, Rest);
+
+jp("go", _Any) ->
+    "go.jp";
+
+jp("blogspot", _Any) ->
+    "blogspot.jp";
+
+
+jp(_, _) ->
+    "jp".
 
 %% regular rules
-gov_pl("po", _Any) ->
-    "po.gov.pl";
+fukushima_jp("kitakata", _Any) ->
+    "kitakata.fukushima.jp";
 
-gov_pl("starostwo", _Any) ->
-    "starostwo.gov.pl";
+fukushima_jp("iitate", _Any) ->
+    "iitate.fukushima.jp";
 
-gov_pl("ug", _Any) ->
-    "ug.gov.pl";
+fukushima_jp("yabuki", _Any) ->
+    "yabuki.fukushima.jp";
 
-gov_pl("upow", _Any) ->
-    "upow.gov.pl";
+fukushima_jp("shimogo", _Any) ->
+    "shimogo.fukushima.jp";
 
-gov_pl("so", _Any) ->
-    "so.gov.pl";
+fukushima_jp("nango", _Any) ->
+    "nango.fukushima.jp";
 
-gov_pl("sr", _Any) ->
-    "sr.gov.pl";
+fukushima_jp("omotego", _Any) ->
+    "omotego.fukushima.jp";
 
-gov_pl("pa", _Any) ->
-    "pa.gov.pl";
+fukushima_jp("koriyama", _Any) ->
+    "koriyama.fukushima.jp";
 
-gov_pl("um", _Any) ->
-    "um.gov.pl";
+fukushima_jp("tenei", _Any) ->
+    "tenei.fukushima.jp";
 
-gov_pl("uw", _Any) ->
-    "uw.gov.pl";
+fukushima_jp("iwaki", _Any) ->
+    "iwaki.fukushima.jp";
 
+fukushima_jp("kunimi", _Any) ->
+    "kunimi.fukushima.jp";
 
-gov_pl(_, _) ->
-    "gov.pl".
+fukushima_jp("tanagura", _Any) ->
+    "tanagura.fukushima.jp";
 
-%% regular rules
-as("gov", _Any) ->
-    "gov.as";
+fukushima_jp("yamatsuri", _Any) ->
+    "yamatsuri.fukushima.jp";
 
+fukushima_jp("kagamiishi", _Any) ->
+    "kagamiishi.fukushima.jp";
 
-as(_, _) ->
-    "as".
+fukushima_jp("hirono", _Any) ->
+    "hirono.fukushima.jp";
 
-%% regular rules
-ph("com", _Any) ->
-    "com.ph";
+fukushima_jp("futaba", _Any) ->
+    "futaba.fukushima.jp";
 
-ph("i", _Any) ->
-    "i.ph";
+fukushima_jp("miharu", _Any) ->
+    "miharu.fukushima.jp";
 
-ph("ngo", _Any) ->
-    "ngo.ph";
+fukushima_jp("sukagawa", _Any) ->
+    "sukagawa.fukushima.jp";
 
-ph("org", _Any) ->
-    "org.ph";
+fukushima_jp("namie", _Any) ->
+    "namie.fukushima.jp";
 
-ph("gov", _Any) ->
-    "gov.ph";
+fukushima_jp("otama", _Any) ->
+    "otama.fukushima.jp";
 
-ph("edu", _Any) ->
-    "edu.ph";
+fukushima_jp("higashi", _Any) ->
+    "higashi.fukushima.jp";
 
-ph("net", _Any) ->
-    "net.ph";
+fukushima_jp("kawamata", _Any) ->
+    "kawamata.fukushima.jp";
 
-ph("mil", _Any) ->
-    "mil.ph";
+fukushima_jp("hanawa", _Any) ->
+    "hanawa.fukushima.jp";
 
+fukushima_jp("okuma", _Any) ->
+    "okuma.fukushima.jp";
 
-ph(_, _) ->
-    "ph".
+fukushima_jp("fukushima", _Any) ->
+    "fukushima.fukushima.jp";
 
-%% regular rules
-gi("ltd", _Any) ->
-    "ltd.gi";
+fukushima_jp("taishin", _Any) ->
+    "taishin.fukushima.jp";
 
-gi("mod", _Any) ->
-    "mod.gi";
+fukushima_jp("koori", _Any) ->
+    "koori.fukushima.jp";
 
-gi("gov", _Any) ->
-    "gov.gi";
+fukushima_jp("samegawa", _Any) ->
+    "samegawa.fukushima.jp";
 
-gi("com", _Any) ->
-    "com.gi";
+fukushima_jp("nishiaizu", _Any) ->
+    "nishiaizu.fukushima.jp";
 
-gi("edu", _Any) ->
-    "edu.gi";
+fukushima_jp("ono", _Any) ->
+    "ono.fukushima.jp";
 
-gi("org", _Any) ->
-    "org.gi";
+fukushima_jp("asakawa", _Any) ->
+    "asakawa.fukushima.jp";
 
+fukushima_jp("hirata", _Any) ->
+    "hirata.fukushima.jp";
 
-gi(_, _) ->
-    "gi".
+fukushima_jp("kitashiobara", _Any) ->
+    "kitashiobara.fukushima.jp";
 
-%% regular rules
-pk("fam", _Any) ->
-    "fam.pk";
+fukushima_jp("aizumisato", _Any) ->
+    "aizumisato.fukushima.jp";
 
-pk("edu", _Any) ->
-    "edu.pk";
+fukushima_jp("aizubange", _Any) ->
+    "aizubange.fukushima.jp";
 
-pk("gop", _Any) ->
-    "gop.pk";
+fukushima_jp("soma", _Any) ->
+    "soma.fukushima.jp";
 
-pk("gob", _Any) ->
-    "gob.pk";
+fukushima_jp("showa", _Any) ->
+    "showa.fukushima.jp";
 
-pk("net", _Any) ->
-    "net.pk";
+fukushima_jp("yamato", _Any) ->
+    "yamato.fukushima.jp";
 
-pk("gov", _Any) ->
-    "gov.pk";
+fukushima_jp("yanaizu", _Any) ->
+    "yanaizu.fukushima.jp";
 
-pk("biz", _Any) ->
-    "biz.pk";
+fukushima_jp("tamakawa", _Any) ->
+    "tamakawa.fukushima.jp";
 
-pk("web", _Any) ->
-    "web.pk";
+fukushima_jp("mishima", _Any) ->
+    "mishima.fukushima.jp";
 
-pk("org", _Any) ->
-    "org.pk";
+fukushima_jp("furudono", _Any) ->
+    "furudono.fukushima.jp";
 
-pk("com", _Any) ->
-    "com.pk";
+fukushima_jp("yugawa", _Any) ->
+    "yugawa.fukushima.jp";
 
-pk("gon", _Any) ->
-    "gon.pk";
+fukushima_jp("date", _Any) ->
+    "date.fukushima.jp";
 
-pk("info", _Any) ->
-    "info.pk";
+fukushima_jp("shirakawa", _Any) ->
+    "shirakawa.fukushima.jp";
 
-pk("gok", _Any) ->
-    "gok.pk";
+fukushima_jp("ishikawa", _Any) ->
+    "ishikawa.fukushima.jp";
 
-pk("gos", _Any) ->
-    "gos.pk";
+fukushima_jp("nishigo", _Any) ->
+    "nishigo.fukushima.jp";
 
+fukushima_jp("kaneyama", _Any) ->
+    "kaneyama.fukushima.jp";
 
-pk(_, _) ->
-    "pk".
+fukushima_jp("izumizaki", _Any) ->
+    "izumizaki.fukushima.jp";
 
-%% regular rules
-bs("gov", _Any) ->
-    "gov.bs";
+fukushima_jp("inawashiro", _Any) ->
+    "inawashiro.fukushima.jp";
 
-bs("com", _Any) ->
-    "com.bs";
+fukushima_jp("bandai", _Any) ->
+    "bandai.fukushima.jp";
 
-bs("net", _Any) ->
-    "net.bs";
-
-bs("org", _Any) ->
-    "org.bs";
-
-bs("edu", _Any) ->
-    "edu.bs";
-
-
-bs(_, _) ->
-    "bs".
-
-%% regular rules
-sg("blogspot", _Any) ->
-    "blogspot.sg";
-
-sg("com", _Any) ->
-    "com.sg";
-
-sg("gov", _Any) ->
-    "gov.sg";
-
-sg("per", _Any) ->
-    "per.sg";
-
-sg("net", _Any) ->
-    "net.sg";
-
-sg("org", _Any) ->
-    "org.sg";
-
-sg("edu", _Any) ->
-    "edu.sg";
+fukushima_jp("aizuwakamatsu", _Any) ->
+    "aizuwakamatsu.fukushima.jp";
 
 
-sg(_, _) ->
-    "sg".
+fukushima_jp(_, _) ->
+    "fukushima.jp".
 
 %% regular rules
-ir("gov", _Any) ->
-    "gov.ir";
+fukuoka_jp("koga", _Any) ->
+    "koga.fukuoka.jp";
 
-ir("id", _Any) ->
-    "id.ir";
+fukuoka_jp("inatsuki", _Any) ->
+    "inatsuki.fukuoka.jp";
 
-ir("sch", _Any) ->
-    "sch.ir";
+fukuoka_jp("toyotsu", _Any) ->
+    "toyotsu.fukuoka.jp";
 
-ir("co", _Any) ->
-    "co.ir";
+fukuoka_jp("oto", _Any) ->
+    "oto.fukuoka.jp";
 
-ir("org", _Any) ->
-    "org.ir";
+fukuoka_jp("fukuchi", _Any) ->
+    "fukuchi.fukuoka.jp";
 
-ir("ac", _Any) ->
-    "ac.ir";
+fukuoka_jp("iizuka", _Any) ->
+    "iizuka.fukuoka.jp";
 
-ir("net", _Any) ->
-    "net.ir";
+fukuoka_jp("okawa", _Any) ->
+    "okawa.fukuoka.jp";
+
+fukuoka_jp("soeda", _Any) ->
+    "soeda.fukuoka.jp";
+
+fukuoka_jp("yanagawa", _Any) ->
+    "yanagawa.fukuoka.jp";
+
+fukuoka_jp("kawara", _Any) ->
+    "kawara.fukuoka.jp";
+
+fukuoka_jp("sasaguri", _Any) ->
+    "sasaguri.fukuoka.jp";
+
+fukuoka_jp("hisayama", _Any) ->
+    "hisayama.fukuoka.jp";
+
+fukuoka_jp("saigawa", _Any) ->
+    "saigawa.fukuoka.jp";
+
+fukuoka_jp("onga", _Any) ->
+    "onga.fukuoka.jp";
+
+fukuoka_jp("minami", _Any) ->
+    "minami.fukuoka.jp";
+
+fukuoka_jp("kasuga", _Any) ->
+    "kasuga.fukuoka.jp";
+
+fukuoka_jp("takata", _Any) ->
+    "takata.fukuoka.jp";
+
+fukuoka_jp("miyawaka", _Any) ->
+    "miyawaka.fukuoka.jp";
+
+fukuoka_jp("ogori", _Any) ->
+    "ogori.fukuoka.jp";
+
+fukuoka_jp("shonai", _Any) ->
+    "shonai.fukuoka.jp";
+
+fukuoka_jp("nishi", _Any) ->
+    "nishi.fukuoka.jp";
+
+fukuoka_jp("munakata", _Any) ->
+    "munakata.fukuoka.jp";
+
+fukuoka_jp("shinyoshitomi", _Any) ->
+    "shinyoshitomi.fukuoka.jp";
+
+fukuoka_jp("yukuhashi", _Any) ->
+    "yukuhashi.fukuoka.jp";
+
+fukuoka_jp("chikugo", _Any) ->
+    "chikugo.fukuoka.jp";
+
+fukuoka_jp("buzen", _Any) ->
+    "buzen.fukuoka.jp";
+
+fukuoka_jp("kaho", _Any) ->
+    "kaho.fukuoka.jp";
+
+fukuoka_jp("kurogi", _Any) ->
+    "kurogi.fukuoka.jp";
+
+fukuoka_jp("dazaifu", _Any) ->
+    "dazaifu.fukuoka.jp";
+
+fukuoka_jp("chikuho", _Any) ->
+    "chikuho.fukuoka.jp";
+
+fukuoka_jp("shingu", _Any) ->
+    "shingu.fukuoka.jp";
+
+fukuoka_jp("nogata", _Any) ->
+    "nogata.fukuoka.jp";
+
+fukuoka_jp("sue", _Any) ->
+    "sue.fukuoka.jp";
+
+fukuoka_jp("hirokawa", _Any) ->
+    "hirokawa.fukuoka.jp";
+
+fukuoka_jp("higashi", _Any) ->
+    "higashi.fukuoka.jp";
+
+fukuoka_jp("tsuiki", _Any) ->
+    "tsuiki.fukuoka.jp";
+
+fukuoka_jp("hakata", _Any) ->
+    "hakata.fukuoka.jp";
+
+fukuoka_jp("nakagawa", _Any) ->
+    "nakagawa.fukuoka.jp";
+
+fukuoka_jp("tachiarai", _Any) ->
+    "tachiarai.fukuoka.jp";
+
+fukuoka_jp("chuo", _Any) ->
+    "chuo.fukuoka.jp";
+
+fukuoka_jp("umi", _Any) ->
+    "umi.fukuoka.jp";
+
+fukuoka_jp("chikushino", _Any) ->
+    "chikushino.fukuoka.jp";
+
+fukuoka_jp("usui", _Any) ->
+    "usui.fukuoka.jp";
+
+fukuoka_jp("miyako", _Any) ->
+    "miyako.fukuoka.jp";
+
+fukuoka_jp("toho", _Any) ->
+    "toho.fukuoka.jp";
+
+fukuoka_jp("okagaki", _Any) ->
+    "okagaki.fukuoka.jp";
+
+fukuoka_jp("mizumaki", _Any) ->
+    "mizumaki.fukuoka.jp";
+
+fukuoka_jp("omuta", _Any) ->
+    "omuta.fukuoka.jp";
+
+fukuoka_jp("oki", _Any) ->
+    "oki.fukuoka.jp";
+
+fukuoka_jp("miyama", _Any) ->
+    "miyama.fukuoka.jp";
+
+fukuoka_jp("kurate", _Any) ->
+    "kurate.fukuoka.jp";
+
+fukuoka_jp("chikujo", _Any) ->
+    "chikujo.fukuoka.jp";
+
+fukuoka_jp("keisen", _Any) ->
+    "keisen.fukuoka.jp";
+
+fukuoka_jp("chikuzen", _Any) ->
+    "chikuzen.fukuoka.jp";
+
+fukuoka_jp("yame", _Any) ->
+    "yame.fukuoka.jp";
+
+fukuoka_jp("ukiha", _Any) ->
+    "ukiha.fukuoka.jp";
+
+fukuoka_jp("yamada", _Any) ->
+    "yamada.fukuoka.jp";
+
+fukuoka_jp("tagawa", _Any) ->
+    "tagawa.fukuoka.jp";
+
+fukuoka_jp("nakama", _Any) ->
+    "nakama.fukuoka.jp";
+
+fukuoka_jp("ashiya", _Any) ->
+    "ashiya.fukuoka.jp";
+
+fukuoka_jp("kurume", _Any) ->
+    "kurume.fukuoka.jp";
+
+fukuoka_jp("onojo", _Any) ->
+    "onojo.fukuoka.jp";
+
+fukuoka_jp("kasuya", _Any) ->
+    "kasuya.fukuoka.jp";
 
 
-ir(_, _) ->
-    "ir".
+fukuoka_jp(_, _) ->
+    "fukuoka.jp".
 
 %% regular rules
-is("gov", _Any) ->
-    "gov.is";
+saga_jp("hamatama", _Any) ->
+    "hamatama.saga.jp";
 
-is("com", _Any) ->
-    "com.is";
+saga_jp("shiroishi", _Any) ->
+    "shiroishi.saga.jp";
 
-is("cupcake", _Any) ->
-    "cupcake.is";
+saga_jp("taku", _Any) ->
+    "taku.saga.jp";
 
-is("org", _Any) ->
-    "org.is";
+saga_jp("fukudomi", _Any) ->
+    "fukudomi.saga.jp";
 
-is("edu", _Any) ->
-    "edu.is";
+saga_jp("hizen", _Any) ->
+    "hizen.saga.jp";
 
-is("net", _Any) ->
-    "net.is";
+saga_jp("genkai", _Any) ->
+    "genkai.saga.jp";
 
-is("int", _Any) ->
-    "int.is";
+saga_jp("ariake", _Any) ->
+    "ariake.saga.jp";
 
+saga_jp("kitagata", _Any) ->
+    "kitagata.saga.jp";
 
-is(_, _) ->
-    "is".
+saga_jp("omachi", _Any) ->
+    "omachi.saga.jp";
 
-%% regular rules
-int("eu", _Any) ->
-    "eu.int";
+saga_jp("arita", _Any) ->
+    "arita.saga.jp";
 
+saga_jp("saga", _Any) ->
+    "saga.saga.jp";
 
-int(_, _) ->
-    "int".
+saga_jp("ogi", _Any) ->
+    "ogi.saga.jp";
 
-%% regular rules
-lr("com", _Any) ->
-    "com.lr";
+saga_jp("kitahata", _Any) ->
+    "kitahata.saga.jp";
 
-lr("gov", _Any) ->
-    "gov.lr";
+saga_jp("tosu", _Any) ->
+    "tosu.saga.jp";
 
-lr("net", _Any) ->
-    "net.lr";
+saga_jp("tara", _Any) ->
+    "tara.saga.jp";
 
-lr("org", _Any) ->
-    "org.lr";
+saga_jp("kamimine", _Any) ->
+    "kamimine.saga.jp";
 
-lr("edu", _Any) ->
-    "edu.lr";
+saga_jp("yoshinogari", _Any) ->
+    "yoshinogari.saga.jp";
 
+saga_jp("ouchi", _Any) ->
+    "ouchi.saga.jp";
 
-lr(_, _) ->
-    "lr".
+saga_jp("kouhoku", _Any) ->
+    "kouhoku.saga.jp";
 
-%% regular rules
-ae("mil", _Any) ->
-    "mil.ae";
+saga_jp("kyuragi", _Any) ->
+    "kyuragi.saga.jp";
 
-ae("net", _Any) ->
-    "net.ae";
+saga_jp("kashima", _Any) ->
+    "kashima.saga.jp";
 
-ae("sch", _Any) ->
-    "sch.ae";
+saga_jp("imari", _Any) ->
+    "imari.saga.jp";
 
-ae("ac", _Any) ->
-    "ac.ae";
+saga_jp("kanzaki", _Any) ->
+    "kanzaki.saga.jp";
 
-ae("co", _Any) ->
-    "co.ae";
+saga_jp("nishiarita", _Any) ->
+    "nishiarita.saga.jp";
 
-ae("org", _Any) ->
-    "org.ae";
+saga_jp("karatsu", _Any) ->
+    "karatsu.saga.jp";
 
-ae("gov", _Any) ->
-    "gov.ae";
-
-
-ae(_, _) ->
-    "ae".
-
-%% regular rules
-kn("gov", _Any) ->
-    "gov.kn";
-
-kn("net", _Any) ->
-    "net.kn";
-
-kn("edu", _Any) ->
-    "edu.kn";
-
-kn("org", _Any) ->
-    "org.kn";
+saga_jp("kiyama", _Any) ->
+    "kiyama.saga.jp";
 
 
-kn(_, _) ->
-    "kn".
+saga_jp(_, _) ->
+    "saga.jp".
 
 %% regular rules
-tl("gov", _Any) ->
-    "gov.tl";
+gifu_jp("seki", _Any) ->
+    "seki.gifu.jp";
+
+gifu_jp("anpachi", _Any) ->
+    "anpachi.gifu.jp";
+
+gifu_jp("nakatsugawa", _Any) ->
+    "nakatsugawa.gifu.jp";
+
+gifu_jp("toki", _Any) ->
+    "toki.gifu.jp";
+
+gifu_jp("gifu", _Any) ->
+    "gifu.gifu.jp";
+
+gifu_jp("yoro", _Any) ->
+    "yoro.gifu.jp";
+
+gifu_jp("godo", _Any) ->
+    "godo.gifu.jp";
+
+gifu_jp("ogaki", _Any) ->
+    "ogaki.gifu.jp";
+
+gifu_jp("kawaue", _Any) ->
+    "kawaue.gifu.jp";
+
+gifu_jp("hashima", _Any) ->
+    "hashima.gifu.jp";
+
+gifu_jp("mino", _Any) ->
+    "mino.gifu.jp";
+
+gifu_jp("kasahara", _Any) ->
+    "kasahara.gifu.jp";
+
+gifu_jp("yaotsu", _Any) ->
+    "yaotsu.gifu.jp";
+
+gifu_jp("mitake", _Any) ->
+    "mitake.gifu.jp";
+
+gifu_jp("ginan", _Any) ->
+    "ginan.gifu.jp";
+
+gifu_jp("takayama", _Any) ->
+    "takayama.gifu.jp";
+
+gifu_jp("sakahogi", _Any) ->
+    "sakahogi.gifu.jp";
+
+gifu_jp("kakamigahara", _Any) ->
+    "kakamigahara.gifu.jp";
+
+gifu_jp("wanouchi", _Any) ->
+    "wanouchi.gifu.jp";
+
+gifu_jp("kitagata", _Any) ->
+    "kitagata.gifu.jp";
+
+gifu_jp("sekigahara", _Any) ->
+    "sekigahara.gifu.jp";
+
+gifu_jp("mizunami", _Any) ->
+    "mizunami.gifu.jp";
+
+gifu_jp("tomika", _Any) ->
+    "tomika.gifu.jp";
+
+gifu_jp("tarui", _Any) ->
+    "tarui.gifu.jp";
+
+gifu_jp("motosu", _Any) ->
+    "motosu.gifu.jp";
+
+gifu_jp("kasamatsu", _Any) ->
+    "kasamatsu.gifu.jp";
+
+gifu_jp("higashishirakawa", _Any) ->
+    "higashishirakawa.gifu.jp";
+
+gifu_jp("minokamo", _Any) ->
+    "minokamo.gifu.jp";
+
+gifu_jp("shirakawa", _Any) ->
+    "shirakawa.gifu.jp";
+
+gifu_jp("yamagata", _Any) ->
+    "yamagata.gifu.jp";
+
+gifu_jp("hida", _Any) ->
+    "hida.gifu.jp";
+
+gifu_jp("kani", _Any) ->
+    "kani.gifu.jp";
+
+gifu_jp("hichiso", _Any) ->
+    "hichiso.gifu.jp";
+
+gifu_jp("ena", _Any) ->
+    "ena.gifu.jp";
+
+gifu_jp("gujo", _Any) ->
+    "gujo.gifu.jp";
+
+gifu_jp("ibigawa", _Any) ->
+    "ibigawa.gifu.jp";
+
+gifu_jp("tajimi", _Any) ->
+    "tajimi.gifu.jp";
+
+gifu_jp("ikeda", _Any) ->
+    "ikeda.gifu.jp";
 
 
-tl(_, _) ->
-    "tl".
-
-%% regular rules
-se("d", _Any) ->
-    "d.se";
-
-se("org", _Any) ->
-    "org.se";
-
-se("f", _Any) ->
-    "f.se";
-
-se("tm", _Any) ->
-    "tm.se";
-
-se("z", _Any) ->
-    "z.se";
-
-se("bd", _Any) ->
-    "bd.se";
-
-se("lanbib", _Any) ->
-    "lanbib.se";
-
-se("parti", _Any) ->
-    "parti.se";
-
-se("blogspot", _Any) ->
-    "blogspot.se";
-
-se("s", _Any) ->
-    "s.se";
-
-se("press", _Any) ->
-    "press.se";
-
-se("o", _Any) ->
-    "o.se";
-
-se("pp", _Any) ->
-    "pp.se";
-
-se("y", _Any) ->
-    "y.se";
-
-se("i", _Any) ->
-    "i.se";
-
-se("kommunalforbund", _Any) ->
-    "kommunalforbund.se";
-
-se("m", _Any) ->
-    "m.se";
-
-se("brand", _Any) ->
-    "brand.se";
-
-se("g", _Any) ->
-    "g.se";
-
-se("t", _Any) ->
-    "t.se";
-
-se("fhsk", _Any) ->
-    "fhsk.se";
-
-se("ac", _Any) ->
-    "ac.se";
-
-se("w", _Any) ->
-    "w.se";
-
-se("l", _Any) ->
-    "l.se";
-
-se("u", _Any) ->
-    "u.se";
-
-se("komvux", _Any) ->
-    "komvux.se";
-
-se("c", _Any) ->
-    "c.se";
-
-se("x", _Any) ->
-    "x.se";
-
-se("k", _Any) ->
-    "k.se";
-
-se("a", _Any) ->
-    "a.se";
-
-se("fh", _Any) ->
-    "fh.se";
-
-se("r", _Any) ->
-    "r.se";
-
-se("h", _Any) ->
-    "h.se";
-
-se("n", _Any) ->
-    "n.se";
-
-se("com", _Any) ->
-    "com.se";
-
-se("e", _Any) ->
-    "e.se";
-
-se("fhv", _Any) ->
-    "fhv.se";
-
-se("b", _Any) ->
-    "b.se";
-
-se("naturbruksgymn", _Any) ->
-    "naturbruksgymn.se";
-
-se("komforb", _Any) ->
-    "komforb.se";
-
-se("p", _Any) ->
-    "p.se";
-
-
-se(_, _) ->
-    "se".
+gifu_jp(_, _) ->
+    "gifu.jp".
 
 %% regular rules
+nagano_jp("achi", _Any) ->
+    "achi.nagano.jp";
+
+nagano_jp("omi", _Any) ->
+    "omi.nagano.jp";
+
+nagano_jp("takamori", _Any) ->
+    "takamori.nagano.jp";
+
+nagano_jp("nozawaonsen", _Any) ->
+    "nozawaonsen.nagano.jp";
+
+nagano_jp("chikuhoku", _Any) ->
+    "chikuhoku.nagano.jp";
+
+nagano_jp("azumino", _Any) ->
+    "azumino.nagano.jp";
+
+nagano_jp("iida", _Any) ->
+    "iida.nagano.jp";
+
+nagano_jp("aoki", _Any) ->
+    "aoki.nagano.jp";
+
+nagano_jp("nagiso", _Any) ->
+    "nagiso.nagano.jp";
+
+nagano_jp("chino", _Any) ->
+    "chino.nagano.jp";
+
+nagano_jp("ikusaka", _Any) ->
+    "ikusaka.nagano.jp";
+
+nagano_jp("otaki", _Any) ->
+    "otaki.nagano.jp";
+
+nagano_jp("iiyama", _Any) ->
+    "iiyama.nagano.jp";
+
+nagano_jp("matsumoto", _Any) ->
+    "matsumoto.nagano.jp";
+
+nagano_jp("minowa", _Any) ->
+    "minowa.nagano.jp";
+
+nagano_jp("iizuna", _Any) ->
+    "iizuna.nagano.jp";
+
+nagano_jp("hara", _Any) ->
+    "hara.nagano.jp";
+
+nagano_jp("karuizawa", _Any) ->
+    "karuizawa.nagano.jp";
+
+nagano_jp("matsukawa", _Any) ->
+    "matsukawa.nagano.jp";
+
+nagano_jp("hakuba", _Any) ->
+    "hakuba.nagano.jp";
+
+nagano_jp("ina", _Any) ->
+    "ina.nagano.jp";
+
+nagano_jp("sakuho", _Any) ->
+    "sakuho.nagano.jp";
+
+nagano_jp("minamimaki", _Any) ->
+    "minamimaki.nagano.jp";
+
+nagano_jp("kawakami", _Any) ->
+    "kawakami.nagano.jp";
+
+nagano_jp("suzaka", _Any) ->
+    "suzaka.nagano.jp";
+
+nagano_jp("saku", _Any) ->
+    "saku.nagano.jp";
+
+nagano_jp("sakaki", _Any) ->
+    "sakaki.nagano.jp";
+
+nagano_jp("kiso", _Any) ->
+    "kiso.nagano.jp";
+
+nagano_jp("asahi", _Any) ->
+    "asahi.nagano.jp";
+
+nagano_jp("okaya", _Any) ->
+    "okaya.nagano.jp";
+
+nagano_jp("agematsu", _Any) ->
+    "agematsu.nagano.jp";
+
+nagano_jp("takayama", _Any) ->
+    "takayama.nagano.jp";
+
+nagano_jp("miasa", _Any) ->
+    "miasa.nagano.jp";
+
+nagano_jp("ueda", _Any) ->
+    "ueda.nagano.jp";
+
+nagano_jp("suwa", _Any) ->
+    "suwa.nagano.jp";
+
+nagano_jp("togura", _Any) ->
+    "togura.nagano.jp";
+
+nagano_jp("kitaaiki", _Any) ->
+    "kitaaiki.nagano.jp";
+
+nagano_jp("minamiaiki", _Any) ->
+    "minamiaiki.nagano.jp";
+
+nagano_jp("ooshika", _Any) ->
+    "ooshika.nagano.jp";
+
+nagano_jp("ookuwa", _Any) ->
+    "ookuwa.nagano.jp";
+
+nagano_jp("shinanomachi", _Any) ->
+    "shinanomachi.nagano.jp";
+
+nagano_jp("yasaka", _Any) ->
+    "yasaka.nagano.jp";
+
+nagano_jp("yamagata", _Any) ->
+    "yamagata.nagano.jp";
+
+nagano_jp("kisofukushima", _Any) ->
+    "kisofukushima.nagano.jp";
+
+nagano_jp("tomi", _Any) ->
+    "tomi.nagano.jp";
+
+nagano_jp("chikuma", _Any) ->
+    "chikuma.nagano.jp";
+
+nagano_jp("yamanouchi", _Any) ->
+    "yamanouchi.nagano.jp";
+
+nagano_jp("yasuoka", _Any) ->
+    "yasuoka.nagano.jp";
+
+nagano_jp("wada", _Any) ->
+    "wada.nagano.jp";
+
+nagano_jp("nakano", _Any) ->
+    "nakano.nagano.jp";
+
+nagano_jp("shimosuwa", _Any) ->
+    "shimosuwa.nagano.jp";
+
+nagano_jp("ogawa", _Any) ->
+    "ogawa.nagano.jp";
+
+nagano_jp("komoro", _Any) ->
+    "komoro.nagano.jp";
+
+nagano_jp("sakae", _Any) ->
+    "sakae.nagano.jp";
+
+nagano_jp("minamiminowa", _Any) ->
+    "minamiminowa.nagano.jp";
+
+nagano_jp("tateshina", _Any) ->
+    "tateshina.nagano.jp";
+
+nagano_jp("ikeda", _Any) ->
+    "ikeda.nagano.jp";
+
+nagano_jp("obuse", _Any) ->
+    "obuse.nagano.jp";
+
+nagano_jp("omachi", _Any) ->
+    "omachi.nagano.jp";
+
+nagano_jp("shiojiri", _Any) ->
+    "shiojiri.nagano.jp";
+
+nagano_jp("nagano", _Any) ->
+    "nagano.nagano.jp";
+
+nagano_jp("anan", _Any) ->
+    "anan.nagano.jp";
+
+nagano_jp("otari", _Any) ->
+    "otari.nagano.jp";
+
+nagano_jp("komagane", _Any) ->
+    "komagane.nagano.jp";
+
+nagano_jp("mochizuki", _Any) ->
+    "mochizuki.nagano.jp";
+
+nagano_jp("nakagawa", _Any) ->
+    "nakagawa.nagano.jp";
+
+nagano_jp("miyada", _Any) ->
+    "miyada.nagano.jp";
+
+nagano_jp("iijima", _Any) ->
+    "iijima.nagano.jp";
+
+nagano_jp("tatsuno", _Any) ->
+    "tatsuno.nagano.jp";
+
+nagano_jp("fujimi", _Any) ->
+    "fujimi.nagano.jp";
+
+nagano_jp("takagi", _Any) ->
+    "takagi.nagano.jp";
+
+nagano_jp("hiraya", _Any) ->
+    "hiraya.nagano.jp";
+
+nagano_jp("nagawa", _Any) ->
+    "nagawa.nagano.jp";
+
+nagano_jp("togakushi", _Any) ->
+    "togakushi.nagano.jp";
+
+nagano_jp("miyota", _Any) ->
+    "miyota.nagano.jp";
+
+
+nagano_jp(_, _) ->
+    "nagano.jp".
+
+%% regular rules
+kumamoto_jp("sumoto", _Any) ->
+    "sumoto.kumamoto.jp";
+
+kumamoto_jp("yatsushiro", _Any) ->
+    "yatsushiro.kumamoto.jp";
+
+kumamoto_jp("ozu", _Any) ->
+    "ozu.kumamoto.jp";
+
+kumamoto_jp("mifune", _Any) ->
+    "mifune.kumamoto.jp";
+
+kumamoto_jp("kosa", _Any) ->
+    "kosa.kumamoto.jp";
+
+kumamoto_jp("nishihara", _Any) ->
+    "nishihara.kumamoto.jp";
+
+kumamoto_jp("minamioguni", _Any) ->
+    "minamioguni.kumamoto.jp";
+
+kumamoto_jp("takamori", _Any) ->
+    "takamori.kumamoto.jp";
+
+kumamoto_jp("kikuchi", _Any) ->
+    "kikuchi.kumamoto.jp";
+
+kumamoto_jp("choyo", _Any) ->
+    "choyo.kumamoto.jp";
+
+kumamoto_jp("arao", _Any) ->
+    "arao.kumamoto.jp";
+
+kumamoto_jp("amakusa", _Any) ->
+    "amakusa.kumamoto.jp";
+
+kumamoto_jp("kamiamakusa", _Any) ->
+    "kamiamakusa.kumamoto.jp";
+
+kumamoto_jp("nagasu", _Any) ->
+    "nagasu.kumamoto.jp";
+
+kumamoto_jp("hitoyoshi", _Any) ->
+    "hitoyoshi.kumamoto.jp";
+
+kumamoto_jp("minamata", _Any) ->
+    "minamata.kumamoto.jp";
+
+kumamoto_jp("kumamoto", _Any) ->
+    "kumamoto.kumamoto.jp";
+
+kumamoto_jp("aso", _Any) ->
+    "aso.kumamoto.jp";
+
+kumamoto_jp("oguni", _Any) ->
+    "oguni.kumamoto.jp";
+
+kumamoto_jp("mashiki", _Any) ->
+    "mashiki.kumamoto.jp";
+
+kumamoto_jp("uki", _Any) ->
+    "uki.kumamoto.jp";
+
+kumamoto_jp("kashima", _Any) ->
+    "kashima.kumamoto.jp";
+
+kumamoto_jp("yamaga", _Any) ->
+    "yamaga.kumamoto.jp";
+
+kumamoto_jp("yamato", _Any) ->
+    "yamato.kumamoto.jp";
+
+kumamoto_jp("uto", _Any) ->
+    "uto.kumamoto.jp";
+
+kumamoto_jp("gyokuto", _Any) ->
+    "gyokuto.kumamoto.jp";
+
+
+kumamoto_jp(_, _) ->
+    "kumamoto.jp".
+
+%% regular rules
+aichi_jp("obu", _Any) ->
+    "obu.aichi.jp";
+
+aichi_jp("asuke", _Any) ->
+    "asuke.aichi.jp";
+
+aichi_jp("owariasahi", _Any) ->
+    "owariasahi.aichi.jp";
+
+aichi_jp("ama", _Any) ->
+    "ama.aichi.jp";
+
+aichi_jp("iwakura", _Any) ->
+    "iwakura.aichi.jp";
+
+aichi_jp("togo", _Any) ->
+    "togo.aichi.jp";
+
+aichi_jp("tobishima", _Any) ->
+    "tobishima.aichi.jp";
+
+aichi_jp("shinshiro", _Any) ->
+    "shinshiro.aichi.jp";
+
+aichi_jp("miyoshi", _Any) ->
+    "miyoshi.aichi.jp";
+
+aichi_jp("toyota", _Any) ->
+    "toyota.aichi.jp";
+
+aichi_jp("anjo", _Any) ->
+    "anjo.aichi.jp";
+
+aichi_jp("kiyosu", _Any) ->
+    "kiyosu.aichi.jp";
+
+aichi_jp("gamagori", _Any) ->
+    "gamagori.aichi.jp";
+
+aichi_jp("toyohashi", _Any) ->
+    "toyohashi.aichi.jp";
+
+aichi_jp("hazu", _Any) ->
+    "hazu.aichi.jp";
+
+aichi_jp("tokai", _Any) ->
+    "tokai.aichi.jp";
+
+aichi_jp("chita", _Any) ->
+    "chita.aichi.jp";
+
+aichi_jp("aisai", _Any) ->
+    "aisai.aichi.jp";
+
+aichi_jp("tokoname", _Any) ->
+    "tokoname.aichi.jp";
+
+aichi_jp("mihama", _Any) ->
+    "mihama.aichi.jp";
+
+aichi_jp("nishio", _Any) ->
+    "nishio.aichi.jp";
+
+aichi_jp("inuyama", _Any) ->
+    "inuyama.aichi.jp";
+
+aichi_jp("toei", _Any) ->
+    "toei.aichi.jp";
+
+aichi_jp("kota", _Any) ->
+    "kota.aichi.jp";
+
+aichi_jp("chiryu", _Any) ->
+    "chiryu.aichi.jp";
+
+aichi_jp("handa", _Any) ->
+    "handa.aichi.jp";
+
+aichi_jp("toyokawa", _Any) ->
+    "toyokawa.aichi.jp";
+
+aichi_jp("oguchi", _Any) ->
+    "oguchi.aichi.jp";
+
+aichi_jp("komaki", _Any) ->
+    "komaki.aichi.jp";
+
+aichi_jp("kanie", _Any) ->
+    "kanie.aichi.jp";
+
+aichi_jp("tsushima", _Any) ->
+    "tsushima.aichi.jp";
+
+aichi_jp("toyone", _Any) ->
+    "toyone.aichi.jp";
+
+aichi_jp("toyoake", _Any) ->
+    "toyoake.aichi.jp";
+
+aichi_jp("takahama", _Any) ->
+    "takahama.aichi.jp";
+
+aichi_jp("hekinan", _Any) ->
+    "hekinan.aichi.jp";
+
+aichi_jp("isshiki", _Any) ->
+    "isshiki.aichi.jp";
+
+aichi_jp("ichinomiya", _Any) ->
+    "ichinomiya.aichi.jp";
+
+aichi_jp("oharu", _Any) ->
+    "oharu.aichi.jp";
+
+aichi_jp("nisshin", _Any) ->
+    "nisshin.aichi.jp";
+
+aichi_jp("shitara", _Any) ->
+    "shitara.aichi.jp";
+
+aichi_jp("shikatsu", _Any) ->
+    "shikatsu.aichi.jp";
+
+aichi_jp("tahara", _Any) ->
+    "tahara.aichi.jp";
+
+aichi_jp("okazaki", _Any) ->
+    "okazaki.aichi.jp";
+
+aichi_jp("inazawa", _Any) ->
+    "inazawa.aichi.jp";
+
+aichi_jp("yatomi", _Any) ->
+    "yatomi.aichi.jp";
+
+aichi_jp("kariya", _Any) ->
+    "kariya.aichi.jp";
+
+aichi_jp("kasugai", _Any) ->
+    "kasugai.aichi.jp";
+
+aichi_jp("fuso", _Any) ->
+    "fuso.aichi.jp";
+
+aichi_jp("konan", _Any) ->
+    "konan.aichi.jp";
+
+aichi_jp("seto", _Any) ->
+    "seto.aichi.jp";
+
+aichi_jp("kira", _Any) ->
+    "kira.aichi.jp";
+
+aichi_jp("higashiura", _Any) ->
+    "higashiura.aichi.jp";
+
+
+aichi_jp(_, _) ->
+    "aichi.jp".
+
+%% regular rules
+akita_jp("noshiro", _Any) ->
+    "noshiro.akita.jp";
+
+akita_jp("ikawa", _Any) ->
+    "ikawa.akita.jp";
+
+akita_jp("kamioka", _Any) ->
+    "kamioka.akita.jp";
+
+akita_jp("higashinaruse", _Any) ->
+    "higashinaruse.akita.jp";
+
+akita_jp("kitaakita", _Any) ->
+    "kitaakita.akita.jp";
+
+akita_jp("honjo", _Any) ->
+    "honjo.akita.jp";
+
+akita_jp("katagami", _Any) ->
+    "katagami.akita.jp";
+
+akita_jp("gojome", _Any) ->
+    "gojome.akita.jp";
+
+akita_jp("akita", _Any) ->
+    "akita.akita.jp";
+
+akita_jp("mitane", _Any) ->
+    "mitane.akita.jp";
+
+akita_jp("kamikoani", _Any) ->
+    "kamikoani.akita.jp";
+
+akita_jp("odate", _Any) ->
+    "odate.akita.jp";
+
+akita_jp("happou", _Any) ->
+    "happou.akita.jp";
+
+akita_jp("honjyo", _Any) ->
+    "honjyo.akita.jp";
+
+akita_jp("ogata", _Any) ->
+    "ogata.akita.jp";
+
+akita_jp("fujisato", _Any) ->
+    "fujisato.akita.jp";
+
+akita_jp("yokote", _Any) ->
+    "yokote.akita.jp";
+
+akita_jp("moriyoshi", _Any) ->
+    "moriyoshi.akita.jp";
+
+akita_jp("daisen", _Any) ->
+    "daisen.akita.jp";
+
+akita_jp("semboku", _Any) ->
+    "semboku.akita.jp";
+
+akita_jp("hachirogata", _Any) ->
+    "hachirogata.akita.jp";
+
+akita_jp("oga", _Any) ->
+    "oga.akita.jp";
+
+akita_jp("yurihonjo", _Any) ->
+    "yurihonjo.akita.jp";
+
+akita_jp("misato", _Any) ->
+    "misato.akita.jp";
+
+akita_jp("kyowa", _Any) ->
+    "kyowa.akita.jp";
+
+akita_jp("nikaho", _Any) ->
+    "nikaho.akita.jp";
+
+akita_jp("kosaka", _Any) ->
+    "kosaka.akita.jp";
+
+akita_jp("kazuno", _Any) ->
+    "kazuno.akita.jp";
+
+
+akita_jp(_, _) ->
+    "akita.jp".
+
+%% regular rules
+kagoshima_jp("soo", _Any) ->
+    "soo.kagoshima.jp";
+
+kagoshima_jp("tarumizu", _Any) ->
+    "tarumizu.kagoshima.jp";
+
+kagoshima_jp("yusui", _Any) ->
+    "yusui.kagoshima.jp";
+
+kagoshima_jp("kanoya", _Any) ->
+    "kanoya.kagoshima.jp";
+
+kagoshima_jp("matsumoto", _Any) ->
+    "matsumoto.kagoshima.jp";
+
+kagoshima_jp("minamitane", _Any) ->
+    "minamitane.kagoshima.jp";
+
+kagoshima_jp("kinko", _Any) ->
+    "kinko.kagoshima.jp";
+
+kagoshima_jp("makurazaki", _Any) ->
+    "makurazaki.kagoshima.jp";
+
+kagoshima_jp("nakatane", _Any) ->
+    "nakatane.kagoshima.jp";
+
+kagoshima_jp("kawanabe", _Any) ->
+    "kawanabe.kagoshima.jp";
+
+kagoshima_jp("isen", _Any) ->
+    "isen.kagoshima.jp";
+
+kagoshima_jp("isa", _Any) ->
+    "isa.kagoshima.jp";
+
+kagoshima_jp("izumi", _Any) ->
+    "izumi.kagoshima.jp";
+
+kagoshima_jp("nishinoomote", _Any) ->
+    "nishinoomote.kagoshima.jp";
+
+kagoshima_jp("kagoshima", _Any) ->
+    "kagoshima.kagoshima.jp";
+
+kagoshima_jp("hioki", _Any) ->
+    "hioki.kagoshima.jp";
+
+kagoshima_jp("amami", _Any) ->
+    "amami.kagoshima.jp";
+
+kagoshima_jp("kouyama", _Any) ->
+    "kouyama.kagoshima.jp";
+
+kagoshima_jp("satsumasendai", _Any) ->
+    "satsumasendai.kagoshima.jp";
+
+kagoshima_jp("akune", _Any) ->
+    "akune.kagoshima.jp";
+
+
+kagoshima_jp(_, _) ->
+    "kagoshima.jp".
+
+%% regular rules
+osaka_jp("hirakata", _Any) ->
+    "hirakata.osaka.jp";
+
+osaka_jp("tadaoka", _Any) ->
+    "tadaoka.osaka.jp";
+
+osaka_jp("kumatori", _Any) ->
+    "kumatori.osaka.jp";
+
+osaka_jp("toyono", _Any) ->
+    "toyono.osaka.jp";
+
+osaka_jp("habikino", _Any) ->
+    "habikino.osaka.jp";
+
+osaka_jp("taishi", _Any) ->
+    "taishi.osaka.jp";
+
+osaka_jp("izumisano", _Any) ->
+    "izumisano.osaka.jp";
+
+osaka_jp("katano", _Any) ->
+    "katano.osaka.jp";
+
+osaka_jp("suita", _Any) ->
+    "suita.osaka.jp";
+
+osaka_jp("misaki", _Any) ->
+    "misaki.osaka.jp";
+
+osaka_jp("fujiidera", _Any) ->
+    "fujiidera.osaka.jp";
+
+osaka_jp("neyagawa", _Any) ->
+    "neyagawa.osaka.jp";
+
+osaka_jp("sennan", _Any) ->
+    "sennan.osaka.jp";
+
+osaka_jp("kawachinagano", _Any) ->
+    "kawachinagano.osaka.jp";
+
+osaka_jp("shijonawate", _Any) ->
+    "shijonawate.osaka.jp";
+
+osaka_jp("settsu", _Any) ->
+    "settsu.osaka.jp";
+
+osaka_jp("daito", _Any) ->
+    "daito.osaka.jp";
+
+osaka_jp("izumi", _Any) ->
+    "izumi.osaka.jp";
+
+osaka_jp("kaizuka", _Any) ->
+    "kaizuka.osaka.jp";
+
+osaka_jp("hannan", _Any) ->
+    "hannan.osaka.jp";
+
+osaka_jp("takaishi", _Any) ->
+    "takaishi.osaka.jp";
+
+osaka_jp("kashiwara", _Any) ->
+    "kashiwara.osaka.jp";
+
+osaka_jp("shimamoto", _Any) ->
+    "shimamoto.osaka.jp";
+
+osaka_jp("nishi", _Any) ->
+    "nishi.osaka.jp";
+
+osaka_jp("ikeda", _Any) ->
+    "ikeda.osaka.jp";
+
+osaka_jp("higashiosaka", _Any) ->
+    "higashiosaka.osaka.jp";
+
+osaka_jp("nose", _Any) ->
+    "nose.osaka.jp";
+
+osaka_jp("tajiri", _Any) ->
+    "tajiri.osaka.jp";
+
+osaka_jp("higashiyodogawa", _Any) ->
+    "higashiyodogawa.osaka.jp";
+
+osaka_jp("minato", _Any) ->
+    "minato.osaka.jp";
+
+osaka_jp("abeno", _Any) ->
+    "abeno.osaka.jp";
+
+osaka_jp("moriguchi", _Any) ->
+    "moriguchi.osaka.jp";
+
+osaka_jp("matsubara", _Any) ->
+    "matsubara.osaka.jp";
+
+osaka_jp("chuo", _Any) ->
+    "chuo.osaka.jp";
+
+osaka_jp("sakai", _Any) ->
+    "sakai.osaka.jp";
+
+osaka_jp("yao", _Any) ->
+    "yao.osaka.jp";
+
+osaka_jp("kanan", _Any) ->
+    "kanan.osaka.jp";
+
+osaka_jp("sayama", _Any) ->
+    "sayama.osaka.jp";
+
+osaka_jp("chihayaakasaka", _Any) ->
+    "chihayaakasaka.osaka.jp";
+
+osaka_jp("tondabayashi", _Any) ->
+    "tondabayashi.osaka.jp";
+
+osaka_jp("kita", _Any) ->
+    "kita.osaka.jp";
+
+osaka_jp("kishiwada", _Any) ->
+    "kishiwada.osaka.jp";
+
+osaka_jp("higashisumiyoshi", _Any) ->
+    "higashisumiyoshi.osaka.jp";
+
+osaka_jp("osakasayama", _Any) ->
+    "osakasayama.osaka.jp";
+
+osaka_jp("izumiotsu", _Any) ->
+    "izumiotsu.osaka.jp";
+
+osaka_jp("kadoma", _Any) ->
+    "kadoma.osaka.jp";
+
+osaka_jp("ibaraki", _Any) ->
+    "ibaraki.osaka.jp";
+
+osaka_jp("takatsuki", _Any) ->
+    "takatsuki.osaka.jp";
+
+osaka_jp("minoh", _Any) ->
+    "minoh.osaka.jp";
+
+osaka_jp("toyonaka", _Any) ->
+    "toyonaka.osaka.jp";
+
+
+osaka_jp(_, _) ->
+    "osaka.jp".
+
+%% regular rules
+hokkaido_jp("ebetsu", _Any) ->
+    "ebetsu.hokkaido.jp";
+
+hokkaido_jp("horonobe", _Any) ->
+    "horonobe.hokkaido.jp";
+
+hokkaido_jp("shiranuka", _Any) ->
+    "shiranuka.hokkaido.jp";
+
+hokkaido_jp("esan", _Any) ->
+    "esan.hokkaido.jp";
+
+hokkaido_jp("tomari", _Any) ->
+    "tomari.hokkaido.jp";
+
+hokkaido_jp("shintoku", _Any) ->
+    "shintoku.hokkaido.jp";
+
+hokkaido_jp("toyotomi", _Any) ->
+    "toyotomi.hokkaido.jp";
+
+hokkaido_jp("shari", _Any) ->
+    "shari.hokkaido.jp";
+
+hokkaido_jp("koshimizu", _Any) ->
+    "koshimizu.hokkaido.jp";
+
+hokkaido_jp("urakawa", _Any) ->
+    "urakawa.hokkaido.jp";
+
+hokkaido_jp("taiki", _Any) ->
+    "taiki.hokkaido.jp";
+
+hokkaido_jp("higashikawa", _Any) ->
+    "higashikawa.hokkaido.jp";
+
+hokkaido_jp("sarufutsu", _Any) ->
+    "sarufutsu.hokkaido.jp";
+
+hokkaido_jp("kamifurano", _Any) ->
+    "kamifurano.hokkaido.jp";
+
+hokkaido_jp("mombetsu", _Any) ->
+    "mombetsu.hokkaido.jp";
+
+hokkaido_jp("shibecha", _Any) ->
+    "shibecha.hokkaido.jp";
+
+hokkaido_jp("assabu", _Any) ->
+    "assabu.hokkaido.jp";
+
+hokkaido_jp("eniwa", _Any) ->
+    "eniwa.hokkaido.jp";
+
+hokkaido_jp("otofuke", _Any) ->
+    "otofuke.hokkaido.jp";
+
+hokkaido_jp("hidaka", _Any) ->
+    "hidaka.hokkaido.jp";
+
+hokkaido_jp("shiraoi", _Any) ->
+    "shiraoi.hokkaido.jp";
+
+hokkaido_jp("ishikari", _Any) ->
+    "ishikari.hokkaido.jp";
+
+hokkaido_jp("otobe", _Any) ->
+    "otobe.hokkaido.jp";
+
+hokkaido_jp("teshikaga", _Any) ->
+    "teshikaga.hokkaido.jp";
+
+hokkaido_jp("furubira", _Any) ->
+    "furubira.hokkaido.jp";
+
+hokkaido_jp("takikawa", _Any) ->
+    "takikawa.hokkaido.jp";
+
+hokkaido_jp("pippu", _Any) ->
+    "pippu.hokkaido.jp";
+
+hokkaido_jp("tsukigata", _Any) ->
+    "tsukigata.hokkaido.jp";
+
+hokkaido_jp("hakodate", _Any) ->
+    "hakodate.hokkaido.jp";
+
+hokkaido_jp("kikonai", _Any) ->
+    "kikonai.hokkaido.jp";
+
+hokkaido_jp("kamishihoro", _Any) ->
+    "kamishihoro.hokkaido.jp";
+
+hokkaido_jp("oketo", _Any) ->
+    "oketo.hokkaido.jp";
+
+hokkaido_jp("kutchan", _Any) ->
+    "kutchan.hokkaido.jp";
+
+hokkaido_jp("shinshinotsu", _Any) ->
+    "shinshinotsu.hokkaido.jp";
+
+hokkaido_jp("abira", _Any) ->
+    "abira.hokkaido.jp";
+
+hokkaido_jp("bibai", _Any) ->
+    "bibai.hokkaido.jp";
+
+hokkaido_jp("hokuryu", _Any) ->
+    "hokuryu.hokkaido.jp";
+
+hokkaido_jp("horokanai", _Any) ->
+    "horokanai.hokkaido.jp";
+
+hokkaido_jp("hamatonbetsu", _Any) ->
+    "hamatonbetsu.hokkaido.jp";
+
+hokkaido_jp("okoppe", _Any) ->
+    "okoppe.hokkaido.jp";
+
+hokkaido_jp("fukagawa", _Any) ->
+    "fukagawa.hokkaido.jp";
+
+hokkaido_jp("kuriyama", _Any) ->
+    "kuriyama.hokkaido.jp";
+
+hokkaido_jp("yoichi", _Any) ->
+    "yoichi.hokkaido.jp";
+
+hokkaido_jp("shimizu", _Any) ->
+    "shimizu.hokkaido.jp";
+
+hokkaido_jp("mikasa", _Any) ->
+    "mikasa.hokkaido.jp";
+
+hokkaido_jp("mukawa", _Any) ->
+    "mukawa.hokkaido.jp";
+
+hokkaido_jp("shimamaki", _Any) ->
+    "shimamaki.hokkaido.jp";
+
+hokkaido_jp("kamisunagawa", _Any) ->
+    "kamisunagawa.hokkaido.jp";
+
+hokkaido_jp("imakane", _Any) ->
+    "imakane.hokkaido.jp";
+
+hokkaido_jp("shibetsu", _Any) ->
+    "shibetsu.hokkaido.jp";
+
+hokkaido_jp("saroma", _Any) ->
+    "saroma.hokkaido.jp";
+
+hokkaido_jp("biratori", _Any) ->
+    "biratori.hokkaido.jp";
+
+hokkaido_jp("yakumo", _Any) ->
+    "yakumo.hokkaido.jp";
+
+hokkaido_jp("embetsu", _Any) ->
+    "embetsu.hokkaido.jp";
+
+hokkaido_jp("kiyosato", _Any) ->
+    "kiyosato.hokkaido.jp";
+
+hokkaido_jp("wassamu", _Any) ->
+    "wassamu.hokkaido.jp";
+
+hokkaido_jp("kushiro", _Any) ->
+    "kushiro.hokkaido.jp";
+
+hokkaido_jp("urausu", _Any) ->
+    "urausu.hokkaido.jp";
+
+hokkaido_jp("kuromatsunai", _Any) ->
+    "kuromatsunai.hokkaido.jp";
+
+hokkaido_jp("iwamizawa", _Any) ->
+    "iwamizawa.hokkaido.jp";
+
+hokkaido_jp("esashi", _Any) ->
+    "esashi.hokkaido.jp";
+
+hokkaido_jp("tsubetsu", _Any) ->
+    "tsubetsu.hokkaido.jp";
+
+hokkaido_jp("iwanai", _Any) ->
+    "iwanai.hokkaido.jp";
+
+hokkaido_jp("niikappu", _Any) ->
+    "niikappu.hokkaido.jp";
+
+hokkaido_jp("obihiro", _Any) ->
+    "obihiro.hokkaido.jp";
+
+hokkaido_jp("kayabe", _Any) ->
+    "kayabe.hokkaido.jp";
+
+hokkaido_jp("hiroo", _Any) ->
+    "hiroo.hokkaido.jp";
+
+hokkaido_jp("abashiri", _Any) ->
+    "abashiri.hokkaido.jp";
+
+hokkaido_jp("ozora", _Any) ->
+    "ozora.hokkaido.jp";
+
+hokkaido_jp("shikabe", _Any) ->
+    "shikabe.hokkaido.jp";
+
+hokkaido_jp("rikubetsu", _Any) ->
+    "rikubetsu.hokkaido.jp";
+
+hokkaido_jp("chitose", _Any) ->
+    "chitose.hokkaido.jp";
+
+hokkaido_jp("nakatombetsu", _Any) ->
+    "nakatombetsu.hokkaido.jp";
+
+hokkaido_jp("honbetsu", _Any) ->
+    "honbetsu.hokkaido.jp";
+
+hokkaido_jp("nishiokoppe", _Any) ->
+    "nishiokoppe.hokkaido.jp";
+
+hokkaido_jp("kitami", _Any) ->
+    "kitami.hokkaido.jp";
+
+hokkaido_jp("erimo", _Any) ->
+    "erimo.hokkaido.jp";
+
+hokkaido_jp("oumu", _Any) ->
+    "oumu.hokkaido.jp";
+
+hokkaido_jp("fukushima", _Any) ->
+    "fukushima.hokkaido.jp";
+
+hokkaido_jp("akkeshi", _Any) ->
+    "akkeshi.hokkaido.jp";
+
+hokkaido_jp("kembuchi", _Any) ->
+    "kembuchi.hokkaido.jp";
+
+hokkaido_jp("naie", _Any) ->
+    "naie.hokkaido.jp";
+
+hokkaido_jp("asahikawa", _Any) ->
+    "asahikawa.hokkaido.jp";
+
+hokkaido_jp("shimokawa", _Any) ->
+    "shimokawa.hokkaido.jp";
+
+hokkaido_jp("sunagawa", _Any) ->
+    "sunagawa.hokkaido.jp";
+
+hokkaido_jp("matsumae", _Any) ->
+    "matsumae.hokkaido.jp";
+
+hokkaido_jp("mashike", _Any) ->
+    "mashike.hokkaido.jp";
+
+hokkaido_jp("rebun", _Any) ->
+    "rebun.hokkaido.jp";
+
+hokkaido_jp("otoineppu", _Any) ->
+    "otoineppu.hokkaido.jp";
+
+hokkaido_jp("toyako", _Any) ->
+    "toyako.hokkaido.jp";
+
+hokkaido_jp("rishiri", _Any) ->
+    "rishiri.hokkaido.jp";
+
+hokkaido_jp("date", _Any) ->
+    "date.hokkaido.jp";
+
+hokkaido_jp("tohma", _Any) ->
+    "tohma.hokkaido.jp";
+
+hokkaido_jp("numata", _Any) ->
+    "numata.hokkaido.jp";
+
+hokkaido_jp("bifuka", _Any) ->
+    "bifuka.hokkaido.jp";
+
+hokkaido_jp("kyowa", _Any) ->
+    "kyowa.hokkaido.jp";
+
+hokkaido_jp("otaru", _Any) ->
+    "otaru.hokkaido.jp";
+
+hokkaido_jp("uryu", _Any) ->
+    "uryu.hokkaido.jp";
+
+hokkaido_jp("ashibetsu", _Any) ->
+    "ashibetsu.hokkaido.jp";
+
+hokkaido_jp("niki", _Any) ->
+    "niki.hokkaido.jp";
+
+hokkaido_jp("takinoue", _Any) ->
+    "takinoue.hokkaido.jp";
+
+hokkaido_jp("shakotan", _Any) ->
+    "shakotan.hokkaido.jp";
+
+hokkaido_jp("nanporo", _Any) ->
+    "nanporo.hokkaido.jp";
+
+hokkaido_jp("kimobetsu", _Any) ->
+    "kimobetsu.hokkaido.jp";
+
+hokkaido_jp("muroran", _Any) ->
+    "muroran.hokkaido.jp";
+
+hokkaido_jp("rishirifuji", _Any) ->
+    "rishirifuji.hokkaido.jp";
+
+hokkaido_jp("shikaoi", _Any) ->
+    "shikaoi.hokkaido.jp";
+
+hokkaido_jp("sobetsu", _Any) ->
+    "sobetsu.hokkaido.jp";
+
+hokkaido_jp("utashinai", _Any) ->
+    "utashinai.hokkaido.jp";
+
+hokkaido_jp("nemuro", _Any) ->
+    "nemuro.hokkaido.jp";
+
+hokkaido_jp("wakkanai", _Any) ->
+    "wakkanai.hokkaido.jp";
+
+hokkaido_jp("tomakomai", _Any) ->
+    "tomakomai.hokkaido.jp";
+
+hokkaido_jp("kitahiroshima", _Any) ->
+    "kitahiroshima.hokkaido.jp";
+
+hokkaido_jp("haboro", _Any) ->
+    "haboro.hokkaido.jp";
+
+hokkaido_jp("nakasatsunai", _Any) ->
+    "nakasatsunai.hokkaido.jp";
+
+hokkaido_jp("nayoro", _Any) ->
+    "nayoro.hokkaido.jp";
+
+hokkaido_jp("kamikawa", _Any) ->
+    "kamikawa.hokkaido.jp";
+
+hokkaido_jp("ikeda", _Any) ->
+    "ikeda.hokkaido.jp";
+
+hokkaido_jp("atsuma", _Any) ->
+    "atsuma.hokkaido.jp";
+
+hokkaido_jp("furano", _Any) ->
+    "furano.hokkaido.jp";
+
+hokkaido_jp("aibetsu", _Any) ->
+    "aibetsu.hokkaido.jp";
+
+hokkaido_jp("noboribetsu", _Any) ->
+    "noboribetsu.hokkaido.jp";
+
+hokkaido_jp("higashikagura", _Any) ->
+    "higashikagura.hokkaido.jp";
+
+hokkaido_jp("biei", _Any) ->
+    "biei.hokkaido.jp";
+
+hokkaido_jp("toya", _Any) ->
+    "toya.hokkaido.jp";
+
+hokkaido_jp("nanae", _Any) ->
+    "nanae.hokkaido.jp";
+
+hokkaido_jp("moseushi", _Any) ->
+    "moseushi.hokkaido.jp";
+
+hokkaido_jp("tobetsu", _Any) ->
+    "tobetsu.hokkaido.jp";
+
+hokkaido_jp("takasu", _Any) ->
+    "takasu.hokkaido.jp";
+
+hokkaido_jp("obira", _Any) ->
+    "obira.hokkaido.jp";
+
+hokkaido_jp("kamoenai", _Any) ->
+    "kamoenai.hokkaido.jp";
+
+hokkaido_jp("minamifurano", _Any) ->
+    "minamifurano.hokkaido.jp";
+
+hokkaido_jp("rankoshi", _Any) ->
+    "rankoshi.hokkaido.jp";
+
+hokkaido_jp("bihoro", _Any) ->
+    "bihoro.hokkaido.jp";
+
+hokkaido_jp("nakagawa", _Any) ->
+    "nakagawa.hokkaido.jp";
+
+hokkaido_jp("akabira", _Any) ->
+    "akabira.hokkaido.jp";
+
+hokkaido_jp("ashoro", _Any) ->
+    "ashoro.hokkaido.jp";
+
+hokkaido_jp("chippubetsu", _Any) ->
+    "chippubetsu.hokkaido.jp";
+
+hokkaido_jp("toyoura", _Any) ->
+    "toyoura.hokkaido.jp";
+
+hokkaido_jp("kunneppu", _Any) ->
+    "kunneppu.hokkaido.jp";
+
+hokkaido_jp("hokuto", _Any) ->
+    "hokuto.hokkaido.jp";
+
+hokkaido_jp("shiriuchi", _Any) ->
+    "shiriuchi.hokkaido.jp";
+
+
+hokkaido_jp(_, _) ->
+    "hokkaido.jp".
+
+%% regular rules
+nara_jp("yamazoe", _Any) ->
+    "yamazoe.nara.jp";
+
+nara_jp("kurotaki", _Any) ->
+    "kurotaki.nara.jp";
+
+nara_jp("higashiyoshino", _Any) ->
+    "higashiyoshino.nara.jp";
+
+nara_jp("ikaruga", _Any) ->
+    "ikaruga.nara.jp";
+
+nara_jp("gose", _Any) ->
+    "gose.nara.jp";
+
+nara_jp("tenkawa", _Any) ->
+    "tenkawa.nara.jp";
+
+nara_jp("kawanishi", _Any) ->
+    "kawanishi.nara.jp";
+
+nara_jp("koryo", _Any) ->
+    "koryo.nara.jp";
+
+nara_jp("kamikitayama", _Any) ->
+    "kamikitayama.nara.jp";
+
+nara_jp("shimoichi", _Any) ->
+    "shimoichi.nara.jp";
+
+nara_jp("mitsue", _Any) ->
+    "mitsue.nara.jp";
+
+nara_jp("ouda", _Any) ->
+    "ouda.nara.jp";
+
+nara_jp("shinjo", _Any) ->
+    "shinjo.nara.jp";
+
+nara_jp("tawaramoto", _Any) ->
+    "tawaramoto.nara.jp";
+
+nara_jp("katsuragi", _Any) ->
+    "katsuragi.nara.jp";
+
+nara_jp("ikoma", _Any) ->
+    "ikoma.nara.jp";
+
+nara_jp("yoshino", _Any) ->
+    "yoshino.nara.jp";
+
+nara_jp("yamatokoriyama", _Any) ->
+    "yamatokoriyama.nara.jp";
+
+nara_jp("shimokitayama", _Any) ->
+    "shimokitayama.nara.jp";
+
+nara_jp("tenri", _Any) ->
+    "tenri.nara.jp";
+
+nara_jp("nosegawa", _Any) ->
+    "nosegawa.nara.jp";
+
+nara_jp("sango", _Any) ->
+    "sango.nara.jp";
+
+nara_jp("yamatotakada", _Any) ->
+    "yamatotakada.nara.jp";
+
+nara_jp("kanmaki", _Any) ->
+    "kanmaki.nara.jp";
+
+nara_jp("oji", _Any) ->
+    "oji.nara.jp";
+
+nara_jp("kashihara", _Any) ->
+    "kashihara.nara.jp";
+
+nara_jp("heguri", _Any) ->
+    "heguri.nara.jp";
+
+nara_jp("miyake", _Any) ->
+    "miyake.nara.jp";
+
+nara_jp("takatori", _Any) ->
+    "takatori.nara.jp";
+
+nara_jp("oyodo", _Any) ->
+    "oyodo.nara.jp";
+
+nara_jp("kawakami", _Any) ->
+    "kawakami.nara.jp";
+
+nara_jp("uda", _Any) ->
+    "uda.nara.jp";
+
+nara_jp("sakurai", _Any) ->
+    "sakurai.nara.jp";
+
+nara_jp("nara", _Any) ->
+    "nara.nara.jp";
+
+nara_jp("kawai", _Any) ->
+    "kawai.nara.jp";
+
+nara_jp("ando", _Any) ->
+    "ando.nara.jp";
+
+nara_jp("soni", _Any) ->
+    "soni.nara.jp";
+
+nara_jp("kashiba", _Any) ->
+    "kashiba.nara.jp";
+
+
+nara_jp(_, _) ->
+    "nara.jp".
+
+%% regular rules
+tokushima_jp("aizumi", _Any) ->
+    "aizumi.tokushima.jp";
+
+tokushima_jp("mugi", _Any) ->
+    "mugi.tokushima.jp";
+
+tokushima_jp("kainan", _Any) ->
+    "kainan.tokushima.jp";
+
+tokushima_jp("miyoshi", _Any) ->
+    "miyoshi.tokushima.jp";
+
+tokushima_jp("mima", _Any) ->
+    "mima.tokushima.jp";
+
+tokushima_jp("naruto", _Any) ->
+    "naruto.tokushima.jp";
+
+tokushima_jp("nakagawa", _Any) ->
+    "nakagawa.tokushima.jp";
+
+tokushima_jp("matsushige", _Any) ->
+    "matsushige.tokushima.jp";
+
+tokushima_jp("ichiba", _Any) ->
+    "ichiba.tokushima.jp";
+
+tokushima_jp("anan", _Any) ->
+    "anan.tokushima.jp";
+
+tokushima_jp("itano", _Any) ->
+    "itano.tokushima.jp";
+
+tokushima_jp("wajiki", _Any) ->
+    "wajiki.tokushima.jp";
+
+tokushima_jp("minami", _Any) ->
+    "minami.tokushima.jp";
+
+tokushima_jp("tokushima", _Any) ->
+    "tokushima.tokushima.jp";
+
+tokushima_jp("shishikui", _Any) ->
+    "shishikui.tokushima.jp";
+
+tokushima_jp("sanagochi", _Any) ->
+    "sanagochi.tokushima.jp";
+
+tokushima_jp("komatsushima", _Any) ->
+    "komatsushima.tokushima.jp";
+
+
+tokushima_jp(_, _) ->
+    "tokushima.jp".
+
+%% regular rules
+nagasaki_jp("chijiwa", _Any) ->
+    "chijiwa.nagasaki.jp";
+
+nagasaki_jp("futsu", _Any) ->
+    "futsu.nagasaki.jp";
+
+nagasaki_jp("tsushima", _Any) ->
+    "tsushima.nagasaki.jp";
+
+nagasaki_jp("hirado", _Any) ->
+    "hirado.nagasaki.jp";
+
+nagasaki_jp("matsuura", _Any) ->
+    "matsuura.nagasaki.jp";
+
+nagasaki_jp("togitsu", _Any) ->
+    "togitsu.nagasaki.jp";
+
+nagasaki_jp("oseto", _Any) ->
+    "oseto.nagasaki.jp";
+
+nagasaki_jp("hasami", _Any) ->
+    "hasami.nagasaki.jp";
+
+nagasaki_jp("obama", _Any) ->
+    "obama.nagasaki.jp";
+
+nagasaki_jp("iki", _Any) ->
+    "iki.nagasaki.jp";
+
+nagasaki_jp("saikai", _Any) ->
+    "saikai.nagasaki.jp";
+
+nagasaki_jp("sasebo", _Any) ->
+    "sasebo.nagasaki.jp";
+
+nagasaki_jp("seihi", _Any) ->
+    "seihi.nagasaki.jp";
+
+nagasaki_jp("kuchinotsu", _Any) ->
+    "kuchinotsu.nagasaki.jp";
+
+nagasaki_jp("isahaya", _Any) ->
+    "isahaya.nagasaki.jp";
+
+nagasaki_jp("shinkamigoto", _Any) ->
+    "shinkamigoto.nagasaki.jp";
+
+nagasaki_jp("unzen", _Any) ->
+    "unzen.nagasaki.jp";
+
+nagasaki_jp("shimabara", _Any) ->
+    "shimabara.nagasaki.jp";
+
+nagasaki_jp("nagasaki", _Any) ->
+    "nagasaki.nagasaki.jp";
+
+nagasaki_jp("kawatana", _Any) ->
+    "kawatana.nagasaki.jp";
+
+nagasaki_jp("goto", _Any) ->
+    "goto.nagasaki.jp";
+
+nagasaki_jp("omura", _Any) ->
+    "omura.nagasaki.jp";
+
+
+nagasaki_jp(_, _) ->
+    "nagasaki.jp".
+
+%% regular rules
+ibaraki_jp("yachiyo", _Any) ->
+    "yachiyo.ibaraki.jp";
+
+ibaraki_jp("ogawa", _Any) ->
+    "ogawa.ibaraki.jp";
+
+ibaraki_jp("yuki", _Any) ->
+    "yuki.ibaraki.jp";
+
+ibaraki_jp("kashima", _Any) ->
+    "kashima.ibaraki.jp";
+
+ibaraki_jp("fujishiro", _Any) ->
+    "fujishiro.ibaraki.jp";
+
+ibaraki_jp("joso", _Any) ->
+    "joso.ibaraki.jp";
+
+ibaraki_jp("tsukuba", _Any) ->
+    "tsukuba.ibaraki.jp";
+
+ibaraki_jp("hitachinaka", _Any) ->
+    "hitachinaka.ibaraki.jp";
+
+ibaraki_jp("shimotsuma", _Any) ->
+    "shimotsuma.ibaraki.jp";
+
+ibaraki_jp("kasumigaura", _Any) ->
+    "kasumigaura.ibaraki.jp";
+
+ibaraki_jp("itako", _Any) ->
+    "itako.ibaraki.jp";
+
+ibaraki_jp("kamisu", _Any) ->
+    "kamisu.ibaraki.jp";
+
+ibaraki_jp("miho", _Any) ->
+    "miho.ibaraki.jp";
+
+ibaraki_jp("yamagata", _Any) ->
+    "yamagata.ibaraki.jp";
+
+ibaraki_jp("tamatsukuri", _Any) ->
+    "tamatsukuri.ibaraki.jp";
+
+ibaraki_jp("inashiki", _Any) ->
+    "inashiki.ibaraki.jp";
+
+ibaraki_jp("oarai", _Any) ->
+    "oarai.ibaraki.jp";
+
+ibaraki_jp("shimodate", _Any) ->
+    "shimodate.ibaraki.jp";
+
+ibaraki_jp("shirosato", _Any) ->
+    "shirosato.ibaraki.jp";
+
+ibaraki_jp("kasama", _Any) ->
+    "kasama.ibaraki.jp";
+
+ibaraki_jp("takahagi", _Any) ->
+    "takahagi.ibaraki.jp";
+
+ibaraki_jp("ami", _Any) ->
+    "ami.ibaraki.jp";
+
+ibaraki_jp("koga", _Any) ->
+    "koga.ibaraki.jp";
+
+ibaraki_jp("mito", _Any) ->
+    "mito.ibaraki.jp";
+
+ibaraki_jp("hitachiota", _Any) ->
+    "hitachiota.ibaraki.jp";
+
+ibaraki_jp("ibaraki", _Any) ->
+    "ibaraki.ibaraki.jp";
+
+ibaraki_jp("suifu", _Any) ->
+    "suifu.ibaraki.jp";
+
+ibaraki_jp("moriya", _Any) ->
+    "moriya.ibaraki.jp";
+
+ibaraki_jp("tsuchiura", _Any) ->
+    "tsuchiura.ibaraki.jp";
+
+ibaraki_jp("tokai", _Any) ->
+    "tokai.ibaraki.jp";
+
+ibaraki_jp("bando", _Any) ->
+    "bando.ibaraki.jp";
+
+ibaraki_jp("sowa", _Any) ->
+    "sowa.ibaraki.jp";
+
+ibaraki_jp("asahi", _Any) ->
+    "asahi.ibaraki.jp";
+
+ibaraki_jp("hitachi", _Any) ->
+    "hitachi.ibaraki.jp";
+
+ibaraki_jp("yawara", _Any) ->
+    "yawara.ibaraki.jp";
+
+ibaraki_jp("iwama", _Any) ->
+    "iwama.ibaraki.jp";
+
+ibaraki_jp("chikusei", _Any) ->
+    "chikusei.ibaraki.jp";
+
+ibaraki_jp("tomobe", _Any) ->
+    "tomobe.ibaraki.jp";
+
+ibaraki_jp("toride", _Any) ->
+    "toride.ibaraki.jp";
+
+ibaraki_jp("ina", _Any) ->
+    "ina.ibaraki.jp";
+
+ibaraki_jp("daigo", _Any) ->
+    "daigo.ibaraki.jp";
+
+ibaraki_jp("naka", _Any) ->
+    "naka.ibaraki.jp";
+
+ibaraki_jp("sakai", _Any) ->
+    "sakai.ibaraki.jp";
+
+ibaraki_jp("omitama", _Any) ->
+    "omitama.ibaraki.jp";
+
+ibaraki_jp("sakuragawa", _Any) ->
+    "sakuragawa.ibaraki.jp";
+
+ibaraki_jp("ryugasaki", _Any) ->
+    "ryugasaki.ibaraki.jp";
+
+ibaraki_jp("namegata", _Any) ->
+    "namegata.ibaraki.jp";
+
+ibaraki_jp("ushiku", _Any) ->
+    "ushiku.ibaraki.jp";
+
+ibaraki_jp("tone", _Any) ->
+    "tone.ibaraki.jp";
+
+ibaraki_jp("hitachiomiya", _Any) ->
+    "hitachiomiya.ibaraki.jp";
+
+ibaraki_jp("uchihara", _Any) ->
+    "uchihara.ibaraki.jp";
+
+
+ibaraki_jp(_, _) ->
+    "ibaraki.jp".
+
+%% regular rules
+mie_jp("kisosaki", _Any) ->
+    "kisosaki.mie.jp";
+
+mie_jp("tado", _Any) ->
+    "tado.mie.jp";
+
+mie_jp("mihama", _Any) ->
+    "mihama.mie.jp";
+
+mie_jp("ise", _Any) ->
+    "ise.mie.jp";
+
+mie_jp("komono", _Any) ->
+    "komono.mie.jp";
+
+mie_jp("misugi", _Any) ->
+    "misugi.mie.jp";
+
+mie_jp("watarai", _Any) ->
+    "watarai.mie.jp";
+
+mie_jp("yokkaichi", _Any) ->
+    "yokkaichi.mie.jp";
+
+mie_jp("miyama", _Any) ->
+    "miyama.mie.jp";
+
+mie_jp("asahi", _Any) ->
+    "asahi.mie.jp";
+
+mie_jp("kawagoe", _Any) ->
+    "kawagoe.mie.jp";
+
+mie_jp("matsusaka", _Any) ->
+    "matsusaka.mie.jp";
+
+mie_jp("suzuka", _Any) ->
+    "suzuka.mie.jp";
+
+mie_jp("tsu", _Any) ->
+    "tsu.mie.jp";
+
+mie_jp("taiki", _Any) ->
+    "taiki.mie.jp";
+
+mie_jp("inabe", _Any) ->
+    "inabe.mie.jp";
+
+mie_jp("kiho", _Any) ->
+    "kiho.mie.jp";
+
+mie_jp("taki", _Any) ->
+    "taki.mie.jp";
+
+mie_jp("kuwana", _Any) ->
+    "kuwana.mie.jp";
+
+mie_jp("shima", _Any) ->
+    "shima.mie.jp";
+
+mie_jp("minamiise", _Any) ->
+    "minamiise.mie.jp";
+
+mie_jp("kiwa", _Any) ->
+    "kiwa.mie.jp";
+
+mie_jp("ureshino", _Any) ->
+    "ureshino.mie.jp";
+
+mie_jp("tamaki", _Any) ->
+    "tamaki.mie.jp";
+
+mie_jp("nabari", _Any) ->
+    "nabari.mie.jp";
+
+mie_jp("meiwa", _Any) ->
+    "meiwa.mie.jp";
+
+mie_jp("toba", _Any) ->
+    "toba.mie.jp";
+
+mie_jp("kumano", _Any) ->
+    "kumano.mie.jp";
+
+mie_jp("udono", _Any) ->
+    "udono.mie.jp";
+
+mie_jp("kameyama", _Any) ->
+    "kameyama.mie.jp";
+
+
+mie_jp(_, _) ->
+    "mie.jp".
+
+%% regular rules
+wakayama_jp("aridagawa", _Any) ->
+    "aridagawa.wakayama.jp";
+
+wakayama_jp("shirahama", _Any) ->
+    "shirahama.wakayama.jp";
+
+wakayama_jp("iwade", _Any) ->
+    "iwade.wakayama.jp";
+
+wakayama_jp("hashimoto", _Any) ->
+    "hashimoto.wakayama.jp";
+
+wakayama_jp("kamitonda", _Any) ->
+    "kamitonda.wakayama.jp";
+
+wakayama_jp("arida", _Any) ->
+    "arida.wakayama.jp";
+
+wakayama_jp("kushimoto", _Any) ->
+    "kushimoto.wakayama.jp";
+
+wakayama_jp("misato", _Any) ->
+    "misato.wakayama.jp";
+
+wakayama_jp("inami", _Any) ->
+    "inami.wakayama.jp";
+
+wakayama_jp("nachikatsuura", _Any) ->
+    "nachikatsuura.wakayama.jp";
+
+wakayama_jp("kinokawa", _Any) ->
+    "kinokawa.wakayama.jp";
+
+wakayama_jp("gobo", _Any) ->
+    "gobo.wakayama.jp";
+
+wakayama_jp("kainan", _Any) ->
+    "kainan.wakayama.jp";
+
+wakayama_jp("kozagawa", _Any) ->
+    "kozagawa.wakayama.jp";
+
+wakayama_jp("shingu", _Any) ->
+    "shingu.wakayama.jp";
+
+wakayama_jp("mihama", _Any) ->
+    "mihama.wakayama.jp";
+
+wakayama_jp("hidaka", _Any) ->
+    "hidaka.wakayama.jp";
+
+wakayama_jp("hirogawa", _Any) ->
+    "hirogawa.wakayama.jp";
+
+wakayama_jp("wakayama", _Any) ->
+    "wakayama.wakayama.jp";
+
+wakayama_jp("yuasa", _Any) ->
+    "yuasa.wakayama.jp";
+
+wakayama_jp("koza", _Any) ->
+    "koza.wakayama.jp";
+
+wakayama_jp("kudoyama", _Any) ->
+    "kudoyama.wakayama.jp";
+
+wakayama_jp("kitayama", _Any) ->
+    "kitayama.wakayama.jp";
+
+wakayama_jp("kimino", _Any) ->
+    "kimino.wakayama.jp";
+
+wakayama_jp("tanabe", _Any) ->
+    "tanabe.wakayama.jp";
+
+wakayama_jp("katsuragi", _Any) ->
+    "katsuragi.wakayama.jp";
+
+wakayama_jp("yura", _Any) ->
+    "yura.wakayama.jp";
+
+wakayama_jp("koya", _Any) ->
+    "koya.wakayama.jp";
+
+wakayama_jp("taiji", _Any) ->
+    "taiji.wakayama.jp";
+
+
+wakayama_jp(_, _) ->
+    "wakayama.jp".
+
+%% regular rules
+kanagawa_jp("samukawa", _Any) ->
+    "samukawa.kanagawa.jp";
+
+kanagawa_jp("yamakita", _Any) ->
+    "yamakita.kanagawa.jp";
+
+kanagawa_jp("oi", _Any) ->
+    "oi.kanagawa.jp";
+
+kanagawa_jp("isehara", _Any) ->
+    "isehara.kanagawa.jp";
+
+kanagawa_jp("chigasaki", _Any) ->
+    "chigasaki.kanagawa.jp";
+
+kanagawa_jp("yokosuka", _Any) ->
+    "yokosuka.kanagawa.jp";
+
+kanagawa_jp("odawara", _Any) ->
+    "odawara.kanagawa.jp";
+
+kanagawa_jp("kiyokawa", _Any) ->
+    "kiyokawa.kanagawa.jp";
+
+kanagawa_jp("minamiashigara", _Any) ->
+    "minamiashigara.kanagawa.jp";
+
+kanagawa_jp("zushi", _Any) ->
+    "zushi.kanagawa.jp";
+
+kanagawa_jp("kaisei", _Any) ->
+    "kaisei.kanagawa.jp";
+
+kanagawa_jp("hakone", _Any) ->
+    "hakone.kanagawa.jp";
+
+kanagawa_jp("fujisawa", _Any) ->
+    "fujisawa.kanagawa.jp";
+
+kanagawa_jp("kamakura", _Any) ->
+    "kamakura.kanagawa.jp";
+
+kanagawa_jp("miura", _Any) ->
+    "miura.kanagawa.jp";
+
+kanagawa_jp("zama", _Any) ->
+    "zama.kanagawa.jp";
+
+kanagawa_jp("matsuda", _Any) ->
+    "matsuda.kanagawa.jp";
+
+kanagawa_jp("ayase", _Any) ->
+    "ayase.kanagawa.jp";
+
+kanagawa_jp("nakai", _Any) ->
+    "nakai.kanagawa.jp";
+
+kanagawa_jp("yugawara", _Any) ->
+    "yugawara.kanagawa.jp";
+
+kanagawa_jp("yamato", _Any) ->
+    "yamato.kanagawa.jp";
+
+kanagawa_jp("hadano", _Any) ->
+    "hadano.kanagawa.jp";
+
+kanagawa_jp("sagamihara", _Any) ->
+    "sagamihara.kanagawa.jp";
+
+kanagawa_jp("aikawa", _Any) ->
+    "aikawa.kanagawa.jp";
+
+kanagawa_jp("ebina", _Any) ->
+    "ebina.kanagawa.jp";
+
+kanagawa_jp("atsugi", _Any) ->
+    "atsugi.kanagawa.jp";
+
+kanagawa_jp("hiratsuka", _Any) ->
+    "hiratsuka.kanagawa.jp";
+
+kanagawa_jp("tsukui", _Any) ->
+    "tsukui.kanagawa.jp";
+
+kanagawa_jp("oiso", _Any) ->
+    "oiso.kanagawa.jp";
+
+kanagawa_jp("ninomiya", _Any) ->
+    "ninomiya.kanagawa.jp";
+
+
+kanagawa_jp(_, _) ->
+    "kanagawa.jp".
+
+%% regular rules
+chiba_jp("ichinomiya", _Any) ->
+    "ichinomiya.chiba.jp";
+
+chiba_jp("kujukuri", _Any) ->
+    "kujukuri.chiba.jp";
+
+chiba_jp("shiroi", _Any) ->
+    "shiroi.chiba.jp";
+
+chiba_jp("kyonan", _Any) ->
+    "kyonan.chiba.jp";
+
+chiba_jp("chonan", _Any) ->
+    "chonan.chiba.jp";
+
+chiba_jp("choshi", _Any) ->
+    "choshi.chiba.jp";
+
+chiba_jp("otaki", _Any) ->
+    "otaki.chiba.jp";
+
+chiba_jp("tateyama", _Any) ->
+    "tateyama.chiba.jp";
+
+chiba_jp("mutsuzawa", _Any) ->
+    "mutsuzawa.chiba.jp";
+
+chiba_jp("yokoshibahikari", _Any) ->
+    "yokoshibahikari.chiba.jp";
+
+chiba_jp("sakae", _Any) ->
+    "sakae.chiba.jp";
+
+chiba_jp("yachiyo", _Any) ->
+    "yachiyo.chiba.jp";
+
+chiba_jp("kashiwa", _Any) ->
+    "kashiwa.chiba.jp";
+
+chiba_jp("inzai", _Any) ->
+    "inzai.chiba.jp";
+
+chiba_jp("kimitsu", _Any) ->
+    "kimitsu.chiba.jp";
+
+chiba_jp("kozaki", _Any) ->
+    "kozaki.chiba.jp";
+
+chiba_jp("katsuura", _Any) ->
+    "katsuura.chiba.jp";
+
+chiba_jp("abiko", _Any) ->
+    "abiko.chiba.jp";
+
+chiba_jp("tako", _Any) ->
+    "tako.chiba.jp";
+
+chiba_jp("katori", _Any) ->
+    "katori.chiba.jp";
+
+chiba_jp("oamishirasato", _Any) ->
+    "oamishirasato.chiba.jp";
+
+chiba_jp("sodegaura", _Any) ->
+    "sodegaura.chiba.jp";
+
+chiba_jp("yotsukaido", _Any) ->
+    "yotsukaido.chiba.jp";
+
+chiba_jp("kamagaya", _Any) ->
+    "kamagaya.chiba.jp";
+
+chiba_jp("yachimata", _Any) ->
+    "yachimata.chiba.jp";
+
+chiba_jp("shisui", _Any) ->
+    "shisui.chiba.jp";
+
+chiba_jp("ichihara", _Any) ->
+    "ichihara.chiba.jp";
+
+chiba_jp("minamiboso", _Any) ->
+    "minamiboso.chiba.jp";
+
+chiba_jp("shimofusa", _Any) ->
+    "shimofusa.chiba.jp";
+
+chiba_jp("kisarazu", _Any) ->
+    "kisarazu.chiba.jp";
+
+chiba_jp("narita", _Any) ->
+    "narita.chiba.jp";
+
+chiba_jp("asahi", _Any) ->
+    "asahi.chiba.jp";
+
+chiba_jp("chosei", _Any) ->
+    "chosei.chiba.jp";
+
+chiba_jp("hanamigawa", _Any) ->
+    "hanamigawa.chiba.jp";
+
+chiba_jp("onjuku", _Any) ->
+    "onjuku.chiba.jp";
+
+chiba_jp("noda", _Any) ->
+    "noda.chiba.jp";
+
+chiba_jp("togane", _Any) ->
+    "togane.chiba.jp";
+
+chiba_jp("tomisato", _Any) ->
+    "tomisato.chiba.jp";
+
+chiba_jp("nagareyama", _Any) ->
+    "nagareyama.chiba.jp";
+
+chiba_jp("sakura", _Any) ->
+    "sakura.chiba.jp";
+
+chiba_jp("tohnosho", _Any) ->
+    "tohnosho.chiba.jp";
+
+chiba_jp("mihama", _Any) ->
+    "mihama.chiba.jp";
+
+chiba_jp("matsudo", _Any) ->
+    "matsudo.chiba.jp";
+
+chiba_jp("futtsu", _Any) ->
+    "futtsu.chiba.jp";
+
+chiba_jp("funabashi", _Any) ->
+    "funabashi.chiba.jp";
+
+chiba_jp("shirako", _Any) ->
+    "shirako.chiba.jp";
+
+chiba_jp("urayasu", _Any) ->
+    "urayasu.chiba.jp";
+
+chiba_jp("kamogawa", _Any) ->
+    "kamogawa.chiba.jp";
+
+chiba_jp("isumi", _Any) ->
+    "isumi.chiba.jp";
+
+chiba_jp("ichikawa", _Any) ->
+    "ichikawa.chiba.jp";
+
+chiba_jp("nagara", _Any) ->
+    "nagara.chiba.jp";
+
+chiba_jp("midori", _Any) ->
+    "midori.chiba.jp";
+
+chiba_jp("chuo", _Any) ->
+    "chuo.chiba.jp";
+
+chiba_jp("omigawa", _Any) ->
+    "omigawa.chiba.jp";
+
+chiba_jp("mobara", _Any) ->
+    "mobara.chiba.jp";
+
+chiba_jp("sosa", _Any) ->
+    "sosa.chiba.jp";
+
+chiba_jp("narashino", _Any) ->
+    "narashino.chiba.jp";
+
+chiba_jp("yokaichiba", _Any) ->
+    "yokaichiba.chiba.jp";
+
+
+chiba_jp(_, _) ->
+    "chiba.jp".
+
+%% regular rules
+niigata_jp("yahiko", _Any) ->
+    "yahiko.niigata.jp";
+
+niigata_jp("joetsu", _Any) ->
+    "joetsu.niigata.jp";
+
+niigata_jp("ojiya", _Any) ->
+    "ojiya.niigata.jp";
+
+niigata_jp("sekikawa", _Any) ->
+    "sekikawa.niigata.jp";
+
+niigata_jp("tsubame", _Any) ->
+    "tsubame.niigata.jp";
+
+niigata_jp("tainai", _Any) ->
+    "tainai.niigata.jp";
+
+niigata_jp("aga", _Any) ->
+    "aga.niigata.jp";
+
+niigata_jp("murakami", _Any) ->
+    "murakami.niigata.jp";
+
+niigata_jp("itoigawa", _Any) ->
+    "itoigawa.niigata.jp";
+
+niigata_jp("yuzawa", _Any) ->
+    "yuzawa.niigata.jp";
+
+niigata_jp("sanjo", _Any) ->
+    "sanjo.niigata.jp";
+
+niigata_jp("tagami", _Any) ->
+    "tagami.niigata.jp";
+
+niigata_jp("nagaoka", _Any) ->
+    "nagaoka.niigata.jp";
+
+niigata_jp("yoita", _Any) ->
+    "yoita.niigata.jp";
+
+niigata_jp("niigata", _Any) ->
+    "niigata.niigata.jp";
+
+niigata_jp("sado", _Any) ->
+    "sado.niigata.jp";
+
+niigata_jp("gosen", _Any) ->
+    "gosen.niigata.jp";
+
+niigata_jp("tsunan", _Any) ->
+    "tsunan.niigata.jp";
+
+niigata_jp("agano", _Any) ->
+    "agano.niigata.jp";
+
+niigata_jp("omi", _Any) ->
+    "omi.niigata.jp";
+
+niigata_jp("kariwa", _Any) ->
+    "kariwa.niigata.jp";
+
+niigata_jp("tochio", _Any) ->
+    "tochio.niigata.jp";
+
+niigata_jp("tokamachi", _Any) ->
+    "tokamachi.niigata.jp";
+
+niigata_jp("seirou", _Any) ->
+    "seirou.niigata.jp";
+
+niigata_jp("izumozaki", _Any) ->
+    "izumozaki.niigata.jp";
+
+niigata_jp("mitsuke", _Any) ->
+    "mitsuke.niigata.jp";
+
+niigata_jp("kamo", _Any) ->
+    "kamo.niigata.jp";
+
+niigata_jp("muika", _Any) ->
+    "muika.niigata.jp";
+
+niigata_jp("seiro", _Any) ->
+    "seiro.niigata.jp";
+
+niigata_jp("shibata", _Any) ->
+    "shibata.niigata.jp";
+
+niigata_jp("kashiwazaki", _Any) ->
+    "kashiwazaki.niigata.jp";
+
+niigata_jp("uonuma", _Any) ->
+    "uonuma.niigata.jp";
+
+niigata_jp("myoko", _Any) ->
+    "myoko.niigata.jp";
+
+niigata_jp("minamiuonuma", _Any) ->
+    "minamiuonuma.niigata.jp";
+
+
+niigata_jp(_, _) ->
+    "niigata.jp".
+
+%% regular rules
+kochi_jp("kagami", _Any) ->
+    "kagami.kochi.jp";
+
+kochi_jp("okawa", _Any) ->
+    "okawa.kochi.jp";
+
+kochi_jp("tosashimizu", _Any) ->
+    "tosashimizu.kochi.jp";
+
+kochi_jp("geisei", _Any) ->
+    "geisei.kochi.jp";
+
+kochi_jp("toyo", _Any) ->
+    "toyo.kochi.jp";
+
+kochi_jp("kami", _Any) ->
+    "kami.kochi.jp";
+
+kochi_jp("tsuno", _Any) ->
+    "tsuno.kochi.jp";
+
+kochi_jp("ino", _Any) ->
+    "ino.kochi.jp";
+
+kochi_jp("umaji", _Any) ->
+    "umaji.kochi.jp";
+
+kochi_jp("mihara", _Any) ->
+    "mihara.kochi.jp";
+
+kochi_jp("tosa", _Any) ->
+    "tosa.kochi.jp";
+
+kochi_jp("susaki", _Any) ->
+    "susaki.kochi.jp";
+
+kochi_jp("motoyama", _Any) ->
+    "motoyama.kochi.jp";
+
+kochi_jp("niyodogawa", _Any) ->
+    "niyodogawa.kochi.jp";
+
+kochi_jp("yasuda", _Any) ->
+    "yasuda.kochi.jp";
+
+kochi_jp("yusuhara", _Any) ->
+    "yusuhara.kochi.jp";
+
+kochi_jp("otsuki", _Any) ->
+    "otsuki.kochi.jp";
+
+kochi_jp("nankoku", _Any) ->
+    "nankoku.kochi.jp";
+
+kochi_jp("otoyo", _Any) ->
+    "otoyo.kochi.jp";
+
+kochi_jp("nakamura", _Any) ->
+    "nakamura.kochi.jp";
+
+kochi_jp("kochi", _Any) ->
+    "kochi.kochi.jp";
+
+kochi_jp("aki", _Any) ->
+    "aki.kochi.jp";
+
+kochi_jp("ochi", _Any) ->
+    "ochi.kochi.jp";
+
+kochi_jp("sukumo", _Any) ->
+    "sukumo.kochi.jp";
+
+kochi_jp("muroto", _Any) ->
+    "muroto.kochi.jp";
+
+kochi_jp("hidaka", _Any) ->
+    "hidaka.kochi.jp";
+
+kochi_jp("kitagawa", _Any) ->
+    "kitagawa.kochi.jp";
+
+kochi_jp("nahari", _Any) ->
+    "nahari.kochi.jp";
+
+kochi_jp("nishitosa", _Any) ->
+    "nishitosa.kochi.jp";
+
+kochi_jp("sakawa", _Any) ->
+    "sakawa.kochi.jp";
+
+kochi_jp("higashitsuno", _Any) ->
+    "higashitsuno.kochi.jp";
+
+
+kochi_jp(_, _) ->
+    "kochi.jp".
+
+%% regular rules
+okayama_jp("okayama", _Any) ->
+    "okayama.okayama.jp";
+
+okayama_jp("shoo", _Any) ->
+    "shoo.okayama.jp";
+
+okayama_jp("nishiawakura", _Any) ->
+    "nishiawakura.okayama.jp";
+
+okayama_jp("kagamino", _Any) ->
+    "kagamino.okayama.jp";
+
+okayama_jp("kasaoka", _Any) ->
+    "kasaoka.okayama.jp";
+
+okayama_jp("hayashima", _Any) ->
+    "hayashima.okayama.jp";
+
+okayama_jp("yakage", _Any) ->
+    "yakage.okayama.jp";
+
+okayama_jp("wake", _Any) ->
+    "wake.okayama.jp";
+
+okayama_jp("tamano", _Any) ->
+    "tamano.okayama.jp";
+
+okayama_jp("takahashi", _Any) ->
+    "takahashi.okayama.jp";
+
+okayama_jp("ibara", _Any) ->
+    "ibara.okayama.jp";
+
+okayama_jp("shinjo", _Any) ->
+    "shinjo.okayama.jp";
+
+okayama_jp("soja", _Any) ->
+    "soja.okayama.jp";
+
+okayama_jp("misaki", _Any) ->
+    "misaki.okayama.jp";
+
+okayama_jp("setouchi", _Any) ->
+    "setouchi.okayama.jp";
+
+okayama_jp("kumenan", _Any) ->
+    "kumenan.okayama.jp";
+
+okayama_jp("niimi", _Any) ->
+    "niimi.okayama.jp";
+
+okayama_jp("satosho", _Any) ->
+    "satosho.okayama.jp";
+
+okayama_jp("nagi", _Any) ->
+    "nagi.okayama.jp";
+
+okayama_jp("kurashiki", _Any) ->
+    "kurashiki.okayama.jp";
+
+okayama_jp("maniwa", _Any) ->
+    "maniwa.okayama.jp";
+
+okayama_jp("akaiwa", _Any) ->
+    "akaiwa.okayama.jp";
+
+okayama_jp("asakuchi", _Any) ->
+    "asakuchi.okayama.jp";
+
+okayama_jp("tsuyama", _Any) ->
+    "tsuyama.okayama.jp";
+
+okayama_jp("bizen", _Any) ->
+    "bizen.okayama.jp";
+
+okayama_jp("kibichuo", _Any) ->
+    "kibichuo.okayama.jp";
+
+
+okayama_jp(_, _) ->
+    "okayama.jp".
+
+%% regular rules
+kyoto_jp("sakyo", _Any) ->
+    "sakyo.kyoto.jp";
+
+kyoto_jp("nagaokakyo", _Any) ->
+    "nagaokakyo.kyoto.jp";
+
+kyoto_jp("oyamazaki", _Any) ->
+    "oyamazaki.kyoto.jp";
+
+kyoto_jp("muko", _Any) ->
+    "muko.kyoto.jp";
+
+kyoto_jp("kameoka", _Any) ->
+    "kameoka.kyoto.jp";
+
+kyoto_jp("uji", _Any) ->
+    "uji.kyoto.jp";
+
+kyoto_jp("yamashina", _Any) ->
+    "yamashina.kyoto.jp";
+
+kyoto_jp("tanabe", _Any) ->
+    "tanabe.kyoto.jp";
+
+kyoto_jp("kyotango", _Any) ->
+    "kyotango.kyoto.jp";
+
+kyoto_jp("ide", _Any) ->
+    "ide.kyoto.jp";
+
+kyoto_jp("ayabe", _Any) ->
+    "ayabe.kyoto.jp";
+
+kyoto_jp("kita", _Any) ->
+    "kita.kyoto.jp";
+
+kyoto_jp("seika", _Any) ->
+    "seika.kyoto.jp";
+
+kyoto_jp("minami", _Any) ->
+    "minami.kyoto.jp";
+
+kyoto_jp("kamo", _Any) ->
+    "kamo.kyoto.jp";
+
+kyoto_jp("higashiyama", _Any) ->
+    "higashiyama.kyoto.jp";
+
+kyoto_jp("joyo", _Any) ->
+    "joyo.kyoto.jp";
+
+kyoto_jp("minamiyamashiro", _Any) ->
+    "minamiyamashiro.kyoto.jp";
+
+kyoto_jp("miyazu", _Any) ->
+    "miyazu.kyoto.jp";
+
+kyoto_jp("kyotanabe", _Any) ->
+    "kyotanabe.kyoto.jp";
+
+kyoto_jp("nantan", _Any) ->
+    "nantan.kyoto.jp";
+
+kyoto_jp("maizuru", _Any) ->
+    "maizuru.kyoto.jp";
+
+kyoto_jp("kyotamba", _Any) ->
+    "kyotamba.kyoto.jp";
+
+kyoto_jp("yawata", _Any) ->
+    "yawata.kyoto.jp";
+
+kyoto_jp("kumiyama", _Any) ->
+    "kumiyama.kyoto.jp";
+
+kyoto_jp("wazuka", _Any) ->
+    "wazuka.kyoto.jp";
+
+kyoto_jp("ine", _Any) ->
+    "ine.kyoto.jp";
+
+kyoto_jp("ujitawara", _Any) ->
+    "ujitawara.kyoto.jp";
+
+kyoto_jp("nakagyo", _Any) ->
+    "nakagyo.kyoto.jp";
+
+kyoto_jp("kizu", _Any) ->
+    "kizu.kyoto.jp";
+
+kyoto_jp("fukuchiyama", _Any) ->
+    "fukuchiyama.kyoto.jp";
+
+
+kyoto_jp(_, _) ->
+    "kyoto.jp".
+
+%% regular rules
+iwate_jp("fujisawa", _Any) ->
+    "fujisawa.iwate.jp";
+
+iwate_jp("yahaba", _Any) ->
+    "yahaba.iwate.jp";
+
+iwate_jp("tono", _Any) ->
+    "tono.iwate.jp";
+
+iwate_jp("oshu", _Any) ->
+    "oshu.iwate.jp";
+
+iwate_jp("iwaizumi", _Any) ->
+    "iwaizumi.iwate.jp";
+
+iwate_jp("iwate", _Any) ->
+    "iwate.iwate.jp";
+
+iwate_jp("rikuzentakata", _Any) ->
+    "rikuzentakata.iwate.jp";
+
+iwate_jp("kuzumaki", _Any) ->
+    "kuzumaki.iwate.jp";
+
+iwate_jp("hanamaki", _Any) ->
+    "hanamaki.iwate.jp";
+
+iwate_jp("shiwa", _Any) ->
+    "shiwa.iwate.jp";
+
+iwate_jp("mizusawa", _Any) ->
+    "mizusawa.iwate.jp";
+
+iwate_jp("ichinoseki", _Any) ->
+    "ichinoseki.iwate.jp";
+
+iwate_jp("hiraizumi", _Any) ->
+    "hiraizumi.iwate.jp";
+
+iwate_jp("kunohe", _Any) ->
+    "kunohe.iwate.jp";
+
+iwate_jp("kamaishi", _Any) ->
+    "kamaishi.iwate.jp";
+
+iwate_jp("kuji", _Any) ->
+    "kuji.iwate.jp";
+
+iwate_jp("sumita", _Any) ->
+    "sumita.iwate.jp";
+
+iwate_jp("ofunato", _Any) ->
+    "ofunato.iwate.jp";
+
+iwate_jp("morioka", _Any) ->
+    "morioka.iwate.jp";
+
+iwate_jp("shizukuishi", _Any) ->
+    "shizukuishi.iwate.jp";
+
+iwate_jp("fudai", _Any) ->
+    "fudai.iwate.jp";
+
+iwate_jp("joboji", _Any) ->
+    "joboji.iwate.jp";
+
+iwate_jp("yamada", _Any) ->
+    "yamada.iwate.jp";
+
+iwate_jp("otsuchi", _Any) ->
+    "otsuchi.iwate.jp";
+
+iwate_jp("karumai", _Any) ->
+    "karumai.iwate.jp";
+
+iwate_jp("ichinohe", _Any) ->
+    "ichinohe.iwate.jp";
+
+iwate_jp("kanegasaki", _Any) ->
+    "kanegasaki.iwate.jp";
+
+iwate_jp("ninohe", _Any) ->
+    "ninohe.iwate.jp";
+
+iwate_jp("kitakami", _Any) ->
+    "kitakami.iwate.jp";
+
+iwate_jp("miyako", _Any) ->
+    "miyako.iwate.jp";
+
+iwate_jp("kawai", _Any) ->
+    "kawai.iwate.jp";
+
+iwate_jp("tanohata", _Any) ->
+    "tanohata.iwate.jp";
+
+iwate_jp("noda", _Any) ->
+    "noda.iwate.jp";
+
+iwate_jp("hirono", _Any) ->
+    "hirono.iwate.jp";
+
+
+iwate_jp(_, _) ->
+    "iwate.jp".
+
+%% regular rules
+yamaguchi_jp("hagi", _Any) ->
+    "hagi.yamaguchi.jp";
+
+yamaguchi_jp("toyota", _Any) ->
+    "toyota.yamaguchi.jp";
+
+yamaguchi_jp("shimonoseki", _Any) ->
+    "shimonoseki.yamaguchi.jp";
+
+yamaguchi_jp("hofu", _Any) ->
+    "hofu.yamaguchi.jp";
+
+yamaguchi_jp("tabuse", _Any) ->
+    "tabuse.yamaguchi.jp";
+
+yamaguchi_jp("yuu", _Any) ->
+    "yuu.yamaguchi.jp";
+
+yamaguchi_jp("shunan", _Any) ->
+    "shunan.yamaguchi.jp";
+
+yamaguchi_jp("mitou", _Any) ->
+    "mitou.yamaguchi.jp";
+
+yamaguchi_jp("ube", _Any) ->
+    "ube.yamaguchi.jp";
+
+yamaguchi_jp("tokuyama", _Any) ->
+    "tokuyama.yamaguchi.jp";
+
+yamaguchi_jp("oshima", _Any) ->
+    "oshima.yamaguchi.jp";
+
+yamaguchi_jp("iwakuni", _Any) ->
+    "iwakuni.yamaguchi.jp";
+
+yamaguchi_jp("abu", _Any) ->
+    "abu.yamaguchi.jp";
+
+yamaguchi_jp("nagato", _Any) ->
+    "nagato.yamaguchi.jp";
+
+yamaguchi_jp("kudamatsu", _Any) ->
+    "kudamatsu.yamaguchi.jp";
+
+yamaguchi_jp("hikari", _Any) ->
+    "hikari.yamaguchi.jp";
+
+
+yamaguchi_jp(_, _) ->
+    "yamaguchi.jp".
+
+%% regular rules
+oita_jp("taketa", _Any) ->
+    "taketa.oita.jp";
+
+oita_jp("kusu", _Any) ->
+    "kusu.oita.jp";
+
+oita_jp("bungoono", _Any) ->
+    "bungoono.oita.jp";
+
+oita_jp("hita", _Any) ->
+    "hita.oita.jp";
+
+oita_jp("bungotakada", _Any) ->
+    "bungotakada.oita.jp";
+
+oita_jp("usuki", _Any) ->
+    "usuki.oita.jp";
+
+oita_jp("saiki", _Any) ->
+    "saiki.oita.jp";
+
+oita_jp("kamitsue", _Any) ->
+    "kamitsue.oita.jp";
+
+oita_jp("hiji", _Any) ->
+    "hiji.oita.jp";
+
+oita_jp("himeshima", _Any) ->
+    "himeshima.oita.jp";
+
+oita_jp("usa", _Any) ->
+    "usa.oita.jp";
+
+oita_jp("beppu", _Any) ->
+    "beppu.oita.jp";
+
+oita_jp("kokonoe", _Any) ->
+    "kokonoe.oita.jp";
+
+oita_jp("tsukumi", _Any) ->
+    "tsukumi.oita.jp";
+
+oita_jp("kunisaki", _Any) ->
+    "kunisaki.oita.jp";
+
+oita_jp("oita", _Any) ->
+    "oita.oita.jp";
+
+oita_jp("kuju", _Any) ->
+    "kuju.oita.jp";
+
+oita_jp("hasama", _Any) ->
+    "hasama.oita.jp";
+
+oita_jp("yufu", _Any) ->
+    "yufu.oita.jp";
+
+
+oita_jp(_, _) ->
+    "oita.jp".
+
+%% regular rules
+ishikawa_jp("nakanoto", _Any) ->
+    "nakanoto.ishikawa.jp";
+
+ishikawa_jp("kawakita", _Any) ->
+    "kawakita.ishikawa.jp";
+
+ishikawa_jp("kahoku", _Any) ->
+    "kahoku.ishikawa.jp";
+
+ishikawa_jp("anamizu", _Any) ->
+    "anamizu.ishikawa.jp";
+
+ishikawa_jp("nanao", _Any) ->
+    "nanao.ishikawa.jp";
+
+ishikawa_jp("shika", _Any) ->
+    "shika.ishikawa.jp";
+
+ishikawa_jp("tsurugi", _Any) ->
+    "tsurugi.ishikawa.jp";
+
+ishikawa_jp("nomi", _Any) ->
+    "nomi.ishikawa.jp";
+
+ishikawa_jp("komatsu", _Any) ->
+    "komatsu.ishikawa.jp";
+
+ishikawa_jp("hakusan", _Any) ->
+    "hakusan.ishikawa.jp";
+
+ishikawa_jp("uchinada", _Any) ->
+    "uchinada.ishikawa.jp";
+
+ishikawa_jp("kanazawa", _Any) ->
+    "kanazawa.ishikawa.jp";
+
+ishikawa_jp("kaga", _Any) ->
+    "kaga.ishikawa.jp";
+
+ishikawa_jp("wajima", _Any) ->
+    "wajima.ishikawa.jp";
+
+ishikawa_jp("suzu", _Any) ->
+    "suzu.ishikawa.jp";
+
+ishikawa_jp("hakui", _Any) ->
+    "hakui.ishikawa.jp";
+
+ishikawa_jp("tsubata", _Any) ->
+    "tsubata.ishikawa.jp";
+
+ishikawa_jp("noto", _Any) ->
+    "noto.ishikawa.jp";
+
+ishikawa_jp("nonoichi", _Any) ->
+    "nonoichi.ishikawa.jp";
+
+
+ishikawa_jp(_, _) ->
+    "ishikawa.jp".
+
+%% regular rules
+hiroshima_jp("seranishi", _Any) ->
+    "seranishi.hiroshima.jp";
+
+hiroshima_jp("fuchu", _Any) ->
+    "fuchu.hiroshima.jp";
+
+hiroshima_jp("osakikamijima", _Any) ->
+    "osakikamijima.hiroshima.jp";
+
+hiroshima_jp("otake", _Any) ->
+    "otake.hiroshima.jp";
+
+hiroshima_jp("takehara", _Any) ->
+    "takehara.hiroshima.jp";
+
+hiroshima_jp("daiwa", _Any) ->
+    "daiwa.hiroshima.jp";
+
+hiroshima_jp("kui", _Any) ->
+    "kui.hiroshima.jp";
+
+hiroshima_jp("hatsukaichi", _Any) ->
+    "hatsukaichi.hiroshima.jp";
+
+hiroshima_jp("hongo", _Any) ->
+    "hongo.hiroshima.jp";
+
+hiroshima_jp("onomichi", _Any) ->
+    "onomichi.hiroshima.jp";
+
+hiroshima_jp("shinichi", _Any) ->
+    "shinichi.hiroshima.jp";
+
+hiroshima_jp("kaita", _Any) ->
+    "kaita.hiroshima.jp";
+
+hiroshima_jp("sera", _Any) ->
+    "sera.hiroshima.jp";
+
+hiroshima_jp("shobara", _Any) ->
+    "shobara.hiroshima.jp";
+
+hiroshima_jp("higashihiroshima", _Any) ->
+    "higashihiroshima.hiroshima.jp";
+
+hiroshima_jp("jinsekikogen", _Any) ->
+    "jinsekikogen.hiroshima.jp";
+
+hiroshima_jp("asaminami", _Any) ->
+    "asaminami.hiroshima.jp";
+
+hiroshima_jp("naka", _Any) ->
+    "naka.hiroshima.jp";
+
+hiroshima_jp("etajima", _Any) ->
+    "etajima.hiroshima.jp";
+
+hiroshima_jp("kure", _Any) ->
+    "kure.hiroshima.jp";
+
+hiroshima_jp("fukuyama", _Any) ->
+    "fukuyama.hiroshima.jp";
+
+hiroshima_jp("kumano", _Any) ->
+    "kumano.hiroshima.jp";
+
+hiroshima_jp("saka", _Any) ->
+    "saka.hiroshima.jp";
+
+hiroshima_jp("mihara", _Any) ->
+    "mihara.hiroshima.jp";
+
+hiroshima_jp("miyoshi", _Any) ->
+    "miyoshi.hiroshima.jp";
+
+
+hiroshima_jp(_, _) ->
+    "hiroshima.jp".
+
+%% regular rules
+shimane_jp("gotsu", _Any) ->
+    "gotsu.shimane.jp";
+
+shimane_jp("kakinoki", _Any) ->
+    "kakinoki.shimane.jp";
+
+shimane_jp("yasugi", _Any) ->
+    "yasugi.shimane.jp";
+
+shimane_jp("unnan", _Any) ->
+    "unnan.shimane.jp";
+
+shimane_jp("tamayu", _Any) ->
+    "tamayu.shimane.jp";
+
+shimane_jp("masuda", _Any) ->
+    "masuda.shimane.jp";
+
+shimane_jp("izumo", _Any) ->
+    "izumo.shimane.jp";
+
+shimane_jp("yatsuka", _Any) ->
+    "yatsuka.shimane.jp";
+
+shimane_jp("hikawa", _Any) ->
+    "hikawa.shimane.jp";
+
+shimane_jp("akagi", _Any) ->
+    "akagi.shimane.jp";
+
+shimane_jp("hamada", _Any) ->
+    "hamada.shimane.jp";
+
+shimane_jp("okuizumo", _Any) ->
+    "okuizumo.shimane.jp";
+
+shimane_jp("misato", _Any) ->
+    "misato.shimane.jp";
+
+shimane_jp("okinoshima", _Any) ->
+    "okinoshima.shimane.jp";
+
+shimane_jp("ama", _Any) ->
+    "ama.shimane.jp";
+
+shimane_jp("nishinoshima", _Any) ->
+    "nishinoshima.shimane.jp";
+
+shimane_jp("hikimi", _Any) ->
+    "hikimi.shimane.jp";
+
+shimane_jp("higashiizumo", _Any) ->
+    "higashiizumo.shimane.jp";
+
+shimane_jp("ohda", _Any) ->
+    "ohda.shimane.jp";
+
+shimane_jp("matsue", _Any) ->
+    "matsue.shimane.jp";
+
+shimane_jp("yakumo", _Any) ->
+    "yakumo.shimane.jp";
+
+shimane_jp("shimane", _Any) ->
+    "shimane.shimane.jp";
+
+shimane_jp("tsuwano", _Any) ->
+    "tsuwano.shimane.jp";
+
+
+shimane_jp(_, _) ->
+    "shimane.jp".
+
+%% regular rules
+yamagata_jp("sagae", _Any) ->
+    "sagae.yamagata.jp";
+
+yamagata_jp("iide", _Any) ->
+    "iide.yamagata.jp";
+
+yamagata_jp("oguni", _Any) ->
+    "oguni.yamagata.jp";
+
+yamagata_jp("shinjo", _Any) ->
+    "shinjo.yamagata.jp";
+
+yamagata_jp("yamagata", _Any) ->
+    "yamagata.yamagata.jp";
+
+yamagata_jp("higashine", _Any) ->
+    "higashine.yamagata.jp";
+
+yamagata_jp("kawanishi", _Any) ->
+    "kawanishi.yamagata.jp";
+
+yamagata_jp("kaneyama", _Any) ->
+    "kaneyama.yamagata.jp";
+
+yamagata_jp("tozawa", _Any) ->
+    "tozawa.yamagata.jp";
+
+yamagata_jp("mikawa", _Any) ->
+    "mikawa.yamagata.jp";
+
+yamagata_jp("tendo", _Any) ->
+    "tendo.yamagata.jp";
+
+yamagata_jp("kaminoyama", _Any) ->
+    "kaminoyama.yamagata.jp";
+
+yamagata_jp("nagai", _Any) ->
+    "nagai.yamagata.jp";
+
+yamagata_jp("mamurogawa", _Any) ->
+    "mamurogawa.yamagata.jp";
+
+yamagata_jp("shonai", _Any) ->
+    "shonai.yamagata.jp";
+
+yamagata_jp("murayama", _Any) ->
+    "murayama.yamagata.jp";
+
+yamagata_jp("tsuruoka", _Any) ->
+    "tsuruoka.yamagata.jp";
+
+yamagata_jp("yuza", _Any) ->
+    "yuza.yamagata.jp";
+
+yamagata_jp("yonezawa", _Any) ->
+    "yonezawa.yamagata.jp";
+
+yamagata_jp("nishikawa", _Any) ->
+    "nishikawa.yamagata.jp";
+
+yamagata_jp("obanazawa", _Any) ->
+    "obanazawa.yamagata.jp";
+
+yamagata_jp("shirataka", _Any) ->
+    "shirataka.yamagata.jp";
+
+yamagata_jp("yamanobe", _Any) ->
+    "yamanobe.yamagata.jp";
+
+yamagata_jp("ohkura", _Any) ->
+    "ohkura.yamagata.jp";
+
+yamagata_jp("sakegawa", _Any) ->
+    "sakegawa.yamagata.jp";
+
+yamagata_jp("sakata", _Any) ->
+    "sakata.yamagata.jp";
+
+yamagata_jp("oe", _Any) ->
+    "oe.yamagata.jp";
+
+yamagata_jp("funagata", _Any) ->
+    "funagata.yamagata.jp";
+
+yamagata_jp("asahi", _Any) ->
+    "asahi.yamagata.jp";
+
+yamagata_jp("nanyo", _Any) ->
+    "nanyo.yamagata.jp";
+
+yamagata_jp("kahoku", _Any) ->
+    "kahoku.yamagata.jp";
+
+yamagata_jp("oishida", _Any) ->
+    "oishida.yamagata.jp";
+
+yamagata_jp("nakayama", _Any) ->
+    "nakayama.yamagata.jp";
+
+yamagata_jp("takahata", _Any) ->
+    "takahata.yamagata.jp";
+
+
+yamagata_jp(_, _) ->
+    "yamagata.jp".
+
+%% regular rules
+tokyo_jp("shinagawa", _Any) ->
+    "shinagawa.tokyo.jp";
+
+tokyo_jp("nakano", _Any) ->
+    "nakano.tokyo.jp";
+
+tokyo_jp("hino", _Any) ->
+    "hino.tokyo.jp";
+
+tokyo_jp("kiyose", _Any) ->
+    "kiyose.tokyo.jp";
+
+tokyo_jp("arakawa", _Any) ->
+    "arakawa.tokyo.jp";
+
+tokyo_jp("ogasawara", _Any) ->
+    "ogasawara.tokyo.jp";
+
+tokyo_jp("fuchu", _Any) ->
+    "fuchu.tokyo.jp";
+
+tokyo_jp("shibuya", _Any) ->
+    "shibuya.tokyo.jp";
+
+tokyo_jp("edogawa", _Any) ->
+    "edogawa.tokyo.jp";
+
+tokyo_jp("suginami", _Any) ->
+    "suginami.tokyo.jp";
+
+tokyo_jp("hinode", _Any) ->
+    "hinode.tokyo.jp";
+
+tokyo_jp("itabashi", _Any) ->
+    "itabashi.tokyo.jp";
+
+tokyo_jp("tama", _Any) ->
+    "tama.tokyo.jp";
+
+tokyo_jp("nerima", _Any) ->
+    "nerima.tokyo.jp";
+
+tokyo_jp("adachi", _Any) ->
+    "adachi.tokyo.jp";
+
+tokyo_jp("katsushika", _Any) ->
+    "katsushika.tokyo.jp";
+
+tokyo_jp("inagi", _Any) ->
+    "inagi.tokyo.jp";
+
+tokyo_jp("tachikawa", _Any) ->
+    "tachikawa.tokyo.jp";
+
+tokyo_jp("shinjuku", _Any) ->
+    "shinjuku.tokyo.jp";
+
+tokyo_jp("toshima", _Any) ->
+    "toshima.tokyo.jp";
+
+tokyo_jp("ota", _Any) ->
+    "ota.tokyo.jp";
+
+tokyo_jp("kouzushima", _Any) ->
+    "kouzushima.tokyo.jp";
+
+tokyo_jp("kita", _Any) ->
+    "kita.tokyo.jp";
+
+tokyo_jp("higashiyamato", _Any) ->
+    "higashiyamato.tokyo.jp";
+
+tokyo_jp("kokubunji", _Any) ->
+    "kokubunji.tokyo.jp";
+
+tokyo_jp("bunkyo", _Any) ->
+    "bunkyo.tokyo.jp";
+
+tokyo_jp("komae", _Any) ->
+    "komae.tokyo.jp";
+
+tokyo_jp("hachioji", _Any) ->
+    "hachioji.tokyo.jp";
+
+tokyo_jp("fussa", _Any) ->
+    "fussa.tokyo.jp";
+
+tokyo_jp("machida", _Any) ->
+    "machida.tokyo.jp";
+
+tokyo_jp("aogashima", _Any) ->
+    "aogashima.tokyo.jp";
+
+tokyo_jp("hinohara", _Any) ->
+    "hinohara.tokyo.jp";
+
+tokyo_jp("musashino", _Any) ->
+    "musashino.tokyo.jp";
+
+tokyo_jp("sumida", _Any) ->
+    "sumida.tokyo.jp";
+
+tokyo_jp("mizuho", _Any) ->
+    "mizuho.tokyo.jp";
+
+tokyo_jp("chiyoda", _Any) ->
+    "chiyoda.tokyo.jp";
+
+tokyo_jp("ome", _Any) ->
+    "ome.tokyo.jp";
+
+tokyo_jp("chofu", _Any) ->
+    "chofu.tokyo.jp";
+
+tokyo_jp("higashimurayama", _Any) ->
+    "higashimurayama.tokyo.jp";
+
+tokyo_jp("koto", _Any) ->
+    "koto.tokyo.jp";
+
+tokyo_jp("akishima", _Any) ->
+    "akishima.tokyo.jp";
+
+tokyo_jp("oshima", _Any) ->
+    "oshima.tokyo.jp";
+
+tokyo_jp("hamura", _Any) ->
+    "hamura.tokyo.jp";
+
+tokyo_jp("koganei", _Any) ->
+    "koganei.tokyo.jp";
+
+tokyo_jp("setagaya", _Any) ->
+    "setagaya.tokyo.jp";
+
+tokyo_jp("taito", _Any) ->
+    "taito.tokyo.jp";
+
+tokyo_jp("minato", _Any) ->
+    "minato.tokyo.jp";
+
+tokyo_jp("higashikurume", _Any) ->
+    "higashikurume.tokyo.jp";
+
+tokyo_jp("okutama", _Any) ->
+    "okutama.tokyo.jp";
+
+tokyo_jp("hachijo", _Any) ->
+    "hachijo.tokyo.jp";
+
+tokyo_jp("kunitachi", _Any) ->
+    "kunitachi.tokyo.jp";
+
+tokyo_jp("musashimurayama", _Any) ->
+    "musashimurayama.tokyo.jp";
+
+tokyo_jp("mitaka", _Any) ->
+    "mitaka.tokyo.jp";
+
+tokyo_jp("chuo", _Any) ->
+    "chuo.tokyo.jp";
+
+tokyo_jp("meguro", _Any) ->
+    "meguro.tokyo.jp";
+
+tokyo_jp("akiruno", _Any) ->
+    "akiruno.tokyo.jp";
+
+tokyo_jp("kodaira", _Any) ->
+    "kodaira.tokyo.jp";
+
+
+tokyo_jp(_, _) ->
+    "tokyo.jp".
+
+%% regular rules
+shiga_jp("kosei", _Any) ->
+    "kosei.shiga.jp";
+
+shiga_jp("ryuoh", _Any) ->
+    "ryuoh.shiga.jp";
+
+shiga_jp("nagahama", _Any) ->
+    "nagahama.shiga.jp";
+
+shiga_jp("omihachiman", _Any) ->
+    "omihachiman.shiga.jp";
+
+shiga_jp("aisho", _Any) ->
+    "aisho.shiga.jp";
+
+shiga_jp("higashiomi", _Any) ->
+    "higashiomi.shiga.jp";
+
+shiga_jp("takashima", _Any) ->
+    "takashima.shiga.jp";
+
+shiga_jp("nishiazai", _Any) ->
+    "nishiazai.shiga.jp";
+
+shiga_jp("notogawa", _Any) ->
+    "notogawa.shiga.jp";
+
+shiga_jp("torahime", _Any) ->
+    "torahime.shiga.jp";
+
+shiga_jp("hikone", _Any) ->
+    "hikone.shiga.jp";
+
+shiga_jp("otsu", _Any) ->
+    "otsu.shiga.jp";
+
+shiga_jp("kusatsu", _Any) ->
+    "kusatsu.shiga.jp";
+
+shiga_jp("ritto", _Any) ->
+    "ritto.shiga.jp";
+
+shiga_jp("moriyama", _Any) ->
+    "moriyama.shiga.jp";
+
+shiga_jp("koka", _Any) ->
+    "koka.shiga.jp";
+
+shiga_jp("yasu", _Any) ->
+    "yasu.shiga.jp";
+
+shiga_jp("gamo", _Any) ->
+    "gamo.shiga.jp";
+
+shiga_jp("takatsuki", _Any) ->
+    "takatsuki.shiga.jp";
+
+shiga_jp("koto", _Any) ->
+    "koto.shiga.jp";
+
+shiga_jp("toyosato", _Any) ->
+    "toyosato.shiga.jp";
+
+shiga_jp("maibara", _Any) ->
+    "maibara.shiga.jp";
+
+shiga_jp("konan", _Any) ->
+    "konan.shiga.jp";
+
+
+shiga_jp(_, _) ->
+    "shiga.jp".
+
+%% regular rules
+miyazaki_jp("gokase", _Any) ->
+    "gokase.miyazaki.jp";
+
+miyazaki_jp("kadogawa", _Any) ->
+    "kadogawa.miyazaki.jp";
+
+miyazaki_jp("shiiba", _Any) ->
+    "shiiba.miyazaki.jp";
+
+miyazaki_jp("nobeoka", _Any) ->
+    "nobeoka.miyazaki.jp";
+
+miyazaki_jp("miyakonojo", _Any) ->
+    "miyakonojo.miyazaki.jp";
+
+miyazaki_jp("saito", _Any) ->
+    "saito.miyazaki.jp";
+
+miyazaki_jp("kitakata", _Any) ->
+    "kitakata.miyazaki.jp";
+
+miyazaki_jp("kitaura", _Any) ->
+    "kitaura.miyazaki.jp";
+
+miyazaki_jp("nishimera", _Any) ->
+    "nishimera.miyazaki.jp";
+
+miyazaki_jp("takanabe", _Any) ->
+    "takanabe.miyazaki.jp";
+
+miyazaki_jp("kitagawa", _Any) ->
+    "kitagawa.miyazaki.jp";
+
+miyazaki_jp("ebino", _Any) ->
+    "ebino.miyazaki.jp";
+
+miyazaki_jp("hyuga", _Any) ->
+    "hyuga.miyazaki.jp";
+
+miyazaki_jp("kijo", _Any) ->
+    "kijo.miyazaki.jp";
+
+miyazaki_jp("tsuno", _Any) ->
+    "tsuno.miyazaki.jp";
+
+miyazaki_jp("kobayashi", _Any) ->
+    "kobayashi.miyazaki.jp";
+
+miyazaki_jp("morotsuka", _Any) ->
+    "morotsuka.miyazaki.jp";
+
+miyazaki_jp("nichinan", _Any) ->
+    "nichinan.miyazaki.jp";
+
+miyazaki_jp("miyazaki", _Any) ->
+    "miyazaki.miyazaki.jp";
+
+miyazaki_jp("takaharu", _Any) ->
+    "takaharu.miyazaki.jp";
+
+miyazaki_jp("aya", _Any) ->
+    "aya.miyazaki.jp";
+
+miyazaki_jp("takazaki", _Any) ->
+    "takazaki.miyazaki.jp";
+
+miyazaki_jp("kunitomi", _Any) ->
+    "kunitomi.miyazaki.jp";
+
+miyazaki_jp("kawaminami", _Any) ->
+    "kawaminami.miyazaki.jp";
+
+miyazaki_jp("mimata", _Any) ->
+    "mimata.miyazaki.jp";
+
+miyazaki_jp("shintomi", _Any) ->
+    "shintomi.miyazaki.jp";
+
+miyazaki_jp("kushima", _Any) ->
+    "kushima.miyazaki.jp";
+
+
+miyazaki_jp(_, _) ->
+    "miyazaki.jp".
+
+%% regular rules
+yamanashi_jp("nirasaki", _Any) ->
+    "nirasaki.yamanashi.jp";
+
+yamanashi_jp("kai", _Any) ->
+    "kai.yamanashi.jp";
+
+yamanashi_jp("nakamichi", _Any) ->
+    "nakamichi.yamanashi.jp";
+
+yamanashi_jp("koshu", _Any) ->
+    "koshu.yamanashi.jp";
+
+yamanashi_jp("chuo", _Any) ->
+    "chuo.yamanashi.jp";
+
+yamanashi_jp("yamanashi", _Any) ->
+    "yamanashi.yamanashi.jp";
+
+yamanashi_jp("minobu", _Any) ->
+    "minobu.yamanashi.jp";
+
+yamanashi_jp("oshino", _Any) ->
+    "oshino.yamanashi.jp";
+
+yamanashi_jp("hokuto", _Any) ->
+    "hokuto.yamanashi.jp";
+
+yamanashi_jp("fujikawaguchiko", _Any) ->
+    "fujikawaguchiko.yamanashi.jp";
+
+yamanashi_jp("kofu", _Any) ->
+    "kofu.yamanashi.jp";
+
+yamanashi_jp("fujiyoshida", _Any) ->
+    "fujiyoshida.yamanashi.jp";
+
+yamanashi_jp("fuefuki", _Any) ->
+    "fuefuki.yamanashi.jp";
+
+yamanashi_jp("showa", _Any) ->
+    "showa.yamanashi.jp";
+
+yamanashi_jp("tsuru", _Any) ->
+    "tsuru.yamanashi.jp";
+
+yamanashi_jp("fujikawa", _Any) ->
+    "fujikawa.yamanashi.jp";
+
+yamanashi_jp("ichikawamisato", _Any) ->
+    "ichikawamisato.yamanashi.jp";
+
+yamanashi_jp("uenohara", _Any) ->
+    "uenohara.yamanashi.jp";
+
+yamanashi_jp("otsuki", _Any) ->
+    "otsuki.yamanashi.jp";
+
+yamanashi_jp("doshi", _Any) ->
+    "doshi.yamanashi.jp";
+
+yamanashi_jp("nanbu", _Any) ->
+    "nanbu.yamanashi.jp";
+
+yamanashi_jp("kosuge", _Any) ->
+    "kosuge.yamanashi.jp";
+
+yamanashi_jp("yamanakako", _Any) ->
+    "yamanakako.yamanashi.jp";
+
+yamanashi_jp("nishikatsura", _Any) ->
+    "nishikatsura.yamanashi.jp";
+
+yamanashi_jp("narusawa", _Any) ->
+    "narusawa.yamanashi.jp";
+
+yamanashi_jp("tabayama", _Any) ->
+    "tabayama.yamanashi.jp";
+
+yamanashi_jp("hayakawa", _Any) ->
+    "hayakawa.yamanashi.jp";
+
+
+yamanashi_jp(_, _) ->
+    "yamanashi.jp".
+
+%% regular rules
+gunma_jp("kanra", _Any) ->
+    "kanra.gunma.jp";
+
+gunma_jp("itakura", _Any) ->
+    "itakura.gunma.jp";
+
+gunma_jp("shimonita", _Any) ->
+    "shimonita.gunma.jp";
+
+gunma_jp("nakanojo", _Any) ->
+    "nakanojo.gunma.jp";
+
+gunma_jp("takasaki", _Any) ->
+    "takasaki.gunma.jp";
+
+gunma_jp("ota", _Any) ->
+    "ota.gunma.jp";
+
+gunma_jp("shibukawa", _Any) ->
+    "shibukawa.gunma.jp";
+
+gunma_jp("ueno", _Any) ->
+    "ueno.gunma.jp";
+
+gunma_jp("shinto", _Any) ->
+    "shinto.gunma.jp";
+
+gunma_jp("annaka", _Any) ->
+    "annaka.gunma.jp";
+
+gunma_jp("isesaki", _Any) ->
+    "isesaki.gunma.jp";
+
+gunma_jp("meiwa", _Any) ->
+    "meiwa.gunma.jp";
+
+gunma_jp("katashina", _Any) ->
+    "katashina.gunma.jp";
+
+gunma_jp("minakami", _Any) ->
+    "minakami.gunma.jp";
+
+gunma_jp("numata", _Any) ->
+    "numata.gunma.jp";
+
+gunma_jp("tsumagoi", _Any) ->
+    "tsumagoi.gunma.jp";
+
+gunma_jp("fujioka", _Any) ->
+    "fujioka.gunma.jp";
+
+gunma_jp("showa", _Any) ->
+    "showa.gunma.jp";
+
+gunma_jp("higashiagatsuma", _Any) ->
+    "higashiagatsuma.gunma.jp";
+
+gunma_jp("maebashi", _Any) ->
+    "maebashi.gunma.jp";
+
+gunma_jp("kiryu", _Any) ->
+    "kiryu.gunma.jp";
+
+gunma_jp("kanna", _Any) ->
+    "kanna.gunma.jp";
+
+gunma_jp("kawaba", _Any) ->
+    "kawaba.gunma.jp";
+
+gunma_jp("tamamura", _Any) ->
+    "tamamura.gunma.jp";
+
+gunma_jp("midori", _Any) ->
+    "midori.gunma.jp";
+
+gunma_jp("ora", _Any) ->
+    "ora.gunma.jp";
+
+gunma_jp("tatebayashi", _Any) ->
+    "tatebayashi.gunma.jp";
+
+gunma_jp("tsukiyono", _Any) ->
+    "tsukiyono.gunma.jp";
+
+gunma_jp("yoshioka", _Any) ->
+    "yoshioka.gunma.jp";
+
+gunma_jp("chiyoda", _Any) ->
+    "chiyoda.gunma.jp";
+
+gunma_jp("takayama", _Any) ->
+    "takayama.gunma.jp";
+
+gunma_jp("tomioka", _Any) ->
+    "tomioka.gunma.jp";
+
+gunma_jp("oizumi", _Any) ->
+    "oizumi.gunma.jp";
+
+gunma_jp("naganohara", _Any) ->
+    "naganohara.gunma.jp";
+
+gunma_jp("nanmoku", _Any) ->
+    "nanmoku.gunma.jp";
+
+gunma_jp("kusatsu", _Any) ->
+    "kusatsu.gunma.jp";
+
+
+gunma_jp(_, _) ->
+    "gunma.jp".
+
+%% regular rules
+tochigi_jp("ujiie", _Any) ->
+    "ujiie.tochigi.jp";
+
+tochigi_jp("oyama", _Any) ->
+    "oyama.tochigi.jp";
+
+tochigi_jp("ohtawara", _Any) ->
+    "ohtawara.tochigi.jp";
+
+tochigi_jp("shioya", _Any) ->
+    "shioya.tochigi.jp";
+
+tochigi_jp("sano", _Any) ->
+    "sano.tochigi.jp";
+
+tochigi_jp("bato", _Any) ->
+    "bato.tochigi.jp";
+
+tochigi_jp("ichikai", _Any) ->
+    "ichikai.tochigi.jp";
+
+tochigi_jp("ashikaga", _Any) ->
+    "ashikaga.tochigi.jp";
+
+tochigi_jp("yaita", _Any) ->
+    "yaita.tochigi.jp";
+
+tochigi_jp("takanezawa", _Any) ->
+    "takanezawa.tochigi.jp";
+
+tochigi_jp("kuroiso", _Any) ->
+    "kuroiso.tochigi.jp";
+
+tochigi_jp("kanuma", _Any) ->
+    "kanuma.tochigi.jp";
+
+tochigi_jp("nasushiobara", _Any) ->
+    "nasushiobara.tochigi.jp";
+
+tochigi_jp("shimotsuke", _Any) ->
+    "shimotsuke.tochigi.jp";
+
+tochigi_jp("nishikata", _Any) ->
+    "nishikata.tochigi.jp";
+
+tochigi_jp("ohira", _Any) ->
+    "ohira.tochigi.jp";
+
+tochigi_jp("utsunomiya", _Any) ->
+    "utsunomiya.tochigi.jp";
+
+tochigi_jp("moka", _Any) ->
+    "moka.tochigi.jp";
+
+tochigi_jp("karasuyama", _Any) ->
+    "karasuyama.tochigi.jp";
+
+tochigi_jp("haga", _Any) ->
+    "haga.tochigi.jp";
+
+tochigi_jp("sakura", _Any) ->
+    "sakura.tochigi.jp";
+
+tochigi_jp("nikko", _Any) ->
+    "nikko.tochigi.jp";
+
+tochigi_jp("nogi", _Any) ->
+    "nogi.tochigi.jp";
+
+tochigi_jp("iwafune", _Any) ->
+    "iwafune.tochigi.jp";
+
+tochigi_jp("mibu", _Any) ->
+    "mibu.tochigi.jp";
+
+tochigi_jp("motegi", _Any) ->
+    "motegi.tochigi.jp";
+
+tochigi_jp("tsuga", _Any) ->
+    "tsuga.tochigi.jp";
+
+tochigi_jp("tochigi", _Any) ->
+    "tochigi.tochigi.jp";
+
+tochigi_jp("nasu", _Any) ->
+    "nasu.tochigi.jp";
+
+tochigi_jp("mashiko", _Any) ->
+    "mashiko.tochigi.jp";
+
+tochigi_jp("kaminokawa", _Any) ->
+    "kaminokawa.tochigi.jp";
+
+
+tochigi_jp(_, _) ->
+    "tochigi.jp".
+
+%% regular rules
+shizuoka_jp("higashiizu", _Any) ->
+    "higashiizu.shizuoka.jp";
+
+shizuoka_jp("ito", _Any) ->
+    "ito.shizuoka.jp";
+
+shizuoka_jp("fujieda", _Any) ->
+    "fujieda.shizuoka.jp";
+
+shizuoka_jp("haibara", _Any) ->
+    "haibara.shizuoka.jp";
+
+shizuoka_jp("fujikawa", _Any) ->
+    "fujikawa.shizuoka.jp";
+
+shizuoka_jp("morimachi", _Any) ->
+    "morimachi.shizuoka.jp";
+
+shizuoka_jp("yaizu", _Any) ->
+    "yaizu.shizuoka.jp";
+
+shizuoka_jp("iwata", _Any) ->
+    "iwata.shizuoka.jp";
+
+shizuoka_jp("shimoda", _Any) ->
+    "shimoda.shizuoka.jp";
+
+shizuoka_jp("omaezaki", _Any) ->
+    "omaezaki.shizuoka.jp";
+
+shizuoka_jp("susono", _Any) ->
+    "susono.shizuoka.jp";
+
+shizuoka_jp("matsuzaki", _Any) ->
+    "matsuzaki.shizuoka.jp";
+
+shizuoka_jp("kosai", _Any) ->
+    "kosai.shizuoka.jp";
+
+shizuoka_jp("numazu", _Any) ->
+    "numazu.shizuoka.jp";
+
+shizuoka_jp("minamiizu", _Any) ->
+    "minamiizu.shizuoka.jp";
+
+shizuoka_jp("shimada", _Any) ->
+    "shimada.shizuoka.jp";
+
+shizuoka_jp("kakegawa", _Any) ->
+    "kakegawa.shizuoka.jp";
+
+shizuoka_jp("atami", _Any) ->
+    "atami.shizuoka.jp";
+
+shizuoka_jp("gotemba", _Any) ->
+    "gotemba.shizuoka.jp";
+
+shizuoka_jp("shimizu", _Any) ->
+    "shimizu.shizuoka.jp";
+
+shizuoka_jp("hamamatsu", _Any) ->
+    "hamamatsu.shizuoka.jp";
+
+shizuoka_jp("fukuroi", _Any) ->
+    "fukuroi.shizuoka.jp";
+
+shizuoka_jp("fuji", _Any) ->
+    "fuji.shizuoka.jp";
+
+shizuoka_jp("shizuoka", _Any) ->
+    "shizuoka.shizuoka.jp";
+
+shizuoka_jp("mishima", _Any) ->
+    "mishima.shizuoka.jp";
+
+shizuoka_jp("kikugawa", _Any) ->
+    "kikugawa.shizuoka.jp";
+
+shizuoka_jp("kannami", _Any) ->
+    "kannami.shizuoka.jp";
+
+shizuoka_jp("kawazu", _Any) ->
+    "kawazu.shizuoka.jp";
+
+shizuoka_jp("makinohara", _Any) ->
+    "makinohara.shizuoka.jp";
+
+shizuoka_jp("arai", _Any) ->
+    "arai.shizuoka.jp";
+
+shizuoka_jp("nishiizu", _Any) ->
+    "nishiizu.shizuoka.jp";
+
+shizuoka_jp("yoshida", _Any) ->
+    "yoshida.shizuoka.jp";
+
+shizuoka_jp("kawanehon", _Any) ->
+    "kawanehon.shizuoka.jp";
+
+shizuoka_jp("fujinomiya", _Any) ->
+    "fujinomiya.shizuoka.jp";
+
+shizuoka_jp("izu", _Any) ->
+    "izu.shizuoka.jp";
+
+shizuoka_jp("izunokuni", _Any) ->
+    "izunokuni.shizuoka.jp";
+
+
+shizuoka_jp(_, _) ->
+    "shizuoka.jp".
+
+%% regular rules
+aomori_jp("tsuruta", _Any) ->
+    "tsuruta.aomori.jp";
+
+aomori_jp("rokunohe", _Any) ->
+    "rokunohe.aomori.jp";
+
+aomori_jp("hiranai", _Any) ->
+    "hiranai.aomori.jp";
+
+aomori_jp("towada", _Any) ->
+    "towada.aomori.jp";
+
+aomori_jp("oirase", _Any) ->
+    "oirase.aomori.jp";
+
+aomori_jp("shichinohe", _Any) ->
+    "shichinohe.aomori.jp";
+
+aomori_jp("itayanagi", _Any) ->
+    "itayanagi.aomori.jp";
+
+aomori_jp("sannohe", _Any) ->
+    "sannohe.aomori.jp";
+
+aomori_jp("hashikami", _Any) ->
+    "hashikami.aomori.jp";
+
+aomori_jp("kuroishi", _Any) ->
+    "kuroishi.aomori.jp";
+
+aomori_jp("takko", _Any) ->
+    "takko.aomori.jp";
+
+aomori_jp("owani", _Any) ->
+    "owani.aomori.jp";
+
+aomori_jp("noheji", _Any) ->
+    "noheji.aomori.jp";
+
+aomori_jp("gonohe", _Any) ->
+    "gonohe.aomori.jp";
+
+aomori_jp("nakadomari", _Any) ->
+    "nakadomari.aomori.jp";
+
+aomori_jp("mutsu", _Any) ->
+    "mutsu.aomori.jp";
+
+aomori_jp("shingo", _Any) ->
+    "shingo.aomori.jp";
+
+aomori_jp("aomori", _Any) ->
+    "aomori.aomori.jp";
+
+aomori_jp("hirosaki", _Any) ->
+    "hirosaki.aomori.jp";
+
+aomori_jp("tsugaru", _Any) ->
+    "tsugaru.aomori.jp";
+
+aomori_jp("misawa", _Any) ->
+    "misawa.aomori.jp";
+
+aomori_jp("hachinohe", _Any) ->
+    "hachinohe.aomori.jp";
+
+
+aomori_jp(_, _) ->
+    "aomori.jp".
+
+%% regular rules
+saitama_jp("tsurugashima", _Any) ->
+    "tsurugashima.saitama.jp";
+
+saitama_jp("kamiizumi", _Any) ->
+    "kamiizumi.saitama.jp";
+
+saitama_jp("tokorozawa", _Any) ->
+    "tokorozawa.saitama.jp";
+
+saitama_jp("yoshikawa", _Any) ->
+    "yoshikawa.saitama.jp";
+
+saitama_jp("ogose", _Any) ->
+    "ogose.saitama.jp";
+
+saitama_jp("chichibu", _Any) ->
+    "chichibu.saitama.jp";
+
+saitama_jp("kazo", _Any) ->
+    "kazo.saitama.jp";
+
+saitama_jp("kitamoto", _Any) ->
+    "kitamoto.saitama.jp";
+
+saitama_jp("fujimi", _Any) ->
+    "fujimi.saitama.jp";
+
+saitama_jp("higashichichibu", _Any) ->
+    "higashichichibu.saitama.jp";
+
+saitama_jp("hasuda", _Any) ->
+    "hasuda.saitama.jp";
+
+saitama_jp("yono", _Any) ->
+    "yono.saitama.jp";
+
+saitama_jp("yorii", _Any) ->
+    "yorii.saitama.jp";
+
+saitama_jp("warabi", _Any) ->
+    "warabi.saitama.jp";
+
+saitama_jp("ogawa", _Any) ->
+    "ogawa.saitama.jp";
+
+saitama_jp("shiraoka", _Any) ->
+    "shiraoka.saitama.jp";
+
+saitama_jp("ogano", _Any) ->
+    "ogano.saitama.jp";
+
+saitama_jp("kamikawa", _Any) ->
+    "kamikawa.saitama.jp";
+
+saitama_jp("niiza", _Any) ->
+    "niiza.saitama.jp";
+
+saitama_jp("yokoze", _Any) ->
+    "yokoze.saitama.jp";
+
+saitama_jp("fukaya", _Any) ->
+    "fukaya.saitama.jp";
+
+saitama_jp("kawagoe", _Any) ->
+    "kawagoe.saitama.jp";
+
+saitama_jp("hanyu", _Any) ->
+    "hanyu.saitama.jp";
+
+saitama_jp("yoshida", _Any) ->
+    "yoshida.saitama.jp";
+
+saitama_jp("ryokami", _Any) ->
+    "ryokami.saitama.jp";
+
+saitama_jp("kasukabe", _Any) ->
+    "kasukabe.saitama.jp";
+
+saitama_jp("minano", _Any) ->
+    "minano.saitama.jp";
+
+saitama_jp("kawaguchi", _Any) ->
+    "kawaguchi.saitama.jp";
+
+saitama_jp("namegawa", _Any) ->
+    "namegawa.saitama.jp";
+
+saitama_jp("tokigawa", _Any) ->
+    "tokigawa.saitama.jp";
+
+saitama_jp("moroyama", _Any) ->
+    "moroyama.saitama.jp";
+
+saitama_jp("satte", _Any) ->
+    "satte.saitama.jp";
+
+saitama_jp("hidaka", _Any) ->
+    "hidaka.saitama.jp";
+
+saitama_jp("iruma", _Any) ->
+    "iruma.saitama.jp";
+
+saitama_jp("hatogaya", _Any) ->
+    "hatogaya.saitama.jp";
+
+saitama_jp("higashimatsuyama", _Any) ->
+    "higashimatsuyama.saitama.jp";
+
+saitama_jp("shiki", _Any) ->
+    "shiki.saitama.jp";
+
+saitama_jp("honjo", _Any) ->
+    "honjo.saitama.jp";
+
+saitama_jp("kumagaya", _Any) ->
+    "kumagaya.saitama.jp";
+
+saitama_jp("sayama", _Any) ->
+    "sayama.saitama.jp";
+
+saitama_jp("nagatoro", _Any) ->
+    "nagatoro.saitama.jp";
+
+saitama_jp("yoshimi", _Any) ->
+    "yoshimi.saitama.jp";
+
+saitama_jp("urawa", _Any) ->
+    "urawa.saitama.jp";
+
+saitama_jp("iwatsuki", _Any) ->
+    "iwatsuki.saitama.jp";
+
+saitama_jp("ina", _Any) ->
+    "ina.saitama.jp";
+
+saitama_jp("kounosu", _Any) ->
+    "kounosu.saitama.jp";
+
+saitama_jp("yashio", _Any) ->
+    "yashio.saitama.jp";
+
+saitama_jp("miyoshi", _Any) ->
+    "miyoshi.saitama.jp";
+
+saitama_jp("misato", _Any) ->
+    "misato.saitama.jp";
+
+saitama_jp("hatoyama", _Any) ->
+    "hatoyama.saitama.jp";
+
+saitama_jp("matsubushi", _Any) ->
+    "matsubushi.saitama.jp";
+
+saitama_jp("arakawa", _Any) ->
+    "arakawa.saitama.jp";
+
+saitama_jp("sakado", _Any) ->
+    "sakado.saitama.jp";
+
+saitama_jp("otaki", _Any) ->
+    "otaki.saitama.jp";
+
+saitama_jp("miyashiro", _Any) ->
+    "miyashiro.saitama.jp";
+
+saitama_jp("ranzan", _Any) ->
+    "ranzan.saitama.jp";
+
+saitama_jp("saitama", _Any) ->
+    "saitama.saitama.jp";
+
+saitama_jp("soka", _Any) ->
+    "soka.saitama.jp";
+
+saitama_jp("hanno", _Any) ->
+    "hanno.saitama.jp";
+
+saitama_jp("okegawa", _Any) ->
+    "okegawa.saitama.jp";
+
+saitama_jp("toda", _Any) ->
+    "toda.saitama.jp";
+
+saitama_jp("kawajima", _Any) ->
+    "kawajima.saitama.jp";
+
+saitama_jp("kuki", _Any) ->
+    "kuki.saitama.jp";
+
+saitama_jp("sugito", _Any) ->
+    "sugito.saitama.jp";
+
+saitama_jp("koshigaya", _Any) ->
+    "koshigaya.saitama.jp";
+
+saitama_jp("asaka", _Any) ->
+    "asaka.saitama.jp";
+
+saitama_jp("kamisato", _Any) ->
+    "kamisato.saitama.jp";
+
+saitama_jp("fujimino", _Any) ->
+    "fujimino.saitama.jp";
+
+saitama_jp("omiya", _Any) ->
+    "omiya.saitama.jp";
+
+
+saitama_jp(_, _) ->
+    "saitama.jp".
+
+%% regular rules
+fukui_jp("katsuyama", _Any) ->
+    "katsuyama.fukui.jp";
+
+fukui_jp("wakasa", _Any) ->
+    "wakasa.fukui.jp";
+
+fukui_jp("eiheiji", _Any) ->
+    "eiheiji.fukui.jp";
+
+fukui_jp("tsuruga", _Any) ->
+    "tsuruga.fukui.jp";
+
+fukui_jp("fukui", _Any) ->
+    "fukui.fukui.jp";
+
+fukui_jp("takahama", _Any) ->
+    "takahama.fukui.jp";
+
+fukui_jp("sabae", _Any) ->
+    "sabae.fukui.jp";
+
+fukui_jp("sakai", _Any) ->
+    "sakai.fukui.jp";
+
+fukui_jp("ikeda", _Any) ->
+    "ikeda.fukui.jp";
+
+fukui_jp("ono", _Any) ->
+    "ono.fukui.jp";
+
+fukui_jp("obama", _Any) ->
+    "obama.fukui.jp";
+
+fukui_jp("ohi", _Any) ->
+    "ohi.fukui.jp";
+
+fukui_jp("mihama", _Any) ->
+    "mihama.fukui.jp";
+
+fukui_jp("minamiechizen", _Any) ->
+    "minamiechizen.fukui.jp";
+
+fukui_jp("echizen", _Any) ->
+    "echizen.fukui.jp";
+
+
+fukui_jp(_, _) ->
+    "fukui.jp".
+
+%% regular rules
+okinawa_jp("gushikami", _Any) ->
+    "gushikami.okinawa.jp";
+
+okinawa_jp("zamami", _Any) ->
+    "zamami.okinawa.jp";
+
+okinawa_jp("okinawa", _Any) ->
+    "okinawa.okinawa.jp";
+
+okinawa_jp("haebaru", _Any) ->
+    "haebaru.okinawa.jp";
+
+okinawa_jp("yonabaru", _Any) ->
+    "yonabaru.okinawa.jp";
+
+okinawa_jp("ginoza", _Any) ->
+    "ginoza.okinawa.jp";
+
+okinawa_jp("tokashiki", _Any) ->
+    "tokashiki.okinawa.jp";
+
+okinawa_jp("ginowan", _Any) ->
+    "ginowan.okinawa.jp";
+
+okinawa_jp("tomigusuku", _Any) ->
+    "tomigusuku.okinawa.jp";
+
+okinawa_jp("urasoe", _Any) ->
+    "urasoe.okinawa.jp";
+
+okinawa_jp("nanjo", _Any) ->
+    "nanjo.okinawa.jp";
+
+okinawa_jp("kitadaito", _Any) ->
+    "kitadaito.okinawa.jp";
+
+okinawa_jp("itoman", _Any) ->
+    "itoman.okinawa.jp";
+
+okinawa_jp("motobu", _Any) ->
+    "motobu.okinawa.jp";
+
+okinawa_jp("yonaguni", _Any) ->
+    "yonaguni.okinawa.jp";
+
+okinawa_jp("kunigami", _Any) ->
+    "kunigami.okinawa.jp";
+
+okinawa_jp("yaese", _Any) ->
+    "yaese.okinawa.jp";
+
+okinawa_jp("ishikawa", _Any) ->
+    "ishikawa.okinawa.jp";
+
+okinawa_jp("nakagusuku", _Any) ->
+    "nakagusuku.okinawa.jp";
+
+okinawa_jp("yomitan", _Any) ->
+    "yomitan.okinawa.jp";
+
+okinawa_jp("iheya", _Any) ->
+    "iheya.okinawa.jp";
+
+okinawa_jp("onna", _Any) ->
+    "onna.okinawa.jp";
+
+okinawa_jp("uruma", _Any) ->
+    "uruma.okinawa.jp";
+
+okinawa_jp("kadena", _Any) ->
+    "kadena.okinawa.jp";
+
+okinawa_jp("nakijin", _Any) ->
+    "nakijin.okinawa.jp";
+
+okinawa_jp("nago", _Any) ->
+    "nago.okinawa.jp";
+
+okinawa_jp("tonaki", _Any) ->
+    "tonaki.okinawa.jp";
+
+okinawa_jp("aguni", _Any) ->
+    "aguni.okinawa.jp";
+
+okinawa_jp("hirara", _Any) ->
+    "hirara.okinawa.jp";
+
+okinawa_jp("kumejima", _Any) ->
+    "kumejima.okinawa.jp";
+
+okinawa_jp("nishihara", _Any) ->
+    "nishihara.okinawa.jp";
+
+okinawa_jp("shimoji", _Any) ->
+    "shimoji.okinawa.jp";
+
+okinawa_jp("kin", _Any) ->
+    "kin.okinawa.jp";
+
+okinawa_jp("izena", _Any) ->
+    "izena.okinawa.jp";
+
+okinawa_jp("kitanakagusuku", _Any) ->
+    "kitanakagusuku.okinawa.jp";
+
+okinawa_jp("higashi", _Any) ->
+    "higashi.okinawa.jp";
+
+okinawa_jp("ishigaki", _Any) ->
+    "ishigaki.okinawa.jp";
+
+okinawa_jp("naha", _Any) ->
+    "naha.okinawa.jp";
+
+okinawa_jp("ogimi", _Any) ->
+    "ogimi.okinawa.jp";
+
+okinawa_jp("minamidaito", _Any) ->
+    "minamidaito.okinawa.jp";
+
+okinawa_jp("tarama", _Any) ->
+    "tarama.okinawa.jp";
+
+okinawa_jp("taketomi", _Any) ->
+    "taketomi.okinawa.jp";
+
+
+okinawa_jp(_, _) ->
+    "okinawa.jp".
+
+%% regular rules
+toyama_jp("toyama", _Any) ->
+    "toyama.toyama.jp";
+
+toyama_jp("oyabe", _Any) ->
+    "oyabe.toyama.jp";
+
+toyama_jp("nyuzen", _Any) ->
+    "nyuzen.toyama.jp";
+
+toyama_jp("tonami", _Any) ->
+    "tonami.toyama.jp";
+
+toyama_jp("nanto", _Any) ->
+    "nanto.toyama.jp";
+
+toyama_jp("taira", _Any) ->
+    "taira.toyama.jp";
+
+toyama_jp("asahi", _Any) ->
+    "asahi.toyama.jp";
+
+toyama_jp("fuchu", _Any) ->
+    "fuchu.toyama.jp";
+
+toyama_jp("tateyama", _Any) ->
+    "tateyama.toyama.jp";
+
+toyama_jp("yamada", _Any) ->
+    "yamada.toyama.jp";
+
+toyama_jp("namerikawa", _Any) ->
+    "namerikawa.toyama.jp";
+
+toyama_jp("takaoka", _Any) ->
+    "takaoka.toyama.jp";
+
+toyama_jp("kurobe", _Any) ->
+    "kurobe.toyama.jp";
+
+toyama_jp("inami", _Any) ->
+    "inami.toyama.jp";
+
+toyama_jp("unazuki", _Any) ->
+    "unazuki.toyama.jp";
+
+toyama_jp("kamiichi", _Any) ->
+    "kamiichi.toyama.jp";
+
+toyama_jp("uozu", _Any) ->
+    "uozu.toyama.jp";
+
+toyama_jp("toga", _Any) ->
+    "toga.toyama.jp";
+
+toyama_jp("imizu", _Any) ->
+    "imizu.toyama.jp";
+
+toyama_jp("fukumitsu", _Any) ->
+    "fukumitsu.toyama.jp";
+
+toyama_jp("himi", _Any) ->
+    "himi.toyama.jp";
+
+toyama_jp("funahashi", _Any) ->
+    "funahashi.toyama.jp";
+
+toyama_jp("nakaniikawa", _Any) ->
+    "nakaniikawa.toyama.jp";
+
+toyama_jp("johana", _Any) ->
+    "johana.toyama.jp";
+
+
+toyama_jp(_, _) ->
+    "toyama.jp".
+
+%% regular rules
+hyogo_jp("aogaki", _Any) ->
+    "aogaki.hyogo.jp";
+
+hyogo_jp("kasuga", _Any) ->
+    "kasuga.hyogo.jp";
+
+hyogo_jp("akashi", _Any) ->
+    "akashi.hyogo.jp";
+
+hyogo_jp("sayo", _Any) ->
+    "sayo.hyogo.jp";
+
+hyogo_jp("shingu", _Any) ->
+    "shingu.hyogo.jp";
+
+hyogo_jp("ako", _Any) ->
+    "ako.hyogo.jp";
+
+hyogo_jp("kasai", _Any) ->
+    "kasai.hyogo.jp";
+
+hyogo_jp("amagasaki", _Any) ->
+    "amagasaki.hyogo.jp";
+
+hyogo_jp("asago", _Any) ->
+    "asago.hyogo.jp";
+
+hyogo_jp("ono", _Any) ->
+    "ono.hyogo.jp";
+
+hyogo_jp("sasayama", _Any) ->
+    "sasayama.hyogo.jp";
+
+hyogo_jp("kamikawa", _Any) ->
+    "kamikawa.hyogo.jp";
+
+hyogo_jp("itami", _Any) ->
+    "itami.hyogo.jp";
+
+hyogo_jp("inagawa", _Any) ->
+    "inagawa.hyogo.jp";
+
+hyogo_jp("takasago", _Any) ->
+    "takasago.hyogo.jp";
+
+hyogo_jp("miki", _Any) ->
+    "miki.hyogo.jp";
+
+hyogo_jp("kawanishi", _Any) ->
+    "kawanishi.hyogo.jp";
+
+hyogo_jp("shiso", _Any) ->
+    "shiso.hyogo.jp";
+
+hyogo_jp("himeji", _Any) ->
+    "himeji.hyogo.jp";
+
+hyogo_jp("toyooka", _Any) ->
+    "toyooka.hyogo.jp";
+
+hyogo_jp("taishi", _Any) ->
+    "taishi.hyogo.jp";
+
+hyogo_jp("takarazuka", _Any) ->
+    "takarazuka.hyogo.jp";
+
+hyogo_jp("kamigori", _Any) ->
+    "kamigori.hyogo.jp";
+
+hyogo_jp("yokawa", _Any) ->
+    "yokawa.hyogo.jp";
+
+hyogo_jp("shinonsen", _Any) ->
+    "shinonsen.hyogo.jp";
+
+hyogo_jp("tamba", _Any) ->
+    "tamba.hyogo.jp";
+
+hyogo_jp("tatsuno", _Any) ->
+    "tatsuno.hyogo.jp";
+
+hyogo_jp("nishinomiya", _Any) ->
+    "nishinomiya.hyogo.jp";
+
+hyogo_jp("takino", _Any) ->
+    "takino.hyogo.jp";
+
+hyogo_jp("goshiki", _Any) ->
+    "goshiki.hyogo.jp";
+
+hyogo_jp("taka", _Any) ->
+    "taka.hyogo.jp";
+
+hyogo_jp("ashiya", _Any) ->
+    "ashiya.hyogo.jp";
+
+hyogo_jp("aioi", _Any) ->
+    "aioi.hyogo.jp";
+
+hyogo_jp("ichikawa", _Any) ->
+    "ichikawa.hyogo.jp";
+
+hyogo_jp("sumoto", _Any) ->
+    "sumoto.hyogo.jp";
+
+hyogo_jp("sannan", _Any) ->
+    "sannan.hyogo.jp";
+
+hyogo_jp("yabu", _Any) ->
+    "yabu.hyogo.jp";
+
+hyogo_jp("yashiro", _Any) ->
+    "yashiro.hyogo.jp";
+
+hyogo_jp("yoka", _Any) ->
+    "yoka.hyogo.jp";
+
+hyogo_jp("sanda", _Any) ->
+    "sanda.hyogo.jp";
+
+hyogo_jp("kakogawa", _Any) ->
+    "kakogawa.hyogo.jp";
+
+hyogo_jp("minamiawaji", _Any) ->
+    "minamiawaji.hyogo.jp";
+
+hyogo_jp("fukusaki", _Any) ->
+    "fukusaki.hyogo.jp";
+
+hyogo_jp("harima", _Any) ->
+    "harima.hyogo.jp";
+
+hyogo_jp("nishiwaki", _Any) ->
+    "nishiwaki.hyogo.jp";
+
+hyogo_jp("awaji", _Any) ->
+    "awaji.hyogo.jp";
+
+
+hyogo_jp(_, _) ->
+    "hyogo.jp".
+
+%% regular rules
+miyagi_jp("higashimatsushima", _Any) ->
+    "higashimatsushima.miyagi.jp";
+
+miyagi_jp("ogawara", _Any) ->
+    "ogawara.miyagi.jp";
+
+miyagi_jp("kesennuma", _Any) ->
+    "kesennuma.miyagi.jp";
+
+miyagi_jp("shiroishi", _Any) ->
+    "shiroishi.miyagi.jp";
+
+miyagi_jp("kawasaki", _Any) ->
+    "kawasaki.miyagi.jp";
+
+miyagi_jp("ohira", _Any) ->
+    "ohira.miyagi.jp";
+
+miyagi_jp("zao", _Any) ->
+    "zao.miyagi.jp";
+
+miyagi_jp("kakuda", _Any) ->
+    "kakuda.miyagi.jp";
+
+miyagi_jp("osaki", _Any) ->
+    "osaki.miyagi.jp";
+
+miyagi_jp("shichikashuku", _Any) ->
+    "shichikashuku.miyagi.jp";
+
+miyagi_jp("matsushima", _Any) ->
+    "matsushima.miyagi.jp";
+
+miyagi_jp("ishinomaki", _Any) ->
+    "ishinomaki.miyagi.jp";
+
+miyagi_jp("tomiya", _Any) ->
+    "tomiya.miyagi.jp";
+
+miyagi_jp("murata", _Any) ->
+    "murata.miyagi.jp";
+
+miyagi_jp("tagajo", _Any) ->
+    "tagajo.miyagi.jp";
+
+miyagi_jp("shibata", _Any) ->
+    "shibata.miyagi.jp";
+
+miyagi_jp("tome", _Any) ->
+    "tome.miyagi.jp";
+
+miyagi_jp("taiwa", _Any) ->
+    "taiwa.miyagi.jp";
+
+miyagi_jp("iwanuma", _Any) ->
+    "iwanuma.miyagi.jp";
+
+miyagi_jp("minamisanriku", _Any) ->
+    "minamisanriku.miyagi.jp";
+
+miyagi_jp("furukawa", _Any) ->
+    "furukawa.miyagi.jp";
+
+miyagi_jp("yamamoto", _Any) ->
+    "yamamoto.miyagi.jp";
+
+miyagi_jp("wakuya", _Any) ->
+    "wakuya.miyagi.jp";
+
+miyagi_jp("kami", _Any) ->
+    "kami.miyagi.jp";
+
+miyagi_jp("shiogama", _Any) ->
+    "shiogama.miyagi.jp";
+
+miyagi_jp("misato", _Any) ->
+    "misato.miyagi.jp";
+
+miyagi_jp("semine", _Any) ->
+    "semine.miyagi.jp";
+
+miyagi_jp("shikama", _Any) ->
+    "shikama.miyagi.jp";
+
+miyagi_jp("watari", _Any) ->
+    "watari.miyagi.jp";
+
+miyagi_jp("onagawa", _Any) ->
+    "onagawa.miyagi.jp";
+
+miyagi_jp("natori", _Any) ->
+    "natori.miyagi.jp";
+
+miyagi_jp("rifu", _Any) ->
+    "rifu.miyagi.jp";
+
+miyagi_jp("marumori", _Any) ->
+    "marumori.miyagi.jp";
+
+
+miyagi_jp(_, _) ->
+    "miyagi.jp".
+
+%% regular rules
+kagawa_jp("manno", _Any) ->
+    "manno.kagawa.jp";
+
+kagawa_jp("kanonji", _Any) ->
+    "kanonji.kagawa.jp";
+
+kagawa_jp("tadotsu", _Any) ->
+    "tadotsu.kagawa.jp";
+
+kagawa_jp("tonosho", _Any) ->
+    "tonosho.kagawa.jp";
+
+kagawa_jp("sanuki", _Any) ->
+    "sanuki.kagawa.jp";
+
+kagawa_jp("marugame", _Any) ->
+    "marugame.kagawa.jp";
+
+kagawa_jp("kotohira", _Any) ->
+    "kotohira.kagawa.jp";
+
+kagawa_jp("utazu", _Any) ->
+    "utazu.kagawa.jp";
+
+kagawa_jp("ayagawa", _Any) ->
+    "ayagawa.kagawa.jp";
+
+kagawa_jp("takamatsu", _Any) ->
+    "takamatsu.kagawa.jp";
+
+kagawa_jp("mitoyo", _Any) ->
+    "mitoyo.kagawa.jp";
+
+kagawa_jp("higashikagawa", _Any) ->
+    "higashikagawa.kagawa.jp";
+
+kagawa_jp("zentsuji", _Any) ->
+    "zentsuji.kagawa.jp";
+
+kagawa_jp("uchinomi", _Any) ->
+    "uchinomi.kagawa.jp";
+
+kagawa_jp("naoshima", _Any) ->
+    "naoshima.kagawa.jp";
+
+
+kagawa_jp(_, _) ->
+    "kagawa.jp".
+
+%% regular rules
+tottori_jp("kawahara", _Any) ->
+    "kawahara.tottori.jp";
+
+tottori_jp("tottori", _Any) ->
+    "tottori.tottori.jp";
+
+tottori_jp("hino", _Any) ->
+    "hino.tottori.jp";
+
+tottori_jp("koge", _Any) ->
+    "koge.tottori.jp";
+
+tottori_jp("sakaiminato", _Any) ->
+    "sakaiminato.tottori.jp";
+
+tottori_jp("yonago", _Any) ->
+    "yonago.tottori.jp";
+
+tottori_jp("nichinan", _Any) ->
+    "nichinan.tottori.jp";
+
+tottori_jp("kotoura", _Any) ->
+    "kotoura.tottori.jp";
+
+tottori_jp("misasa", _Any) ->
+    "misasa.tottori.jp";
+
+tottori_jp("nanbu", _Any) ->
+    "nanbu.tottori.jp";
+
+tottori_jp("wakasa", _Any) ->
+    "wakasa.tottori.jp";
+
+tottori_jp("yazu", _Any) ->
+    "yazu.tottori.jp";
+
+tottori_jp("chizu", _Any) ->
+    "chizu.tottori.jp";
+
+
+tottori_jp(_, _) ->
+    "tottori.jp".
+
+%% regular rules
+ehime_jp("imabari", _Any) ->
+    "imabari.ehime.jp";
+
+ehime_jp("kumakogen", _Any) ->
+    "kumakogen.ehime.jp";
+
+ehime_jp("tobe", _Any) ->
+    "tobe.ehime.jp";
+
+ehime_jp("matsuno", _Any) ->
+    "matsuno.ehime.jp";
+
+ehime_jp("ikata", _Any) ->
+    "ikata.ehime.jp";
+
+ehime_jp("iyo", _Any) ->
+    "iyo.ehime.jp";
+
+ehime_jp("masaki", _Any) ->
+    "masaki.ehime.jp";
+
+ehime_jp("seiyo", _Any) ->
+    "seiyo.ehime.jp";
+
+ehime_jp("uwajima", _Any) ->
+    "uwajima.ehime.jp";
+
+ehime_jp("ainan", _Any) ->
+    "ainan.ehime.jp";
+
+ehime_jp("yawatahama", _Any) ->
+    "yawatahama.ehime.jp";
+
+ehime_jp("ozu", _Any) ->
+    "ozu.ehime.jp";
+
+ehime_jp("uchiko", _Any) ->
+    "uchiko.ehime.jp";
+
+ehime_jp("kamijima", _Any) ->
+    "kamijima.ehime.jp";
+
+ehime_jp("niihama", _Any) ->
+    "niihama.ehime.jp";
+
+ehime_jp("matsuyama", _Any) ->
+    "matsuyama.ehime.jp";
+
+ehime_jp("shikokuchuo", _Any) ->
+    "shikokuchuo.ehime.jp";
+
+ehime_jp("namikata", _Any) ->
+    "namikata.ehime.jp";
+
+ehime_jp("toon", _Any) ->
+    "toon.ehime.jp";
+
+ehime_jp("saijo", _Any) ->
+    "saijo.ehime.jp";
+
+ehime_jp("kihoku", _Any) ->
+    "kihoku.ehime.jp";
+
+ehime_jp("honai", _Any) ->
+    "honai.ehime.jp";
+
+
+ehime_jp(_, _) ->
+    "ehime.jp".
+
+%% regular rules
+kr("gyeongnam", _Any) ->
+    "gyeongnam.kr";
+
+kr("blogspot", _Any) ->
+    "blogspot.kr";
+
+kr("mil", _Any) ->
+    "mil.kr";
+
+kr("go", _Any) ->
+    "go.kr";
+
+kr("gangwon", _Any) ->
+    "gangwon.kr";
+
+kr("daegu", _Any) ->
+    "daegu.kr";
+
+kr("co", _Any) ->
+    "co.kr";
+
+kr("chungnam", _Any) ->
+    "chungnam.kr";
+
+kr("ulsan", _Any) ->
+    "ulsan.kr";
+
+kr("daejeon", _Any) ->
+    "daejeon.kr";
+
+kr("hs", _Any) ->
+    "hs.kr";
+
+kr("seoul", _Any) ->
+    "seoul.kr";
+
+kr("gyeonggi", _Any) ->
+    "gyeonggi.kr";
+
+kr("chungbuk", _Any) ->
+    "chungbuk.kr";
+
+kr("ms", _Any) ->
+    "ms.kr";
+
+kr("kg", _Any) ->
+    "kg.kr";
+
+kr("es", _Any) ->
+    "es.kr";
+
+kr("jeju", _Any) ->
+    "jeju.kr";
+
+kr("ne", _Any) ->
+    "ne.kr";
+
+kr("jeonnam", _Any) ->
+    "jeonnam.kr";
+
+kr("pe", _Any) ->
+    "pe.kr";
+
+kr("busan", _Any) ->
+    "busan.kr";
+
+kr("gyeongbuk", _Any) ->
+    "gyeongbuk.kr";
+
+kr("or", _Any) ->
+    "or.kr";
+
+kr("jeonbuk", _Any) ->
+    "jeonbuk.kr";
+
+kr("incheon", _Any) ->
+    "incheon.kr";
+
+kr("re", _Any) ->
+    "re.kr";
+
+kr("gwangju", _Any) ->
+    "gwangju.kr";
+
+kr("sc", _Any) ->
+    "sc.kr";
+
+kr("ac", _Any) ->
+    "ac.kr";
+
+
+kr(_, _) ->
+    "kr".
+
+%% regular rules
+vi("org", _Any) ->
+    "org.vi";
+
+vi("com", _Any) ->
+    "com.vi";
+
+vi("co", _Any) ->
+    "co.vi";
+
+vi("net", _Any) ->
+    "net.vi";
+
+
+vi(_, _) ->
+    "vi".
+
+%% regular rules
+kp("com", _Any) ->
+    "com.kp";
+
+kp("org", _Any) ->
+    "org.kp";
+
+kp("edu", _Any) ->
+    "edu.kp";
+
+kp("rep", _Any) ->
+    "rep.kp";
+
+kp("gov", _Any) ->
+    "gov.kp";
+
+kp("tra", _Any) ->
+    "tra.kp";
+
+
+kp(_, _) ->
+    "kp".
+
+%% regular rules
+nl("bv", _Any) ->
+    "bv.nl";
+
+nl("blogspot", _Any) ->
+    "blogspot.nl";
+
+nl("co", _Any) ->
+    "co.nl";
+
+
+nl(_, _) ->
+    "nl".
+
+%% regular rules
+cr("or", _Any) ->
+    "or.cr";
+
+cr("sa", _Any) ->
+    "sa.cr";
+
+cr("ac", _Any) ->
+    "ac.cr";
+
+cr("ed", _Any) ->
+    "ed.cr";
+
+cr("co", _Any) ->
+    "co.cr";
+
+cr("go", _Any) ->
+    "go.cr";
+
+cr("fi", _Any) ->
+    "fi.cr";
+
+
+cr(_, _) ->
+    "cr".
+
+%% regular rules
+to("net", _Any) ->
+    "net.to";
+
+to("mil", _Any) ->
+    "mil.to";
+
+to("gov", _Any) ->
+    "gov.to";
+
+to("org", _Any) ->
+    "org.to";
+
+to("edu", _Any) ->
+    "edu.to";
+
+to("com", _Any) ->
+    "com.to";
+
+
+to(_, _) ->
+    "to".
+
+%% regular rules
+ht("pol", _Any) ->
+    "pol.ht";
+
+ht("rel", _Any) ->
+    "rel.ht";
+
+ht("edu", _Any) ->
+    "edu.ht";
+
+ht("perso", _Any) ->
+    "perso.ht";
+
+ht("net", _Any) ->
+    "net.ht";
+
+ht("asso", _Any) ->
+    "asso.ht";
+
+ht("adult", _Any) ->
+    "adult.ht";
+
+ht("com", _Any) ->
+    "com.ht";
+
+ht("shop", _Any) ->
+    "shop.ht";
+
+ht("pro", _Any) ->
+    "pro.ht";
+
+ht("coop", _Any) ->
+    "coop.ht";
+
+ht("art", _Any) ->
+    "art.ht";
+
+ht("med", _Any) ->
+    "med.ht";
+
+ht("info", _Any) ->
+    "info.ht";
+
+ht("org", _Any) ->
+    "org.ht";
+
+ht("firm", _Any) ->
+    "firm.ht";
+
+ht("gouv", _Any) ->
+    "gouv.ht";
+
+
+ht(_, _) ->
+    "ht".
+
+%% regular rules
+la("per", _Any) ->
+    "per.la";
+
+la("net", _Any) ->
+    "net.la";
+
+la("info", _Any) ->
+    "info.la";
+
+la("org", _Any) ->
+    "org.la";
+
+la("com", _Any) ->
+    "com.la";
+
+la("c", _Any) ->
+    "c.la";
+
+la("gov", _Any) ->
+    "gov.la";
+
+la("int", _Any) ->
+    "int.la";
+
+la("edu", _Any) ->
+    "edu.la";
+
+
+la(_, _) ->
+    "la".
+
+%% regular rules
+eg("sci", _Any) ->
+    "sci.eg";
+
+eg("edu", _Any) ->
+    "edu.eg";
+
+eg("name", _Any) ->
+    "name.eg";
+
+eg("mil", _Any) ->
+    "mil.eg";
+
+eg("gov", _Any) ->
+    "gov.eg";
+
+eg("org", _Any) ->
+    "org.eg";
+
+eg("com", _Any) ->
+    "com.eg";
+
+eg("eun", _Any) ->
+    "eun.eg";
+
+eg("net", _Any) ->
+    "net.eg";
+
+
+eg(_, _) ->
+    "eg".
+
+%% regular rules
+sa("gov", _Any) ->
+    "gov.sa";
+
+sa("sch", _Any) ->
+    "sch.sa";
+
+sa("com", _Any) ->
+    "com.sa";
+
+sa("org", _Any) ->
+    "org.sa";
+
+sa("med", _Any) ->
+    "med.sa";
+
+sa("net", _Any) ->
+    "net.sa";
+
+sa("pub", _Any) ->
+    "pub.sa";
+
+sa("edu", _Any) ->
+    "edu.sa";
+
+
+sa(_, _) ->
+    "sa".
+
+%% regular rules
+gh("mil", _Any) ->
+    "mil.gh";
+
 gh("gov", _Any) ->
     "gov.gh";
-
-gh("com", _Any) ->
-    "com.gh";
 
 gh("edu", _Any) ->
     "edu.gh";
@@ -14430,253 +8208,29 @@ gh("edu", _Any) ->
 gh("org", _Any) ->
     "org.gh";
 
-gh("mil", _Any) ->
-    "mil.gh";
+gh("com", _Any) ->
+    "com.gh";
 
 
 gh(_, _) ->
     "gh".
 
 %% regular rules
-km("edu", _Any) ->
-    "edu.km";
+mn("gov", _Any) ->
+    "gov.mn";
 
-km("coop", _Any) ->
-    "coop.km";
+mn("nyc", _Any) ->
+    "nyc.mn";
 
-km("gov", _Any) ->
-    "gov.km";
+mn("org", _Any) ->
+    "org.mn";
 
-km("pharmaciens", _Any) ->
-    "pharmaciens.km";
+mn("edu", _Any) ->
+    "edu.mn";
 
-km("ass", _Any) ->
-    "ass.km";
 
-km("com", _Any) ->
-    "com.km";
-
-km("gouv", _Any) ->
-    "gouv.km";
-
-km("prd", _Any) ->
-    "prd.km";
-
-km("mil", _Any) ->
-    "mil.km";
-
-km("medecin", _Any) ->
-    "medecin.km";
-
-km("presse", _Any) ->
-    "presse.km";
-
-km("nom", _Any) ->
-    "nom.km";
-
-km("veterinaire", _Any) ->
-    "veterinaire.km";
-
-km("tm", _Any) ->
-    "tm.km";
-
-km("asso", _Any) ->
-    "asso.km";
-
-km("org", _Any) ->
-    "org.km";
-
-km("notaires", _Any) ->
-    "notaires.km";
-
-
-km(_, _) ->
-    "km".
-
-%% regular rules
-om("pro", _Any) ->
-    "pro.om";
-
-om("net", _Any) ->
-    "net.om";
-
-om("edu", _Any) ->
-    "edu.om";
-
-om("gov", _Any) ->
-    "gov.om";
-
-om("museum", _Any) ->
-    "museum.om";
-
-om("org", _Any) ->
-    "org.om";
-
-om("co", _Any) ->
-    "co.om";
-
-om("med", _Any) ->
-    "med.om";
-
-om("com", _Any) ->
-    "com.om";
-
-
-om(_, _) ->
-    "om".
-
-%% regular rules
-in("net", _Any) ->
-    "net.in";
-
-in("mil", _Any) ->
-    "mil.in";
-
-in("ac", _Any) ->
-    "ac.in";
-
-in("edu", _Any) ->
-    "edu.in";
-
-in("ind", _Any) ->
-    "ind.in";
-
-in("blogspot", _Any) ->
-    "blogspot.in";
-
-in("gov", _Any) ->
-    "gov.in";
-
-in("res", _Any) ->
-    "res.in";
-
-in("org", _Any) ->
-    "org.in";
-
-in("co", _Any) ->
-    "co.in";
-
-in("gen", _Any) ->
-    "gen.in";
-
-in("firm", _Any) ->
-    "firm.in";
-
-in("nic", _Any) ->
-    "nic.in";
-
-
-in(_, _) ->
-    "in".
-
-%% regular rules
-mg("com", _Any) ->
-    "com.mg";
-
-mg("org", _Any) ->
-    "org.mg";
-
-mg("tm", _Any) ->
-    "tm.mg";
-
-mg("gov", _Any) ->
-    "gov.mg";
-
-mg("nom", _Any) ->
-    "nom.mg";
-
-mg("edu", _Any) ->
-    "edu.mg";
-
-mg("mil", _Any) ->
-    "mil.mg";
-
-mg("prd", _Any) ->
-    "prd.mg";
-
-
-mg(_, _) ->
-    "mg".
-
-%% regular rules
-lc("gov", _Any) ->
-    "gov.lc";
-
-lc("com", _Any) ->
-    "com.lc";
-
-lc("net", _Any) ->
-    "net.lc";
-
-lc("co", _Any) ->
-    "co.lc";
-
-lc("edu", _Any) ->
-    "edu.lc";
-
-lc("org", _Any) ->
-    "org.lc";
-
-
-lc(_, _) ->
-    "lc".
-
-%% regular rules
-ly("plc", _Any) ->
-    "plc.ly";
-
-ly("org", _Any) ->
-    "org.ly";
-
-ly("med", _Any) ->
-    "med.ly";
-
-ly("com", _Any) ->
-    "com.ly";
-
-ly("net", _Any) ->
-    "net.ly";
-
-ly("sch", _Any) ->
-    "sch.ly";
-
-ly("edu", _Any) ->
-    "edu.ly";
-
-ly("id", _Any) ->
-    "id.ly";
-
-ly("gov", _Any) ->
-    "gov.ly";
-
-
-ly(_, _) ->
-    "ly".
-
-%% regular rules
-cz("blogspot", _Any) ->
-    "blogspot.cz";
-
-
-cz(_, _) ->
-    "cz".
-
-%% regular rules
-an("com", _Any) ->
-    "com.an";
-
-an("edu", _Any) ->
-    "edu.an";
-
-an("org", _Any) ->
-    "org.an";
-
-an("net", _Any) ->
-    "net.an";
-
-
-an(_, _) ->
-    "an".
+mn(_, _) ->
+    "mn".
 
 %% regular rules
 sk("blogspot", _Any) ->
@@ -14687,626 +8241,489 @@ sk(_, _) ->
     "sk".
 
 %% regular rules
-fi("blogspot", _Any) ->
-    "blogspot.fi";
+io("com", _Any) ->
+    "com.io";
 
-fi("aland", _Any) ->
-    "aland.fi";
+io("github", _Any) ->
+    "github.io";
 
-fi("iki", _Any) ->
-    "iki.fi";
-
-
-fi(_, _) ->
-    "fi".
-
-%% regular rules
-ag("net", _Any) ->
-    "net.ag";
-
-ag("co", _Any) ->
-    "co.ag";
-
-ag("org", _Any) ->
-    "org.ag";
-
-ag("nom", _Any) ->
-    "nom.ag";
-
-ag("com", _Any) ->
-    "com.ag";
+io("nid", _Any) ->
+    "nid.io";
 
 
-ag(_, _) ->
-    "ag".
+io(_, _) ->
+    "io".
 
 %% regular rules
-pn("gov", _Any) ->
-    "gov.pn";
+je("org", _Any) ->
+    "org.je";
 
-pn("edu", _Any) ->
-    "edu.pn";
+je("co", _Any) ->
+    "co.je";
 
-pn("co", _Any) ->
-    "co.pn";
-
-pn("org", _Any) ->
-    "org.pn";
-
-pn("net", _Any) ->
-    "net.pn";
+je("net", _Any) ->
+    "net.je";
 
 
-pn(_, _) ->
-    "pn".
+je(_, _) ->
+    "je".
 
 %% regular rules
-bm("edu", _Any) ->
-    "edu.bm";
-
-bm("org", _Any) ->
-    "org.bm";
-
-bm("net", _Any) ->
-    "net.bm";
-
-bm("com", _Any) ->
-    "com.bm";
-
-bm("gov", _Any) ->
-    "gov.bm";
+sx("gov", _Any) ->
+    "gov.sx";
 
 
-bm(_, _) ->
-    "bm".
+sx(_, _) ->
+    "sx".
 
 %% regular rules
-rw("gov", _Any) ->
-    "gov.rw";
+sn("univ", _Any) ->
+    "univ.sn";
 
-rw("edu", _Any) ->
-    "edu.rw";
+sn("gouv", _Any) ->
+    "gouv.sn";
 
-rw("ac", _Any) ->
-    "ac.rw";
+sn("art", _Any) ->
+    "art.sn";
 
-rw("mil", _Any) ->
-    "mil.rw";
+sn("org", _Any) ->
+    "org.sn";
 
-rw("net", _Any) ->
-    "net.rw";
+sn("perso", _Any) ->
+    "perso.sn";
 
-rw("gouv", _Any) ->
-    "gouv.rw";
+sn("edu", _Any) ->
+    "edu.sn";
 
-rw("com", _Any) ->
-    "com.rw";
-
-rw("co", _Any) ->
-    "co.rw";
-
-rw("int", _Any) ->
-    "int.rw";
+sn("com", _Any) ->
+    "com.sn";
 
 
-rw(_, _) ->
-    "rw".
+sn(_, _) ->
+    "sn".
 
 %% regular rules
-nf("other", _Any) ->
-    "other.nf";
+ac("gov", _Any) ->
+    "gov.ac";
 
-nf("net", _Any) ->
-    "net.nf";
+ac("org", _Any) ->
+    "org.ac";
 
-nf("per", _Any) ->
-    "per.nf";
+ac("edu", _Any) ->
+    "edu.ac";
 
-nf("web", _Any) ->
-    "web.nf";
+ac("com", _Any) ->
+    "com.ac";
 
-nf("rec", _Any) ->
-    "rec.nf";
+ac("mil", _Any) ->
+    "mil.ac";
 
-nf("arts", _Any) ->
-    "arts.nf";
-
-nf("store", _Any) ->
-    "store.nf";
-
-nf("firm", _Any) ->
-    "firm.nf";
-
-nf("info", _Any) ->
-    "info.nf";
-
-nf("com", _Any) ->
-    "com.nf";
+ac("net", _Any) ->
+    "net.ac";
 
 
-nf(_, _) ->
-    "nf".
+ac(_, _) ->
+    "ac".
 
 %% regular rules
-de("com", _Any) ->
-    "com.de";
+mg("nom", _Any) ->
+    "nom.mg";
 
-de("leitungsen", _Any) ->
-    "leitungsen.de";
+mg("mil", _Any) ->
+    "mil.mg";
 
-de("istmein", _Any) ->
-    "istmein.de";
+mg("edu", _Any) ->
+    "edu.mg";
 
-de("fuettertdasnetz", _Any) ->
-    "fuettertdasnetz.de";
+mg("gov", _Any) ->
+    "gov.mg";
 
-de("blogspot", _Any) ->
-    "blogspot.de";
+mg("prd", _Any) ->
+    "prd.mg";
 
-de("isteingeek", _Any) ->
-    "isteingeek.de";
+mg("org", _Any) ->
+    "org.mg";
 
-de("lebtimnetz", _Any) ->
-    "lebtimnetz.de";
+mg("tm", _Any) ->
+    "tm.mg";
 
-de("traeumtgerade", _Any) ->
-    "traeumtgerade.de";
-
-
-de(_, _) ->
-    "de".
-
-%% regular rules
-mr("gov", _Any) ->
-    "gov.mr";
-
-mr("blogspot", _Any) ->
-    "blogspot.mr";
+mg("com", _Any) ->
+    "com.mg";
 
 
-mr(_, _) ->
-    "mr".
+mg(_, _) ->
+    "mg".
 
 %% regular rules
-bf("gov", _Any) ->
-    "gov.bf";
+cx("gov", _Any) ->
+    "gov.cx";
+
+cx("ath", _Any) ->
+    "ath.cx";
 
 
-bf(_, _) ->
-    "bf".
-
-%% regular rules
-gg("co", _Any) ->
-    "co.gg";
-
-gg("org", _Any) ->
-    "org.gg";
-
-gg("net", _Any) ->
-    "net.gg";
-
-
-gg(_, _) ->
-    "gg".
+cx(_, _) ->
+    "cx".
 
 %% regular rules
-ht("art", _Any) ->
-    "art.ht";
+com("gb", _Any) ->
+    "gb.com";
 
-ht("pro", _Any) ->
-    "pro.ht";
+com("uk", _Any) ->
+    "uk.com";
 
-ht("asso", _Any) ->
-    "asso.ht";
+com("sa", _Any) ->
+    "sa.com";
 
-ht("org", _Any) ->
-    "org.ht";
+com("homelinux", _Any) ->
+    "homelinux.com";
 
-ht("rel", _Any) ->
-    "rel.ht";
+com("dreamhosters", _Any) ->
+    "dreamhosters.com";
 
-ht("perso", _Any) ->
-    "perso.ht";
+com("cn", _Any) ->
+    "cn.com";
 
-ht("firm", _Any) ->
-    "firm.ht";
+com("cechire", _Any) ->
+    "cechire.com";
 
-ht("shop", _Any) ->
-    "shop.ht";
+com("outsystemscloud", _Any) ->
+    "outsystemscloud.com";
 
-ht("edu", _Any) ->
-    "edu.ht";
+com("doomdns", _Any) ->
+    "doomdns.com";
 
-ht("net", _Any) ->
-    "net.ht";
+com("hu", _Any) ->
+    "hu.com";
 
-ht("coop", _Any) ->
-    "coop.ht";
+com("operaunite", _Any) ->
+    "operaunite.com";
 
-ht("adult", _Any) ->
-    "adult.ht";
+com("gotdns", _Any) ->
+    "gotdns.com";
 
-ht("com", _Any) ->
-    "com.ht";
+com("betainabox", _Any) ->
+    "betainabox.com";
 
-ht("info", _Any) ->
-    "info.ht";
+com("eu", _Any) ->
+    "eu.com";
 
-ht("pol", _Any) ->
-    "pol.ht";
+com("codespot", _Any) ->
+    "codespot.com";
 
-ht("med", _Any) ->
-    "med.ht";
+com("elasticbeanstalk", _Any) ->
+    "elasticbeanstalk.com";
 
-ht("gouv", _Any) ->
-    "gouv.ht";
+com("googlecode", _Any) ->
+    "googlecode.com";
 
+com("appspot", _Any) ->
+    "appspot.com";
 
-ht(_, _) ->
-    "ht".
+com("ar", _Any) ->
+    "ar.com";
 
-%% regular rules
-aero("leasing", _Any) ->
-    "leasing.aero";
+com("dontexist", _Any) ->
+    "dontexist.com";
 
-aero("engine", _Any) ->
-    "engine.aero";
+com("ru", _Any) ->
+    "ru.com";
 
-aero("aircraft", _Any) ->
-    "aircraft.aero";
+com("jpn", _Any) ->
+    "jpn.com";
 
-aero("works", _Any) ->
-    "works.aero";
+com("cloudcontrolled", _Any) ->
+    "cloudcontrolled.com";
 
-aero("group", _Any) ->
-    "group.aero";
+com("getmyip", _Any) ->
+    "getmyip.com";
 
-aero("show", _Any) ->
-    "show.aero";
+com("blogdns", _Any) ->
+    "blogdns.com";
 
-aero("services", _Any) ->
-    "services.aero";
+com("googleapis", _Any) ->
+    "googleapis.com";
 
-aero("production", _Any) ->
-    "production.aero";
+com("nfshost", _Any) ->
+    "nfshost.com";
 
-aero("council", _Any) ->
-    "council.aero";
+com("kr", _Any) ->
+    "kr.com";
 
-aero("recreation", _Any) ->
-    "recreation.aero";
+com("africa", _Any) ->
+    "africa.com";
 
-aero("charter", _Any) ->
-    "charter.aero";
+com("githubusercontent", _Any) ->
+    "githubusercontent.com";
 
-aero("press", _Any) ->
-    "press.aero";
+com("herokuapp", _Any) ->
+    "herokuapp.com";
 
-aero("homebuilt", _Any) ->
-    "homebuilt.aero";
-
-aero("aerobatic", _Any) ->
-    "aerobatic.aero";
-
-aero("marketplace", _Any) ->
-    "marketplace.aero";
-
-aero("union", _Any) ->
-    "union.aero";
-
-aero("cargo", _Any) ->
-    "cargo.aero";
-
-aero("ambulance", _Any) ->
-    "ambulance.aero";
-
-aero("modelling", _Any) ->
-    "modelling.aero";
-
-aero("dgca", _Any) ->
-    "dgca.aero";
-
-aero("championship", _Any) ->
-    "championship.aero";
-
-aero("taxi", _Any) ->
-    "taxi.aero";
-
-aero("fuel", _Any) ->
-    "fuel.aero";
-
-aero("airport", _Any) ->
-    "airport.aero";
-
-aero("aeroclub", _Any) ->
-    "aeroclub.aero";
-
-aero("rotorcraft", _Any) ->
-    "rotorcraft.aero";
-
-aero("catering", _Any) ->
-    "catering.aero";
-
-aero("emergency", _Any) ->
-    "emergency.aero";
-
-aero("exchange", _Any) ->
-    "exchange.aero";
-
-aero("hanggliding", _Any) ->
-    "hanggliding.aero";
-
-aero("association", _Any) ->
-    "association.aero";
-
-aero("club", _Any) ->
-    "club.aero";
-
-aero("design", _Any) ->
-    "design.aero";
-
-aero("safety", _Any) ->
-    "safety.aero";
-
-aero("logistics", _Any) ->
-    "logistics.aero";
-
-aero("trader", _Any) ->
-    "trader.aero";
-
-aero("scientist", _Any) ->
-    "scientist.aero";
-
-aero("consultant", _Any) ->
-    "consultant.aero";
-
-aero("certification", _Any) ->
-    "certification.aero";
-
-aero("educator", _Any) ->
-    "educator.aero";
-
-aero("crew", _Any) ->
-    "crew.aero";
-
-aero("media", _Any) ->
-    "media.aero";
-
-aero("ballooning", _Any) ->
-    "ballooning.aero";
-
-aero("groundhandling", _Any) ->
-    "groundhandling.aero";
-
-aero("trading", _Any) ->
-    "trading.aero";
-
-aero("research", _Any) ->
-    "research.aero";
-
-aero("journal", _Any) ->
-    "journal.aero";
-
-aero("aerodrome", _Any) ->
-    "aerodrome.aero";
-
-aero("gliding", _Any) ->
-    "gliding.aero";
-
-aero("parachuting", _Any) ->
-    "parachuting.aero";
-
-aero("pilot", _Any) ->
-    "pilot.aero";
-
-aero("software", _Any) ->
-    "software.aero";
-
-aero("author", _Any) ->
-    "author.aero";
-
-aero("paragliding", _Any) ->
-    "paragliding.aero";
-
-aero("broker", _Any) ->
-    "broker.aero";
-
-aero("flight", _Any) ->
-    "flight.aero";
-
-aero("engineer", _Any) ->
-    "engineer.aero";
-
-aero("amusement", _Any) ->
-    "amusement.aero";
-
-aero("res", _Any) ->
-    "res.aero";
-
-aero("microlight", _Any) ->
-    "microlight.aero";
-
-aero("agents", _Any) ->
-    "agents.aero";
-
-aero("government", _Any) ->
-    "government.aero";
-
-aero("equipment", _Any) ->
-    "equipment.aero";
-
-aero("trainer", _Any) ->
-    "trainer.aero";
-
-aero("airline", _Any) ->
-    "airline.aero";
-
-aero("magazine", _Any) ->
-    "magazine.aero";
-
-aero("insurance", _Any) ->
-    "insurance.aero";
-
-aero("civilaviation", _Any) ->
-    "civilaviation.aero";
-
-aero("entertainment", _Any) ->
-    "entertainment.aero";
-
-aero("student", _Any) ->
-    "student.aero";
-
-aero("express", _Any) ->
-    "express.aero";
-
-aero("caa", _Any) ->
-    "caa.aero";
-
-aero("maintenance", _Any) ->
-    "maintenance.aero";
-
-aero("federation", _Any) ->
-    "federation.aero";
-
-aero("journalist", _Any) ->
-    "journalist.aero";
-
-aero("skydiving", _Any) ->
-    "skydiving.aero";
-
-aero("navigation", _Any) ->
-    "navigation.aero";
-
-aero("repbody", _Any) ->
-    "repbody.aero";
-
-aero("airtraffic", _Any) ->
-    "airtraffic.aero";
-
-aero("control", _Any) ->
-    "control.aero";
-
-aero("consulting", _Any) ->
-    "consulting.aero";
-
-aero("conference", _Any) ->
-    "conference.aero";
-
-aero("workinggroup", _Any) ->
-    "workinggroup.aero";
-
-aero("freight", _Any) ->
-    "freight.aero";
-
-
-aero(_, _) ->
-    "aero".
-
-%% regular rules
-bz("org", _Any) ->
-    "org.bz";
-
-bz("edu", _Any) ->
-    "edu.bz";
-
-bz("net", _Any) ->
-    "net.bz";
-
-bz("za", _Any) ->
-    "za.bz";
-
-bz("gov", _Any) ->
-    "gov.bz";
-
-bz("com", _Any) ->
-    "com.bz";
-
-
-bz(_, _) ->
-    "bz".
-
-%% regular rules
-tw("idv", _Any) ->
-    "idv.tw";
-
-tw("club", _Any) ->
-    "club.tw";
-
-tw("ebiz", _Any) ->
-    "ebiz.tw";
-
-tw("org", _Any) ->
-    "org.tw";
-
-tw("game", _Any) ->
-    "game.tw";
-
-tw("com", _Any) ->
-    "com.tw";
-
-tw("net", _Any) ->
-    "net.tw";
-
-tw("mil", _Any) ->
-    "mil.tw";
-
-tw("edu", _Any) ->
-    "edu.tw";
-
-tw("blogspot", _Any) ->
-    "blogspot.tw";
-
-tw("gov", _Any) ->
-    "gov.tw";
-
-
-tw(_, _) ->
-    "tw".
-
-%% regular rules
-sc("gov", _Any) ->
-    "gov.sc";
-
-sc("com", _Any) ->
-    "com.sc";
-
-sc("net", _Any) ->
-    "net.sc";
-
-sc("edu", _Any) ->
-    "edu.sc";
-
-sc("org", _Any) ->
-    "org.sc";
-
-
-sc(_, _) ->
-    "sc".
-
-%% regular rules
-name("his", []) ->
-    "his.name";
-name("his", Parts) ->
+com("amazonaws", []) ->
+    "amazonaws.com";
+com("amazonaws", Parts) ->
     [First | Rest] = Parts,
-    his_name(First, Rest);
+    amazonaws_com(First, Rest);
 
+com("doesntexist", _Any) ->
+    "doesntexist.com";
+
+com("se", _Any) ->
+    "se.com";
+
+com("cloudcontrolapp", _Any) ->
+    "cloudcontrolapp.com";
+
+com("za", _Any) ->
+    "za.com";
+
+com("servebbs", _Any) ->
+    "servebbs.com";
+
+com("qc", _Any) ->
+    "qc.com";
+
+com("ro", _Any) ->
+    "ro.com";
+
+com("iamallama", _Any) ->
+    "iamallama.com";
+
+com("issmarterthanyou", _Any) ->
+    "issmarterthanyou.com";
+
+com("uy", _Any) ->
+    "uy.com";
+
+com("dnsalias", _Any) ->
+    "dnsalias.com";
+
+com("mex", _Any) ->
+    "mex.com";
+
+com("withgoogle", _Any) ->
+    "withgoogle.com";
+
+com("writesthisblog", _Any) ->
+    "writesthisblog.com";
+
+com("homeunix", _Any) ->
+    "homeunix.com";
+
+com("gr", _Any) ->
+    "gr.com";
+
+com("likescandy", _Any) ->
+    "likescandy.com";
+
+com("de", _Any) ->
+    "de.com";
+
+com("dynalias", _Any) ->
+    "dynalias.com";
+
+com("us", _Any) ->
+    "us.com";
+
+com("br", _Any) ->
+    "br.com";
+
+com("selfip", _Any) ->
+    "selfip.com";
+
+com("herokussl", _Any) ->
+    "herokussl.com";
+
+com("firebaseapp", _Any) ->
+    "firebaseapp.com";
+
+com("co", _Any) ->
+    "co.com";
+
+com("no", _Any) ->
+    "no.com";
+
+com("dnsdojo", _Any) ->
+    "dnsdojo.com";
+
+com("rhcloud", _Any) ->
+    "rhcloud.com";
+
+com("blogspot", _Any) ->
+    "blogspot.com";
+
+
+com(_, _) ->
+    "com".
+
+%% regular rules
+amazonaws_com("compute", _Any) ->
+    "compute.amazonaws.com";
+
+amazonaws_com("elb", _Any) ->
+    "elb.amazonaws.com";
+
+
+amazonaws_com(_, _) ->
+    "amazonaws.com".
+
+%% regular rules
+mo("net", _Any) ->
+    "net.mo";
+
+mo("edu", _Any) ->
+    "edu.mo";
+
+mo("com", _Any) ->
+    "com.mo";
+
+mo("org", _Any) ->
+    "org.mo";
+
+mo("gov", _Any) ->
+    "gov.mo";
+
+
+mo(_, _) ->
+    "mo".
+
+%% regular rules
+cu("edu", _Any) ->
+    "edu.cu";
+
+cu("org", _Any) ->
+    "org.cu";
+
+cu("com", _Any) ->
+    "com.cu";
+
+cu("gov", _Any) ->
+    "gov.cu";
+
+cu("net", _Any) ->
+    "net.cu";
+
+cu("inf", _Any) ->
+    "inf.cu";
+
+
+cu(_, _) ->
+    "cu".
+
+%% regular rules
+ci("ed", _Any) ->
+    "ed.ci";
+
+ci("edu", _Any) ->
+    "edu.ci";
+
+ci("co", _Any) ->
+    "co.ci";
+
+ci("or", _Any) ->
+    "or.ci";
+
+ci("go", _Any) ->
+    "go.ci";
+
+ci("int", _Any) ->
+    "int.ci";
+
+ci("md", _Any) ->
+    "md.ci";
+
+ci("com", _Any) ->
+    "com.ci";
+
+ci("org", _Any) ->
+    "org.ci";
+
+ci("ac", _Any) ->
+    "ac.ci";
+
+ci("gouv", _Any) ->
+    "gouv.ci";
+
+ci("presse", _Any) ->
+    "presse.ci";
+
+ci("net", _Any) ->
+    "net.ci";
+
+ci("asso", _Any) ->
+    "asso.ci";
+
+
+ci(_, _) ->
+    "ci".
+
+%% regular rules
+re("blogspot", _Any) ->
+    "blogspot.re";
+
+re("asso", _Any) ->
+    "asso.re";
+
+re("nom", _Any) ->
+    "nom.re";
+
+re("com", _Any) ->
+    "com.re";
+
+
+re(_, _) ->
+    "re".
+
+%% regular rules
+gi("com", _Any) ->
+    "com.gi";
+
+gi("org", _Any) ->
+    "org.gi";
+
+gi("edu", _Any) ->
+    "edu.gi";
+
+gi("gov", _Any) ->
+    "gov.gi";
+
+gi("mod", _Any) ->
+    "mod.gi";
+
+gi("ltd", _Any) ->
+    "ltd.gi";
+
+
+gi(_, _) ->
+    "gi".
+
+%% regular rules
+ie("blogspot", _Any) ->
+    "blogspot.ie";
+
+ie("gov", _Any) ->
+    "gov.ie";
+
+
+ie(_, _) ->
+    "ie".
+
+%% regular rules
 name("her", []) ->
     "her.name";
 name("her", Parts) ->
     [First | Rest] = Parts,
     her_name(First, Rest);
 
+name("his", []) ->
+    "his.name";
+name("his", Parts) ->
+    [First | Rest] = Parts,
+    his_name(First, Rest);
+
 
 name(_, _) ->
     "name".
-
-%% regular rules
-his_name("forgot", _Any) ->
-    "forgot.his.name";
-
-
-his_name(_, _) ->
-    "his.name".
 
 %% regular rules
 her_name("forgot", _Any) ->
@@ -15317,157 +8734,4025 @@ her_name(_, _) ->
     "her.name".
 
 %% regular rules
-id("desa", _Any) ->
-    "desa.id";
-
-id("my", _Any) ->
-    "my.id";
-
-id("biz", _Any) ->
-    "biz.id";
-
-id("web", _Any) ->
-    "web.id";
-
-id("mil", _Any) ->
-    "mil.id";
-
-id("net", _Any) ->
-    "net.id";
-
-id("sch", _Any) ->
-    "sch.id";
-
-id("ac", _Any) ->
-    "ac.id";
-
-id("or", _Any) ->
-    "or.id";
-
-id("co", _Any) ->
-    "co.id";
-
-id("go", _Any) ->
-    "go.id";
+his_name("forgot", _Any) ->
+    "forgot.his.name";
 
 
-id(_, _) ->
-    "id".
+his_name(_, _) ->
+    "his.name".
 
 %% regular rules
-sd("gov", _Any) ->
-    "gov.sd";
+no("vaga", _Any) ->
+    "vaga.no";
 
-sd("tv", _Any) ->
-    "tv.sd";
+no("alvdal", _Any) ->
+    "alvdal.no";
 
-sd("net", _Any) ->
-    "net.sd";
+no("inderoy", _Any) ->
+    "inderoy.no";
 
-sd("edu", _Any) ->
-    "edu.sd";
+no("skaun", _Any) ->
+    "skaun.no";
 
-sd("com", _Any) ->
-    "com.sd";
+no("romskog", _Any) ->
+    "romskog.no";
 
-sd("med", _Any) ->
-    "med.sd";
+no("balat", _Any) ->
+    "balat.no";
 
-sd("info", _Any) ->
-    "info.sd";
+no("lindesnes", _Any) ->
+    "lindesnes.no";
 
-sd("org", _Any) ->
-    "org.sd";
+no("divtasvuodna", _Any) ->
+    "divtasvuodna.no";
+
+no("halsa", _Any) ->
+    "halsa.no";
+
+no("flakstad", _Any) ->
+    "flakstad.no";
+
+no("gulen", _Any) ->
+    "gulen.no";
+
+no("midsund", _Any) ->
+    "midsund.no";
+
+no("tynset", _Any) ->
+    "tynset.no";
+
+no("granvin", _Any) ->
+    "granvin.no";
+
+no("afjord", _Any) ->
+    "afjord.no";
+
+no("nl", []) ->
+    "nl.no";
+no("nl", Parts) ->
+    [First | Rest] = Parts,
+    nl_no(First, Rest);
+
+no("folkebibl", _Any) ->
+    "folkebibl.no";
+
+no("skien", _Any) ->
+    "skien.no";
+
+no("osen", _Any) ->
+    "osen.no";
+
+no("hl", []) ->
+    "hl.no";
+no("hl", Parts) ->
+    [First | Rest] = Parts,
+    hl_no(First, Rest);
+
+no("vestby", _Any) ->
+    "vestby.no";
+
+no("etnedal", _Any) ->
+    "etnedal.no";
+
+no("berlevag", _Any) ->
+    "berlevag.no";
+
+no("langevag", _Any) ->
+    "langevag.no";
+
+no("ringebu", _Any) ->
+    "ringebu.no";
+
+no("hokksund", _Any) ->
+    "hokksund.no";
+
+no("sund", _Any) ->
+    "sund.no";
+
+no("forsand", _Any) ->
+    "forsand.no";
+
+no("rindal", _Any) ->
+    "rindal.no";
+
+no("hamaroy", _Any) ->
+    "hamaroy.no";
+
+no("nesodden", _Any) ->
+    "nesodden.no";
+
+no("harstad", _Any) ->
+    "harstad.no";
+
+no("rl", []) ->
+    "rl.no";
+no("rl", Parts) ->
+    [First | Rest] = Parts,
+    rl_no(First, Rest);
+
+no("austrheim", _Any) ->
+    "austrheim.no";
+
+no("roan", _Any) ->
+    "roan.no";
+
+no("enebakk", _Any) ->
+    "enebakk.no";
+
+no("fuoisku", _Any) ->
+    "fuoisku.no";
+
+no("barum", _Any) ->
+    "barum.no";
+
+no("snasa", _Any) ->
+    "snasa.no";
+
+no("romsa", _Any) ->
+    "romsa.no";
+
+no("vanylven", _Any) ->
+    "vanylven.no";
+
+no("trana", _Any) ->
+    "trana.no";
+
+no("rahkkeravju", _Any) ->
+    "rahkkeravju.no";
+
+no("hol", _Any) ->
+    "hol.no";
+
+no("tromsa", _Any) ->
+    "tromsa.no";
+
+no("eidskog", _Any) ->
+    "eidskog.no";
+
+no("ringsaker", _Any) ->
+    "ringsaker.no";
+
+no("tysfjord", _Any) ->
+    "tysfjord.no";
+
+no("floro", _Any) ->
+    "floro.no";
+
+no("kommune", _Any) ->
+    "kommune.no";
+
+no("hapmir", _Any) ->
+    "hapmir.no";
+
+no("ruovat", _Any) ->
+    "ruovat.no";
+
+no("orland", _Any) ->
+    "orland.no";
+
+no("malvik", _Any) ->
+    "malvik.no";
+
+no("hurdal", _Any) ->
+    "hurdal.no";
+
+no("grane", _Any) ->
+    "grane.no";
+
+no("budejju", _Any) ->
+    "budejju.no";
+
+no("rade", _Any) ->
+    "rade.no";
+
+no("alta", _Any) ->
+    "alta.no";
+
+no("holmestrand", _Any) ->
+    "holmestrand.no";
+
+no("vestfold", []) ->
+    "vestfold.no";
+no("vestfold", Parts) ->
+    [First | Rest] = Parts,
+    vestfold_no(First, Rest);
+
+no("skodje", _Any) ->
+    "skodje.no";
+
+no("skierva", _Any) ->
+    "skierva.no";
+
+no("kautokeino", _Any) ->
+    "kautokeino.no";
+
+no("surnadal", _Any) ->
+    "surnadal.no";
+
+no("slattum", _Any) ->
+    "slattum.no";
+
+no("moareke", _Any) ->
+    "moareke.no";
+
+no("jessheim", _Any) ->
+    "jessheim.no";
+
+no("smola", _Any) ->
+    "smola.no";
+
+no("sveio", _Any) ->
+    "sveio.no";
+
+no("bygland", _Any) ->
+    "bygland.no";
+
+no("verdal", _Any) ->
+    "verdal.no";
+
+no("sortland", _Any) ->
+    "sortland.no";
+
+no("dyroy", _Any) ->
+    "dyroy.no";
+
+no("hammarfeasta", _Any) ->
+    "hammarfeasta.no";
+
+no("roros", _Any) ->
+    "roros.no";
+
+no("gamvik", _Any) ->
+    "gamvik.no";
+
+no("vik", _Any) ->
+    "vik.no";
+
+no("gjerdrum", _Any) ->
+    "gjerdrum.no";
+
+no("rakkestad", _Any) ->
+    "rakkestad.no";
+
+no("stange", _Any) ->
+    "stange.no";
+
+no("vevelstad", _Any) ->
+    "vevelstad.no";
+
+no("oppegard", _Any) ->
+    "oppegard.no";
+
+no("vossevangen", _Any) ->
+    "vossevangen.no";
+
+no("oygarden", _Any) ->
+    "oygarden.no";
+
+no("luster", _Any) ->
+    "luster.no";
+
+no("ibestad", _Any) ->
+    "ibestad.no";
+
+no("spjelkavik", _Any) ->
+    "spjelkavik.no";
+
+no("leksvik", _Any) ->
+    "leksvik.no";
+
+no("hjartdal", _Any) ->
+    "hjartdal.no";
+
+no("habmer", _Any) ->
+    "habmer.no";
+
+no("hemne", _Any) ->
+    "hemne.no";
+
+no("snaase", _Any) ->
+    "snaase.no";
+
+no("gran", _Any) ->
+    "gran.no";
+
+no("royken", _Any) ->
+    "royken.no";
+
+no("tananger", _Any) ->
+    "tananger.no";
+
+no("st", []) ->
+    "st.no";
+no("st", Parts) ->
+    [First | Rest] = Parts,
+    st_no(First, Rest);
+
+no("karmoy", _Any) ->
+    "karmoy.no";
+
+no("loppa", _Any) ->
+    "loppa.no";
+
+no("badaddja", _Any) ->
+    "badaddja.no";
+
+no("orkanger", _Any) ->
+    "orkanger.no";
+
+no("tysnes", _Any) ->
+    "tysnes.no";
+
+no("askim", _Any) ->
+    "askim.no";
+
+no("ivgu", _Any) ->
+    "ivgu.no";
+
+no("spydeberg", _Any) ->
+    "spydeberg.no";
+
+no("mil", _Any) ->
+    "mil.no";
+
+no("bindal", _Any) ->
+    "bindal.no";
+
+no("porsangu", _Any) ->
+    "porsangu.no";
+
+no("sandnes", _Any) ->
+    "sandnes.no";
+
+no("haugesund", _Any) ->
+    "haugesund.no";
+
+no("dep", _Any) ->
+    "dep.no";
+
+no("kirkenes", _Any) ->
+    "kirkenes.no";
+
+no("somna", _Any) ->
+    "somna.no";
+
+no("hole", _Any) ->
+    "hole.no";
+
+no("gildeskal", _Any) ->
+    "gildeskal.no";
+
+no("kragero", _Any) ->
+    "kragero.no";
+
+no("berg", _Any) ->
+    "berg.no";
+
+no("hasvik", _Any) ->
+    "hasvik.no";
+
+no("time", _Any) ->
+    "time.no";
+
+no("skjervoy", _Any) ->
+    "skjervoy.no";
+
+no("aknoluokta", _Any) ->
+    "aknoluokta.no";
+
+no("samnanger", _Any) ->
+    "samnanger.no";
+
+no("vega", _Any) ->
+    "vega.no";
+
+no("hoylandet", _Any) ->
+    "hoylandet.no";
+
+no("stavanger", _Any) ->
+    "stavanger.no";
+
+no("jorpeland", _Any) ->
+    "jorpeland.no";
+
+no("rauma", _Any) ->
+    "rauma.no";
+
+no("salat", _Any) ->
+    "salat.no";
+
+no("andasuolo", _Any) ->
+    "andasuolo.no";
+
+no("mr", []) ->
+    "mr.no";
+no("mr", Parts) ->
+    [First | Rest] = Parts,
+    mr_no(First, Rest);
+
+no("kvalsund", _Any) ->
+    "kvalsund.no";
+
+no("evenes", _Any) ->
+    "evenes.no";
+
+no("raholt", _Any) ->
+    "raholt.no";
+
+no("drobak", _Any) ->
+    "drobak.no";
+
+no("engerdal", _Any) ->
+    "engerdal.no";
+
+no("nordreisa", _Any) ->
+    "nordreisa.no";
+
+no("rennebu", _Any) ->
+    "rennebu.no";
+
+no("bahcavuotna", _Any) ->
+    "bahcavuotna.no";
+
+no("horten", _Any) ->
+    "horten.no";
+
+no("eid", _Any) ->
+    "eid.no";
+
+no("asker", _Any) ->
+    "asker.no";
+
+no("varoy", _Any) ->
+    "varoy.no";
+
+no("askoy", _Any) ->
+    "askoy.no";
+
+no("vikna", _Any) ->
+    "vikna.no";
+
+no("beiarn", _Any) ->
+    "beiarn.no";
+
+no("salangen", _Any) ->
+    "salangen.no";
+
+no("ulvik", _Any) ->
+    "ulvik.no";
+
+no("aurland", _Any) ->
+    "aurland.no";
+
+no("steinkjer", _Any) ->
+    "steinkjer.no";
+
+no("snillfjord", _Any) ->
+    "snillfjord.no";
+
+no("hemnes", _Any) ->
+    "hemnes.no";
+
+no("lesja", _Any) ->
+    "lesja.no";
+
+no("hof", _Any) ->
+    "hof.no";
+
+no("gaivuotna", _Any) ->
+    "gaivuotna.no";
+
+no("ringerike", _Any) ->
+    "ringerike.no";
+
+no("telemark", []) ->
+    "telemark.no";
+no("telemark", Parts) ->
+    [First | Rest] = Parts,
+    telemark_no(First, Rest);
+
+no("hareid", _Any) ->
+    "hareid.no";
+
+no("fla", _Any) ->
+    "fla.no";
+
+no("bremanger", _Any) ->
+    "bremanger.no";
+
+no("hurum", _Any) ->
+    "hurum.no";
+
+no("deatnu", _Any) ->
+    "deatnu.no";
+
+no("eidfjord", _Any) ->
+    "eidfjord.no";
+
+no("tinn", _Any) ->
+    "tinn.no";
+
+no("leirvik", _Any) ->
+    "leirvik.no";
+
+no("hattfjelldal", _Any) ->
+    "hattfjelldal.no";
+
+no("bardu", _Any) ->
+    "bardu.no";
+
+no("porsanger", _Any) ->
+    "porsanger.no";
+
+no("ullensvang", _Any) ->
+    "ullensvang.no";
+
+no("karasjok", _Any) ->
+    "karasjok.no";
+
+no("fyresdal", _Any) ->
+    "fyresdal.no";
+
+no("sf", []) ->
+    "sf.no";
+no("sf", Parts) ->
+    [First | Rest] = Parts,
+    sf_no(First, Rest);
+
+no("andoy", _Any) ->
+    "andoy.no";
+
+no("beardu", _Any) ->
+    "beardu.no";
+
+no("bykle", _Any) ->
+    "bykle.no";
+
+no("bjugn", _Any) ->
+    "bjugn.no";
+
+no("stryn", _Any) ->
+    "stryn.no";
+
+no("giehtavuoatna", _Any) ->
+    "giehtavuoatna.no";
+
+no("nittedal", _Any) ->
+    "nittedal.no";
+
+no("bjerkreim", _Any) ->
+    "bjerkreim.no";
+
+no("tvedestrand", _Any) ->
+    "tvedestrand.no";
+
+no("mjondalen", _Any) ->
+    "mjondalen.no";
+
+no("tranoy", _Any) ->
+    "tranoy.no";
+
+no("tydal", _Any) ->
+    "tydal.no";
+
+no("rissa", _Any) ->
+    "rissa.no";
+
+no("fredrikstad", _Any) ->
+    "fredrikstad.no";
+
+no("levanger", _Any) ->
+    "levanger.no";
+
+no("bronnoysund", _Any) ->
+    "bronnoysund.no";
+
+no("skedsmokorset", _Any) ->
+    "skedsmokorset.no";
+
+no("bahccavuotna", _Any) ->
+    "bahccavuotna.no";
+
+no("lunner", _Any) ->
+    "lunner.no";
+
+no("akershus", []) ->
+    "akershus.no";
+no("akershus", Parts) ->
+    [First | Rest] = Parts,
+    akershus_no(First, Rest);
+
+no("arendal", _Any) ->
+    "arendal.no";
+
+no("kraanghke", _Any) ->
+    "kraanghke.no";
+
+no("baidar", _Any) ->
+    "baidar.no";
+
+no("melhus", _Any) ->
+    "melhus.no";
+
+no("tolga", _Any) ->
+    "tolga.no";
+
+no("jolster", _Any) ->
+    "jolster.no";
+
+no("malatvuopmi", _Any) ->
+    "malatvuopmi.no";
+
+no("buskerud", []) ->
+    "buskerud.no";
+no("buskerud", Parts) ->
+    [First | Rest] = Parts,
+    buskerud_no(First, Rest);
+
+no("kafjord", _Any) ->
+    "kafjord.no";
+
+no("aejrie", _Any) ->
+    "aejrie.no";
+
+no("lom", _Any) ->
+    "lom.no";
+
+no("malselv", _Any) ->
+    "malselv.no";
+
+no("hammerfest", _Any) ->
+    "hammerfest.no";
+
+no("steigen", _Any) ->
+    "steigen.no";
+
+no("voagat", _Any) ->
+    "voagat.no";
+
+no("fuossko", _Any) ->
+    "fuossko.no";
+
+no("gol", _Any) ->
+    "gol.no";
+
+no("herad", _Any) ->
+    "herad.no";
+
+no("ralingen", _Any) ->
+    "ralingen.no";
+
+no("sola", _Any) ->
+    "sola.no";
+
+no("bronnoy", _Any) ->
+    "bronnoy.no";
+
+no("skjak", _Any) ->
+    "skjak.no";
+
+no("grimstad", _Any) ->
+    "grimstad.no";
+
+no("krodsherad", _Any) ->
+    "krodsherad.no";
+
+no("oksnes", _Any) ->
+    "oksnes.no";
+
+no("aremark", _Any) ->
+    "aremark.no";
+
+no("aukra", _Any) ->
+    "aukra.no";
+
+no("osoyro", _Any) ->
+    "osoyro.no";
+
+no("raisa", _Any) ->
+    "raisa.no";
+
+no("hemsedal", _Any) ->
+    "hemsedal.no";
+
+no("vestvagoy", _Any) ->
+    "vestvagoy.no";
+
+no("masoy", _Any) ->
+    "masoy.no";
+
+no("trogstad", _Any) ->
+    "trogstad.no";
+
+no("notteroy", _Any) ->
+    "notteroy.no";
+
+no("meraker", _Any) ->
+    "meraker.no";
+
+no("fosnes", _Any) ->
+    "fosnes.no";
+
+no("skedsmo", _Any) ->
+    "skedsmo.no";
+
+no("leangaviika", _Any) ->
+    "leangaviika.no";
+
+no("gaular", _Any) ->
+    "gaular.no";
+
+no("donna", _Any) ->
+    "donna.no";
+
+no("gjesdal", _Any) ->
+    "gjesdal.no";
+
+no("bjarkoy", _Any) ->
+    "bjarkoy.no";
+
+no("vgs", _Any) ->
+    "vgs.no";
+
+no("selbu", _Any) ->
+    "selbu.no";
+
+no("laakesvuemie", _Any) ->
+    "laakesvuemie.no";
+
+no("aure", _Any) ->
+    "aure.no";
+
+no("nannestad", _Any) ->
+    "nannestad.no";
+
+no("sorreisa", _Any) ->
+    "sorreisa.no";
+
+no("sogne", _Any) ->
+    "sogne.no";
+
+no("nordland", []) ->
+    "nordland.no";
+no("nordland", Parts) ->
+    [First | Rest] = Parts,
+    nordland_no(First, Rest);
+
+no("orkdal", _Any) ->
+    "orkdal.no";
+
+no("tranby", _Any) ->
+    "tranby.no";
+
+no("sigdal", _Any) ->
+    "sigdal.no";
+
+no("orskog", _Any) ->
+    "orskog.no";
+
+no("skiptvet", _Any) ->
+    "skiptvet.no";
+
+no("guovdageaidnu", _Any) ->
+    "guovdageaidnu.no";
+
+no("lardal", _Any) ->
+    "lardal.no";
+
+no("verran", _Any) ->
+    "verran.no";
+
+no("omasvuotna", _Any) ->
+    "omasvuotna.no";
+
+no("suldal", _Any) ->
+    "suldal.no";
+
+no("lodingen", _Any) ->
+    "lodingen.no";
+
+no("fauske", _Any) ->
+    "fauske.no";
+
+no("nt", []) ->
+    "nt.no";
+no("nt", Parts) ->
+    [First | Rest] = Parts,
+    nt_no(First, Rest);
+
+no("kvafjord", _Any) ->
+    "kvafjord.no";
+
+no("priv", _Any) ->
+    "priv.no";
+
+no("dovre", _Any) ->
+    "dovre.no";
+
+no("sandnessjoen", _Any) ->
+    "sandnessjoen.no";
+
+no("rennesoy", _Any) ->
+    "rennesoy.no";
+
+no("siljan", _Any) ->
+    "siljan.no";
+
+no("hyllestad", _Any) ->
+    "hyllestad.no";
+
+no("krokstadelva", _Any) ->
+    "krokstadelva.no";
+
+no("gangaviika", _Any) ->
+    "gangaviika.no";
+
+no("narviika", _Any) ->
+    "narviika.no";
+
+no("fitjar", _Any) ->
+    "fitjar.no";
+
+no("lyngen", _Any) ->
+    "lyngen.no";
+
+no("lindas", _Any) ->
+    "lindas.no";
+
+no("saltdal", _Any) ->
+    "saltdal.no";
+
+no("orsta", _Any) ->
+    "orsta.no";
+
+no("unjarga", _Any) ->
+    "unjarga.no";
+
+no("tr", []) ->
+    "tr.no";
+no("tr", Parts) ->
+    [First | Rest] = Parts,
+    tr_no(First, Rest);
+
+no("odda", _Any) ->
+    "odda.no";
+
+no("hordaland", []) ->
+    "hordaland.no";
+no("hordaland", Parts) ->
+    [First | Rest] = Parts,
+    hordaland_no(First, Rest);
+
+no("vaksdal", _Any) ->
+    "vaksdal.no";
+
+no("modum", _Any) ->
+    "modum.no";
+
+no("marnardal", _Any) ->
+    "marnardal.no";
+
+no("fedje", _Any) ->
+    "fedje.no";
+
+no("lebesby", _Any) ->
+    "lebesby.no";
+
+no("namsskogan", _Any) ->
+    "namsskogan.no";
+
+no("fjaler", _Any) ->
+    "fjaler.no";
+
+no("navuotna", _Any) ->
+    "navuotna.no";
+
+no("tingvoll", _Any) ->
+    "tingvoll.no";
+
+no("iveland", _Any) ->
+    "iveland.no";
+
+no("stjordal", _Any) ->
+    "stjordal.no";
+
+no("ha", _Any) ->
+    "ha.no";
+
+no("stat", _Any) ->
+    "stat.no";
+
+no("lund", _Any) ->
+    "lund.no";
+
+no("leirfjord", _Any) ->
+    "leirfjord.no";
+
+no("haram", _Any) ->
+    "haram.no";
+
+no("sirdal", _Any) ->
+    "sirdal.no";
+
+no("jondal", _Any) ->
+    "jondal.no";
+
+no("tm", []) ->
+    "tm.no";
+no("tm", Parts) ->
+    [First | Rest] = Parts,
+    tm_no(First, Rest);
+
+no("amot", _Any) ->
+    "amot.no";
+
+no("bajddar", _Any) ->
+    "bajddar.no";
+
+no("ol", []) ->
+    "ol.no";
+no("ol", Parts) ->
+    [First | Rest] = Parts,
+    ol_no(First, Rest);
+
+no("rendalen", _Any) ->
+    "rendalen.no";
+
+no("vagsoy", _Any) ->
+    "vagsoy.no";
+
+no("luroy", _Any) ->
+    "luroy.no";
+
+no("balsfjord", _Any) ->
+    "balsfjord.no";
+
+no("troandin", _Any) ->
+    "troandin.no";
+
+no("kopervik", _Any) ->
+    "kopervik.no";
+
+no("divttasvuotna", _Any) ->
+    "divttasvuotna.no";
+
+no("namsos", _Any) ->
+    "namsos.no";
+
+no("hjelmeland", _Any) ->
+    "hjelmeland.no";
+
+no("askvoll", _Any) ->
+    "askvoll.no";
+
+no("karasjohka", _Any) ->
+    "karasjohka.no";
+
+no("idrett", _Any) ->
+    "idrett.no";
+
+no("sorfold", _Any) ->
+    "sorfold.no";
+
+no("sauda", _Any) ->
+    "sauda.no";
+
+no("nesset", _Any) ->
+    "nesset.no";
+
+no("kviteseid", _Any) ->
+    "kviteseid.no";
+
+no("alstahaug", _Any) ->
+    "alstahaug.no";
+
+no("tonsberg", _Any) ->
+    "tonsberg.no";
+
+no("honefoss", _Any) ->
+    "honefoss.no";
+
+no("elverum", _Any) ->
+    "elverum.no";
+
+no("stokke", _Any) ->
+    "stokke.no";
+
+no("porsgrunn", _Any) ->
+    "porsgrunn.no";
+
+no("halden", _Any) ->
+    "halden.no";
+
+no("mosjoen", _Any) ->
+    "mosjoen.no";
+
+no("radoy", _Any) ->
+    "radoy.no";
+
+no("gratangen", _Any) ->
+    "gratangen.no";
+
+no("andebu", _Any) ->
+    "andebu.no";
+
+no("klabu", _Any) ->
+    "klabu.no";
+
+no("frei", _Any) ->
+    "frei.no";
+
+no("stordal", _Any) ->
+    "stordal.no";
+
+no("valle", _Any) ->
+    "valle.no";
+
+no("hamar", _Any) ->
+    "hamar.no";
+
+no("dielddanuorri", _Any) ->
+    "dielddanuorri.no";
+
+no("forde", _Any) ->
+    "forde.no";
+
+no("evenassi", _Any) ->
+    "evenassi.no";
+
+no("batsfjord", _Any) ->
+    "batsfjord.no";
+
+no("al", _Any) ->
+    "al.no";
+
+no("kongsberg", _Any) ->
+    "kongsberg.no";
+
+no("royrvik", _Any) ->
+    "royrvik.no";
+
+no("aa", []) ->
+    "aa.no";
+no("aa", Parts) ->
+    [First | Rest] = Parts,
+    aa_no(First, Rest);
+
+no("mandal", _Any) ->
+    "mandal.no";
+
+no("lavagis", _Any) ->
+    "lavagis.no";
+
+no("bergen", _Any) ->
+    "bergen.no";
+
+no("ullensaker", _Any) ->
+    "ullensaker.no";
+
+no("stjordalshalsen", _Any) ->
+    "stjordalshalsen.no";
+
+no("frana", _Any) ->
+    "frana.no";
+
+no("marker", _Any) ->
+    "marker.no";
+
+no("lier", _Any) ->
+    "lier.no";
+
+no("meloy", _Any) ->
+    "meloy.no";
+
+no("ski", _Any) ->
+    "ski.no";
+
+no("torsken", _Any) ->
+    "torsken.no";
+
+no("lerdal", _Any) ->
+    "lerdal.no";
+
+no("vf", []) ->
+    "vf.no";
+no("vf", Parts) ->
+    [First | Rest] = Parts,
+    vf_no(First, Rest);
+
+no("fusa", _Any) ->
+    "fusa.no";
+
+no("hvaler", _Any) ->
+    "hvaler.no";
+
+no("vadso", _Any) ->
+    "vadso.no";
+
+no("sunndal", _Any) ->
+    "sunndal.no";
+
+no("bearalvahki", _Any) ->
+    "bearalvahki.no";
+
+no("bu", []) ->
+    "bu.no";
+no("bu", Parts) ->
+    [First | Rest] = Parts,
+    bu_no(First, Rest);
+
+no("jevnaker", _Any) ->
+    "jevnaker.no";
+
+no("eidsberg", _Any) ->
+    "eidsberg.no";
+
+no("sykkylven", _Any) ->
+    "sykkylven.no";
+
+no("skanland", _Any) ->
+    "skanland.no";
+
+no("risor", _Any) ->
+    "risor.no";
+
+no("overhalla", _Any) ->
+    "overhalla.no";
+
+no("of", []) ->
+    "of.no";
+no("of", Parts) ->
+    [First | Rest] = Parts,
+    of_no(First, Rest);
+
+no("flekkefjord", _Any) ->
+    "flekkefjord.no";
+
+no("svalbard", []) ->
+    "svalbard.no";
+no("svalbard", Parts) ->
+    [First | Rest] = Parts,
+    svalbard_no(First, Rest);
+
+no("museum", _Any) ->
+    "museum.no";
+
+no("galsa", _Any) ->
+    "galsa.no";
+
+no("tjeldsund", _Any) ->
+    "tjeldsund.no";
+
+no("selje", _Any) ->
+    "selje.no";
+
+no("fhs", _Any) ->
+    "fhs.no";
+
+no("stathelle", _Any) ->
+    "stathelle.no";
+
+no("larvik", _Any) ->
+    "larvik.no";
+
+no("vestnes", _Any) ->
+    "vestnes.no";
+
+no("eidsvoll", _Any) ->
+    "eidsvoll.no";
+
+no("bodo", _Any) ->
+    "bodo.no";
+
+no("flora", _Any) ->
+    "flora.no";
+
+no("fjell", _Any) ->
+    "fjell.no";
+
+no("rost", _Any) ->
+    "rost.no";
+
+no("hm", []) ->
+    "hm.no";
+no("hm", Parts) ->
+    [First | Rest] = Parts,
+    hm_no(First, Rest);
+
+no("rana", _Any) ->
+    "rana.no";
+
+no("nissedal", _Any) ->
+    "nissedal.no";
+
+no("folldal", _Any) ->
+    "folldal.no";
+
+no("austevoll", _Any) ->
+    "austevoll.no";
+
+no("lenvik", _Any) ->
+    "lenvik.no";
+
+no("arna", _Any) ->
+    "arna.no";
+
+no("hoyanger", _Any) ->
+    "hoyanger.no";
+
+no("vagan", _Any) ->
+    "vagan.no";
+
+no("meland", _Any) ->
+    "meland.no";
+
+no("cahcesuolo", _Any) ->
+    "cahcesuolo.no";
+
+no("lavangen", _Any) ->
+    "lavangen.no";
+
+no("hornindal", _Any) ->
+    "hornindal.no";
+
+no("oslo", []) ->
+    "oslo.no";
+no("oslo", Parts) ->
+    [First | Rest] = Parts,
+    oslo_no(First, Rest);
+
+no("etne", _Any) ->
+    "etne.no";
+
+no("frosta", _Any) ->
+    "frosta.no";
+
+no("meldal", _Any) ->
+    "meldal.no";
+
+no("moss", _Any) ->
+    "moss.no";
+
+no("ah", []) ->
+    "ah.no";
+no("ah", Parts) ->
+    [First | Rest] = Parts,
+    ah_no(First, Rest);
+
+no("brumunddal", _Any) ->
+    "brumunddal.no";
+
+no("lorenskog", _Any) ->
+    "lorenskog.no";
+
+no("gloppen", _Any) ->
+    "gloppen.no";
+
+no("songdalen", _Any) ->
+    "songdalen.no";
+
+no("vegarshei", _Any) ->
+    "vegarshei.no";
+
+no("drangedal", _Any) ->
+    "drangedal.no";
+
+no("oppdal", _Any) ->
+    "oppdal.no";
+
+no("gjemnes", _Any) ->
+    "gjemnes.no";
+
+no("tromso", _Any) ->
+    "tromso.no";
+
+no("gjerstad", _Any) ->
+    "gjerstad.no";
+
+no("masfjorden", _Any) ->
+    "masfjorden.no";
+
+no("fetsund", _Any) ->
+    "fetsund.no";
+
+no("ostfold", []) ->
+    "ostfold.no";
+no("ostfold", Parts) ->
+    [First | Rest] = Parts,
+    ostfold_no(First, Rest);
+
+no("loabat", _Any) ->
+    "loabat.no";
+
+no("sandoy", _Any) ->
+    "sandoy.no";
+
+no("va", []) ->
+    "va.no";
+no("va", Parts) ->
+    [First | Rest] = Parts,
+    va_no(First, Rest);
+
+no("naustdal", _Any) ->
+    "naustdal.no";
+
+no("leka", _Any) ->
+    "leka.no";
+
+no("averoy", _Any) ->
+    "averoy.no";
+
+no("voss", _Any) ->
+    "voss.no";
+
+no("nesseby", _Any) ->
+    "nesseby.no";
+
+no("leikanger", _Any) ->
+    "leikanger.no";
+
+no("naamesjevuemie", _Any) ->
+    "naamesjevuemie.no";
+
+no("agdenes", _Any) ->
+    "agdenes.no";
+
+no("vefsn", _Any) ->
+    "vefsn.no";
+
+no("fylkesbibl", _Any) ->
+    "fylkesbibl.no";
+
+no("fm", []) ->
+    "fm.no";
+no("fm", Parts) ->
+    [First | Rest] = Parts,
+    fm_no(First, Rest);
+
+no("karlsoy", _Any) ->
+    "karlsoy.no";
+
+no("trysil", _Any) ->
+    "trysil.no";
+
+no("flesberg", _Any) ->
+    "flesberg.no";
+
+no("snoasa", _Any) ->
+    "snoasa.no";
+
+no("sokndal", _Any) ->
+    "sokndal.no";
+
+no("kvinnherad", _Any) ->
+    "kvinnherad.no";
+
+no("randaberg", _Any) ->
+    "randaberg.no";
+
+no("kvinesdal", _Any) ->
+    "kvinesdal.no";
+
+no("co", _Any) ->
+    "co.no";
+
+no("mosvik", _Any) ->
+    "mosvik.no";
+
+no("rollag", _Any) ->
+    "rollag.no";
+
+no("finnoy", _Any) ->
+    "finnoy.no";
+
+no("siellak", _Any) ->
+    "siellak.no";
+
+no("gjovik", _Any) ->
+    "gjovik.no";
+
+no("sandefjord", _Any) ->
+    "sandefjord.no";
+
+no("lyngdal", _Any) ->
+    "lyngdal.no";
+
+no("kvam", _Any) ->
+    "kvam.no";
+
+no("solund", _Any) ->
+    "solund.no";
+
+no("sula", _Any) ->
+    "sula.no";
+
+no("amli", _Any) ->
+    "amli.no";
+
+no("hadsel", _Any) ->
+    "hadsel.no";
+
+no("bievat", _Any) ->
+    "bievat.no";
+
+no("holtalen", _Any) ->
+    "holtalen.no";
+
+no("tjome", _Any) ->
+    "tjome.no";
+
+no("kvanangen", _Any) ->
+    "kvanangen.no";
+
+no("muosat", _Any) ->
+    "muosat.no";
+
+no("bomlo", _Any) ->
+    "bomlo.no";
+
+no("drammen", _Any) ->
+    "drammen.no";
+
+no("davvenjarga", _Any) ->
+    "davvenjarga.no";
+
+no("frogn", _Any) ->
+    "frogn.no";
+
+no("sarpsborg", _Any) ->
+    "sarpsborg.no";
+
+no("stord", _Any) ->
+    "stord.no";
+
+no("bryne", _Any) ->
+    "bryne.no";
+
+no("tana", _Any) ->
+    "tana.no";
+
+no("alaheadju", _Any) ->
+    "alaheadju.no";
+
+no("audnedaln", _Any) ->
+    "audnedaln.no";
+
+no("lillehammer", _Any) ->
+    "lillehammer.no";
+
+no("modalen", _Any) ->
+    "modalen.no";
+
+no("norddal", _Any) ->
+    "norddal.no";
+
+no("froland", _Any) ->
+    "froland.no";
+
+no("grue", _Any) ->
+    "grue.no";
+
+no("stavern", _Any) ->
+    "stavern.no";
+
+no("bokn", _Any) ->
+    "bokn.no";
+
+no("nesna", _Any) ->
+    "nesna.no";
+
+no("trondheim", _Any) ->
+    "trondheim.no";
+
+no("osteroy", _Any) ->
+    "osteroy.no";
+
+no("hobol", _Any) ->
+    "hobol.no";
+
+no("notodden", _Any) ->
+    "notodden.no";
+
+no("molde", _Any) ->
+    "molde.no";
+
+no("kristiansand", _Any) ->
+    "kristiansand.no";
+
+no("giske", _Any) ->
+    "giske.no";
+
+no("davvesiida", _Any) ->
+    "davvesiida.no";
+
+no("bamble", _Any) ->
+    "bamble.no";
+
+no("lahppi", _Any) ->
+    "lahppi.no";
+
+no("oyer", _Any) ->
+    "oyer.no";
+
+no("egersund", _Any) ->
+    "egersund.no";
+
+no("kristiansund", _Any) ->
+    "kristiansund.no";
+
+no("vaapste", _Any) ->
+    "vaapste.no";
+
+no("stranda", _Any) ->
+    "stranda.no";
+
+no("flatanger", _Any) ->
+    "flatanger.no";
+
+no("gausdal", _Any) ->
+    "gausdal.no";
+
+no("storfjord", _Any) ->
+    "storfjord.no";
+
+no("hitra", _Any) ->
+    "hitra.no";
+
+no("ballangen", _Any) ->
+    "ballangen.no";
+
+no("froya", _Any) ->
+    "froya.no";
+
+no("aseral", _Any) ->
+    "aseral.no";
+
+no("birkenes", _Any) ->
+    "birkenes.no";
+
+no("vennesla", _Any) ->
+    "vennesla.no";
+
+no("lierne", _Any) ->
+    "lierne.no";
+
+no("klepp", _Any) ->
+    "klepp.no";
+
+no("blogspot", _Any) ->
+    "blogspot.no";
+
+no("sauherad", _Any) ->
+    "sauherad.no";
+
+no("sel", _Any) ->
+    "sel.no";
+
+no("balestrand", _Any) ->
+    "balestrand.no";
+
+no("lillesand", _Any) ->
+    "lillesand.no";
+
+no("namdalseid", _Any) ->
+    "namdalseid.no";
+
+no("loten", _Any) ->
+    "loten.no";
+
+no("nesoddtangen", _Any) ->
+    "nesoddtangen.no";
+
+no("sorum", _Any) ->
+    "sorum.no";
+
+no("tokke", _Any) ->
+    "tokke.no";
+
+no("aarborte", _Any) ->
+    "aarborte.no";
+
+no("alesund", _Any) ->
+    "alesund.no";
+
+no("asnes", _Any) ->
+    "asnes.no";
+
+no("akrehamn", _Any) ->
+    "akrehamn.no";
+
+no("skanit", _Any) ->
+    "skanit.no";
+
+no("eigersund", _Any) ->
+    "eigersund.no";
+
+no("rygge", _Any) ->
+    "rygge.no";
+
+no("narvik", _Any) ->
+    "narvik.no";
+
+no("vang", _Any) ->
+    "vang.no";
+
+no("naroy", _Any) ->
+    "naroy.no";
+
+no("tysvar", _Any) ->
+    "tysvar.no";
+
+no("sogndal", _Any) ->
+    "sogndal.no";
+
+no("hedmark", []) ->
+    "hedmark.no";
+no("hedmark", Parts) ->
+    [First | Rest] = Parts,
+    hedmark_no(First, Rest);
+
+no("volda", _Any) ->
+    "volda.no";
+
+no("grong", _Any) ->
+    "grong.no";
+
+no("hagebostad", _Any) ->
+    "hagebostad.no";
+
+no("kvitsoy", _Any) ->
+    "kvitsoy.no";
+
+no("nordkapp", _Any) ->
+    "nordkapp.no";
+
+no("moskenes", _Any) ->
+    "moskenes.no";
+
+no("farsund", _Any) ->
+    "farsund.no";
+
+no("seljord", _Any) ->
+    "seljord.no";
+
+no("kongsvinger", _Any) ->
+    "kongsvinger.no";
+
+no("svelvik", _Any) ->
+    "svelvik.no";
+
+no("vindafjord", _Any) ->
+    "vindafjord.no";
+
+no("varggat", _Any) ->
+    "varggat.no";
+
+no("utsira", _Any) ->
+    "utsira.no";
+
+no("rodoy", _Any) ->
+    "rodoy.no";
+
+no("vardo", _Any) ->
+    "vardo.no";
+
+no("algard", _Any) ->
+    "algard.no";
+
+no("ardal", _Any) ->
+    "ardal.no";
+
+no("strand", _Any) ->
+    "strand.no";
+
+no("fet", _Any) ->
+    "fet.no";
 
 
-sd(_, _) ->
-    "sd".
+no(_, _) ->
+    "no".
 
 %% regular rules
-tt("edu", _Any) ->
-    "edu.tt";
-
-tt("aero", _Any) ->
-    "aero.tt";
-
-tt("net", _Any) ->
-    "net.tt";
-
-tt("gov", _Any) ->
-    "gov.tt";
-
-tt("coop", _Any) ->
-    "coop.tt";
-
-tt("co", _Any) ->
-    "co.tt";
-
-tt("jobs", _Any) ->
-    "jobs.tt";
-
-tt("travel", _Any) ->
-    "travel.tt";
-
-tt("com", _Any) ->
-    "com.tt";
-
-tt("info", _Any) ->
-    "info.tt";
-
-tt("pro", _Any) ->
-    "pro.tt";
-
-tt("biz", _Any) ->
-    "biz.tt";
-
-tt("name", _Any) ->
-    "name.tt";
-
-tt("mobi", _Any) ->
-    "mobi.tt";
-
-tt("org", _Any) ->
-    "org.tt";
-
-tt("museum", _Any) ->
-    "museum.tt";
-
-tt("int", _Any) ->
-    "int.tt";
+nl_no("gs", _Any) ->
+    "gs.nl.no";
 
 
-tt(_, _) ->
-    "tt".
+nl_no(_, _) ->
+    "nl.no".
 
 %% regular rules
-mc("tm", _Any) ->
-    "tm.mc";
-
-mc("asso", _Any) ->
-    "asso.mc";
+hl_no("gs", _Any) ->
+    "gs.hl.no";
 
 
-mc(_, _) ->
-    "mc".
+hl_no(_, _) ->
+    "hl.no".
 
 %% regular rules
-mn("gov", _Any) ->
-    "gov.mn";
-
-mn("org", _Any) ->
-    "org.mn";
-
-mn("edu", _Any) ->
-    "edu.mn";
-
-mn("nyc", _Any) ->
-    "nyc.mn";
+rl_no("gs", _Any) ->
+    "gs.rl.no";
 
 
-mn(_, _) ->
-    "mn".
+rl_no(_, _) ->
+    "rl.no".
 
 %% regular rules
+vestfold_no("sande", _Any) ->
+    "sande.vestfold.no";
+
+
+vestfold_no(_, _) ->
+    "vestfold.no".
+
+%% regular rules
+st_no("gs", _Any) ->
+    "gs.st.no";
+
+
+st_no(_, _) ->
+    "st.no".
+
+%% regular rules
+mr_no("gs", _Any) ->
+    "gs.mr.no";
+
+
+mr_no(_, _) ->
+    "mr.no".
+
+%% regular rules
+telemark_no("bo", _Any) ->
+    "bo.telemark.no";
+
+
+telemark_no(_, _) ->
+    "telemark.no".
+
+%% regular rules
+sf_no("gs", _Any) ->
+    "gs.sf.no";
+
+
+sf_no(_, _) ->
+    "sf.no".
+
+%% regular rules
+akershus_no("nes", _Any) ->
+    "nes.akershus.no";
+
+
+akershus_no(_, _) ->
+    "akershus.no".
+
+%% regular rules
+buskerud_no("nes", _Any) ->
+    "nes.buskerud.no";
+
+
+buskerud_no(_, _) ->
+    "buskerud.no".
+
+%% regular rules
+nordland_no("heroy", _Any) ->
+    "heroy.nordland.no";
+
+nordland_no("bo", _Any) ->
+    "bo.nordland.no";
+
+
+nordland_no(_, _) ->
+    "nordland.no".
+
+%% regular rules
+nt_no("gs", _Any) ->
+    "gs.nt.no";
+
+
+nt_no(_, _) ->
+    "nt.no".
+
+%% regular rules
+tr_no("gs", _Any) ->
+    "gs.tr.no";
+
+
+tr_no(_, _) ->
+    "tr.no".
+
+%% regular rules
+hordaland_no("os", _Any) ->
+    "os.hordaland.no";
+
+
+hordaland_no(_, _) ->
+    "hordaland.no".
+
+%% regular rules
+tm_no("gs", _Any) ->
+    "gs.tm.no";
+
+
+tm_no(_, _) ->
+    "tm.no".
+
+%% regular rules
+ol_no("gs", _Any) ->
+    "gs.ol.no";
+
+
+ol_no(_, _) ->
+    "ol.no".
+
+%% regular rules
+aa_no("gs", _Any) ->
+    "gs.aa.no";
+
+
+aa_no(_, _) ->
+    "aa.no".
+
+%% regular rules
+vf_no("gs", _Any) ->
+    "gs.vf.no";
+
+
+vf_no(_, _) ->
+    "vf.no".
+
+%% regular rules
+bu_no("gs", _Any) ->
+    "gs.bu.no";
+
+
+bu_no(_, _) ->
+    "bu.no".
+
+%% regular rules
+of_no("gs", _Any) ->
+    "gs.of.no";
+
+
+of_no(_, _) ->
+    "of.no".
+
+%% regular rules
+svalbard_no("gs", _Any) ->
+    "gs.svalbard.no";
+
+
+svalbard_no(_, _) ->
+    "svalbard.no".
+
+%% regular rules
+hm_no("gs", _Any) ->
+    "gs.hm.no";
+
+
+hm_no(_, _) ->
+    "hm.no".
+
+%% regular rules
+oslo_no("gs", _Any) ->
+    "gs.oslo.no";
+
+
+oslo_no(_, _) ->
+    "oslo.no".
+
+%% regular rules
+ah_no("gs", _Any) ->
+    "gs.ah.no";
+
+
+ah_no(_, _) ->
+    "ah.no".
+
+%% regular rules
+ostfold_no("valer", _Any) ->
+    "valer.ostfold.no";
+
+
+ostfold_no(_, _) ->
+    "ostfold.no".
+
+%% regular rules
+va_no("gs", _Any) ->
+    "gs.va.no";
+
+
+va_no(_, _) ->
+    "va.no".
+
+%% regular rules
+fm_no("gs", _Any) ->
+    "gs.fm.no";
+
+
+fm_no(_, _) ->
+    "fm.no".
+
+%% regular rules
+hedmark_no("valer", _Any) ->
+    "valer.hedmark.no";
+
+hedmark_no("os", _Any) ->
+    "os.hedmark.no";
+
+
+hedmark_no(_, _) ->
+    "hedmark.no".
+
+%% regular rules
+st("edu", _Any) ->
+    "edu.st";
+
+st("co", _Any) ->
+    "co.st";
+
+st("store", _Any) ->
+    "store.st";
+
+st("mil", _Any) ->
+    "mil.st";
+
+st("principe", _Any) ->
+    "principe.st";
+
+st("embaixada", _Any) ->
+    "embaixada.st";
+
+st("saotome", _Any) ->
+    "saotome.st";
+
+st("gov", _Any) ->
+    "gov.st";
+
+st("com", _Any) ->
+    "com.st";
+
+st("org", _Any) ->
+    "org.st";
+
+st("consulado", _Any) ->
+    "consulado.st";
+
+st("net", _Any) ->
+    "net.st";
+
+
+st(_, _) ->
+    "st".
+
+%% regular rules
+sg("per", _Any) ->
+    "per.sg";
+
+sg("net", _Any) ->
+    "net.sg";
+
+sg("blogspot", _Any) ->
+    "blogspot.sg";
+
+sg("edu", _Any) ->
+    "edu.sg";
+
+sg("com", _Any) ->
+    "com.sg";
+
+sg("org", _Any) ->
+    "org.sg";
+
+sg("gov", _Any) ->
+    "gov.sg";
+
+
+sg(_, _) ->
+    "sg".
+
+%% regular rules
+mk("name", _Any) ->
+    "name.mk";
+
+mk("net", _Any) ->
+    "net.mk";
+
+mk("inf", _Any) ->
+    "inf.mk";
+
+mk("gov", _Any) ->
+    "gov.mk";
+
+mk("edu", _Any) ->
+    "edu.mk";
+
+mk("org", _Any) ->
+    "org.mk";
+
+mk("com", _Any) ->
+    "com.mk";
+
+
+mk(_, _) ->
+    "mk".
+
+%% regular rules
+so("com", _Any) ->
+    "com.so";
+
+so("org", _Any) ->
+    "org.so";
+
+so("net", _Any) ->
+    "net.so";
+
+
+so(_, _) ->
+    "so".
+
+%% regular rules
+int("eu", _Any) ->
+    "eu.int";
+
+
+int(_, _) ->
+    "int".
+
+%% regular rules
+gn("org", _Any) ->
+    "org.gn";
+
+gn("edu", _Any) ->
+    "edu.gn";
+
+gn("ac", _Any) ->
+    "ac.gn";
+
+gn("com", _Any) ->
+    "com.gn";
+
+gn("gov", _Any) ->
+    "gov.gn";
+
+gn("net", _Any) ->
+    "net.gn";
+
+
+gn(_, _) ->
+    "gn".
+
+%% regular rules
+aw("com", _Any) ->
+    "com.aw";
+
+
+aw(_, _) ->
+    "aw".
+
+%% regular rules
+ag("com", _Any) ->
+    "com.ag";
+
+ag("co", _Any) ->
+    "co.ag";
+
+ag("org", _Any) ->
+    "org.ag";
+
+ag("nom", _Any) ->
+    "nom.ag";
+
+ag("net", _Any) ->
+    "net.ag";
+
+
+ag(_, _) ->
+    "ag".
+
+%% regular rules
+tj("edu", _Any) ->
+    "edu.tj";
+
+tj("co", _Any) ->
+    "co.tj";
+
+tj("go", _Any) ->
+    "go.tj";
+
+tj("test", _Any) ->
+    "test.tj";
+
+tj("mil", _Any) ->
+    "mil.tj";
+
+tj("int", _Any) ->
+    "int.tj";
+
+tj("name", _Any) ->
+    "name.tj";
+
+tj("com", _Any) ->
+    "com.tj";
+
+tj("web", _Any) ->
+    "web.tj";
+
+tj("org", _Any) ->
+    "org.tj";
+
+tj("ac", _Any) ->
+    "ac.tj";
+
+tj("gov", _Any) ->
+    "gov.tj";
+
+tj("biz", _Any) ->
+    "biz.tj";
+
+tj("net", _Any) ->
+    "net.tj";
+
+tj("nic", _Any) ->
+    "nic.tj";
+
+
+tj(_, _) ->
+    "tj".
+
+%% regular rules
+bw("co", _Any) ->
+    "co.bw";
+
+bw("org", _Any) ->
+    "org.bw";
+
+
+bw(_, _) ->
+    "bw".
+
+%% regular rules
+bs("net", _Any) ->
+    "net.bs";
+
+bs("org", _Any) ->
+    "org.bs";
+
+bs("edu", _Any) ->
+    "edu.bs";
+
+bs("com", _Any) ->
+    "com.bs";
+
+bs("gov", _Any) ->
+    "gov.bs";
+
+
+bs(_, _) ->
+    "bs".
+
+%% regular rules
+lk("soc", _Any) ->
+    "soc.lk";
+
+lk("net", _Any) ->
+    "net.lk";
+
+lk("hotel", _Any) ->
+    "hotel.lk";
+
+lk("assn", _Any) ->
+    "assn.lk";
+
+lk("com", _Any) ->
+    "com.lk";
+
+lk("web", _Any) ->
+    "web.lk";
+
+lk("org", _Any) ->
+    "org.lk";
+
+lk("sch", _Any) ->
+    "sch.lk";
+
+lk("ngo", _Any) ->
+    "ngo.lk";
+
+lk("ltd", _Any) ->
+    "ltd.lk";
+
+lk("gov", _Any) ->
+    "gov.lk";
+
+lk("grp", _Any) ->
+    "grp.lk";
+
+lk("int", _Any) ->
+    "int.lk";
+
+lk("edu", _Any) ->
+    "edu.lk";
+
+
+lk(_, _) ->
+    "lk".
+
+%% regular rules
+bi("or", _Any) ->
+    "or.bi";
+
+bi("org", _Any) ->
+    "org.bi";
+
+bi("com", _Any) ->
+    "com.bi";
+
+bi("edu", _Any) ->
+    "edu.bi";
+
+bi("co", _Any) ->
+    "co.bi";
+
+
+bi(_, _) ->
+    "bi".
+
+%% regular rules
+mv("info", _Any) ->
+    "info.mv";
+
+mv("aero", _Any) ->
+    "aero.mv";
+
+mv("net", _Any) ->
+    "net.mv";
+
+mv("pro", _Any) ->
+    "pro.mv";
+
+mv("gov", _Any) ->
+    "gov.mv";
+
+mv("biz", _Any) ->
+    "biz.mv";
+
+mv("org", _Any) ->
+    "org.mv";
+
+mv("com", _Any) ->
+    "com.mv";
+
+mv("coop", _Any) ->
+    "coop.mv";
+
+mv("name", _Any) ->
+    "name.mv";
+
+mv("mil", _Any) ->
+    "mil.mv";
+
+mv("int", _Any) ->
+    "int.mv";
+
+mv("museum", _Any) ->
+    "museum.mv";
+
+mv("edu", _Any) ->
+    "edu.mv";
+
+
+mv(_, _) ->
+    "mv".
+
+%% regular rules
+td("blogspot", _Any) ->
+    "blogspot.td";
+
+
+td(_, _) ->
+    "td".
+
+%% regular rules
+cl("mil", _Any) ->
+    "mil.cl";
+
+cl("gov", _Any) ->
+    "gov.cl";
+
+cl("gob", _Any) ->
+    "gob.cl";
+
+cl("co", _Any) ->
+    "co.cl";
+
+
+cl(_, _) ->
+    "cl".
+
+%% regular rules
+sh("net", _Any) ->
+    "net.sh";
+
+sh("mil", _Any) ->
+    "mil.sh";
+
+sh("org", _Any) ->
+    "org.sh";
+
+sh("com", _Any) ->
+    "com.sh";
+
+sh("gov", _Any) ->
+    "gov.sh";
+
+
+sh(_, _) ->
+    "sh".
+
+%% regular rules
+mr("blogspot", _Any) ->
+    "blogspot.mr";
+
+mr("gov", _Any) ->
+    "gov.mr";
+
+
+mr(_, _) ->
+    "mr".
+
+%% regular rules
+lb("edu", _Any) ->
+    "edu.lb";
+
+lb("org", _Any) ->
+    "org.lb";
+
+lb("com", _Any) ->
+    "com.lb";
+
+lb("gov", _Any) ->
+    "gov.lb";
+
+lb("net", _Any) ->
+    "net.lb";
+
+
+lb(_, _) ->
+    "lb".
+
+%% regular rules
+ee("med", _Any) ->
+    "med.ee";
+
+ee("com", _Any) ->
+    "com.ee";
+
+ee("org", _Any) ->
+    "org.ee";
+
+ee("gov", _Any) ->
+    "gov.ee";
+
+ee("lib", _Any) ->
+    "lib.ee";
+
+ee("fie", _Any) ->
+    "fie.ee";
+
+ee("riik", _Any) ->
+    "riik.ee";
+
+ee("aip", _Any) ->
+    "aip.ee";
+
+ee("pri", _Any) ->
+    "pri.ee";
+
+ee("edu", _Any) ->
+    "edu.ee";
+
+
+ee(_, _) ->
+    "ee".
+
+%% regular rules
+ls("co", _Any) ->
+    "co.ls";
+
+ls("org", _Any) ->
+    "org.ls";
+
+
+ls(_, _) ->
+    "ls".
+
+%% regular rules
+tw("gov", _Any) ->
+    "gov.tw";
+
+tw("com", _Any) ->
+    "com.tw";
+
+tw("club", _Any) ->
+    "club.tw";
+
+tw("org", _Any) ->
+    "org.tw";
+
+tw("game", _Any) ->
+    "game.tw";
+
+tw("net", _Any) ->
+    "net.tw";
+
+tw("idv", _Any) ->
+    "idv.tw";
+
+tw("edu", _Any) ->
+    "edu.tw";
+
+tw("blogspot", _Any) ->
+    "blogspot.tw";
+
+tw("ebiz", _Any) ->
+    "ebiz.tw";
+
+tw("mil", _Any) ->
+    "mil.tw";
+
+
+tw(_, _) ->
+    "tw".
+
+%% regular rules
+ve("arts", _Any) ->
+    "arts.ve";
+
+ve("com", _Any) ->
+    "com.ve";
+
+ve("gov", _Any) ->
+    "gov.ve";
+
+ve("net", _Any) ->
+    "net.ve";
+
+ve("co", _Any) ->
+    "co.ve";
+
+ve("edu", _Any) ->
+    "edu.ve";
+
+ve("int", _Any) ->
+    "int.ve";
+
+ve("mil", _Any) ->
+    "mil.ve";
+
+ve("store", _Any) ->
+    "store.ve";
+
+ve("tec", _Any) ->
+    "tec.ve";
+
+ve("web", _Any) ->
+    "web.ve";
+
+ve("org", _Any) ->
+    "org.ve";
+
+ve("gob", _Any) ->
+    "gob.ve";
+
+ve("firm", _Any) ->
+    "firm.ve";
+
+ve("info", _Any) ->
+    "info.ve";
+
+ve("rec", _Any) ->
+    "rec.ve";
+
+
+ve(_, _) ->
+    "ve".
+
+%% regular rules
+ky("net", _Any) ->
+    "net.ky";
+
+ky("org", _Any) ->
+    "org.ky";
+
+ky("com", _Any) ->
+    "com.ky";
+
+ky("edu", _Any) ->
+    "edu.ky";
+
+ky("gov", _Any) ->
+    "gov.ky";
+
+
+ky(_, _) ->
+    "ky".
+
+%% regular rules
+ua("lviv", _Any) ->
+    "lviv.ua";
+
+ua("krym", _Any) ->
+    "krym.ua";
+
+ua("uzhgorod", _Any) ->
+    "uzhgorod.ua";
+
+ua("lugansk", _Any) ->
+    "lugansk.ua";
+
+ua("lg", _Any) ->
+    "lg.ua";
+
+ua("kharkiv", _Any) ->
+    "kharkiv.ua";
+
+ua("cv", _Any) ->
+    "cv.ua";
+
+ua("sm", _Any) ->
+    "sm.ua";
+
+ua("te", _Any) ->
+    "te.ua";
+
+ua("chernihiv", _Any) ->
+    "chernihiv.ua";
+
+ua("edu", _Any) ->
+    "edu.ua";
+
+ua("uz", _Any) ->
+    "uz.ua";
+
+ua("volyn", _Any) ->
+    "volyn.ua";
+
+ua("dominic", _Any) ->
+    "dominic.ua";
+
+ua("km", _Any) ->
+    "km.ua";
+
+ua("sebastopol", _Any) ->
+    "sebastopol.ua";
+
+ua("com", _Any) ->
+    "com.ua";
+
+ua("chernigov", _Any) ->
+    "chernigov.ua";
+
+ua("khmelnitskiy", _Any) ->
+    "khmelnitskiy.ua";
+
+ua("rovno", _Any) ->
+    "rovno.ua";
+
+ua("sumy", _Any) ->
+    "sumy.ua";
+
+ua("dn", _Any) ->
+    "dn.ua";
+
+ua("kv", _Any) ->
+    "kv.ua";
+
+ua("vinnica", _Any) ->
+    "vinnica.ua";
+
+ua("org", _Any) ->
+    "org.ua";
+
+ua("dp", _Any) ->
+    "dp.ua";
+
+ua("pp", _Any) ->
+    "pp.ua";
+
+ua("donetsk", _Any) ->
+    "donetsk.ua";
+
+ua("vn", _Any) ->
+    "vn.ua";
+
+ua("zp", _Any) ->
+    "zp.ua";
+
+ua("poltava", _Any) ->
+    "poltava.ua";
+
+ua("cherkassy", _Any) ->
+    "cherkassy.ua";
+
+ua("kherson", _Any) ->
+    "kherson.ua";
+
+ua("chernovtsy", _Any) ->
+    "chernovtsy.ua";
+
+ua("chernivtsi", _Any) ->
+    "chernivtsi.ua";
+
+ua("ck", _Any) ->
+    "ck.ua";
+
+ua("sb", _Any) ->
+    "sb.ua";
+
+ua("mk", _Any) ->
+    "mk.ua";
+
+ua("kh", _Any) ->
+    "kh.ua";
+
+ua("zhytomyr", _Any) ->
+    "zhytomyr.ua";
+
+ua("kirovograd", _Any) ->
+    "kirovograd.ua";
+
+ua("odesa", _Any) ->
+    "odesa.ua";
+
+ua("rivne", _Any) ->
+    "rivne.ua";
+
+ua("dnepropetrovsk", _Any) ->
+    "dnepropetrovsk.ua";
+
+ua("nikolaev", _Any) ->
+    "nikolaev.ua";
+
+ua("co", _Any) ->
+    "co.ua";
+
+ua("if", _Any) ->
+    "if.ua";
+
+ua("vinnytsia", _Any) ->
+    "vinnytsia.ua";
+
+ua("odessa", _Any) ->
+    "odessa.ua";
+
+ua("yalta", _Any) ->
+    "yalta.ua";
+
+ua("khmelnytskyi", _Any) ->
+    "khmelnytskyi.ua";
+
+ua("od", _Any) ->
+    "od.ua";
+
+ua("crimea", _Any) ->
+    "crimea.ua";
+
+ua("lutsk", _Any) ->
+    "lutsk.ua";
+
+ua("kharkov", _Any) ->
+    "kharkov.ua";
+
+ua("lv", _Any) ->
+    "lv.ua";
+
+ua("in", _Any) ->
+    "in.ua";
+
+ua("ternopil", _Any) ->
+    "ternopil.ua";
+
+ua("sevastopol", _Any) ->
+    "sevastopol.ua";
+
+ua("lt", _Any) ->
+    "lt.ua";
+
+ua("kyiv", _Any) ->
+    "kyiv.ua";
+
+ua("zt", _Any) ->
+    "zt.ua";
+
+ua("cn", _Any) ->
+    "cn.ua";
+
+ua("kr", _Any) ->
+    "kr.ua";
+
+ua("rv", _Any) ->
+    "rv.ua";
+
+ua("kiev", _Any) ->
+    "kiev.ua";
+
+ua("mykolaiv", _Any) ->
+    "mykolaiv.ua";
+
+ua("zaporizhzhe", _Any) ->
+    "zaporizhzhe.ua";
+
+ua("dnipropetrovsk", _Any) ->
+    "dnipropetrovsk.ua";
+
+ua("ks", _Any) ->
+    "ks.ua";
+
+ua("cr", _Any) ->
+    "cr.ua";
+
+ua("zhitomir", _Any) ->
+    "zhitomir.ua";
+
+ua("gov", _Any) ->
+    "gov.ua";
+
+ua("cherkasy", _Any) ->
+    "cherkasy.ua";
+
+ua("zaporizhzhia", _Any) ->
+    "zaporizhzhia.ua";
+
+ua("net", _Any) ->
+    "net.ua";
+
+ua("pl", _Any) ->
+    "pl.ua";
+
+
+ua(_, _) ->
+    "ua".
+
+%% regular rules
+bb("edu", _Any) ->
+    "edu.bb";
+
+bb("co", _Any) ->
+    "co.bb";
+
+bb("store", _Any) ->
+    "store.bb";
+
+bb("org", _Any) ->
+    "org.bb";
+
+bb("com", _Any) ->
+    "com.bb";
+
+bb("gov", _Any) ->
+    "gov.bb";
+
+bb("biz", _Any) ->
+    "biz.bb";
+
+bb("tv", _Any) ->
+    "tv.bb";
+
+bb("net", _Any) ->
+    "net.bb";
+
+bb("info", _Any) ->
+    "info.bb";
+
+
+bb(_, _) ->
+    "bb".
+
+%% regular rules
+cz("blogspot", _Any) ->
+    "blogspot.cz";
+
+
+cz(_, _) ->
+    "cz".
+
+%% regular rules
+py("mil", _Any) ->
+    "mil.py";
+
+py("net", _Any) ->
+    "net.py";
+
+py("coop", _Any) ->
+    "coop.py";
+
+py("com", _Any) ->
+    "com.py";
+
+py("org", _Any) ->
+    "org.py";
+
+py("edu", _Any) ->
+    "edu.py";
+
+py("gov", _Any) ->
+    "gov.py";
+
+
+py(_, _) ->
+    "py".
+
+%% regular rules
+au("gov", []) ->
+    "gov.au";
+au("gov", Parts) ->
+    [First | Rest] = Parts,
+    gov_au(First, Rest);
+
+au("com", []) ->
+    "com.au";
+au("com", Parts) ->
+    [First | Rest] = Parts,
+    com_au(First, Rest);
+
+au("vic", _Any) ->
+    "vic.au";
+
+au("qld", _Any) ->
+    "qld.au";
+
+au("net", _Any) ->
+    "net.au";
+
+au("tas", _Any) ->
+    "tas.au";
+
+au("conf", _Any) ->
+    "conf.au";
+
+au("edu", []) ->
+    "edu.au";
+au("edu", Parts) ->
+    [First | Rest] = Parts,
+    edu_au(First, Rest);
+
+au("asn", _Any) ->
+    "asn.au";
+
+au("wa", _Any) ->
+    "wa.au";
+
+au("nsw", _Any) ->
+    "nsw.au";
+
+au("sa", _Any) ->
+    "sa.au";
+
+au("org", _Any) ->
+    "org.au";
+
+au("info", _Any) ->
+    "info.au";
+
+au("oz", _Any) ->
+    "oz.au";
+
+au("act", _Any) ->
+    "act.au";
+
+au("nt", _Any) ->
+    "nt.au";
+
+au("id", _Any) ->
+    "id.au";
+
+
+au(_, _) ->
+    "au".
+
+%% regular rules
+gov_au("wa", _Any) ->
+    "wa.gov.au";
+
+gov_au("vic", _Any) ->
+    "vic.gov.au";
+
+gov_au("sa", _Any) ->
+    "sa.gov.au";
+
+gov_au("qld", _Any) ->
+    "qld.gov.au";
+
+gov_au("tas", _Any) ->
+    "tas.gov.au";
+
+
+gov_au(_, _) ->
+    "gov.au".
+
+%% regular rules
+com_au("blogspot", _Any) ->
+    "blogspot.com.au";
+
+
+com_au(_, _) ->
+    "com.au".
+
+%% regular rules
+edu_au("act", _Any) ->
+    "act.edu.au";
+
+edu_au("nt", _Any) ->
+    "nt.edu.au";
+
+edu_au("nsw", _Any) ->
+    "nsw.edu.au";
+
+edu_au("wa", _Any) ->
+    "wa.edu.au";
+
+edu_au("sa", _Any) ->
+    "sa.edu.au";
+
+edu_au("vic", _Any) ->
+    "vic.edu.au";
+
+edu_au("qld", _Any) ->
+    "qld.edu.au";
+
+edu_au("tas", _Any) ->
+    "tas.edu.au";
+
+
+edu_au(_, _) ->
+    "edu.au".
+
+%% regular rules
+ng("net", _Any) ->
+    "net.ng";
+
+ng("gov", _Any) ->
+    "gov.ng";
+
+ng("org", _Any) ->
+    "org.ng";
+
+ng("com", _Any) ->
+    "com.ng";
+
+ng("sch", _Any) ->
+    "sch.ng";
+
+ng("name", _Any) ->
+    "name.ng";
+
+ng("mil", _Any) ->
+    "mil.ng";
+
+ng("edu", _Any) ->
+    "edu.ng";
+
+ng("mobi", _Any) ->
+    "mobi.ng";
+
+
+ng(_, _) ->
+    "ng".
+
+%% regular rules
+ge("com", _Any) ->
+    "com.ge";
+
+ge("org", _Any) ->
+    "org.ge";
+
+ge("edu", _Any) ->
+    "edu.ge";
+
+ge("gov", _Any) ->
+    "gov.ge";
+
+ge("mil", _Any) ->
+    "mil.ge";
+
+ge("net", _Any) ->
+    "net.ge";
+
+ge("pvt", _Any) ->
+    "pvt.ge";
+
+
+ge(_, _) ->
+    "ge".
+
+%% regular rules
+fi("blogspot", _Any) ->
+    "blogspot.fi";
+
+fi("iki", _Any) ->
+    "iki.fi";
+
+fi("aland", _Any) ->
+    "aland.fi";
+
+
+fi(_, _) ->
+    "fi".
+
+%% regular rules
+dk("blogspot", _Any) ->
+    "blogspot.dk";
+
+
+dk(_, _) ->
+    "dk".
+
+%% regular rules
+km("ass", _Any) ->
+    "ass.km";
+
+km("edu", _Any) ->
+    "edu.km";
+
+km("mil", _Any) ->
+    "mil.km";
+
+km("nom", _Any) ->
+    "nom.km";
+
+km("pharmaciens", _Any) ->
+    "pharmaciens.km";
+
+km("gov", _Any) ->
+    "gov.km";
+
+km("tm", _Any) ->
+    "tm.km";
+
+km("com", _Any) ->
+    "com.km";
+
+km("asso", _Any) ->
+    "asso.km";
+
+km("coop", _Any) ->
+    "coop.km";
+
+km("notaires", _Any) ->
+    "notaires.km";
+
+km("prd", _Any) ->
+    "prd.km";
+
+km("gouv", _Any) ->
+    "gouv.km";
+
+km("org", _Any) ->
+    "org.km";
+
+km("veterinaire", _Any) ->
+    "veterinaire.km";
+
+km("medecin", _Any) ->
+    "medecin.km";
+
+km("presse", _Any) ->
+    "presse.km";
+
+
+km(_, _) ->
+    "km".
+
+%% regular rules
+my("name", _Any) ->
+    "name.my";
+
+my("mil", _Any) ->
+    "mil.my";
+
+my("net", _Any) ->
+    "net.my";
+
+my("gov", _Any) ->
+    "gov.my";
+
+my("com", _Any) ->
+    "com.my";
+
+my("edu", _Any) ->
+    "edu.my";
+
+my("org", _Any) ->
+    "org.my";
+
+
+my(_, _) ->
+    "my".
+
+%% regular rules
+gr("blogspot", _Any) ->
+    "blogspot.gr";
+
+gr("net", _Any) ->
+    "net.gr";
+
+gr("gov", _Any) ->
+    "gov.gr";
+
+gr("edu", _Any) ->
+    "edu.gr";
+
+gr("org", _Any) ->
+    "org.gr";
+
+gr("com", _Any) ->
+    "com.gr";
+
+
+gr(_, _) ->
+    "gr".
+
+%% regular rules
+lc("org", _Any) ->
+    "org.lc";
+
+lc("edu", _Any) ->
+    "edu.lc";
+
+lc("co", _Any) ->
+    "co.lc";
+
+lc("com", _Any) ->
+    "com.lc";
+
+lc("gov", _Any) ->
+    "gov.lc";
+
+lc("net", _Any) ->
+    "net.lc";
+
+
+lc(_, _) ->
+    "lc".
+
+%% regular rules
+uy("net", _Any) ->
+    "net.uy";
+
+uy("mil", _Any) ->
+    "mil.uy";
+
+uy("gub", _Any) ->
+    "gub.uy";
+
+uy("org", _Any) ->
+    "org.uy";
+
+uy("com", _Any) ->
+    "com.uy";
+
+uy("edu", _Any) ->
+    "edu.uy";
+
+
+uy(_, _) ->
+    "uy".
+
+%% regular rules
+ml("gov", _Any) ->
+    "gov.ml";
+
+ml("gouv", _Any) ->
+    "gouv.ml";
+
+ml("com", _Any) ->
+    "com.ml";
+
+ml("org", _Any) ->
+    "org.ml";
+
+ml("edu", _Any) ->
+    "edu.ml";
+
+ml("net", _Any) ->
+    "net.ml";
+
+ml("presse", _Any) ->
+    "presse.ml";
+
+
+ml(_, _) ->
+    "ml".
+
+%% regular rules
+by("of", _Any) ->
+    "of.by";
+
+by("mil", _Any) ->
+    "mil.by";
+
+by("gov", _Any) ->
+    "gov.by";
+
+by("com", _Any) ->
+    "com.by";
+
+
+by(_, _) ->
+    "by".
+
+%% regular rules
+vu("net", _Any) ->
+    "net.vu";
+
+vu("org", _Any) ->
+    "org.vu";
+
+vu("com", _Any) ->
+    "com.vu";
+
+vu("edu", _Any) ->
+    "edu.vu";
+
+
+vu(_, _) ->
+    "vu".
+
+%% regular rules
+ms("net", _Any) ->
+    "net.ms";
+
+ms("gov", _Any) ->
+    "gov.ms";
+
+ms("org", _Any) ->
+    "org.ms";
+
+ms("edu", _Any) ->
+    "edu.ms";
+
+ms("com", _Any) ->
+    "com.ms";
+
+
+ms(_, _) ->
+    "ms".
+
+%% regular rules
+cd("gov", _Any) ->
+    "gov.cd";
+
+
+cd(_, _) ->
+    "cd".
+
+%% regular rules
+th("net", _Any) ->
+    "net.th";
+
+th("mi", _Any) ->
+    "mi.th";
+
+th("in", _Any) ->
+    "in.th";
+
+th("or", _Any) ->
+    "or.th";
+
+th("ac", _Any) ->
+    "ac.th";
+
+th("co", _Any) ->
+    "co.th";
+
+th("go", _Any) ->
+    "go.th";
+
+
+th(_, _) ->
+    "th".
+
+%% regular rules
+ba("org", _Any) ->
+    "org.ba";
+
+ba("com", _Any) ->
+    "com.ba";
+
+ba("unbi", _Any) ->
+    "unbi.ba";
+
+ba("gov", _Any) ->
+    "gov.ba";
+
+ba("net", _Any) ->
+    "net.ba";
+
+ba("edu", _Any) ->
+    "edu.ba";
+
+ba("co", _Any) ->
+    "co.ba";
+
+ba("unsa", _Any) ->
+    "unsa.ba";
+
+ba("mil", _Any) ->
+    "mil.ba";
+
+ba("rs", _Any) ->
+    "rs.ba";
+
+
+ba(_, _) ->
+    "ba".
+
+%% regular rules
+af("net", _Any) ->
+    "net.af";
+
+af("gov", _Any) ->
+    "gov.af";
+
+af("org", _Any) ->
+    "org.af";
+
+af("edu", _Any) ->
+    "edu.af";
+
+af("com", _Any) ->
+    "com.af";
+
+
+af(_, _) ->
+    "af".
+
+%% regular rules
+mx("edu", _Any) ->
+    "edu.mx";
+
+mx("gob", _Any) ->
+    "gob.mx";
+
+mx("org", _Any) ->
+    "org.mx";
+
+mx("com", _Any) ->
+    "com.mx";
+
+mx("net", _Any) ->
+    "net.mx";
+
+mx("blogspot", _Any) ->
+    "blogspot.mx";
+
+
+mx(_, _) ->
+    "mx".
+
+%% regular rules
+pe("com", _Any) ->
+    "com.pe";
+
+pe("gob", _Any) ->
+    "gob.pe";
+
+pe("org", _Any) ->
+    "org.pe";
+
+pe("edu", _Any) ->
+    "edu.pe";
+
+pe("mil", _Any) ->
+    "mil.pe";
+
+pe("nom", _Any) ->
+    "nom.pe";
+
+pe("net", _Any) ->
+    "net.pe";
+
+
+pe(_, _) ->
+    "pe".
+
+%% regular rules
+be("ac", _Any) ->
+    "ac.be";
+
+be("blogspot", _Any) ->
+    "blogspot.be";
+
+
+be(_, _) ->
+    "be".
+
+%% regular rules
+ch("blogspot", _Any) ->
+    "blogspot.ch";
+
+
+ch(_, _) ->
+    "ch".
+
+%% regular rules
+pk("net", _Any) ->
+    "net.pk";
+
+pk("fam", _Any) ->
+    "fam.pk";
+
+pk("gon", _Any) ->
+    "gon.pk";
+
+pk("info", _Any) ->
+    "info.pk";
+
+pk("gok", _Any) ->
+    "gok.pk";
+
+pk("gob", _Any) ->
+    "gob.pk";
+
+pk("com", _Any) ->
+    "com.pk";
+
+pk("web", _Any) ->
+    "web.pk";
+
+pk("org", _Any) ->
+    "org.pk";
+
+pk("gov", _Any) ->
+    "gov.pk";
+
+pk("biz", _Any) ->
+    "biz.pk";
+
+pk("edu", _Any) ->
+    "edu.pk";
+
+pk("gop", _Any) ->
+    "gop.pk";
+
+pk("gos", _Any) ->
+    "gos.pk";
+
+
+pk(_, _) ->
+    "pk".
+
+%% regular rules
+ca("mb", _Any) ->
+    "mb.ca";
+
+ca("ab", _Any) ->
+    "ab.ca";
+
+ca("nu", _Any) ->
+    "nu.ca";
+
+ca("nl", _Any) ->
+    "nl.ca";
+
+ca("blogspot", _Any) ->
+    "blogspot.ca";
+
+ca("nb", _Any) ->
+    "nb.ca";
+
+ca("co", _Any) ->
+    "co.ca";
+
+ca("bc", _Any) ->
+    "bc.ca";
+
+ca("yk", _Any) ->
+    "yk.ca";
+
+ca("qc", _Any) ->
+    "qc.ca";
+
+ca("ns", _Any) ->
+    "ns.ca";
+
+ca("sk", _Any) ->
+    "sk.ca";
+
+ca("on", _Any) ->
+    "on.ca";
+
+ca("nf", _Any) ->
+    "nf.ca";
+
+ca("nt", _Any) ->
+    "nt.ca";
+
+ca("pe", _Any) ->
+    "pe.ca";
+
+ca("gc", _Any) ->
+    "gc.ca";
+
+
+ca(_, _) ->
+    "ca".
+
+%% regular rules
+gt("net", _Any) ->
+    "net.gt";
+
+gt("mil", _Any) ->
+    "mil.gt";
+
+gt("ind", _Any) ->
+    "ind.gt";
+
+gt("org", _Any) ->
+    "org.gt";
+
+gt("gob", _Any) ->
+    "gob.gt";
+
+gt("edu", _Any) ->
+    "edu.gt";
+
+gt("com", _Any) ->
+    "com.gt";
+
+
+gt(_, _) ->
+    "gt".
+
+%% regular rules
+bf("gov", _Any) ->
+    "gov.bf";
+
+
+bf(_, _) ->
+    "bf".
+
+%% regular rules
+mt("edu", _Any) ->
+    "edu.mt";
+
+mt("org", _Any) ->
+    "org.mt";
+
+mt("com", _Any) ->
+    "com.mt";
+
+mt("net", _Any) ->
+    "net.mt";
+
+
+mt(_, _) ->
+    "mt".
+
+%% regular rules
+an("net", _Any) ->
+    "net.an";
+
+an("org", _Any) ->
+    "org.an";
+
+an("edu", _Any) ->
+    "edu.an";
+
+an("com", _Any) ->
+    "com.an";
+
+
+an(_, _) ->
+    "an".
+
+%% regular rules
+bt("gov", _Any) ->
+    "gov.bt";
+
+bt("org", _Any) ->
+    "org.bt";
+
+bt("com", _Any) ->
+    "com.bt";
+
+bt("edu", _Any) ->
+    "edu.bt";
+
+bt("net", _Any) ->
+    "net.bt";
+
+
+bt(_, _) ->
+    "bt".
+
+%% regular rules
+cm("com", _Any) ->
+    "com.cm";
+
+cm("co", _Any) ->
+    "co.cm";
+
+cm("gov", _Any) ->
+    "gov.cm";
+
+cm("net", _Any) ->
+    "net.cm";
+
+
+cm(_, _) ->
+    "cm".
+
+%% regular rules
+al("mil", _Any) ->
+    "mil.al";
+
+al("net", _Any) ->
+    "net.al";
+
+al("gov", _Any) ->
+    "gov.al";
+
+al("org", _Any) ->
+    "org.al";
+
+al("edu", _Any) ->
+    "edu.al";
+
+al("com", _Any) ->
+    "com.al";
+
+
+al(_, _) ->
+    "al".
+
+%% regular rules
+sz("org", _Any) ->
+    "org.sz";
+
+sz("co", _Any) ->
+    "co.sz";
+
+sz("ac", _Any) ->
+    "ac.sz";
+
+
+sz(_, _) ->
+    "sz".
+
+%% regular rules
+br("fst", _Any) ->
+    "fst.br";
+
+br("far", _Any) ->
+    "far.br";
+
+br("bmd", _Any) ->
+    "bmd.br";
+
+br("ecn", _Any) ->
+    "ecn.br";
+
+br("leg", _Any) ->
+    "leg.br";
+
+br("adv", _Any) ->
+    "adv.br";
+
+br("b", _Any) ->
+    "b.br";
+
+br("mil", _Any) ->
+    "mil.br";
+
+br("cim", _Any) ->
+    "cim.br";
+
+br("not", _Any) ->
+    "not.br";
+
+br("cnt", _Any) ->
+    "cnt.br";
+
+br("vet", _Any) ->
+    "vet.br";
+
+br("eti", _Any) ->
+    "eti.br";
+
+br("etc", _Any) ->
+    "etc.br";
+
+br("adm", _Any) ->
+    "adm.br";
+
+br("jor", _Any) ->
+    "jor.br";
+
+br("ntr", _Any) ->
+    "ntr.br";
+
+br("org", _Any) ->
+    "org.br";
+
+br("lel", _Any) ->
+    "lel.br";
+
+br("edu", _Any) ->
+    "edu.br";
+
+br("eco", _Any) ->
+    "eco.br";
+
+br("nom", _Any) ->
+    "nom.br";
+
+br("fot", _Any) ->
+    "fot.br";
+
+br("pro", _Any) ->
+    "pro.br";
+
+br("com", []) ->
+    "com.br";
+br("com", Parts) ->
+    [First | Rest] = Parts,
+    com_br(First, Rest);
+
+br("wiki", _Any) ->
+    "wiki.br";
+
+br("qsl", _Any) ->
+    "qsl.br";
+
+br("rec", _Any) ->
+    "rec.br";
+
+br("ind", _Any) ->
+    "ind.br";
+
+br("imb", _Any) ->
+    "imb.br";
+
+br("agr", _Any) ->
+    "agr.br";
+
+br("tur", _Any) ->
+    "tur.br";
+
+br("srv", _Any) ->
+    "srv.br";
+
+br("fnd", _Any) ->
+    "fnd.br";
+
+br("med", _Any) ->
+    "med.br";
+
+br("ppg", _Any) ->
+    "ppg.br";
+
+br("slg", _Any) ->
+    "slg.br";
+
+br("zlg", _Any) ->
+    "zlg.br";
+
+br("ato", _Any) ->
+    "ato.br";
+
+br("teo", _Any) ->
+    "teo.br";
+
+br("psc", _Any) ->
+    "psc.br";
+
+br("emp", _Any) ->
+    "emp.br";
+
+br("am", _Any) ->
+    "am.br";
+
+br("blog", _Any) ->
+    "blog.br";
+
+br("gov", _Any) ->
+    "gov.br";
+
+br("tv", _Any) ->
+    "tv.br";
+
+br("mus", _Any) ->
+    "mus.br";
+
+br("cng", _Any) ->
+    "cng.br";
+
+br("odo", _Any) ->
+    "odo.br";
+
+br("net", _Any) ->
+    "net.br";
+
+br("inf", _Any) ->
+    "inf.br";
+
+br("coop", _Any) ->
+    "coop.br";
+
+br("ggf", _Any) ->
+    "ggf.br";
+
+br("flog", _Any) ->
+    "flog.br";
+
+br("arq", _Any) ->
+    "arq.br";
+
+br("psi", _Any) ->
+    "psi.br";
+
+br("radio", _Any) ->
+    "radio.br";
+
+br("vlog", _Any) ->
+    "vlog.br";
+
+br("jus", _Any) ->
+    "jus.br";
+
+br("trd", _Any) ->
+    "trd.br";
+
+br("esp", _Any) ->
+    "esp.br";
+
+br("mp", _Any) ->
+    "mp.br";
+
+br("fm", _Any) ->
+    "fm.br";
+
+br("art", _Any) ->
+    "art.br";
+
+br("taxi", _Any) ->
+    "taxi.br";
+
+br("bio", _Any) ->
+    "bio.br";
+
+br("mat", _Any) ->
+    "mat.br";
+
+br("eng", _Any) ->
+    "eng.br";
+
+br("tmp", _Any) ->
+    "tmp.br";
+
+
+br(_, _) ->
+    "br".
+
+%% regular rules
+com_br("blogspot", _Any) ->
+    "blogspot.com.br";
+
+
+com_br(_, _) ->
+    "com.br".
+
+%% regular rules
+dz("pol", _Any) ->
+    "pol.dz";
+
+dz("art", _Any) ->
+    "art.dz";
+
+dz("edu", _Any) ->
+    "edu.dz";
+
+dz("net", _Any) ->
+    "net.dz";
+
+dz("asso", _Any) ->
+    "asso.dz";
+
+dz("org", _Any) ->
+    "org.dz";
+
+dz("com", _Any) ->
+    "com.dz";
+
+dz("gov", _Any) ->
+    "gov.dz";
+
+
+dz(_, _) ->
+    "dz".
+
+%% regular rules
+bz("net", _Any) ->
+    "net.bz";
+
+bz("gov", _Any) ->
+    "gov.bz";
+
+bz("za", _Any) ->
+    "za.bz";
+
+bz("com", _Any) ->
+    "com.bz";
+
+bz("edu", _Any) ->
+    "edu.bz";
+
+bz("org", _Any) ->
+    "org.bz";
+
+
+bz(_, _) ->
+    "bz".
+
+%% regular rules
+kg("net", _Any) ->
+    "net.kg";
+
+kg("mil", _Any) ->
+    "mil.kg";
+
+kg("gov", _Any) ->
+    "gov.kg";
+
+kg("com", _Any) ->
+    "com.kg";
+
+kg("edu", _Any) ->
+    "edu.kg";
+
+kg("org", _Any) ->
+    "org.kg";
+
+
+kg(_, _) ->
+    "kg".
+
+%% regular rules
+hk("blogspot", _Any) ->
+    "blogspot.hk";
+
+hk("net", _Any) ->
+    "net.hk";
+
+hk("gov", _Any) ->
+    "gov.hk";
+
+hk("idv", _Any) ->
+    "idv.hk";
+
+hk("com", _Any) ->
+    "com.hk";
+
+hk("org", _Any) ->
+    "org.hk";
+
+hk("edu", _Any) ->
+    "edu.hk";
+
+
+hk(_, _) ->
+    "hk".
+
+%% regular rules
+ma("net", _Any) ->
+    "net.ma";
+
+ma("press", _Any) ->
+    "press.ma";
+
+ma("ac", _Any) ->
+    "ac.ma";
+
+ma("co", _Any) ->
+    "co.ma";
+
+ma("org", _Any) ->
+    "org.ma";
+
+ma("gov", _Any) ->
+    "gov.ma";
+
+
+ma(_, _) ->
+    "ma".
+
+%% regular rules
+sy("net", _Any) ->
+    "net.sy";
+
+sy("mil", _Any) ->
+    "mil.sy";
+
 sy("gov", _Any) ->
     "gov.sy";
 
@@ -15480,814 +12765,9 @@ sy("org", _Any) ->
 sy("edu", _Any) ->
     "edu.sy";
 
-sy("net", _Any) ->
-    "net.sy";
-
-sy("mil", _Any) ->
-    "mil.sy";
-
 
 sy(_, _) ->
     "sy".
-
-%% regular rules
-tn("turen", _Any) ->
-    "turen.tn";
-
-tn("nat", _Any) ->
-    "nat.tn";
-
-tn("tourism", _Any) ->
-    "tourism.tn";
-
-tn("agrinet", _Any) ->
-    "agrinet.tn";
-
-tn("mincom", _Any) ->
-    "mincom.tn";
-
-tn("net", _Any) ->
-    "net.tn";
-
-tn("gov", _Any) ->
-    "gov.tn";
-
-tn("ind", _Any) ->
-    "ind.tn";
-
-tn("com", _Any) ->
-    "com.tn";
-
-tn("info", _Any) ->
-    "info.tn";
-
-tn("rns", _Any) ->
-    "rns.tn";
-
-tn("fin", _Any) ->
-    "fin.tn";
-
-tn("edunet", _Any) ->
-    "edunet.tn";
-
-tn("ens", _Any) ->
-    "ens.tn";
-
-tn("rnrt", _Any) ->
-    "rnrt.tn";
-
-tn("rnu", _Any) ->
-    "rnu.tn";
-
-tn("defense", _Any) ->
-    "defense.tn";
-
-tn("org", _Any) ->
-    "org.tn";
-
-tn("intl", _Any) ->
-    "intl.tn";
-
-tn("perso", _Any) ->
-    "perso.tn";
-
-
-tn(_, _) ->
-    "tn".
-
-%% regular rules
-ug("go", _Any) ->
-    "go.ug";
-
-ug("co", _Any) ->
-    "co.ug";
-
-ug("ne", _Any) ->
-    "ne.ug";
-
-ug("org", _Any) ->
-    "org.ug";
-
-ug("or", _Any) ->
-    "or.ug";
-
-ug("com", _Any) ->
-    "com.ug";
-
-ug("sc", _Any) ->
-    "sc.ug";
-
-ug("ac", _Any) ->
-    "ac.ug";
-
-
-ug(_, _) ->
-    "ug".
-
-%% regular rules
-sn("univ", _Any) ->
-    "univ.sn";
-
-sn("perso", _Any) ->
-    "perso.sn";
-
-sn("com", _Any) ->
-    "com.sn";
-
-sn("gouv", _Any) ->
-    "gouv.sn";
-
-sn("art", _Any) ->
-    "art.sn";
-
-sn("org", _Any) ->
-    "org.sn";
-
-sn("edu", _Any) ->
-    "edu.sn";
-
-
-sn(_, _) ->
-    "sn".
-
-%% regular rules
-tv("dyndns", _Any) ->
-    "dyndns.tv";
-
-
-tv(_, _) ->
-    "tv".
-
-%% regular rules
-cf("blogspot", _Any) ->
-    "blogspot.cf";
-
-
-cf(_, _) ->
-    "cf".
-
-%% regular rules
-vc("net", _Any) ->
-    "net.vc";
-
-vc("mil", _Any) ->
-    "mil.vc";
-
-vc("edu", _Any) ->
-    "edu.vc";
-
-vc("org", _Any) ->
-    "org.vc";
-
-vc("com", _Any) ->
-    "com.vc";
-
-vc("gov", _Any) ->
-    "gov.vc";
-
-
-vc(_, _) ->
-    "vc".
-
-%% regular rules
-ba("com", _Any) ->
-    "com.ba";
-
-ba("unsa", _Any) ->
-    "unsa.ba";
-
-ba("org", _Any) ->
-    "org.ba";
-
-ba("co", _Any) ->
-    "co.ba";
-
-ba("unbi", _Any) ->
-    "unbi.ba";
-
-ba("gov", _Any) ->
-    "gov.ba";
-
-ba("edu", _Any) ->
-    "edu.ba";
-
-ba("mil", _Any) ->
-    "mil.ba";
-
-ba("net", _Any) ->
-    "net.ba";
-
-ba("rs", _Any) ->
-    "rs.ba";
-
-
-ba(_, _) ->
-    "ba".
-
-%% regular rules
-do("com", _Any) ->
-    "com.do";
-
-do("sld", _Any) ->
-    "sld.do";
-
-do("org", _Any) ->
-    "org.do";
-
-do("web", _Any) ->
-    "web.do";
-
-do("gov", _Any) ->
-    "gov.do";
-
-do("art", _Any) ->
-    "art.do";
-
-do("mil", _Any) ->
-    "mil.do";
-
-do("net", _Any) ->
-    "net.do";
-
-do("gob", _Any) ->
-    "gob.do";
-
-do("edu", _Any) ->
-    "edu.do";
-
-
-do(_, _) ->
-    "do".
-
-%% regular rules
-net("homelinux", _Any) ->
-    "homelinux.net";
-
-net("thruhere", _Any) ->
-    "thruhere.net";
-
-net("dontexist", _Any) ->
-    "dontexist.net";
-
-net("dnsdojo", _Any) ->
-    "dnsdojo.net";
-
-net("cloudfront", _Any) ->
-    "cloudfront.net";
-
-net("endofinternet", _Any) ->
-    "endofinternet.net";
-
-net("homeip", _Any) ->
-    "homeip.net";
-
-net("podzone", _Any) ->
-    "podzone.net";
-
-net("cloudapp", _Any) ->
-    "cloudapp.net";
-
-net("blogdns", _Any) ->
-    "blogdns.net";
-
-net("za", _Any) ->
-    "za.net";
-
-net("se", _Any) ->
-    "se.net";
-
-net("homeunix", _Any) ->
-    "homeunix.net";
-
-net("webhop", _Any) ->
-    "webhop.net";
-
-net("jp", _Any) ->
-    "jp.net";
-
-net("servebbs", _Any) ->
-    "servebbs.net";
-
-net("buyshouses", _Any) ->
-    "buyshouses.net";
-
-net("gb", _Any) ->
-    "gb.net";
-
-net("uk", _Any) ->
-    "uk.net";
-
-net("hu", _Any) ->
-    "hu.net";
-
-net("azurewebsites", _Any) ->
-    "azurewebsites.net";
-
-net("homeftp", _Any) ->
-    "homeftp.net";
-
-net("dnsalias", _Any) ->
-    "dnsalias.net";
-
-net("dynalias", _Any) ->
-    "dynalias.net";
-
-net("serveftp", _Any) ->
-    "serveftp.net";
-
-net("selfip", _Any) ->
-    "selfip.net";
-
-net("dynathome", _Any) ->
-    "dynathome.net";
-
-net("in", _Any) ->
-    "in.net";
-
-net("fastly", []) ->
-    "fastly.net";
-net("fastly", Parts) ->
-    [First | Rest] = Parts,
-    fastly_net(First, Rest);
-
-
-net(_, _) ->
-    "net".
-
-%% regular rules
-fastly_net("prod", []) ->
-    "prod.fastly.net";
-fastly_net("prod", Parts) ->
-    [First | Rest] = Parts,
-    prod_fastly_net(First, Rest);
-
-fastly_net("ssl", []) ->
-    "ssl.fastly.net";
-fastly_net("ssl", Parts) ->
-    [First | Rest] = Parts,
-    ssl_fastly_net(First, Rest);
-
-
-fastly_net(_, _) ->
-    "fastly.net".
-
-%% regular rules
-prod_fastly_net("a", _Any) ->
-    "a.prod.fastly.net";
-
-prod_fastly_net("global", _Any) ->
-    "global.prod.fastly.net";
-
-
-prod_fastly_net(_, _) ->
-    "prod.fastly.net".
-
-%% regular rules
-ssl_fastly_net("global", _Any) ->
-    "global.ssl.fastly.net";
-
-ssl_fastly_net("a", _Any) ->
-    "a.ssl.fastly.net";
-
-ssl_fastly_net("b", _Any) ->
-    "b.ssl.fastly.net";
-
-
-ssl_fastly_net(_, _) ->
-    "ssl.fastly.net".
-
-%% regular rules
-ai("off", _Any) ->
-    "off.ai";
-
-ai("com", _Any) ->
-    "com.ai";
-
-ai("net", _Any) ->
-    "net.ai";
-
-ai("org", _Any) ->
-    "org.ai";
-
-
-ai(_, _) ->
-    "ai".
-
-%% regular rules
-ad("nom", _Any) ->
-    "nom.ad";
-
-
-ad(_, _) ->
-    "ad".
-
-%% regular rules
-hu("org", _Any) ->
-    "org.hu";
-
-hu("sport", _Any) ->
-    "sport.hu";
-
-hu("tm", _Any) ->
-    "tm.hu";
-
-hu("film", _Any) ->
-    "film.hu";
-
-hu("lakas", _Any) ->
-    "lakas.hu";
-
-hu("sex", _Any) ->
-    "sex.hu";
-
-hu("shop", _Any) ->
-    "shop.hu";
-
-hu("hotel", _Any) ->
-    "hotel.hu";
-
-hu("utazas", _Any) ->
-    "utazas.hu";
-
-hu("jogasz", _Any) ->
-    "jogasz.hu";
-
-hu("konyvelo", _Any) ->
-    "konyvelo.hu";
-
-hu("ingatlan", _Any) ->
-    "ingatlan.hu";
-
-hu("news", _Any) ->
-    "news.hu";
-
-hu("reklam", _Any) ->
-    "reklam.hu";
-
-hu("suli", _Any) ->
-    "suli.hu";
-
-hu("casino", _Any) ->
-    "casino.hu";
-
-hu("games", _Any) ->
-    "games.hu";
-
-hu("erotika", _Any) ->
-    "erotika.hu";
-
-hu("priv", _Any) ->
-    "priv.hu";
-
-hu("blogspot", _Any) ->
-    "blogspot.hu";
-
-hu("co", _Any) ->
-    "co.hu";
-
-hu("szex", _Any) ->
-    "szex.hu";
-
-hu("bolt", _Any) ->
-    "bolt.hu";
-
-hu("forum", _Any) ->
-    "forum.hu";
-
-hu("info", _Any) ->
-    "info.hu";
-
-hu("media", _Any) ->
-    "media.hu";
-
-hu("video", _Any) ->
-    "video.hu";
-
-hu("tozsde", _Any) ->
-    "tozsde.hu";
-
-hu("agrar", _Any) ->
-    "agrar.hu";
-
-hu("city", _Any) ->
-    "city.hu";
-
-hu("erotica", _Any) ->
-    "erotica.hu";
-
-
-hu(_, _) ->
-    "hu".
-
-%% regular rules
-iq("gov", _Any) ->
-    "gov.iq";
-
-iq("com", _Any) ->
-    "com.iq";
-
-iq("mil", _Any) ->
-    "mil.iq";
-
-iq("net", _Any) ->
-    "net.iq";
-
-iq("edu", _Any) ->
-    "edu.iq";
-
-iq("org", _Any) ->
-    "org.iq";
-
-
-iq(_, _) ->
-    "iq".
-
-%% regular rules
-cn("jx", _Any) ->
-    "jx.cn";
-
-cn("tj", _Any) ->
-    "tj.cn";
-
-cn("ha", _Any) ->
-    "ha.cn";
-
-cn("nx", _Any) ->
-    "nx.cn";
-
-cn("gz", _Any) ->
-    "gz.cn";
-
-cn("ac", _Any) ->
-    "ac.cn";
-
-cn("sx", _Any) ->
-    "sx.cn";
-
-cn("hi", _Any) ->
-    "hi.cn";
-
-cn("mil", _Any) ->
-    "mil.cn";
-
-cn("mo", _Any) ->
-    "mo.cn";
-
-cn("jl", _Any) ->
-    "jl.cn";
-
-cn("gx", _Any) ->
-    "gx.cn";
-
-cn("ah", _Any) ->
-    "ah.cn";
-
-cn("com", _Any) ->
-    "com.cn";
-
-cn("xj", _Any) ->
-    "xj.cn";
-
-cn("cq", _Any) ->
-    "cq.cn";
-
-cn("hb", _Any) ->
-    "hb.cn";
-
-cn("edu", _Any) ->
-    "edu.cn";
-
-cn("zj", _Any) ->
-    "zj.cn";
-
-cn("net", _Any) ->
-    "net.cn";
-
-cn("sc", _Any) ->
-    "sc.cn";
-
-cn("hn", _Any) ->
-    "hn.cn";
-
-cn("sn", _Any) ->
-    "sn.cn";
-
-cn("he", _Any) ->
-    "he.cn";
-
-cn("tw", _Any) ->
-    "tw.cn";
-
-cn("org", _Any) ->
-    "org.cn";
-
-cn("sh", _Any) ->
-    "sh.cn";
-
-cn("bj", _Any) ->
-    "bj.cn";
-
-cn("js", _Any) ->
-    "js.cn";
-
-cn("qh", _Any) ->
-    "qh.cn";
-
-cn("sd", _Any) ->
-    "sd.cn";
-
-cn("gs", _Any) ->
-    "gs.cn";
-
-cn("ln", _Any) ->
-    "ln.cn";
-
-cn("xz", _Any) ->
-    "xz.cn";
-
-cn("hk", _Any) ->
-    "hk.cn";
-
-cn("gov", _Any) ->
-    "gov.cn";
-
-cn("nm", _Any) ->
-    "nm.cn";
-
-cn("amazonaws", []) ->
-    "amazonaws.cn";
-cn("amazonaws", Parts) ->
-    [First | Rest] = Parts,
-    amazonaws_cn(First, Rest);
-
-cn("gd", _Any) ->
-    "gd.cn";
-
-cn("fj", _Any) ->
-    "fj.cn";
-
-cn("hl", _Any) ->
-    "hl.cn";
-
-cn("yn", _Any) ->
-    "yn.cn";
-
-
-cn(_, _) ->
-    "cn".
-
-%% regular rules
-amazonaws_cn("compute", _Any) ->
-    "compute.amazonaws.cn";
-
-
-amazonaws_cn(_, _) ->
-    "amazonaws.cn".
-
-%% regular rules
-cm("com", _Any) ->
-    "com.cm";
-
-cm("gov", _Any) ->
-    "gov.cm";
-
-cm("net", _Any) ->
-    "net.cm";
-
-cm("co", _Any) ->
-    "co.cm";
-
-
-cm(_, _) ->
-    "cm".
-
-%% regular rules
-ki("com", _Any) ->
-    "com.ki";
-
-ki("gov", _Any) ->
-    "gov.ki";
-
-ki("biz", _Any) ->
-    "biz.ki";
-
-ki("info", _Any) ->
-    "info.ki";
-
-ki("edu", _Any) ->
-    "edu.ki";
-
-ki("org", _Any) ->
-    "org.ki";
-
-ki("net", _Any) ->
-    "net.ki";
-
-
-ki(_, _) ->
-    "ki".
-
-%% regular rules
-dm("org", _Any) ->
-    "org.dm";
-
-dm("edu", _Any) ->
-    "edu.dm";
-
-dm("net", _Any) ->
-    "net.dm";
-
-dm("com", _Any) ->
-    "com.dm";
-
-dm("gov", _Any) ->
-    "gov.dm";
-
-
-dm(_, _) ->
-    "dm".
-
-%% regular rules
-tj("nic", _Any) ->
-    "nic.tj";
-
-tj("com", _Any) ->
-    "com.tj";
-
-tj("go", _Any) ->
-    "go.tj";
-
-tj("int", _Any) ->
-    "int.tj";
-
-tj("test", _Any) ->
-    "test.tj";
-
-tj("org", _Any) ->
-    "org.tj";
-
-tj("co", _Any) ->
-    "co.tj";
-
-tj("biz", _Any) ->
-    "biz.tj";
-
-tj("web", _Any) ->
-    "web.tj";
-
-tj("gov", _Any) ->
-    "gov.tj";
-
-tj("name", _Any) ->
-    "name.tj";
-
-tj("mil", _Any) ->
-    "mil.tj";
-
-tj("net", _Any) ->
-    "net.tj";
-
-tj("edu", _Any) ->
-    "edu.tj";
-
-tj("ac", _Any) ->
-    "ac.tj";
-
-
-tj(_, _) ->
-    "tj".
-
-%% regular rules
-la("gov", _Any) ->
-    "gov.la";
-
-la("per", _Any) ->
-    "per.la";
-
-la("net", _Any) ->
-    "net.la";
-
-la("edu", _Any) ->
-    "edu.la";
-
-la("com", _Any) ->
-    "com.la";
-
-la("info", _Any) ->
-    "info.la";
-
-la("c", _Any) ->
-    "c.la";
-
-la("int", _Any) ->
-    "int.la";
-
-la("org", _Any) ->
-    "org.la";
-
-
-la(_, _) ->
-    "la".
 
 %% regular rules
 cv("blogspot", _Any) ->
@@ -16298,167 +12778,85 @@ cv(_, _) ->
     "cv".
 
 %% regular rules
-io("com", _Any) ->
-    "com.io";
+sc("net", _Any) ->
+    "net.sc";
 
-io("nid", _Any) ->
-    "nid.io";
+sc("edu", _Any) ->
+    "edu.sc";
 
-io("github", _Any) ->
-    "github.io";
+sc("com", _Any) ->
+    "com.sc";
 
+sc("org", _Any) ->
+    "org.sc";
 
-io(_, _) ->
-    "io".
-
-%% regular rules
-cx("ath", _Any) ->
-    "ath.cx";
-
-cx("gov", _Any) ->
-    "gov.cx";
+sc("gov", _Any) ->
+    "gov.sc";
 
 
-cx(_, _) ->
-    "cx".
+sc(_, _) ->
+    "sc".
 
 %% regular rules
-org("blogdns", _Any) ->
-    "blogdns.org";
-
-org("za", _Any) ->
-    "za.org";
-
-org("homeunix", _Any) ->
-    "homeunix.org";
-
-org("webhop", _Any) ->
-    "webhop.org";
-
-org("doesntexist", _Any) ->
-    "doesntexist.org";
-
-org("blogsite", _Any) ->
-    "blogsite.org";
-
-org("homelinux", _Any) ->
-    "homelinux.org";
-
-org("sellsyourhome", _Any) ->
-    "sellsyourhome.org";
-
-org("gotdns", _Any) ->
-    "gotdns.org";
-
-org("dvrdns", _Any) ->
-    "dvrdns.org";
-
-org("dnsdojo", _Any) ->
-    "dnsdojo.org";
-
-org("dontexist", _Any) ->
-    "dontexist.org";
-
-org("readmyblog", _Any) ->
-    "readmyblog.org";
-
-org("podzone", _Any) ->
-    "podzone.org";
-
-org("us", _Any) ->
-    "us.org";
-
-org("doomdns", _Any) ->
-    "doomdns.org";
-
-org("endofinternet", _Any) ->
-    "endofinternet.org";
-
-org("serveftp", _Any) ->
-    "serveftp.org";
-
-org("ae", _Any) ->
-    "ae.org";
-
-org("selfip", _Any) ->
-    "selfip.org";
-
-org("endoftheinternet", _Any) ->
-    "endoftheinternet.org";
-
-org("misconfused", _Any) ->
-    "misconfused.org";
-
-org("servebbs", _Any) ->
-    "servebbs.org";
-
-org("dyndns", []) ->
-    "dyndns.org";
-org("dyndns", Parts) ->
-    [First | Rest] = Parts,
-    dyndns_org(First, Rest);
-
-org("homedns", _Any) ->
-    "homedns.org";
-
-org("servegame", _Any) ->
-    "servegame.org";
-
-org("boldlygoingnowhere", _Any) ->
-    "boldlygoingnowhere.org";
-
-org("dynalias", _Any) ->
-    "dynalias.org";
-
-org("homeftp", _Any) ->
-    "homeftp.org";
-
-org("dnsalias", _Any) ->
-    "dnsalias.org";
+tl("gov", _Any) ->
+    "gov.tl";
 
 
-org(_, _) ->
-    "org".
+tl(_, _) ->
+    "tl".
 
 %% regular rules
-dyndns_org("go", _Any) ->
-    "go.dyndns.org";
-
-dyndns_org("home", _Any) ->
-    "home.dyndns.org";
+as("gov", _Any) ->
+    "gov.as";
 
 
-dyndns_org(_, _) ->
-    "dyndns.org".
+as(_, _) ->
+    "as".
 
 %% regular rules
-me("priv", _Any) ->
-    "priv.me";
-
-me("gov", _Any) ->
-    "gov.me";
-
-me("net", _Any) ->
-    "net.me";
-
-me("ac", _Any) ->
-    "ac.me";
-
-me("edu", _Any) ->
-    "edu.me";
-
-me("co", _Any) ->
-    "co.me";
-
-me("org", _Any) ->
-    "org.me";
-
-me("its", _Any) ->
-    "its.me";
+cf("blogspot", _Any) ->
+    "blogspot.cf";
 
 
-me(_, _) ->
-    "me".
+cf(_, _) ->
+    "cf".
+
+%% regular rules
+nc("asso", _Any) ->
+    "asso.nc";
+
+
+nc(_, _) ->
+    "nc".
+
+%% regular rules
+tm("mil", _Any) ->
+    "mil.tm";
+
+tm("nom", _Any) ->
+    "nom.tm";
+
+tm("edu", _Any) ->
+    "edu.tm";
+
+tm("co", _Any) ->
+    "co.tm";
+
+tm("net", _Any) ->
+    "net.tm";
+
+tm("com", _Any) ->
+    "com.tm";
+
+tm("org", _Any) ->
+    "org.tm";
+
+tm("gov", _Any) ->
+    "gov.tm";
+
+
+tm(_, _) ->
+    "tm".
 
 %% regular rules
 tr("nc", []) ->
@@ -16480,27 +12878,4214 @@ nc_tr(_, _) ->
     "nc.tr".
 
 %% regular rules
-gn("net", _Any) ->
-    "net.gn";
+pa("ac", _Any) ->
+    "ac.pa";
 
-gn("org", _Any) ->
-    "org.gn";
+pa("org", _Any) ->
+    "org.pa";
 
-gn("edu", _Any) ->
-    "edu.gn";
+pa("gob", _Any) ->
+    "gob.pa";
 
-gn("ac", _Any) ->
-    "ac.gn";
+pa("com", _Any) ->
+    "com.pa";
 
-gn("com", _Any) ->
-    "com.gn";
+pa("net", _Any) ->
+    "net.pa";
 
-gn("gov", _Any) ->
-    "gov.gn";
+pa("med", _Any) ->
+    "med.pa";
+
+pa("edu", _Any) ->
+    "edu.pa";
+
+pa("abo", _Any) ->
+    "abo.pa";
+
+pa("ing", _Any) ->
+    "ing.pa";
+
+pa("nom", _Any) ->
+    "nom.pa";
+
+pa("sld", _Any) ->
+    "sld.pa";
 
 
-gn(_, _) ->
-    "gn".
+pa(_, _) ->
+    "pa".
+
+%% regular rules
+dm("net", _Any) ->
+    "net.dm";
+
+dm("com", _Any) ->
+    "com.dm";
+
+dm("edu", _Any) ->
+    "edu.dm";
+
+dm("org", _Any) ->
+    "org.dm";
+
+dm("gov", _Any) ->
+    "gov.dm";
+
+
+dm(_, _) ->
+    "dm".
+
+%% regular rules
+ae("net", _Any) ->
+    "net.ae";
+
+ae("mil", _Any) ->
+    "mil.ae";
+
+ae("gov", _Any) ->
+    "gov.ae";
+
+ae("sch", _Any) ->
+    "sch.ae";
+
+ae("ac", _Any) ->
+    "ac.ae";
+
+ae("org", _Any) ->
+    "org.ae";
+
+ae("co", _Any) ->
+    "co.ae";
+
+
+ae(_, _) ->
+    "ae".
+
+%% regular rules
+bh("edu", _Any) ->
+    "edu.bh";
+
+bh("org", _Any) ->
+    "org.bh";
+
+bh("com", _Any) ->
+    "com.bh";
+
+bh("gov", _Any) ->
+    "gov.bh";
+
+bh("net", _Any) ->
+    "net.bh";
+
+
+bh(_, _) ->
+    "bh".
+
+%% regular rules
+nz("org", _Any) ->
+    "org.nz";
+
+nz("parliament", _Any) ->
+    "parliament.nz";
+
+nz("ac", _Any) ->
+    "ac.nz";
+
+nz("maori", _Any) ->
+    "maori.nz";
+
+nz("kiwi", _Any) ->
+    "kiwi.nz";
+
+nz("gen", _Any) ->
+    "gen.nz";
+
+nz("net", _Any) ->
+    "net.nz";
+
+nz("school", _Any) ->
+    "school.nz";
+
+nz("geek", _Any) ->
+    "geek.nz";
+
+nz("health", _Any) ->
+    "health.nz";
+
+nz("co", []) ->
+    "co.nz";
+nz("co", Parts) ->
+    [First | Rest] = Parts,
+    co_nz(First, Rest);
+
+nz("govt", _Any) ->
+    "govt.nz";
+
+nz("iwi", _Any) ->
+    "iwi.nz";
+
+nz("mil", _Any) ->
+    "mil.nz";
+
+nz("cri", _Any) ->
+    "cri.nz";
+
+
+nz(_, _) ->
+    "nz".
+
+%% regular rules
+co_nz("blogspot", _Any) ->
+    "blogspot.co.nz";
+
+
+co_nz(_, _) ->
+    "co.nz".
+
+%% regular rules
+sv("red", _Any) ->
+    "red.sv";
+
+sv("com", _Any) ->
+    "com.sv";
+
+sv("org", _Any) ->
+    "org.sv";
+
+sv("gob", _Any) ->
+    "gob.sv";
+
+sv("edu", _Any) ->
+    "edu.sv";
+
+
+sv(_, _) ->
+    "sv".
+
+%% regular rules
+cw("com", _Any) ->
+    "com.cw";
+
+cw("org", _Any) ->
+    "org.cw";
+
+cw("edu", _Any) ->
+    "edu.cw";
+
+cw("net", _Any) ->
+    "net.cw";
+
+
+cw(_, _) ->
+    "cw".
+
+%% regular rules
+hn("org", _Any) ->
+    "org.hn";
+
+hn("gob", _Any) ->
+    "gob.hn";
+
+hn("edu", _Any) ->
+    "edu.hn";
+
+hn("com", _Any) ->
+    "com.hn";
+
+hn("net", _Any) ->
+    "net.hn";
+
+hn("mil", _Any) ->
+    "mil.hn";
+
+
+hn(_, _) ->
+    "hn".
+
+%% regular rules
+museum("silk", _Any) ->
+    "silk.museum";
+
+museum("assisi", _Any) ->
+    "assisi.museum";
+
+museum("england", _Any) ->
+    "england.museum";
+
+museum("giessen", _Any) ->
+    "giessen.museum";
+
+museum("sciences", _Any) ->
+    "sciences.museum";
+
+museum("press", _Any) ->
+    "press.museum";
+
+museum("field", _Any) ->
+    "field.museum";
+
+museum("fortmissoula", _Any) ->
+    "fortmissoula.museum";
+
+museum("muncie", _Any) ->
+    "muncie.museum";
+
+museum("collection", _Any) ->
+    "collection.museum";
+
+museum("brandywinevalley", _Any) ->
+    "brandywinevalley.museum";
+
+museum("bellevue", _Any) ->
+    "bellevue.museum";
+
+museum("westfalen", _Any) ->
+    "westfalen.museum";
+
+museum("chicago", _Any) ->
+    "chicago.museum";
+
+museum("egyptian", _Any) ->
+    "egyptian.museum";
+
+museum("stadt", _Any) ->
+    "stadt.museum";
+
+museum("atlanta", _Any) ->
+    "atlanta.museum";
+
+museum("project", _Any) ->
+    "project.museum";
+
+museum("agriculture", _Any) ->
+    "agriculture.museum";
+
+museum("philately", _Any) ->
+    "philately.museum";
+
+museum("frankfurt", _Any) ->
+    "frankfurt.museum";
+
+museum("farm", _Any) ->
+    "farm.museum";
+
+museum("schoenbrunn", _Any) ->
+    "schoenbrunn.museum";
+
+museum("pharmacy", _Any) ->
+    "pharmacy.museum";
+
+museum("durham", _Any) ->
+    "durham.museum";
+
+museum("naturalhistorymuseum", _Any) ->
+    "naturalhistorymuseum.museum";
+
+museum("axis", _Any) ->
+    "axis.museum";
+
+museum("farmstead", _Any) ->
+    "farmstead.museum";
+
+museum("savannahga", _Any) ->
+    "savannahga.museum";
+
+museum("karikatur", _Any) ->
+    "karikatur.museum";
+
+museum("santacruz", _Any) ->
+    "santacruz.museum";
+
+museum("childrens", _Any) ->
+    "childrens.museum";
+
+museum("salem", _Any) ->
+    "salem.museum";
+
+museum("estate", _Any) ->
+    "estate.museum";
+
+museum("baghdad", _Any) ->
+    "baghdad.museum";
+
+museum("nebraska", _Any) ->
+    "nebraska.museum";
+
+museum("canada", _Any) ->
+    "canada.museum";
+
+museum("sciencehistory", _Any) ->
+    "sciencehistory.museum";
+
+museum("nativeamerican", _Any) ->
+    "nativeamerican.museum";
+
+museum("cultural", _Any) ->
+    "cultural.museum";
+
+museum("harvestcelebration", _Any) ->
+    "harvestcelebration.museum";
+
+museum("nationalheritage", _Any) ->
+    "nationalheritage.museum";
+
+museum("amber", _Any) ->
+    "amber.museum";
+
+museum("war", _Any) ->
+    "war.museum";
+
+museum("lancashire", _Any) ->
+    "lancashire.museum";
+
+museum("madrid", _Any) ->
+    "madrid.museum";
+
+museum("database", _Any) ->
+    "database.museum";
+
+museum("pubol", _Any) ->
+    "pubol.museum";
+
+museum("heritage", _Any) ->
+    "heritage.museum";
+
+museum("cymru", _Any) ->
+    "cymru.museum";
+
+museum("stpetersburg", _Any) ->
+    "stpetersburg.museum";
+
+museum("california", _Any) ->
+    "california.museum";
+
+museum("mansions", _Any) ->
+    "mansions.museum";
+
+museum("memorial", _Any) ->
+    "memorial.museum";
+
+museum("phoenix", _Any) ->
+    "phoenix.museum";
+
+museum("museumcenter", _Any) ->
+    "museumcenter.museum";
+
+museum("valley", _Any) ->
+    "valley.museum";
+
+museum("naturhistorisches", _Any) ->
+    "naturhistorisches.museum";
+
+museum("karate", _Any) ->
+    "karate.museum";
+
+museum("creation", _Any) ->
+    "creation.museum";
+
+museum("scotland", _Any) ->
+    "scotland.museum";
+
+museum("chesapeakebay", _Any) ->
+    "chesapeakebay.museum";
+
+museum("technology", _Any) ->
+    "technology.museum";
+
+museum("missoula", _Any) ->
+    "missoula.museum";
+
+museum("indianmarket", _Any) ->
+    "indianmarket.museum";
+
+museum("oregontrail", _Any) ->
+    "oregontrail.museum";
+
+museum("trolley", _Any) ->
+    "trolley.museum";
+
+museum("pittsburgh", _Any) ->
+    "pittsburgh.museum";
+
+museum("motorcycle", _Any) ->
+    "motorcycle.museum";
+
+museum("botanical", _Any) ->
+    "botanical.museum";
+
+museum("koebenhavn", _Any) ->
+    "koebenhavn.museum";
+
+museum("timekeeping", _Any) ->
+    "timekeeping.museum";
+
+museum("cranbrook", _Any) ->
+    "cranbrook.museum";
+
+museum("county", _Any) ->
+    "county.museum";
+
+museum("vantaa", _Any) ->
+    "vantaa.museum";
+
+museum("decorativearts", _Any) ->
+    "decorativearts.museum";
+
+museum("television", _Any) ->
+    "television.museum";
+
+museum("living", _Any) ->
+    "living.museum";
+
+museum("military", _Any) ->
+    "military.museum";
+
+museum("americanart", _Any) ->
+    "americanart.museum";
+
+museum("national", _Any) ->
+    "national.museum";
+
+museum("youth", _Any) ->
+    "youth.museum";
+
+museum("santabarbara", _Any) ->
+    "santabarbara.museum";
+
+museum("beeldengeluid", _Any) ->
+    "beeldengeluid.museum";
+
+museum("boston", _Any) ->
+    "boston.museum";
+
+museum("museumvereniging", _Any) ->
+    "museumvereniging.museum";
+
+museum("basel", _Any) ->
+    "basel.museum";
+
+museum("film", _Any) ->
+    "film.museum";
+
+museum("philadelphia", _Any) ->
+    "philadelphia.museum";
+
+museum("localhistory", _Any) ->
+    "localhistory.museum";
+
+museum("crafts", _Any) ->
+    "crafts.museum";
+
+museum("yosemite", _Any) ->
+    "yosemite.museum";
+
+museum("arts", _Any) ->
+    "arts.museum";
+
+museum("plaza", _Any) ->
+    "plaza.museum";
+
+museum("cambridge", _Any) ->
+    "cambridge.museum";
+
+museum("sciencecenters", _Any) ->
+    "sciencecenters.museum";
+
+museum("dali", _Any) ->
+    "dali.museum";
+
+museum("bushey", _Any) ->
+    "bushey.museum";
+
+museum("glass", _Any) ->
+    "glass.museum";
+
+museum("santafe", _Any) ->
+    "santafe.museum";
+
+museum("education", _Any) ->
+    "education.museum";
+
+museum("torino", _Any) ->
+    "torino.museum";
+
+museum("surrey", _Any) ->
+    "surrey.museum";
+
+museum("juedisches", _Any) ->
+    "juedisches.museum";
+
+museum("francaise", _Any) ->
+    "francaise.museum";
+
+museum("omaha", _Any) ->
+    "omaha.museum";
+
+museum("brunel", _Any) ->
+    "brunel.museum";
+
+museum("brasil", _Any) ->
+    "brasil.museum";
+
+museum("bible", _Any) ->
+    "bible.museum";
+
+museum("time", _Any) ->
+    "time.museum";
+
+museum("horology", _Any) ->
+    "horology.museum";
+
+museum("fundacio", _Any) ->
+    "fundacio.museum";
+
+museum("frog", _Any) ->
+    "frog.museum";
+
+museum("town", _Any) ->
+    "town.museum";
+
+museum("newspaper", _Any) ->
+    "newspaper.museum";
+
+museum("sydney", _Any) ->
+    "sydney.museum";
+
+museum("roma", _Any) ->
+    "roma.museum";
+
+museum("village", _Any) ->
+    "village.museum";
+
+museum("meeres", _Any) ->
+    "meeres.museum";
+
+museum("exhibition", _Any) ->
+    "exhibition.museum";
+
+museum("starnberg", _Any) ->
+    "starnberg.museum";
+
+museum("zoological", _Any) ->
+    "zoological.museum";
+
+museum("fineart", _Any) ->
+    "fineart.museum";
+
+museum("ethnology", _Any) ->
+    "ethnology.museum";
+
+museum("copenhagen", _Any) ->
+    "copenhagen.museum";
+
+museum("university", _Any) ->
+    "university.museum";
+
+museum("architecture", _Any) ->
+    "architecture.museum";
+
+museum("tcm", _Any) ->
+    "tcm.museum";
+
+museum("online", _Any) ->
+    "online.museum";
+
+museum("oregon", _Any) ->
+    "oregon.museum";
+
+museum("environment", _Any) ->
+    "environment.museum";
+
+museum("railway", _Any) ->
+    "railway.museum";
+
+museum("williamsburg", _Any) ->
+    "williamsburg.museum";
+
+museum("newmexico", _Any) ->
+    "newmexico.museum";
+
+museum("air", _Any) ->
+    "air.museum";
+
+museum("stalbans", _Any) ->
+    "stalbans.museum";
+
+museum("freiburg", _Any) ->
+    "freiburg.museum";
+
+museum("paderborn", _Any) ->
+    "paderborn.museum";
+
+museum("soundandvision", _Any) ->
+    "soundandvision.museum";
+
+museum("fribourg", _Any) ->
+    "fribourg.museum";
+
+museum("childrensgarden", _Any) ->
+    "childrensgarden.museum";
+
+museum("capebreton", _Any) ->
+    "capebreton.museum";
+
+museum("computerhistory", _Any) ->
+    "computerhistory.museum";
+
+museum("presidio", _Any) ->
+    "presidio.museum";
+
+museum("clock", _Any) ->
+    "clock.museum";
+
+museum("bristol", _Any) ->
+    "bristol.museum";
+
+museum("botanicgarden", _Any) ->
+    "botanicgarden.museum";
+
+museum("american", _Any) ->
+    "american.museum";
+
+museum("ddr", _Any) ->
+    "ddr.museum";
+
+museum("salzburg", _Any) ->
+    "salzburg.museum";
+
+museum("antiques", _Any) ->
+    "antiques.museum";
+
+museum("convent", _Any) ->
+    "convent.museum";
+
+museum("building", _Any) ->
+    "building.museum";
+
+museum("bonn", _Any) ->
+    "bonn.museum";
+
+museum("labor", _Any) ->
+    "labor.museum";
+
+museum("textile", _Any) ->
+    "textile.museum";
+
+museum("cody", _Any) ->
+    "cody.museum";
+
+museum("scienceandindustry", _Any) ->
+    "scienceandindustry.museum";
+
+museum("nyc", _Any) ->
+    "nyc.museum";
+
+museum("plantation", _Any) ->
+    "plantation.museum";
+
+museum("wales", _Any) ->
+    "wales.museum";
+
+museum("environmentalconservation", _Any) ->
+    "environmentalconservation.museum";
+
+museum("touch", _Any) ->
+    "touch.museum";
+
+museum("dallas", _Any) ->
+    "dallas.museum";
+
+museum("burghof", _Any) ->
+    "burghof.museum";
+
+museum("luxembourg", _Any) ->
+    "luxembourg.museum";
+
+museum("palace", _Any) ->
+    "palace.museum";
+
+museum("sweden", _Any) ->
+    "sweden.museum";
+
+museum("maritime", _Any) ->
+    "maritime.museum";
+
+museum("castres", _Any) ->
+    "castres.museum";
+
+museum("bahn", _Any) ->
+    "bahn.museum";
+
+museum("rockart", _Any) ->
+    "rockart.museum";
+
+museum("michigan", _Any) ->
+    "michigan.museum";
+
+museum("epilepsy", _Any) ->
+    "epilepsy.museum";
+
+museum("medizinhistorisches", _Any) ->
+    "medizinhistorisches.museum";
+
+museum("geology", _Any) ->
+    "geology.museum";
+
+museum("lucerne", _Any) ->
+    "lucerne.museum";
+
+museum("handson", _Any) ->
+    "handson.museum";
+
+museum("cadaques", _Any) ->
+    "cadaques.museum";
+
+museum("niepce", _Any) ->
+    "niepce.museum";
+
+museum("quebec", _Any) ->
+    "quebec.museum";
+
+museum("telekommunikation", _Any) ->
+    "telekommunikation.museum";
+
+museum("newhampshire", _Any) ->
+    "newhampshire.museum";
+
+museum("skole", _Any) ->
+    "skole.museum";
+
+museum("fortworth", _Any) ->
+    "fortworth.museum";
+
+museum("mallorca", _Any) ->
+    "mallorca.museum";
+
+museum("portal", _Any) ->
+    "portal.museum";
+
+museum("nuremberg", _Any) ->
+    "nuremberg.museum";
+
+museum("britishcolumbia", _Any) ->
+    "britishcolumbia.museum";
+
+museum("birdart", _Any) ->
+    "birdart.museum";
+
+museum("historyofscience", _Any) ->
+    "historyofscience.museum";
+
+museum("cheltenham", _Any) ->
+    "cheltenham.museum";
+
+museum("house", _Any) ->
+    "house.museum";
+
+museum("sanfrancisco", _Any) ->
+    "sanfrancisco.museum";
+
+museum("money", _Any) ->
+    "money.museum";
+
+museum("mansion", _Any) ->
+    "mansion.museum";
+
+museum("australia", _Any) ->
+    "australia.museum";
+
+museum("saskatchewan", _Any) ->
+    "saskatchewan.museum";
+
+museum("furniture", _Any) ->
+    "furniture.museum";
+
+museum("design", _Any) ->
+    "design.museum";
+
+museum("nature", _Any) ->
+    "nature.museum";
+
+museum("indiana", _Any) ->
+    "indiana.museum";
+
+museum("nrw", _Any) ->
+    "nrw.museum";
+
+museum("archaeology", _Any) ->
+    "archaeology.museum";
+
+museum("newjersey", _Any) ->
+    "newjersey.museum";
+
+museum("newport", _Any) ->
+    "newport.museum";
+
+museum("cyber", _Any) ->
+    "cyber.museum";
+
+museum("norfolk", _Any) ->
+    "norfolk.museum";
+
+museum("music", _Any) ->
+    "music.museum";
+
+museum("surgeonshall", _Any) ->
+    "surgeonshall.museum";
+
+museum("newyork", _Any) ->
+    "newyork.museum";
+
+museum("undersea", _Any) ->
+    "undersea.museum";
+
+museum("vlaanderen", _Any) ->
+    "vlaanderen.museum";
+
+museum("virginia", _Any) ->
+    "virginia.museum";
+
+museum("oceanographic", _Any) ->
+    "oceanographic.museum";
+
+museum("maryland", _Any) ->
+    "maryland.museum";
+
+museum("farmers", _Any) ->
+    "farmers.museum";
+
+museum("north", _Any) ->
+    "north.museum";
+
+museum("alabama", _Any) ->
+    "alabama.museum";
+
+museum("palmsprings", _Any) ->
+    "palmsprings.museum";
+
+museum("state", _Any) ->
+    "state.museum";
+
+museum("illustration", _Any) ->
+    "illustration.museum";
+
+museum("and", _Any) ->
+    "and.museum";
+
+museum("natuurwetenschappen", _Any) ->
+    "natuurwetenschappen.museum";
+
+museum("neues", _Any) ->
+    "neues.museum";
+
+museum("culture", _Any) ->
+    "culture.museum";
+
+museum("kunstunddesign", _Any) ->
+    "kunstunddesign.museum";
+
+museum("farmequipment", _Any) ->
+    "farmequipment.museum";
+
+museum("schokoladen", _Any) ->
+    "schokoladen.museum";
+
+museum("bauern", _Any) ->
+    "bauern.museum";
+
+museum("naturalhistory", _Any) ->
+    "naturalhistory.museum";
+
+museum("settlers", _Any) ->
+    "settlers.museum";
+
+museum("nuernberg", _Any) ->
+    "nuernberg.museum";
+
+museum("donostia", _Any) ->
+    "donostia.museum";
+
+museum("space", _Any) ->
+    "space.museum";
+
+museum("denmark", _Any) ->
+    "denmark.museum";
+
+museum("viking", _Any) ->
+    "viking.museum";
+
+museum("interactive", _Any) ->
+    "interactive.museum";
+
+museum("labour", _Any) ->
+    "labour.museum";
+
+museum("brussel", _Any) ->
+    "brussel.museum";
+
+museum("gemological", _Any) ->
+    "gemological.museum";
+
+museum("texas", _Any) ->
+    "texas.museum";
+
+museum("wildlife", _Any) ->
+    "wildlife.museum";
+
+museum("finland", _Any) ->
+    "finland.museum";
+
+museum("detroit", _Any) ->
+    "detroit.museum";
+
+museum("iraq", _Any) ->
+    "iraq.museum";
+
+museum("bill", _Any) ->
+    "bill.museum";
+
+museum("bale", _Any) ->
+    "bale.museum";
+
+museum("can", _Any) ->
+    "can.museum";
+
+museum("british", _Any) ->
+    "british.museum";
+
+museum("paris", _Any) ->
+    "paris.museum";
+
+museum("educational", _Any) ->
+    "educational.museum";
+
+museum("coldwar", _Any) ->
+    "coldwar.museum";
+
+museum("nationalfirearms", _Any) ->
+    "nationalfirearms.museum";
+
+museum("saintlouis", _Any) ->
+    "saintlouis.museum";
+
+museum("encyclopedic", _Any) ->
+    "encyclopedic.museum";
+
+museum("discovery", _Any) ->
+    "discovery.museum";
+
+museum("rochester", _Any) ->
+    "rochester.museum";
+
+museum("freemasonry", _Any) ->
+    "freemasonry.museum";
+
+museum("botany", _Any) ->
+    "botany.museum";
+
+museum("historicalsociety", _Any) ->
+    "historicalsociety.museum";
+
+museum("planetarium", _Any) ->
+    "planetarium.museum";
+
+museum("dolls", _Any) ->
+    "dolls.museum";
+
+museum("americana", _Any) ->
+    "americana.museum";
+
+museum("civilisation", _Any) ->
+    "civilisation.museum";
+
+museum("philadelphiaarea", _Any) ->
+    "philadelphiaarea.museum";
+
+museum("cartoonart", _Any) ->
+    "cartoonart.museum";
+
+museum("panama", _Any) ->
+    "panama.museum";
+
+museum("mad", _Any) ->
+    "mad.museum";
+
+museum("arboretum", _Any) ->
+    "arboretum.museum";
+
+museum("civilwar", _Any) ->
+    "civilwar.museum";
+
+museum("health", _Any) ->
+    "health.museum";
+
+museum("artanddesign", _Any) ->
+    "artanddesign.museum";
+
+museum("carrier", _Any) ->
+    "carrier.museum";
+
+museum("eastcoast", _Any) ->
+    "eastcoast.museum";
+
+museum("children", _Any) ->
+    "children.museum";
+
+museum("aquarium", _Any) ->
+    "aquarium.museum";
+
+museum("montreal", _Any) ->
+    "montreal.museum";
+
+museum("usdecorativearts", _Any) ->
+    "usdecorativearts.museum";
+
+museum("christiansburg", _Any) ->
+    "christiansburg.museum";
+
+museum("halloffame", _Any) ->
+    "halloffame.museum";
+
+museum("columbia", _Any) ->
+    "columbia.museum";
+
+museum("jewish", _Any) ->
+    "jewish.museum";
+
+museum("casadelamoneda", _Any) ->
+    "casadelamoneda.museum";
+
+museum("historichouses", _Any) ->
+    "historichouses.museum";
+
+museum("ushuaia", _Any) ->
+    "ushuaia.museum";
+
+museum("jefferson", _Any) ->
+    "jefferson.museum";
+
+museum("society", _Any) ->
+    "society.museum";
+
+museum("lincoln", _Any) ->
+    "lincoln.museum";
+
+museum("svizzera", _Any) ->
+    "svizzera.museum";
+
+museum("celtic", _Any) ->
+    "celtic.museum";
+
+museum("station", _Any) ->
+    "station.museum";
+
+museum("jewishart", _Any) ->
+    "jewishart.museum";
+
+museum("portland", _Any) ->
+    "portland.museum";
+
+museum("asmatart", _Any) ->
+    "asmatart.museum";
+
+museum("losangeles", _Any) ->
+    "losangeles.museum";
+
+museum("sandiego", _Any) ->
+    "sandiego.museum";
+
+museum("depot", _Any) ->
+    "depot.museum";
+
+museum("sologne", _Any) ->
+    "sologne.museum";
+
+museum("foundation", _Any) ->
+    "foundation.museum";
+
+museum("naturalsciences", _Any) ->
+    "naturalsciences.museum";
+
+museum("elburg", _Any) ->
+    "elburg.museum";
+
+museum("austin", _Any) ->
+    "austin.museum";
+
+museum("usa", _Any) ->
+    "usa.museum";
+
+museum("judygarland", _Any) ->
+    "judygarland.museum";
+
+museum("uslivinghistory", _Any) ->
+    "uslivinghistory.museum";
+
+museum("sibenik", _Any) ->
+    "sibenik.museum";
+
+museum("whaling", _Any) ->
+    "whaling.museum";
+
+museum("indianapolis", _Any) ->
+    "indianapolis.museum";
+
+museum("mill", _Any) ->
+    "mill.museum";
+
+museum("assassination", _Any) ->
+    "assassination.museum";
+
+museum("moma", _Any) ->
+    "moma.museum";
+
+museum("miners", _Any) ->
+    "miners.museum";
+
+museum("moscow", _Any) ->
+    "moscow.museum";
+
+museum("ambulance", _Any) ->
+    "ambulance.museum";
+
+museum("hamburg", _Any) ->
+    "hamburg.museum";
+
+museum("settlement", _Any) ->
+    "settlement.museum";
+
+museum("automotive", _Any) ->
+    "automotive.museum";
+
+museum("cincinnati", _Any) ->
+    "cincinnati.museum";
+
+museum("broadcast", _Any) ->
+    "broadcast.museum";
+
+museum("larsson", _Any) ->
+    "larsson.museum";
+
+museum("pilots", _Any) ->
+    "pilots.museum";
+
+museum("chocolate", _Any) ->
+    "chocolate.museum";
+
+museum("artcenter", _Any) ->
+    "artcenter.museum";
+
+museum("anthropology", _Any) ->
+    "anthropology.museum";
+
+museum("countryestate", _Any) ->
+    "countryestate.museum";
+
+museum("versailles", _Any) ->
+    "versailles.museum";
+
+museum("satx", _Any) ->
+    "satx.museum";
+
+museum("luzern", _Any) ->
+    "luzern.museum";
+
+museum("riodejaneiro", _Any) ->
+    "riodejaneiro.museum";
+
+museum("finearts", _Any) ->
+    "finearts.museum";
+
+museum("annefrank", _Any) ->
+    "annefrank.museum";
+
+museum("center", _Any) ->
+    "center.museum";
+
+museum("florida", _Any) ->
+    "florida.museum";
+
+museum("judaica", _Any) ->
+    "judaica.museum";
+
+museum("hawaii", _Any) ->
+    "hawaii.museum";
+
+museum("juif", _Any) ->
+    "juif.museum";
+
+museum("medical", _Any) ->
+    "medical.museum";
+
+museum("dinosaur", _Any) ->
+    "dinosaur.museum";
+
+museum("steam", _Any) ->
+    "steam.museum";
+
+museum("history", _Any) ->
+    "history.museum";
+
+museum("media", _Any) ->
+    "media.museum";
+
+museum("scienceandhistory", _Any) ->
+    "scienceandhistory.museum";
+
+museum("beauxarts", _Any) ->
+    "beauxarts.museum";
+
+museum("theater", _Any) ->
+    "theater.museum";
+
+museum("usgarden", _Any) ->
+    "usgarden.museum";
+
+museum("jamison", _Any) ->
+    "jamison.museum";
+
+museum("marylhurst", _Any) ->
+    "marylhurst.museum";
+
+museum("salvadordali", _Any) ->
+    "salvadordali.museum";
+
+museum("stockholm", _Any) ->
+    "stockholm.museum";
+
+museum("barcelona", _Any) ->
+    "barcelona.museum";
+
+museum("washingtondc", _Any) ->
+    "washingtondc.museum";
+
+museum("virtual", _Any) ->
+    "virtual.museum";
+
+museum("midatlantic", _Any) ->
+    "midatlantic.museum";
+
+museum("marburg", _Any) ->
+    "marburg.museum";
+
+museum("railroad", _Any) ->
+    "railroad.museum";
+
+museum("berlin", _Any) ->
+    "berlin.museum";
+
+museum("helsinki", _Any) ->
+    "helsinki.museum";
+
+museum("delaware", _Any) ->
+    "delaware.museum";
+
+museum("workshop", _Any) ->
+    "workshop.museum";
+
+museum("georgia", _Any) ->
+    "georgia.museum";
+
+museum("russia", _Any) ->
+    "russia.museum";
+
+museum("iron", _Any) ->
+    "iron.museum";
+
+museum("aviation", _Any) ->
+    "aviation.museum";
+
+museum("manx", _Any) ->
+    "manx.museum";
+
+museum("muenchen", _Any) ->
+    "muenchen.museum";
+
+museum("americanantiques", _Any) ->
+    "americanantiques.museum";
+
+museum("public", _Any) ->
+    "public.museum";
+
+museum("ski", _Any) ->
+    "ski.museum";
+
+museum("research", _Any) ->
+    "research.museum";
+
+museum("communications", _Any) ->
+    "communications.museum";
+
+museum("naumburg", _Any) ->
+    "naumburg.museum";
+
+museum("loyalist", _Any) ->
+    "loyalist.museum";
+
+museum("ulm", _Any) ->
+    "ulm.museum";
+
+museum("academy", _Any) ->
+    "academy.museum";
+
+museum("birthplace", _Any) ->
+    "birthplace.museum";
+
+museum("plants", _Any) ->
+    "plants.museum";
+
+museum("clinton", _Any) ->
+    "clinton.museum";
+
+museum("bruxelles", _Any) ->
+    "bruxelles.museum";
+
+museum("archaeological", _Any) ->
+    "archaeological.museum";
+
+museum("delmenhorst", _Any) ->
+    "delmenhorst.museum";
+
+museum("science", _Any) ->
+    "science.museum";
+
+museum("usarts", _Any) ->
+    "usarts.museum";
+
+museum("monticello", _Any) ->
+    "monticello.museum";
+
+museum("essex", _Any) ->
+    "essex.museum";
+
+museum("ushistory", _Any) ->
+    "ushistory.museum";
+
+museum("suisse", _Any) ->
+    "suisse.museum";
+
+museum("sherbrooke", _Any) ->
+    "sherbrooke.museum";
+
+museum("pasadena", _Any) ->
+    "pasadena.museum";
+
+museum("usantiques", _Any) ->
+    "usantiques.museum";
+
+museum("southcarolina", _Any) ->
+    "southcarolina.museum";
+
+museum("coloradoplateau", _Any) ->
+    "coloradoplateau.museum";
+
+museum("colonialwilliamsburg", _Any) ->
+    "colonialwilliamsburg.museum";
+
+museum("muenster", _Any) ->
+    "muenster.museum";
+
+museum("amsterdam", _Any) ->
+    "amsterdam.museum";
+
+museum("spy", _Any) ->
+    "spy.museum";
+
+museum("indian", _Any) ->
+    "indian.museum";
+
+museum("sciencecenter", _Any) ->
+    "sciencecenter.museum";
+
+museum("utah", _Any) ->
+    "utah.museum";
+
+museum("jerusalem", _Any) ->
+    "jerusalem.museum";
+
+museum("virtuel", _Any) ->
+    "virtuel.museum";
+
+museum("lajolla", _Any) ->
+    "lajolla.museum";
+
+museum("mesaverde", _Any) ->
+    "mesaverde.museum";
+
+museum("wallonie", _Any) ->
+    "wallonie.museum";
+
+museum("entomology", _Any) ->
+    "entomology.museum";
+
+museum("exeter", _Any) ->
+    "exeter.museum";
+
+museum("historisch", _Any) ->
+    "historisch.museum";
+
+museum("columbus", _Any) ->
+    "columbus.museum";
+
+museum("resistance", _Any) ->
+    "resistance.museum";
+
+museum("association", _Any) ->
+    "association.museum";
+
+museum("uscountryestate", _Any) ->
+    "uscountryestate.museum";
+
+museum("corvette", _Any) ->
+    "corvette.museum";
+
+museum("uhren", _Any) ->
+    "uhren.museum";
+
+museum("oceanographique", _Any) ->
+    "oceanographique.museum";
+
+museum("paleo", _Any) ->
+    "paleo.museum";
+
+museum("airguard", _Any) ->
+    "airguard.museum";
+
+museum("contemporary", _Any) ->
+    "contemporary.museum";
+
+museum("shell", _Any) ->
+    "shell.museum";
+
+museum("flanders", _Any) ->
+    "flanders.museum";
+
+museum("photography", _Any) ->
+    "photography.museum";
+
+museum("corporation", _Any) ->
+    "corporation.museum";
+
+museum("gallery", _Any) ->
+    "gallery.museum";
+
+museum("uvic", _Any) ->
+    "uvic.museum";
+
+museum("bilbao", _Any) ->
+    "bilbao.museum";
+
+museum("hellas", _Any) ->
+    "hellas.museum";
+
+museum("coal", _Any) ->
+    "coal.museum";
+
+museum("communication", _Any) ->
+    "communication.museum";
+
+museum("western", _Any) ->
+    "western.museum";
+
+museum("louvre", _Any) ->
+    "louvre.museum";
+
+museum("gorge", _Any) ->
+    "gorge.museum";
+
+museum("histoire", _Any) ->
+    "histoire.museum";
+
+museum("baseball", _Any) ->
+    "baseball.museum";
+
+museum("kunst", _Any) ->
+    "kunst.museum";
+
+museum("grandrapids", _Any) ->
+    "grandrapids.museum";
+
+museum("stuttgart", _Any) ->
+    "stuttgart.museum";
+
+museum("hembygdsforbund", _Any) ->
+    "hembygdsforbund.museum";
+
+museum("intelligence", _Any) ->
+    "intelligence.museum";
+
+museum("culturalcenter", _Any) ->
+    "culturalcenter.museum";
+
+museum("force", _Any) ->
+    "force.museum";
+
+museum("figueres", _Any) ->
+    "figueres.museum";
+
+museum("glas", _Any) ->
+    "glas.museum";
+
+museum("steiermark", _Any) ->
+    "steiermark.museum";
+
+museum("landes", _Any) ->
+    "landes.museum";
+
+museum("sciencesnaturelles", _Any) ->
+    "sciencesnaturelles.museum";
+
+museum("filatelia", _Any) ->
+    "filatelia.museum";
+
+museum("volkenkunde", _Any) ->
+    "volkenkunde.museum";
+
+museum("coastaldefence", _Any) ->
+    "coastaldefence.museum";
+
+museum("manchester", _Any) ->
+    "manchester.museum";
+
+museum("preservation", _Any) ->
+    "preservation.museum";
+
+museum("portlligat", _Any) ->
+    "portlligat.museum";
+
+museum("transport", _Any) ->
+    "transport.museum";
+
+museum("monmouth", _Any) ->
+    "monmouth.museum";
+
+museum("schweiz", _Any) ->
+    "schweiz.museum";
+
+museum("mining", _Any) ->
+    "mining.museum";
+
+museum("minnesota", _Any) ->
+    "minnesota.museum";
+
+museum("kunstsammlung", _Any) ->
+    "kunstsammlung.museum";
+
+museum("school", _Any) ->
+    "school.museum";
+
+museum("pacific", _Any) ->
+    "pacific.museum";
+
+museum("civilization", _Any) ->
+    "civilization.museum";
+
+museum("berkeley", _Any) ->
+    "berkeley.museum";
+
+museum("contemporaryart", _Any) ->
+    "contemporaryart.museum";
+
+museum("alaska", _Any) ->
+    "alaska.museum";
+
+museum("trust", _Any) ->
+    "trust.museum";
+
+museum("franziskaner", _Any) ->
+    "franziskaner.museum";
+
+museum("schlesisches", _Any) ->
+    "schlesisches.museum";
+
+museum("journalism", _Any) ->
+    "journalism.museum";
+
+museum("koeln", _Any) ->
+    "koeln.museum";
+
+museum("guernsey", _Any) ->
+    "guernsey.museum";
+
+museum("oxford", _Any) ->
+    "oxford.museum";
+
+museum("geelvinck", _Any) ->
+    "geelvinck.museum";
+
+museum("linz", _Any) ->
+    "linz.museum";
+
+museum("bus", _Any) ->
+    "bus.museum";
+
+museum("eastafrica", _Any) ->
+    "eastafrica.museum";
+
+museum("historical", _Any) ->
+    "historical.museum";
+
+museum("stjohn", _Any) ->
+    "stjohn.museum";
+
+museum("watchandclock", _Any) ->
+    "watchandclock.museum";
+
+museum("maritimo", _Any) ->
+    "maritimo.museum";
+
+museum("historisches", _Any) ->
+    "historisches.museum";
+
+museum("missile", _Any) ->
+    "missile.museum";
+
+museum("kids", _Any) ->
+    "kids.museum";
+
+museum("bergbau", _Any) ->
+    "bergbau.museum";
+
+museum("garden", _Any) ->
+    "garden.museum";
+
+museum("chattanooga", _Any) ->
+    "chattanooga.museum";
+
+museum("art", _Any) ->
+    "art.museum";
+
+museum("artsandcrafts", _Any) ->
+    "artsandcrafts.museum";
+
+museum("isleofman", _Any) ->
+    "isleofman.museum";
+
+museum("usculture", _Any) ->
+    "usculture.museum";
+
+museum("lewismiller", _Any) ->
+    "lewismiller.museum";
+
+museum("astronomy", _Any) ->
+    "astronomy.museum";
+
+museum("artgallery", _Any) ->
+    "artgallery.museum";
+
+museum("imageandsound", _Any) ->
+    "imageandsound.museum";
+
+museum("baltimore", _Any) ->
+    "baltimore.museum";
+
+museum("jfk", _Any) ->
+    "jfk.museum";
+
+museum("embroidery", _Any) ->
+    "embroidery.museum";
+
+museum("jewelry", _Any) ->
+    "jewelry.museum";
+
+museum("artdeco", _Any) ->
+    "artdeco.museum";
+
+museum("tree", _Any) ->
+    "tree.museum";
+
+museum("family", _Any) ->
+    "family.museum";
+
+museum("baths", _Any) ->
+    "baths.museum";
+
+museum("otago", _Any) ->
+    "otago.museum";
+
+museum("circus", _Any) ->
+    "circus.museum";
+
+museum("topology", _Any) ->
+    "topology.museum";
+
+museum("yorkshire", _Any) ->
+    "yorkshire.museum";
+
+museum("costume", _Any) ->
+    "costume.museum";
+
+museum("naval", _Any) ->
+    "naval.museum";
+
+museum("windmill", _Any) ->
+    "windmill.museum";
+
+museum("heimatunduhren", _Any) ->
+    "heimatunduhren.museum";
+
+museum("community", _Any) ->
+    "community.museum";
+
+museum("elvendrell", _Any) ->
+    "elvendrell.museum";
+
+museum("anthro", _Any) ->
+    "anthro.museum";
+
+museum("castle", _Any) ->
+    "castle.museum";
+
+museum("computer", _Any) ->
+    "computer.museum";
+
+museum("arteducation", _Any) ->
+    "arteducation.museum";
+
+museum("humanities", _Any) ->
+    "humanities.museum";
+
+museum("southwest", _Any) ->
+    "southwest.museum";
+
+museum("eisenbahn", _Any) ->
+    "eisenbahn.museum";
+
+museum("botanicalgarden", _Any) ->
+    "botanicalgarden.museum";
+
+museum("zoology", _Any) ->
+    "zoology.museum";
+
+museum("seaport", _Any) ->
+    "seaport.museum";
+
+museum("brussels", _Any) ->
+    "brussels.museum";
+
+museum("badajoz", _Any) ->
+    "badajoz.museum";
+
+museum("bern", _Any) ->
+    "bern.museum";
+
+museum("nyny", _Any) ->
+    "nyny.museum";
+
+museum("tank", _Any) ->
+    "tank.museum";
+
+museum("lans", _Any) ->
+    "lans.museum";
+
+museum("livinghistory", _Any) ->
+    "livinghistory.museum";
+
+museum("gateway", _Any) ->
+    "gateway.museum";
+
+museum("stateofdelaware", _Any) ->
+    "stateofdelaware.museum";
+
+museum("openair", _Any) ->
+    "openair.museum";
+
+museum("cinema", _Any) ->
+    "cinema.museum";
+
+museum("chiropractic", _Any) ->
+    "chiropractic.museum";
+
+museum("modern", _Any) ->
+    "modern.museum";
+
+museum("square", _Any) ->
+    "square.museum";
+
+museum("graz", _Any) ->
+    "graz.museum";
+
+museum("trustee", _Any) ->
+    "trustee.museum";
+
+museum("ontario", _Any) ->
+    "ontario.museum";
+
+museum("mulhouse", _Any) ->
+    "mulhouse.museum";
+
+museum("museet", _Any) ->
+    "museet.museum";
+
+museum("london", _Any) ->
+    "london.museum";
+
+museum("york", _Any) ->
+    "york.museum";
+
+
+museum(_, _) ->
+    "museum".
+
+%% regular rules
+pt("edu", _Any) ->
+    "edu.pt";
+
+pt("int", _Any) ->
+    "int.pt";
+
+pt("blogspot", _Any) ->
+    "blogspot.pt";
+
+pt("com", _Any) ->
+    "com.pt";
+
+pt("org", _Any) ->
+    "org.pt";
+
+pt("gov", _Any) ->
+    "gov.pt";
+
+pt("nome", _Any) ->
+    "nome.pt";
+
+pt("net", _Any) ->
+    "net.pt";
+
+pt("publ", _Any) ->
+    "publ.pt";
+
+
+pt(_, _) ->
+    "pt".
+
+%% regular rules
+vn("int", _Any) ->
+    "int.vn";
+
+vn("name", _Any) ->
+    "name.vn";
+
+vn("edu", _Any) ->
+    "edu.vn";
+
+vn("health", _Any) ->
+    "health.vn";
+
+vn("net", _Any) ->
+    "net.vn";
+
+vn("info", _Any) ->
+    "info.vn";
+
+vn("org", _Any) ->
+    "org.vn";
+
+vn("ac", _Any) ->
+    "ac.vn";
+
+vn("com", _Any) ->
+    "com.vn";
+
+vn("biz", _Any) ->
+    "biz.vn";
+
+vn("pro", _Any) ->
+    "pro.vn";
+
+vn("gov", _Any) ->
+    "gov.vn";
+
+
+vn(_, _) ->
+    "vn".
+
+%% regular rules
+do("com", _Any) ->
+    "com.do";
+
+do("web", _Any) ->
+    "web.do";
+
+do("org", _Any) ->
+    "org.do";
+
+do("gob", _Any) ->
+    "gob.do";
+
+do("gov", _Any) ->
+    "gov.do";
+
+do("net", _Any) ->
+    "net.do";
+
+do("edu", _Any) ->
+    "edu.do";
+
+do("art", _Any) ->
+    "art.do";
+
+do("sld", _Any) ->
+    "sld.do";
+
+do("mil", _Any) ->
+    "mil.do";
+
+
+do(_, _) ->
+    "do".
+
+%% regular rules
+na("ca", _Any) ->
+    "ca.na";
+
+na("name", _Any) ->
+    "name.na";
+
+na("co", _Any) ->
+    "co.na";
+
+na("us", _Any) ->
+    "us.na";
+
+na("school", _Any) ->
+    "school.na";
+
+na("pro", _Any) ->
+    "pro.na";
+
+na("tv", _Any) ->
+    "tv.na";
+
+na("com", _Any) ->
+    "com.na";
+
+na("mx", _Any) ->
+    "mx.na";
+
+na("cc", _Any) ->
+    "cc.na";
+
+na("in", _Any) ->
+    "in.na";
+
+na("or", _Any) ->
+    "or.na";
+
+na("mobi", _Any) ->
+    "mobi.na";
+
+na("ws", _Any) ->
+    "ws.na";
+
+na("info", _Any) ->
+    "info.na";
+
+na("dr", _Any) ->
+    "dr.na";
+
+na("org", _Any) ->
+    "org.na";
+
+
+na(_, _) ->
+    "na".
+
+%% regular rules
+org("us", _Any) ->
+    "us.org";
+
+org("blogdns", _Any) ->
+    "blogdns.org";
+
+org("dvrdns", _Any) ->
+    "dvrdns.org";
+
+org("dynalias", _Any) ->
+    "dynalias.org";
+
+org("endofinternet", _Any) ->
+    "endofinternet.org";
+
+org("dyndns", []) ->
+    "dyndns.org";
+org("dyndns", Parts) ->
+    [First | Rest] = Parts,
+    dyndns_org(First, Rest);
+
+org("doesntexist", _Any) ->
+    "doesntexist.org";
+
+org("homedns", _Any) ->
+    "homedns.org";
+
+org("endoftheinternet", _Any) ->
+    "endoftheinternet.org";
+
+org("dnsdojo", _Any) ->
+    "dnsdojo.org";
+
+org("selfip", _Any) ->
+    "selfip.org";
+
+org("doomdns", _Any) ->
+    "doomdns.org";
+
+org("homelinux", _Any) ->
+    "homelinux.org";
+
+org("servegame", _Any) ->
+    "servegame.org";
+
+org("blogsite", _Any) ->
+    "blogsite.org";
+
+org("misconfused", _Any) ->
+    "misconfused.org";
+
+org("serveftp", _Any) ->
+    "serveftp.org";
+
+org("servebbs", _Any) ->
+    "servebbs.org";
+
+org("podzone", _Any) ->
+    "podzone.org";
+
+org("za", _Any) ->
+    "za.org";
+
+org("readmyblog", _Any) ->
+    "readmyblog.org";
+
+org("dontexist", _Any) ->
+    "dontexist.org";
+
+org("webhop", _Any) ->
+    "webhop.org";
+
+org("homeunix", _Any) ->
+    "homeunix.org";
+
+org("ae", _Any) ->
+    "ae.org";
+
+org("homeftp", _Any) ->
+    "homeftp.org";
+
+org("sellsyourhome", _Any) ->
+    "sellsyourhome.org";
+
+org("boldlygoingnowhere", _Any) ->
+    "boldlygoingnowhere.org";
+
+org("dnsalias", _Any) ->
+    "dnsalias.org";
+
+org("gotdns", _Any) ->
+    "gotdns.org";
+
+
+org(_, _) ->
+    "org".
+
+%% regular rules
+dyndns_org("home", _Any) ->
+    "home.dyndns.org";
+
+dyndns_org("go", _Any) ->
+    "go.dyndns.org";
+
+
+dyndns_org(_, _) ->
+    "dyndns.org".
+
+%% regular rules
+nu("shacknet", _Any) ->
+    "shacknet.nu";
+
+nu("merseine", _Any) ->
+    "merseine.nu";
+
+nu("mine", _Any) ->
+    "mine.nu";
+
+
+nu(_, _) ->
+    "nu".
+
+%% regular rules
+tt("coop", _Any) ->
+    "coop.tt";
+
+tt("mobi", _Any) ->
+    "mobi.tt";
+
+tt("museum", _Any) ->
+    "museum.tt";
+
+tt("aero", _Any) ->
+    "aero.tt";
+
+tt("info", _Any) ->
+    "info.tt";
+
+tt("org", _Any) ->
+    "org.tt";
+
+tt("jobs", _Any) ->
+    "jobs.tt";
+
+tt("int", _Any) ->
+    "int.tt";
+
+tt("name", _Any) ->
+    "name.tt";
+
+tt("edu", _Any) ->
+    "edu.tt";
+
+tt("co", _Any) ->
+    "co.tt";
+
+tt("travel", _Any) ->
+    "travel.tt";
+
+tt("net", _Any) ->
+    "net.tt";
+
+tt("com", _Any) ->
+    "com.tt";
+
+tt("pro", _Any) ->
+    "pro.tt";
+
+tt("biz", _Any) ->
+    "biz.tt";
+
+tt("gov", _Any) ->
+    "gov.tt";
+
+
+tt(_, _) ->
+    "tt".
+
+%% regular rules
+az("edu", _Any) ->
+    "edu.az";
+
+az("name", _Any) ->
+    "name.az";
+
+az("mil", _Any) ->
+    "mil.az";
+
+az("int", _Any) ->
+    "int.az";
+
+az("biz", _Any) ->
+    "biz.az";
+
+az("gov", _Any) ->
+    "gov.az";
+
+az("pro", _Any) ->
+    "pro.az";
+
+az("pp", _Any) ->
+    "pp.az";
+
+az("org", _Any) ->
+    "org.az";
+
+az("com", _Any) ->
+    "com.az";
+
+az("info", _Any) ->
+    "info.az";
+
+az("net", _Any) ->
+    "net.az";
+
+
+az(_, _) ->
+    "az".
+
+%% regular rules
+arpa("urn", _Any) ->
+    "urn.arpa";
+
+arpa("uri", _Any) ->
+    "uri.arpa";
+
+arpa("iris", _Any) ->
+    "iris.arpa";
+
+
+arpa(_, _) ->
+    "arpa".
+
+%% regular rules
+se("komvux", _Any) ->
+    "komvux.se";
+
+se("bd", _Any) ->
+    "bd.se";
+
+se("a", _Any) ->
+    "a.se";
+
+se("p", _Any) ->
+    "p.se";
+
+se("e", _Any) ->
+    "e.se";
+
+se("blogspot", _Any) ->
+    "blogspot.se";
+
+se("u", _Any) ->
+    "u.se";
+
+se("o", _Any) ->
+    "o.se";
+
+se("press", _Any) ->
+    "press.se";
+
+se("naturbruksgymn", _Any) ->
+    "naturbruksgymn.se";
+
+se("komforb", _Any) ->
+    "komforb.se";
+
+se("z", _Any) ->
+    "z.se";
+
+se("d", _Any) ->
+    "d.se";
+
+se("w", _Any) ->
+    "w.se";
+
+se("fh", _Any) ->
+    "fh.se";
+
+se("x", _Any) ->
+    "x.se";
+
+se("parti", _Any) ->
+    "parti.se";
+
+se("fhv", _Any) ->
+    "fhv.se";
+
+se("com", _Any) ->
+    "com.se";
+
+se("y", _Any) ->
+    "y.se";
+
+se("l", _Any) ->
+    "l.se";
+
+se("r", _Any) ->
+    "r.se";
+
+se("g", _Any) ->
+    "g.se";
+
+se("t", _Any) ->
+    "t.se";
+
+se("fhsk", _Any) ->
+    "fhsk.se";
+
+se("m", _Any) ->
+    "m.se";
+
+se("s", _Any) ->
+    "s.se";
+
+se("pp", _Any) ->
+    "pp.se";
+
+se("ac", _Any) ->
+    "ac.se";
+
+se("org", _Any) ->
+    "org.se";
+
+se("k", _Any) ->
+    "k.se";
+
+se("f", _Any) ->
+    "f.se";
+
+se("b", _Any) ->
+    "b.se";
+
+se("n", _Any) ->
+    "n.se";
+
+se("kommunalforbund", _Any) ->
+    "kommunalforbund.se";
+
+se("i", _Any) ->
+    "i.se";
+
+se("brand", _Any) ->
+    "brand.se";
+
+se("tm", _Any) ->
+    "tm.se";
+
+se("lanbib", _Any) ->
+    "lanbib.se";
+
+se("c", _Any) ->
+    "c.se";
+
+se("h", _Any) ->
+    "h.se";
+
+
+se(_, _) ->
+    "se".
+
+%% regular rules
+rw("int", _Any) ->
+    "int.rw";
+
+rw("mil", _Any) ->
+    "mil.rw";
+
+rw("co", _Any) ->
+    "co.rw";
+
+rw("edu", _Any) ->
+    "edu.rw";
+
+rw("net", _Any) ->
+    "net.rw";
+
+rw("com", _Any) ->
+    "com.rw";
+
+rw("ac", _Any) ->
+    "ac.rw";
+
+rw("gouv", _Any) ->
+    "gouv.rw";
+
+rw("gov", _Any) ->
+    "gov.rw";
+
+
+rw(_, _) ->
+    "rw".
+
+%% regular rules
+ly("org", _Any) ->
+    "org.ly";
+
+ly("com", _Any) ->
+    "com.ly";
+
+ly("sch", _Any) ->
+    "sch.ly";
+
+ly("plc", _Any) ->
+    "plc.ly";
+
+ly("gov", _Any) ->
+    "gov.ly";
+
+ly("med", _Any) ->
+    "med.ly";
+
+ly("net", _Any) ->
+    "net.ly";
+
+ly("edu", _Any) ->
+    "edu.ly";
+
+ly("id", _Any) ->
+    "id.ly";
+
+
+ly(_, _) ->
+    "ly".
+
+%% regular rules
+in("firm", _Any) ->
+    "firm.in";
+
+in("gov", _Any) ->
+    "gov.in";
+
+in("ac", _Any) ->
+    "ac.in";
+
+in("org", _Any) ->
+    "org.in";
+
+in("nic", _Any) ->
+    "nic.in";
+
+in("gen", _Any) ->
+    "gen.in";
+
+in("net", _Any) ->
+    "net.in";
+
+in("edu", _Any) ->
+    "edu.in";
+
+in("co", _Any) ->
+    "co.in";
+
+in("res", _Any) ->
+    "res.in";
+
+in("ind", _Any) ->
+    "ind.in";
+
+in("blogspot", _Any) ->
+    "blogspot.in";
+
+in("mil", _Any) ->
+    "mil.in";
+
+
+in(_, _) ->
+    "in".
+
+%% regular rules
+lv("net", _Any) ->
+    "net.lv";
+
+lv("gov", _Any) ->
+    "gov.lv";
+
+lv("asn", _Any) ->
+    "asn.lv";
+
+lv("org", _Any) ->
+    "org.lv";
+
+lv("com", _Any) ->
+    "com.lv";
+
+lv("id", _Any) ->
+    "id.lv";
+
+lv("mil", _Any) ->
+    "mil.lv";
+
+lv("conf", _Any) ->
+    "conf.lv";
+
+lv("edu", _Any) ->
+    "edu.lv";
+
+
+lv(_, _) ->
+    "lv".
+
+%% regular rules
+es("gob", _Any) ->
+    "gob.es";
+
+es("edu", _Any) ->
+    "edu.es";
+
+es("com", []) ->
+    "com.es";
+es("com", Parts) ->
+    [First | Rest] = Parts,
+    com_es(First, Rest);
+
+es("org", _Any) ->
+    "org.es";
+
+es("nom", _Any) ->
+    "nom.es";
+
+
+es(_, _) ->
+    "es".
+
+%% regular rules
+com_es("blogspot", _Any) ->
+    "blogspot.com.es";
+
+
+com_es(_, _) ->
+    "com.es".
+
+%% regular rules
+ir("gov", _Any) ->
+    "gov.ir";
+
+ir("co", _Any) ->
+    "co.ir";
+
+ir("org", _Any) ->
+    "org.ir";
+
+ir("ac", _Any) ->
+    "ac.ir";
+
+ir("sch", _Any) ->
+    "sch.ir";
+
+ir("id", _Any) ->
+    "id.ir";
+
+ir("net", _Any) ->
+    "net.ir";
+
+
+ir(_, _) ->
+    "ir".
+
+%% regular rules
+mu("net", _Any) ->
+    "net.mu";
+
+mu("gov", _Any) ->
+    "gov.mu";
+
+mu("or", _Any) ->
+    "or.mu";
+
+mu("com", _Any) ->
+    "com.mu";
+
+mu("co", _Any) ->
+    "co.mu";
+
+mu("ac", _Any) ->
+    "ac.mu";
+
+mu("org", _Any) ->
+    "org.mu";
+
+
+mu(_, _) ->
+    "mu".
+
+%% regular rules
+cn("js", _Any) ->
+    "js.cn";
+
+cn("hk", _Any) ->
+    "hk.cn";
+
+cn("xj", _Any) ->
+    "xj.cn";
+
+cn("gs", _Any) ->
+    "gs.cn";
+
+cn("sc", _Any) ->
+    "sc.cn";
+
+cn("hl", _Any) ->
+    "hl.cn";
+
+cn("edu", _Any) ->
+    "edu.cn";
+
+cn("ah", _Any) ->
+    "ah.cn";
+
+cn("yn", _Any) ->
+    "yn.cn";
+
+cn("gz", _Any) ->
+    "gz.cn";
+
+cn("bj", _Any) ->
+    "bj.cn";
+
+cn("com", _Any) ->
+    "com.cn";
+
+cn("fj", _Any) ->
+    "fj.cn";
+
+cn("jx", _Any) ->
+    "jx.cn";
+
+cn("gd", _Any) ->
+    "gd.cn";
+
+cn("qh", _Any) ->
+    "qh.cn";
+
+cn("jl", _Any) ->
+    "jl.cn";
+
+cn("mo", _Any) ->
+    "mo.cn";
+
+cn("gx", _Any) ->
+    "gx.cn";
+
+cn("ac", _Any) ->
+    "ac.cn";
+
+cn("org", _Any) ->
+    "org.cn";
+
+cn("tj", _Any) ->
+    "tj.cn";
+
+cn("ln", _Any) ->
+    "ln.cn";
+
+cn("cq", _Any) ->
+    "cq.cn";
+
+cn("sn", _Any) ->
+    "sn.cn";
+
+cn("zj", _Any) ->
+    "zj.cn";
+
+cn("tw", _Any) ->
+    "tw.cn";
+
+cn("nx", _Any) ->
+    "nx.cn";
+
+cn("sh", _Any) ->
+    "sh.cn";
+
+cn("hi", _Any) ->
+    "hi.cn";
+
+cn("ha", _Any) ->
+    "ha.cn";
+
+cn("nm", _Any) ->
+    "nm.cn";
+
+cn("mil", _Any) ->
+    "mil.cn";
+
+cn("hn", _Any) ->
+    "hn.cn";
+
+cn("amazonaws", []) ->
+    "amazonaws.cn";
+cn("amazonaws", Parts) ->
+    [First | Rest] = Parts,
+    amazonaws_cn(First, Rest);
+
+cn("sd", _Any) ->
+    "sd.cn";
+
+cn("sx", _Any) ->
+    "sx.cn";
+
+cn("gov", _Any) ->
+    "gov.cn";
+
+cn("hb", _Any) ->
+    "hb.cn";
+
+cn("net", _Any) ->
+    "net.cn";
+
+cn("he", _Any) ->
+    "he.cn";
+
+cn("xz", _Any) ->
+    "xz.cn";
+
+
+cn(_, _) ->
+    "cn".
+
+%% regular rules
+amazonaws_cn("compute", _Any) ->
+    "compute.amazonaws.cn";
+
+
+amazonaws_cn(_, _) ->
+    "amazonaws.cn".
+
+%% regular rules
+lt("gov", _Any) ->
+    "gov.lt";
+
+
+lt(_, _) ->
+    "lt".
+
+%% regular rules
+gp("net", _Any) ->
+    "net.gp";
+
+gp("asso", _Any) ->
+    "asso.gp";
+
+gp("mobi", _Any) ->
+    "mobi.gp";
+
+gp("org", _Any) ->
+    "org.gp";
+
+gp("edu", _Any) ->
+    "edu.gp";
+
+gp("com", _Any) ->
+    "com.gp";
+
+
+gp(_, _) ->
+    "gp".
+
+%% regular rules
+mc("asso", _Any) ->
+    "asso.mc";
+
+mc("tm", _Any) ->
+    "tm.mc";
+
+
+mc(_, _) ->
+    "mc".
+
+%% regular rules
+ug("sc", _Any) ->
+    "sc.ug";
+
+ug("org", _Any) ->
+    "org.ug";
+
+ug("ac", _Any) ->
+    "ac.ug";
+
+ug("com", _Any) ->
+    "com.ug";
+
+ug("go", _Any) ->
+    "go.ug";
+
+ug("ne", _Any) ->
+    "ne.ug";
+
+ug("co", _Any) ->
+    "co.ug";
+
+ug("or", _Any) ->
+    "or.ug";
+
+
+ug(_, _) ->
+    "ug".
+
+%% regular rules
+is("cupcake", _Any) ->
+    "cupcake.is";
+
+is("edu", _Any) ->
+    "edu.is";
+
+is("org", _Any) ->
+    "org.is";
+
+is("com", _Any) ->
+    "com.is";
+
+is("gov", _Any) ->
+    "gov.is";
+
+is("net", _Any) ->
+    "net.is";
+
+is("int", _Any) ->
+    "int.is";
+
+
+is(_, _) ->
+    "is".
+
+%% regular rules
+kn("edu", _Any) ->
+    "edu.kn";
+
+kn("org", _Any) ->
+    "org.kn";
+
+kn("gov", _Any) ->
+    "gov.kn";
+
+kn("net", _Any) ->
+    "net.kn";
+
+
+kn(_, _) ->
+    "kn".
+
+%% regular rules
+im("tt", _Any) ->
+    "tt.im";
+
+im("net", _Any) ->
+    "net.im";
+
+im("tv", _Any) ->
+    "tv.im";
+
+im("com", _Any) ->
+    "com.im";
+
+im("org", _Any) ->
+    "org.im";
+
+im("ac", _Any) ->
+    "ac.im";
+
+im("co", []) ->
+    "co.im";
+im("co", Parts) ->
+    [First | Rest] = Parts,
+    co_im(First, Rest);
+
+
+im(_, _) ->
+    "im".
+
+%% regular rules
+co_im("ltd", _Any) ->
+    "ltd.co.im";
+
+co_im("plc", _Any) ->
+    "plc.co.im";
+
+
+co_im(_, _) ->
+    "co.im".
+
+%% regular rules
+ad("nom", _Any) ->
+    "nom.ad";
+
+
+ad(_, _) ->
+    "ad".
+
+%% regular rules
+ro("info", _Any) ->
+    "info.ro";
+
+ro("www", _Any) ->
+    "www.ro";
+
+ro("firm", _Any) ->
+    "firm.ro";
+
+ro("org", _Any) ->
+    "org.ro";
+
+ro("com", _Any) ->
+    "com.ro";
+
+ro("tm", _Any) ->
+    "tm.ro";
+
+ro("arts", _Any) ->
+    "arts.ro";
+
+ro("blogspot", _Any) ->
+    "blogspot.ro";
+
+ro("store", _Any) ->
+    "store.ro";
+
+ro("nom", _Any) ->
+    "nom.ro";
+
+ro("nt", _Any) ->
+    "nt.ro";
+
+ro("rec", _Any) ->
+    "rec.ro";
+
+
+ro(_, _) ->
+    "ro".
+
+%% regular rules
+pn("net", _Any) ->
+    "net.pn";
+
+pn("gov", _Any) ->
+    "gov.pn";
+
+pn("org", _Any) ->
+    "org.pn";
+
+pn("edu", _Any) ->
+    "edu.pn";
+
+pn("co", _Any) ->
+    "co.pn";
+
+
+pn(_, _) ->
+    "pn".
+
+%% regular rules
+cc("ftpaccess", _Any) ->
+    "ftpaccess.cc";
+
+cc("myphotos", _Any) ->
+    "myphotos.cc";
+
+cc("scrapping", _Any) ->
+    "scrapping.cc";
+
+
+cc(_, _) ->
+    "cc".
+
+%% regular rules
+sl("org", _Any) ->
+    "org.sl";
+
+sl("com", _Any) ->
+    "com.sl";
+
+sl("edu", _Any) ->
+    "edu.sl";
+
+sl("gov", _Any) ->
+    "gov.sl";
+
+sl("net", _Any) ->
+    "net.sl";
+
+
+sl(_, _) ->
+    "sl".
+
+%% regular rules
+bo("tv", _Any) ->
+    "tv.bo";
+
+bo("gov", _Any) ->
+    "gov.bo";
+
+bo("com", _Any) ->
+    "com.bo";
+
+bo("gob", _Any) ->
+    "gob.bo";
+
+bo("org", _Any) ->
+    "org.bo";
+
+bo("net", _Any) ->
+    "net.bo";
+
+bo("edu", _Any) ->
+    "edu.bo";
+
+bo("int", _Any) ->
+    "int.bo";
+
+bo("mil", _Any) ->
+    "mil.bo";
+
+
+bo(_, _) ->
+    "bo".
+
+%% regular rules
+qa("net", _Any) ->
+    "net.qa";
+
+qa("gov", _Any) ->
+    "gov.qa";
+
+qa("sch", _Any) ->
+    "sch.qa";
+
+qa("com", _Any) ->
+    "com.qa";
+
+qa("org", _Any) ->
+    "org.qa";
+
+qa("name", _Any) ->
+    "name.qa";
+
+qa("mil", _Any) ->
+    "mil.qa";
+
+qa("edu", _Any) ->
+    "edu.qa";
+
+
+qa(_, _) ->
+    "qa".
+
+%% regular rules
+gy("net", _Any) ->
+    "net.gy";
+
+gy("com", _Any) ->
+    "com.gy";
+
+gy("co", _Any) ->
+    "co.gy";
+
+
+gy(_, _) ->
+    "gy".
+
+%% regular rules
+bg("z", _Any) ->
+    "z.bg";
+
+bg("b", _Any) ->
+    "b.bg";
+
+bg("o", _Any) ->
+    "o.bg";
+
+bg("u", _Any) ->
+    "u.bg";
+
+bg("f", _Any) ->
+    "f.bg";
+
+bg("c", _Any) ->
+    "c.bg";
+
+bg("y", _Any) ->
+    "y.bg";
+
+bg("h", _Any) ->
+    "h.bg";
+
+bg("i", _Any) ->
+    "i.bg";
+
+bg("x", _Any) ->
+    "x.bg";
+
+bg("n", _Any) ->
+    "n.bg";
+
+bg("w", _Any) ->
+    "w.bg";
+
+bg("d", _Any) ->
+    "d.bg";
+
+bg("t", _Any) ->
+    "t.bg";
+
+bg("g", _Any) ->
+    "g.bg";
+
+bg("r", _Any) ->
+    "r.bg";
+
+bg("l", _Any) ->
+    "l.bg";
+
+bg("k", _Any) ->
+    "k.bg";
+
+bg("e", _Any) ->
+    "e.bg";
+
+bg("p", _Any) ->
+    "p.bg";
+
+bg("a", _Any) ->
+    "a.bg";
+
+bg("v", _Any) ->
+    "v.bg";
+
+bg("s", _Any) ->
+    "s.bg";
+
+bg("q", _Any) ->
+    "q.bg";
+
+bg("m", _Any) ->
+    "m.bg";
+
+bg("j", _Any) ->
+    "j.bg";
+
+
+bg(_, _) ->
+    "bg".
+
+%% regular rules
+pl("zarow", _Any) ->
+    "zarow.pl";
+
+pl("beskidy", _Any) ->
+    "beskidy.pl";
+
+pl("powiat", _Any) ->
+    "powiat.pl";
+
+pl("gdynia", _Any) ->
+    "gdynia.pl";
+
+pl("irc", _Any) ->
+    "irc.pl";
+
+pl("wlocl", _Any) ->
+    "wlocl.pl";
+
+pl("jgora", _Any) ->
+    "jgora.pl";
+
+pl("siedlce", _Any) ->
+    "siedlce.pl";
+
+pl("ostrowiec", _Any) ->
+    "ostrowiec.pl";
+
+pl("ketrzyn", _Any) ->
+    "ketrzyn.pl";
+
+pl("edu", _Any) ->
+    "edu.pl";
+
+pl("suwalki", _Any) ->
+    "suwalki.pl";
+
+pl("bialowieza", _Any) ->
+    "bialowieza.pl";
+
+pl("kobierzyce", _Any) ->
+    "kobierzyce.pl";
+
+pl("kaszuby", _Any) ->
+    "kaszuby.pl";
+
+pl("sopot", _Any) ->
+    "sopot.pl";
+
+pl("podhale", _Any) ->
+    "podhale.pl";
+
+pl("mazowsze", _Any) ->
+    "mazowsze.pl";
+
+pl("mbone", _Any) ->
+    "mbone.pl";
+
+pl("olkusz", _Any) ->
+    "olkusz.pl";
+
+pl("pila", _Any) ->
+    "pila.pl";
+
+pl("wloclawek", _Any) ->
+    "wloclawek.pl";
+
+pl("krakow", _Any) ->
+    "krakow.pl";
+
+pl("zakopane", _Any) ->
+    "zakopane.pl";
+
+pl("mielec", _Any) ->
+    "mielec.pl";
+
+pl("swiebodzin", _Any) ->
+    "swiebodzin.pl";
+
+pl("gniezno", _Any) ->
+    "gniezno.pl";
+
+pl("czest", _Any) ->
+    "czest.pl";
+
+pl("bieszczady", _Any) ->
+    "bieszczady.pl";
+
+pl("kutno", _Any) ->
+    "kutno.pl";
+
+pl("tourism", _Any) ->
+    "tourism.pl";
+
+pl("media", _Any) ->
+    "media.pl";
+
+pl("targi", _Any) ->
+    "targi.pl";
+
+pl("klodzko", _Any) ->
+    "klodzko.pl";
+
+pl("szczytno", _Any) ->
+    "szczytno.pl";
+
+pl("kartuzy", _Any) ->
+    "kartuzy.pl";
+
+pl("nowaruda", _Any) ->
+    "nowaruda.pl";
+
+pl("ngo", _Any) ->
+    "ngo.pl";
+
+pl("lapy", _Any) ->
+    "lapy.pl";
+
+pl("mail", _Any) ->
+    "mail.pl";
+
+pl("wroclaw", _Any) ->
+    "wroclaw.pl";
+
+pl("boleslawiec", _Any) ->
+    "boleslawiec.pl";
+
+pl("mielno", _Any) ->
+    "mielno.pl";
+
+pl("agro", _Any) ->
+    "agro.pl";
+
+pl("jaworzno", _Any) ->
+    "jaworzno.pl";
+
+pl("ilawa", _Any) ->
+    "ilawa.pl";
+
+pl("sosnowiec", _Any) ->
+    "sosnowiec.pl";
+
+pl("zgora", _Any) ->
+    "zgora.pl";
+
+pl("usenet", _Any) ->
+    "usenet.pl";
+
+pl("skoczow", _Any) ->
+    "skoczow.pl";
+
+pl("grajewo", _Any) ->
+    "grajewo.pl";
+
+pl("legnica", _Any) ->
+    "legnica.pl";
+
+pl("turek", _Any) ->
+    "turek.pl";
+
+pl("gsm", _Any) ->
+    "gsm.pl";
+
+pl("travel", _Any) ->
+    "travel.pl";
+
+pl("kepno", _Any) ->
+    "kepno.pl";
+
+pl("co", _Any) ->
+    "co.pl";
+
+pl("pulawy", _Any) ->
+    "pulawy.pl";
+
+pl("opoczno", _Any) ->
+    "opoczno.pl";
+
+pl("ustka", _Any) ->
+    "ustka.pl";
+
+pl("swinoujscie", _Any) ->
+    "swinoujscie.pl";
+
+pl("cieszyn", _Any) ->
+    "cieszyn.pl";
+
+pl("poznan", _Any) ->
+    "poznan.pl";
+
+pl("katowice", _Any) ->
+    "katowice.pl";
+
+pl("karpacz", _Any) ->
+    "karpacz.pl";
+
+pl("walbrzych", _Any) ->
+    "walbrzych.pl";
+
+pl("sejny", _Any) ->
+    "sejny.pl";
+
+pl("zgorzelec", _Any) ->
+    "zgorzelec.pl";
+
+pl("gov", []) ->
+    "gov.pl";
+pl("gov", Parts) ->
+    [First | Rest] = Parts,
+    gov_pl(First, Rest);
+
+pl("malbork", _Any) ->
+    "malbork.pl";
+
+pl("tm", _Any) ->
+    "tm.pl";
+
+pl("konin", _Any) ->
+    "konin.pl";
+
+pl("turystyka", _Any) ->
+    "turystyka.pl";
+
+pl("kolobrzeg", _Any) ->
+    "kolobrzeg.pl";
+
+pl("starachowice", _Any) ->
+    "starachowice.pl";
+
+pl("net", _Any) ->
+    "net.pl";
+
+pl("lukow", _Any) ->
+    "lukow.pl";
+
+pl("wroc", _Any) ->
+    "wroc.pl";
+
+pl("wodzislaw", _Any) ->
+    "wodzislaw.pl";
+
+pl("polkowice", _Any) ->
+    "polkowice.pl";
+
+pl("nieruchomosci", _Any) ->
+    "nieruchomosci.pl";
+
+pl("naklo", _Any) ->
+    "naklo.pl";
+
+pl("warszawa", _Any) ->
+    "warszawa.pl";
+
+pl("konskowola", _Any) ->
+    "konskowola.pl";
+
+pl("atm", _Any) ->
+    "atm.pl";
+
+pl("rybnik", _Any) ->
+    "rybnik.pl";
+
+pl("limanowa", _Any) ->
+    "limanowa.pl";
+
+pl("malopolska", _Any) ->
+    "malopolska.pl";
+
+pl("bydgoszcz", _Any) ->
+    "bydgoszcz.pl";
+
+pl("med", _Any) ->
+    "med.pl";
+
+pl("olawa", _Any) ->
+    "olawa.pl";
+
+pl("pruszkow", _Any) ->
+    "pruszkow.pl";
+
+pl("priv", _Any) ->
+    "priv.pl";
+
+pl("bialystok", _Any) ->
+    "bialystok.pl";
+
+pl("com", _Any) ->
+    "com.pl";
+
+pl("olecko", _Any) ->
+    "olecko.pl";
+
+pl("pisz", _Any) ->
+    "pisz.pl";
+
+pl("lebork", _Any) ->
+    "lebork.pl";
+
+pl("przeworsk", _Any) ->
+    "przeworsk.pl";
+
+pl("lowicz", _Any) ->
+    "lowicz.pl";
+
+pl("nom", _Any) ->
+    "nom.pl";
+
+pl("org", _Any) ->
+    "org.pl";
+
+pl("lezajsk", _Any) ->
+    "lezajsk.pl";
+
+pl("auto", _Any) ->
+    "auto.pl";
+
+pl("info", _Any) ->
+    "info.pl";
+
+pl("mazury", _Any) ->
+    "mazury.pl";
+
+pl("szczecin", _Any) ->
+    "szczecin.pl";
+
+pl("slask", _Any) ->
+    "slask.pl";
+
+pl("prochowice", _Any) ->
+    "prochowice.pl";
+
+pl("tychy", _Any) ->
+    "tychy.pl";
+
+pl("shop", _Any) ->
+    "shop.pl";
+
+pl("kalisz", _Any) ->
+    "kalisz.pl";
+
+pl("augustow", _Any) ->
+    "augustow.pl";
+
+pl("gorlice", _Any) ->
+    "gorlice.pl";
+
+pl("tarnobrzeg", _Any) ->
+    "tarnobrzeg.pl";
+
+pl("elblag", _Any) ->
+    "elblag.pl";
+
+pl("pomorze", _Any) ->
+    "pomorze.pl";
+
+pl("rzeszow", _Any) ->
+    "rzeszow.pl";
+
+pl("mil", _Any) ->
+    "mil.pl";
+
+pl("pomorskie", _Any) ->
+    "pomorskie.pl";
+
+pl("bielawa", _Any) ->
+    "bielawa.pl";
+
+pl("zagan", _Any) ->
+    "zagan.pl";
+
+pl("gliwice", _Any) ->
+    "gliwice.pl";
+
+pl("sanok", _Any) ->
+    "sanok.pl";
+
+pl("czeladz", _Any) ->
+    "czeladz.pl";
+
+pl("art", _Any) ->
+    "art.pl";
+
+pl("waw", _Any) ->
+    "waw.pl";
+
+pl("olsztyn", _Any) ->
+    "olsztyn.pl";
+
+pl("ostroleka", _Any) ->
+    "ostroleka.pl";
+
+pl("swidnica", _Any) ->
+    "swidnica.pl";
+
+pl("sos", _Any) ->
+    "sos.pl";
+
+pl("biz", _Any) ->
+    "biz.pl";
+
+pl("podlasie", _Any) ->
+    "podlasie.pl";
+
+pl("sklep", _Any) ->
+    "sklep.pl";
+
+pl("nysa", _Any) ->
+    "nysa.pl";
+
+pl("ostroda", _Any) ->
+    "ostroda.pl";
+
+pl("wielun", _Any) ->
+    "wielun.pl";
+
+pl("tgory", _Any) ->
+    "tgory.pl";
+
+pl("gda", _Any) ->
+    "gda.pl";
+
+pl("dlugoleka", _Any) ->
+    "dlugoleka.pl";
+
+pl("lomza", _Any) ->
+    "lomza.pl";
+
+pl("bedzin", _Any) ->
+    "bedzin.pl";
+
+pl("sex", _Any) ->
+    "sex.pl";
+
+pl("elk", _Any) ->
+    "elk.pl";
+
+pl("szkola", _Any) ->
+    "szkola.pl";
+
+pl("ostrowwlkp", _Any) ->
+    "ostrowwlkp.pl";
+
+pl("opole", _Any) ->
+    "opole.pl";
+
+pl("bytom", _Any) ->
+    "bytom.pl";
+
+pl("pc", _Any) ->
+    "pc.pl";
+
+pl("slupsk", _Any) ->
+    "slupsk.pl";
+
+pl("miasta", _Any) ->
+    "miasta.pl";
+
+pl("stargard", _Any) ->
+    "stargard.pl";
+
+pl("aid", _Any) ->
+    "aid.pl";
+
+pl("realestate", _Any) ->
+    "realestate.pl";
+
+pl("warmia", _Any) ->
+    "warmia.pl";
+
+pl("mragowo", _Any) ->
+    "mragowo.pl";
+
+pl("zachpomor", _Any) ->
+    "zachpomor.pl";
+
+pl("wolomin", _Any) ->
+    "wolomin.pl";
+
+pl("lubin", _Any) ->
+    "lubin.pl";
+
+pl("rel", _Any) ->
+    "rel.pl";
+
+pl("gmina", _Any) ->
+    "gmina.pl";
+
+pl("radom", _Any) ->
+    "radom.pl";
+
+pl("wegrow", _Any) ->
+    "wegrow.pl";
+
+pl("gdansk", _Any) ->
+    "gdansk.pl";
+
+pl("glogow", _Any) ->
+    "glogow.pl";
+
+
+pl(_, _) ->
+    "pl".
+
+%% regular rules
+gov_pl("um", _Any) ->
+    "um.gov.pl";
+
+gov_pl("po", _Any) ->
+    "po.gov.pl";
+
+gov_pl("ug", _Any) ->
+    "ug.gov.pl";
+
+gov_pl("starostwo", _Any) ->
+    "starostwo.gov.pl";
+
+gov_pl("sr", _Any) ->
+    "sr.gov.pl";
+
+gov_pl("upow", _Any) ->
+    "upow.gov.pl";
+
+gov_pl("so", _Any) ->
+    "so.gov.pl";
+
+gov_pl("pa", _Any) ->
+    "pa.gov.pl";
+
+gov_pl("uw", _Any) ->
+    "uw.gov.pl";
+
+
+gov_pl(_, _) ->
+    "gov.pl".
+
+%% regular rules
+net("dontexist", _Any) ->
+    "dontexist.net";
+
+net("webhop", _Any) ->
+    "webhop.net";
+
+net("in", _Any) ->
+    "in.net";
+
+net("cloudapp", _Any) ->
+    "cloudapp.net";
+
+net("homeunix", _Any) ->
+    "homeunix.net";
+
+net("fastly", []) ->
+    "fastly.net";
+net("fastly", Parts) ->
+    [First | Rest] = Parts,
+    fastly_net(First, Rest);
+
+net("homeftp", _Any) ->
+    "homeftp.net";
+
+net("dnsalias", _Any) ->
+    "dnsalias.net";
+
+net("hu", _Any) ->
+    "hu.net";
+
+net("buyshouses", _Any) ->
+    "buyshouses.net";
+
+net("homelinux", _Any) ->
+    "homelinux.net";
+
+net("podzone", _Any) ->
+    "podzone.net";
+
+net("serveftp", _Any) ->
+    "serveftp.net";
+
+net("servebbs", _Any) ->
+    "servebbs.net";
+
+net("uk", _Any) ->
+    "uk.net";
+
+net("za", _Any) ->
+    "za.net";
+
+net("gb", _Any) ->
+    "gb.net";
+
+net("dynathome", _Any) ->
+    "dynathome.net";
+
+net("se", _Any) ->
+    "se.net";
+
+net("jp", _Any) ->
+    "jp.net";
+
+net("dnsdojo", _Any) ->
+    "dnsdojo.net";
+
+net("selfip", _Any) ->
+    "selfip.net";
+
+net("cloudfront", _Any) ->
+    "cloudfront.net";
+
+net("homeip", _Any) ->
+    "homeip.net";
+
+net("azurewebsites", _Any) ->
+    "azurewebsites.net";
+
+net("blogdns", _Any) ->
+    "blogdns.net";
+
+net("thruhere", _Any) ->
+    "thruhere.net";
+
+net("dynalias", _Any) ->
+    "dynalias.net";
+
+net("endofinternet", _Any) ->
+    "endofinternet.net";
+
+
+net(_, _) ->
+    "net".
+
+%% regular rules
+fastly_net("ssl", []) ->
+    "ssl.fastly.net";
+fastly_net("ssl", Parts) ->
+    [First | Rest] = Parts,
+    ssl_fastly_net(First, Rest);
+
+fastly_net("prod", []) ->
+    "prod.fastly.net";
+fastly_net("prod", Parts) ->
+    [First | Rest] = Parts,
+    prod_fastly_net(First, Rest);
+
+
+fastly_net(_, _) ->
+    "fastly.net".
+
+%% regular rules
+ssl_fastly_net("a", _Any) ->
+    "a.ssl.fastly.net";
+
+ssl_fastly_net("global", _Any) ->
+    "global.ssl.fastly.net";
+
+ssl_fastly_net("b", _Any) ->
+    "b.ssl.fastly.net";
+
+
+ssl_fastly_net(_, _) ->
+    "ssl.fastly.net".
+
+%% regular rules
+prod_fastly_net("global", _Any) ->
+    "global.prod.fastly.net";
+
+prod_fastly_net("a", _Any) ->
+    "a.prod.fastly.net";
+
+
+prod_fastly_net(_, _) ->
+    "prod.fastly.net".
+
+%% regular rules
+fr("blogspot", _Any) ->
+    "blogspot.fr";
+
+fr("chambagri", _Any) ->
+    "chambagri.fr";
+
+fr("nom", _Any) ->
+    "nom.fr";
+
+fr("asso", _Any) ->
+    "asso.fr";
+
+fr("port", _Any) ->
+    "port.fr";
+
+fr("com", _Any) ->
+    "com.fr";
+
+fr("tm", _Any) ->
+    "tm.fr";
+
+fr("notaires", _Any) ->
+    "notaires.fr";
+
+fr("assedic", _Any) ->
+    "assedic.fr";
+
+fr("avocat", _Any) ->
+    "avocat.fr";
+
+fr("avoues", _Any) ->
+    "avoues.fr";
+
+fr("presse", _Any) ->
+    "presse.fr";
+
+fr("medecin", _Any) ->
+    "medecin.fr";
+
+fr("veterinaire", _Any) ->
+    "veterinaire.fr";
+
+fr("cci", _Any) ->
+    "cci.fr";
+
+fr("aeroport", _Any) ->
+    "aeroport.fr";
+
+fr("gouv", _Any) ->
+    "gouv.fr";
+
+fr("prd", _Any) ->
+    "prd.fr";
+
+fr("pharmacien", _Any) ->
+    "pharmacien.fr";
+
+fr("greta", _Any) ->
+    "greta.fr";
+
+
+fr(_, _) ->
+    "fr".
+
+%% regular rules
+ao("ed", _Any) ->
+    "ed.ao";
+
+ao("co", _Any) ->
+    "co.ao";
+
+ao("gv", _Any) ->
+    "gv.ao";
+
+ao("pb", _Any) ->
+    "pb.ao";
+
+ao("it", _Any) ->
+    "it.ao";
+
+ao("og", _Any) ->
+    "og.ao";
+
+
+ao(_, _) ->
+    "ao".
+
+%% regular rules
+tv("dyndns", _Any) ->
+    "dyndns.tv";
+
+
+tv(_, _) ->
+    "tv".
+
+%% regular rules
+ar("int", _Any) ->
+    "int.ar";
+
+ar("mil", _Any) ->
+    "mil.ar";
+
+ar("tur", _Any) ->
+    "tur.ar";
+
+ar("edu", _Any) ->
+    "edu.ar";
+
+ar("net", _Any) ->
+    "net.ar";
+
+ar("gov", _Any) ->
+    "gov.ar";
+
+ar("com", []) ->
+    "com.ar";
+ar("com", Parts) ->
+    [First | Rest] = Parts,
+    com_ar(First, Rest);
+
+ar("gob", _Any) ->
+    "gob.ar";
+
+ar("org", _Any) ->
+    "org.ar";
+
+
+ar(_, _) ->
+    "ar".
+
+%% regular rules
+com_ar("blogspot", _Any) ->
+    "blogspot.com.ar";
+
+
+com_ar(_, _) ->
+    "com.ar".
+
+%% regular rules
+pf("edu", _Any) ->
+    "edu.pf";
+
+pf("org", _Any) ->
+    "org.pf";
+
+pf("com", _Any) ->
+    "com.pf";
+
+
+pf(_, _) ->
+    "pf".
+
+%% regular rules
+hu("news", _Any) ->
+    "news.hu";
+
+hu("media", _Any) ->
+    "media.hu";
+
+hu("ingatlan", _Any) ->
+    "ingatlan.hu";
+
+hu("forum", _Any) ->
+    "forum.hu";
+
+hu("blogspot", _Any) ->
+    "blogspot.hu";
+
+hu("co", _Any) ->
+    "co.hu";
+
+hu("erotika", _Any) ->
+    "erotika.hu";
+
+hu("jogasz", _Any) ->
+    "jogasz.hu";
+
+hu("erotica", _Any) ->
+    "erotica.hu";
+
+hu("suli", _Any) ->
+    "suli.hu";
+
+hu("lakas", _Any) ->
+    "lakas.hu";
+
+hu("reklam", _Any) ->
+    "reklam.hu";
+
+hu("tm", _Any) ->
+    "tm.hu";
+
+hu("tozsde", _Any) ->
+    "tozsde.hu";
+
+hu("shop", _Any) ->
+    "shop.hu";
+
+hu("video", _Any) ->
+    "video.hu";
+
+hu("agrar", _Any) ->
+    "agrar.hu";
+
+hu("priv", _Any) ->
+    "priv.hu";
+
+hu("sport", _Any) ->
+    "sport.hu";
+
+hu("utazas", _Any) ->
+    "utazas.hu";
+
+hu("sex", _Any) ->
+    "sex.hu";
+
+hu("film", _Any) ->
+    "film.hu";
+
+hu("bolt", _Any) ->
+    "bolt.hu";
+
+hu("hotel", _Any) ->
+    "hotel.hu";
+
+hu("games", _Any) ->
+    "games.hu";
+
+hu("city", _Any) ->
+    "city.hu";
+
+hu("casino", _Any) ->
+    "casino.hu";
+
+hu("szex", _Any) ->
+    "szex.hu";
+
+hu("info", _Any) ->
+    "info.hu";
+
+hu("konyvelo", _Any) ->
+    "konyvelo.hu";
+
+hu("org", _Any) ->
+    "org.hu";
+
+
+hu(_, _) ->
+    "hu".
+
+%% regular rules
+uk("net", _Any) ->
+    "net.uk";
+
+uk("me", _Any) ->
+    "me.uk";
+
+uk("police", _Any) ->
+    "police.uk";
+
+uk("ac", _Any) ->
+    "ac.uk";
+
+uk("org", _Any) ->
+    "org.uk";
+
+uk("plc", _Any) ->
+    "plc.uk";
+
+uk("ltd", _Any) ->
+    "ltd.uk";
+
+uk("gov", _Any) ->
+    "gov.uk";
+
+uk("nhs", _Any) ->
+    "nhs.uk";
+
+uk("co", []) ->
+    "co.uk";
+uk("co", Parts) ->
+    [First | Rest] = Parts,
+    co_uk(First, Rest);
+
+
+uk(_, _) ->
+    "uk".
+
+%% regular rules
+co_uk("blogspot", _Any) ->
+    "blogspot.co.uk";
+
+
+co_uk(_, _) ->
+    "co.uk".
+
+%% regular rules
+tz("co", _Any) ->
+    "co.tz";
+
+tz("mobi", _Any) ->
+    "mobi.tz";
+
+tz("or", _Any) ->
+    "or.tz";
+
+tz("go", _Any) ->
+    "go.tz";
+
+tz("ne", _Any) ->
+    "ne.tz";
+
+tz("mil", _Any) ->
+    "mil.tz";
+
+tz("ac", _Any) ->
+    "ac.tz";
+
+tz("tv", _Any) ->
+    "tv.tz";
+
+tz("sc", _Any) ->
+    "sc.tz";
+
+tz("hotel", _Any) ->
+    "hotel.tz";
+
+tz("me", _Any) ->
+    "me.tz";
+
+tz("info", _Any) ->
+    "info.tz";
+
+
+tz(_, _) ->
+    "tz".
+
+%% regular rules
+co("int", _Any) ->
+    "int.co";
+
+co("nom", _Any) ->
+    "nom.co";
+
+co("mil", _Any) ->
+    "mil.co";
+
+co("rec", _Any) ->
+    "rec.co";
+
+co("edu", _Any) ->
+    "edu.co";
+
+co("info", _Any) ->
+    "info.co";
+
+co("net", _Any) ->
+    "net.co";
+
+co("firm", _Any) ->
+    "firm.co";
+
+co("gov", _Any) ->
+    "gov.co";
+
+co("web", _Any) ->
+    "web.co";
+
+co("org", _Any) ->
+    "org.co";
+
+co("com", _Any) ->
+    "com.co";
+
+co("arts", _Any) ->
+    "arts.co";
+
+
+co(_, _) ->
+    "co".
 
 %% regular rules
 hr("from", _Any) ->
@@ -16509,40 +17094,1047 @@ hr("from", _Any) ->
 hr("name", _Any) ->
     "name.hr";
 
-hr("iz", _Any) ->
-    "iz.hr";
-
 hr("com", _Any) ->
     "com.hr";
+
+hr("iz", _Any) ->
+    "iz.hr";
 
 
 hr(_, _) ->
     "hr".
 
 %% regular rules
-pw("ne", _Any) ->
-    "ne.pw";
+it("nu", _Any) ->
+    "nu.it";
 
-pw("co", _Any) ->
-    "co.pw";
+it("cam", _Any) ->
+    "cam.it";
 
-pw("ed", _Any) ->
-    "ed.pw";
+it("fvg", _Any) ->
+    "fvg.it";
 
-pw("go", _Any) ->
-    "go.pw";
+it("rome", _Any) ->
+    "rome.it";
 
-pw("belau", _Any) ->
-    "belau.pw";
+it("rm", _Any) ->
+    "rm.it";
 
-pw("or", _Any) ->
-    "or.pw";
+it("cs", _Any) ->
+    "cs.it";
+
+it("go", _Any) ->
+    "go.it";
+
+it("urbinopesaro", _Any) ->
+    "urbinopesaro.it";
+
+it("valleaosta", _Any) ->
+    "valleaosta.it";
+
+it("sic", _Any) ->
+    "sic.it";
+
+it("pug", _Any) ->
+    "pug.it";
+
+it("bergamo", _Any) ->
+    "bergamo.it";
+
+it("imperia", _Any) ->
+    "imperia.it";
+
+it("sicily", _Any) ->
+    "sicily.it";
+
+it("perugia", _Any) ->
+    "perugia.it";
+
+it("ta", _Any) ->
+    "ta.it";
+
+it("roma", _Any) ->
+    "roma.it";
+
+it("pz", _Any) ->
+    "pz.it";
+
+it("rovigo", _Any) ->
+    "rovigo.it";
+
+it("emiliaromagna", _Any) ->
+    "emiliaromagna.it";
+
+it("caserta", _Any) ->
+    "caserta.it";
+
+it("mi", _Any) ->
+    "mi.it";
+
+it("marche", _Any) ->
+    "marche.it";
+
+it("na", _Any) ->
+    "na.it";
+
+it("bl", _Any) ->
+    "bl.it";
+
+it("verona", _Any) ->
+    "verona.it";
+
+it("sardinia", _Any) ->
+    "sardinia.it";
+
+it("pt", _Any) ->
+    "pt.it";
+
+it("livorno", _Any) ->
+    "livorno.it";
+
+it("trentinosuedtirol", _Any) ->
+    "trentinosuedtirol.it";
+
+it("vda", _Any) ->
+    "vda.it";
+
+it("abruzzo", _Any) ->
+    "abruzzo.it";
+
+it("chieti", _Any) ->
+    "chieti.it";
+
+it("laquila", _Any) ->
+    "laquila.it";
+
+it("no", _Any) ->
+    "no.it";
+
+it("siena", _Any) ->
+    "siena.it";
+
+it("mc", _Any) ->
+    "mc.it";
+
+it("vao", _Any) ->
+    "vao.it";
+
+it("ro", _Any) ->
+    "ro.it";
+
+it("teramo", _Any) ->
+    "teramo.it";
+
+it("venezia", _Any) ->
+    "venezia.it";
+
+it("tp", _Any) ->
+    "tp.it";
+
+it("pescara", _Any) ->
+    "pescara.it";
+
+it("le", _Any) ->
+    "le.it";
+
+it("so", _Any) ->
+    "so.it";
+
+it("puglia", _Any) ->
+    "puglia.it";
+
+it("im", _Any) ->
+    "im.it";
+
+it("is", _Any) ->
+    "is.it";
+
+it("viterbo", _Any) ->
+    "viterbo.it";
+
+it("venice", _Any) ->
+    "venice.it";
+
+it("piacenza", _Any) ->
+    "piacenza.it";
+
+it("milan", _Any) ->
+    "milan.it";
+
+it("ud", _Any) ->
+    "ud.it";
+
+it("reggiocalabria", _Any) ->
+    "reggiocalabria.it";
+
+it("lt", _Any) ->
+    "lt.it";
+
+it("taranto", _Any) ->
+    "taranto.it";
+
+it("re", _Any) ->
+    "re.it";
+
+it("turin", _Any) ->
+    "turin.it";
+
+it("ogliastra", _Any) ->
+    "ogliastra.it";
+
+it("brindisi", _Any) ->
+    "brindisi.it";
+
+it("ts", _Any) ->
+    "ts.it";
+
+it("parma", _Any) ->
+    "parma.it";
+
+it("torino", _Any) ->
+    "torino.it";
+
+it("prato", _Any) ->
+    "prato.it";
+
+it("cn", _Any) ->
+    "cn.it";
+
+it("mo", _Any) ->
+    "mo.it";
+
+it("ci", _Any) ->
+    "ci.it";
+
+it("trentinostirol", _Any) ->
+    "trentinostirol.it";
+
+it("pc", _Any) ->
+    "pc.it";
+
+it("aostavalley", _Any) ->
+    "aostavalley.it";
+
+it("avellino", _Any) ->
+    "avellino.it";
+
+it("liguria", _Any) ->
+    "liguria.it";
+
+it("sp", _Any) ->
+    "sp.it";
+
+it("ce", _Any) ->
+    "ce.it";
+
+it("av", _Any) ->
+    "av.it";
+
+it("lombardia", _Any) ->
+    "lombardia.it";
+
+it("mol", _Any) ->
+    "mol.it";
+
+it("br", _Any) ->
+    "br.it";
+
+it("mar", _Any) ->
+    "mar.it";
+
+it("sondrio", _Any) ->
+    "sondrio.it";
+
+it("al", _Any) ->
+    "al.it";
+
+it("pr", _Any) ->
+    "pr.it";
+
+it("ven", _Any) ->
+    "ven.it";
+
+it("vibovalentia", _Any) ->
+    "vibovalentia.it";
+
+it("monza", _Any) ->
+    "monza.it";
+
+it("cesenaforli", _Any) ->
+    "cesenaforli.it";
+
+it("bz", _Any) ->
+    "bz.it";
+
+it("calabria", _Any) ->
+    "calabria.it";
+
+it("tempioolbia", _Any) ->
+    "tempioolbia.it";
+
+it("mt", _Any) ->
+    "mt.it";
+
+it("andriatranibarletta", _Any) ->
+    "andriatranibarletta.it";
+
+it("abr", _Any) ->
+    "abr.it";
+
+it("nuoro", _Any) ->
+    "nuoro.it";
+
+it("emr", _Any) ->
+    "emr.it";
+
+it("ravenna", _Any) ->
+    "ravenna.it";
+
+it("cb", _Any) ->
+    "cb.it";
+
+it("rg", _Any) ->
+    "rg.it";
+
+it("monzaebrianza", _Any) ->
+    "monzaebrianza.it";
+
+it("ap", _Any) ->
+    "ap.it";
+
+it("vercelli", _Any) ->
+    "vercelli.it";
+
+it("bn", _Any) ->
+    "bn.it";
+
+it("ri", _Any) ->
+    "ri.it";
+
+it("ascolipiceno", _Any) ->
+    "ascolipiceno.it";
+
+it("lazio", _Any) ->
+    "lazio.it";
+
+it("ca", _Any) ->
+    "ca.it";
+
+it("fe", _Any) ->
+    "fe.it";
+
+it("en", _Any) ->
+    "en.it";
+
+it("bt", _Any) ->
+    "bt.it";
+
+it("an", _Any) ->
+    "an.it";
+
+it("aq", _Any) ->
+    "aq.it";
+
+it("macerata", _Any) ->
+    "macerata.it";
+
+it("trentinosudtirol", _Any) ->
+    "trentinosudtirol.it";
+
+it("monzabrianza", _Any) ->
+    "monzabrianza.it";
+
+it("valdaosta", _Any) ->
+    "valdaosta.it";
+
+it("pistoia", _Any) ->
+    "pistoia.it";
+
+it("friulivgiulia", _Any) ->
+    "friulivgiulia.it";
+
+it("lecce", _Any) ->
+    "lecce.it";
+
+it("og", _Any) ->
+    "og.it";
+
+it("mn", _Any) ->
+    "mn.it";
+
+it("milano", _Any) ->
+    "milano.it";
+
+it("sicilia", _Any) ->
+    "sicilia.it";
+
+it("salerno", _Any) ->
+    "salerno.it";
+
+it("trentino", _Any) ->
+    "trentino.it";
+
+it("sar", _Any) ->
+    "sar.it";
+
+it("dellogliastra", _Any) ->
+    "dellogliastra.it";
+
+it("cremona", _Any) ->
+    "cremona.it";
+
+it("sv", _Any) ->
+    "sv.it";
+
+it("padua", _Any) ->
+    "padua.it";
+
+it("agrigento", _Any) ->
+    "agrigento.it";
+
+it("aosta", _Any) ->
+    "aosta.it";
+
+it("po", _Any) ->
+    "po.it";
+
+it("tos", _Any) ->
+    "tos.it";
+
+it("cr", _Any) ->
+    "cr.it";
+
+it("siracusa", _Any) ->
+    "siracusa.it";
+
+it("mb", _Any) ->
+    "mb.it";
+
+it("vv", _Any) ->
+    "vv.it";
+
+it("kr", _Any) ->
+    "kr.it";
+
+it("vi", _Any) ->
+    "vi.it";
+
+it("tranibarlettaandria", _Any) ->
+    "tranibarlettaandria.it";
+
+it("andriabarlettatrani", _Any) ->
+    "andriabarlettatrani.it";
+
+it("lu", _Any) ->
+    "lu.it";
+
+it("pv", _Any) ->
+    "pv.it";
+
+it("iglesiascarbonia", _Any) ->
+    "iglesiascarbonia.it";
+
+it("sa", _Any) ->
+    "sa.it";
+
+it("lecco", _Any) ->
+    "lecco.it";
+
+it("pordenone", _Any) ->
+    "pordenone.it";
+
+it("rn", _Any) ->
+    "rn.it";
+
+it("brescia", _Any) ->
+    "brescia.it";
+
+it("crotone", _Any) ->
+    "crotone.it";
+
+it("barlettatraniandria", _Any) ->
+    "barlettatraniandria.it";
+
+it("carraramassa", _Any) ->
+    "carraramassa.it";
+
+it("olbiatempio", _Any) ->
+    "olbiatempio.it";
+
+it("tr", _Any) ->
+    "tr.it";
+
+it("to", _Any) ->
+    "to.it";
+
+it("pa", _Any) ->
+    "pa.it";
+
+it("cal", _Any) ->
+    "cal.it";
+
+it("campania", _Any) ->
+    "campania.it";
+
+it("benevento", _Any) ->
+    "benevento.it";
+
+it("varese", _Any) ->
+    "varese.it";
+
+it("como", _Any) ->
+    "como.it";
+
+it("forlicesena", _Any) ->
+    "forlicesena.it";
+
+it("pi", _Any) ->
+    "pi.it";
+
+it("laspezia", _Any) ->
+    "laspezia.it";
+
+it("catanzaro", _Any) ->
+    "catanzaro.it";
+
+it("pmn", _Any) ->
+    "pmn.it";
+
+it("fi", _Any) ->
+    "fi.it";
+
+it("piemonte", _Any) ->
+    "piemonte.it";
+
+it("ss", _Any) ->
+    "ss.it";
+
+it("sr", _Any) ->
+    "sr.it";
+
+it("campobasso", _Any) ->
+    "campobasso.it";
+
+it("te", _Any) ->
+    "te.it";
+
+it("or", _Any) ->
+    "or.it";
+
+it("gr", _Any) ->
+    "gr.it";
+
+it("lc", _Any) ->
+    "lc.it";
+
+it("palermo", _Any) ->
+    "palermo.it";
+
+it("pisa", _Any) ->
+    "pisa.it";
+
+it("ferrara", _Any) ->
+    "ferrara.it";
+
+it("rieti", _Any) ->
+    "rieti.it";
+
+it("mediocampidano", _Any) ->
+    "mediocampidano.it";
+
+it("ancona", _Any) ->
+    "ancona.it";
+
+it("fc", _Any) ->
+    "fc.it";
+
+it("carboniaiglesias", _Any) ->
+    "carboniaiglesias.it";
+
+it("pavia", _Any) ->
+    "pavia.it";
+
+it("trapani", _Any) ->
+    "trapani.it";
+
+it("lodi", _Any) ->
+    "lodi.it";
+
+it("ge", _Any) ->
+    "ge.it";
+
+it("bolzano", _Any) ->
+    "bolzano.it";
+
+it("cosenza", _Any) ->
+    "cosenza.it";
+
+it("biella", _Any) ->
+    "biella.it";
+
+it("ot", _Any) ->
+    "ot.it";
+
+it("gorizia", _Any) ->
+    "gorizia.it";
+
+it("aoste", _Any) ->
+    "aoste.it";
+
+it("ba", _Any) ->
+    "ba.it";
+
+it("blogspot", _Any) ->
+    "blogspot.it";
+
+it("pesarourbino", _Any) ->
+    "pesarourbino.it";
+
+it("verbania", _Any) ->
+    "verbania.it";
+
+it("tn", _Any) ->
+    "tn.it";
+
+it("ch", _Any) ->
+    "ch.it";
+
+it("si", _Any) ->
+    "si.it";
+
+it("potenza", _Any) ->
+    "potenza.it";
+
+it("monzaedellabrianza", _Any) ->
+    "monzaedellabrianza.it";
+
+it("pe", _Any) ->
+    "pe.it";
+
+it("foggia", _Any) ->
+    "foggia.it";
+
+it("pu", _Any) ->
+    "pu.it";
+
+it("padova", _Any) ->
+    "padova.it";
+
+it("lucca", _Any) ->
+    "lucca.it";
+
+it("sardegna", _Any) ->
+    "sardegna.it";
+
+it("ra", _Any) ->
+    "ra.it";
+
+it("li", _Any) ->
+    "li.it";
+
+it("massacarrara", _Any) ->
+    "massacarrara.it";
+
+it("savona", _Any) ->
+    "savona.it";
+
+it("rc", _Any) ->
+    "rc.it";
+
+it("udine", _Any) ->
+    "udine.it";
+
+it("lom", _Any) ->
+    "lom.it";
+
+it("matera", _Any) ->
+    "matera.it";
+
+it("suedtirol", _Any) ->
+    "suedtirol.it";
+
+it("umb", _Any) ->
+    "umb.it";
+
+it("arezzo", _Any) ->
+    "arezzo.it";
+
+it("pd", _Any) ->
+    "pd.it";
+
+it("ms", _Any) ->
+    "ms.it";
+
+it("terni", _Any) ->
+    "terni.it";
+
+it("balsan", _Any) ->
+    "balsan.it";
+
+it("trieste", _Any) ->
+    "trieste.it";
+
+it("enna", _Any) ->
+    "enna.it";
+
+it("bs", _Any) ->
+    "bs.it";
+
+it("traniandriabarletta", _Any) ->
+    "traniandriabarletta.it";
+
+it("asti", _Any) ->
+    "asti.it";
+
+it("altoadige", _Any) ->
+    "altoadige.it";
+
+it("ragusa", _Any) ->
+    "ragusa.it";
+
+it("edu", _Any) ->
+    "edu.it";
+
+it("valledaosta", _Any) ->
+    "valledaosta.it";
+
+it("firenze", _Any) ->
+    "firenze.it";
+
+it("valleeaoste", _Any) ->
+    "valleeaoste.it";
+
+it("alessandria", _Any) ->
+    "alessandria.it";
+
+it("veneto", _Any) ->
+    "veneto.it";
+
+it("vt", _Any) ->
+    "vt.it";
+
+it("friuliveneziagiulia", _Any) ->
+    "friuliveneziagiulia.it";
+
+it("umbria", _Any) ->
+    "umbria.it";
+
+it("bg", _Any) ->
+    "bg.it";
+
+it("molise", _Any) ->
+    "molise.it";
+
+it("trentinoaltoadige", _Any) ->
+    "trentinoaltoadige.it";
+
+it("bi", _Any) ->
+    "bi.it";
+
+it("laz", _Any) ->
+    "laz.it";
+
+it("oristano", _Any) ->
+    "oristano.it";
+
+it("florence", _Any) ->
+    "florence.it";
+
+it("treviso", _Any) ->
+    "treviso.it";
+
+it("pn", _Any) ->
+    "pn.it";
+
+it("naples", _Any) ->
+    "naples.it";
+
+it("napoli", _Any) ->
+    "napoli.it";
+
+it("vicenza", _Any) ->
+    "vicenza.it";
+
+it("reggioemilia", _Any) ->
+    "reggioemilia.it";
+
+it("vs", _Any) ->
+    "vs.it";
+
+it("bozen", _Any) ->
+    "bozen.it";
+
+it("lig", _Any) ->
+    "lig.it";
+
+it("trentinoaadige", _Any) ->
+    "trentinoaadige.it";
+
+it("ag", _Any) ->
+    "ag.it";
+
+it("cagliari", _Any) ->
+    "cagliari.it";
+
+it("isernia", _Any) ->
+    "isernia.it";
+
+it("caltanissetta", _Any) ->
+    "caltanissetta.it";
+
+it("tuscany", _Any) ->
+    "tuscany.it";
+
+it("bo", _Any) ->
+    "bo.it";
+
+it("ct", _Any) ->
+    "ct.it";
+
+it("bas", _Any) ->
+    "bas.it";
+
+it("vb", _Any) ->
+    "vb.it";
+
+it("pg", _Any) ->
+    "pg.it";
+
+it("messina", _Any) ->
+    "messina.it";
+
+it("lucania", _Any) ->
+    "lucania.it";
+
+it("genoa", _Any) ->
+    "genoa.it";
+
+it("mantova", _Any) ->
+    "mantova.it";
+
+it("bari", _Any) ->
+    "bari.it";
+
+it("modena", _Any) ->
+    "modena.it";
+
+it("me", _Any) ->
+    "me.it";
+
+it("lombardy", _Any) ->
+    "lombardy.it";
+
+it("fg", _Any) ->
+    "fg.it";
+
+it("taa", _Any) ->
+    "taa.it";
+
+it("sassari", _Any) ->
+    "sassari.it";
+
+it("grosseto", _Any) ->
+    "grosseto.it";
+
+it("co", _Any) ->
+    "co.it";
+
+it("trento", _Any) ->
+    "trento.it";
+
+it("ve", _Any) ->
+    "ve.it";
+
+it("toscana", _Any) ->
+    "toscana.it";
+
+it("aquila", _Any) ->
+    "aquila.it";
+
+it("piedmont", _Any) ->
+    "piedmont.it";
+
+it("cz", _Any) ->
+    "cz.it";
+
+it("at", _Any) ->
+    "at.it";
+
+it("fm", _Any) ->
+    "fm.it";
+
+it("bologna", _Any) ->
+    "bologna.it";
+
+it("catania", _Any) ->
+    "catania.it";
+
+it("vc", _Any) ->
+    "vc.it";
+
+it("belluno", _Any) ->
+    "belluno.it";
+
+it("gov", _Any) ->
+    "gov.it";
+
+it("tv", _Any) ->
+    "tv.it";
+
+it("ao", _Any) ->
+    "ao.it";
+
+it("fr", _Any) ->
+    "fr.it";
+
+it("lo", _Any) ->
+    "lo.it";
+
+it("frosinone", _Any) ->
+    "frosinone.it";
+
+it("va", _Any) ->
+    "va.it";
+
+it("novara", _Any) ->
+    "novara.it";
+
+it("rimini", _Any) ->
+    "rimini.it";
+
+it("cl", _Any) ->
+    "cl.it";
+
+it("fermo", _Any) ->
+    "fermo.it";
+
+it("cuneo", _Any) ->
+    "cuneo.it";
+
+it("basilicata", _Any) ->
+    "basilicata.it";
+
+it("genova", _Any) ->
+    "genova.it";
+
+it("campidanomedio", _Any) ->
+    "campidanomedio.it";
+
+it("vr", _Any) ->
+    "vr.it";
+
+it("friulivegiulia", _Any) ->
+    "friulivegiulia.it";
+
+it("latina", _Any) ->
+    "latina.it";
+
+it("ar", _Any) ->
+    "ar.it";
 
 
-pw(_, _) ->
-    "pw".
+it(_, _) ->
+    "it".
 
 %% regular rules
+me("ac", _Any) ->
+    "ac.me";
+
+me("org", _Any) ->
+    "org.me";
+
+me("gov", _Any) ->
+    "gov.me";
+
+me("net", _Any) ->
+    "net.me";
+
+me("priv", _Any) ->
+    "priv.me";
+
+me("edu", _Any) ->
+    "edu.me";
+
+me("co", _Any) ->
+    "co.me";
+
+me("its", _Any) ->
+    "its.me";
+
+
+me(_, _) ->
+    "me".
+
+%% regular rules
+gg("co", _Any) ->
+    "co.gg";
+
+gg("org", _Any) ->
+    "org.gg";
+
+gg("net", _Any) ->
+    "net.gg";
+
+
+gg(_, _) ->
+    "gg".
+
+%% regular rules
+kz("net", _Any) ->
+    "net.kz";
+
+kz("mil", _Any) ->
+    "mil.kz";
+
+kz("gov", _Any) ->
+    "gov.kz";
+
+kz("com", _Any) ->
+    "com.kz";
+
+kz("org", _Any) ->
+    "org.kz";
+
+kz("edu", _Any) ->
+    "edu.kz";
+
+
+kz(_, _) ->
+    "kz".
+
+%% regular rules
+vc("mil", _Any) ->
+    "mil.vc";
+
+vc("net", _Any) ->
+    "net.vc";
+
+vc("gov", _Any) ->
+    "gov.vc";
+
+vc("edu", _Any) ->
+    "edu.vc";
+
+vc("com", _Any) ->
+    "com.vc";
+
+vc("org", _Any) ->
+    "org.vc";
+
+
+vc(_, _) ->
+    "vc".
+
+%% regular rules
+at("gv", _Any) ->
+    "gv.at";
+
+at("info", _Any) ->
+    "info.at";
+
+at("priv", _Any) ->
+    "priv.at";
+
 at("ac", _Any) ->
     "ac.at";
 
@@ -16552,20 +18144,11 @@ at("co", Parts) ->
     [First | Rest] = Parts,
     co_at(First, Rest);
 
-at("gv", _Any) ->
-    "gv.at";
-
-at("info", _Any) ->
-    "info.at";
-
 at("or", _Any) ->
     "or.at";
 
 at("biz", _Any) ->
     "biz.at";
-
-at("priv", _Any) ->
-    "priv.at";
 
 
 at(_, _) ->
@@ -16580,241 +18163,989 @@ co_at(_, _) ->
     "co.at".
 
 %% regular rules
-rs("in", _Any) ->
-    "in.rs";
+sb("net", _Any) ->
+    "net.sb";
 
-rs("ac", _Any) ->
-    "ac.rs";
+sb("gov", _Any) ->
+    "gov.sb";
 
-rs("co", _Any) ->
-    "co.rs";
+sb("edu", _Any) ->
+    "edu.sb";
 
-rs("edu", _Any) ->
-    "edu.rs";
+sb("org", _Any) ->
+    "org.sb";
 
-rs("org", _Any) ->
-    "org.rs";
-
-rs("gov", _Any) ->
-    "gov.rs";
+sb("com", _Any) ->
+    "com.sb";
 
 
-rs(_, _) ->
-    "rs".
+sb(_, _) ->
+    "sb".
 
 %% regular rules
-al("org", _Any) ->
-    "org.al";
+ph("ngo", _Any) ->
+    "ngo.ph";
 
-al("edu", _Any) ->
-    "edu.al";
+ph("gov", _Any) ->
+    "gov.ph";
 
-al("net", _Any) ->
-    "net.al";
+ph("i", _Any) ->
+    "i.ph";
 
-al("mil", _Any) ->
-    "mil.al";
+ph("com", _Any) ->
+    "com.ph";
 
-al("gov", _Any) ->
-    "gov.al";
+ph("org", _Any) ->
+    "org.ph";
 
-al("com", _Any) ->
-    "com.al";
+ph("net", _Any) ->
+    "net.ph";
 
+ph("edu", _Any) ->
+    "edu.ph";
 
-al(_, _) ->
-    "al".
-
-%% regular rules
-ma("net", _Any) ->
-    "net.ma";
-
-ma("co", _Any) ->
-    "co.ma";
-
-ma("ac", _Any) ->
-    "ac.ma";
-
-ma("org", _Any) ->
-    "org.ma";
-
-ma("gov", _Any) ->
-    "gov.ma";
-
-ma("press", _Any) ->
-    "press.ma";
+ph("mil", _Any) ->
+    "mil.ph";
 
 
-ma(_, _) ->
-    "ma".
+ph(_, _) ->
+    "ph".
 
 %% regular rules
-ms("net", _Any) ->
-    "net.ms";
+ru("zgrad", _Any) ->
+    "zgrad.ru";
 
-ms("org", _Any) ->
-    "org.ms";
+ru("oryol", _Any) ->
+    "oryol.ru";
 
-ms("edu", _Any) ->
-    "edu.ms";
+ru("vyatka", _Any) ->
+    "vyatka.ru";
 
-ms("com", _Any) ->
-    "com.ms";
+ru("mytis", _Any) ->
+    "mytis.ru";
 
-ms("gov", _Any) ->
-    "gov.ms";
+ru("mari", _Any) ->
+    "mari.ru";
+
+ru("kostroma", _Any) ->
+    "kostroma.ru";
+
+ru("kamchatka", _Any) ->
+    "kamchatka.ru";
+
+ru("yamal", _Any) ->
+    "yamal.ru";
+
+ru("dagestan", _Any) ->
+    "dagestan.ru";
+
+ru("nalchik", _Any) ->
+    "nalchik.ru";
+
+ru("kirov", _Any) ->
+    "kirov.ru";
+
+ru("kuban", _Any) ->
+    "kuban.ru";
+
+ru("amursk", _Any) ->
+    "amursk.ru";
+
+ru("magnitka", _Any) ->
+    "magnitka.ru";
+
+ru("vladimir", _Any) ->
+    "vladimir.ru";
+
+ru("dudinka", _Any) ->
+    "dudinka.ru";
+
+ru("novosibirsk", _Any) ->
+    "novosibirsk.ru";
+
+ru("pyatigorsk", _Any) ->
+    "pyatigorsk.ru";
+
+ru("edu", _Any) ->
+    "edu.ru";
+
+ru("koenig", _Any) ->
+    "koenig.ru";
+
+ru("stv", _Any) ->
+    "stv.ru";
+
+ru("kursk", _Any) ->
+    "kursk.ru";
+
+ru("tyumen", _Any) ->
+    "tyumen.ru";
+
+ru("com", _Any) ->
+    "com.ru";
+
+ru("palana", _Any) ->
+    "palana.ru";
+
+ru("orenburg", _Any) ->
+    "orenburg.ru";
+
+ru("buryatia", _Any) ->
+    "buryatia.ru";
+
+ru("tver", _Any) ->
+    "tver.ru";
+
+ru("izhevsk", _Any) ->
+    "izhevsk.ru";
+
+ru("kuzbass", _Any) ->
+    "kuzbass.ru";
+
+ru("oskol", _Any) ->
+    "oskol.ru";
+
+ru("spb", _Any) ->
+    "spb.ru";
+
+ru("rubtsovsk", _Any) ->
+    "rubtsovsk.ru";
+
+ru("pp", _Any) ->
+    "pp.ru";
+
+ru("mosreg", _Any) ->
+    "mosreg.ru";
+
+ru("kms", _Any) ->
+    "kms.ru";
+
+ru("ac", _Any) ->
+    "ac.ru";
+
+ru("org", _Any) ->
+    "org.ru";
+
+ru("voronezh", _Any) ->
+    "voronezh.ru";
+
+ru("bryansk", _Any) ->
+    "bryansk.ru";
+
+ru("chelyabinsk", _Any) ->
+    "chelyabinsk.ru";
+
+ru("mil", _Any) ->
+    "mil.ru";
+
+ru("tambov", _Any) ->
+    "tambov.ru";
+
+ru("stavropol", _Any) ->
+    "stavropol.ru";
+
+ru("int", _Any) ->
+    "int.ru";
+
+ru("amur", _Any) ->
+    "amur.ru";
+
+ru("smolensk", _Any) ->
+    "smolensk.ru";
+
+ru("chita", _Any) ->
+    "chita.ru";
+
+ru("snz", _Any) ->
+    "snz.ru";
+
+ru("chel", _Any) ->
+    "chel.ru";
+
+ru("komi", _Any) ->
+    "komi.ru";
+
+ru("cbg", _Any) ->
+    "cbg.ru";
+
+ru("kchr", _Any) ->
+    "kchr.ru";
+
+ru("vladikavkaz", _Any) ->
+    "vladikavkaz.ru";
+
+ru("belgorod", _Any) ->
+    "belgorod.ru";
+
+ru("jar", _Any) ->
+    "jar.ru";
+
+ru("vrn", _Any) ->
+    "vrn.ru";
+
+ru("kurgan", _Any) ->
+    "kurgan.ru";
+
+ru("tom", _Any) ->
+    "tom.ru";
+
+ru("yekaterinburg", _Any) ->
+    "yekaterinburg.ru";
+
+ru("vladivostok", _Any) ->
+    "vladivostok.ru";
+
+ru("tsaritsyn", _Any) ->
+    "tsaritsyn.ru";
+
+ru("kalmykia", _Any) ->
+    "kalmykia.ru";
+
+ru("perm", _Any) ->
+    "perm.ru";
+
+ru("grozny", _Any) ->
+    "grozny.ru";
+
+ru("cmw", _Any) ->
+    "cmw.ru";
+
+ru("chuvashia", _Any) ->
+    "chuvashia.ru";
+
+ru("baikal", _Any) ->
+    "baikal.ru";
+
+ru("mordovia", _Any) ->
+    "mordovia.ru";
+
+ru("kemerovo", _Any) ->
+    "kemerovo.ru";
+
+ru("ryazan", _Any) ->
+    "ryazan.ru";
+
+ru("astrakhan", _Any) ->
+    "astrakhan.ru";
+
+ru("syzran", _Any) ->
+    "syzran.ru";
+
+ru("surgut", _Any) ->
+    "surgut.ru";
+
+ru("tatarstan", _Any) ->
+    "tatarstan.ru";
+
+ru("karelia", _Any) ->
+    "karelia.ru";
+
+ru("tula", _Any) ->
+    "tula.ru";
+
+ru("lipetsk", _Any) ->
+    "lipetsk.ru";
+
+ru("penza", _Any) ->
+    "penza.ru";
+
+ru("test", _Any) ->
+    "test.ru";
+
+ru("udm", _Any) ->
+    "udm.ru";
+
+ru("vdonsk", _Any) ->
+    "vdonsk.ru";
+
+ru("murmansk", _Any) ->
+    "murmansk.ru";
+
+ru("fareast", _Any) ->
+    "fareast.ru";
+
+ru("norilsk", _Any) ->
+    "norilsk.ru";
+
+ru("nov", _Any) ->
+    "nov.ru";
+
+ru("vologda", _Any) ->
+    "vologda.ru";
+
+ru("volgograd", _Any) ->
+    "volgograd.ru";
+
+ru("khakassia", _Any) ->
+    "khakassia.ru";
+
+ru("krasnoyarsk", _Any) ->
+    "krasnoyarsk.ru";
+
+ru("adygeya", _Any) ->
+    "adygeya.ru";
+
+ru("nsk", _Any) ->
+    "nsk.ru";
+
+ru("ivanovo", _Any) ->
+    "ivanovo.ru";
+
+ru("jamal", _Any) ->
+    "jamal.ru";
+
+ru("samara", _Any) ->
+    "samara.ru";
+
+ru("ptz", _Any) ->
+    "ptz.ru";
+
+ru("tomsk", _Any) ->
+    "tomsk.ru";
+
+ru("tsk", _Any) ->
+    "tsk.ru";
+
+ru("irkutsk", _Any) ->
+    "irkutsk.ru";
+
+ru("simbirsk", _Any) ->
+    "simbirsk.ru";
+
+ru("nakhodka", _Any) ->
+    "nakhodka.ru";
+
+ru("khabarovsk", _Any) ->
+    "khabarovsk.ru";
+
+ru("nkz", _Any) ->
+    "nkz.ru";
+
+ru("saratov", _Any) ->
+    "saratov.ru";
+
+ru("kaluga", _Any) ->
+    "kaluga.ru";
+
+ru("rnd", _Any) ->
+    "rnd.ru";
+
+ru("msk", _Any) ->
+    "msk.ru";
+
+ru("kazan", _Any) ->
+    "kazan.ru";
+
+ru("chukotka", _Any) ->
+    "chukotka.ru";
+
+ru("yaroslavl", _Any) ->
+    "yaroslavl.ru";
+
+ru("udmurtia", _Any) ->
+    "udmurtia.ru";
+
+ru("yakutia", _Any) ->
+    "yakutia.ru";
+
+ru("kustanai", _Any) ->
+    "kustanai.ru";
+
+ru("tuva", _Any) ->
+    "tuva.ru";
+
+ru("bir", _Any) ->
+    "bir.ru";
+
+ru("altai", _Any) ->
+    "altai.ru";
+
+ru("nnov", _Any) ->
+    "nnov.ru";
+
+ru("arkhangelsk", _Any) ->
+    "arkhangelsk.ru";
+
+ru("bashkiria", _Any) ->
+    "bashkiria.ru";
+
+ru("net", _Any) ->
+    "net.ru";
+
+ru("khv", _Any) ->
+    "khv.ru";
+
+ru("omsk", _Any) ->
+    "omsk.ru";
+
+ru("sakhalin", _Any) ->
+    "sakhalin.ru";
+
+ru("gov", _Any) ->
+    "gov.ru";
+
+ru("magadan", _Any) ->
+    "magadan.ru";
+
+ru("marine", _Any) ->
+    "marine.ru";
 
 
-ms(_, _) ->
-    "ms".
+ru(_, _) ->
+    "ru".
 
 %% regular rules
-cw("org", _Any) ->
-    "org.cw";
+id("net", _Any) ->
+    "net.id";
 
-cw("edu", _Any) ->
-    "edu.cw";
+id("biz", _Any) ->
+    "biz.id";
 
-cw("net", _Any) ->
-    "net.cw";
+id("web", _Any) ->
+    "web.id";
 
-cw("com", _Any) ->
-    "com.cw";
+id("ac", _Any) ->
+    "ac.id";
 
+id("my", _Any) ->
+    "my.id";
 
-cw(_, _) ->
-    "cw".
+id("sch", _Any) ->
+    "sch.id";
 
-%% regular rules
-ml("presse", _Any) ->
-    "presse.ml";
+id("mil", _Any) ->
+    "mil.id";
 
-ml("com", _Any) ->
-    "com.ml";
+id("go", _Any) ->
+    "go.id";
 
-ml("gov", _Any) ->
-    "gov.ml";
+id("desa", _Any) ->
+    "desa.id";
 
-ml("gouv", _Any) ->
-    "gouv.ml";
+id("co", _Any) ->
+    "co.id";
 
-ml("net", _Any) ->
-    "net.ml";
-
-ml("org", _Any) ->
-    "org.ml";
-
-ml("edu", _Any) ->
-    "edu.ml";
+id("or", _Any) ->
+    "or.id";
 
 
-ml(_, _) ->
-    "ml".
+id(_, _) ->
+    "id".
 
 %% regular rules
-co("nom", _Any) ->
-    "nom.co";
+bm("edu", _Any) ->
+    "edu.bm";
 
-co("gov", _Any) ->
-    "gov.co";
+bm("org", _Any) ->
+    "org.bm";
 
-co("web", _Any) ->
-    "web.co";
+bm("com", _Any) ->
+    "com.bm";
 
-co("edu", _Any) ->
-    "edu.co";
+bm("gov", _Any) ->
+    "gov.bm";
 
-co("net", _Any) ->
-    "net.co";
-
-co("mil", _Any) ->
-    "mil.co";
-
-co("com", _Any) ->
-    "com.co";
-
-co("info", _Any) ->
-    "info.co";
-
-co("firm", _Any) ->
-    "firm.co";
-
-co("arts", _Any) ->
-    "arts.co";
-
-co("rec", _Any) ->
-    "rec.co";
-
-co("org", _Any) ->
-    "org.co";
-
-co("int", _Any) ->
-    "int.co";
+bm("net", _Any) ->
+    "net.bm";
 
 
-co(_, _) ->
-    "co".
+bm(_, _) ->
+    "bm".
 
 %% regular rules
-us("ks", []) ->
-    "ks.us";
-us("ks", Parts) ->
-    [First | Rest] = Parts,
-    ks_us(First, Rest);
+info("webhop", _Any) ->
+    "webhop.info";
 
-us("ok", []) ->
-    "ok.us";
-us("ok", Parts) ->
-    [First | Rest] = Parts,
-    ok_us(First, Rest);
+info("dyndns", _Any) ->
+    "dyndns.info";
 
-us("ct", []) ->
-    "ct.us";
-us("ct", Parts) ->
-    [First | Rest] = Parts,
-    ct_us(First, Rest);
+info("knowsitall", _Any) ->
+    "knowsitall.info";
 
-us("nv", []) ->
-    "nv.us";
-us("nv", Parts) ->
-    [First | Rest] = Parts,
-    nv_us(First, Rest);
+info("selfip", _Any) ->
+    "selfip.info";
 
-us("me", []) ->
-    "me.us";
-us("me", Parts) ->
-    [First | Rest] = Parts,
-    me_us(First, Rest);
 
-us("va", []) ->
-    "va.us";
-us("va", Parts) ->
-    [First | Rest] = Parts,
-    va_us(First, Rest);
+info(_, _) ->
+    "info".
 
-us("sc", []) ->
-    "sc.us";
-us("sc", Parts) ->
-    [First | Rest] = Parts,
-    sc_us(First, Rest);
+%% regular rules
+aero("flight", _Any) ->
+    "flight.aero";
 
-us("ca", []) ->
-    "ca.us";
-us("ca", Parts) ->
-    [First | Rest] = Parts,
-    ca_us(First, Rest);
+aero("agents", _Any) ->
+    "agents.aero";
 
-us("vi", []) ->
-    "vi.us";
-us("vi", Parts) ->
-    [First | Rest] = Parts,
-    vi_us(First, Rest);
+aero("dgca", _Any) ->
+    "dgca.aero";
 
-us("wv", []) ->
-    "wv.us";
-us("wv", Parts) ->
+aero("media", _Any) ->
+    "media.aero";
+
+aero("scientist", _Any) ->
+    "scientist.aero";
+
+aero("skydiving", _Any) ->
+    "skydiving.aero";
+
+aero("design", _Any) ->
+    "design.aero";
+
+aero("exchange", _Any) ->
+    "exchange.aero";
+
+aero("broker", _Any) ->
+    "broker.aero";
+
+aero("repbody", _Any) ->
+    "repbody.aero";
+
+aero("software", _Any) ->
+    "software.aero";
+
+aero("trader", _Any) ->
+    "trader.aero";
+
+aero("conference", _Any) ->
+    "conference.aero";
+
+aero("engineer", _Any) ->
+    "engineer.aero";
+
+aero("author", _Any) ->
+    "author.aero";
+
+aero("insurance", _Any) ->
+    "insurance.aero";
+
+aero("recreation", _Any) ->
+    "recreation.aero";
+
+aero("hanggliding", _Any) ->
+    "hanggliding.aero";
+
+aero("ambulance", _Any) ->
+    "ambulance.aero";
+
+aero("aircraft", _Any) ->
+    "aircraft.aero";
+
+aero("leasing", _Any) ->
+    "leasing.aero";
+
+aero("maintenance", _Any) ->
+    "maintenance.aero";
+
+aero("ballooning", _Any) ->
+    "ballooning.aero";
+
+aero("consultant", _Any) ->
+    "consultant.aero";
+
+aero("modelling", _Any) ->
+    "modelling.aero";
+
+aero("freight", _Any) ->
+    "freight.aero";
+
+aero("emergency", _Any) ->
+    "emergency.aero";
+
+aero("production", _Any) ->
+    "production.aero";
+
+aero("groundhandling", _Any) ->
+    "groundhandling.aero";
+
+aero("aerobatic", _Any) ->
+    "aerobatic.aero";
+
+aero("council", _Any) ->
+    "council.aero";
+
+aero("caa", _Any) ->
+    "caa.aero";
+
+aero("championship", _Any) ->
+    "championship.aero";
+
+aero("paragliding", _Any) ->
+    "paragliding.aero";
+
+aero("union", _Any) ->
+    "union.aero";
+
+aero("certification", _Any) ->
+    "certification.aero";
+
+aero("show", _Any) ->
+    "show.aero";
+
+aero("group", _Any) ->
+    "group.aero";
+
+aero("student", _Any) ->
+    "student.aero";
+
+aero("control", _Any) ->
+    "control.aero";
+
+aero("club", _Any) ->
+    "club.aero";
+
+aero("amusement", _Any) ->
+    "amusement.aero";
+
+aero("works", _Any) ->
+    "works.aero";
+
+aero("civilaviation", _Any) ->
+    "civilaviation.aero";
+
+aero("magazine", _Any) ->
+    "magazine.aero";
+
+aero("services", _Any) ->
+    "services.aero";
+
+aero("pilot", _Any) ->
+    "pilot.aero";
+
+aero("catering", _Any) ->
+    "catering.aero";
+
+aero("airline", _Any) ->
+    "airline.aero";
+
+aero("trading", _Any) ->
+    "trading.aero";
+
+aero("airtraffic", _Any) ->
+    "airtraffic.aero";
+
+aero("navigation", _Any) ->
+    "navigation.aero";
+
+aero("cargo", _Any) ->
+    "cargo.aero";
+
+aero("research", _Any) ->
+    "research.aero";
+
+aero("entertainment", _Any) ->
+    "entertainment.aero";
+
+aero("gliding", _Any) ->
+    "gliding.aero";
+
+aero("express", _Any) ->
+    "express.aero";
+
+aero("consulting", _Any) ->
+    "consulting.aero";
+
+aero("logistics", _Any) ->
+    "logistics.aero";
+
+aero("journalist", _Any) ->
+    "journalist.aero";
+
+aero("charter", _Any) ->
+    "charter.aero";
+
+aero("equipment", _Any) ->
+    "equipment.aero";
+
+aero("crew", _Any) ->
+    "crew.aero";
+
+aero("safety", _Any) ->
+    "safety.aero";
+
+aero("press", _Any) ->
+    "press.aero";
+
+aero("parachuting", _Any) ->
+    "parachuting.aero";
+
+aero("marketplace", _Any) ->
+    "marketplace.aero";
+
+aero("trainer", _Any) ->
+    "trainer.aero";
+
+aero("aeroclub", _Any) ->
+    "aeroclub.aero";
+
+aero("airport", _Any) ->
+    "airport.aero";
+
+aero("association", _Any) ->
+    "association.aero";
+
+aero("rotorcraft", _Any) ->
+    "rotorcraft.aero";
+
+aero("federation", _Any) ->
+    "federation.aero";
+
+aero("homebuilt", _Any) ->
+    "homebuilt.aero";
+
+aero("engine", _Any) ->
+    "engine.aero";
+
+aero("aerodrome", _Any) ->
+    "aerodrome.aero";
+
+aero("workinggroup", _Any) ->
+    "workinggroup.aero";
+
+aero("microlight", _Any) ->
+    "microlight.aero";
+
+aero("government", _Any) ->
+    "government.aero";
+
+aero("taxi", _Any) ->
+    "taxi.aero";
+
+aero("fuel", _Any) ->
+    "fuel.aero";
+
+aero("educator", _Any) ->
+    "educator.aero";
+
+aero("journal", _Any) ->
+    "journal.aero";
+
+aero("res", _Any) ->
+    "res.aero";
+
+
+aero(_, _) ->
+    "aero".
+
+%% regular rules
+uz("net", _Any) ->
+    "net.uz";
+
+uz("co", _Any) ->
+    "co.uz";
+
+uz("org", _Any) ->
+    "org.uz";
+
+uz("com", _Any) ->
+    "com.uz";
+
+
+uz(_, _) ->
+    "uz".
+
+%% regular rules
+ki("biz", _Any) ->
+    "biz.ki";
+
+ki("gov", _Any) ->
+    "gov.ki";
+
+ki("com", _Any) ->
+    "com.ki";
+
+ki("edu", _Any) ->
+    "edu.ki";
+
+ki("org", _Any) ->
+    "org.ki";
+
+ki("info", _Any) ->
+    "info.ki";
+
+ki("net", _Any) ->
+    "net.ki";
+
+
+ki(_, _) ->
+    "ki".
+
+%% regular rules
+nf("other", _Any) ->
+    "other.nf";
+
+nf("rec", _Any) ->
+    "rec.nf";
+
+nf("store", _Any) ->
+    "store.nf";
+
+nf("web", _Any) ->
+    "web.nf";
+
+nf("arts", _Any) ->
+    "arts.nf";
+
+nf("com", _Any) ->
+    "com.nf";
+
+nf("firm", _Any) ->
+    "firm.nf";
+
+nf("net", _Any) ->
+    "net.nf";
+
+nf("per", _Any) ->
+    "per.nf";
+
+nf("info", _Any) ->
+    "info.nf";
+
+
+nf(_, _) ->
+    "nf".
+
+%% regular rules
+om("pro", _Any) ->
+    "pro.om";
+
+om("gov", _Any) ->
+    "gov.om";
+
+om("com", _Any) ->
+    "com.om";
+
+om("org", _Any) ->
+    "org.om";
+
+om("med", _Any) ->
+    "med.om";
+
+om("net", _Any) ->
+    "net.om";
+
+om("museum", _Any) ->
+    "museum.om";
+
+om("edu", _Any) ->
+    "edu.om";
+
+om("co", _Any) ->
+    "co.om";
+
+
+om(_, _) ->
+    "om".
+
+%% regular rules
+lr("gov", _Any) ->
+    "gov.lr";
+
+lr("edu", _Any) ->
+    "edu.lr";
+
+lr("org", _Any) ->
+    "org.lr";
+
+lr("com", _Any) ->
+    "com.lr";
+
+lr("net", _Any) ->
+    "net.lr";
+
+
+lr(_, _) ->
+    "lr".
+
+%% regular rules
+pw("ne", _Any) ->
+    "ne.pw";
+
+pw("go", _Any) ->
+    "go.pw";
+
+pw("or", _Any) ->
+    "or.pw";
+
+pw("ed", _Any) ->
+    "ed.pw";
+
+pw("belau", _Any) ->
+    "belau.pw";
+
+pw("co", _Any) ->
+    "co.pw";
+
+
+pw(_, _) ->
+    "pw".
+
+%% regular rules
+ps("plo", _Any) ->
+    "plo.ps";
+
+ps("gov", _Any) ->
+    "gov.ps";
+
+ps("org", _Any) ->
+    "org.ps";
+
+ps("edu", _Any) ->
+    "edu.ps";
+
+ps("com", _Any) ->
+    "com.ps";
+
+ps("sec", _Any) ->
+    "sec.ps";
+
+ps("net", _Any) ->
+    "net.ps";
+
+
+ps(_, _) ->
+    "ps".
+
+%% regular rules
+bj("gouv", _Any) ->
+    "gouv.bj";
+
+bj("asso", _Any) ->
+    "asso.bj";
+
+bj("blogspot", _Any) ->
+    "blogspot.bj";
+
+bj("barreau", _Any) ->
+    "barreau.bj";
+
+
+bj(_, _) ->
+    "bj".
+
+%% regular rules
+us("ne", []) ->
+    "ne.us";
+us("ne", Parts) ->
     [First | Rest] = Parts,
-    wv_us(First, Rest);
+    ne_us(First, Rest);
+
+us("mo", []) ->
+    "mo.us";
+us("mo", Parts) ->
+    [First | Rest] = Parts,
+    mo_us(First, Rest);
+
+us("la", []) ->
+    "la.us";
+us("la", Parts) ->
+    [First | Rest] = Parts,
+    la_us(First, Rest);
+
+us("ms", []) ->
+    "ms.us";
+us("ms", Parts) ->
+    [First | Rest] = Parts,
+    ms_us(First, Rest);
 
 us("id", []) ->
     "id.us";
@@ -16822,17 +19153,11 @@ us("id", Parts) ->
     [First | Rest] = Parts,
     id_us(First, Rest);
 
-us("mi", []) ->
-    "mi.us";
-us("mi", Parts) ->
+us("ct", []) ->
+    "ct.us";
+us("ct", Parts) ->
     [First | Rest] = Parts,
-    mi_us(First, Rest);
-
-us("nj", []) ->
-    "nj.us";
-us("nj", Parts) ->
-    [First | Rest] = Parts,
-    nj_us(First, Rest);
+    ct_us(First, Rest);
 
 us("md", []) ->
     "md.us";
@@ -16840,20 +19165,89 @@ us("md", Parts) ->
     [First | Rest] = Parts,
     md_us(First, Rest);
 
-us("fed", _Any) ->
-    "fed.us";
-
-us("wy", []) ->
-    "wy.us";
-us("wy", Parts) ->
+us("in", []) ->
+    "in.us";
+us("in", Parts) ->
     [First | Rest] = Parts,
-    wy_us(First, Rest);
+    in_us(First, Rest);
 
-us("or", []) ->
-    "or.us";
-us("or", Parts) ->
+us("pa", []) ->
+    "pa.us";
+us("pa", Parts) ->
     [First | Rest] = Parts,
-    or_us(First, Rest);
+    pa_us(First, Rest);
+
+us("ar", []) ->
+    "ar.us";
+us("ar", Parts) ->
+    [First | Rest] = Parts,
+    ar_us(First, Rest);
+
+us("vi", []) ->
+    "vi.us";
+us("vi", Parts) ->
+    [First | Rest] = Parts,
+    vi_us(First, Rest);
+
+us("hi", []) ->
+    "hi.us";
+us("hi", Parts) ->
+    [First | Rest] = Parts,
+    hi_us(First, Rest);
+
+us("il", []) ->
+    "il.us";
+us("il", Parts) ->
+    [First | Rest] = Parts,
+    il_us(First, Rest);
+
+us("nm", []) ->
+    "nm.us";
+us("nm", Parts) ->
+    [First | Rest] = Parts,
+    nm_us(First, Rest);
+
+us("tx", []) ->
+    "tx.us";
+us("tx", Parts) ->
+    [First | Rest] = Parts,
+    tx_us(First, Rest);
+
+us("as", []) ->
+    "as.us";
+us("as", Parts) ->
+    [First | Rest] = Parts,
+    as_us(First, Rest);
+
+us("va", []) ->
+    "va.us";
+us("va", Parts) ->
+    [First | Rest] = Parts,
+    va_us(First, Rest);
+
+us("ia", []) ->
+    "ia.us";
+us("ia", Parts) ->
+    [First | Rest] = Parts,
+    ia_us(First, Rest);
+
+us("mi", []) ->
+    "mi.us";
+us("mi", Parts) ->
+    [First | Rest] = Parts,
+    mi_us(First, Rest);
+
+us("ca", []) ->
+    "ca.us";
+us("ca", Parts) ->
+    [First | Rest] = Parts,
+    ca_us(First, Rest);
+
+us("ks", []) ->
+    "ks.us";
+us("ks", Parts) ->
+    [First | Rest] = Parts,
+    ks_us(First, Rest);
 
 us("nd", []) ->
     "nd.us";
@@ -16867,11 +19261,11 @@ us("ri", Parts) ->
     [First | Rest] = Parts,
     ri_us(First, Rest);
 
-us("ia", []) ->
-    "ia.us";
-us("ia", Parts) ->
+us("mt", []) ->
+    "mt.us";
+us("mt", Parts) ->
     [First | Rest] = Parts,
-    ia_us(First, Rest);
+    mt_us(First, Rest);
 
 us("sd", []) ->
     "sd.us";
@@ -16879,137 +19273,11 @@ us("sd", Parts) ->
     [First | Rest] = Parts,
     sd_us(First, Rest);
 
-us("de", []) ->
-    "de.us";
-us("de", Parts) ->
+us("nv", []) ->
+    "nv.us";
+us("nv", Parts) ->
     [First | Rest] = Parts,
-    de_us(First, Rest);
-
-us("isa", _Any) ->
-    "isa.us";
-
-us("nm", []) ->
-    "nm.us";
-us("nm", Parts) ->
-    [First | Rest] = Parts,
-    nm_us(First, Rest);
-
-us("mt", []) ->
-    "mt.us";
-us("mt", Parts) ->
-    [First | Rest] = Parts,
-    mt_us(First, Rest);
-
-us("wi", []) ->
-    "wi.us";
-us("wi", Parts) ->
-    [First | Rest] = Parts,
-    wi_us(First, Rest);
-
-us("al", []) ->
-    "al.us";
-us("al", Parts) ->
-    [First | Rest] = Parts,
-    al_us(First, Rest);
-
-us("ma", []) ->
-    "ma.us";
-us("ma", Parts) ->
-    [First | Rest] = Parts,
-    ma_us(First, Rest);
-
-us("mn", []) ->
-    "mn.us";
-us("mn", Parts) ->
-    [First | Rest] = Parts,
-    mn_us(First, Rest);
-
-us("in", []) ->
-    "in.us";
-us("in", Parts) ->
-    [First | Rest] = Parts,
-    in_us(First, Rest);
-
-us("fl", []) ->
-    "fl.us";
-us("fl", Parts) ->
-    [First | Rest] = Parts,
-    fl_us(First, Rest);
-
-us("az", []) ->
-    "az.us";
-us("az", Parts) ->
-    [First | Rest] = Parts,
-    az_us(First, Rest);
-
-us("kids", _Any) ->
-    "kids.us";
-
-us("tn", []) ->
-    "tn.us";
-us("tn", Parts) ->
-    [First | Rest] = Parts,
-    tn_us(First, Rest);
-
-us("nsn", _Any) ->
-    "nsn.us";
-
-us("ut", []) ->
-    "ut.us";
-us("ut", Parts) ->
-    [First | Rest] = Parts,
-    ut_us(First, Rest);
-
-us("nh", []) ->
-    "nh.us";
-us("nh", Parts) ->
-    [First | Rest] = Parts,
-    nh_us(First, Rest);
-
-us("ms", []) ->
-    "ms.us";
-us("ms", Parts) ->
-    [First | Rest] = Parts,
-    ms_us(First, Rest);
-
-us("pr", []) ->
-    "pr.us";
-us("pr", Parts) ->
-    [First | Rest] = Parts,
-    pr_us(First, Rest);
-
-us("ky", []) ->
-    "ky.us";
-us("ky", Parts) ->
-    [First | Rest] = Parts,
-    ky_us(First, Rest);
-
-us("mo", []) ->
-    "mo.us";
-us("mo", Parts) ->
-    [First | Rest] = Parts,
-    mo_us(First, Rest);
-
-us("tx", []) ->
-    "tx.us";
-us("tx", Parts) ->
-    [First | Rest] = Parts,
-    tx_us(First, Rest);
-
-us("hi", []) ->
-    "hi.us";
-us("hi", Parts) ->
-    [First | Rest] = Parts,
-    hi_us(First, Rest);
-
-us("dni", _Any) ->
-    "dni.us";
-
-us("oh", []) ->
-    "oh.us";
-us("oh", Parts) ->
-    [First | Rest] = Parts,
-    oh_us(First, Rest);
+    nv_us(First, Rest);
 
 us("ny", []) ->
     "ny.us";
@@ -17017,29 +19285,11 @@ us("ny", Parts) ->
     [First | Rest] = Parts,
     ny_us(First, Rest);
 
-us("co", []) ->
-    "co.us";
-us("co", Parts) ->
+us("ok", []) ->
+    "ok.us";
+us("ok", Parts) ->
     [First | Rest] = Parts,
-    co_us(First, Rest);
-
-us("vt", []) ->
-    "vt.us";
-us("vt", Parts) ->
-    [First | Rest] = Parts,
-    vt_us(First, Rest);
-
-us("ne", []) ->
-    "ne.us";
-us("ne", Parts) ->
-    [First | Rest] = Parts,
-    ne_us(First, Rest);
-
-us("as", []) ->
-    "as.us";
-us("as", Parts) ->
-    [First | Rest] = Parts,
-    as_us(First, Rest);
+    ok_us(First, Rest);
 
 us("nc", []) ->
     "nc.us";
@@ -17047,53 +19297,35 @@ us("nc", Parts) ->
     [First | Rest] = Parts,
     nc_us(First, Rest);
 
-us("il", []) ->
-    "il.us";
-us("il", Parts) ->
-    [First | Rest] = Parts,
-    il_us(First, Rest);
+us("isa", _Any) ->
+    "isa.us";
 
-us("la", []) ->
-    "la.us";
-us("la", Parts) ->
+us("wy", []) ->
+    "wy.us";
+us("wy", Parts) ->
     [First | Rest] = Parts,
-    la_us(First, Rest);
+    wy_us(First, Rest);
 
-us("pa", []) ->
-    "pa.us";
-us("pa", Parts) ->
+us("or", []) ->
+    "or.us";
+us("or", Parts) ->
     [First | Rest] = Parts,
-    pa_us(First, Rest);
+    or_us(First, Rest);
 
-us("wa", []) ->
-    "wa.us";
-us("wa", Parts) ->
+us("nh", []) ->
+    "nh.us";
+us("nh", Parts) ->
     [First | Rest] = Parts,
-    wa_us(First, Rest);
+    nh_us(First, Rest);
 
-us("dc", []) ->
-    "dc.us";
-us("dc", Parts) ->
-    [First | Rest] = Parts,
-    dc_us(First, Rest);
+us("fed", _Any) ->
+    "fed.us";
 
-us("gu", []) ->
-    "gu.us";
-us("gu", Parts) ->
+us("az", []) ->
+    "az.us";
+us("az", Parts) ->
     [First | Rest] = Parts,
-    gu_us(First, Rest);
-
-us("ar", []) ->
-    "ar.us";
-us("ar", Parts) ->
-    [First | Rest] = Parts,
-    ar_us(First, Rest);
-
-us("ak", []) ->
-    "ak.us";
-us("ak", Parts) ->
-    [First | Rest] = Parts,
-    ak_us(First, Rest);
+    az_us(First, Rest);
 
 us("ga", []) ->
     "ga.us";
@@ -17101,116 +19333,188 @@ us("ga", Parts) ->
     [First | Rest] = Parts,
     ga_us(First, Rest);
 
+us("sc", []) ->
+    "sc.us";
+us("sc", Parts) ->
+    [First | Rest] = Parts,
+    sc_us(First, Rest);
+
+us("wa", []) ->
+    "wa.us";
+us("wa", Parts) ->
+    [First | Rest] = Parts,
+    wa_us(First, Rest);
+
+us("tn", []) ->
+    "tn.us";
+us("tn", Parts) ->
+    [First | Rest] = Parts,
+    tn_us(First, Rest);
+
+us("vt", []) ->
+    "vt.us";
+us("vt", Parts) ->
+    [First | Rest] = Parts,
+    vt_us(First, Rest);
+
+us("ma", []) ->
+    "ma.us";
+us("ma", Parts) ->
+    [First | Rest] = Parts,
+    ma_us(First, Rest);
+
+us("nsn", _Any) ->
+    "nsn.us";
+
+us("dni", _Any) ->
+    "dni.us";
+
+us("co", []) ->
+    "co.us";
+us("co", Parts) ->
+    [First | Rest] = Parts,
+    co_us(First, Rest);
+
+us("kids", _Any) ->
+    "kids.us";
+
+us("ak", []) ->
+    "ak.us";
+us("ak", Parts) ->
+    [First | Rest] = Parts,
+    ak_us(First, Rest);
+
+us("al", []) ->
+    "al.us";
+us("al", Parts) ->
+    [First | Rest] = Parts,
+    al_us(First, Rest);
+
+us("nj", []) ->
+    "nj.us";
+us("nj", Parts) ->
+    [First | Rest] = Parts,
+    nj_us(First, Rest);
+
+us("fl", []) ->
+    "fl.us";
+us("fl", Parts) ->
+    [First | Rest] = Parts,
+    fl_us(First, Rest);
+
+us("dc", []) ->
+    "dc.us";
+us("dc", Parts) ->
+    [First | Rest] = Parts,
+    dc_us(First, Rest);
+
+us("wv", []) ->
+    "wv.us";
+us("wv", Parts) ->
+    [First | Rest] = Parts,
+    wv_us(First, Rest);
+
+us("pr", []) ->
+    "pr.us";
+us("pr", Parts) ->
+    [First | Rest] = Parts,
+    pr_us(First, Rest);
+
+us("wi", []) ->
+    "wi.us";
+us("wi", Parts) ->
+    [First | Rest] = Parts,
+    wi_us(First, Rest);
+
+us("ut", []) ->
+    "ut.us";
+us("ut", Parts) ->
+    [First | Rest] = Parts,
+    ut_us(First, Rest);
+
+us("de", []) ->
+    "de.us";
+us("de", Parts) ->
+    [First | Rest] = Parts,
+    de_us(First, Rest);
+
+us("ky", []) ->
+    "ky.us";
+us("ky", Parts) ->
+    [First | Rest] = Parts,
+    ky_us(First, Rest);
+
+us("gu", []) ->
+    "gu.us";
+us("gu", Parts) ->
+    [First | Rest] = Parts,
+    gu_us(First, Rest);
+
+us("me", []) ->
+    "me.us";
+us("me", Parts) ->
+    [First | Rest] = Parts,
+    me_us(First, Rest);
+
+us("mn", []) ->
+    "mn.us";
+us("mn", Parts) ->
+    [First | Rest] = Parts,
+    mn_us(First, Rest);
+
+us("oh", []) ->
+    "oh.us";
+us("oh", Parts) ->
+    [First | Rest] = Parts,
+    oh_us(First, Rest);
+
 
 us(_, _) ->
     "us".
 
 %% regular rules
-ks_us("cc", _Any) ->
-    "cc.ks.us";
+ne_us("cc", _Any) ->
+    "cc.ne.us";
 
-ks_us("lib", _Any) ->
-    "lib.ks.us";
-
-
-ks_us(_, _) ->
-    "ks.us".
-
-%% regular rules
-ok_us("lib", _Any) ->
-    "lib.ok.us";
-
-ok_us("cc", _Any) ->
-    "cc.ok.us";
+ne_us("lib", _Any) ->
+    "lib.ne.us";
 
 
-ok_us(_, _) ->
-    "ok.us".
+ne_us(_, _) ->
+    "ne.us".
 
 %% regular rules
-ct_us("lib", _Any) ->
-    "lib.ct.us";
+mo_us("cc", _Any) ->
+    "cc.mo.us";
 
-ct_us("cc", _Any) ->
-    "cc.ct.us";
-
-
-ct_us(_, _) ->
-    "ct.us".
-
-%% regular rules
-nv_us("cc", _Any) ->
-    "cc.nv.us";
-
-nv_us("lib", _Any) ->
-    "lib.nv.us";
+mo_us("lib", _Any) ->
+    "lib.mo.us";
 
 
-nv_us(_, _) ->
-    "nv.us".
+mo_us(_, _) ->
+    "mo.us".
 
 %% regular rules
-me_us("cc", _Any) ->
-    "cc.me.us";
+la_us("lib", _Any) ->
+    "lib.la.us";
 
-me_us("lib", _Any) ->
-    "lib.me.us";
-
-
-me_us(_, _) ->
-    "me.us".
-
-%% regular rules
-va_us("cc", _Any) ->
-    "cc.va.us";
-
-va_us("lib", _Any) ->
-    "lib.va.us";
+la_us("cc", _Any) ->
+    "cc.la.us";
 
 
-va_us(_, _) ->
-    "va.us".
+la_us(_, _) ->
+    "la.us".
 
 %% regular rules
-sc_us("cc", _Any) ->
-    "cc.sc.us";
+ms_us("lib", _Any) ->
+    "lib.ms.us";
 
-sc_us("lib", _Any) ->
-    "lib.sc.us";
-
-
-sc_us(_, _) ->
-    "sc.us".
-
-%% regular rules
-ca_us("lib", _Any) ->
-    "lib.ca.us";
-
-ca_us("cc", _Any) ->
-    "cc.ca.us";
+ms_us("cc", _Any) ->
+    "cc.ms.us";
 
 
-ca_us(_, _) ->
-    "ca.us".
-
-%% regular rules
-vi_us("lib", _Any) ->
-    "lib.vi.us";
-
-vi_us("cc", _Any) ->
-    "cc.vi.us";
-
-
-vi_us(_, _) ->
-    "vi.us".
-
-%% regular rules
-wv_us("cc", _Any) ->
-    "cc.wv.us";
-
-
-wv_us(_, _) ->
-    "wv.us".
+ms_us(_, _) ->
+    "ms.us".
 
 %% regular rules
 id_us("cc", _Any) ->
@@ -17224,26 +19528,15 @@ id_us(_, _) ->
     "id.us".
 
 %% regular rules
-mi_us("lib", _Any) ->
-    "lib.mi.us";
+ct_us("cc", _Any) ->
+    "cc.ct.us";
 
-mi_us("cc", _Any) ->
-    "cc.mi.us";
-
-
-mi_us(_, _) ->
-    "mi.us".
-
-%% regular rules
-nj_us("cc", _Any) ->
-    "cc.nj.us";
-
-nj_us("lib", _Any) ->
-    "lib.nj.us";
+ct_us("lib", _Any) ->
+    "lib.ct.us";
 
 
-nj_us(_, _) ->
-    "nj.us".
+ct_us(_, _) ->
+    "ct.us".
 
 %% regular rules
 md_us("cc", _Any) ->
@@ -17257,26 +19550,158 @@ md_us(_, _) ->
     "md.us".
 
 %% regular rules
-wy_us("lib", _Any) ->
-    "lib.wy.us";
+in_us("cc", _Any) ->
+    "cc.in.us";
 
-wy_us("cc", _Any) ->
-    "cc.wy.us";
+in_us("lib", _Any) ->
+    "lib.in.us";
 
 
-wy_us(_, _) ->
-    "wy.us".
+in_us(_, _) ->
+    "in.us".
 
 %% regular rules
-or_us("lib", _Any) ->
-    "lib.or.us";
+pa_us("cc", _Any) ->
+    "cc.pa.us";
 
-or_us("cc", _Any) ->
-    "cc.or.us";
+pa_us("lib", _Any) ->
+    "lib.pa.us";
 
 
-or_us(_, _) ->
-    "or.us".
+pa_us(_, _) ->
+    "pa.us".
+
+%% regular rules
+ar_us("cc", _Any) ->
+    "cc.ar.us";
+
+ar_us("lib", _Any) ->
+    "lib.ar.us";
+
+
+ar_us(_, _) ->
+    "ar.us".
+
+%% regular rules
+vi_us("cc", _Any) ->
+    "cc.vi.us";
+
+vi_us("lib", _Any) ->
+    "lib.vi.us";
+
+
+vi_us(_, _) ->
+    "vi.us".
+
+%% regular rules
+hi_us("lib", _Any) ->
+    "lib.hi.us";
+
+hi_us("cc", _Any) ->
+    "cc.hi.us";
+
+
+hi_us(_, _) ->
+    "hi.us".
+
+%% regular rules
+il_us("cc", _Any) ->
+    "cc.il.us";
+
+il_us("lib", _Any) ->
+    "lib.il.us";
+
+
+il_us(_, _) ->
+    "il.us".
+
+%% regular rules
+nm_us("cc", _Any) ->
+    "cc.nm.us";
+
+nm_us("lib", _Any) ->
+    "lib.nm.us";
+
+
+nm_us(_, _) ->
+    "nm.us".
+
+%% regular rules
+tx_us("lib", _Any) ->
+    "lib.tx.us";
+
+tx_us("cc", _Any) ->
+    "cc.tx.us";
+
+
+tx_us(_, _) ->
+    "tx.us".
+
+%% regular rules
+as_us("lib", _Any) ->
+    "lib.as.us";
+
+as_us("cc", _Any) ->
+    "cc.as.us";
+
+
+as_us(_, _) ->
+    "as.us".
+
+%% regular rules
+va_us("cc", _Any) ->
+    "cc.va.us";
+
+va_us("lib", _Any) ->
+    "lib.va.us";
+
+
+va_us(_, _) ->
+    "va.us".
+
+%% regular rules
+ia_us("cc", _Any) ->
+    "cc.ia.us";
+
+ia_us("lib", _Any) ->
+    "lib.ia.us";
+
+
+ia_us(_, _) ->
+    "ia.us".
+
+%% regular rules
+mi_us("lib", _Any) ->
+    "lib.mi.us";
+
+mi_us("cc", _Any) ->
+    "cc.mi.us";
+
+
+mi_us(_, _) ->
+    "mi.us".
+
+%% regular rules
+ca_us("lib", _Any) ->
+    "lib.ca.us";
+
+ca_us("cc", _Any) ->
+    "cc.ca.us";
+
+
+ca_us(_, _) ->
+    "ca.us".
+
+%% regular rules
+ks_us("cc", _Any) ->
+    "cc.ks.us";
+
+ks_us("lib", _Any) ->
+    "lib.ks.us";
+
+
+ks_us(_, _) ->
+    "ks.us".
 
 %% regular rules
 nd_us("cc", _Any) ->
@@ -17301,15 +19726,15 @@ ri_us(_, _) ->
     "ri.us".
 
 %% regular rules
-ia_us("cc", _Any) ->
-    "cc.ia.us";
+mt_us("cc", _Any) ->
+    "cc.mt.us";
 
-ia_us("lib", _Any) ->
-    "lib.ia.us";
+mt_us("lib", _Any) ->
+    "lib.mt.us";
 
 
-ia_us(_, _) ->
-    "ia.us".
+mt_us(_, _) ->
+    "mt.us".
 
 %% regular rules
 sd_us("lib", _Any) ->
@@ -17323,279 +19748,37 @@ sd_us(_, _) ->
     "sd.us".
 
 %% regular rules
-de_us("cc", _Any) ->
-    "cc.de.us";
+nv_us("cc", _Any) ->
+    "cc.nv.us";
 
-de_us("lib", _Any) ->
-    "lib.de.us";
-
-
-de_us(_, _) ->
-    "de.us".
-
-%% regular rules
-nm_us("lib", _Any) ->
-    "lib.nm.us";
-
-nm_us("cc", _Any) ->
-    "cc.nm.us";
+nv_us("lib", _Any) ->
+    "lib.nv.us";
 
 
-nm_us(_, _) ->
-    "nm.us".
+nv_us(_, _) ->
+    "nv.us".
 
 %% regular rules
-mt_us("lib", _Any) ->
-    "lib.mt.us";
-
-mt_us("cc", _Any) ->
-    "cc.mt.us";
-
-
-mt_us(_, _) ->
-    "mt.us".
-
-%% regular rules
-wi_us("cc", _Any) ->
-    "cc.wi.us";
-
-wi_us("lib", _Any) ->
-    "lib.wi.us";
-
-
-wi_us(_, _) ->
-    "wi.us".
-
-%% regular rules
-al_us("lib", _Any) ->
-    "lib.al.us";
-
-al_us("cc", _Any) ->
-    "cc.al.us";
-
-
-al_us(_, _) ->
-    "al.us".
-
-%% regular rules
-ma_us("lib", _Any) ->
-    "lib.ma.us";
-
-ma_us("cc", _Any) ->
-    "cc.ma.us";
-
-
-ma_us(_, _) ->
-    "ma.us".
-
-%% regular rules
-mn_us("lib", _Any) ->
-    "lib.mn.us";
-
-mn_us("cc", _Any) ->
-    "cc.mn.us";
-
-
-mn_us(_, _) ->
-    "mn.us".
-
-%% regular rules
-in_us("cc", _Any) ->
-    "cc.in.us";
-
-in_us("lib", _Any) ->
-    "lib.in.us";
-
-
-in_us(_, _) ->
-    "in.us".
-
-%% regular rules
-fl_us("lib", _Any) ->
-    "lib.fl.us";
-
-fl_us("cc", _Any) ->
-    "cc.fl.us";
-
-
-fl_us(_, _) ->
-    "fl.us".
-
-%% regular rules
-az_us("lib", _Any) ->
-    "lib.az.us";
-
-az_us("cc", _Any) ->
-    "cc.az.us";
-
-
-az_us(_, _) ->
-    "az.us".
-
-%% regular rules
-tn_us("lib", _Any) ->
-    "lib.tn.us";
-
-tn_us("cc", _Any) ->
-    "cc.tn.us";
-
-
-tn_us(_, _) ->
-    "tn.us".
-
-%% regular rules
-ut_us("lib", _Any) ->
-    "lib.ut.us";
-
-ut_us("cc", _Any) ->
-    "cc.ut.us";
-
-
-ut_us(_, _) ->
-    "ut.us".
-
-%% regular rules
-nh_us("lib", _Any) ->
-    "lib.nh.us";
-
-nh_us("cc", _Any) ->
-    "cc.nh.us";
-
-
-nh_us(_, _) ->
-    "nh.us".
-
-%% regular rules
-ms_us("cc", _Any) ->
-    "cc.ms.us";
-
-ms_us("lib", _Any) ->
-    "lib.ms.us";
-
-
-ms_us(_, _) ->
-    "ms.us".
-
-%% regular rules
-pr_us("lib", _Any) ->
-    "lib.pr.us";
-
-pr_us("cc", _Any) ->
-    "cc.pr.us";
-
-
-pr_us(_, _) ->
-    "pr.us".
-
-%% regular rules
-ky_us("cc", _Any) ->
-    "cc.ky.us";
-
-ky_us("lib", _Any) ->
-    "lib.ky.us";
-
-
-ky_us(_, _) ->
-    "ky.us".
-
-%% regular rules
-mo_us("cc", _Any) ->
-    "cc.mo.us";
-
-mo_us("lib", _Any) ->
-    "lib.mo.us";
-
-
-mo_us(_, _) ->
-    "mo.us".
-
-%% regular rules
-tx_us("lib", _Any) ->
-    "lib.tx.us";
-
-tx_us("cc", _Any) ->
-    "cc.tx.us";
-
-
-tx_us(_, _) ->
-    "tx.us".
-
-%% regular rules
-hi_us("lib", _Any) ->
-    "lib.hi.us";
-
-hi_us("cc", _Any) ->
-    "cc.hi.us";
-
-
-hi_us(_, _) ->
-    "hi.us".
-
-%% regular rules
-oh_us("cc", _Any) ->
-    "cc.oh.us";
-
-oh_us("lib", _Any) ->
-    "lib.oh.us";
-
-
-oh_us(_, _) ->
-    "oh.us".
-
-%% regular rules
-ny_us("lib", _Any) ->
-    "lib.ny.us";
-
 ny_us("cc", _Any) ->
     "cc.ny.us";
+
+ny_us("lib", _Any) ->
+    "lib.ny.us";
 
 
 ny_us(_, _) ->
     "ny.us".
 
 %% regular rules
-co_us("lib", _Any) ->
-    "lib.co.us";
+ok_us("lib", _Any) ->
+    "lib.ok.us";
 
-co_us("cc", _Any) ->
-    "cc.co.us";
-
-
-co_us(_, _) ->
-    "co.us".
-
-%% regular rules
-vt_us("cc", _Any) ->
-    "cc.vt.us";
-
-vt_us("lib", _Any) ->
-    "lib.vt.us";
+ok_us("cc", _Any) ->
+    "cc.ok.us";
 
 
-vt_us(_, _) ->
-    "vt.us".
-
-%% regular rules
-ne_us("cc", _Any) ->
-    "cc.ne.us";
-
-ne_us("lib", _Any) ->
-    "lib.ne.us";
-
-
-ne_us(_, _) ->
-    "ne.us".
-
-%% regular rules
-as_us("lib", _Any) ->
-    "lib.as.us";
-
-as_us("cc", _Any) ->
-    "cc.as.us";
-
-
-as_us(_, _) ->
-    "as.us".
+ok_us(_, _) ->
+    "ok.us".
 
 %% regular rules
 nc_us("cc", _Any) ->
@@ -17609,92 +19792,48 @@ nc_us(_, _) ->
     "nc.us".
 
 %% regular rules
-il_us("cc", _Any) ->
-    "cc.il.us";
+wy_us("lib", _Any) ->
+    "lib.wy.us";
 
-il_us("lib", _Any) ->
-    "lib.il.us";
-
-
-il_us(_, _) ->
-    "il.us".
-
-%% regular rules
-la_us("lib", _Any) ->
-    "lib.la.us";
-
-la_us("cc", _Any) ->
-    "cc.la.us";
+wy_us("cc", _Any) ->
+    "cc.wy.us";
 
 
-la_us(_, _) ->
-    "la.us".
+wy_us(_, _) ->
+    "wy.us".
 
 %% regular rules
-pa_us("lib", _Any) ->
-    "lib.pa.us";
+or_us("lib", _Any) ->
+    "lib.or.us";
 
-pa_us("cc", _Any) ->
-    "cc.pa.us";
-
-
-pa_us(_, _) ->
-    "pa.us".
-
-%% regular rules
-wa_us("cc", _Any) ->
-    "cc.wa.us";
-
-wa_us("lib", _Any) ->
-    "lib.wa.us";
+or_us("cc", _Any) ->
+    "cc.or.us";
 
 
-wa_us(_, _) ->
-    "wa.us".
+or_us(_, _) ->
+    "or.us".
 
 %% regular rules
-dc_us("lib", _Any) ->
-    "lib.dc.us";
+nh_us("cc", _Any) ->
+    "cc.nh.us";
 
-dc_us("cc", _Any) ->
-    "cc.dc.us";
-
-
-dc_us(_, _) ->
-    "dc.us".
-
-%% regular rules
-gu_us("cc", _Any) ->
-    "cc.gu.us";
-
-gu_us("lib", _Any) ->
-    "lib.gu.us";
+nh_us("lib", _Any) ->
+    "lib.nh.us";
 
 
-gu_us(_, _) ->
-    "gu.us".
+nh_us(_, _) ->
+    "nh.us".
 
 %% regular rules
-ar_us("lib", _Any) ->
-    "lib.ar.us";
+az_us("cc", _Any) ->
+    "cc.az.us";
 
-ar_us("cc", _Any) ->
-    "cc.ar.us";
-
-
-ar_us(_, _) ->
-    "ar.us".
-
-%% regular rules
-ak_us("lib", _Any) ->
-    "lib.ak.us";
-
-ak_us("cc", _Any) ->
-    "cc.ak.us";
+az_us("lib", _Any) ->
+    "lib.az.us";
 
 
-ak_us(_, _) ->
-    "ak.us".
+az_us(_, _) ->
+    "az.us".
 
 %% regular rules
 ga_us("lib", _Any) ->
@@ -17708,2428 +19847,389 @@ ga_us(_, _) ->
     "ga.us".
 
 %% regular rules
-bb("org", _Any) ->
-    "org.bb";
+sc_us("lib", _Any) ->
+    "lib.sc.us";
 
-bb("co", _Any) ->
-    "co.bb";
-
-bb("store", _Any) ->
-    "store.bb";
-
-bb("info", _Any) ->
-    "info.bb";
-
-bb("com", _Any) ->
-    "com.bb";
-
-bb("edu", _Any) ->
-    "edu.bb";
-
-bb("net", _Any) ->
-    "net.bb";
-
-bb("tv", _Any) ->
-    "tv.bb";
-
-bb("gov", _Any) ->
-    "gov.bb";
-
-bb("biz", _Any) ->
-    "biz.bb";
+sc_us("cc", _Any) ->
+    "cc.sc.us";
 
 
-bb(_, _) ->
-    "bb".
+sc_us(_, _) ->
+    "sc.us".
 
 %% regular rules
-bt("net", _Any) ->
-    "net.bt";
+wa_us("lib", _Any) ->
+    "lib.wa.us";
 
-bt("edu", _Any) ->
-    "edu.bt";
-
-bt("org", _Any) ->
-    "org.bt";
-
-bt("gov", _Any) ->
-    "gov.bt";
-
-bt("com", _Any) ->
-    "com.bt";
+wa_us("cc", _Any) ->
+    "cc.wa.us";
 
 
-bt(_, _) ->
-    "bt".
+wa_us(_, _) ->
+    "wa.us".
 
 %% regular rules
-ng("gov", _Any) ->
-    "gov.ng";
+tn_us("lib", _Any) ->
+    "lib.tn.us";
 
-ng("mobi", _Any) ->
-    "mobi.ng";
-
-ng("name", _Any) ->
-    "name.ng";
-
-ng("net", _Any) ->
-    "net.ng";
-
-ng("mil", _Any) ->
-    "mil.ng";
-
-ng("sch", _Any) ->
-    "sch.ng";
-
-ng("edu", _Any) ->
-    "edu.ng";
-
-ng("com", _Any) ->
-    "com.ng";
-
-ng("org", _Any) ->
-    "org.ng";
+tn_us("cc", _Any) ->
+    "cc.tn.us";
 
 
-ng(_, _) ->
-    "ng".
+tn_us(_, _) ->
+    "tn.us".
 
 %% regular rules
-lk("ltd", _Any) ->
-    "ltd.lk";
+vt_us("cc", _Any) ->
+    "cc.vt.us";
 
-lk("gov", _Any) ->
-    "gov.lk";
-
-lk("web", _Any) ->
-    "web.lk";
-
-lk("edu", _Any) ->
-    "edu.lk";
-
-lk("sch", _Any) ->
-    "sch.lk";
-
-lk("net", _Any) ->
-    "net.lk";
-
-lk("ngo", _Any) ->
-    "ngo.lk";
-
-lk("hotel", _Any) ->
-    "hotel.lk";
-
-lk("com", _Any) ->
-    "com.lk";
-
-lk("soc", _Any) ->
-    "soc.lk";
-
-lk("grp", _Any) ->
-    "grp.lk";
-
-lk("org", _Any) ->
-    "org.lk";
-
-lk("assn", _Any) ->
-    "assn.lk";
-
-lk("int", _Any) ->
-    "int.lk";
+vt_us("lib", _Any) ->
+    "lib.vt.us";
 
 
-lk(_, _) ->
-    "lk".
+vt_us(_, _) ->
+    "vt.us".
 
 %% regular rules
-no("dyroy", _Any) ->
-    "dyroy.no";
+ma_us("cc", _Any) ->
+    "cc.ma.us";
 
-no("leirvik", _Any) ->
-    "leirvik.no";
+ma_us("lib", _Any) ->
+    "lib.ma.us";
 
-no("grane", _Any) ->
-    "grane.no";
 
-no("al", _Any) ->
-    "al.no";
-
-no("meldal", _Any) ->
-    "meldal.no";
-
-no("orland", _Any) ->
-    "orland.no";
-
-no("vega", _Any) ->
-    "vega.no";
-
-no("lerdal", _Any) ->
-    "lerdal.no";
-
-no("romskog", _Any) ->
-    "romskog.no";
-
-no("romsa", _Any) ->
-    "romsa.no";
-
-no("jondal", _Any) ->
-    "jondal.no";
-
-no("tysvar", _Any) ->
-    "tysvar.no";
-
-no("tr", []) ->
-    "tr.no";
-no("tr", Parts) ->
-    [First | Rest] = Parts,
-    tr_no(First, Rest);
-
-no("kvinnherad", _Any) ->
-    "kvinnherad.no";
-
-no("sykkylven", _Any) ->
-    "sykkylven.no";
-
-no("galsa", _Any) ->
-    "galsa.no";
-
-no("klabu", _Any) ->
-    "klabu.no";
-
-no("ballangen", _Any) ->
-    "ballangen.no";
-
-no("alta", _Any) ->
-    "alta.no";
-
-no("etnedal", _Any) ->
-    "etnedal.no";
-
-no("stathelle", _Any) ->
-    "stathelle.no";
-
-no("ulvik", _Any) ->
-    "ulvik.no";
-
-no("strand", _Any) ->
-    "strand.no";
-
-no("bamble", _Any) ->
-    "bamble.no";
-
-no("gloppen", _Any) ->
-    "gloppen.no";
-
-no("jolster", _Any) ->
-    "jolster.no";
-
-no("sel", _Any) ->
-    "sel.no";
-
-no("sirdal", _Any) ->
-    "sirdal.no";
-
-no("rygge", _Any) ->
-    "rygge.no";
-
-no("tysnes", _Any) ->
-    "tysnes.no";
-
-no("skaun", _Any) ->
-    "skaun.no";
-
-no("forde", _Any) ->
-    "forde.no";
-
-no("spjelkavik", _Any) ->
-    "spjelkavik.no";
-
-no("torsken", _Any) ->
-    "torsken.no";
-
-no("balat", _Any) ->
-    "balat.no";
-
-no("tinn", _Any) ->
-    "tinn.no";
-
-no("bomlo", _Any) ->
-    "bomlo.no";
-
-no("hemne", _Any) ->
-    "hemne.no";
-
-no("omasvuotna", _Any) ->
-    "omasvuotna.no";
-
-no("frana", _Any) ->
-    "frana.no";
-
-no("divtasvuodna", _Any) ->
-    "divtasvuodna.no";
-
-no("leka", _Any) ->
-    "leka.no";
-
-no("moskenes", _Any) ->
-    "moskenes.no";
-
-no("audnedaln", _Any) ->
-    "audnedaln.no";
-
-no("aarborte", _Any) ->
-    "aarborte.no";
-
-no("hedmark", []) ->
-    "hedmark.no";
-no("hedmark", Parts) ->
-    [First | Rest] = Parts,
-    hedmark_no(First, Rest);
-
-no("fuossko", _Any) ->
-    "fuossko.no";
-
-no("frosta", _Any) ->
-    "frosta.no";
-
-no("sandnessjoen", _Any) ->
-    "sandnessjoen.no";
-
-no("kopervik", _Any) ->
-    "kopervik.no";
-
-no("of", []) ->
-    "of.no";
-no("of", Parts) ->
-    [First | Rest] = Parts,
-    of_no(First, Rest);
-
-no("floro", _Any) ->
-    "floro.no";
-
-no("bjugn", _Any) ->
-    "bjugn.no";
-
-no("eidskog", _Any) ->
-    "eidskog.no";
-
-no("tynset", _Any) ->
-    "tynset.no";
-
-no("budejju", _Any) ->
-    "budejju.no";
-
-no("leirfjord", _Any) ->
-    "leirfjord.no";
-
-no("gaivuotna", _Any) ->
-    "gaivuotna.no";
-
-no("muosat", _Any) ->
-    "muosat.no";
-
-no("skjervoy", _Any) ->
-    "skjervoy.no";
-
-no("naustdal", _Any) ->
-    "naustdal.no";
-
-no("varoy", _Any) ->
-    "varoy.no";
-
-no("navuotna", _Any) ->
-    "navuotna.no";
-
-no("askim", _Any) ->
-    "askim.no";
-
-no("granvin", _Any) ->
-    "granvin.no";
-
-no("rissa", _Any) ->
-    "rissa.no";
-
-no("kristiansund", _Any) ->
-    "kristiansund.no";
-
-no("masoy", _Any) ->
-    "masoy.no";
-
-no("drammen", _Any) ->
-    "drammen.no";
-
-no("siljan", _Any) ->
-    "siljan.no";
-
-no("gjerstad", _Any) ->
-    "gjerstad.no";
-
-no("stranda", _Any) ->
-    "stranda.no";
-
-no("nissedal", _Any) ->
-    "nissedal.no";
-
-no("elverum", _Any) ->
-    "elverum.no";
-
-no("leksvik", _Any) ->
-    "leksvik.no";
-
-no("gjemnes", _Any) ->
-    "gjemnes.no";
-
-no("bykle", _Any) ->
-    "bykle.no";
-
-no("stokke", _Any) ->
-    "stokke.no";
-
-no("ski", _Any) ->
-    "ski.no";
-
-no("vik", _Any) ->
-    "vik.no";
-
-no("engerdal", _Any) ->
-    "engerdal.no";
-
-no("nt", []) ->
-    "nt.no";
-no("nt", Parts) ->
-    [First | Rest] = Parts,
-    nt_no(First, Rest);
-
-no("spydeberg", _Any) ->
-    "spydeberg.no";
-
-no("mandal", _Any) ->
-    "mandal.no";
-
-no("vanylven", _Any) ->
-    "vanylven.no";
-
-no("lavagis", _Any) ->
-    "lavagis.no";
-
-no("vossevangen", _Any) ->
-    "vossevangen.no";
-
-no("steigen", _Any) ->
-    "steigen.no";
-
-no("halden", _Any) ->
-    "halden.no";
-
-no("vgs", _Any) ->
-    "vgs.no";
-
-no("flakstad", _Any) ->
-    "flakstad.no";
-
-no("raholt", _Any) ->
-    "raholt.no";
-
-no("holmestrand", _Any) ->
-    "holmestrand.no";
-
-no("levanger", _Any) ->
-    "levanger.no";
-
-no("giehtavuoatna", _Any) ->
-    "giehtavuoatna.no";
-
-no("fhs", _Any) ->
-    "fhs.no";
-
-no("drangedal", _Any) ->
-    "drangedal.no";
-
-no("va", []) ->
-    "va.no";
-no("va", Parts) ->
-    [First | Rest] = Parts,
-    va_no(First, Rest);
-
-no("habmer", _Any) ->
-    "habmer.no";
-
-no("dep", _Any) ->
-    "dep.no";
-
-no("tonsberg", _Any) ->
-    "tonsberg.no";
-
-no("batsfjord", _Any) ->
-    "batsfjord.no";
-
-no("froya", _Any) ->
-    "froya.no";
-
-no("ardal", _Any) ->
-    "ardal.no";
-
-no("co", _Any) ->
-    "co.no";
-
-no("ringebu", _Any) ->
-    "ringebu.no";
-
-no("rakkestad", _Any) ->
-    "rakkestad.no";
-
-no("hvaler", _Any) ->
-    "hvaler.no";
-
-no("divttasvuotna", _Any) ->
-    "divttasvuotna.no";
-
-no("gangaviika", _Any) ->
-    "gangaviika.no";
-
-no("ringerike", _Any) ->
-    "ringerike.no";
-
-no("rennebu", _Any) ->
-    "rennebu.no";
-
-no("selje", _Any) ->
-    "selje.no";
-
-no("kraanghke", _Any) ->
-    "kraanghke.no";
-
-no("vindafjord", _Any) ->
-    "vindafjord.no";
-
-no("osoyro", _Any) ->
-    "osoyro.no";
-
-no("sandnes", _Any) ->
-    "sandnes.no";
-
-no("sorfold", _Any) ->
-    "sorfold.no";
-
-no("lesja", _Any) ->
-    "lesja.no";
-
-no("fredrikstad", _Any) ->
-    "fredrikstad.no";
-
-no("tananger", _Any) ->
-    "tananger.no";
-
-no("hadsel", _Any) ->
-    "hadsel.no";
-
-no("bjarkoy", _Any) ->
-    "bjarkoy.no";
-
-no("gran", _Any) ->
-    "gran.no";
-
-no("tydal", _Any) ->
-    "tydal.no";
-
-no("lindas", _Any) ->
-    "lindas.no";
-
-no("lund", _Any) ->
-    "lund.no";
-
-no("vegarshei", _Any) ->
-    "vegarshei.no";
-
-no("gratangen", _Any) ->
-    "gratangen.no";
-
-no("hattfjelldal", _Any) ->
-    "hattfjelldal.no";
-
-no("grimstad", _Any) ->
-    "grimstad.no";
-
-no("kongsvinger", _Any) ->
-    "kongsvinger.no";
-
-no("ivgu", _Any) ->
-    "ivgu.no";
-
-no("gildeskal", _Any) ->
-    "gildeskal.no";
-
-no("roan", _Any) ->
-    "roan.no";
-
-no("nittedal", _Any) ->
-    "nittedal.no";
-
-no("odda", _Any) ->
-    "odda.no";
-
-no("frogn", _Any) ->
-    "frogn.no";
-
-no("vagsoy", _Any) ->
-    "vagsoy.no";
-
-no("inderoy", _Any) ->
-    "inderoy.no";
-
-no("algard", _Any) ->
-    "algard.no";
-
-no("surnadal", _Any) ->
-    "surnadal.no";
-
-no("gjovik", _Any) ->
-    "gjovik.no";
-
-no("afjord", _Any) ->
-    "afjord.no";
-
-no("roros", _Any) ->
-    "roros.no";
-
-no("aknoluokta", _Any) ->
-    "aknoluokta.no";
-
-no("lenvik", _Any) ->
-    "lenvik.no";
-
-no("vikna", _Any) ->
-    "vikna.no";
-
-no("sogne", _Any) ->
-    "sogne.no";
-
-no("osteroy", _Any) ->
-    "osteroy.no";
-
-no("jevnaker", _Any) ->
-    "jevnaker.no";
-
-no("tolga", _Any) ->
-    "tolga.no";
-
-no("meraker", _Any) ->
-    "meraker.no";
-
-no("tjeldsund", _Any) ->
-    "tjeldsund.no";
-
-no("andasuolo", _Any) ->
-    "andasuolo.no";
-
-no("oygarden", _Any) ->
-    "oygarden.no";
-
-no("rollag", _Any) ->
-    "rollag.no";
-
-no("orkdal", _Any) ->
-    "orkdal.no";
-
-no("averoy", _Any) ->
-    "averoy.no";
-
-no("hm", []) ->
-    "hm.no";
-no("hm", Parts) ->
-    [First | Rest] = Parts,
-    hm_no(First, Rest);
-
-no("krodsherad", _Any) ->
-    "krodsherad.no";
-
-no("aejrie", _Any) ->
-    "aejrie.no";
-
-no("sauda", _Any) ->
-    "sauda.no";
-
-no("etne", _Any) ->
-    "etne.no";
-
-no("kvafjord", _Any) ->
-    "kvafjord.no";
-
-no("sf", []) ->
-    "sf.no";
-no("sf", Parts) ->
-    [First | Rest] = Parts,
-    sf_no(First, Rest);
-
-no("aure", _Any) ->
-    "aure.no";
-
-no("asnes", _Any) ->
-    "asnes.no";
-
-no("namsskogan", _Any) ->
-    "namsskogan.no";
-
-no("narvik", _Any) ->
-    "narvik.no";
-
-no("stryn", _Any) ->
-    "stryn.no";
-
-no("hammarfeasta", _Any) ->
-    "hammarfeasta.no";
-
-no("malselv", _Any) ->
-    "malselv.no";
-
-no("arna", _Any) ->
-    "arna.no";
-
-no("selbu", _Any) ->
-    "selbu.no";
-
-no("royken", _Any) ->
-    "royken.no";
-
-no("tranoy", _Any) ->
-    "tranoy.no";
-
-no("hoylandet", _Any) ->
-    "hoylandet.no";
-
-no("tromso", _Any) ->
-    "tromso.no";
-
-no("vf", []) ->
-    "vf.no";
-no("vf", Parts) ->
-    [First | Rest] = Parts,
-    vf_no(First, Rest);
-
-no("amli", _Any) ->
-    "amli.no";
-
-no("trysil", _Any) ->
-    "trysil.no";
-
-no("vestby", _Any) ->
-    "vestby.no";
-
-no("hole", _Any) ->
-    "hole.no";
-
-no("molde", _Any) ->
-    "molde.no";
-
-no("narviika", _Any) ->
-    "narviika.no";
-
-no("bergen", _Any) ->
-    "bergen.no";
-
-no("rade", _Any) ->
-    "rade.no";
-
-no("nesodden", _Any) ->
-    "nesodden.no";
-
-no("farsund", _Any) ->
-    "farsund.no";
-
-no("steinkjer", _Any) ->
-    "steinkjer.no";
-
-no("hornindal", _Any) ->
-    "hornindal.no";
-
-no("sveio", _Any) ->
-    "sveio.no";
-
-no("rendalen", _Any) ->
-    "rendalen.no";
-
-no("verdal", _Any) ->
-    "verdal.no";
-
-no("tokke", _Any) ->
-    "tokke.no";
-
-no("hordaland", []) ->
-    "hordaland.no";
-no("hordaland", Parts) ->
-    [First | Rest] = Parts,
-    hordaland_no(First, Rest);
-
-no("hemnes", _Any) ->
-    "hemnes.no";
-
-no("oppdal", _Any) ->
-    "oppdal.no";
-
-no("finnoy", _Any) ->
-    "finnoy.no";
-
-no("modum", _Any) ->
-    "modum.no";
-
-no("buskerud", []) ->
-    "buskerud.no";
-no("buskerud", Parts) ->
-    [First | Rest] = Parts,
-    buskerud_no(First, Rest);
-
-no("fjaler", _Any) ->
-    "fjaler.no";
-
-no("alstahaug", _Any) ->
-    "alstahaug.no";
-
-no("sandoy", _Any) ->
-    "sandoy.no";
-
-no("suldal", _Any) ->
-    "suldal.no";
-
-no("mosjoen", _Any) ->
-    "mosjoen.no";
-
-no("rana", _Any) ->
-    "rana.no";
-
-no("ullensaker", _Any) ->
-    "ullensaker.no";
-
-no("fetsund", _Any) ->
-    "fetsund.no";
-
-no("arendal", _Any) ->
-    "arendal.no";
-
-no("folldal", _Any) ->
-    "folldal.no";
-
-no("hagebostad", _Any) ->
-    "hagebostad.no";
-
-no("luroy", _Any) ->
-    "luroy.no";
-
-no("lahppi", _Any) ->
-    "lahppi.no";
-
-no("midsund", _Any) ->
-    "midsund.no";
-
-no("fusa", _Any) ->
-    "fusa.no";
-
-no("mil", _Any) ->
-    "mil.no";
-
-no("tingvoll", _Any) ->
-    "tingvoll.no";
-
-no("snoasa", _Any) ->
-    "snoasa.no";
-
-no("fyresdal", _Any) ->
-    "fyresdal.no";
-
-no("bygland", _Any) ->
-    "bygland.no";
-
-no("time", _Any) ->
-    "time.no";
-
-no("gamvik", _Any) ->
-    "gamvik.no";
-
-no("bajddar", _Any) ->
-    "bajddar.no";
-
-no("beardu", _Any) ->
-    "beardu.no";
-
-no("hemsedal", _Any) ->
-    "hemsedal.no";
-
-no("stange", _Any) ->
-    "stange.no";
-
-no("nesoddtangen", _Any) ->
-    "nesoddtangen.no";
-
-no("vaksdal", _Any) ->
-    "vaksdal.no";
-
-no("kommune", _Any) ->
-    "kommune.no";
-
-no("hitra", _Any) ->
-    "hitra.no";
-
-no("siellak", _Any) ->
-    "siellak.no";
-
-no("brumunddal", _Any) ->
-    "brumunddal.no";
-
-no("berg", _Any) ->
-    "berg.no";
-
-no("mr", []) ->
-    "mr.no";
-no("mr", Parts) ->
-    [First | Rest] = Parts,
-    mr_no(First, Rest);
-
-no("gjesdal", _Any) ->
-    "gjesdal.no";
-
-no("bodo", _Any) ->
-    "bodo.no";
-
-no("horten", _Any) ->
-    "horten.no";
-
-no("guovdageaidnu", _Any) ->
-    "guovdageaidnu.no";
-
-no("orkanger", _Any) ->
-    "orkanger.no";
-
-no("halsa", _Any) ->
-    "halsa.no";
-
-no("hof", _Any) ->
-    "hof.no";
-
-no("andebu", _Any) ->
-    "andebu.no";
-
-no("donna", _Any) ->
-    "donna.no";
-
-no("marker", _Any) ->
-    "marker.no";
-
-no("rl", []) ->
-    "rl.no";
-no("rl", Parts) ->
-    [First | Rest] = Parts,
-    rl_no(First, Rest);
-
-no("naamesjevuemie", _Any) ->
-    "naamesjevuemie.no";
-
-no("lom", _Any) ->
-    "lom.no";
-
-no("agdenes", _Any) ->
-    "agdenes.no";
-
-no("nesna", _Any) ->
-    "nesna.no";
-
-no("songdalen", _Any) ->
-    "songdalen.no";
-
-no("salat", _Any) ->
-    "salat.no";
-
-no("cahcesuolo", _Any) ->
-    "cahcesuolo.no";
-
-no("radoy", _Any) ->
-    "radoy.no";
-
-no("aukra", _Any) ->
-    "aukra.no";
-
-no("salangen", _Any) ->
-    "salangen.no";
-
-no("lillesand", _Any) ->
-    "lillesand.no";
-
-no("haram", _Any) ->
-    "haram.no";
-
-no("moareke", _Any) ->
-    "moareke.no";
-
-no("mjondalen", _Any) ->
-    "mjondalen.no";
-
-no("tranby", _Any) ->
-    "tranby.no";
-
-no("royrvik", _Any) ->
-    "royrvik.no";
-
-no("rindal", _Any) ->
-    "rindal.no";
-
-no("notodden", _Any) ->
-    "notodden.no";
-
-no("skanland", _Any) ->
-    "skanland.no";
-
-no("nesset", _Any) ->
-    "nesset.no";
-
-no("andoy", _Any) ->
-    "andoy.no";
-
-no("davvesiida", _Any) ->
-    "davvesiida.no";
-
-no("kvanangen", _Any) ->
-    "kvanangen.no";
-
-no("porsanger", _Any) ->
-    "porsanger.no";
-
-no("lunner", _Any) ->
-    "lunner.no";
-
-no("tysfjord", _Any) ->
-    "tysfjord.no";
-
-no("vang", _Any) ->
-    "vang.no";
-
-no("orskog", _Any) ->
-    "orskog.no";
-
-no("klepp", _Any) ->
-    "klepp.no";
-
-no("laakesvuemie", _Any) ->
-    "laakesvuemie.no";
-
-no("langevag", _Any) ->
-    "langevag.no";
-
-no("lyngen", _Any) ->
-    "lyngen.no";
-
-no("hjelmeland", _Any) ->
-    "hjelmeland.no";
-
-no("kvitsoy", _Any) ->
-    "kvitsoy.no";
-
-no("sandefjord", _Any) ->
-    "sandefjord.no";
-
-no("sula", _Any) ->
-    "sula.no";
-
-no("rauma", _Any) ->
-    "rauma.no";
-
-no("fuoisku", _Any) ->
-    "fuoisku.no";
-
-no("grue", _Any) ->
-    "grue.no";
-
-no("froland", _Any) ->
-    "froland.no";
-
-no("vestvagoy", _Any) ->
-    "vestvagoy.no";
-
-no("hasvik", _Any) ->
-    "hasvik.no";
-
-no("trogstad", _Any) ->
-    "trogstad.no";
-
-no("trana", _Any) ->
-    "trana.no";
-
-no("aa", []) ->
-    "aa.no";
-no("aa", Parts) ->
-    [First | Rest] = Parts,
-    aa_no(First, Rest);
-
-no("stat", _Any) ->
-    "stat.no";
-
-no("dovre", _Any) ->
-    "dovre.no";
-
-no("trondheim", _Any) ->
-    "trondheim.no";
-
-no("randaberg", _Any) ->
-    "randaberg.no";
-
-no("ha", _Any) ->
-    "ha.no";
-
-no("marnardal", _Any) ->
-    "marnardal.no";
-
-no("drobak", _Any) ->
-    "drobak.no";
-
-no("fitjar", _Any) ->
-    "fitjar.no";
-
-no("telemark", []) ->
-    "telemark.no";
-no("telemark", Parts) ->
-    [First | Rest] = Parts,
-    telemark_no(First, Rest);
-
-no("oppegard", _Any) ->
-    "oppegard.no";
-
-no("bu", []) ->
-    "bu.no";
-no("bu", Parts) ->
-    [First | Rest] = Parts,
-    bu_no(First, Rest);
-
-no("vagan", _Any) ->
-    "vagan.no";
-
-no("vevelstad", _Any) ->
-    "vevelstad.no";
-
-no("hjartdal", _Any) ->
-    "hjartdal.no";
-
-no("kongsberg", _Any) ->
-    "kongsberg.no";
-
-no("lorenskog", _Any) ->
-    "lorenskog.no";
-
-no("alesund", _Any) ->
-    "alesund.no";
-
-no("bokn", _Any) ->
-    "bokn.no";
-
-no("unjarga", _Any) ->
-    "unjarga.no";
-
-no("stordal", _Any) ->
-    "stordal.no";
-
-no("lindesnes", _Any) ->
-    "lindesnes.no";
-
-no("blogspot", _Any) ->
-    "blogspot.no";
-
-no("hurdal", _Any) ->
-    "hurdal.no";
-
-no("bahccavuotna", _Any) ->
-    "bahccavuotna.no";
-
-no("fedje", _Any) ->
-    "fedje.no";
-
-no("birkenes", _Any) ->
-    "birkenes.no";
-
-no("jessheim", _Any) ->
-    "jessheim.no";
-
-no("ah", []) ->
-    "ah.no";
-no("ah", Parts) ->
-    [First | Rest] = Parts,
-    ah_no(First, Rest);
-
-no("flesberg", _Any) ->
-    "flesberg.no";
-
-no("ringsaker", _Any) ->
-    "ringsaker.no";
-
-no("skjak", _Any) ->
-    "skjak.no";
-
-no("namsos", _Any) ->
-    "namsos.no";
-
-no("oyer", _Any) ->
-    "oyer.no";
-
-no("svalbard", []) ->
-    "svalbard.no";
-no("svalbard", Parts) ->
-    [First | Rest] = Parts,
-    svalbard_no(First, Rest);
-
-no("varggat", _Any) ->
-    "varggat.no";
-
-no("herad", _Any) ->
-    "herad.no";
-
-no("museum", _Any) ->
-    "museum.no";
-
-no("ralingen", _Any) ->
-    "ralingen.no";
-
-no("stjordal", _Any) ->
-    "stjordal.no";
-
-no("lillehammer", _Any) ->
-    "lillehammer.no";
-
-no("solund", _Any) ->
-    "solund.no";
-
-no("hamar", _Any) ->
-    "hamar.no";
-
-no("svelvik", _Any) ->
-    "svelvik.no";
-
-no("balsfjord", _Any) ->
-    "balsfjord.no";
-
-no("skedsmokorset", _Any) ->
-    "skedsmokorset.no";
-
-no("flekkefjord", _Any) ->
-    "flekkefjord.no";
-
-no("haugesund", _Any) ->
-    "haugesund.no";
-
-no("raisa", _Any) ->
-    "raisa.no";
-
-no("lardal", _Any) ->
-    "lardal.no";
-
-no("frei", _Any) ->
-    "frei.no";
-
-no("tvedestrand", _Any) ->
-    "tvedestrand.no";
-
-no("kautokeino", _Any) ->
-    "kautokeino.no";
-
-no("rodoy", _Any) ->
-    "rodoy.no";
-
-no("snillfjord", _Any) ->
-    "snillfjord.no";
-
-no("ibestad", _Any) ->
-    "ibestad.no";
-
-no("askoy", _Any) ->
-    "askoy.no";
-
-no("hl", []) ->
-    "hl.no";
-no("hl", Parts) ->
-    [First | Rest] = Parts,
-    hl_no(First, Rest);
-
-no("seljord", _Any) ->
-    "seljord.no";
-
-no("sunndal", _Any) ->
-    "sunndal.no";
-
-no("gol", _Any) ->
-    "gol.no";
-
-no("forsand", _Any) ->
-    "forsand.no";
-
-no("bronnoy", _Any) ->
-    "bronnoy.no";
-
-no("nordland", []) ->
-    "nordland.no";
-no("nordland", Parts) ->
-    [First | Rest] = Parts,
-    nordland_no(First, Rest);
-
-no("gulen", _Any) ->
-    "gulen.no";
-
-no("bearalvahki", _Any) ->
-    "bearalvahki.no";
-
-no("valle", _Any) ->
-    "valle.no";
-
-no("skanit", _Any) ->
-    "skanit.no";
-
-no("bremanger", _Any) ->
-    "bremanger.no";
-
-no("utsira", _Any) ->
-    "utsira.no";
-
-no("stavanger", _Any) ->
-    "stavanger.no";
-
-no("karasjok", _Any) ->
-    "karasjok.no";
-
-no("larvik", _Any) ->
-    "larvik.no";
-
-no("fylkesbibl", _Any) ->
-    "fylkesbibl.no";
-
-no("holtalen", _Any) ->
-    "holtalen.no";
-
-no("st", []) ->
-    "st.no";
-no("st", Parts) ->
-    [First | Rest] = Parts,
-    st_no(First, Rest);
-
-no("evenes", _Any) ->
-    "evenes.no";
-
-no("fet", _Any) ->
-    "fet.no";
-
-no("beiarn", _Any) ->
-    "beiarn.no";
-
-no("vadso", _Any) ->
-    "vadso.no";
-
-no("hoyanger", _Any) ->
-    "hoyanger.no";
-
-no("bahcavuotna", _Any) ->
-    "bahcavuotna.no";
-
-no("iveland", _Any) ->
-    "iveland.no";
-
-no("slattum", _Any) ->
-    "slattum.no";
-
-no("alvdal", _Any) ->
-    "alvdal.no";
-
-no("sola", _Any) ->
-    "sola.no";
-
-no("saltdal", _Any) ->
-    "saltdal.no";
-
-no("hokksund", _Any) ->
-    "hokksund.no";
-
-no("skiptvet", _Any) ->
-    "skiptvet.no";
-
-no("skien", _Any) ->
-    "skien.no";
-
-no("barum", _Any) ->
-    "barum.no";
-
-no("loabat", _Any) ->
-    "loabat.no";
-
-no("skierva", _Any) ->
-    "skierva.no";
-
-no("vefsn", _Any) ->
-    "vefsn.no";
-
-no("snaase", _Any) ->
-    "snaase.no";
-
-no("hol", _Any) ->
-    "hol.no";
-
-no("stjordalshalsen", _Any) ->
-    "stjordalshalsen.no";
-
-no("karlsoy", _Any) ->
-    "karlsoy.no";
-
-no("davvenjarga", _Any) ->
-    "davvenjarga.no";
-
-no("hamaroy", _Any) ->
-    "hamaroy.no";
-
-no("smola", _Any) ->
-    "smola.no";
-
-no("osen", _Any) ->
-    "osen.no";
-
-no("kafjord", _Any) ->
-    "kafjord.no";
-
-no("bardu", _Any) ->
-    "bardu.no";
-
-no("austrheim", _Any) ->
-    "austrheim.no";
-
-no("kviteseid", _Any) ->
-    "kviteseid.no";
-
-no("kvam", _Any) ->
-    "kvam.no";
-
-no("notteroy", _Any) ->
-    "notteroy.no";
-
-no("mosvik", _Any) ->
-    "mosvik.no";
-
-no("gausdal", _Any) ->
-    "gausdal.no";
-
-no("eidsvoll", _Any) ->
-    "eidsvoll.no";
-
-no("fosnes", _Any) ->
-    "fosnes.no";
-
-no("fauske", _Any) ->
-    "fauske.no";
-
-no("sarpsborg", _Any) ->
-    "sarpsborg.no";
-
-no("egersund", _Any) ->
-    "egersund.no";
-
-no("nannestad", _Any) ->
-    "nannestad.no";
-
-no("ostfold", []) ->
-    "ostfold.no";
-no("ostfold", Parts) ->
-    [First | Rest] = Parts,
-    ostfold_no(First, Rest);
-
-no("sund", _Any) ->
-    "sund.no";
-
-no("ullensvang", _Any) ->
-    "ullensvang.no";
-
-no("kragero", _Any) ->
-    "kragero.no";
-
-no("gjerdrum", _Any) ->
-    "gjerdrum.no";
-
-no("austevoll", _Any) ->
-    "austevoll.no";
-
-no("oksnes", _Any) ->
-    "oksnes.no";
-
-no("nesseby", _Any) ->
-    "nesseby.no";
-
-no("moss", _Any) ->
-    "moss.no";
-
-no("orsta", _Any) ->
-    "orsta.no";
-
-no("naroy", _Any) ->
-    "naroy.no";
-
-no("aseral", _Any) ->
-    "aseral.no";
-
-no("meland", _Any) ->
-    "meland.no";
-
-no("verran", _Any) ->
-    "verran.no";
-
-no("sogndal", _Any) ->
-    "sogndal.no";
-
-no("bronnoysund", _Any) ->
-    "bronnoysund.no";
-
-no("kvalsund", _Any) ->
-    "kvalsund.no";
-
-no("sorum", _Any) ->
-    "sorum.no";
-
-no("aremark", _Any) ->
-    "aremark.no";
-
-no("risor", _Any) ->
-    "risor.no";
-
-no("nordkapp", _Any) ->
-    "nordkapp.no";
-
-no("lodingen", _Any) ->
-    "lodingen.no";
-
-no("luster", _Any) ->
-    "luster.no";
-
-no("grong", _Any) ->
-    "grong.no";
-
-no("kvinesdal", _Any) ->
-    "kvinesdal.no";
-
-no("hobol", _Any) ->
-    "hobol.no";
-
-no("enebakk", _Any) ->
-    "enebakk.no";
-
-no("meloy", _Any) ->
-    "meloy.no";
-
-no("snasa", _Any) ->
-    "snasa.no";
-
-no("baidar", _Any) ->
-    "baidar.no";
-
-no("deatnu", _Any) ->
-    "deatnu.no";
-
-no("vardo", _Any) ->
-    "vardo.no";
-
-no("porsgrunn", _Any) ->
-    "porsgrunn.no";
-
-no("stord", _Any) ->
-    "stord.no";
-
-no("karasjohka", _Any) ->
-    "karasjohka.no";
-
-no("leikanger", _Any) ->
-    "leikanger.no";
-
-no("eidsberg", _Any) ->
-    "eidsberg.no";
-
-no("flora", _Any) ->
-    "flora.no";
-
-no("alaheadju", _Any) ->
-    "alaheadju.no";
-
-no("balestrand", _Any) ->
-    "balestrand.no";
-
-no("malvik", _Any) ->
-    "malvik.no";
-
-no("vestnes", _Any) ->
-    "vestnes.no";
-
-no("tana", _Any) ->
-    "tana.no";
-
-no("berlevag", _Any) ->
-    "berlevag.no";
-
-no("bryne", _Any) ->
-    "bryne.no";
-
-no("bievat", _Any) ->
-    "bievat.no";
-
-no("sokndal", _Any) ->
-    "sokndal.no";
-
-no("akrehamn", _Any) ->
-    "akrehamn.no";
-
-no("kristiansand", _Any) ->
-    "kristiansand.no";
-
-no("tromsa", _Any) ->
-    "tromsa.no";
-
-no("dielddanuorri", _Any) ->
-    "dielddanuorri.no";
-
-no("lebesby", _Any) ->
-    "lebesby.no";
-
-no("hapmir", _Any) ->
-    "hapmir.no";
-
-no("bjerkreim", _Any) ->
-    "bjerkreim.no";
-
-no("lavangen", _Any) ->
-    "lavangen.no";
-
-no("folkebibl", _Any) ->
-    "folkebibl.no";
-
-no("overhalla", _Any) ->
-    "overhalla.no";
-
-no("sigdal", _Any) ->
-    "sigdal.no";
-
-no("vaga", _Any) ->
-    "vaga.no";
-
-no("tjome", _Any) ->
-    "tjome.no";
-
-no("lierne", _Any) ->
-    "lierne.no";
-
-no("gaular", _Any) ->
-    "gaular.no";
-
-no("skodje", _Any) ->
-    "skodje.no";
-
-no("eigersund", _Any) ->
-    "eigersund.no";
-
-no("rahkkeravju", _Any) ->
-    "rahkkeravju.no";
-
-no("troandin", _Any) ->
-    "troandin.no";
-
-no("nl", []) ->
-    "nl.no";
-no("nl", Parts) ->
-    [First | Rest] = Parts,
-    nl_no(First, Rest);
-
-no("lier", _Any) ->
-    "lier.no";
-
-no("fjell", _Any) ->
-    "fjell.no";
-
-no("malatvuopmi", _Any) ->
-    "malatvuopmi.no";
-
-no("hurum", _Any) ->
-    "hurum.no";
-
-no("fla", _Any) ->
-    "fla.no";
-
-no("askvoll", _Any) ->
-    "askvoll.no";
-
-no("tm", []) ->
-    "tm.no";
-no("tm", Parts) ->
-    [First | Rest] = Parts,
-    tm_no(First, Rest);
-
-no("eid", _Any) ->
-    "eid.no";
-
-no("fm", []) ->
-    "fm.no";
-no("fm", Parts) ->
-    [First | Rest] = Parts,
-    fm_no(First, Rest);
-
-no("voagat", _Any) ->
-    "voagat.no";
-
-no("oslo", []) ->
-    "oslo.no";
-no("oslo", Parts) ->
-    [First | Rest] = Parts,
-    oslo_no(First, Rest);
-
-no("vestfold", []) ->
-    "vestfold.no";
-no("vestfold", Parts) ->
-    [First | Rest] = Parts,
-    vestfold_no(First, Rest);
-
-no("vaapste", _Any) ->
-    "vaapste.no";
-
-no("idrett", _Any) ->
-    "idrett.no";
-
-no("badaddja", _Any) ->
-    "badaddja.no";
-
-no("vennesla", _Any) ->
-    "vennesla.no";
-
-no("hyllestad", _Any) ->
-    "hyllestad.no";
-
-no("giske", _Any) ->
-    "giske.no";
-
-no("flatanger", _Any) ->
-    "flatanger.no";
-
-no("honefoss", _Any) ->
-    "honefoss.no";
-
-no("lyngdal", _Any) ->
-    "lyngdal.no";
-
-no("ol", []) ->
-    "ol.no";
-no("ol", Parts) ->
-    [First | Rest] = Parts,
-    ol_no(First, Rest);
-
-no("sortland", _Any) ->
-    "sortland.no";
-
-no("porsangu", _Any) ->
-    "porsangu.no";
-
-no("amot", _Any) ->
-    "amot.no";
-
-no("nordreisa", _Any) ->
-    "nordreisa.no";
-
-no("loten", _Any) ->
-    "loten.no";
-
-no("namdalseid", _Any) ->
-    "namdalseid.no";
-
-no("jorpeland", _Any) ->
-    "jorpeland.no";
-
-no("rost", _Any) ->
-    "rost.no";
-
-no("voss", _Any) ->
-    "voss.no";
-
-no("hammerfest", _Any) ->
-    "hammerfest.no";
-
-no("akershus", []) ->
-    "akershus.no";
-no("akershus", Parts) ->
-    [First | Rest] = Parts,
-    akershus_no(First, Rest);
-
-no("sauherad", _Any) ->
-    "sauherad.no";
-
-no("rennesoy", _Any) ->
-    "rennesoy.no";
-
-no("somna", _Any) ->
-    "somna.no";
-
-no("karmoy", _Any) ->
-    "karmoy.no";
-
-no("volda", _Any) ->
-    "volda.no";
-
-no("asker", _Any) ->
-    "asker.no";
-
-no("kirkenes", _Any) ->
-    "kirkenes.no";
-
-no("ruovat", _Any) ->
-    "ruovat.no";
-
-no("melhus", _Any) ->
-    "melhus.no";
-
-no("eidfjord", _Any) ->
-    "eidfjord.no";
-
-no("leangaviika", _Any) ->
-    "leangaviika.no";
-
-no("modalen", _Any) ->
-    "modalen.no";
-
-no("storfjord", _Any) ->
-    "storfjord.no";
-
-no("harstad", _Any) ->
-    "harstad.no";
-
-no("bindal", _Any) ->
-    "bindal.no";
-
-no("aurland", _Any) ->
-    "aurland.no";
-
-no("skedsmo", _Any) ->
-    "skedsmo.no";
-
-no("samnanger", _Any) ->
-    "samnanger.no";
-
-no("stavern", _Any) ->
-    "stavern.no";
-
-no("loppa", _Any) ->
-    "loppa.no";
-
-no("masfjorden", _Any) ->
-    "masfjorden.no";
-
-no("evenassi", _Any) ->
-    "evenassi.no";
-
-no("hareid", _Any) ->
-    "hareid.no";
-
-no("sorreisa", _Any) ->
-    "sorreisa.no";
-
-no("krokstadelva", _Any) ->
-    "krokstadelva.no";
-
-no("priv", _Any) ->
-    "priv.no";
-
-no("norddal", _Any) ->
-    "norddal.no";
-
-
-no(_, _) ->
-    "no".
+ma_us(_, _) ->
+    "ma.us".
 
 %% regular rules
-tr_no("gs", _Any) ->
-    "gs.tr.no";
+co_us("cc", _Any) ->
+    "cc.co.us";
+
+co_us("lib", _Any) ->
+    "lib.co.us";
 
 
-tr_no(_, _) ->
-    "tr.no".
-
-%% regular rules
-hedmark_no("os", _Any) ->
-    "os.hedmark.no";
-
-hedmark_no("valer", _Any) ->
-    "valer.hedmark.no";
-
-
-hedmark_no(_, _) ->
-    "hedmark.no".
+co_us(_, _) ->
+    "co.us".
 
 %% regular rules
-of_no("gs", _Any) ->
-    "gs.of.no";
+ak_us("cc", _Any) ->
+    "cc.ak.us";
+
+ak_us("lib", _Any) ->
+    "lib.ak.us";
 
 
-of_no(_, _) ->
-    "of.no".
-
-%% regular rules
-nt_no("gs", _Any) ->
-    "gs.nt.no";
-
-
-nt_no(_, _) ->
-    "nt.no".
+ak_us(_, _) ->
+    "ak.us".
 
 %% regular rules
-va_no("gs", _Any) ->
-    "gs.va.no";
+al_us("cc", _Any) ->
+    "cc.al.us";
+
+al_us("lib", _Any) ->
+    "lib.al.us";
 
 
-va_no(_, _) ->
-    "va.no".
-
-%% regular rules
-hm_no("gs", _Any) ->
-    "gs.hm.no";
-
-
-hm_no(_, _) ->
-    "hm.no".
+al_us(_, _) ->
+    "al.us".
 
 %% regular rules
-sf_no("gs", _Any) ->
-    "gs.sf.no";
+nj_us("lib", _Any) ->
+    "lib.nj.us";
+
+nj_us("cc", _Any) ->
+    "cc.nj.us";
 
 
-sf_no(_, _) ->
-    "sf.no".
-
-%% regular rules
-vf_no("gs", _Any) ->
-    "gs.vf.no";
-
-
-vf_no(_, _) ->
-    "vf.no".
+nj_us(_, _) ->
+    "nj.us".
 
 %% regular rules
-hordaland_no("os", _Any) ->
-    "os.hordaland.no";
+fl_us("lib", _Any) ->
+    "lib.fl.us";
+
+fl_us("cc", _Any) ->
+    "cc.fl.us";
 
 
-hordaland_no(_, _) ->
-    "hordaland.no".
-
-%% regular rules
-buskerud_no("nes", _Any) ->
-    "nes.buskerud.no";
-
-
-buskerud_no(_, _) ->
-    "buskerud.no".
+fl_us(_, _) ->
+    "fl.us".
 
 %% regular rules
-mr_no("gs", _Any) ->
-    "gs.mr.no";
+dc_us("lib", _Any) ->
+    "lib.dc.us";
+
+dc_us("cc", _Any) ->
+    "cc.dc.us";
 
 
-mr_no(_, _) ->
-    "mr.no".
-
-%% regular rules
-rl_no("gs", _Any) ->
-    "gs.rl.no";
-
-
-rl_no(_, _) ->
-    "rl.no".
+dc_us(_, _) ->
+    "dc.us".
 
 %% regular rules
-aa_no("gs", _Any) ->
-    "gs.aa.no";
+wv_us("cc", _Any) ->
+    "cc.wv.us";
 
 
-aa_no(_, _) ->
-    "aa.no".
-
-%% regular rules
-telemark_no("bo", _Any) ->
-    "bo.telemark.no";
-
-
-telemark_no(_, _) ->
-    "telemark.no".
+wv_us(_, _) ->
+    "wv.us".
 
 %% regular rules
-bu_no("gs", _Any) ->
-    "gs.bu.no";
+pr_us("lib", _Any) ->
+    "lib.pr.us";
+
+pr_us("cc", _Any) ->
+    "cc.pr.us";
 
 
-bu_no(_, _) ->
-    "bu.no".
-
-%% regular rules
-ah_no("gs", _Any) ->
-    "gs.ah.no";
-
-
-ah_no(_, _) ->
-    "ah.no".
+pr_us(_, _) ->
+    "pr.us".
 
 %% regular rules
-svalbard_no("gs", _Any) ->
-    "gs.svalbard.no";
+wi_us("cc", _Any) ->
+    "cc.wi.us";
+
+wi_us("lib", _Any) ->
+    "lib.wi.us";
 
 
-svalbard_no(_, _) ->
-    "svalbard.no".
-
-%% regular rules
-hl_no("gs", _Any) ->
-    "gs.hl.no";
-
-
-hl_no(_, _) ->
-    "hl.no".
+wi_us(_, _) ->
+    "wi.us".
 
 %% regular rules
-nordland_no("heroy", _Any) ->
-    "heroy.nordland.no";
+ut_us("cc", _Any) ->
+    "cc.ut.us";
 
-nordland_no("bo", _Any) ->
-    "bo.nordland.no";
-
-
-nordland_no(_, _) ->
-    "nordland.no".
-
-%% regular rules
-st_no("gs", _Any) ->
-    "gs.st.no";
+ut_us("lib", _Any) ->
+    "lib.ut.us";
 
 
-st_no(_, _) ->
-    "st.no".
+ut_us(_, _) ->
+    "ut.us".
 
 %% regular rules
-ostfold_no("valer", _Any) ->
-    "valer.ostfold.no";
+de_us("cc", _Any) ->
+    "cc.de.us";
+
+de_us("lib", _Any) ->
+    "lib.de.us";
 
 
-ostfold_no(_, _) ->
-    "ostfold.no".
-
-%% regular rules
-nl_no("gs", _Any) ->
-    "gs.nl.no";
-
-
-nl_no(_, _) ->
-    "nl.no".
+de_us(_, _) ->
+    "de.us".
 
 %% regular rules
-tm_no("gs", _Any) ->
-    "gs.tm.no";
+ky_us("lib", _Any) ->
+    "lib.ky.us";
+
+ky_us("cc", _Any) ->
+    "cc.ky.us";
 
 
-tm_no(_, _) ->
-    "tm.no".
-
-%% regular rules
-fm_no("gs", _Any) ->
-    "gs.fm.no";
-
-
-fm_no(_, _) ->
-    "fm.no".
+ky_us(_, _) ->
+    "ky.us".
 
 %% regular rules
-oslo_no("gs", _Any) ->
-    "gs.oslo.no";
+gu_us("lib", _Any) ->
+    "lib.gu.us";
+
+gu_us("cc", _Any) ->
+    "cc.gu.us";
 
 
-oslo_no(_, _) ->
-    "oslo.no".
-
-%% regular rules
-vestfold_no("sande", _Any) ->
-    "sande.vestfold.no";
-
-
-vestfold_no(_, _) ->
-    "vestfold.no".
+gu_us(_, _) ->
+    "gu.us".
 
 %% regular rules
-ol_no("gs", _Any) ->
-    "gs.ol.no";
+me_us("lib", _Any) ->
+    "lib.me.us";
+
+me_us("cc", _Any) ->
+    "cc.me.us";
 
 
-ol_no(_, _) ->
-    "ol.no".
-
-%% regular rules
-akershus_no("nes", _Any) ->
-    "nes.akershus.no";
-
-
-akershus_no(_, _) ->
-    "akershus.no".
+me_us(_, _) ->
+    "me.us".
 
 %% regular rules
-sl("gov", _Any) ->
-    "gov.sl";
+mn_us("cc", _Any) ->
+    "cc.mn.us";
 
-sl("com", _Any) ->
-    "com.sl";
-
-sl("org", _Any) ->
-    "org.sl";
-
-sl("edu", _Any) ->
-    "edu.sl";
-
-sl("net", _Any) ->
-    "net.sl";
+mn_us("lib", _Any) ->
+    "lib.mn.us";
 
 
-sl(_, _) ->
-    "sl".
+mn_us(_, _) ->
+    "mn.us".
 
 %% regular rules
-my("name", _Any) ->
-    "name.my";
+oh_us("lib", _Any) ->
+    "lib.oh.us";
 
-my("gov", _Any) ->
-    "gov.my";
-
-my("com", _Any) ->
-    "com.my";
-
-my("edu", _Any) ->
-    "edu.my";
-
-my("org", _Any) ->
-    "org.my";
-
-my("mil", _Any) ->
-    "mil.my";
-
-my("net", _Any) ->
-    "net.my";
+oh_us("cc", _Any) ->
+    "cc.oh.us";
 
 
-my(_, _) ->
-    "my".
+oh_us(_, _) ->
+    "oh.us".
 
 %% regular rules
-gp("mobi", _Any) ->
-    "mobi.gp";
+biz("dyndns", _Any) ->
+    "dyndns.biz";
 
-gp("com", _Any) ->
-    "com.gp";
+biz("selfip", _Any) ->
+    "selfip.biz";
 
-gp("edu", _Any) ->
-    "edu.gp";
-
-gp("org", _Any) ->
-    "org.gp";
-
-gp("net", _Any) ->
-    "net.gp";
-
-gp("asso", _Any) ->
-    "asso.gp";
+biz("webhop", _Any) ->
+    "webhop.biz";
 
 
-gp(_, _) ->
-    "gp".
+biz(_, _) ->
+    "biz".
 
 %% regular rules
-kp("edu", _Any) ->
-    "edu.kp";
+nr("info", _Any) ->
+    "info.nr";
 
-kp("org", _Any) ->
-    "org.kp";
+nr("net", _Any) ->
+    "net.nr";
 
-kp("tra", _Any) ->
-    "tra.kp";
+nr("gov", _Any) ->
+    "gov.nr";
 
-kp("gov", _Any) ->
-    "gov.kp";
+nr("biz", _Any) ->
+    "biz.nr";
 
-kp("com", _Any) ->
-    "com.kp";
+nr("com", _Any) ->
+    "com.nr";
 
-kp("rep", _Any) ->
-    "rep.kp";
+nr("edu", _Any) ->
+    "edu.nr";
 
-
-kp(_, _) ->
-    "kp".
-
-%% regular rules
-az("pp", _Any) ->
-    "pp.az";
-
-az("info", _Any) ->
-    "info.az";
-
-az("com", _Any) ->
-    "com.az";
-
-az("org", _Any) ->
-    "org.az";
-
-az("int", _Any) ->
-    "int.az";
-
-az("name", _Any) ->
-    "name.az";
-
-az("gov", _Any) ->
-    "gov.az";
-
-az("biz", _Any) ->
-    "biz.az";
-
-az("edu", _Any) ->
-    "edu.az";
-
-az("mil", _Any) ->
-    "mil.az";
-
-az("pro", _Any) ->
-    "pro.az";
-
-az("net", _Any) ->
-    "net.az";
+nr("org", _Any) ->
+    "org.nr";
 
 
-az(_, _) ->
-    "az".
+nr(_, _) ->
+    "nr".
 
 %% regular rules
-mw("edu", _Any) ->
-    "edu.mw";
+tn("ind", _Any) ->
+    "ind.tn";
 
-mw("ac", _Any) ->
-    "ac.mw";
+tn("rnu", _Any) ->
+    "rnu.tn";
 
-mw("net", _Any) ->
-    "net.mw";
+tn("defense", _Any) ->
+    "defense.tn";
 
-mw("gov", _Any) ->
-    "gov.mw";
+tn("rns", _Any) ->
+    "rns.tn";
 
-mw("coop", _Any) ->
-    "coop.mw";
+tn("edunet", _Any) ->
+    "edunet.tn";
 
-mw("biz", _Any) ->
-    "biz.mw";
+tn("org", _Any) ->
+    "org.tn";
 
-mw("co", _Any) ->
-    "co.mw";
+tn("agrinet", _Any) ->
+    "agrinet.tn";
 
-mw("org", _Any) ->
-    "org.mw";
+tn("mincom", _Any) ->
+    "mincom.tn";
 
-mw("int", _Any) ->
-    "int.mw";
+tn("rnrt", _Any) ->
+    "rnrt.tn";
 
-mw("museum", _Any) ->
-    "museum.mw";
+tn("info", _Any) ->
+    "info.tn";
 
-mw("com", _Any) ->
-    "com.mw";
+tn("intl", _Any) ->
+    "intl.tn";
 
+tn("turen", _Any) ->
+    "turen.tn";
 
-mw(_, _) ->
-    "mw".
+tn("fin", _Any) ->
+    "fin.tn";
 
-%% regular rules
-sb("org", _Any) ->
-    "org.sb";
+tn("perso", _Any) ->
+    "perso.tn";
 
-sb("edu", _Any) ->
-    "edu.sb";
+tn("ens", _Any) ->
+    "ens.tn";
 
-sb("net", _Any) ->
-    "net.sb";
+tn("tourism", _Any) ->
+    "tourism.tn";
 
-sb("com", _Any) ->
-    "com.sb";
+tn("com", _Any) ->
+    "com.tn";
 
-sb("gov", _Any) ->
-    "gov.sb";
+tn("gov", _Any) ->
+    "gov.tn";
 
+tn("net", _Any) ->
+    "net.tn";
 
-sb(_, _) ->
-    "sb".
-
-%% regular rules
-es("com", []) ->
-    "com.es";
-es("com", Parts) ->
-    [First | Rest] = Parts,
-    com_es(First, Rest);
-
-es("nom", _Any) ->
-    "nom.es";
-
-es("org", _Any) ->
-    "org.es";
-
-es("edu", _Any) ->
-    "edu.es";
-
-es("gob", _Any) ->
-    "gob.es";
+tn("nat", _Any) ->
+    "nat.tn";
 
 
-es(_, _) ->
-    "es".
+tn(_, _) ->
+    "tn".
 
 %% regular rules
-com_es("blogspot", _Any) ->
-    "blogspot.com.es";
+jo("name", _Any) ->
+    "name.jo";
+
+jo("mil", _Any) ->
+    "mil.jo";
+
+jo("edu", _Any) ->
+    "edu.jo";
+
+jo("net", _Any) ->
+    "net.jo";
+
+jo("gov", _Any) ->
+    "gov.jo";
+
+jo("org", _Any) ->
+    "org.jo";
+
+jo("com", _Any) ->
+    "com.jo";
+
+jo("sch", _Any) ->
+    "sch.jo";
 
 
-com_es(_, _) ->
-    "com.es".
-
-%% regular rules
-kg("com", _Any) ->
-    "com.kg";
-
-kg("gov", _Any) ->
-    "gov.kg";
-
-kg("org", _Any) ->
-    "org.kg";
-
-kg("edu", _Any) ->
-    "edu.kg";
-
-kg("net", _Any) ->
-    "net.kg";
-
-kg("mil", _Any) ->
-    "mil.kg";
-
-
-kg(_, _) ->
-    "kg".
+jo(_, _) ->
+    "jo".
 
 %% regular rules
-bo("tv", _Any) ->
-    "tv.bo";
+iq("gov", _Any) ->
+    "gov.iq";
 
-bo("gov", _Any) ->
-    "gov.bo";
+iq("org", _Any) ->
+    "org.iq";
 
-bo("mil", _Any) ->
-    "mil.bo";
+iq("edu", _Any) ->
+    "edu.iq";
 
-bo("net", _Any) ->
-    "net.bo";
+iq("com", _Any) ->
+    "com.iq";
 
-bo("gob", _Any) ->
-    "gob.bo";
+iq("mil", _Any) ->
+    "mil.iq";
 
-bo("edu", _Any) ->
-    "edu.bo";
-
-bo("com", _Any) ->
-    "com.bo";
-
-bo("int", _Any) ->
-    "int.bo";
-
-bo("org", _Any) ->
-    "org.bo";
+iq("net", _Any) ->
+    "net.iq";
 
 
-bo(_, _) ->
-    "bo".
-
-%% regular rules
-ee("com", _Any) ->
-    "com.ee";
-
-ee("riik", _Any) ->
-    "riik.ee";
-
-ee("med", _Any) ->
-    "med.ee";
-
-ee("org", _Any) ->
-    "org.ee";
-
-ee("lib", _Any) ->
-    "lib.ee";
-
-ee("pri", _Any) ->
-    "pri.ee";
-
-ee("gov", _Any) ->
-    "gov.ee";
-
-ee("fie", _Any) ->
-    "fie.ee";
-
-ee("aip", _Any) ->
-    "aip.ee";
-
-ee("edu", _Any) ->
-    "edu.ee";
-
-
-ee(_, _) ->
-    "ee".
-
-%% regular rules
-eg("org", _Any) ->
-    "org.eg";
-
-eg("eun", _Any) ->
-    "eun.eg";
-
-eg("com", _Any) ->
-    "com.eg";
-
-eg("net", _Any) ->
-    "net.eg";
-
-eg("mil", _Any) ->
-    "mil.eg";
-
-eg("edu", _Any) ->
-    "edu.eg";
-
-eg("name", _Any) ->
-    "name.eg";
-
-eg("sci", _Any) ->
-    "sci.eg";
-
-eg("gov", _Any) ->
-    "gov.eg";
-
-
-eg(_, _) ->
-    "eg".
-
-%% regular rules
-sz("org", _Any) ->
-    "org.sz";
-
-sz("co", _Any) ->
-    "co.sz";
-
-sz("ac", _Any) ->
-    "ac.sz";
-
-
-sz(_, _) ->
-    "sz".
-
-%% regular rules
-be("blogspot", _Any) ->
-    "blogspot.be";
-
-be("ac", _Any) ->
-    "ac.be";
-
-
-be(_, _) ->
-    "be".
+iq(_, _) ->
+    "iq".
 -ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
 
