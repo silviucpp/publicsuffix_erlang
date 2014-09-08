@@ -1,3 +1,4 @@
 *~
 ebin
 src/effective_tld_names.dat
+.rebar
