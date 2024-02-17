@@ -2,3 +2,6 @@
 ebin
 src/effective_tld_names.dat
 .rebar
+/.idea/
+/publicsuffix_erlang.iml
+/_build/
