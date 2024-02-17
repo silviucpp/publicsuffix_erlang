@@ -38,11 +38,12 @@ suffix(Domain) ->
 	parts(First, Rest).
 
 domain(Domain) ->
-	Suffix = suffix(Domain),
-	case Suffix == Domain of
-		true ->
+	case suffix(Domain) of
+		Domain ->
     		Domain;
-    	false ->
+        undefined ->
+            undefined;
+    	Suffix ->
 		    Subdomains = string:tokens(string:sub_string(Domain, 1, string:rstr(Domain, Suffix) - 2), "."),
 		    Subdomain = lists:last(Subdomains),
 		    Subdomain ++ "." ++ Suffix
@@ -163,12 +164,13 @@ $res .= <<EOF;
 -include_lib("eunit/include/eunit.hrl").
 
 rules_test() ->
-	?assertEqual(publicsuffix:domain("google.com"), "google.com"),
-	?assertEqual(publicsuffix:domain("fr.google.com"), "google.com"),
-	?assertEqual(publicsuffix:domain("fr.google.google"), "google.google"),
-	?assertEqual(publicsuffix:domain("foo.google.co.uk"), "google.co.uk"),
-	?assertEqual(publicsuffix:domain("t.co"), "t.co"),
-	?assertEqual(publicsuffix:domain("fr.t.co"), "t.co").
+    ?assertEqual(undefined, publicsuffix:domain("com")),
+	?assertEqual("google.com", publicsuffix:domain("google.com")),
+	?assertEqual("google.com", publicsuffix:domain("fr.google.com")),
+	?assertEqual("google.google", publicsuffix:domain("fr.google.google")),
+	?assertEqual("google.co.uk", publicsuffix:domain("foo.google.co.uk")),
+	?assertEqual("t.co", publicsuffix:domain("t.co")),
+	?assertEqual("t.co", publicsuffix:domain("fr.t.co")).
 
 -endif.
 
